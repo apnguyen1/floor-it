@@ -3,6 +3,7 @@ plugins {
     kotlin("plugin.spring") version "1.9.25"
     id("org.springframework.boot") version "3.4.1"
     id("io.spring.dependency-management") version "1.1.7"
+    id("com.diffplug.spotless") version "7.0.2"
 }
 
 group = "uw.cse403"
@@ -32,6 +33,15 @@ dependencies {
 kotlin {
     compilerOptions {
         freeCompilerArgs.addAll("-Xjsr305=strict")
+    }
+}
+
+spotless {
+    kotlin {
+        ktfmt().googleStyle().configure {
+            it.setMaxWidth(90)
+            it.setBlockIndent(4)
+        }
     }
 }
 
