@@ -4,8 +4,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class FlooritApplication
+class FloorItApplication
 
 fun main(args: Array<String>) {
-    runApplication<FlooritApplication>(*args)
+    runApplication<FloorItApplication>(*args)
 }
