@@ -6,7 +6,7 @@ Example: I am adding the mapping of images to their associated words with compre
 
 ## Ticket number and link
 
-[feature-[REPLACE]]([REPLACE-WITH-LINK])
+[ticket-TICKET-ISSUE-HERE](https://github.com/apnguyen1/floor-it/issues/TICKET-ISSUE-HERE)
 
 ## Solution and Tests
 
