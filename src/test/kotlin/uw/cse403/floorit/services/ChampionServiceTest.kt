@@ -1,21 +1,32 @@
 package uw.cse403.floorit.services
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
-import org.junit.Test
+import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.BeforeEach
+import org.junit.jupiter.api.Test
+import org.mockito.ArgumentMatchers.*
 import org.mockito.Mock
-import org.springframework.boot.test.context.SpringBootTest
+import org.mockito.MockitoAnnotations
+import org.mockito.kotlin.whenever
 import org.springframework.web.client.RestTemplate
 
 class ChampionServiceTest {
     @Mock
-    private val restTemplate = RestTemplate()
+    private lateinit var restTemplate: RestTemplate
     private val objectMapper = jacksonObjectMapper()
-    private val championsService = ChampionsService()
+    private lateinit var championsService: ChampionsService;
+
+    @BeforeEach
+    fun reset() {
+        MockitoAnnotations.openMocks(this)
+        championsService = ChampionsService(objectMapper, restTemplate);
+    }
 
 
     @Test
     fun testFetchChampion_success() {
-        val mockJson = """
+        val mockJson =
+          """
             {
             "data": {
                 "Aatrox": {
@@ -32,8 +43,16 @@ class ChampionServiceTest {
                 }
             }
         }
-        """.trimIndent()
+        """
+            .trimIndent()
 
+        whenever(restTemplate.getForObject(any<String>(), eq(String::class.java))).thenReturn(mockJson)
 
+        val champions = championsService.getChampionMappings()
+
+        Assertions.assertNull(champions)
+        Assertions.assertEquals(2, champions.size)
+        Assertions.assertEquals("Aatrox", champions["Aatrox"]?.name)
+        Assertions.assertEquals("Ahri", champions["Ahri"]?.name)
     }
 }

@@ -1,6 +1,6 @@
 package uw.cse403.floorit.services
 
-import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.kotlin.readValue
 import org.springframework.stereotype.Service
 import org.springframework.web.client.RestTemplate
@@ -8,11 +8,10 @@ import uw.cse403.floorit.exceptions.ChampionDataException
 import uw.cse403.floorit.models.Champion
 
 @Service
-class ChampionsService {
-    private val restTemplate = RestTemplate()
-
-    private val objectMapper = jacksonObjectMapper()
-
+class ChampionsService(
+  private val objectMapper: ObjectMapper,
+  private val restTemplate: RestTemplate,
+) {
     /**
      * Fetches the list of champions from LoL champion API endpoint.
      *
