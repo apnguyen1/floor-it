@@ -8,9 +8,11 @@ import uw.cse403.floorit.services.ChampionsService
 class ChampionController(private val championService: ChampionsService) {
 
     @GetMapping("/champions")
-    fun getChampions(): Map<String, String> {
+    fun getChampions(): Map<String, List<String>> {
         val championMapping = championService.getChampionMappings()
 
-        return championMapping.mapValues { (_, championData) -> championData.title }
+        return championMapping
+          .mapKeys { (_, championData) -> championData.title }
+          .mapValues { (_, championData) -> listOf(championData.name) }
     }
 }
