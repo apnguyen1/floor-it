@@ -31,9 +31,14 @@ Discuss design and distribute tickets.
 ## Goals for next week: 
 # Project Status (Brian):
 ## Goals for the week:
--N/A (first week)
+- Draft-up, complete, and submit UI design for category- and user-selection interfaces.
+- Familiarise myself with MaterialUI.
 ## Progress and issues:
+- No personal progress thus far.
+- Group discussions have been fruitful.
+- No issues to note yet.
 ## Goals for next week:
+- Have a complete UI design to being implementing for front-end.
 # Project Status (Phuong):
 ## Goals for the week:
 -N/A (first week)
