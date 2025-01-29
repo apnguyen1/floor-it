@@ -1,6 +1,6 @@
 # Project Status (Overall):
 ## Goals for the week:
--N/A (first week)
+Discuss design and distribute tickets.
 ## Progress and issues:
 - Fleshed out ideas for frontend design such as player customization on category select page
 - Defined API endpoints for frontend to call (Retrieving all categories, retrieving images/words for a specific category)
@@ -17,9 +17,13 @@
 - Learn Kotlin and figure out what all the files in backend are doing
 # Project Status (Andrew):
 ## Goals for the week:
--N/A (first week)
+- Discuss and distribute tickets
 ## Progress and issues:
+- Finished with a good design discussion about the direction of the game
+
 ## Goals for next week:
+- Finish with UI design and begin implementation
+
 # Project Status (Arman):
 ## Goals for the week:
 -N/A (first week)
