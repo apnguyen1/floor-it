@@ -38,4 +38,6 @@ Discuss design and distribute tickets.
 ## Goals for the week:
 -N/A (first week)
 ## Progress and issues:
-## Goals for next week:
+- Got tickets assigned
+# Goals for next week:
+- Finish creating home screen UI and implementing frontend
