@@ -26,9 +26,11 @@ Discuss design and distribute tickets.
 
 # Project Status (Arman):
 ## Goals for the week:
--N/A (first week)
+Come up with a Category and 40 questions
 ## Progress and issues:
+About half way done trying to come up with more questions
 ## Goals for next week: 
+Complete two more categories and questions and working on setting up backend
 # Project Status (Brian):
 ## Goals for the week:
 - Draft-up, complete, and submit UI design for category- and user-selection interfaces.
