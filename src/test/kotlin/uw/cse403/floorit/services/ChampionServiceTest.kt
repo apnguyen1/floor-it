@@ -1,69 +1,70 @@
 package uw.cse403.floorit.services
 
-import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
-import kotlin.test.assertFailsWith
+import io.mockk.every
+import io.mockk.junit5.MockKExtension
+import io.mockk.mockk
+import kotlinx.serialization.json.Json
 import org.junit.jupiter.api.Assertions
-import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
-import org.mockito.ArgumentMatchers.*
-import org.mockito.Mock
-import org.mockito.MockitoAnnotations
-import org.mockito.kotlin.whenever
+import org.junit.jupiter.api.extension.ExtendWith
 import org.springframework.web.client.RestTemplate
-import uw.cse403.floorit.exceptions.ChampionDataException
 
+@ExtendWith(MockKExtension::class)
 class ChampionServiceTest {
-    @Mock private lateinit var restTemplate: RestTemplate
-    private val objectMapper = jacksonObjectMapper()
-    private lateinit var championsService: ChampionsService
+    private val restTemplate: RestTemplate = mockk()
+    private val json: Json = Json { ignoreUnknownKeys = true }
+    private val championsService: ChampionsService = ChampionsService(json, restTemplate)
 
-    @BeforeEach
-    fun reset() {
-        MockitoAnnotations.openMocks(this)
-        championsService = ChampionsService(objectMapper, restTemplate)
+    companion object {
+        const val VERSION = "15.2.1"
     }
 
     @Test
-    fun testFetchChampion_success() {
-        val mockJson =
-          """
+    fun `fetch all champions`() {
+        val mockJson = """
             {
+            "version": "$VERSION",
             "data": {
                 "Aatrox": {
                     "id": "Aatrox",
                     "name": "Aatrox",
                     "title": "the Darkin Blade",
-                    "blurb": "Once honored defenders of Shurima..."
+                    "blurb": "Once honored defenders of Shurima...",
+                    "image": {
+                        "full": "Aatrox.png",
+                        "sprite": "champion1.png"
+                    }
                 },
                 "Ahri": {
                     "id": "Ahri",
                     "name": "Ahri",
                     "title": "the Nine-Tailed Fox",
-                    "blurb": "Innately connected to the latent..."
+                    "blurb": "Innately connected to the latent...",
+                    "image": {
+                        "full": "Ahri.png",
+                        "sprite": "champion2.png"
+                    }
                 }
             }
         }
-        """
-            .trimIndent()
+        """.trimIndent()
 
-        whenever(restTemplate.getForObject(any<String>(), eq(String::class.java)))
-          .thenReturn(mockJson)
+        every { restTemplate.getForObject(any<String>(), String::class.java) } returns mockJson
 
         val champions = championsService.getChampionMappings()
 
         Assertions.assertNotNull(champions)
-        Assertions.assertEquals(2, champions.size)
-        Assertions.assertEquals("Aatrox", champions["Aatrox"]?.name)
-        Assertions.assertEquals("Ahri", champions["Ahri"]?.name)
+        Assertions.assertEquals(2, champions?.data?.size)
+        Assertions.assertEquals(VERSION, champions?.version)
+        Assertions.assertEquals("Aatrox", champions?.data?.get("Aatrox")?.name)
+        Assertions.assertEquals("Aatrox.png", champions?.data?.get("Aatrox")?.image?.full)
     }
 
     @Test
-    fun testFetchChampion_fail() {
-        val mockJson = null
+    fun `return null and doesn't throw exception`() {
+        every { restTemplate.getForObject(any<String>(), String::class.java) } returns null
 
-        whenever(restTemplate.getForObject(any<String>(), eq(String::class.java)))
-          .thenReturn(mockJson)
-
-        assertFailsWith<ChampionDataException> { championsService.getChampionMappings() }
+        Assertions.assertNull(championsService.getChampionMappings())
+        Assertions.assertDoesNotThrow { championsService.getChampionMappings() }
     }
 }

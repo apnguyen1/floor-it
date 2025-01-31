@@ -1,9 +1,16 @@
 package uw.cse403.floorit.models
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
 
-@JsonIgnoreProperties(ignoreUnknown = true)
-data class Champion(val name: String, val title: String)
+@Serializable
+data class ChampionEventDTO(val version: String, val data: Map<String, ChampionDTO>)
 
-@JsonIgnoreProperties(ignoreUnknown = true)
-data class ChampionResponse(val data: Map<String, Champion>)
+@Serializable
+data class ChampionDTO(val name: String, val title: String, val image: ChampionImageDTO)
+
+@Serializable
+data class ChampionImageDTO(
+  val full: String,
+  @SerialName("sprite") val thumbnail: String,
+)

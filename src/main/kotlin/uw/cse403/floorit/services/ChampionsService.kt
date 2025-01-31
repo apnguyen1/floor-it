@@ -1,40 +1,36 @@
 package uw.cse403.floorit.services
 
-import com.fasterxml.jackson.databind.ObjectMapper
-import com.fasterxml.jackson.module.kotlin.readValue
+import kotlinx.serialization.json.Json
 import org.springframework.stereotype.Service
 import org.springframework.web.client.RestClientException
 import org.springframework.web.client.RestTemplate
-import uw.cse403.floorit.exceptions.ChampionDataException
-import uw.cse403.floorit.models.Champion
-import uw.cse403.floorit.models.ChampionResponse
+import uw.cse403.floorit.models.ChampionEventDTO
 
 @Service
 class ChampionsService(
-  private val objectMapper: ObjectMapper,
-  private val restTemplate: RestTemplate,
+  private val json: Json,
+  private val restTemplate: RestTemplate, // TODO: change to webflux in future ticket
 ) {
     /**
      * Fetches the list of champions from LoL champion API endpoint.
      *
      * @return a mapping of champion names to their champion data
      */
-    fun getChampionMappings(): Map<String, Champion> {
+    fun getChampionMappings(): ChampionEventDTO? {
         val url =
           "https://ddragon.leagueoflegends.com/cdn/15.2.1/data/en_US/champion.json"
-        val response: String? =
-          try {
-              restTemplate.getForObject(url, String::class.java)
-          } catch (e: RestClientException) {
-              throw ChampionDataException("Failed to fetch champion data from $url", e)
-          }
 
-        return response?.let {
-            try {
-                objectMapper.readValue<ChampionResponse>(it).data
-            } catch (e: Exception) {
-                throw ChampionDataException("Failed to fetch champion data from $url", e)
+        return try {
+            val response = restTemplate.getForObject(url, String::class.java)
+            response?.let {
+                val data = json.decodeFromString<ChampionEventDTO>(it)
+                val filteredNames = data.data.mapValues { (_, champ) -> champ.copy(name = champ.name.replace('\'', ' ')) }
+
+                ChampionEventDTO(data.version, filteredNames)
             }
-        } ?: throw ChampionDataException("Champion data is empty or null")
+        } catch (e: RestClientException) {
+            // TODO, add logging
+            null
+        }
     }
 }
