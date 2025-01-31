@@ -11,14 +11,16 @@ class ChampionsService(
   private val json: Json,
   private val restTemplate: RestTemplate, // TODO: change to webflux in future ticket
 ) {
+    companion object {
+        const val VERSION = "15.2.1"
+    }
+
     /**
-     * Fetches the list of champions from LoL champion API endpoint.
-     *
-     * @return a mapping of champion names to their champion data
+     * Fetches and parses a [ChampionEventDTO]
      */
     fun getChampionMappings(): ChampionEventDTO? {
         val url =
-          "https://ddragon.leagueoflegends.com/cdn/15.2.1/data/en_US/champion.json"
+          "https://ddragon.leagueoflegends.com/cdn/$VERSION/data/en_US/champion.json"
 
         return try {
             val response = restTemplate.getForObject(url, String::class.java)
