@@ -1,63 +1,128 @@
-# Floor It!
+# Frontend README
 
-Floor It! is a web-based trivia game that brings competitive 1v1 duels to life. Inspired by elements of popular trivia games, it challenges players to outsmart their opponents in head-to-head battles of knowledge. The app is designed to be accessible, fun, and socially engaging, offering trivia enthusiasts an opportunity to challenge their friends from the comfort of their own homes.
+## Overview
 
----
-## Goals
+This is the frontend for Floor It! It is built using React and utilizes the Web Speech Recognition API for speech-to-text functionality. The frontend communicates with a backend server via REST APIs.
 
-To create an engaging, scalable web-based trivia game targeted at trivia enthusiasts and casual gamers who enjoy competitive, head-to-head duels. Floor It! emphasizes quick thinking, adaptability, and a fast-paced, turn-based trivia experience.
+## Backend
 
----
-## Features
-- **Competitive Trivia Gameplay**: Players compete head-to-head with turn-based mechanics and individual timers.
-- **Dynamic Categories**: Interactive categories allow for varied and engaging trivia questions.
-- **Local Multiplayer**: Play with friends or family in the comfort of your home.
+You can find our backend repo linked [here!](https://github.com/apnguyen1/floor-it)
 
----
-## Technical Approach
-- **Frontend**: Built using ReactJS to deliver a dynamic and responsive user experience.
-- **Backend**: Developed with Spring Boot to handle API endpoints for managing matches, player data, and question pools.
-- **Database**: A relational database (e.g., MySQL) to store trivia questions, player data, and match records.
-
-The front-end repo can be found [here](https://github.com/phuongp02/react-floor-it)
-
----
 ## Table of Contents
+
 1. [Prerequisites](#prerequisites)
-2. [Running the Project (Spring Application)](#running-the-backend-spring-application)
----
+2. [Setup](#setup)
+3. [Development](#development)
+4. [Testing](#testing)
+5. [Code Formatting](#code-formatting)
+6. [Pre-commit Hooks](#pre-commit-hooks)
+7. [Contributing](#contributing)
 
 ## Prerequisites
-Before running the application, ensure you have the following installed:
-- **Java 17** or higher
-- **Gradle 8.0** or higher
----
 
-## Running the Backend (Spring Application)
+Before you begin, ensure you have the following installed:
 
-### Steps to Run:
+- Node.js (v22.2.0 or higher)
+- npm (v8 or higher)
+- Git
+
+## Setup
+
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/floor-it.git
-    cd floor-it
-    ```
 
-2. Build the backend:
-    ```bash
-    mvn clean install
-    ```
+   ```bash
+   git clone https://github.com/your-username/react-floor-it.git
+   cd react-floor-it
+   ```
 
-3. Run the application:
-    ```bash
-    mvn spring-boot:run
-    ```
+2. Install dependencies:
 
-4. The backend will start at `http://localhost:8080`.
+   ```bash
+   npm install
+   ```
 
----
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+   The application will be available at `http://localhost:5173`.
+
+## Development
+
+### Folder Structure
+
+```
+src/
+├── components/      # Reusable UI components
+├── hooks/           # Custom React hooks
+├── services/        # API and WebSocket services
+├── utils/           # Utility functions
+├── FloorIt.tsx      # Main application component
+└── main.tsx         # Entry point
+```
+
+### Run the Development Server
+
+```bash
+npm run dev
+```
+
+## Testing
+
+This project uses Vitest for unit testing.
+
+### Run Tests
+
+```bash
+npm run test
+```
+
+## Code Formatting
+
+This project uses Prettier for code formatting.
+
+### Format Code
+
+```bash
+npm run format
+```
+
+## Pre-commit Hooks
+
+This project uses Husky to enforce pre-commit hooks.
+
+### Pre-commit Checks
+
+- Code is automatically formatted using Prettier
+- Tests are run to ensure no regressions are introduced
+
+### Install Husky Hooks
+
+```bash
+npm run prepare
+```
+
 ## Contributing
-We welcome contributions! Please fork the repository, create a feature branch, and submit a pull request. Ensure code changes are thoroughly tested.
 
----
-## License
-This project is licensed under the [MIT License](LICENSE).
+We welcome contributions! Please follow these steps:
+
+1. Clone the repository
+2. Create a new branch for your feature or bugfix:
+
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
+
+3. Commit your changes:
+
+   ```bash
+   git commit -m "Add your commit message"
+   ```
+
+4. Push your branch:
+
+   ```bash
+   git push origin feature/your-feature-name
+   ```
+
+5. Open a pull request and describe your changes
