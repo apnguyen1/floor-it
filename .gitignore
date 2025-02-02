@@ -127,6 +127,13 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
 # Environments
 .env
 .venv
