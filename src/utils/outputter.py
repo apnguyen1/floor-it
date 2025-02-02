@@ -2,7 +2,9 @@ import json
 import os
 
 
-def save_json_to_file(data: dict, filename: str, output_dir: str = "resources/outputs") -> str:
+def save_json_to_file(
+    data: dict, filename: str, output_dir: str = "resources/outputs"
+) -> str:
     """
     Saves a dictionary as a JSON file in the specified output directory.
 

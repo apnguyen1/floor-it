@@ -1,5 +1,4 @@
 from unittest.mock import patch
-import json
 
 import pytest
 from src.scripts.champions import ChampionsDTO, ChampionImageDTO, get_champions_data

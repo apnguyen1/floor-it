@@ -1,12 +1,12 @@
-# Frontend README
-
 ## Overview
 
-This is the frontend for Floor It! It is built using React and utilizes the Web Speech Recognition API for speech-to-text functionality. The frontend communicates with a backend server via REST APIs.
+This is the backend for Floor It! It is built with Python and will be used to primary process local file and occasional 
+API JSON  to create categories for our application!
 
-## Backend
 
-You can find our backend repo linked [here!](https://github.com/apnguyen1/floor-it)
+## Frontend
+
+You can find our frontend repo linked [here!](https://github.com/apnguyen1/react-floor-it)
 
 ## Table of Contents
 
@@ -22,8 +22,7 @@ You can find our backend repo linked [here!](https://github.com/apnguyen1/floor-
 
 Before you begin, ensure you have the following installed:
 
-- Node.js (v22.2.0 or higher)
-- npm (v8 or higher)
+- Python (v3.9 or higher)
 - Git
 
 ## Setup

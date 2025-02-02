@@ -5,8 +5,8 @@ from src.utils.outputter import save_json_to_file
 def output_champion_data():
     champions = get_champions_data()
 
-    save_json_to_file(champions, '(TEMP WILL DELETE) champions.json')
+    save_json_to_file(champions, "champions.json")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     output_champion_data()
