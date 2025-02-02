@@ -30,21 +30,23 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/react-floor-it.git
-   cd react-floor-it
+   git clone https://github.com/your-username/floor-it.git
+   cd floor-it
    ```
 
-2. Install dependencies:
+2. Activate venv environment
 
    ```bash
-   npm install
+   eval $(poetry env activate)
+   ```
+   ```powershell
+   Invoke-Expression (poetry env activate)
    ```
 
-3. Start the development server:
+3. installing dependencies:
    ```bash
-   npm run dev
+   poetry install
    ```
-   The application will be available at `http://localhost:5173`.
 
 ## Development
 
@@ -52,18 +54,16 @@ Before you begin, ensure you have the following installed:
 
 ```
 src/
-├── components/      # Reusable UI components
-├── hooks/           # Custom React hooks
-├── services/        # API and WebSocket services
-├── utils/           # Utility functions
-├── FloorIt.tsx      # Main application component
-└── main.tsx         # Entry point
+├── resources/      # static and output files
+├── scripts/        # Processing of data
+├── utils/          # Reusable utility functions
+└── main.py         # Entry point
 ```
 
 ### Run the Development Server
 
 ```bash
-npm run dev
+
 ```
 
 ## Testing

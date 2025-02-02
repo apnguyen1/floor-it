@@ -9,4 +9,5 @@ def output_champion_data():
 
 
 if __name__ == "__main__":
+    print("Fetching and outputting data.")
     output_champion_data()
