@@ -4,1361 +4,1361 @@
     "Aatrox": {
       "name": "Aatrox",
       "title": "the Darkin Blade",
-      "image":x {
-        "full": "Aatrox.png",
-        "sprite": "champion0.png"
+      "image": {
+        "image": "Aatrox.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Ahri": {
       "name": "Ahri",
       "title": "the Nine-Tailed Fox",
       "image": {
-        "full": "Ahri.png",
-        "sprite": "champion0.png"
+        "image": "Ahri.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Akali": {
       "name": "Akali",
       "title": "the Rogue Assassin",
       "image": {
-        "full": "Akali.png",
-        "sprite": "champion0.png"
+        "image": "Akali.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Akshan": {
       "name": "Akshan",
       "title": "the Rogue Sentinel",
       "image": {
-        "full": "Akshan.png",
-        "sprite": "champion0.png"
+        "image": "Akshan.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Alistar": {
       "name": "Alistar",
       "title": "the Minotaur",
       "image": {
-        "full": "Alistar.png",
-        "sprite": "champion0.png"
+        "image": "Alistar.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Ambessa": {
       "name": "Ambessa",
       "title": "Matriarch of War",
       "image": {
-        "full": "Ambessa.png",
-        "sprite": "champion0.png"
+        "image": "Ambessa.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Amumu": {
       "name": "Amumu",
       "title": "the Sad Mummy",
       "image": {
-        "full": "Amumu.png",
-        "sprite": "champion0.png"
+        "image": "Amumu.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Anivia": {
       "name": "Anivia",
       "title": "the Cryophoenix",
       "image": {
-        "full": "Anivia.png",
-        "sprite": "champion0.png"
+        "image": "Anivia.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Annie": {
       "name": "Annie",
       "title": "the Dark Child",
       "image": {
-        "full": "Annie.png",
-        "sprite": "champion0.png"
+        "image": "Annie.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Aphelios": {
       "name": "Aphelios",
       "title": "the Weapon of the Faithful",
       "image": {
-        "full": "Aphelios.png",
-        "sprite": "champion0.png"
+        "image": "Aphelios.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Ashe": {
       "name": "Ashe",
       "title": "the Frost Archer",
       "image": {
-        "full": "Ashe.png",
-        "sprite": "champion0.png"
+        "image": "Ashe.png",
+        "thumbnail": "champion0.png"
       }
     },
     "AurelionSol": {
-      "name": "AurelionSol",
+      "name": "Aurelion Sol",
       "title": "The Star Forger",
       "image": {
-        "full": "AurelionSol.png",
-        "sprite": "champion0.png"
+        "image": "AurelionSol.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Aurora": {
       "name": "Aurora",
       "title": "the Witch Between Worlds",
       "image": {
-        "full": "Aurora.png",
-        "sprite": "champion0.png"
+        "image": "Aurora.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Azir": {
       "name": "Azir",
       "title": "the Emperor of the Sands",
       "image": {
-        "full": "Azir.png",
-        "sprite": "champion0.png"
+        "image": "Azir.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Bard": {
       "name": "Bard",
       "title": "the Wandering Caretaker",
       "image": {
-        "full": "Bard.png",
-        "sprite": "champion0.png"
+        "image": "Bard.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Belveth": {
-      "name": "Belveth",
+      "name": "Bel'Veth",
       "title": "the Empress of the Void",
       "image": {
-        "full": "Belveth.png",
-        "sprite": "champion0.png"
+        "image": "Belveth.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Blitzcrank": {
       "name": "Blitzcrank",
       "title": "the Great Steam Golem",
       "image": {
-        "full": "Blitzcrank.png",
-        "sprite": "champion0.png"
+        "image": "Blitzcrank.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Brand": {
       "name": "Brand",
       "title": "the Burning Vengeance",
       "image": {
-        "full": "Brand.png",
-        "sprite": "champion0.png"
+        "image": "Brand.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Braum": {
       "name": "Braum",
       "title": "the Heart of the Freljord",
       "image": {
-        "full": "Braum.png",
-        "sprite": "champion0.png"
+        "image": "Braum.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Briar": {
       "name": "Briar",
       "title": "the Restrained Hunger",
       "image": {
-        "full": "Briar.png",
-        "sprite": "champion0.png"
+        "image": "Briar.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Caitlyn": {
       "name": "Caitlyn",
       "title": "the Sheriff of Piltover",
       "image": {
-        "full": "Caitlyn.png",
-        "sprite": "champion0.png"
+        "image": "Caitlyn.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Camille": {
       "name": "Camille",
       "title": "the Steel Shadow",
       "image": {
-        "full": "Camille.png",
-        "sprite": "champion0.png"
+        "image": "Camille.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Cassiopeia": {
       "name": "Cassiopeia",
       "title": "the Serpent's Embrace",
       "image": {
-        "full": "Cassiopeia.png",
-        "sprite": "champion0.png"
+        "image": "Cassiopeia.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Chogath": {
-      "name": "Chogath",
+      "name": "Cho'Gath",
       "title": "the Terror of the Void",
       "image": {
-        "full": "Chogath.png",
-        "sprite": "champion0.png"
+        "image": "Chogath.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Corki": {
       "name": "Corki",
       "title": "the Daring Bombardier",
       "image": {
-        "full": "Corki.png",
-        "sprite": "champion0.png"
+        "image": "Corki.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Darius": {
       "name": "Darius",
       "title": "the Hand of Noxus",
       "image": {
-        "full": "Darius.png",
-        "sprite": "champion0.png"
+        "image": "Darius.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Diana": {
       "name": "Diana",
       "title": "Scorn of the Moon",
       "image": {
-        "full": "Diana.png",
-        "sprite": "champion0.png"
+        "image": "Diana.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Draven": {
       "name": "Draven",
       "title": "the Glorious Executioner",
       "image": {
-        "full": "Draven.png",
-        "sprite": "champion0.png"
+        "image": "Draven.png",
+        "thumbnail": "champion0.png"
       }
     },
     "DrMundo": {
-      "name": "DrMundo",
+      "name": "Dr. Mundo",
       "title": "the Madman of Zaun",
       "image": {
-        "full": "DrMundo.png",
-        "sprite": "champion0.png"
+        "image": "DrMundo.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Ekko": {
       "name": "Ekko",
       "title": "the Boy Who Shattered Time",
       "image": {
-        "full": "Ekko.png",
-        "sprite": "champion0.png"
+        "image": "Ekko.png",
+        "thumbnail": "champion0.png"
       }
     },
     "Elise": {
       "name": "Elise",
       "title": "the Spider Queen",
       "image": {
-        "full": "Elise.png",
-        "sprite": "champion1.png"
+        "image": "Elise.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Evelynn": {
       "name": "Evelynn",
       "title": "Agony's Embrace",
       "image": {
-        "full": "Evelynn.png",
-        "sprite": "champion1.png"
+        "image": "Evelynn.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Ezreal": {
       "name": "Ezreal",
       "title": "the Prodigal Explorer",
       "image": {
-        "full": "Ezreal.png",
-        "sprite": "champion1.png"
+        "image": "Ezreal.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Fiddlesticks": {
       "name": "Fiddlesticks",
       "title": "the Ancient Fear",
       "image": {
-        "full": "Fiddlesticks.png",
-        "sprite": "champion1.png"
+        "image": "Fiddlesticks.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Fiora": {
       "name": "Fiora",
       "title": "the Grand Duelist",
       "image": {
-        "full": "Fiora.png",
-        "sprite": "champion1.png"
+        "image": "Fiora.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Fizz": {
       "name": "Fizz",
       "title": "the Tidal Trickster",
       "image": {
-        "full": "Fizz.png",
-        "sprite": "champion1.png"
+        "image": "Fizz.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Galio": {
       "name": "Galio",
       "title": "the Colossus",
       "image": {
-        "full": "Galio.png",
-        "sprite": "champion1.png"
+        "image": "Galio.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Gangplank": {
       "name": "Gangplank",
       "title": "the Saltwater Scourge",
       "image": {
-        "full": "Gangplank.png",
-        "sprite": "champion1.png"
+        "image": "Gangplank.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Garen": {
       "name": "Garen",
       "title": "The Might of Demacia",
       "image": {
-        "full": "Garen.png",
-        "sprite": "champion1.png"
+        "image": "Garen.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Gnar": {
       "name": "Gnar",
       "title": "the Missing Link",
       "image": {
-        "full": "Gnar.png",
-        "sprite": "champion1.png"
+        "image": "Gnar.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Gragas": {
       "name": "Gragas",
       "title": "the Rabble Rouser",
       "image": {
-        "full": "Gragas.png",
-        "sprite": "champion1.png"
+        "image": "Gragas.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Graves": {
       "name": "Graves",
       "title": "the Outlaw",
       "image": {
-        "full": "Graves.png",
-        "sprite": "champion1.png"
+        "image": "Graves.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Gwen": {
       "name": "Gwen",
       "title": "The Hallowed Seamstress",
       "image": {
-        "full": "Gwen.png",
-        "sprite": "champion1.png"
+        "image": "Gwen.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Hecarim": {
       "name": "Hecarim",
       "title": "the Shadow of War",
       "image": {
-        "full": "Hecarim.png",
-        "sprite": "champion1.png"
+        "image": "Hecarim.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Heimerdinger": {
       "name": "Heimerdinger",
       "title": "the Revered Inventor",
       "image": {
-        "full": "Heimerdinger.png",
-        "sprite": "champion1.png"
+        "image": "Heimerdinger.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Hwei": {
       "name": "Hwei",
       "title": "the Visionary",
       "image": {
-        "full": "Hwei.png",
-        "sprite": "champion1.png"
+        "image": "Hwei.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Illaoi": {
       "name": "Illaoi",
       "title": "the Kraken Priestess",
       "image": {
-        "full": "Illaoi.png",
-        "sprite": "champion1.png"
+        "image": "Illaoi.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Irelia": {
       "name": "Irelia",
       "title": "the Blade Dancer",
       "image": {
-        "full": "Irelia.png",
-        "sprite": "champion1.png"
+        "image": "Irelia.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Ivern": {
       "name": "Ivern",
       "title": "the Green Father",
       "image": {
-        "full": "Ivern.png",
-        "sprite": "champion1.png"
+        "image": "Ivern.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Janna": {
       "name": "Janna",
       "title": "the Storm's Fury",
       "image": {
-        "full": "Janna.png",
-        "sprite": "champion1.png"
+        "image": "Janna.png",
+        "thumbnail": "champion1.png"
       }
     },
     "JarvanIV": {
-      "name": "JarvanIV",
+      "name": "Jarvan IV",
       "title": "the Exemplar of Demacia",
       "image": {
-        "full": "JarvanIV.png",
-        "sprite": "champion1.png"
+        "image": "JarvanIV.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Jax": {
       "name": "Jax",
       "title": "Grandmaster at Arms",
       "image": {
-        "full": "Jax.png",
-        "sprite": "champion1.png"
+        "image": "Jax.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Jayce": {
       "name": "Jayce",
       "title": "the Defender of Tomorrow",
       "image": {
-        "full": "Jayce.png",
-        "sprite": "champion1.png"
+        "image": "Jayce.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Jhin": {
       "name": "Jhin",
       "title": "the Virtuoso",
       "image": {
-        "full": "Jhin.png",
-        "sprite": "champion1.png"
+        "image": "Jhin.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Jinx": {
       "name": "Jinx",
       "title": "the Loose Cannon",
       "image": {
-        "full": "Jinx.png",
-        "sprite": "champion1.png"
+        "image": "Jinx.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Kaisa": {
-      "name": "Kaisa",
+      "name": "Kai'Sa",
       "title": "Daughter of the Void",
       "image": {
-        "full": "Kaisa.png",
-        "sprite": "champion1.png"
+        "image": "Kaisa.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Kalista": {
       "name": "Kalista",
       "title": "the Spear of Vengeance",
       "image": {
-        "full": "Kalista.png",
-        "sprite": "champion1.png"
+        "image": "Kalista.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Karma": {
       "name": "Karma",
       "title": "the Enlightened One",
       "image": {
-        "full": "Karma.png",
-        "sprite": "champion1.png"
+        "image": "Karma.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Karthus": {
       "name": "Karthus",
       "title": "the Deathsinger",
       "image": {
-        "full": "Karthus.png",
-        "sprite": "champion1.png"
+        "image": "Karthus.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Kassadin": {
       "name": "Kassadin",
       "title": "the Void Walker",
       "image": {
-        "full": "Kassadin.png",
-        "sprite": "champion1.png"
+        "image": "Kassadin.png",
+        "thumbnail": "champion1.png"
       }
     },
     "Katarina": {
       "name": "Katarina",
       "title": "the Sinister Blade",
       "image": {
-        "full": "Katarina.png",
-        "sprite": "champion2.png"
+        "image": "Katarina.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Kayle": {
       "name": "Kayle",
       "title": "the Righteous",
       "image": {
-        "full": "Kayle.png",
-        "sprite": "champion2.png"
+        "image": "Kayle.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Kayn": {
       "name": "Kayn",
       "title": "the Shadow Reaper",
       "image": {
-        "full": "Kayn.png",
-        "sprite": "champion2.png"
+        "image": "Kayn.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Kennen": {
       "name": "Kennen",
       "title": "the Heart of the Tempest",
       "image": {
-        "full": "Kennen.png",
-        "sprite": "champion2.png"
+        "image": "Kennen.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Khazix": {
-      "name": "Khazix",
+      "name": "Kha'Zix",
       "title": "the Voidreaver",
       "image": {
-        "full": "Khazix.png",
-        "sprite": "champion2.png"
+        "image": "Khazix.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Kindred": {
       "name": "Kindred",
       "title": "The Eternal Hunters",
       "image": {
-        "full": "Kindred.png",
-        "sprite": "champion2.png"
+        "image": "Kindred.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Kled": {
       "name": "Kled",
       "title": "the Cantankerous Cavalier",
       "image": {
-        "full": "Kled.png",
-        "sprite": "champion2.png"
+        "image": "Kled.png",
+        "thumbnail": "champion2.png"
       }
     },
     "KogMaw": {
-      "name": "KogMaw",
+      "name": "Kog'Maw",
       "title": "the Mouth of the Abyss",
       "image": {
-        "full": "KogMaw.png",
-        "sprite": "champion2.png"
+        "image": "KogMaw.png",
+        "thumbnail": "champion2.png"
       }
     },
     "KSante": {
-      "name": "KSante",
+      "name": "K'Sante",
       "title": "the Pride of Nazumah",
       "image": {
-        "full": "KSante.png",
-        "sprite": "champion2.png"
+        "image": "KSante.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Leblanc": {
-      "name": "Leblanc",
+      "name": "LeBlanc",
       "title": "the Deceiver",
       "image": {
-        "full": "Leblanc.png",
-        "sprite": "champion2.png"
+        "image": "Leblanc.png",
+        "thumbnail": "champion2.png"
       }
     },
     "LeeSin": {
-      "name": "LeeSin",
+      "name": "Lee Sin",
       "title": "the Blind Monk",
       "image": {
-        "full": "LeeSin.png",
-        "sprite": "champion2.png"
+        "image": "LeeSin.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Leona": {
       "name": "Leona",
       "title": "the Radiant Dawn",
       "image": {
-        "full": "Leona.png",
-        "sprite": "champion2.png"
+        "image": "Leona.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Lillia": {
       "name": "Lillia",
       "title": "the Bashful Bloom",
       "image": {
-        "full": "Lillia.png",
-        "sprite": "champion2.png"
+        "image": "Lillia.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Lissandra": {
       "name": "Lissandra",
       "title": "the Ice Witch",
       "image": {
-        "full": "Lissandra.png",
-        "sprite": "champion2.png"
+        "image": "Lissandra.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Lucian": {
       "name": "Lucian",
       "title": "the Purifier",
       "image": {
-        "full": "Lucian.png",
-        "sprite": "champion2.png"
+        "image": "Lucian.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Lulu": {
       "name": "Lulu",
       "title": "the Fae Sorceress",
       "image": {
-        "full": "Lulu.png",
-        "sprite": "champion2.png"
+        "image": "Lulu.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Lux": {
       "name": "Lux",
       "title": "the Lady of Luminosity",
       "image": {
-        "full": "Lux.png",
-        "sprite": "champion2.png"
+        "image": "Lux.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Malphite": {
       "name": "Malphite",
       "title": "Shard of the Monolith",
       "image": {
-        "full": "Malphite.png",
-        "sprite": "champion2.png"
+        "image": "Malphite.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Malzahar": {
       "name": "Malzahar",
       "title": "the Prophet of the Void",
       "image": {
-        "full": "Malzahar.png",
-        "sprite": "champion2.png"
+        "image": "Malzahar.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Maokai": {
       "name": "Maokai",
       "title": "the Twisted Treant",
       "image": {
-        "full": "Maokai.png",
-        "sprite": "champion2.png"
+        "image": "Maokai.png",
+        "thumbnail": "champion2.png"
       }
     },
     "MasterYi": {
-      "name": "MasterYi",
+      "name": "Master Yi",
       "title": "the Wuju Bladesman",
       "image": {
-        "full": "MasterYi.png",
-        "sprite": "champion2.png"
+        "image": "MasterYi.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Mel": {
       "name": "Mel",
       "title": "the Soul's Reflection",
       "image": {
-        "full": "Mel.png",
-        "sprite": "champion2.png"
+        "image": "Mel.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Milio": {
       "name": "Milio",
       "title": "The Gentle Flame",
       "image": {
-        "full": "Milio.png",
-        "sprite": "champion2.png"
+        "image": "Milio.png",
+        "thumbnail": "champion2.png"
       }
     },
     "MissFortune": {
-      "name": "MissFortune",
+      "name": "Miss Fortune",
       "title": "the Bounty Hunter",
       "image": {
-        "full": "MissFortune.png",
-        "sprite": "champion2.png"
+        "image": "MissFortune.png",
+        "thumbnail": "champion2.png"
       }
     },
     "MonkeyKing": {
-      "name": "MonkeyKing",
+      "name": "Wukong",
       "title": "the Monkey King",
       "image": {
-        "full": "MonkeyKing.png",
-        "sprite": "champion2.png"
+        "image": "MonkeyKing.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Mordekaiser": {
       "name": "Mordekaiser",
       "title": "the Iron Revenant",
       "image": {
-        "full": "Mordekaiser.png",
-        "sprite": "champion2.png"
+        "image": "Mordekaiser.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Morgana": {
       "name": "Morgana",
       "title": "the Fallen",
       "image": {
-        "full": "Morgana.png",
-        "sprite": "champion2.png"
+        "image": "Morgana.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Naafiri": {
       "name": "Naafiri",
       "title": "the Hound of a Hundred Bites",
       "image": {
-        "full": "Naafiri.png",
-        "sprite": "champion2.png"
+        "image": "Naafiri.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Nami": {
       "name": "Nami",
       "title": "the Tidecaller",
       "image": {
-        "full": "Nami.png",
-        "sprite": "champion2.png"
+        "image": "Nami.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Nasus": {
       "name": "Nasus",
       "title": "the Curator of the Sands",
       "image": {
-        "full": "Nasus.png",
-        "sprite": "champion2.png"
+        "image": "Nasus.png",
+        "thumbnail": "champion2.png"
       }
     },
     "Nautilus": {
       "name": "Nautilus",
       "title": "the Titan of the Depths",
       "image": {
-        "full": "Nautilus.png",
-        "sprite": "champion3.png"
+        "image": "Nautilus.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Neeko": {
       "name": "Neeko",
       "title": "the Curious Chameleon",
       "image": {
-        "full": "Neeko.png",
-        "sprite": "champion3.png"
+        "image": "Neeko.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Nidalee": {
       "name": "Nidalee",
       "title": "the Bestial Huntress",
       "image": {
-        "full": "Nidalee.png",
-        "sprite": "champion3.png"
+        "image": "Nidalee.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Nilah": {
       "name": "Nilah",
       "title": "the Joy Unbound",
       "image": {
-        "full": "Nilah.png",
-        "sprite": "champion3.png"
+        "image": "Nilah.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Nocturne": {
       "name": "Nocturne",
       "title": "the Eternal Nightmare",
       "image": {
-        "full": "Nocturne.png",
-        "sprite": "champion3.png"
+        "image": "Nocturne.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Nunu": {
-      "name": "Nunu",
+      "name": "Nunu & Willump",
       "title": "the Boy and His Yeti",
       "image": {
-        "full": "Nunu.png",
-        "sprite": "champion3.png"
+        "image": "Nunu.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Olaf": {
       "name": "Olaf",
       "title": "the Berserker",
       "image": {
-        "full": "Olaf.png",
-        "sprite": "champion3.png"
+        "image": "Olaf.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Orianna": {
       "name": "Orianna",
       "title": "the Lady of Clockwork",
       "image": {
-        "full": "Orianna.png",
-        "sprite": "champion3.png"
+        "image": "Orianna.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Ornn": {
       "name": "Ornn",
       "title": "The Fire below the Mountain",
       "image": {
-        "full": "Ornn.png",
-        "sprite": "champion3.png"
+        "image": "Ornn.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Pantheon": {
       "name": "Pantheon",
       "title": "the Unbreakable Spear",
       "image": {
-        "full": "Pantheon.png",
-        "sprite": "champion3.png"
+        "image": "Pantheon.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Poppy": {
       "name": "Poppy",
       "title": "Keeper of the Hammer",
       "image": {
-        "full": "Poppy.png",
-        "sprite": "champion3.png"
+        "image": "Poppy.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Pyke": {
       "name": "Pyke",
       "title": "the Bloodharbor Ripper",
       "image": {
-        "full": "Pyke.png",
-        "sprite": "champion3.png"
+        "image": "Pyke.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Qiyana": {
       "name": "Qiyana",
       "title": "Empress of the Elements",
       "image": {
-        "full": "Qiyana.png",
-        "sprite": "champion3.png"
+        "image": "Qiyana.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Quinn": {
       "name": "Quinn",
       "title": "Demacia's Wings",
       "image": {
-        "full": "Quinn.png",
-        "sprite": "champion3.png"
+        "image": "Quinn.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Rakan": {
       "name": "Rakan",
       "title": "The Charmer",
       "image": {
-        "full": "Rakan.png",
-        "sprite": "champion3.png"
+        "image": "Rakan.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Rammus": {
       "name": "Rammus",
       "title": "the Armordillo",
       "image": {
-        "full": "Rammus.png",
-        "sprite": "champion3.png"
+        "image": "Rammus.png",
+        "thumbnail": "champion3.png"
       }
     },
     "RekSai": {
-      "name": "RekSai",
+      "name": "Rek'Sai",
       "title": "the Void Burrower",
       "image": {
-        "full": "RekSai.png",
-        "sprite": "champion3.png"
+        "image": "RekSai.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Rell": {
       "name": "Rell",
       "title": "the Iron Maiden",
       "image": {
-        "full": "Rell.png",
-        "sprite": "champion3.png"
+        "image": "Rell.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Renata": {
-      "name": "Renata",
+      "name": "Renata Glasc",
       "title": "the Chem-Baroness",
       "image": {
-        "full": "Renata.png",
-        "sprite": "champion3.png"
+        "image": "Renata.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Renekton": {
       "name": "Renekton",
       "title": "the Butcher of the Sands",
       "image": {
-        "full": "Renekton.png",
-        "sprite": "champion3.png"
+        "image": "Renekton.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Rengar": {
       "name": "Rengar",
       "title": "the Pridestalker",
       "image": {
-        "full": "Rengar.png",
-        "sprite": "champion3.png"
+        "image": "Rengar.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Riven": {
       "name": "Riven",
       "title": "the Exile",
       "image": {
-        "full": "Riven.png",
-        "sprite": "champion3.png"
+        "image": "Riven.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Rumble": {
       "name": "Rumble",
       "title": "the Mechanized Menace",
       "image": {
-        "full": "Rumble.png",
-        "sprite": "champion3.png"
+        "image": "Rumble.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Ryze": {
       "name": "Ryze",
       "title": "the Rune Mage",
       "image": {
-        "full": "Ryze.png",
-        "sprite": "champion3.png"
+        "image": "Ryze.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Samira": {
       "name": "Samira",
       "title": "the Desert Rose",
       "image": {
-        "full": "Samira.png",
-        "sprite": "champion3.png"
+        "image": "Samira.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Sejuani": {
       "name": "Sejuani",
       "title": "Fury of the North",
       "image": {
-        "full": "Sejuani.png",
-        "sprite": "champion3.png"
+        "image": "Sejuani.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Senna": {
       "name": "Senna",
       "title": "the Redeemer",
       "image": {
-        "full": "Senna.png",
-        "sprite": "champion3.png"
+        "image": "Senna.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Seraphine": {
       "name": "Seraphine",
       "title": "the Starry-Eyed Songstress",
       "image": {
-        "full": "Seraphine.png",
-        "sprite": "champion3.png"
+        "image": "Seraphine.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Sett": {
       "name": "Sett",
       "title": "the Boss",
       "image": {
-        "full": "Sett.png",
-        "sprite": "champion3.png"
+        "image": "Sett.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Shaco": {
       "name": "Shaco",
       "title": "the Demon Jester",
       "image": {
-        "full": "Shaco.png",
-        "sprite": "champion3.png"
+        "image": "Shaco.png",
+        "thumbnail": "champion3.png"
       }
     },
     "Shen": {
       "name": "Shen",
       "title": "the Eye of Twilight",
       "image": {
-        "full": "Shen.png",
-        "sprite": "champion4.png"
+        "image": "Shen.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Shyvana": {
       "name": "Shyvana",
       "title": "the Half-Dragon",
       "image": {
-        "full": "Shyvana.png",
-        "sprite": "champion4.png"
+        "image": "Shyvana.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Singed": {
       "name": "Singed",
       "title": "the Mad Chemist",
       "image": {
-        "full": "Singed.png",
-        "sprite": "champion4.png"
+        "image": "Singed.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Sion": {
       "name": "Sion",
       "title": "The Undead Juggernaut",
       "image": {
-        "full": "Sion.png",
-        "sprite": "champion4.png"
+        "image": "Sion.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Sivir": {
       "name": "Sivir",
       "title": "the Battle Mistress",
       "image": {
-        "full": "Sivir.png",
-        "sprite": "champion4.png"
+        "image": "Sivir.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Skarner": {
       "name": "Skarner",
       "title": "the Primordial Sovereign",
       "image": {
-        "full": "Skarner.png",
-        "sprite": "champion4.png"
+        "image": "Skarner.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Smolder": {
       "name": "Smolder",
       "title": "the Fiery Fledgling",
       "image": {
-        "full": "Smolder.png",
-        "sprite": "champion4.png"
+        "image": "Smolder.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Sona": {
       "name": "Sona",
       "title": "Maven of the Strings",
       "image": {
-        "full": "Sona.png",
-        "sprite": "champion4.png"
+        "image": "Sona.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Soraka": {
       "name": "Soraka",
       "title": "the Starchild",
       "image": {
-        "full": "Soraka.png",
-        "sprite": "champion4.png"
+        "image": "Soraka.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Swain": {
       "name": "Swain",
       "title": "the Noxian Grand General",
       "image": {
-        "full": "Swain.png",
-        "sprite": "champion4.png"
+        "image": "Swain.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Sylas": {
       "name": "Sylas",
       "title": "the Unshackled",
       "image": {
-        "full": "Sylas.png",
-        "sprite": "champion4.png"
+        "image": "Sylas.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Syndra": {
       "name": "Syndra",
       "title": "the Dark Sovereign",
       "image": {
-        "full": "Syndra.png",
-        "sprite": "champion4.png"
+        "image": "Syndra.png",
+        "thumbnail": "champion4.png"
       }
     },
     "TahmKench": {
-      "name": "TahmKench",
+      "name": "Tahm Kench",
       "title": "The River King",
       "image": {
-        "full": "TahmKench.png",
-        "sprite": "champion4.png"
+        "image": "TahmKench.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Taliyah": {
       "name": "Taliyah",
       "title": "the Stoneweaver",
       "image": {
-        "full": "Taliyah.png",
-        "sprite": "champion4.png"
+        "image": "Taliyah.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Talon": {
       "name": "Talon",
       "title": "the Blade's Shadow",
       "image": {
-        "full": "Talon.png",
-        "sprite": "champion4.png"
+        "image": "Talon.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Taric": {
       "name": "Taric",
       "title": "the Shield of Valoran",
       "image": {
-        "full": "Taric.png",
-        "sprite": "champion4.png"
+        "image": "Taric.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Teemo": {
       "name": "Teemo",
       "title": "the Swift Scout",
       "image": {
-        "full": "Teemo.png",
-        "sprite": "champion4.png"
+        "image": "Teemo.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Thresh": {
       "name": "Thresh",
       "title": "the Chain Warden",
       "image": {
-        "full": "Thresh.png",
-        "sprite": "champion4.png"
+        "image": "Thresh.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Tristana": {
       "name": "Tristana",
       "title": "the Yordle Gunner",
       "image": {
-        "full": "Tristana.png",
-        "sprite": "champion4.png"
+        "image": "Tristana.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Trundle": {
       "name": "Trundle",
       "title": "the Troll King",
       "image": {
-        "full": "Trundle.png",
-        "sprite": "champion4.png"
+        "image": "Trundle.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Tryndamere": {
       "name": "Tryndamere",
       "title": "the Barbarian King",
       "image": {
-        "full": "Tryndamere.png",
-        "sprite": "champion4.png"
+        "image": "Tryndamere.png",
+        "thumbnail": "champion4.png"
       }
     },
     "TwistedFate": {
-      "name": "TwistedFate",
+      "name": "Twisted Fate",
       "title": "the Card Master",
       "image": {
-        "full": "TwistedFate.png",
-        "sprite": "champion4.png"
+        "image": "TwistedFate.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Twitch": {
       "name": "Twitch",
       "title": "the Plague Rat",
       "image": {
-        "full": "Twitch.png",
-        "sprite": "champion4.png"
+        "image": "Twitch.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Udyr": {
       "name": "Udyr",
       "title": "the Spirit Walker",
       "image": {
-        "full": "Udyr.png",
-        "sprite": "champion4.png"
+        "image": "Udyr.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Urgot": {
       "name": "Urgot",
       "title": "the Dreadnought",
       "image": {
-        "full": "Urgot.png",
-        "sprite": "champion4.png"
+        "image": "Urgot.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Varus": {
       "name": "Varus",
       "title": "the Arrow of Retribution",
       "image": {
-        "full": "Varus.png",
-        "sprite": "champion4.png"
+        "image": "Varus.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Vayne": {
       "name": "Vayne",
       "title": "the Night Hunter",
       "image": {
-        "full": "Vayne.png",
-        "sprite": "champion4.png"
+        "image": "Vayne.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Veigar": {
       "name": "Veigar",
       "title": "the Tiny Master of Evil",
       "image": {
-        "full": "Veigar.png",
-        "sprite": "champion4.png"
+        "image": "Veigar.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Velkoz": {
-      "name": "Velkoz",
+      "name": "Vel'Koz",
       "title": "the Eye of the Void",
       "image": {
-        "full": "Velkoz.png",
-        "sprite": "champion4.png"
+        "image": "Velkoz.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Vex": {
       "name": "Vex",
       "title": "the Gloomist",
       "image": {
-        "full": "Vex.png",
-        "sprite": "champion4.png"
+        "image": "Vex.png",
+        "thumbnail": "champion4.png"
       }
     },
     "Vi": {
       "name": "Vi",
       "title": "the Piltover Enforcer",
       "image": {
-        "full": "Vi.png",
-        "sprite": "champion5.png"
+        "image": "Vi.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Viego": {
       "name": "Viego",
       "title": "The Ruined King",
       "image": {
-        "full": "Viego.png",
-        "sprite": "champion5.png"
+        "image": "Viego.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Viktor": {
       "name": "Viktor",
       "title": "the Herald of the Arcane",
       "image": {
-        "full": "Viktor.png",
-        "sprite": "champion5.png"
+        "image": "Viktor.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Vladimir": {
       "name": "Vladimir",
       "title": "the Crimson Reaper",
       "image": {
-        "full": "Vladimir.png",
-        "sprite": "champion5.png"
+        "image": "Vladimir.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Volibear": {
       "name": "Volibear",
       "title": "the Relentless Storm",
       "image": {
-        "full": "Volibear.png",
-        "sprite": "champion5.png"
+        "image": "Volibear.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Warwick": {
       "name": "Warwick",
       "title": "the Uncaged Wrath of Zaun",
       "image": {
-        "full": "Warwick.png",
-        "sprite": "champion5.png"
+        "image": "Warwick.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Xayah": {
       "name": "Xayah",
       "title": "the Rebel",
       "image": {
-        "full": "Xayah.png",
-        "sprite": "champion5.png"
+        "image": "Xayah.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Xerath": {
       "name": "Xerath",
       "title": "the Magus Ascendant",
       "image": {
-        "full": "Xerath.png",
-        "sprite": "champion5.png"
+        "image": "Xerath.png",
+        "thumbnail": "champion5.png"
       }
     },
     "XinZhao": {
-      "name": "XinZhao",
+      "name": "Xin Zhao",
       "title": "the Seneschal of Demacia",
       "image": {
-        "full": "XinZhao.png",
-        "sprite": "champion5.png"
+        "image": "XinZhao.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Yasuo": {
       "name": "Yasuo",
       "title": "the Unforgiven",
       "image": {
-        "full": "Yasuo.png",
-        "sprite": "champion5.png"
+        "image": "Yasuo.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Yone": {
       "name": "Yone",
       "title": "the Unforgotten",
       "image": {
-        "full": "Yone.png",
-        "sprite": "champion5.png"
+        "image": "Yone.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Yorick": {
       "name": "Yorick",
       "title": "Shepherd of Souls",
       "image": {
-        "full": "Yorick.png",
-        "sprite": "champion5.png"
+        "image": "Yorick.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Yuumi": {
       "name": "Yuumi",
       "title": "the Magical Cat",
       "image": {
-        "full": "Yuumi.png",
-        "sprite": "champion5.png"
+        "image": "Yuumi.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Zac": {
       "name": "Zac",
       "title": "the Secret Weapon",
       "image": {
-        "full": "Zac.png",
-        "sprite": "champion5.png"
+        "image": "Zac.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Zed": {
       "name": "Zed",
       "title": "the Master of Shadows",
       "image": {
-        "full": "Zed.png",
-        "sprite": "champion5.png"
+        "image": "Zed.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Zeri": {
       "name": "Zeri",
       "title": "The Spark of Zaun",
       "image": {
-        "full": "Zeri.png",
-        "sprite": "champion5.png"
+        "image": "Zeri.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Ziggs": {
       "name": "Ziggs",
       "title": "the Hexplosives Expert",
       "image": {
-        "full": "Ziggs.png",
-        "sprite": "champion5.png"
+        "image": "Ziggs.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Zilean": {
       "name": "Zilean",
       "title": "the Chronokeeper",
       "image": {
-        "full": "Zilean.png",
-        "sprite": "champion5.png"
+        "image": "Zilean.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Zoe": {
       "name": "Zoe",
       "title": "the Aspect of Twilight",
       "image": {
-        "full": "Zoe.png",
-        "sprite": "champion5.png"
+        "image": "Zoe.png",
+        "thumbnail": "champion5.png"
       }
     },
     "Zyra": {
       "name": "Zyra",
       "title": "Rise of the Thorns",
       "image": {
-        "full": "Zyra.png",
-        "sprite": "champion5.png"
+        "image": "Zyra.png",
+        "thumbnail": "champion5.png"
       }
     }
   }

@@ -60,15 +60,15 @@ src/
 └── main.py         # Entry point
 ```
 
-### Run the Development Server
+### Run the data caching
 
 ```bash
-
+python -m src.main
 ```
 
 ## Testing
 
-This project uses Vitest for unit testing.
+This project uses pytest for unit testing.
 
 ### Run Tests
 
@@ -78,7 +78,7 @@ npm run test
 
 ## Code Formatting
 
-This project uses Prettier for code formatting.
+This project uses black for code formatting.
 
 ### Format Code
 
@@ -88,14 +88,13 @@ npm run format
 
 ## Pre-commit Hooks
 
-This project uses Husky to enforce pre-commit hooks.
+This project uses pre-commit hooks.
 
 ### Pre-commit Checks
 
-- Code is automatically formatted using Prettier
+- Code is automatically linted using flake8
 - Tests are run to ensure no regressions are introduced
 
-### Install Husky Hooks
 
 ```bash
 npm run prepare
