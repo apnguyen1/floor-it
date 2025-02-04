@@ -1,0 +1,20 @@
+[project]
+name = "python-overhaul-floor-it"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Andrew Nguyen",email = "andrewn1@cs.washington.edu"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "flake8 (>=7.1.1,<8.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "pytest (>=8.3.4,<9.0.0)",
+    "black (>=25.1.0,<26.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
