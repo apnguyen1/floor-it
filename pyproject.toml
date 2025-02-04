@@ -1,5 +1,8 @@
+[tool.poetry]
+package-mode = false
+
 [project]
-name = "python-overhaul-floor-it"
+name = "floor-it"
 version = "0.1.0"
 description = ""
 authors = [

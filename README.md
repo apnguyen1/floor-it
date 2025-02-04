@@ -73,7 +73,7 @@ This project uses pytest for unit testing.
 ### Run Tests
 
 ```bash
-npm run test
+npm run tests
 ```
 
 ## Code Formatting

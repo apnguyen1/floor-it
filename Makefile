@@ -1,6 +1,6 @@
 .PHONY: all test lint format clean
 
-all: test lint format
+all: test lint format clean
 
 test:
 		pytest
