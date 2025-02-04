@@ -3,7 +3,7 @@
 all: test lint format clean
 
 test:
-		pytest
+		python -m pytest
 
 lint:
 		flake8 .

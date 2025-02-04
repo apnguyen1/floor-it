@@ -15,4 +15,5 @@ def parse_file(filename):
         err_msg = f"File path: {file_path} does not exist"
         raise FileNotFoundError(err_msg)
     with open(file_path, "r") as file:
+        print(file)
         pass  # TODO

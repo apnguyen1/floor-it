@@ -1,5 +1,5 @@
 from abc import ABC
-from typing import Dict, Generic, Type, TypeVar
+from typing import Generic, Type, TypeVar
 
 from pydantic import BaseModel
 

@@ -1,13 +1,10 @@
 from typing import Dict
 
-from pydantic import Field
-
 from src.models.model import Model
 
 
 class ChampionImageDTO(Model):
     full: str
-    thumbnail: str = Field(alias="sprite")
 
 
 class ChampionDataDTO(Model):
