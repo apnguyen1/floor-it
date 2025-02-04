@@ -6,7 +6,7 @@ from src.models.model import Model
 
 
 class ChampionImageDTO(Model):
-    image: str = Field(alias="full")
+    full: str
     thumbnail: str = Field(alias="sprite")
 
 

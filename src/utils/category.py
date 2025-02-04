@@ -17,13 +17,13 @@ class Category(ABC, Generic[T]):
 
         self.source: str = source
         self.model: Type[T] = model
-        self.data: Dict = self._load_data()
+        self.data: T = self._load_data()
 
     def _load_data(self) -> T:
         """
         Maps API data or file data to the specified DTO
 
-        :return: The specified DTO
+        :return: An instance of the specified DTO
         """
         if self.source.startswith("http"):
             raw_data = fetch_url(self.source)
