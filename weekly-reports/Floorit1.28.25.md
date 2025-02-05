@@ -17,13 +17,12 @@ Discuss design and distribute tickets.
 - Learn Kotlin and figure out what all the files in backend are doing
 # Project Status (Andrew):
 ## Goals for the week:
-- Discuss and distribute tickets
+To finish design and create MVP
 ## Progress and issues:
-- Finished with a good design discussion about the direction of the game
+Finalized Front and Backend CI tools and design choices
 
 ## Goals for next week:
-- Finish with UI design and begin implementation
-
+To finish MVP
 # Project Status (Arman):
 ## Goals for the week:
 Come up with a Category and 40 questions
