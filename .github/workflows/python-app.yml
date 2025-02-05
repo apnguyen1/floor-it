@@ -30,7 +30,7 @@ jobs:
           poetry --version
 
       - name: Install Dependencies
-        run: poetry install --with dev  # Ensures dev dependencies (pytest) are installed
+        run: poetry install  # Ensures dev dependencies (pytest) are installed
 
       - name: Run Makefile Tasks
         run: |
