@@ -1,0 +1,57 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.venv/
+
+# PyCharm project settings
+.idea/
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Environment variables & secrets
+.env
+*.env
+
+# Logs & Debugging
+*.log
+logs/
+debug.log
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Testing / Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# MyPy cache
+.mypy_cache/
+
+# Pytest cache
+.pytest_cache/
+
+# SQLite database files
+*.sqlite3
+*.db
+
+# Docker
+*.dockerignore
+
+# VS Code settings (if you use VS Code too)
+.vscode/
