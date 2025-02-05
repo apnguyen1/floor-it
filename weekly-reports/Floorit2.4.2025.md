@@ -1,4 +1,4 @@
-# Project Status/Meeting Agenda:
+git # Project Status/Meeting Agenda:
 ## Goals for the week:
 - Build out the pages for frontend (Home screen/about, category select, main game screen)
 - Build the APIs in the backend for frontend to call (Retrieving a list of all categories, retrieving a associative array of images to words for a given category)
@@ -50,8 +50,9 @@ Complete two more categories and questions and working on setting up backend
 - Have a complete UI design to being implementing for front-end.
 # Project Status (Phuong):
 ## Goals for the week:
--N/A (first week)
+- Complete UI design for homepage and gameplay interface.
 ## Progress and issues:
-- Got tickets assigned
+- Finished homepage and gameplay interface.
+- Introduction to Figma and practice working with Material UI.
 # Goals for next week:
-- Finish creating home screen UI and implementing frontend
+- Complete UI design and begin implementing frontend.
