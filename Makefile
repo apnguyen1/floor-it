@@ -2,6 +2,8 @@
 
 all: test lint format clean
 
+ci: test lint format-check
+
 test:
 		python -m pytest
 
@@ -10,6 +12,9 @@ lint:
 
 format:
 		black .
+
+format-check:
+		black --check .
 
 clean:
 		rm -rf .pytest_cache
