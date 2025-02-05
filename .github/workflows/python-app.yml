@@ -1,4 +1,4 @@
-name: Python CI
+name: Python application
 
 on:
   push:
@@ -26,10 +26,13 @@ jobs:
         run: |
           curl -sSL https://install.python-poetry.org | python3 -
           echo "$HOME/.poetry/bin" >> $GITHUB_PATH
+          poetry config virtualenvs.in-project true  # Ensures venv is in project dir
           poetry --version
 
       - name: Install Dependencies
-        run: poetry install
+        run: poetry install --with dev  # Ensures dev dependencies (pytest) are installed
 
       - name: Run Makefile Tasks
-        run: make all
+        run: |
+          source .venv/bin/activate  # Explicitly activate virtual environment
+          make all
