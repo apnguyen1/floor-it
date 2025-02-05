@@ -1,0 +1,36 @@
+name: Floor-It Ci
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'  # Adjust as needed
+
+      - name: Install Poetry
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+
+      - name: Configure Poetry
+        run: |
+          echo "$HOME/.poetry/bin" >> $GITHUB_PATH
+          poetry config virtualenvs.in-project true
+          poetry --version
+
+      - name: Install Dependencies
+        run: poetry install
+
+      - name: Run Makefile Tasks
+        run: make all
