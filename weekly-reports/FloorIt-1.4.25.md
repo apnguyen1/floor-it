@@ -37,15 +37,15 @@
 
 ## Goals for the week:
 
-To finish design and create MVP
+[WRITE HERE]
 
 ## Progress and issues:
 
-Finalized Front and Backend CI tools and design choices
+[WRITE HERE]
 
 ## Goals for next week:
 
-To finish MVP
+[WRITE HERE]
 
 ---
 # Project Status (Arman): 
