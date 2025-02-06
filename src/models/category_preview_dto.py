@@ -38,7 +38,8 @@ class CategoryPreviewListDTO(Model):
             },
             {
                 "name": "LoL Champions"
-                "image": "https://static.wikia.nocookie.net/leagueoflegends/images/0/07/League_of_Legends_icon.png/revision/latest/scale-to-width-down/64?cb=20191018194326"
+                "image": "https://static.wikia.nocookie.net/leagueoflegends/images/0/07/
+                    League_of_Legends_icon.png/revision/latest/scale-to-width-down/64?cb=20191018194326"
                 "desc": "Guess the name of a League of Legends champion from the provided picture!"
             }
         ]

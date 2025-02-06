@@ -23,7 +23,8 @@ class TriviaQuestionDTO(Model):
 
     Example JSON output:
     {
-        question: "https://static.wikia.nocookie.net/leagueoflegends/images/3/33/Ahri_OriginalSkin.jpg/revision/latest?cb=20240906174647"
+        question: "https://static.wikia.nocookie.net/leagueoflegends/images/
+            3/33/Ahri_OriginalSkin.jpg/revision/latest?cb=20240906174647"
         answers: ["ahri", "the weird fox lady from league with way too many skins"]
         aliases: ["ari", "aw ree"]
     }
@@ -45,8 +46,10 @@ class CategoryDataDTO(Model):
     Represents a specific category with the category name, type, and a list of trivia questions
     Designed to be serialized into a JSON and served via CDN, through the endpoint /{CategoryDataDTO.name}
     name (str): The name of the trivia category
-    type (QuestionType): QuestionType.IMG (serializes to "img") if the questions are image urls, QuestionType.TEXT (serializes to "text") if the questions are straight text
-    questions (List[TriviaQuestion]): The list of trivia questions, all of which use either image urls or text, specified above
+    type (QuestionType): QuestionType.IMG (serializes to "img") if the questions are image urls,
+        QuestionType.TEXT (serializes to "text") if the questions are straight text
+    questions (List[TriviaQuestion]): The list of trivia questions,
+        all of which use either image urls or text, specified above
 
     Example JSON output:
     {
@@ -54,7 +57,8 @@ class CategoryDataDTO(Model):
         type: "img"
         questions: [
             {
-                question: "https://static.wikia.nocookie.net/leagueoflegends/images/3/33/Ahri_OriginalSkin.jpg/revision/latest?cb=20240906174647"
+                question: "https://static.wikia.nocookie.net/leagueoflegends/images/
+                    3/33/Ahri_OriginalSkin.jpg/revision/latest?cb=20240906174647"
                 answers: ["ahri", "the weird fox lady from league with way too many skins"]
                 aliases: ["ari", "aw ree"]
             }
