@@ -4,7 +4,7 @@
       "Name": "Champion",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Champion.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Champion.png",
-      "Utterances": [
+      "Answers": [
         "Champion",
         "Champyon",
         "Champion Sport",
@@ -15,7 +15,7 @@
       "Name": "Sony",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Sony.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Sony.png",
-      "Utterances": [
+      "Answers": [
         "Sony",
         "Sony Entertainment",
         "Sony Ericsson",
@@ -28,7 +28,7 @@
       "Name": "Bitcoin",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Bitcoin.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Bitcoin.png",
-      "Utterances": [
+      "Answers": [
         "Bitcoin",
         "BTC",
         "Bitcoin Mining",
@@ -44,7 +44,7 @@
       "Name": "ASOS",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Asos.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Asos.png",
-      "Utterances": [
+      "Answers": [
         "ASOS",
         "Ay Sos",
         "Asos dot Com",
@@ -57,7 +57,7 @@
       "Name": "Soundcloud",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Soundcloud.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Soundcloud.png",
-      "Utterances": [
+      "Answers": [
         "Soundcloud",
         "Soundcloud Go",
         "Soundcloud Streaming",
@@ -70,7 +70,7 @@
       "Name": "Ebay",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Ebay.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Ebay.png",
-      "Utterances": [
+      "Answers": [
         "Ebay",
         "E Bay",
         "Ee Bay",
@@ -82,7 +82,7 @@
       "Name": "Anker",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Anker.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Anker.png",
-      "Utterances": [
+      "Answers": [
         "Anker",
         "Anchor",
         "An Kar",
@@ -93,7 +93,7 @@
       "Name": "Playstation",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Playstation.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Playstation.png",
-      "Utterances": [
+      "Answers": [
         "Playstation",
         "Play Station",
         "PlayStation Console",
@@ -108,7 +108,7 @@
       "Name": "Xbox",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Xbox.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Xbox.png",
-      "Utterances": [
+      "Answers": [
         "Xbox",
         "Xbox 360",
         "Xbox One",
@@ -123,7 +123,7 @@
       "Name": "Kappa",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Kappa.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Kappa.png",
-      "Utterances": [
+      "Answers": [
         "Kappa",
         "Kappa Clothing",
         "Kappa Brand",
@@ -136,7 +136,7 @@
       "Name": "Sonos",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Sonos.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Sonos.png",
-      "Utterances": [
+      "Answers": [
         "Sonos",
         "Sonos Speaker",
         "Sonos Speakers",
@@ -149,7 +149,7 @@
       "Name": "Wikipedia",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Wikipedia.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Wikipedia.png",
-      "Utterances": [
+      "Answers": [
         "Wikipedia",
         "Wick Ay Pedi Ay",
         "Wika Pedia",
@@ -161,7 +161,7 @@
       "Name": "Philips",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Philips.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Philips.png",
-      "Utterances": [
+      "Answers": [
         "Philips",
         "Phillips",
         "Philip",
@@ -173,7 +173,7 @@
       "Name": "Tannoy",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Tannoy.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Tannoy.png",
-      "Utterances": [
+      "Answers": [
         "Tannoy",
         "Tannoy Speakers",
         "Tannoy Audio",
@@ -186,7 +186,7 @@
       "Name": "MTV",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/MTV.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/MTV.png",
-      "Utterances": [
+      "Answers": [
         "MTV",
         "Music TV",
         "Music Television",
@@ -199,7 +199,7 @@
       "Name": "Liteon",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Liteon.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Liteon.png",
-      "Utterances": [
+      "Answers": [
         "Liteon",
         "Liteon Corporation",
         "Light On",
@@ -210,7 +210,7 @@
       "Name": "Dodge",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Dodge.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Dodge.png",
-      "Utterances": [
+      "Answers": [
         "Dodge",
         "Dodge Challenger",
         "Dodge Viper",
@@ -222,7 +222,7 @@
       "Name": "Citroen",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Citroen.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Citroen.png",
-      "Utterances": [
+      "Answers": [
         "Citroen",
         "Sit Rowen",
         "Kit Rowen",
@@ -235,7 +235,7 @@
       "Name": "Ford",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Ford.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Ford.png",
-      "Utterances": [
+      "Answers": [
         "Ford",
         "Ford Cars",
         "Ford Auto",
@@ -246,7 +246,7 @@
       "Name": "Adidas",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Adidas.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Adidas.png",
-      "Utterances": [
+      "Answers": [
         "Adidas",
         "A Deed Ass",
         "Add Idas",
@@ -258,7 +258,7 @@
       "Name": "Bing",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Bing.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Bing.png",
-      "Utterances": [
+      "Answers": [
         "Bing",
         "Ping",
         "Bing Search"
@@ -268,7 +268,7 @@
       "Name": "Rio Tinto",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/RioTinto.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/RioTinto.png",
-      "Utterances": [
+      "Answers": [
         "Rio Tinto",
         "Rey O Tento",
         "Rio Tento",
@@ -281,7 +281,7 @@
       "Name": "Booking",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Booking.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Booking.png",
-      "Utterances": [
+      "Answers": [
         "Booking",
         "Booking dot Com",
         "Booking dot Yeah",
@@ -292,7 +292,7 @@
       "Name": "Twitch",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Twitch.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Twitch.png",
-      "Utterances": [
+      "Answers": [
         "Twitch",
         "Twitch dot TV",
         "Twitch dot Tee Vee"
@@ -302,7 +302,7 @@
       "Name": "Atari",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Atari.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Atari.png",
-      "Utterances": [
+      "Answers": [
         "Atari",
         "At Are E",
         "Atari Games",
@@ -313,7 +313,7 @@
       "Name": "Capcom",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Capcom.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Capcom.png",
-      "Utterances": [
+      "Answers": [
         "Capcom",
         "Cap Com",
         "Capcom Games"
@@ -323,7 +323,7 @@
       "Name": "Eizo",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Eizo.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Eizo.png",
-      "Utterances": [
+      "Answers": [
         "Eizo",
         "Eizo Corporation",
         "Eye Zo",
@@ -340,7 +340,7 @@
       "Name": "Crunchyroll",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Crunchyroll.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Crunchyroll.png",
-      "Utterances": [
+      "Answers": [
         "Crunchyroll",
         "Crunchy Roll",
         "Crunchyroll Anime",
@@ -353,7 +353,7 @@
       "Name": "Infiniti",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Infiniti.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Infiniti.png",
-      "Utterances": [
+      "Answers": [
         "Infiniti",
         "Infiniti Cars",
         "Infinity",
@@ -364,7 +364,7 @@
       "Name": "Tesla",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Tesla.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Tesla.png",
-      "Utterances": [
+      "Answers": [
         "Tesla",
         "Tesla Motors",
         "Testla"
@@ -374,7 +374,7 @@
       "Name": "Lexus",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Lexus.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Lexus.png",
-      "Utterances": [
+      "Answers": [
         "Lexus",
         "Lexus Motors",
         "Lecks Us",
@@ -385,7 +385,7 @@
       "Name": "Toyota",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Toyota.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Toyota.png",
-      "Utterances": [
+      "Answers": [
         "Toyota",
         "Toyota Motors",
         "Toy Yoda",
@@ -396,7 +396,7 @@
       "Name": "Costa",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Costa.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Costa.png",
-      "Utterances": [
+      "Answers": [
         "Costa",
         "Costa Coffee",
         "Coster",
@@ -409,7 +409,7 @@
       "Name": "Nandos",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Nandos.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Nandos.png",
-      "Utterances": [
+      "Answers": [
         "Nandos",
         "Nando",
         "Nandos Chicken",
@@ -422,7 +422,7 @@
       "Name": "McDonalds",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/McDoanlds.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/McDonalds.png",
-      "Utterances": [
+      "Answers": [
         "McDonalds",
         "McDonalds Corporation",
         "McDonalds Restaurant",
@@ -435,7 +435,7 @@
       "Name": "KFC",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/KFC.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/KFC.png",
-      "Utterances": [
+      "Answers": [
         "KFC",
         "KFC Restaurants",
         "KFC Chicken",
@@ -448,7 +448,7 @@
       "Name": "Coke",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Coke.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Coke.png",
-      "Utterances": [
+      "Answers": [
         "Coke",
         "Coca Cola",
         "Coke A Cola"
@@ -458,7 +458,7 @@
       "Name": "Patagonia",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Patagonia.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Patagonia.png",
-      "Utterances": [
+      "Answers": [
         "Patagonia",
         "Patagonia Clothing",
         "Patagonia Outdoor",
@@ -474,7 +474,7 @@
       "Name": "YSL",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/YSL.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/YSL.png",
-      "Utterances": [
+      "Answers": [
         "YSL",
         "Yves Saint Laurent",
         "Saint Laurent",
@@ -486,7 +486,7 @@
       "Name": "Lamborghini",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Lamborghini.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Lamborghini.png",
-      "Utterances": [
+      "Answers": [
         "Lamborghini",
         "Lambo",
         "Lamb Or Ghini",
@@ -497,7 +497,7 @@
       "Name": "Dominos",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Dominos.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Dominos.png",
-      "Utterances": [
+      "Answers": [
         "Dominos",
         "Domino",
         "Dominos Pizza",
@@ -508,7 +508,7 @@
       "Name": "Skullcandy",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Skullcandy.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Skullcandy.png",
-      "Utterances": [
+      "Answers": [
         "Skullcandy",
         "Skull Candy",
         "Skullcandy Headphones",
@@ -521,7 +521,7 @@
       "Name": "Monster",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Monster.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Monster.png",
-      "Utterances": [
+      "Answers": [
         "Monster",
         "Monster Energy",
         "Monster Energy Drink"
@@ -531,7 +531,7 @@
       "Name": "Monster Cable",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/MonsterCable.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/MonsterCable.png",
-      "Utterances": [
+      "Answers": [
         "Monster Cable",
         "Monster",
         "Monster Audio",
@@ -543,7 +543,7 @@
       "Name": "LG",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/LG.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/LG.png",
-      "Utterances": [
+      "Answers": [
         "LG",
         "LG Electronics",
         "El Gee",
@@ -556,7 +556,7 @@
       "Name": "Rayban",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Rayban.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Rayban.png",
-      "Utterances": [
+      "Answers": [
         "Rayban",
         "Ray Ban",
         "Rayban Sunglasses",
@@ -573,7 +573,7 @@
       "Name": "Nike",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Nike.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Nike.png",
-      "Utterances": [
+      "Answers": [
         "Nike",
         "Ni Key",
         "Nay Key",
@@ -589,7 +589,7 @@
       "Name": "John Deere",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/JohnDeere.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/JohnDeere.png",
-      "Utterances": [
+      "Answers": [
         "John Deere",
         "John Deere Tractors",
         "John Deer",
@@ -602,7 +602,7 @@
       "Name": "Pizza Hut",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/PizzaHut.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/PizzaHut.png",
-      "Utterances": [
+      "Answers": [
         "Pizza Hut",
         "Pizza the Hut",
         "Piece Of Hut"
@@ -612,7 +612,7 @@
       "Name": "B and M Bargains",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/BandMBargains.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/BandMBargains.png",
-      "Utterances": [
+      "Answers": [
         "B and M",
         "Bee and Em",
         "B and M Bargains",
@@ -625,7 +625,7 @@
       "Name": "Starbucks",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Starbucks.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Starbucks.png",
-      "Utterances": [
+      "Answers": [
         "Starbucks",
         "Star Bucks",
         "Starbooks",
@@ -639,7 +639,7 @@
       "Name": "Subway",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Subway.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Subway.png",
-      "Utterances": [
+      "Answers": [
         "Subway",
         "subway sandwiches",
         "sub way",
@@ -650,7 +650,7 @@
       "Name": "BMW",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/BMW.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/BMW.png",
-      "Utterances": [
+      "Answers": [
         "BMW",
         "b m w",
         "bee em double u",
@@ -663,7 +663,7 @@
       "Name": "Shell",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Shell.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Shell.png",
-      "Utterances": [
+      "Answers": [
         "Shell",
         "Royal Dutch Shell"
       ]
@@ -672,7 +672,7 @@
       "Name": "BP",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/BP.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/BP.png",
-      "Utterances": [
+      "Answers": [
         "BP",
         "Bee P",
         "B P",
@@ -684,7 +684,7 @@
       "Name": "Apple",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Apple.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Apple.png",
-      "Utterances": [
+      "Answers": [
         "Apple",
         "Apple inc",
         "Apple Computers"
@@ -694,7 +694,7 @@
       "Name": "Peugeot",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Peugeot.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Peugeot.png",
-      "Utterances": [
+      "Answers": [
         "Peugeot",
         "pur jo",
         "pew got"
@@ -704,7 +704,7 @@
       "Name": "Honda",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Honda.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Honda.png",
-      "Utterances": [
+      "Answers": [
         "Honda",
         "Hon Da",
         "Hon Dar"
@@ -714,7 +714,7 @@
       "Name": "Volkswagen",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Volkswagen.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Volkswagen.png",
-      "Utterances": [
+      "Answers": [
         "Volkswagen",
         "volks wagon",
         "folks wagon",
@@ -728,7 +728,7 @@
       "Name": "Huawei",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Huawei.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Huawei.png",
-      "Utterances": [
+      "Answers": [
         "Huawei",
         "Ha Wei",
         "Hu Wa Wei",
@@ -745,7 +745,7 @@
       "Name": "Samsung",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Samsung.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Samsung.png",
-      "Utterances": [
+      "Answers": [
         "Samsung",
         "Samsang",
         "Samsun",
@@ -756,7 +756,7 @@
       "Name": "Louis Vuitton",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/LouisVuitton.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/LouisVuitton.png",
-      "Utterances": [
+      "Answers": [
         "Louis Vuitton",
         "Luis Vuitton",
         "Luis Vitton",
@@ -769,7 +769,7 @@
       "Name": "Gucci",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Gucci.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Gucci.png",
-      "Utterances": [
+      "Answers": [
         "Gucci",
         "Goochi",
         "Gu Chi",
@@ -782,7 +782,7 @@
       "Name": "Givenchy",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Givenchy.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Givenchy.png",
-      "Utterances": [
+      "Answers": [
         "Givenchy",
         "Givenchi",
         "Jivenchi",
@@ -798,7 +798,7 @@
       "Name": "The Hundreds",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/TheHundreds.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/TheHundreds.png",
-      "Utterances": [
+      "Answers": [
         "The Hundreds",
         "Hundreds",
         "Hundrids",
@@ -811,7 +811,7 @@
       "Name": "Papa Johns",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/PapaJohns.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/PapaJohns.png",
-      "Utterances": [
+      "Answers": [
         "Papa Johns",
         "Papa Johns Pizza",
         "Papa Jons",
@@ -826,7 +826,7 @@
       "Name": "IBM",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/IBM.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/IBM.png",
-      "Utterances": [
+      "Answers": [
         "IBM",
         "Eye Bee Em",
         "IBeeM",
@@ -839,7 +839,7 @@
       "Name": "Intel",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Intel.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Intel.png",
-      "Utterances": [
+      "Answers": [
         "Intel",
         "Intell",
         "In Tel",
@@ -852,7 +852,7 @@
       "Name": "Facebook",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Facebook.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Facebook.png",
-      "Utterances": [
+      "Answers": [
         "Facebook",
         "Facebook Dot Com",
         "Face Book",
@@ -865,7 +865,7 @@
       "Name": "Twitter",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Twitter.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Twitter.png",
-      "Utterances": [
+      "Answers": [
         "Twitter",
         "Twitter Dot Com",
         "Twittir",
@@ -878,7 +878,7 @@
       "Name": "Snapchat",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Snapchat.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Snapchat.png",
-      "Utterances": [
+      "Answers": [
         "Snapchat",
         "Snap Chat",
         "Snapchat Dot Com"
@@ -888,7 +888,7 @@
       "Name": "SAP",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/SAP.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/SAP.png",
-      "Utterances": [
+      "Answers": [
         "SAP",
         "SAPee",
         "Es Ay Pe",
@@ -901,7 +901,7 @@
       "Name": "Nintendo",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Nintendo.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Nintendo.png",
-      "Utterances": [
+      "Answers": [
         "Nintendo",
         "Nintendo Corporation",
         "Nintendo Company",
@@ -913,7 +913,7 @@
       "Name": "Playboy",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Playboy.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Playboy.png",
-      "Utterances": [
+      "Answers": [
         "Playboy",
         "play boy",
         "ploy boy",
@@ -926,7 +926,7 @@
       "Name": "CNBC",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/CNBC.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/CNBC.png",
-      "Utterances": [
+      "Answers": [
         "cnbc",
         "c n b c",
         "cee n bee c",
@@ -939,7 +939,7 @@
       "Name": "Amazon",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Amazon.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Amazon.png",
-      "Utterances": [
+      "Answers": [
         "Amazon",
         "Amazon Dot Com",
         "Amazon Shopping",
@@ -950,7 +950,7 @@
       "Name": "Skype",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Skype.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Skype.png",
-      "Utterances": [
+      "Answers": [
         "Skype",
         "Skype Dot Com",
         "Skype Video",
@@ -963,7 +963,7 @@
       "Name": "Nvidia",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Nvidia.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Nvidia.png",
-      "Utterances": [
+      "Answers": [
         "Nvidia",
         "Nvidia Gaming",
         "Nvidia Graphics",
@@ -975,7 +975,7 @@
       "Name": "AMD",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/AMD.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/AMD.png",
-      "Utterances": [
+      "Answers": [
         "AMD",
         "Ay Em Dee",
         "AMDee",
@@ -988,7 +988,7 @@
       "Name": "Supreme",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Supreme.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Supreme.png",
-      "Utterances": [
+      "Answers": [
         "Supreme",
         "Supreme Clothing",
         "Supreme Skateboards",
@@ -1000,7 +1000,7 @@
       "Name": "Cisco",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Cisco.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Cisco.png",
-      "Utterances": [
+      "Answers": [
         "Cisco",
         "Cisco Networking",
         "Cisco Networks",
@@ -1012,7 +1012,7 @@
       "Name": "Ducati",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Ducati.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Ducati.png",
-      "Utterances": [
+      "Answers": [
         "Ducati",
         "Ducati Bikes",
         "Do Cati",
@@ -1023,7 +1023,7 @@
       "Name": "Nestle",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Nestle.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Nestle.png",
-      "Utterances": [
+      "Answers": [
         "Nestle",
         "Nestle Food",
         "Nestlé",
@@ -1035,7 +1035,7 @@
       "Name": "Yamaha",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Yamaha.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Yamaha.png",
-      "Utterances": [
+      "Answers": [
         "Yamaha",
         "Yamaha Bikes",
         "Yamaha Corporation",
@@ -1046,7 +1046,7 @@
       "Name": "Rossignol",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Rossignol.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Rossignol.png",
-      "Utterances": [
+      "Answers": [
         "Rossignol",
         "Ross Ig Nol",
         "Rossignol Outdoor",
@@ -1057,7 +1057,7 @@
       "Name": "Visa",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Visa.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Visa.png",
-      "Utterances": [
+      "Answers": [
         "Visa",
         "Vee Sa",
         "Veesa",
@@ -1071,7 +1071,7 @@
       "Name": "Bank Of America",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/BankOfAmerica.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/BankOfAmerica.png",
-      "Utterances": [
+      "Answers": [
         "bank of america",
         "bank of ameerica",
         "bank of ameer ica",
@@ -1084,7 +1084,7 @@
       "Name": "Porsche",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Porsche.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Porsche.png",
-      "Utterances": [
+      "Answers": [
         "Porsche",
         "porsh",
         "pourche",
@@ -1096,7 +1096,7 @@
       "Name": "Jaguar",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Jaguar.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Jaguar.png",
-      "Utterances": [
+      "Answers": [
         "Jaguar",
         "Jag guar",
         "ja guar",
@@ -1108,7 +1108,7 @@
       "Name": "Mitsubishi",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Mitsubishi.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Mitsubishi.png",
-      "Utterances": [
+      "Answers": [
         "Mitsubishi",
         "mitzubishi",
         "mitzu bishi",
@@ -1121,7 +1121,7 @@
       "Name": "Red Bull",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/RedBull.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/RedBull.png",
-      "Utterances": [
+      "Answers": [
         "Red Bull",
         "redbull",
         "red bully",
@@ -1134,7 +1134,7 @@
       "Name": "Barclays",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Barclays.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Barclays.png",
-      "Utterances": [
+      "Answers": [
         "Barclays",
         "Barclays Bank",
         "bark lays bank",
@@ -1145,7 +1145,7 @@
       "Name": "DreamWorks",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/DreamWorks.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/DreamWorks.png",
-      "Utterances": [
+      "Answers": [
         "DreamWorks",
         "Dream Works",
         "dreem work",
@@ -1158,7 +1158,7 @@
       "Name": "Mercedes Benz",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/MercedesBenz.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/MercedesBenz.png",
-      "Utterances": [
+      "Answers": [
         "Mercedes Benz",
         "Mercedes-Benz",
         "Mercedes Ben",
@@ -1173,7 +1173,7 @@
       "Name": "Timberland",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Timberland.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Timberland.png",
-      "Utterances": [
+      "Answers": [
         "Timberland",
         "Timber land",
         "tim ber land",
@@ -1187,7 +1187,7 @@
       "Name": "Netflix",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Netflix.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Netflix.png",
-      "Utterances": [
+      "Answers": [
         "Netflix",
         "Net flix",
         "net flicks",
@@ -1199,7 +1199,7 @@
       "Name": "Napster",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Napster.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Napster.png",
-      "Utterances": [
+      "Answers": [
         "Napster",
         "Nap stir",
         "nap ster",
@@ -1214,7 +1214,7 @@
       "Name": "Mazda",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Mazda.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Mazda.png",
-      "Utterances": [
+      "Answers": [
         "Mazda",
         "maz da",
         "maz dar",
@@ -1230,7 +1230,7 @@
       "Name": "Bandai Namco",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/BandaiNamco.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/BandaiNamco.png",
-      "Utterances": [
+      "Answers": [
         "Bandai",
         "Bandai Namco",
         "Ban Dye",
@@ -1247,7 +1247,7 @@
       "Name": "Maersk",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Maersk.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Maersk.png",
-      "Utterances": [
+      "Answers": [
         "Maersk",
         "Maersk Shipping",
         "Mersk",
@@ -1264,7 +1264,7 @@
       "Name": "Spotify",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Spotify.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Spotify.png",
-      "Utterances": [
+      "Answers": [
         "Spotify",
         "Spotify Dot Com",
         "Spotify Music",
@@ -1276,7 +1276,7 @@
       "Name": "Pioneer",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Pioneer.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Pioneer.png",
-      "Utterances": [
+      "Answers": [
         "Pioneer",
         "Pioneer Music",
         "Pioneer DJ"
@@ -1286,7 +1286,7 @@
       "Name": "Balenciaga",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Balenciaga.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Balenciaga.png",
-      "Utterances": [
+      "Answers": [
         "Balenciaga",
         "Balance Ciaga",
         "Balen Ciaga"
@@ -1296,7 +1296,7 @@
       "Name": "Koenigsegg",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Koenigsegg.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Koenigsegg.png",
-      "Utterances": [
+      "Answers": [
         "Koenigsegg",
         "Koenigsegg Cars",
         "Co En Ig Seg",
@@ -1308,7 +1308,7 @@
       "Name": "Dolby",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Dolby.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Dolby.png",
-      "Utterances": [
+      "Answers": [
         "Dolby",
         "Dolby Audio",
         "Dolby Laboratories",
@@ -1320,7 +1320,7 @@
       "Name": "Sanyo",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Sanyo.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Sanyo.png",
-      "Utterances": [
+      "Answers": [
         "Sanyo",
         "Sanyo Electronics",
         "Sandyo"
@@ -1330,7 +1330,7 @@
       "Name": "ADT",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/ADT.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/ADT.png",
-      "Utterances": [
+      "Answers": [
         "ADT Security",
         "Ay Dee Tee",
         "ADee Tee",
@@ -1341,7 +1341,7 @@
       "Name": "Steam",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Steam.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Steam.png",
-      "Utterances": [
+      "Answers": [
         "Steam",
         "Steem",
         "Stem",
@@ -1352,7 +1352,7 @@
       "Name": "Novation",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Novation.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Novation.png",
-      "Utterances": [
+      "Answers": [
         "Novation",
         "Novasion",
         "Novatian"
@@ -1362,7 +1362,7 @@
       "Name": "Github",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Github.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Github.png",
-      "Utterances": [
+      "Answers": [
         "Github",
         "Jithub",
         "Get Hub",
@@ -1374,7 +1374,7 @@
       "Name": "Ubisoft",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Ubisoft.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Ubisoft.png",
-      "Utterances": [
+      "Answers": [
         "Ubisoft",
         "U Bee Soft",
         "You Be Soft",
@@ -1385,7 +1385,7 @@
       "Name": "Vine",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Vine.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Vine.png",
-      "Utterances": [
+      "Answers": [
         "Vine",
         "Vay Ne",
         "Vain"
@@ -1395,7 +1395,7 @@
       "Name": "Razer",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Razer.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Razer.png",
-      "Utterances": [
+      "Answers": [
         "Razer",
         "Razor",
         "Ray Zer",
@@ -1407,7 +1407,7 @@
       "Name": "Google",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Google.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Google.png",
-      "Utterances": [
+      "Answers": [
         "Google",
         "Goo Gol",
         "Goo Gul",
@@ -1418,7 +1418,7 @@
       "Name": "Superdry",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Superdry.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Superdry.png",
-      "Utterances": [
+      "Answers": [
         "Superdry",
         "Soup Her Dry",
         "Super Dri"
@@ -1428,7 +1428,7 @@
       "Name": "Airbnb",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Airbnb.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Airbnb.png",
-      "Utterances": [
+      "Answers": [
         "Airbnb",
         "Air B and B",
         "Air B En B",
@@ -1439,7 +1439,7 @@
       "Name": "Uber",
       "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Uber.png",
       "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Uber.png",
-      "Utterances": [
+      "Answers": [
         "Uber",
         "Ou Ber",
         "Ou Bear",
