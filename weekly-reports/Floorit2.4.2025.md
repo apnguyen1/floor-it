@@ -1,4 +1,7 @@
 git # Project Status/Meeting Agenda:
+## Meeting Agenda:
+- Presenting near-finalised sketch for front-end UI design
+- Discussing backend data models
 ## Goals for the week:
 - Build out the pages for frontend (Home screen/about, category select, main game screen)
 - Build the APIs in the backend for frontend to call (Retrieving a list of all categories, retrieving a associative array of images to words for a given category)
