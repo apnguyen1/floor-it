@@ -71,6 +71,7 @@ class TriviaQuestion(Model):
 class CategoryDataDTO(Model):
     """
     Represents a specific category with the category name, type, and a list of trivia questions
+    Designed to be serialized into a JSON and served via CDN, through the endpoint /{CategoryDataDto.name}
     name (str): The name of the trivia category
     type (Literal["img", "text"]): "img" if the questions are image urls, "text" if the questions are straight text
     questions (List[TriviaQuestion]): The list of trivia questions, all of which use either image urls or text, specified above
