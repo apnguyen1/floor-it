@@ -51,7 +51,6 @@ def test_title_to_name(mock_fetch):
     assert title_name_map == expected_output
 
 
-# ✅ Test `image_to_name()`
 @patch.object(Category, attribute="_load_data")
 def test_image_to_name(mock_fetch):
     mock_fetch.return_value = ChampionDTO(
@@ -63,7 +62,7 @@ def test_image_to_name(mock_fetch):
 
     expected_output = {
         "aatrox.png": "Aatrox",
-        "kaisa.png": "Kai Sa",  # Apostrophe replaced with space
+        "kaisa.png": "Kai Sa",
     }
 
     assert image_name_map == expected_output
