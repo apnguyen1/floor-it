@@ -40,14 +40,14 @@ About half way done trying to come up with more questions
 Complete two more categories and questions and working on setting up backend
 # Project Status (Brian):
 ## Goals for the week:
-- Draft-up, complete, and submit UI design for category- and user-selection interfaces.
-- Familiarise myself with MaterialUI.
+- Mock-up draft in Figma to allow collaborative view of project.
+- Look into beginning actual implementation process.
 ## Progress and issues:
-- No personal progress thus far.
-- Group discussions have been fruitful.
+- Physical draft for category- and user-selection has been completed and presented.
+- General outline approved by team with minor additions to make before implementation.
 - No issues to note yet.
 ## Goals for next week:
-- Have a complete UI design to being implementing for front-end.
+- Have a complete UI design in a shared Figma file for clear and easy access.
 # Project Status (Phuong):
 ## Goals for the week:
 - Complete UI design for homepage and gameplay interface.
