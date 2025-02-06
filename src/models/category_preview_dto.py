@@ -1,6 +1,7 @@
 from typing import List
 from src.models.model import Model
 
+
 class CategoryPreviewDTO(Model):
     """
     Represents a single category preview in a list of category previews to be serialized to JSON
@@ -8,16 +9,18 @@ class CategoryPreviewDTO(Model):
     image (str): A url to the image associated with the category preview
     desc (str): A brief description of the category the user can see when hovering over the image
 
-    Example JSON output: 
+    Example JSON output:
     {
         "name": "AKOperators"
         "image": "https://upload.wikimedia.org/wikipedia/en/a/aa/Arknights_icon.png"
         "desc": "Guess the name of an arknights operator from the provided picture!"
     }
     """
+
     name: str
     image: str
     desc: str
+
 
 class CategoryPreviewListDTO(Model):
     """
@@ -41,4 +44,5 @@ class CategoryPreviewListDTO(Model):
         ]
     }
     """
+
     category_previews: List[CategoryPreviewDTO] = []
