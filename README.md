@@ -1,6 +1,6 @@
 ## Overview
 
-This is the backend for Floor It! It is built with Python and will be used to primary process local file and occasional 
+This is the backend for Floor It! It is built with Python and will be used to primary process local file and occasional
 API JSON  to create categories for our application!
 
 
@@ -93,12 +93,9 @@ This project uses pre-commit hooks.
 ### Pre-commit Checks
 
 - Code is automatically linted using flake8
+- Code is automatically tested using pytest
+- Code is automatically formatted using black
 - Tests are run to ensure no regressions are introduced
-
-
-```bash
-npm run prepare
-```
 
 ## Contributing
 
@@ -110,17 +107,19 @@ We welcome contributions! Please follow these steps:
    ```bash
    git checkout -b feature/your-feature-name
    ```
+3. Make your changes
 
-3. Commit your changes:
+4. Use `make all` to adhere to the styling guidelines for this repo
+
+5. Commit your changes:
 
    ```bash
    git commit -m "Add your commit message"
    ```
 
-4. Push your branch:
+6. Push your branch:
 
    ```bash
    git push origin feature/your-feature-name
    ```
-
-5. Open a pull request and describe your changes
+7. Open a pull request and describe your changes
