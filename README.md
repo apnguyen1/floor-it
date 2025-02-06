@@ -93,7 +93,6 @@ This project uses pre-commit hooks.
 ### Pre-commit Checks
 
 - Code is automatically linted using flake8
-- Code is automatically tested using pytest
 - Code is automatically formatted using black
 - Tests are run to ensure no regressions are introduced
 
