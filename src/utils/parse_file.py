@@ -1,8 +1,7 @@
 import json
-import os
 from pathlib import Path
 
-from src.utils.definitions import ROOT_DIR
+from src.utils.definitions import STATIC_RESOURCE_DIR
 
 
 def parse_file(filename) -> dict:
@@ -12,8 +11,7 @@ def parse_file(filename) -> dict:
     :param filename: The file to be parsed.
     :return: # TODO
     """
-    project_path = Path(f"src/resources/static/{filename}")
-    file_path = Path(os.path.join(ROOT_DIR, project_path))
+    file_path = Path(STATIC_RESOURCE_DIR / filename)
 
     if not file_path.exists():
         raise FileNotFoundError(f"File {filename} does not exist.")
