@@ -15,6 +15,7 @@ class Champions(Category[ChampionDTO]):
         :return: Dict[str, str]
         """
         champion_data: Dict[str, ChampionDataDTO] = self.data.data
+
         return {
             champion.title: [champion.name.replace("'", " ")]
             for champion in champion_data.values()
