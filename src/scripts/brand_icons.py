@@ -5,8 +5,3 @@ from src.utils.category import Category
 class BrandIcons(Category[BrandIconsDTO]):
     def __init__(self, file: str):
         super().__init__(file, BrandIconsDTO)
-
-
-if __name__ == "__main__":
-    icons = BrandIcons("brand-icons.json")
-    print(icons.data)
