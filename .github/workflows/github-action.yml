@@ -29,9 +29,12 @@ jobs:
           poetry config virtualenvs.in-project true  # Ensures venv is in project dir
           poetry --version
       - name: Install Dependencies
-        run: poetry install  # Ensures dev dependencies (pytest) are installed
+        run: |
+          cd backend
+          poetry install  # Ensures dev dependencies (pytest) are installed
 
       - name: Run Makefile Tasks
         run: |
+          cd backend
           source .venv/bin/activate  # Explicitly activate virtual environment
           make ci

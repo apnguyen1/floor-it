@@ -1,7 +1,7 @@
 from typing import Dict
 
-from src.utils.category import Category
-from src.models.champion_dto import ChampionDTO, ChampionDataDTO
+from backend.src.utils.category import Category
+from backend.src.models.champion_dto import ChampionDTO, ChampionDataDTO
 
 
 class Champions(Category[ChampionDTO]):
@@ -14,14 +14,14 @@ class Champions(Category[ChampionDTO]):
         Replaces any apostrophes (') in the name with spaces
         :return: Dict[str, str]
         """
-        champion_data: Dict[str, ChampionDataDTO] = self.data.data
+        champion_data: Dict[str, ChampionDataDTO] = self.raw_data.data
         return {
             champion.title: champion.name.replace("'", " ")
             for champion in champion_data.values()
         }
 
     def image_to_name(self) -> Dict[str, str]:
-        champion_data: Dict[str, ChampionDataDTO] = self.data.data
+        champion_data: Dict[str, ChampionDataDTO] = self.raw_data.data
 
         return {
             champion.image.full: champion.name.replace("'", " ")

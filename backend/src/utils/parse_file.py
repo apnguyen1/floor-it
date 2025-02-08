@@ -3,7 +3,7 @@ from pathlib import Path
 
 def parse_file(filename):
     """
-    Parse a file and return a dictionary of the parsed data.
+    Parse a file and return a dictionary of the parsed raw_data.
 
     :param filename: The file to be parsed.
     :return: # TODO

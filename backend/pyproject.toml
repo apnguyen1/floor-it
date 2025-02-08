@@ -1,6 +1,14 @@
 [tool.poetry]
 package-mode = false
 
+[tool.black]
+line-length = 88
+target-version = ['py312']
+include = '\.pyi?$'
+
+[tool.pytest.ini_options]
+test_paths = ["tests"]
+
 [project]
 name = "python-floor-it"
 version = "0.1.0"

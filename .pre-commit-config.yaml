@@ -15,8 +15,15 @@ repos:
     rev: 25.1.0
     hooks:
       - id: black
+        files: ^backend/
+        types:
+          - python
 
   - repo: https://github.com/PyCQA/flake8
     rev: 7.1.1
     hooks:
       - id: flake8
+        files: ^backend/
+        types:
+          - python
+        args: [--config=backend/setup.cfg]
