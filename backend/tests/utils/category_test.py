@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import patch
 from pydantic import BaseModel
-from src.utils.category import Category
+from backend.src.utils.category import Category
 
 
 class DummyDTO(BaseModel):
@@ -10,7 +10,7 @@ class DummyDTO(BaseModel):
 
 class DummyCategory(Category[DummyDTO]):
     def to_dto(self):
-        return self.data
+        return self.raw_data
 
 
 @patch.object(Category, "_load_data")
@@ -20,7 +20,7 @@ def test_category_load_url_data(mock_load):
     category = DummyCategory("https://example.com", DummyDTO)
 
     assert isinstance(category, DummyCategory)
-    assert category.data.value == "1"
+    assert category.raw_data.value == "1"
     mock_load.assert_called_once()
 
 
