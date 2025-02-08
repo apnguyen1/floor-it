@@ -1,6 +1,6 @@
-import { useGame } from '../../hooks/useGame';
+import { useGame } from '../../hooks/useGame.ts';
 import { Button, Container, Typography } from '@mui/material';
-import { ScreenType } from '../../constants/screens';
+import { ScreenType } from '../../constants/screens.ts';
 
 export const HomeScreen = () => {
   const { setScreen } = useGame();

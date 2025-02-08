@@ -1,12 +1,12 @@
 import React from 'react';
 import './styles/FloorIt.css';
-import { useGame } from '../hooks/useGame.ts';
-import { ScreenType } from '../constants/screens.ts';
-import { HomeScreen } from '../screens/Home/HomeScreen.tsx';
-import { AvatarScreen } from '../screens/Avatars/AvatarScreen.tsx';
-import { CategoriesScreen } from '../screens/Categories/CategoriesScreen.tsx';
-import { GameSceen } from '../screens/Game/GameSceen.tsx';
-import { GameProvider } from '../context/GameContext.tsx';
+import { useGame } from './hooks/useGame.ts';
+import { ScreenType } from './constants/screens.ts';
+import { HomeScreen } from './screens/Home/HomeScreen.tsx';
+import { AvatarScreen } from './screens/Avatars/AvatarScreen.tsx';
+import { CategoriesScreen } from './screens/Categories/CategoriesScreen.tsx';
+import { GameSceen } from './screens/Game/GameSceen.tsx';
+import { GameProvider } from './context/GameContext.tsx';
 
 const ScreenRender: React.FC = () => {
   const { screen } = useGame();
