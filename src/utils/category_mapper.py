@@ -11,7 +11,8 @@ def to_category_data(
     category_name: str, question_type: QuestionType, json_data: dict[str, List[str]]
 ) -> CategoryDataDTO:
     """
-    Maps JSON data {<question>: [<answer>], <question>: [<answer>]} into a CategoryDataDTO.
+    Maps JSON data formatted: {<question>: [<answer>], <question>: [<answer>]}
+    into a CategoryDataDTO.
 
     :param category_name: the category name
     :param question_type: the QuestionType of the category

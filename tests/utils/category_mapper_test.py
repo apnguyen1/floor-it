@@ -5,6 +5,9 @@ from src.utils.category_mapper import to_category_data
 
 
 def test_to_category_data_success():
+    """
+    Tests that the model serializes and deserializes formatted JSON correctly
+    """
     category_name = "Science"
     question_type = QuestionType.TEXT
     json_data = {
@@ -20,8 +23,6 @@ def test_to_category_data_success():
             {"question": "q2", "answers": ["a2"], "aliases": []},
         ],
     }
-
-    print(QuestionType.TEXT)
 
     model = to_category_data(category_name, question_type, json_data)
     actual_json = model.model_dump()
