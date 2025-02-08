@@ -5,3 +5,6 @@
 #!README.md
 #!frontend
 #!backend/**
+
+.idea
+.git
