@@ -13,8 +13,10 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{ts, tsx}": "npm run lint",
-    "*.{json, js, ts, jsx, tsx, html, css}": "prettier --write --ignore-unknown"
+    "*.{js, ts, jsx, tsx, html, css}": [
+      "npm run lint",
+      "prettier --write --ignore-unknown"
+    ]
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",
