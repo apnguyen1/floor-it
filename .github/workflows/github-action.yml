@@ -35,6 +35,5 @@ jobs:
 
       - name: Run Makefile Tasks
         run: |
-          cd backend
           source .venv/bin/activate  # Explicitly activate virtual environment
           make ci
