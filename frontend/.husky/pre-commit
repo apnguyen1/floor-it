@@ -1,2 +1,3 @@
-cd frontend
-npx lint-staged
+pre-commit run --files backend/**/*
+
+cd frontend && npx lint-staged

@@ -1,15 +1,24 @@
+# .pre-commit-config.yaml
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
       - id: trailing-whitespace
+        files: ^backend/
       - id: end-of-file-fixer
+        files: ^backend/
       - id: check-yaml
+        files: ^backend/
       - id: check-json
+        files: ^backend/
       - id: name-tests-test
+        files: ^backend/
       - id: detect-private-key
+        files: ^backend/
       - id: check-merge-conflict
+        files: ^backend/
       - id: pretty-format-json
+        files: ^backend/
         args:
           - "--autofix"
           - "--indent=2"
