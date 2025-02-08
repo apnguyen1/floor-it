@@ -1,6 +1,6 @@
-.PHONY: all test lint format clean
+.PHONY: all
 
-all: test lint format clean
+all: test format lint clean
 
 ci: test lint format-check
 
