@@ -11,7 +11,8 @@ def parse_file(filename) -> dict:
     :param filename: The file to be parsed.
     :return: # TODO
     """
-    file_path = Path(RESOURCE_DIR / filename)
+    static_resources = RESOURCE_DIR / "static"
+    file_path = Path(static_resources / filename)
 
     if not file_path.exists():
         raise FileNotFoundError(f"File {filename} does not exist.")
