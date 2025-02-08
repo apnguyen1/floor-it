@@ -6,6 +6,7 @@ export const useGame = () => {
   if (!context)
     
     
+    
     throw new Error('useGame must be used to use');
 
   return context;
