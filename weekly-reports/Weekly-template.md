@@ -1,22 +1,6 @@
 # Project Status (Overall):
 
 ---
-## Goals for the week:
-
-[WRITE HERE]
-
-## Progress and issues:
-
-[WRITE HERE]
-
-## Goals for next week:
-
-[WRITE HERE]
-
----
-# Project Status (Aidan): 
-
-[WRITE HERE]
 
 ## Goals for the week:
 
@@ -31,7 +15,8 @@
 [WRITE HERE]
 
 ---
-# Project Status (Andrew): 
+
+# Project Status (Aidan):
 
 [WRITE HERE]
 
@@ -48,7 +33,8 @@
 [WRITE HERE]
 
 ---
-# Project Status (Arman): 
+
+# Project Status (Andrew):
 
 [WRITE HERE]
 
@@ -65,7 +51,8 @@
 [WRITE HERE]
 
 ---
-# Project Status (Brian): 
+
+# Project Status (Arman):
 
 [WRITE HERE]
 
@@ -82,7 +69,26 @@
 [WRITE HERE]
 
 ---
-# Project Status (Phuong): 
+
+# Project Status (Brian):
+
+[WRITE HERE]
+
+## Goals for the week:
+
+[WRITE HERE]
+
+## Progress and issues:
+
+[WRITE HERE]
+
+## Goals for next week:
+
+[WRITE HERE]
+
+---
+
+# Project Status (Phuong):
 
 [WRITE HERE]
 

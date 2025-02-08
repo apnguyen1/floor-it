@@ -16,6 +16,7 @@ We welcome contributions! Please follow these steps:
    ```bash
    git checkout -b feature/your-feature-name
    ```
+
 3. Make your changes
 
 4. Use `make all` to adhere to the styling guidelines for this repo
@@ -31,4 +32,5 @@ We welcome contributions! Please follow these steps:
    ```bash
    git push origin feature/your-feature-name
    ```
+
 7. Open a pull request and describe your changes
