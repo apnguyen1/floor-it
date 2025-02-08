@@ -17,14 +17,15 @@ authors = [
     {name = "Andrew Nguyen",email = "andrewn1@cs.washington.edu"}
 ]
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.12,<4.0"
 dependencies = [
     "flake8 (>=7.1.1,<8.0.0)",
     "requests (>=2.32.3,<3.0.0)",
     "pytest (>=8.3.4,<9.0.0)",
     "black (>=25.1.0,<26.0.0)",
     "pydantic (>=2.10.6,<3.0.0)",
-    "pre-commit (>=4.1.0,<5.0.0)"
+    "pre-commit (>=4.1.0,<5.0.0)",
+    "docformatter (>=1.7.5,<2.0.0)"
 ]
 
 
