@@ -12,27 +12,29 @@ class Champions(Category[ChampionDTO]):
         super().__init__(
             source=url,
             model=ChampionDTO,
-            img="TBD",
-            desc="Test your knowledge of League champions!",
         )
 
-    def _title_to_name(self) -> Dict[str, List[str]]:
+    def __title_to_name(self) -> Dict[str, List[str]]:
         """
         Returns a mapping of champion titles to their names.
         Replaces any apostrophes (') in the name with spaces
         :return: a dict of their titles to their names
         """
+        self.name = "LoL Champion Titles"
+        self.description = "Guess the LoL champion's name by their title!"
         return {
             champion.title: [champion.name.replace("'", " ")]
             for champion in self._raw_data.data.values()
         }
 
-    def _image_to_name(self) -> Dict[str, List[str]]:
+    def __image_to_name(self) -> Dict[str, List[str]]:
         """
         Returns a mapping of champion images to their names.
         Replaces any apostrophes (') in the name with spaces'
         :return: a dict of their images to their names
         """
+        self.name = "LoL Champion Covers"
+        self.description = "Guess the LoL champion's name by their image!"
         return {
             champion.image.full: [champion.name.replace("'", " ")]
             for champion in self._raw_data.data.values()
@@ -40,7 +42,7 @@ class Champions(Category[ChampionDTO]):
 
     def _format_data(self) -> dict[str, List[str]]:
         return (
-            self._title_to_name()
+            self.__title_to_name()
             if self.qt == QuestionType.TEXT
-            else (self._image_to_name())
+            else (self.__image_to_name())
         )

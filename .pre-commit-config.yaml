@@ -12,7 +12,7 @@ repos:
       - id: check-json
         files: ^backend/
       - id: name-tests-test
-        files: ^backend/
+        files: ^backend/tests
       - id: detect-private-key
         files: ^backend/
       - id: check-merge-conflict

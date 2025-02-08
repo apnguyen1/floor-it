@@ -9,14 +9,14 @@ class CategoryPreviewDTO(Model):
     to JSON.
     name (str): The name of the category preview
     image (str): A url to the image associated with the category preview
-    desc (str): A brief description of the category the user can see when hovering over
-    the image
+    __desc (str): A brief description of the category the user can see when hovering
+    over the image
 
     Example JSON output:
     {
         "name": "AKOperators"
         "image": "https://upload.wikimedia.org/wikipedia/en/a/aa/Arknights_icon.png"
-        "desc": "Guess the name of an arknights operator from the provided picture!"
+        "__desc": "Guess the name of an arknights operator from the provided picture!"
     }
     """
 
@@ -39,7 +39,7 @@ class CategoryPreviewListDTO(Model):
                 "name": "AKOperators"
                 "image": "https://upload.wikimedia.org/wikipedia/en/a/aa/Arknights_icon
                 .png"
-                "desc": "Guess the name of an arknights operator from the provided
+                "__desc": "Guess the name of an arknights operator from the provided
                 picture!"
             },
             {
@@ -47,7 +47,7 @@ class CategoryPreviewListDTO(Model):
                 "image": "https://static.wikia.nocookie.net/leagueoflegends/images/0/07/
                     League_of_Legends_icon.png/revision
                     /latest/scale-to-width-down/64?cb=20191018194326"
-                "desc": "Guess the name of a League of Legends champion from the
+                "__desc": "Guess the name of a League of Legends champion from the
                 provided picture!"
             }
         ]

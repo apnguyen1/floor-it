@@ -42,7 +42,7 @@ def test_champions_fetch(mock_fetch):
 
 
 @pytest.mark.parametrize(
-    "question_type,expected_output",
+    "question_type,expected_output,expected_name,expected_desc",
     [
         (
             QuestionType.TEXT,
@@ -50,6 +50,8 @@ def test_champions_fetch(mock_fetch):
                 "the Darkin Blade": ["Aatrox"],
                 "Daughter of the Void": ["Kai Sa"],
             },
+            "LoL Champion Titles",
+            "Guess the LoL champion's name by their title!",
         ),
         (
             QuestionType.IMG,
@@ -57,14 +59,20 @@ def test_champions_fetch(mock_fetch):
                 "aatrox.png": ["Aatrox"],
                 "kaisa.png": ["Kai Sa"],
             },
+            "LoL Champion Covers",
+            "Guess the LoL champion's name by their image!",
         ),
     ],
 )
 @patch.object(Category, attribute="_load_data")
-def test_champion_formatting(mock_fetch, question_type, expected_output):
+def test_champion_formatting(
+    mock_fetch, question_type, expected_output, expected_name, expected_desc
+):
     mock_fetch.return_value = ChampionDTO(
         version=MOCK_CHAMPION_DATA["version"], data=MOCK_CHAMPION_DATA["raw_data"]
     )
 
     champions = Champions(question_type)
     assert champions.formatted_data == expected_output
+    assert champions.name == expected_name
+    assert champions.description == expected_desc
