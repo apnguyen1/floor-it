@@ -5,7 +5,7 @@ all: test lint format clean
 ci: test lint format-check
 
 test:
-		python -m pytest
+		PYTHONPATH=.. python -m pytest
 
 lint:
 		flake8 .
