@@ -41,6 +41,8 @@ class Category(ABC, Generic[T]):
             raise TypeError(f"{model.__name__} must be of type BaseModel")
 
         self.source: str = source
+
+
         self.model: Type[T] = model
         self.raw_data: T = self._load_data()
 
