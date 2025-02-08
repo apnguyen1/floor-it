@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/FloorIt.css';
+import './styles/App.css';
 import { useGame } from './hooks/useGame.ts';
 import { ScreenType } from './constants/screens.ts';
 import { HomeScreen } from './screens/Home/HomeScreen.tsx';

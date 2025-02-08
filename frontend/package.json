@@ -17,6 +17,10 @@
     "*.{json, js, ts, jsx, tsx, html, css}": "prettier --write --ignore-unknown"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fontsource/roboto": "^5.1.1",
+    "@mui/icons-material": "^6.4.3",
     "@mui/material": "^6.4.3",
     "husky": "^9.1.7",
     "react": "^19.0.0",
@@ -24,6 +28,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.19.0",
+    "@types/material-ui": "^0.21.18",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "@vitejs/plugin-react": "^4.3.4",
