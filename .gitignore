@@ -1,7 +1,7 @@
 *
-!.github/**/*
+!.github/**
 !.gitignore
 !.pre-commit-config.yaml
 !README.md
-!frontend/*/*
-!backend/**/*
+!frontend/*
+!backend/**
