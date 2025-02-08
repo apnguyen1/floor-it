@@ -46,7 +46,10 @@ def test_title_to_name(mock_fetch):
     champions = Champions("https://www.example.com")
     title_name_map = champions.title_to_name()
 
-    expected_output = {"the Darkin Blade": "Aatrox", "Daughter of the Void": "Kai Sa"}
+    expected_output = {
+        "the Darkin Blade": ["Aatrox"],
+        "Daughter of the Void": ["Kai Sa"],
+    }
 
     assert title_name_map == expected_output
 
@@ -61,8 +64,8 @@ def test_image_to_name(mock_fetch):
     image_name_map = champions.image_to_name()
 
     expected_output = {
-        "aatrox.png": "Aatrox",
-        "kaisa.png": "Kai Sa",
+        "aatrox.png": ["Aatrox"],
+        "kaisa.png": ["Kai Sa"],
     }
 
     assert image_name_map == expected_output
