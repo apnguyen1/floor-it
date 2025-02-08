@@ -1,100 +1,10 @@
 ## Overview
 
-This is the backend for Floor It! It is built with Python and will be used to primary process local file and occasional
-API JSON  to create categories for our application!
-
-
-## Frontend
-
-You can find our frontend repo linked [here!](https://github.com/apnguyen1/react-floor-it)
-
-## Table of Contents
-
-1. [Prerequisites](#prerequisites)
-2. [Setup](#setup)
-3. [Development](#development)
-4. [Testing](#testing)
-5. [Code Formatting](#code-formatting)
-6. [Pre-commit Hooks](#pre-commit-hooks)
-7. [Contributing](#contributing)
-
-## Prerequisites
-
-Before you begin, ensure you have the following installed:
-
-- Python (v3.9 or higher)
-- Git
-
-## Setup
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/apnguyen1/floor-it.git
-   cd floor-it
-   ```
-
-2. Activate venv environment
-
-   ```bash
-   eval $(poetry env activate)
-   ```
-   ```powershell
-   Invoke-Expression (poetry env activate)
-   ```
-
-3. installing dependencies:
-   ```bash
-   poetry install
-   ```
-
-## Development
-
-### Folder Structure
-
-```
-src/
-├── resources/      # static and output files
-├── scripts/        # Processing of data
-├── utils/          # Reusable utility functions
-└── main.py         # Entry point
-```
-
-### Run the data caching
-
-```bash
-python -m src.main
-```
-
-## Testing
-
-This project uses pytest for unit testing.
-
-### Run Tests
-
-```bash
-npm run tests
-```
-
-## Code Formatting
-
-This project uses black for code formatting.
-
-### Format Code
-
-```bash
-npm run format
-```
-
-## Pre-commit Hooks
-
-This project uses pre-commit hooks.
-
-### Pre-commit Checks
-
-- Code is automatically linted using flake8
-- Code is automatically formatted using black
-- Tests are run to ensure no regressions are introduced
+Floor It! is a web-based trivia game designed to bring competitive 1v1 duels to life.
+By blending speed, strategy, and knowledge, the game provides a dynamic experience where
+players can challenge their friends in head-to-head trivia battles. Floor It! is
+designed to be accessible, fun, and socially engaging, catering to trivia enthusiasts
+and casual gamers alike.
 
 ## Contributing
 
@@ -106,6 +16,7 @@ We welcome contributions! Please follow these steps:
    ```bash
    git checkout -b feature/your-feature-name
    ```
+
 3. Make your changes
 
 4. Use `make all` to adhere to the styling guidelines for this repo
@@ -121,4 +32,5 @@ We welcome contributions! Please follow these steps:
    ```bash
    git push origin feature/your-feature-name
    ```
+
 7. Open a pull request and describe your changes

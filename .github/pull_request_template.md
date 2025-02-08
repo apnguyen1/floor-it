@@ -3,6 +3,7 @@
 [INSERT HERE]
 
 ## Motivation and Context
+
 [ticket-TICKET-ISSUE-HERE](https://github.com/apnguyen1/floor-it/issues/TICKET-ISSUE-HERE)
 
 ## Current behavior
@@ -14,3 +15,5 @@
 [INSERT HERE]
 
 ## How Has This Been Tested?
+
+[INSERT HERE]

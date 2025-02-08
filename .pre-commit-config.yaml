@@ -1,15 +1,24 @@
+# .pre-commit-config.yaml
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
     hooks:
       - id: trailing-whitespace
+        files: ^backend/
       - id: end-of-file-fixer
+        files: ^backend/
       - id: check-yaml
+        files: ^backend/
       - id: check-json
+        files: ^backend/
       - id: name-tests-test
+        files: ^backend/tests
       - id: detect-private-key
+        files: ^backend/
       - id: check-merge-conflict
+        files: ^backend/
       - id: pretty-format-json
+        files: ^backend/
         args:
           - "--autofix"
           - "--indent=2"
@@ -20,8 +29,15 @@ repos:
     rev: 25.1.0
     hooks:
       - id: black
+        files: ^backend/
+        types:
+          - python
 
   - repo: https://github.com/PyCQA/flake8
     rev: 7.1.1
     hooks:
       - id: flake8
+        files: ^backend/
+        types:
+          - python
+        args: [--config=backend/setup.cfg]

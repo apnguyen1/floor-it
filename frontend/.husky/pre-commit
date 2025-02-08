@@ -1,0 +1,14 @@
+STAGED_FILES=$(git diff --cached --name-only)
+
+if echo "$STAGED_FILES" | grep -q "^backend/"; then
+  if command -v pre-commit >/dev/null 2>&1; then
+    echo "Running backend pre-commit hooks..."
+    pre-commit run --files backend/**/*
+  else
+    echo "Warning: Backend files were changed but pre-commit is not available."
+    echo "If you're modifying backend code, please activate the virtual environment first."
+    echo "Otherwise, you can ignore this warning."
+  fi
+fi
+
+cd frontend && npx lint-staged
