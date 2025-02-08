@@ -1,7 +1,10 @@
 ## Overview
 
-This is the backend for Floor It! It is built with Python and will be used to primary process local file and occasional
-API JSON  to create categories for our application!
+Floor It! is a web-based trivia game designed to bring competitive 1v1 duels to life.
+By blending speed, strategy, and knowledge, the game provides a dynamic experience where
+players can challenge their friends in head-to-head trivia battles. Floor It! is
+designed to be accessible, fun, and socially engaging, catering to trivia enthusiasts
+and casual gamers alike.
 
 ## Contributing
 

@@ -2,12 +2,9 @@
 
 ## Overview
 
-This is the frontend for Floor It! It is built using React and utilizes the Web Speech Recognition API for
-speech-to-text functionality. The frontend communicates with a backend server via REST APIs.
-
-## Backend
-
-You can find our backend repo linked [here!](https://github.com/apnguyen1/floor-it)
+This is the frontend for Floor It! It is built using React and utilizes the Web Speech
+Recognition API for speech-to-text functionality. The frontend communicates with a
+backend server via REST APIs.
 
 ## Table of Contents
 
@@ -25,7 +22,6 @@ Before you begin, ensure you have the following installed:
 
 - Node.js (v22.2.0 or higher)
 - npm (v8 or higher)
-- Git
 
 ## Setup
 
@@ -58,7 +54,7 @@ src/
 ├── hooks/           # Custom React hooks
 ├── services/        # API and WebSocket services
 ├── utils/           # Utility functions
-├── FloorIt.tsx      # Main application component
+├── App.tsx          # Main application component
 └── main.tsx         # Entry point
 ```
 
@@ -102,28 +98,3 @@ This project uses Husky to enforce pre-commit hooks.
 ```bash
 npm run prepare
 ```
-
-## Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Clone the repository
-2. Create a new branch for your feature or bugfix:
-
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-3. Commit your changes:
-
-   ```bash
-   git commit -m "Add your commit message"
-   ```
-
-4. Push your branch:
-
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-
-5. Open a pull request and describe your changes
