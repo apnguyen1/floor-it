@@ -10,7 +10,7 @@
     "format": "prettier . --write",
     "format:check": "prettier . -c",
     "preview": "vite preview",
-    "prepare": "husky"
+    "prepare": "cd .. && husky frontend/.husky"
   },
   "lint-staged": {
     "*.{js, ts, jsx, tsx, html, css}": [
