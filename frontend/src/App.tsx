@@ -7,6 +7,7 @@ import { AvatarScreen } from './screens/Avatars/AvatarScreen.tsx';
 import { CategoriesScreen } from './screens/Categories/CategoriesScreen.tsx';
 import { GameSceen } from './screens/Game/GameSceen.tsx';
 import { GameProvider } from './context/GameContext.tsx';
+import { Container } from '@mui/material';
 
 const ScreenRender: React.FC = () => {
   const { screen } = useGame();
@@ -28,11 +29,9 @@ const ScreenRender: React.FC = () => {
 const App: React.FC = () => {
   return (
     <GameProvider>
-      <div className={'app-container'}>
-        <div className={'content-container'}>
-          <ScreenRender></ScreenRender>
-        </div>
-      </div>
+      <Container className={'app-container'}>
+        <ScreenRender></ScreenRender>
+      </Container>
     </GameProvider>
   );
 };
