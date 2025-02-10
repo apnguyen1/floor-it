@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
+.app-title {
+  text-align: center;
+  font-family: 'Squada One', sans-serif;
+  font-size: 200px; /* Adjust size as needed */
+  font-weight: bold;
+  color: #59ffe9;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-shadow: 0px 0px 10px #59ffe9;
+}
+
+.HomeScreen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #578fff;
+}

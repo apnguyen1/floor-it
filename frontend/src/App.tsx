@@ -28,11 +28,7 @@ const ScreenRender: React.FC = () => {
 const App: React.FC = () => {
   return (
     <GameProvider>
-      <div className={'app-container'}>
-        <div className={'content-container'}>
-          <ScreenRender></ScreenRender>
-        </div>
-      </div>
+      <ScreenRender></ScreenRender>
     </GameProvider>
   );
 };
