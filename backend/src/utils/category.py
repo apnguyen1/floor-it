@@ -3,7 +3,7 @@ from typing import Generic, Type, TypeVar, List
 
 from pydantic import BaseModel
 
-from backend.src.models.category_data_dto import CategoryDataDTO
+from backend.src.models.category_data_dto import CategoryDataDTO, QuestionType, TriviaQuestionDTO
 from backend.src.utils.definitions import PUBLIC_DIR
 from backend.src.utils.fetch import fetch_url
 from backend.src.utils.parse_file import parse_file
@@ -56,6 +56,7 @@ class Category(ABC, Generic[T]):
         self,
         source: str,
         model: Type[T],
+        qt: QuestionType,
         name: str = "Category",
         img_name: str = "default-preview.png",
         desc: str = "Test your Trivia!",
@@ -68,6 +69,7 @@ class Category(ABC, Generic[T]):
         self.__name = name
         self.__preview_img: str = PUBLIC_DIR / "previews" / img_name
         self.__desc: str = desc
+        self.__qt: QuestionType = qt
 
         # Protected
         self._raw_data: T = self._load_data(model)
@@ -136,6 +138,7 @@ class Category(ABC, Generic[T]):
         """
         pass
 
+
     # TODO - arman
     def to_category(self) -> CategoryDataDTO:
         """
@@ -143,7 +146,9 @@ class Category(ABC, Generic[T]):
 
         :return: CategoryDataDTO
         """
-        return CategoryDataDTO()
+        questions = [TriviaQuestionDTO(question, answers, generate_aliases(answers))
+        for question, answers in self._formatted_data.items()]
+        return CategoryDataDTO(self.__name, self.__preview_img, self.__desc, self.__qt, questions)
 
     def to_file(self, path: str) -> None:
         """
