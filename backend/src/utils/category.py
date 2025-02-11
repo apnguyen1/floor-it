@@ -139,8 +139,6 @@ class Category(ABC, Generic[T]):
         """
         pass
 
-
-    # TODO - arman
     def to_category(self) -> CategoryDataDTO:
         """
         Converts the category data to a standardized DTO format.
