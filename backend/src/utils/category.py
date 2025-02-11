@@ -7,6 +7,8 @@ from backend.src.models.category_data_dto import CategoryDataDTO
 from backend.src.utils.definitions import PUBLIC_DIR
 from backend.src.utils.fetch import fetch_url
 from backend.src.utils.parse_file import parse_file
+import json
+import os
 
 # ensures type T is derived from BaseModel
 T = TypeVar("T", bound=BaseModel)
@@ -141,15 +143,21 @@ class Category(ABC, Generic[T]):
 
         :return: CategoryDataDTO
         """
-        pass
+        return CategoryDataDTO()
 
-    # TODO - aidan
     def to_file(self, path: str) -> None:
         """
         Exports the formatted data to a JSON file in the public directory of the
         frontend.
 
-        :param path: TODO
-        :return: TODO
+        :param path: The path to create the JSON file in (Should be PUBLIC_DIR / "category_data" / <category_name>)
         """
-        pass
+         # Ensure the directory exists
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+
+        # Get the formatted data
+        data = self.to_category()
+
+        # Write to JSON file
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=4, ensure_ascii=False)
