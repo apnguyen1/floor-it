@@ -8,7 +8,6 @@ from backend.src.utils.definitions import PUBLIC_DIR
 from backend.src.utils.fetch import fetch_url
 from backend.src.utils.parse_file import parse_file
 from backend.src.utils.generate_aliases import generate_aliases
-import json
 import os
 
 # ensures type T is derived from BaseModel
@@ -68,6 +67,7 @@ class Category(ABC, Generic[T]):
         # Private
         self.__source: str = source
         self.__name = name
+        # If we don't explicitly typecast preview_img will be a Path
         self.__preview_img: str = str(PUBLIC_DIR / "previews" / img_name)
         self.__desc: str = desc
         self.__question_type: QuestionType = question_type
@@ -182,7 +182,7 @@ class Category(ABC, Generic[T]):
         if path == None:
             path = self.__name
 
-        path = str(PUBLIC_DIR / "category_data" / path)
+        path = PUBLIC_DIR / "category_data" / path
 
          # Ensure the directory exists
         os.makedirs(os.path.dirname(path), exist_ok=True)
@@ -192,4 +192,4 @@ class Category(ABC, Generic[T]):
 
         # Write to JSON file
         with open(path, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=2, ensure_ascii=False)
+            f.write(data.model_dump_json(indent=2))
