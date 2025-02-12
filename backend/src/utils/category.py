@@ -3,7 +3,7 @@ from typing import Generic, Type, TypeVar, List
 
 from pydantic import BaseModel
 
-from backend.src.models.category_data_dto import CategoryDataDTO
+from backend.src.models.category_data_dto import CategoryDataDTO, QuestionType
 from backend.src.utils.definitions import PUBLIC_DIR
 from backend.src.utils.fetch import fetch_url
 from backend.src.utils.parse_file import parse_file
@@ -54,6 +54,7 @@ class Category(ABC, Generic[T]):
         self,
         source: str,
         model: Type[T],
+        question_type: QuestionType,
         name: str = "Category",
         img_name: str = "default-preview.png",
         desc: str = "Test your Trivia!",
@@ -66,6 +67,7 @@ class Category(ABC, Generic[T]):
         self.__name = name
         self.__preview_img: str = PUBLIC_DIR / "previews" / img_name
         self.__desc: str = desc
+        self.__question_type: QuestionType = question_type
 
         # Protected
         self._raw_data: T = self._load_data(model)
@@ -98,6 +100,14 @@ class Category(ABC, Generic[T]):
     @preview_img.setter
     def preview_img(self, img_name: str) -> None:
         self.__preview_img = PUBLIC_DIR / "previews" / img_name
+
+    @property
+    def question_type(self) -> str:
+        return self.__question_type
+
+    @question_type.setter
+    def question_type(self, question_type: QuestionType) -> None:
+        self.__question_type = question_type
 
     @property
     def formatted_data(self) -> dict[str, List[str]]:

@@ -8,7 +8,11 @@ from backend.src.models.category_data_dto import (
 
 
 def to_category_data(
-    category_name: str, question_type: QuestionType, json_data: dict[str, List[str]]
+    category_name: str,
+    preview_img: str,
+    preview_desc: str,
+    question_type: QuestionType,
+    json_data: dict[str, List[str]],
 ) -> CategoryDataDTO:
     """
     Maps JSON data formatted: {<question>: [<answer>], <question>: [<answer>]}
@@ -28,6 +32,8 @@ def to_category_data(
 
     return CategoryDataDTO(
         name=category_name,
+        preview_img=preview_img,
+        preview_desc=preview_desc,
         type=question_type,
         questions=[
             TriviaQuestionDTO(question=q, answers=a) for q, a in json_data.items()

@@ -9,10 +9,7 @@ class Champions(Category[ChampionDTO]):
     def __init__(self, qt: QuestionType):
         url = "https://ddragon.leagueoflegends.com/cdn/15.2.1/data/en_US/champion.json"
         self.qt = qt
-        super().__init__(
-            source=url,
-            model=ChampionDTO,
-        )
+        super().__init__(source=url, model=ChampionDTO, question_type=qt)
 
     def __title_to_name(self) -> Dict[str, List[str]]:
         """
