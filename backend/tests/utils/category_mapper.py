@@ -1,3 +1,5 @@
+# TODO: Remove file and move tests over to category_test
+
 from typing import List
 
 from backend.src.models.category_data_dto import (
