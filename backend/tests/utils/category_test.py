@@ -5,6 +5,7 @@ import pytest
 from pydantic import BaseModel
 
 from backend.src.utils.category import Category
+from backend.src.models.category_data_dto import QuestionType
 from backend.src.utils.definitions import PUBLIC_DIR
 
 
@@ -24,6 +25,7 @@ def basic_category():
         category = DummyCategory(
             source="https://example.com",
             model=DummyDTO,
+            question_type=QuestionType.TEXT,
             name="Test Category",
             img_name="test.png",
             desc="Test Description",
@@ -37,6 +39,7 @@ def test_category_initialization(basic_category):
     assert basic_category.description == "Test Description"
     assert basic_category.preview_img == PUBLIC_DIR / "previews" / "test.png"
     assert basic_category._raw_data.value == "test"
+    assert basic_category.question_type == QuestionType.TEXT
 
 
 def test_category_property_setters(basic_category):
@@ -48,6 +51,9 @@ def test_category_property_setters(basic_category):
 
     basic_category.preview_img = "new.png"
     assert basic_category.preview_img == PUBLIC_DIR / "previews" / "new.png"
+
+    basic_category.question_type = QuestionType.IMG
+    assert basic_category.question_type == QuestionType.IMG
 
 
 def test_category_formatted_data(basic_category):
@@ -62,14 +68,24 @@ def test_category_formatted_data(basic_category):
 @patch.object(Category, "_load_data")
 def test_category_load_url_data(mock_load):
     mock_load.return_value = DummyDTO(value="test")
-    category = DummyCategory(source="https://example.com", model=DummyDTO, name="Test")
+    category = DummyCategory(
+        source="https://example.com",
+        model=DummyDTO,
+        question_type=QuestionType.TEXT,
+        name="Test",
+    )
     assert category._raw_data.value == "test"
     mock_load.assert_called_once()
 
 
 def test_category_invalid_model():
     with pytest.raises(TypeError, match="dict must be of type BaseModel"):
-        DummyCategory(source="https://example.com", model=dict, name="Test")
+        DummyCategory(
+            source="https://example.com",
+            model=dict,
+            question_type=QuestionType.TEXT,
+            name="Test",
+        )
 
 
 def test_category_load_data_error():
@@ -78,7 +94,12 @@ def test_category_load_data_error():
         with pytest.raises(
             ValueError, match="Failed to load data from https://example.com"
         ):
-            DummyCategory(source="https://example.com", model=DummyDTO, name="Test")
+            DummyCategory(
+                source="https://example.com",
+                model=DummyDTO,
+                question_type=QuestionType.TEXT,
+                name="Test",
+            )
 
 
 # TODO
