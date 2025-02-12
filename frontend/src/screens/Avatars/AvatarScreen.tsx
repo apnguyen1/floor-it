@@ -1,62 +1,105 @@
-// import { useGame } from '../../hooks/useGame.ts';
-// import { Button, Container, Typography } from '@mui/material';
-// import { ScreenType } from '../../constants/screens.ts';
-
-// export const AvatarScreen = () => {
-//   const { setScreen } = useGame();
-
-//   return (
-//     <Container>
-//       <Typography variant={'h1'}>Avatar Screen</Typography>
-//       <Button
-//         variant={'contained'}
-//         color="primary"
-//         size="large"
-//         onClick={() => setScreen(ScreenType.Categories)}
-//       >
-//         Confirm
-//       </Button>
-//     </Container>
-//   );
-// };
-
 import { useState } from 'react';
 import { useGame } from '../../hooks/useGame.ts';
 import {
   Button,
   Container,
-  Grid,
   Avatar,
   TextField,
   IconButton,
   Box,
-  MenuItem,
-  Select,
-  InputLabel,
-  FormControl,
   Typography,
+  Stack,
+  Menu,
+  MenuItem,
+  Tooltip,
 } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { ScreenType } from '../../constants/screens.ts';
+import { Palette } from '@mui/icons-material'; // Icon for Color Picker
 
-const colors = [
-  'red',
-  'blue',
-  'green',
-  'yellow',
-  'purple',
-  'orange',
-  'pink',
-  'brown',
-  'grey',
-  'cyan',
-];
+// Custom Color Picker Component
+const ColorPicker = ({
+  selectedColor,
+  setSelectedColor,
+  allSelectedColors,
+}: {
+  selectedColor: string;
+  setSelectedColor: React.Dispatch<React.SetStateAction<string>>;
+  allSelectedColors: string[];
+}) => {
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+
+  const colorOptions = [
+    '#9E0142',
+    '#D53E4F',
+    '#F46D43',
+    '#FDAE61',
+    '#FEE08B',
+    '#E6F598',
+    '#ABDDA4',
+    '#66C2A5',
+    '#3288BD',
+    '#5E4FA2',
+  ];
+
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const handleColorSelect = (color: string) => {
+    setSelectedColor(color);
+    handleClose();
+  };
+
+  return (
+    <div>
+      <Tooltip title="Select Color">
+        <IconButton onClick={handleClick}>
+          <Palette />
+        </IconButton>
+      </Tooltip>
+
+      <Menu anchorEl={anchorEl} open={Boolean(anchorEl)} onClose={handleClose}>
+        {/* Box layout for Color Squares */}
+        <Box display="grid" gridTemplateColumns="repeat(5, 1fr)" gap={1} padding={1}>
+          {colorOptions.map((color) => {
+            const isDisabled = allSelectedColors.includes(color); // Check if the color is selected by another player
+            return (
+              <MenuItem
+                key={color}
+                onClick={() => !isDisabled && handleColorSelect(color)} // Disable click if color is disabled
+                style={{
+                  backgroundColor: color,
+                  width: '30px',
+                  height: '30px',
+                  borderRadius: '4px',
+                  margin: 'auto',
+                  display: 'block',
+                  cursor: isDisabled ? 'not-allowed' : 'pointer',
+                  textAlign: 'center',
+                  color: '#fff',
+                  textDecoration: isDisabled ? 'line-through' : 'none', // Apply strikethrough if disabled
+                }}
+              >
+                {color === selectedColor && '✓'}
+              </MenuItem>
+            );
+          })}
+        </Box>
+      </Menu>
+    </div>
+  );
+};
 
 export const AvatarScreen = () => {
   const { setScreen } = useGame();
 
-  const [player1Name, setPlayer1Name] = useState('Player 1');
-  const [player2Name, setPlayer2Name] = useState('Player 2');
+  const [player1Name, setPlayer1Name] = useState('');
+  const [player2Name, setPlayer2Name] = useState('');
   const [player1Color, setPlayer1Color] = useState<string>('red');
   const [player2Color, setPlayer2Color] = useState<string>('blue');
 
@@ -68,25 +111,13 @@ export const AvatarScreen = () => {
     setPlayer2Name(event.target.value);
   };
 
-  const handlePlayer1ColorChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-    setPlayer1Color(event.target.value as string);
-  };
-
-  const handlePlayer2ColorChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-    setPlayer2Color(event.target.value as string);
-  };
-
   const handleReadyClick = () => {
-    // Navigate to the game screen
     setScreen(ScreenType.Categories);
   };
 
   return (
-    <Container>
-      <IconButton
-        style={{ position: 'absolute', top: 20, left: 20 }}
-        onClick={() => setScreen(ScreenType.Home)}
-      >
+    <Container className="avatar-screen">
+      <IconButton className="back-button" onClick={() => setScreen(ScreenType.Home)}>
         <ArrowBackIcon />
       </IconButton>
 
@@ -101,9 +132,9 @@ export const AvatarScreen = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <Grid container spacing={2} justifyContent="center" alignItems="center">
+        <Stack direction="row" spacing={2} justifyContent="center" alignItems="center">
           {/* Player 1 */}
-          <Grid item xs={5} style={{ padding: 20, backgroundColor: player1Color }}>
+          <Box className="player-box" style={{ backgroundColor: player1Color }}>
             <Avatar
               alt="Player 1"
               sx={{
@@ -114,33 +145,22 @@ export const AvatarScreen = () => {
               }}
             />
             <TextField
-              label="Player 1 Name"
+              placeholder="Player 1"
               variant="outlined"
               value={player1Name}
               onChange={handlePlayer1NameChange}
               fullWidth
             />
-            <FormControl fullWidth margin="normal">
-              <InputLabel>Choose Color</InputLabel>
-              <Select
-                value={player1Color}
-                onChange={handlePlayer1ColorChange}
-                label="Choose Color"
-              >
-                {colors.map(
-                  (color) =>
-                    player2Color !== color && (
-                      <MenuItem key={color} value={color}>
-                        {color}
-                      </MenuItem>
-                    ),
-                )}
-              </Select>
-            </FormControl>
-          </Grid>
+            {/* Custom Color Picker for Player 1 */}
+            <ColorPicker
+              selectedColor={player1Color}
+              setSelectedColor={setPlayer1Color}
+              allSelectedColors={[player2Color]} // Pass Player 2's color to avoid conflict
+            />
+          </Box>
 
           {/* Player 2 */}
-          <Grid item xs={5} style={{ padding: 20, backgroundColor: player2Color }}>
+          <Box className="player-box" style={{ backgroundColor: player2Color }}>
             <Avatar
               alt="Player 2"
               sx={{
@@ -151,31 +171,20 @@ export const AvatarScreen = () => {
               }}
             />
             <TextField
-              label="Player 2 Name"
+              placeholder="Player 2"
               variant="outlined"
               value={player2Name}
               onChange={handlePlayer2NameChange}
               fullWidth
             />
-            <FormControl fullWidth margin="normal">
-              <InputLabel>Choose Color</InputLabel>
-              <Select
-                value={player2Color}
-                onChange={handlePlayer2ColorChange}
-                label="Choose Color"
-              >
-                {colors.map(
-                  (color) =>
-                    player1Color !== color && (
-                      <MenuItem key={color} value={color}>
-                        {color}
-                      </MenuItem>
-                    ),
-                )}
-              </Select>
-            </FormControl>
-          </Grid>
-        </Grid>
+            {/* Custom Color Picker for Player 2 */}
+            <ColorPicker
+              selectedColor={player2Color}
+              setSelectedColor={setPlayer2Color}
+              allSelectedColors={[player1Color]} // Pass Player 1's color to avoid conflict
+            />
+          </Box>
+        </Stack>
       </Box>
 
       {/* Ready Button */}
