@@ -181,10 +181,11 @@ class Category(ABC, Generic[T]):
         Exports the formatted data to a JSON file in the public directory of the
         frontend.
 
-        :param path: The path to create the JSON file in (PUBLIC_DIR / "category_data" / <path>)
+        :param path: The path to create the JSON file in
+          (PUBLIC_DIR / "category_data" / <path>)
         If path is not given, will default to the category name
         """
-        if path == None:
+        if path is None:
             path = self.__name
 
         path = PUBLIC_DIR / "category_data" / path
