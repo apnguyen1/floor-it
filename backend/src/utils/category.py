@@ -68,7 +68,7 @@ class Category(ABC, Generic[T]):
         # Private
         self.__source: str = source
         self.__name = name
-        self.__preview_img: str = PUBLIC_DIR / "previews" / img_name
+        self.__preview_img: str = str(PUBLIC_DIR / "previews" / img_name)
         self.__desc: str = desc
         self.__question_type: QuestionType = question_type
 
@@ -102,7 +102,7 @@ class Category(ABC, Generic[T]):
 
     @preview_img.setter
     def preview_img(self, img_name: str) -> None:
-        self.__preview_img = PUBLIC_DIR / "previews" / img_name
+        self.__preview_img = str(PUBLIC_DIR / "previews" / img_name)
 
     @property
     def question_type(self) -> str:
@@ -171,14 +171,19 @@ class Category(ABC, Generic[T]):
             ],
         )
 
-    def to_file(self, path: str = '') -> None:
+    def to_file(self, path: str = None) -> None:
         """
         Exports the formatted data to a JSON file in the public directory of the
         frontend.
 
-        :param path: The path to create the JSON file in (Should be PUBLIC_DIR / "category_data" / <path>)
-        If path is not given, 
+        :param path: The path to create the JSON file in (PUBLIC_DIR / "category_data" / <path>)
+        If path is not given, will default to the category name
         """
+        if path == None:
+            path = self.__name
+
+        path = str(PUBLIC_DIR / "category_data" / path)
+
          # Ensure the directory exists
         os.makedirs(os.path.dirname(path), exist_ok=True)
 

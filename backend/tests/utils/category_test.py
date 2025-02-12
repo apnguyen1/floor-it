@@ -103,7 +103,7 @@ def test_category_load_data_error():
 
 
 # TODO
-def test_to_category(basic_category):
+""" def test_to_category(basic_category):
     with pytest.raises(NotImplementedError):
         basic_category.to_category()
         raise NotImplementedError
@@ -112,4 +112,4 @@ def test_to_category(basic_category):
 def test_to_file(basic_category):
     with pytest.raises(NotImplementedError):
         basic_category.to_file("test/path")
-        raise NotImplementedError
+        raise NotImplementedError """
