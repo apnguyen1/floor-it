@@ -54,7 +54,7 @@ class Category(ABC, Generic[T]):
         self,
         source: str,
         model: Type[T],
-        question_type: QuestionType,
+        question_type: QuestionType = QuestionType.TEXT,
         name: str = "Category",
         img_name: str = "default-preview.png",
         desc: str = "Test your Trivia!",
