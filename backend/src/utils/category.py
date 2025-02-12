@@ -3,7 +3,7 @@ from typing import Generic, Type, TypeVar, List
 
 from pydantic import BaseModel
 
-from backend.src.models.category_data_dto import CategoryDataDTO, QuestionType
+from backend.src.models.category_data_dto import CategoryDataDTO, QuestionType, TriviaQuestionDTO
 from backend.src.utils.definitions import PUBLIC_DIR
 from backend.src.utils.fetch import fetch_url
 from backend.src.utils.parse_file import parse_file
@@ -149,13 +149,27 @@ class Category(ABC, Generic[T]):
 
     def to_category(self) -> CategoryDataDTO:
         """
-        Converts the category data to a standardized DTO format.
+        Converts the category data formatted to a standardized DTO format.
 
         :return: CategoryDataDTO
         """
-        questions = [TriviaQuestionDTO(question, answers, generate_aliases(answers))
-        for question, answers in self._formatted_data.items()]
-        return CategoryDataDTO(self.__name, self.__preview_img, self.__desc, self.__qt, questions)
+
+        if not isinstance(self._formatted_data, dict):
+            raise ValueError("formatted_data should be a dict")
+
+        for q, a in self._formatted_data.items():
+            if not isinstance(a, list):
+                raise ValueError("answers should be a list of strings")
+
+        return CategoryDataDTO(
+            name=self.__name,
+            preview_img=self.__preview_img,
+            preview_desc=self.__desc,
+            type=self.question_type,
+            questions=[
+                TriviaQuestionDTO(question=q, answers=a, aliases=generate_aliases(a)) for q, a in self._formatted_data.items()
+            ],
+        )
 
     def to_file(self, path: str) -> None:
         """
