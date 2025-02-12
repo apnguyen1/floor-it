@@ -3,7 +3,6 @@ from backend.src.scripts.lol_champions import Champions
 
 
 def main():
-    print("main is running")
     Champions(QuestionType.TEXT).to_file()
 
 

@@ -1,6 +1,6 @@
 {
   "name": "LoL Champion Titles",
-  "preview_img": "C:\\Users\\Aidan\\Documents\\floor-it\\frontend\\public\\previews\\default-preview.png",
+  "preview_img": "default-preview.png",
   "preview_desc": "Guess the LoL champion's name by their title!",
   "type": "text",
   "questions": [

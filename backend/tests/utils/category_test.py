@@ -6,7 +6,6 @@ from pydantic import BaseModel
 
 from backend.src.utils.category import Category
 from backend.src.models.category_data_dto import QuestionType
-from backend.src.utils.definitions import PUBLIC_DIR
 
 
 class DummyDTO(BaseModel):
@@ -37,7 +36,7 @@ def test_category_initialization(basic_category):
     assert isinstance(basic_category, DummyCategory)
     assert basic_category.name == "Test Category"
     assert basic_category.description == "Test Description"
-    assert basic_category.preview_img == str(PUBLIC_DIR / "previews" / "test.png")
+    assert basic_category.preview_img == "test.png"
     assert basic_category._raw_data.value == "test"
     assert basic_category.question_type == QuestionType.TEXT
 
@@ -50,7 +49,7 @@ def test_category_property_setters(basic_category):
     assert basic_category.description == "New Description"
 
     basic_category.preview_img = "new.png"
-    assert basic_category.preview_img == str(PUBLIC_DIR / "previews" / "new.png")
+    assert basic_category.preview_img == "new.png"
 
     basic_category.question_type = QuestionType.IMG
     assert basic_category.question_type == QuestionType.IMG

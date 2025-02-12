@@ -71,8 +71,7 @@ class Category(ABC, Generic[T]):
         # Private
         self.__source: str = source
         self.__name = name
-        # If we don't explicitly typecast preview_img will be a Path
-        self.__preview_img: str = str(PUBLIC_DIR / "previews" / img_name)
+        self.__preview_img: str = img_name
         self.__desc: str = desc
         self.__question_type: QuestionType = question_type
 
@@ -106,7 +105,7 @@ class Category(ABC, Generic[T]):
 
     @preview_img.setter
     def preview_img(self, img_name: str) -> None:
-        self.__preview_img = str(PUBLIC_DIR / "previews" / img_name)
+        self.__preview_img = img_name
 
     @property
     def question_type(self) -> str:
@@ -187,6 +186,11 @@ class Category(ABC, Generic[T]):
         """
         if path is None:
             path = self.__name
+        # Make sure path is all lowercase no spaces
+        path = path.lower().replace(" ", "_")
+        # Make sure path ends with .json
+        if not path.endswith(".json"):
+            path += ".json"
 
         path = PUBLIC_DIR / "category_data" / path
 
