@@ -50,6 +50,10 @@ class CategoryDataDTO(Model):
     Designed to be serialized into a JSON and served via CDN, through the endpoint /{
     CategoryDataDTO.name}
     name (str): The name of the trivia category
+    preview_img (str): A url to the image associated with the category preview,
+      used for the CategoryPreviewDTO
+    preview_desc (str): A brief description of the category the user can
+      see when hovering, used for the CategoryPreviewDTO
     type (QuestionType): QuestionType.IMG (serializes to "img") if the questions are
     image urls,
         QuestionType.TEXT (serializes to "text") if the questions are straight text
@@ -59,6 +63,9 @@ class CategoryDataDTO(Model):
     Example JSON output:
     {
         name: "LoL Champions"
+        preview_img: "Lol_Champions_preview.png"
+        preview_desc: "Guess the name of a League of Legends champion from the
+                provided picture!"
         type: "img"
         questions: [
             {
@@ -73,5 +80,7 @@ class CategoryDataDTO(Model):
     """
 
     name: str
+    preview_img: str
+    preview_desc: str
     type: QuestionType
     questions: List[TriviaQuestionDTO] = []
