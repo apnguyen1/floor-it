@@ -52,8 +52,8 @@ class CategoryDataDTO(Model):
     name (str): The name of the trivia category
     preview_img (str): A url to the image associated with the category preview,
       used for the CategoryPreviewDTO
-    preview_desc (str): A brief description of the category the user can see when hovering,
-      used for the CategoryPreviewDTO
+    preview_desc (str): A brief description of the category the user can
+      see when hovering, used for the CategoryPreviewDTO
     type (QuestionType): QuestionType.IMG (serializes to "img") if the questions are
     image urls,
         QuestionType.TEXT (serializes to "text") if the questions are straight text
