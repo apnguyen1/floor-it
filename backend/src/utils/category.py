@@ -171,12 +171,13 @@ class Category(ABC, Generic[T]):
             ],
         )
 
-    def to_file(self, path: str) -> None:
+    def to_file(self, path: str = '') -> None:
         """
         Exports the formatted data to a JSON file in the public directory of the
         frontend.
 
-        :param path: The path to create the JSON file in (Should be PUBLIC_DIR / "category_data" / <category_name>)
+        :param path: The path to create the JSON file in (Should be PUBLIC_DIR / "category_data" / <path>)
+        If path is not given, 
         """
          # Ensure the directory exists
         os.makedirs(os.path.dirname(path), exist_ok=True)
