@@ -3,7 +3,11 @@ from typing import Generic, Type, TypeVar, List
 
 from pydantic import BaseModel
 
-from backend.src.models.category_data_dto import CategoryDataDTO, QuestionType, TriviaQuestionDTO
+from backend.src.models.category_data_dto import (
+    CategoryDataDTO,
+    QuestionType,
+    TriviaQuestionDTO,
+)
 from backend.src.utils.definitions import PUBLIC_DIR
 from backend.src.utils.fetch import fetch_url
 from backend.src.utils.parse_file import parse_file
@@ -167,7 +171,8 @@ class Category(ABC, Generic[T]):
             preview_desc=self.__desc,
             type=self.question_type,
             questions=[
-                TriviaQuestionDTO(question=q, answers=a, aliases=generate_aliases(a)) for q, a in self._formatted_data.items()
+                TriviaQuestionDTO(question=q, answers=a, aliases=generate_aliases(a))
+                for q, a in self._formatted_data.items()
             ],
         )
 
@@ -184,7 +189,7 @@ class Category(ABC, Generic[T]):
 
         path = PUBLIC_DIR / "category_data" / path
 
-         # Ensure the directory exists
+        # Ensure the directory exists
         os.makedirs(os.path.dirname(path), exist_ok=True)
 
         # Get the formatted data

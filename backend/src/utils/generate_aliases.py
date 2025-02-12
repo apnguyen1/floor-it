@@ -1,5 +1,6 @@
 from typing import List
 
+
 def generate_aliases(answers: List[str]) -> List[str]:
     """
     TODO
