@@ -1,3 +1,5 @@
+# TODO: Remove and put tests in category_test since category_mapper is unused
+
 import pytest
 
 from backend.src.models.category_data_dto import QuestionType, TriviaQuestionDTO
