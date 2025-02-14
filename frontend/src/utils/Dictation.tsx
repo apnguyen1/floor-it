@@ -4,38 +4,44 @@ import { Command } from './command.interface.ts';
 
 interface DictationProps {
   commands: Command[];
-  inGame: boolean;
 }
 
-const Dictation = ({ commands, inGame }: DictationProps) => {
-  const { browserSupportsSpeechRecognition, isMicrophoneAvailable, interimTranscript } =
-    useSpeechRecognition({ commands });
+const Dictation = ({ commands }: DictationProps) => {
+  const {
+    browserSupportsSpeechRecognition,
+    isMicrophoneAvailable,
+    interimTranscript,
+    listening,
+  } = useSpeechRecognition({ commands });
 
   if (!isMicrophoneAvailable) {
     return (
-      <Alert variant={'filled'} severity={'error'}>
+      <Alert variant="filled" severity="error">
         <AlertTitle>Error</AlertTitle>
-        Device doesn't have microphone!
+        Device doesn't have a microphone!
       </Alert>
     );
   }
 
   if (!browserSupportsSpeechRecognition) {
     return (
-      <Alert variant={'filled'}>
+      <Alert variant="filled" severity="error">
         <AlertTitle>Error</AlertTitle>
         Browser doesn't support Speech Recognition!
       </Alert>
     );
   }
 
-  if (inGame) {
-    SpeechRecognition.startListening({ continuous: true, interimResults: true });
-  } else {
-    SpeechRecognition.stopListening();
-  }
-
-  return interimTranscript;
+  return (
+    <div>
+      <p>Microphone: {listening ? 'on' : 'off'}</p>
+      <button onClick={() => SpeechRecognition.startListening({ continuous: true })}>
+        Start
+      </button>
+      <button onClick={SpeechRecognition.stopListening}>Stop</button>
+      <p>{interimTranscript}</p>
+    </div>
+  );
 };
 
 export default Dictation;

@@ -6,30 +6,6 @@ import { Command } from '../../utils/command.interface.ts';
 
 export const GameScreen = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [inGame, setInGame] = useState(false);
-  const data = {
-    name: 'LoL Champion Titles',
-    preview_img: 'default-preview.png',
-    preview_desc: "Guess the LoL champion's name by their title!",
-    type: 'text',
-    questions: [
-      {
-        question: 'the Darkin Blade',
-        answers: ['Aatrox'],
-        aliases: [],
-      },
-      {
-        question: 'the Nine-Tailed Fox',
-        answers: ['Ahri'],
-        aliases: [],
-      },
-      {
-        question: 'the Rogue Assassin',
-        answers: ['Akali'],
-        aliases: [],
-      },
-    ],
-  };
 
   const nextQuestion = (answer: string) => {
     console.log(`Correct answer: ${answer}`);
@@ -40,28 +16,33 @@ export const GameScreen = () => {
     }
   };
 
+  const data = {
+    name: 'LoL Champion Titles',
+    preview_img: 'default-preview.png',
+    preview_desc: "Guess the LoL champion's name by their title!",
+    type: 'text',
+    questions: [
+      { question: 'the Darkin Blade', answers: ['Aatrox'], aliases: [] },
+      { question: 'the Nine-Tailed Fox', answers: ['Ahri'], aliases: [] },
+      { question: 'the Rogue Assassin', answers: ['Akali'], aliases: [] },
+    ],
+  };
+
   const currentQuestion = data.questions[currentQuestionIndex];
 
-  const commands: Command[] = [
-    {
-      command: [...currentQuestion.answers, ...currentQuestion.aliases],
-      callback: nextQuestion,
-      isFuzzyMatch: true,
-      matchInterim: true,
-      fuzzyMatchingThreshold: 0.2,
-      bestMatchOnly: true,
-    },
-  ];
-
-  console.log(commands[0].command);
+  const commands: Command[] = data.questions.map((question) => ({
+    command: [...question.answers, ...question.aliases],
+    callback: (answer: string) => nextQuestion(answer),
+    isFuzzyMatch: true,
+    matchInterim: true,
+    fuzzyMatchingThreshold: 0.6,
+    bestMatchOnly: true,
+  }));
 
   return (
     <Box className={'content-container'}>
       <h2>{currentQuestion.question}</h2>
-      <Dictation commands={commands} nextQuestion={nextQuestion} inGame={inGame} />
-      <button onClick={() => setInGame((prev) => !prev)}>
-        {inGame ? 'Stop' : 'Start'} Listening
-      </button>
+      <Dictation commands={commands} />
     </Box>
   );
 };
