@@ -16,7 +16,8 @@
   "lint-staged": {
     "*.{js,ts,jsx,tsx,html,css}": [
       "eslint --fix",
-      "prettier --write --ignore-unknown"
+      "prettier --write --ignore-unknown",
+      "vitest run"
     ]
   },
   "dependencies": {
