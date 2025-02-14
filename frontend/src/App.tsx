@@ -5,8 +5,9 @@ import { ScreenType } from './constants/screens.ts';
 import { HomeScreen } from './screens/Home/HomeScreen.tsx';
 import { AvatarScreen } from './screens/Avatars/AvatarScreen.tsx';
 import { CategoriesScreen } from './screens/Categories/CategoriesScreen.tsx';
-import { GameSceen } from './screens/Game/GameSceen.tsx';
 import { GameProvider } from './context/GameContext.tsx';
+import { Container } from '@mui/material';
+import { GameScreen } from './screens/Game/GameSceen.tsx';
 
 const ScreenRender: React.FC = () => {
   const { screen } = useGame();
@@ -19,7 +20,7 @@ const ScreenRender: React.FC = () => {
     case ScreenType.Categories:
       return <CategoriesScreen></CategoriesScreen>;
     case ScreenType.Game:
-      return <GameSceen></GameSceen>;
+      return <GameScreen></GameScreen>;
     default:
       return <HomeScreen></HomeScreen>;
   }
@@ -28,11 +29,9 @@ const ScreenRender: React.FC = () => {
 const App: React.FC = () => {
   return (
     <GameProvider>
-      <div className={'app-container'}>
-        <div className={'content-container'}>
-          <ScreenRender></ScreenRender>
-        </div>
-      </div>
+      <Container className={'app-container'}>
+        <ScreenRender></ScreenRender>
+      </Container>
     </GameProvider>
   );
 };
