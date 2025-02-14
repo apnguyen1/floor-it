@@ -10,14 +10,13 @@
     "format": "prettier . --write",
     "format:check": "prettier . -c",
     "preview": "vite preview",
-    "test": "vitest",
+    "test": "vitest run",
     "prepare": "cd .. && husky frontend/.husky"
   },
   "lint-staged": {
     "*.{js,ts,jsx,tsx,html,css}": [
       "eslint --fix",
-      "prettier --write --ignore-unknown",
-      "vitest run"
+      "prettier --write --ignore-unknown"
     ]
   },
   "dependencies": {
