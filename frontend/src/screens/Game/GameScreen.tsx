@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import { Player } from '../../components/Player.tsx';
 
-export const GameSceen = () => {
+export const GameScreen = () => {
   return (
     <Box
       className="game-box"

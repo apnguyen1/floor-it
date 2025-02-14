@@ -5,7 +5,7 @@ import { ScreenType } from './constants/screens.ts';
 import { HomeScreen } from './screens/Home/HomeScreen.tsx';
 import { AvatarScreen } from './screens/Avatars/AvatarScreen.tsx';
 import { CategoriesScreen } from './screens/Categories/CategoriesScreen.tsx';
-import { GameSceen } from './screens/Game/GameSceen.tsx';
+import { GameScreen } from './screens/Game/GameScreen.tsx';
 import { GameProvider } from './context/GameContext.tsx';
 import { Container } from '@mui/material';
 
@@ -20,7 +20,7 @@ const ScreenRender: React.FC = () => {
     case ScreenType.Categories:
       return <CategoriesScreen></CategoriesScreen>;
     case ScreenType.Game:
-      return <GameSceen></GameSceen>;
+      return <GameScreen></GameScreen>;
     default:
       return <HomeScreen></HomeScreen>;
   }
