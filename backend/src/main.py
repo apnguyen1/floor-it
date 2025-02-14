@@ -50,6 +50,7 @@ def create_category_preview_list():
 
         # Write combined data to output JSON
         category_preview_list = CategoryPreviewListDTO(category_previews=combined_data)
+        # TODO: reformat code to reduce redundancy
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(category_preview_list.model_dump_json(indent=2))
 
