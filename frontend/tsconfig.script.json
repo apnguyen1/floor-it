@@ -9,9 +9,6 @@
     "outDir": "dist",
     "skipLibCheck": true
   },
-  "include": [
-    "src/scripts/print_champion_titles.ts",
-    "src/utils/fetch.ts"
-  ],
+  "include": ["src/scripts/print_champion_titles.ts", "src/utils/fetch.ts"],
   "exclude": ["node_modules"]
-} 
+}
