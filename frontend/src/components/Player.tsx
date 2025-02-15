@@ -1,22 +1,17 @@
 import { Avatar, Box } from '@mui/material';
 import { deepOrange } from '@mui/material/colors';
 import React from 'react';
+import Timer from './Timer.tsx';
 
 interface PlayerProps {
   playerName: string;
-  time: number;
-}
-
-interface TimerProps {
   initialTime: number;
 }
 
-// TOOO:
-const Timer: React.FC<PlayerProps> = ({ initialTime }: TimerProps) => {
-  return <h2>{initialTime}</h2>;
-};
-
-export const Player = ({ playerName, time }: PlayerProps) => {
+export const Player: React.FC<PlayerProps> = ({
+  playerName,
+  initialTime,
+}: PlayerProps) => {
   const fullName: string[] = playerName.split(' ');
   const abbrev: string = fullName.map((s) => s.charAt(0).toUpperCase()).join('');
 
@@ -56,7 +51,7 @@ export const Player = ({ playerName, time }: PlayerProps) => {
             {abbrev}
           </Avatar>
         </Box>
-        <Timer time={time} />
+        <Timer initialTime={initialTime} />
         <Box className="player-turn-box" sx={{ fontSize: '1rem', fontWeight: 'bold' }}>
           {fullName[0]}'s turn
         </Box>

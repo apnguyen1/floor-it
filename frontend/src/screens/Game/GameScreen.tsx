@@ -27,9 +27,9 @@ export const GameScreen: React.FC<GameProps> = ({ categoryData }: GameProps) => 
         padding: 2,
       }}
     >
-      <Player playerName={players.P1} time={initialTime} />
+      <Player playerName={players.P1} initialTime={initialTime} />
       <QuestionDisplay />
-      <Player playerName={players.P2} time={initialTime} />
+      <Player playerName={players.P2} initialTime={initialTime} />
     </Box>
   );
 };
