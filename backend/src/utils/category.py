@@ -141,7 +141,10 @@ class Category(ABC, Generic[T]):
 
         :return: CategoryDataDTO
         """
-        pass
+        name=self.__name,
+        description=self.__desc,
+        preview_img=str(self.__preview_img),
+        data={q: a for q, a in self._formatted_data.items()}
 
     # TODO - aidan
     def to_file(self, path: str) -> None:
