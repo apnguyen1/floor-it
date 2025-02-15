@@ -7,6 +7,7 @@ import { AvatarScreen } from './screens/Avatars/AvatarScreen.tsx';
 import { CategoriesScreen } from './screens/Categories/CategoriesScreen.tsx';
 import { GameScreen } from './screens/Game/GameScreen.tsx';
 import { GameProvider } from './context/GameContext.tsx';
+import { Box, Container } from '@mui/material';
 
 const ScreenRender: React.FC = () => {
   const { screen } = useGame();
@@ -26,9 +27,23 @@ const ScreenRender: React.FC = () => {
 };
 
 const App: React.FC = () => {
+  const url = '/img/app_background.png';
+
   return (
     <GameProvider>
-      <ScreenRender></ScreenRender>
+      <Box
+        sx={{
+          backgroundImage: `url(${url})`,
+        }}
+      >
+        <Container
+          sx={{
+            height: '100vh',
+          }}
+        >
+          <ScreenRender />
+        </Container>
+      </Box>
     </GameProvider>
   );
 };
