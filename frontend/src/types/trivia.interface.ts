@@ -4,7 +4,7 @@ export interface TriviaQuestion {
   aliases: string[];
 }
 
-export interface Trivia {
+export interface TriviaInterface {
   name: string;
   preview_img: string;
   preview_desc: string;

@@ -3,10 +3,10 @@ import { Player } from '../../components/Player.tsx';
 import { useGame } from '../../hooks/useGame.ts';
 import QuestionDisplay from '../../components/QuestionDisplay.tsx';
 import React from 'react';
-import { Trivia } from '../../types/trivia.ts';
+import { TriviaInterface } from '../../types/trivia.interface.ts';
 
 interface GameProps {
-  categoryData: Trivia;
+  categoryData: TriviaInterface;
 }
 
 export const GameScreen: React.FC<GameProps> = ({ categoryData }: GameProps) => {
