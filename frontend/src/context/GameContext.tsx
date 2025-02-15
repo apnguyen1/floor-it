@@ -11,7 +11,7 @@ const GameContext = createContext<GameContextType | undefined>(undefined);
 
 const GameProvider = ({ children }: { children: ReactNode }) => {
   const [screen, setScreen] = useState('home');
-  const [players, setPlayers] = useState({ P1: 'P1', P2: 'P2' });
+  const [players, setPlayers] = useState({ P1: '', P2: '' });
 
   return (
     <GameContext.Provider value={{ screen, setScreen, players, setPlayers }}>
