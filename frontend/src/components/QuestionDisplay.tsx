@@ -1,15 +1,7 @@
 import { Box } from '@mui/material';
 import React from 'react';
-
-// TODO: Ticket-84
-function TriviaQuestion() {
-  return <h1>Nothing yet, TO BE DONE</h1>;
-}
-
-// TODO: TICKET-17
-function Dictation() {
-  return <h2>Ditation Machineeee</h2>;
-}
+import TriviaQuestion from './TriviaQuestion.tsx';
+import Dictation from './Dictation.tsx';
 
 const QuestionDisplay: React.FC = () => {
   return (
@@ -24,8 +16,8 @@ const QuestionDisplay: React.FC = () => {
         minHeight: '100px',
       }}
     >
-      <TriviaQuestion></TriviaQuestion>
-      <Dictation></Dictation>
+      <TriviaQuestion />
+      <Dictation />
     </Box>
   );
 };
