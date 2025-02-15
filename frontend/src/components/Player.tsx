@@ -1,7 +1,25 @@
 import { Avatar, Box } from '@mui/material';
 import { deepOrange } from '@mui/material/colors';
+import React from 'react';
 
-export const Player = () => {
+interface PlayerProps {
+  playerName: string;
+  time: number;
+}
+
+interface TimerProps {
+  initialTime: number;
+}
+
+// TOOO:
+const Timer: React.FC<PlayerProps> = ({ initialTime }: TimerProps) => {
+  return <h2>{initialTime}</h2>;
+};
+
+export const Player = ({ playerName, time }: PlayerProps) => {
+  const fullName: string[] = playerName.split(' ');
+  const abbrev: string = fullName.map((s) => s.charAt(0).toUpperCase()).join('');
+
   return (
     <Box
       className="player-frame-box"
@@ -15,53 +33,32 @@ export const Player = () => {
       }}
     >
       <Box
-        className="player-box"
+        className="player-content-box"
         sx={{
-          border: '15px solid BLUE',
-          borderRadius: '15px',
-          padding: '15px',
-          backgroundColor: '#CDEDF9',
+          display: 'flex',
+          flexDirection: 'column',
+          height: '50%',
           alignItems: 'center',
-          width: '100%',
-          height: 'inherit',
+
+          justifyContent: 'space-around',
+          gap: 1,
         }}
       >
-        <Box
-          className="player-content-box"
-          sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            height: '50%',
-            alignItems: 'center',
-
-            justifyContent: 'space-around',
-            gap: 1,
-          }}
-        >
-          <Box className="player-avatar-box">
-            <Avatar
-              sx={{
-                bgcolor: deepOrange[500],
-                width: 64,
-                height: 64,
-                fontSize: 24,
-              }}
-            >
-              AN
-            </Avatar>
-          </Box>
-          <Box
-            className="player-timer-box"
-            sx={{ fontSize: '1.2rem', fontWeight: 'bold' }}
+        <Box className="player-avatar-box">
+          <Avatar
+            sx={{
+              bgcolor: deepOrange[500],
+              width: 64,
+              height: 64,
+              fontSize: 24,
+            }}
           >
-            0:45
-          </Box>
-          <Box
-            className="player-turn-box"
-            sx={{ fontSize: '1rem', fontWeight: 'bold' }}
-          >
-            P1's Turn
-          </Box>
+            {abbrev}
+          </Avatar>
+        </Box>
+        <Timer time={time} />
+        <Box className="player-turn-box" sx={{ fontSize: '1rem', fontWeight: 'bold' }}>
+          {fullName[0]}'s turn
         </Box>
       </Box>
     </Box>

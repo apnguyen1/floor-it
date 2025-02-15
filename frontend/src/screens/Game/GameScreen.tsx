@@ -1,7 +1,20 @@
 import { Box } from '@mui/material';
 import { Player } from '../../components/Player.tsx';
+import { useGame } from '../../hooks/useGame.ts';
+import QuestionDisplay from '../../components/QuestionDisplay.tsx';
+import React from 'react';
+import { Trivia } from '../../types/trivia.ts';
 
-export const GameScreen = () => {
+interface GameProps {
+  categoryData: Trivia;
+}
+
+export const GameScreen: React.FC<GameProps> = ({ categoryData }: GameProps) => {
+  const { players } = useGame();
+  const initialTime = 45 * 1000; // 45 ms * 1000 = 45 seconds
+
+  console.log(categoryData);
+
   return (
     <Box
       className="game-box"
@@ -14,26 +27,9 @@ export const GameScreen = () => {
         padding: 2,
       }}
     >
-      {/* Left Player Box */}
-      <Player></Player>
-
-      {/* Question Box - Centered */}
-      <Box
-        className="question-box"
-        sx={{
-          flex: 2,
-          textAlign: 'center',
-          padding: '16px',
-          border: '15px solid black',
-          borderRadius: '8px',
-          minHeight: '100px',
-        }}
-      >
-        NOTHING GOES HERE
-      </Box>
-
-      {/* Right Player Box */}
-      <Player></Player>
+      <Player playerName={players.P1} time={initialTime} />
+      <QuestionDisplay />
+      <Player playerName={players.P2} time={initialTime} />
     </Box>
   );
 };
