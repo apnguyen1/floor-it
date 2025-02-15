@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Box, Button, Modal, Typography } from '@mui/material';
+import { Box, Button, Modal } from '@mui/material';
 import './InfoModal.css';
 
 export const InfoModal = () => {
@@ -9,8 +9,13 @@ export const InfoModal = () => {
 
   return (
     <div>
-      <Button onClick={handleOpen} variant={'contained'}>
-        Open Instructions
+      <Button
+        onClick={handleOpen}
+        variant={'contained'}
+        style={{ backgroundColor: '#383FC2', color: 'white' }}
+        sx={{ borderRadius: '75px', fontSize: '15px', marginBottom: '15px' }}
+      >
+        How To Play
       </Button>
       <Modal
         open={open}
@@ -19,12 +24,6 @@ export const InfoModal = () => {
         aria-describedby="modal-description"
       >
         <Box className="modal-container">
-          <Typography id="modal-title" variant="h6" component="h2">
-            Floor It Instructions
-          </Typography>
-          <Typography id="modal-description" className="modal-description">
-            Your instructions content goes here...
-          </Typography>
           <Button onClick={handleClose} className="close-button">
             Close
           </Button>

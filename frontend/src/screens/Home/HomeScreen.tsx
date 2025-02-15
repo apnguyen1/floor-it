@@ -16,7 +16,13 @@ export const HomeScreen = () => {
         variant="contained"
         onClick={() => setScreen(ScreenType.Avatar)}
         style={{ backgroundColor: '#383FC2', color: 'white' }}
-        sx={{ borderRadius: '75px', fontSize: '25px', marginBottom: '15px' }}
+        sx={{
+          borderRadius: '75px',
+          fontSize: '25px',
+          marginBottom: '15px',
+          width: '250px',
+          height: '60px',
+        }}
       >
         LET'S PLAY
       </Button>
