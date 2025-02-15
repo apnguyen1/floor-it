@@ -4,7 +4,6 @@ import Timer from './Timer.tsx';
 
 interface PlayerProps {
   playerName: string;
-  isActive: boolean;
 }
 
 export const Player: React.FC<PlayerProps> = ({ playerName }: PlayerProps) => {
