@@ -8,7 +8,7 @@ const Timer: React.FC = () => {
     return `${seconds}.${milliseconds.toString().padStart(2, '0')}`;
   };
 
-  return <h2>{formatTime(450000)}</h2>;
+  return <h2>{formatTime(45000)}</h2>;
 };
 
 export default Timer;
