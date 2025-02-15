@@ -3,10 +3,16 @@ from typing import Generic, Type, TypeVar, List
 
 from pydantic import BaseModel
 
-from backend.src.models.category_data_dto import CategoryDataDTO
+from backend.src.models.category_data_dto import (
+    CategoryDataDTO,
+    QuestionType,
+    TriviaQuestionDTO,
+)
 from backend.src.utils.definitions import PUBLIC_DIR
 from backend.src.utils.fetch import fetch_url
 from backend.src.utils.parse_file import parse_file
+from backend.src.utils.generate_aliases import generate_aliases
+import os
 
 # ensures type T is derived from BaseModel
 T = TypeVar("T", bound=BaseModel)
@@ -54,6 +60,7 @@ class Category(ABC, Generic[T]):
         self,
         source: str,
         model: Type[T],
+        question_type: QuestionType = QuestionType.TEXT,
         name: str = "Category",
         img_name: str = "default-preview.png",
         desc: str = "Test your Trivia!",
@@ -64,8 +71,9 @@ class Category(ABC, Generic[T]):
         # Private
         self.__source: str = source
         self.__name = name
-        self.__preview_img: str = PUBLIC_DIR / "previews" / img_name
+        self.__preview_img: str = img_name
         self.__desc: str = desc
+        self.__question_type: QuestionType = question_type
 
         # Protected
         self._raw_data: T = self._load_data(model)
@@ -97,7 +105,15 @@ class Category(ABC, Generic[T]):
 
     @preview_img.setter
     def preview_img(self, img_name: str) -> None:
-        self.__preview_img = PUBLIC_DIR / "previews" / img_name
+        self.__preview_img = img_name
+
+    @property
+    def question_type(self) -> str:
+        return self.__question_type
+
+    @question_type.setter
+    def question_type(self, question_type: QuestionType) -> None:
+        self.__question_type = question_type
 
     @property
     def formatted_data(self) -> dict[str, List[str]]:
@@ -134,22 +150,56 @@ class Category(ABC, Generic[T]):
         """
         pass
 
-    # TODO - arman
     def to_category(self) -> CategoryDataDTO:
         """
-        Converts the category data to a standardized DTO format.
+        Converts the category data formatted to a standardized DTO format.
 
         :return: CategoryDataDTO
         """
-        pass
 
-    # TODO - aidan
-    def to_file(self, path: str) -> None:
+        if not isinstance(self._formatted_data, dict):
+            raise ValueError("formatted_data should be a dict")
+
+        for q, a in self._formatted_data.items():
+            if not isinstance(a, list):
+                raise ValueError("answers should be a list of strings")
+
+        return CategoryDataDTO(
+            name=self.__name,
+            preview_img=self.__preview_img,
+            preview_desc=self.__desc,
+            type=self.question_type,
+            questions=[
+                TriviaQuestionDTO(question=q, answers=a, aliases=generate_aliases(a))
+                for q, a in self._formatted_data.items()
+            ],
+        )
+
+    def to_file(self, path: str = None) -> None:
         """
         Exports the formatted data to a JSON file in the public directory of the
         frontend.
 
-        :param path: TODO
-        :return: TODO
+        :param path: The path to create the JSON file in
+          (PUBLIC_DIR / "category_data" / <path>)
+        If path is not given, will default to the category name
         """
-        pass
+        if path is None:
+            path = self.__name
+        # Make sure path is all lowercase no spaces
+        path = path.lower().replace(" ", "_")
+        # Make sure path ends with .json
+        if not path.endswith(".json"):
+            path += ".json"
+
+        path = PUBLIC_DIR / "category_data" / path
+
+        # Ensure the directory exists
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+
+        # Get the formatted data
+        data = self.to_category()
+
+        # Write to JSON file
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(data.model_dump_json(indent=2))
