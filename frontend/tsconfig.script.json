@@ -7,7 +7,8 @@
     "esModuleInterop": true,
     "strict": true,
     "outDir": "dist",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["node"]
   },
   "include": ["src/scripts/print_champion_titles.ts", "src/utils/fetch.ts"],
   "exclude": ["node_modules"]
