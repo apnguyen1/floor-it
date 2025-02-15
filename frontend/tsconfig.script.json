@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2015",
+    "module": "ES2020",
+    "lib": ["ES2015", "DOM"],
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "strict": true,
+    "outDir": "dist",
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/scripts/print_champion_titles.ts",
+    "src/utils/fetch.ts"
+  ],
+  "exclude": ["node_modules"]
+} 
