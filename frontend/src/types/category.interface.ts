@@ -5,7 +5,7 @@ export interface CategoryPreview {
 }
 
 export interface CategoryList {
-  categories: CategoryPreview[];
+  category_previews: CategoryPreview[];
 }
 
 export interface Question {
