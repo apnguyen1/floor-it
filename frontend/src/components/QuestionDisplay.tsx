@@ -1,5 +1,4 @@
 import { Box } from '@mui/material';
-import React from 'react';
 import TriviaQuestion from './TriviaQuestion.tsx';
 import Dictation from './Dictation.tsx';
 import { Command } from '../types/command.interface.ts';
