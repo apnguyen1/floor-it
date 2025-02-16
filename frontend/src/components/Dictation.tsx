@@ -8,10 +8,11 @@ interface DictationProps {
 
 const Dictation = ({ commands }: DictationProps) => {
   const {
+    transcript,
     browserSupportsSpeechRecognition,
     isMicrophoneAvailable,
-    interimTranscript,
     listening,
+    resetTranscript,
   } = useSpeechRecognition({ commands });
 
   if (!isMicrophoneAvailable) {
@@ -32,14 +33,22 @@ const Dictation = ({ commands }: DictationProps) => {
     );
   }
 
+  const handleStartSpeech = () =>
+    SpeechRecognition.startListening({
+      continuous: true,
+      interimResults: true,
+    });
+
+  const handleStopSpeech = () => {
+    SpeechRecognition.stopListening().then(() => resetTranscript());
+  };
+
   return (
     <div>
       <p>Microphone: {listening ? 'on' : 'off'}</p>
-      <button onClick={() => SpeechRecognition.startListening({ continuous: true })}>
-        Start
-      </button>
-      <button onClick={SpeechRecognition.stopListening}>Stop</button>
-      <p>{interimTranscript}</p>
+      <button onClick={handleStartSpeech}>Start</button>
+      <button onClick={handleStopSpeech}>Stop</button>
+      <p>{transcript}</p>
     </div>
   );
 };
