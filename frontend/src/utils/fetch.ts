@@ -1,4 +1,4 @@
-import { CategoryContent, CategoryList } from '../types/category.interface.ts';
+import { CategoryContent, CategoryList } from '../types/category.type.ts';
 import { BASE_URL } from '../constants/config';
 
 // Internal helper function for fetching JSON data

@@ -4,7 +4,7 @@ import {
   CategoryList,
   CategoryPreview,
   Question,
-} from '../types/category.interface.ts';
+} from '../types/category.type.ts';
 import { fetchCategories, fetchCategoryData } from './fetch.ts';
 
 const mockCategoryList: CategoryList = {
