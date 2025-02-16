@@ -9,7 +9,7 @@ type AppContextType = {
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
-const GameProvider = ({ children }: { children: ReactNode }) => {
+const AppProvider = ({ children }: { children: ReactNode }) => {
   const [screen, setScreen] = useState('home');
   const [players, setPlayers] = useState({ P1: '', P2: '' });
 
@@ -20,4 +20,4 @@ const GameProvider = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export { AppContext, GameProvider };
+export { AppContext, AppProvider };

@@ -6,7 +6,7 @@ import { HomeScreen } from './screens/Home/HomeScreen.tsx';
 import { AvatarScreen } from './screens/Avatars/AvatarScreen.tsx';
 import { CategoriesScreen } from './screens/Categories/CategoriesScreen.tsx';
 import { GameScreen } from './screens/Game/GameScreen.tsx';
-import { GameProvider } from './context/AppContext.tsx';
+import { AppProvider } from './context/AppContext.tsx';
 import { Box, Container } from '@mui/material';
 
 const ScreenRender: React.FC = () => {
@@ -30,7 +30,7 @@ const App: React.FC = () => {
   const url = '/img/app_background.png';
 
   return (
-    <GameProvider>
+    <AppProvider>
       <Box
         sx={{
           backgroundImage: `url(${url})`,
@@ -44,7 +44,7 @@ const App: React.FC = () => {
           <ScreenRender />
         </Container>
       </Box>
-    </GameProvider>
+    </AppProvider>
   );
 };
 
