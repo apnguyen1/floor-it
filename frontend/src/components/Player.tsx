@@ -8,7 +8,8 @@ interface PlayerProps {
 
 export const Player: React.FC<PlayerProps> = ({ playerName }: PlayerProps) => {
   const fullName: string[] = playerName.split(' ');
-  const abbrev: string = fullName.map((s) => s.charAt(0).toUpperCase()).join('');
+  const abbrev: string =
+    fullName[0].length > 3 ? fullName[0].substring(0, 3) : fullName[0];
 
   return (
     <Box
