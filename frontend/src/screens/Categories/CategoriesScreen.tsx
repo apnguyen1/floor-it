@@ -1,9 +1,9 @@
-import { useGame } from '../../hooks/useGame.ts';
+import { useApp } from '../../hooks/useApp.ts';
 import { Button, Container, Typography } from '@mui/material';
 import { ScreenType } from '../../constants/screens.ts';
 
 export const CategoriesScreen = () => {
-  const { setScreen } = useGame();
+  const { setScreen } = useApp();
 
   return (
     <Container>
