@@ -1,11 +1,11 @@
-import { useGame } from '../../hooks/useGame.ts';
+import { useApp } from '../../hooks/useApp.ts';
 import './Home.css';
 import { ScreenType } from '../../constants/screens.ts';
 import { Box, Button, Typography } from '@mui/material';
 import InfoModal from '../../utils/InfoModal.tsx';
 
 export const HomeScreen = () => {
-  const { setScreen } = useGame();
+  const { setScreen } = useApp();
 
   return (
     <Box
