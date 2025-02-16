@@ -1,13 +1,13 @@
 import { createContext, ReactNode, useState } from 'react';
 
-type GameContextType = {
+type AppContextType = {
   screen: string;
   setScreen: (screen: string) => void;
   players: { P1: string; P2: string };
   setPlayers: (players: { P1: string; P2: string }) => void;
 };
 
-const AppContext = createContext<GameContextType | undefined>(undefined);
+const AppContext = createContext<AppContextType | undefined>(undefined);
 
 const GameProvider = ({ children }: { children: ReactNode }) => {
   const [screen, setScreen] = useState('home');
