@@ -1,16 +1,16 @@
 import React from 'react';
 import './styles/App.css';
-import { useGame } from './hooks/useGame.ts';
+import { useApp } from './hooks/useApp.ts';
 import { ScreenType } from './constants/screens.ts';
 import { HomeScreen } from './screens/Home/HomeScreen.tsx';
 import { AvatarScreen } from './screens/Avatars/AvatarScreen.tsx';
 import { CategoriesScreen } from './screens/Categories/CategoriesScreen.tsx';
 import { GameScreen } from './screens/Game/GameScreen.tsx';
-import { GameProvider } from './context/GameContext.tsx';
+import { GameProvider } from './context/AppContext.tsx';
 import { Box, Container } from '@mui/material';
 
 const ScreenRender: React.FC = () => {
-  const { screen } = useGame();
+  const { screen } = useApp();
 
   switch (screen) {
     case ScreenType.Home:

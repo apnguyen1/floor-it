@@ -7,17 +7,17 @@ type GameContextType = {
   setPlayers: (players: { P1: string; P2: string }) => void;
 };
 
-const GameContext = createContext<GameContextType | undefined>(undefined);
+const AppContext = createContext<GameContextType | undefined>(undefined);
 
 const GameProvider = ({ children }: { children: ReactNode }) => {
   const [screen, setScreen] = useState('home');
   const [players, setPlayers] = useState({ P1: '', P2: '' });
 
   return (
-    <GameContext.Provider value={{ screen, setScreen, players, setPlayers }}>
+    <AppContext.Provider value={{ screen, setScreen, players, setPlayers }}>
       {children}
-    </GameContext.Provider>
+    </AppContext.Provider>
   );
 };
 
-export { GameContext, GameProvider };
+export { AppContext, GameProvider };
