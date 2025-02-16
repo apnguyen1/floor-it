@@ -8,11 +8,7 @@ from backend.src.utils.category import Category
 class Champions(Category[ChampionDTO]):
     def __init__(self, qt: QuestionType):
         url = "https://ddragon.leagueoflegends.com/cdn/15.2.1/data/en_US/champion.json"
-        self.qt = qt
-        super().__init__(
-            source=url,
-            model=ChampionDTO,
-        )
+        super().__init__(source=url, model=ChampionDTO, question_type=qt)
 
     def __title_to_name(self) -> Dict[str, List[str]]:
         """
@@ -43,6 +39,6 @@ class Champions(Category[ChampionDTO]):
     def _format_data(self) -> dict[str, List[str]]:
         return (
             self.__title_to_name()
-            if self.qt == QuestionType.TEXT
+            if self.question_type == QuestionType.TEXT
             else (self.__image_to_name())
         )
