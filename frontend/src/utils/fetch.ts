@@ -1,4 +1,4 @@
-import { CategoryList, CategoryContent } from '../types/category';
+import { CategoryContent, CategoryList } from '../types/category.type.ts';
 import { BASE_URL } from '../constants/config';
 
 // Internal helper function for fetching JSON data
@@ -14,7 +14,9 @@ async function fetchJson<T>(endpoint: string): Promise<T> {
 
 // Exported functions for specific data fetching
 export const fetchCategories = () =>
-  fetchJson<CategoryList>('categories').then((data) => data.categories);
+  fetchJson<CategoryList>('category_preview_list.json').then(
+    (data) => data.category_previews,
+  );
 
 export const fetchCategoryData = (categoryId: string) =>
   fetchJson<CategoryContent>(`category_data/${categoryId}`);

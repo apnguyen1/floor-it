@@ -1,23 +1,23 @@
-export interface CategoryPreview {
+export type CategoryPreview = {
   name: string;
   image: string;
   desc: string;
-}
+};
 
-export interface CategoryList {
-  categories: CategoryPreview[];
-}
+export type CategoryList = {
+  category_previews: CategoryPreview[];
+};
 
-export interface Question {
+export type Question = {
   question: string;
   answers: string[];
   aliases: string[];
-}
+};
 
-export interface CategoryContent {
+export type CategoryContent = {
   name: string;
   preview_img: string;
   preview_desc: string;
   type: 'text' | 'img';
   questions: Question[];
-}
+};
