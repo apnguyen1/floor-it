@@ -1,0 +1,20 @@
+import { CategoryList, CategoryContent } from '../types/category';
+import { BASE_URL } from '../constants/config';
+
+// Internal helper function for fetching JSON data
+async function fetchJson<T>(endpoint: string): Promise<T> {
+  const response = await fetch(`${BASE_URL}${endpoint}`);
+
+  if (!response.ok) {
+    throw new Error(`HTTP error! Status: ${response.status}`);
+  }
+
+  return response.json();
+}
+
+// Exported functions for specific data fetching
+export const fetchCategories = () =>
+  fetchJson<CategoryList>('categories').then((data) => data.categories);
+
+export const fetchCategoryData = (categoryId: string) =>
+  fetchJson<CategoryContent>(`category_data/${categoryId}`);
