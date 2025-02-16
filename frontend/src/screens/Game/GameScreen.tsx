@@ -32,6 +32,8 @@ export const GameScreen: React.FC = () => {
         width: '100%',
         height: '100vh',
         padding: 2,
+        borderRadius: 150,
+        backgroundColor: 'rgba(200,255,239,0.90)',
       }}
     >
       <Player

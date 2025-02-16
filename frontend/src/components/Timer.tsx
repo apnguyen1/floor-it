@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Typography } from '@mui/material';
 
 interface TimerProps {
   inGame: boolean;
@@ -35,7 +36,7 @@ const Timer = ({ inGame, onTimeOut, isActive }: TimerProps) => {
     return `${seconds}.${milliseconds.toString().padStart(2, '0')}`;
   };
 
-  return <h2>{formatTime(countdown)}</h2>;
+  return <Typography variant={'h2'}>{formatTime(countdown)}</Typography>;
 };
 
 export default Timer;
