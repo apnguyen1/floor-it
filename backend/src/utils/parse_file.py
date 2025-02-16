@@ -26,8 +26,8 @@ def parse_file(filename) -> dict:
         with open(file_path, "r") as file:
             for line in file:
                 if "?" in line:
-                    parts = re.split(r"\?\s*", line.strip(), maxsplit=1)
+                    parts = line.strip().split("?")
                     if len(parts) == 2:
                         question, answer = parts
-                        data[question.strip() + "?"] = [answer.strip()]
+                        data[question.strip()] = [answer.strip()]
     return data
