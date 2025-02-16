@@ -1,7 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
-// TODO: To be implemented ticket-15
-const Timer: React.FC = () => {
+interface TimerProps {
+  gameStarted: boolean;
+}
+
+const Timer: React.FC = ({ gameStarted }: TimerProps) => {
+  const initialTime = 45 * 1000;
+  const [time, setTime] = useState(initialTime);
+
+  useEffect(() => {}, []);
+
   const formatTime = (time: number) => {
     const seconds = Math.floor(time / 1000);
     const milliseconds = Math.floor((time % 1000) / 10);

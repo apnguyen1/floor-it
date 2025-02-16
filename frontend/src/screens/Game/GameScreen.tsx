@@ -21,7 +21,7 @@ export const GameScreen: React.FC = () => {
     >
       <Player playerName={players.P1.name} />
       <QuestionDisplay />
-      <Player playerName={'P2'} />
+      <Player playerName={players.P2.name} />
     </Box>
   );
 };
