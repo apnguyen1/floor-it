@@ -1,19 +1,13 @@
 import { Box } from '@mui/material';
-import Dictation from '../../utils/Dictation.tsx';
-import '../../styles/App.css';
-import { useState } from 'react';
-import { Command } from '../../utils/command.interface.ts';
+import { Player } from '../../components/Player.tsx';
+import QuestionDisplay from '../../components/QuestionDisplay.tsx';
+import React from 'react';
+import { Command } from '../../types/command.interface.ts';
 
-export const GameScreen = () => {
-  const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-
+export const GameScreen: React.FC = () => {
+  // TODO TO BE IMPLEMENTED
   const nextQuestion = (answer: string) => {
-    console.log(`Correct answer: ${answer}`);
-    if (currentQuestionIndex < data.questions.length - 1) {
-      setCurrentQuestionIndex(currentQuestionIndex + 1);
-    } else {
-      console.log('Game Over!');
-    }
+    return answer;
   };
 
   const data = {
@@ -28,8 +22,6 @@ export const GameScreen = () => {
     ],
   };
 
-  const currentQuestion = data.questions[currentQuestionIndex];
-
   const commands: Command[] = data.questions.map((question) => ({
     command: [...question.answers, ...question.aliases],
     callback: (answer: string) => nextQuestion(answer),
@@ -40,9 +32,20 @@ export const GameScreen = () => {
   }));
 
   return (
-    <Box className={'content-container'}>
-      <h2>{currentQuestion.question}</h2>
-      <Dictation commands={commands} />
+    <Box
+      className="game-box"
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '100%',
+        height: '100vh',
+        padding: 2,
+      }}
+    >
+      <Player playerName={'P1'} />
+      <QuestionDisplay commands={commands} />
+      <Player playerName={'P2'} />
     </Box>
   );
 };

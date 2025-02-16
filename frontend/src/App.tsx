@@ -5,9 +5,9 @@ import { ScreenType } from './constants/screens.ts';
 import { HomeScreen } from './screens/Home/HomeScreen.tsx';
 import { AvatarScreen } from './screens/Avatars/AvatarScreen.tsx';
 import { CategoriesScreen } from './screens/Categories/CategoriesScreen.tsx';
-import { GameProvider } from './context/GameContext.tsx';
-import { Container } from '@mui/material';
 import { GameScreen } from './screens/Game/GameScreen.tsx';
+import { GameProvider } from './context/GameContext.tsx';
+import { Box, Container } from '@mui/material';
 
 const ScreenRender: React.FC = () => {
   const { screen } = useGame();
@@ -27,11 +27,23 @@ const ScreenRender: React.FC = () => {
 };
 
 const App: React.FC = () => {
+  const url = '/img/app_background.png';
+
   return (
     <GameProvider>
-      <Container className={'app-container'}>
-        <ScreenRender></ScreenRender>
-      </Container>
+      <Box
+        sx={{
+          backgroundImage: `url(${url})`,
+        }}
+      >
+        <Container
+          sx={{
+            height: '100vh',
+          }}
+        >
+          <ScreenRender />
+        </Container>
+      </Box>
     </GameProvider>
   );
 };
