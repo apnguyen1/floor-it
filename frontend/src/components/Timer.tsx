@@ -28,7 +28,7 @@ const Timer = ({ inGame, onTimeOut, isActive }: TimerProps) => {
     }, 10);
 
     return () => clearInterval(interval);
-  }, [countdown, inGame, isActive]);
+  }, [countdown, inGame, isActive, onTimeOut]);
 
   const formatTime = (time: number) => {
     const seconds = Math.floor(time / 1000);
