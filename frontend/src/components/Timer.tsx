@@ -1,14 +1,33 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 interface TimerProps {
-  gameStarted: boolean;
+  inGame: boolean;
+  onTimeOut: () => void;
+  isActive: boolean;
 }
 
-const Timer: React.FC = ({ gameStarted }: TimerProps) => {
-  const initialTime = 45 * 1000;
-  const [time, setTime] = useState(initialTime);
+const Timer = ({ inGame, onTimeOut, isActive }: TimerProps) => {
+  const initialTime = 10 * 1000;
+  const [countdown, setCountDown] = useState(initialTime);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    if (!inGame || !isActive) {
+      return;
+    }
+
+    if (countdown <= 0) {
+      onTimeOut();
+      return;
+    }
+
+    const interval = setInterval(() => {
+      setCountDown((prev) => {
+        return Math.max(prev - 10, 0);
+      });
+    }, 10);
+
+    return () => clearInterval(interval);
+  }, [countdown, inGame, isActive]);
 
   const formatTime = (time: number) => {
     const seconds = Math.floor(time / 1000);
@@ -16,7 +35,7 @@ const Timer: React.FC = ({ gameStarted }: TimerProps) => {
     return `${seconds}.${milliseconds.toString().padStart(2, '0')}`;
   };
 
-  return <h2>{formatTime(45000)}</h2>;
+  return <h2>{formatTime(countdown)}</h2>;
 };
 
 export default Timer;

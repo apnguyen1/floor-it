@@ -1,9 +1,17 @@
-import { Box } from '@mui/material';
-import React from 'react';
+import { Box, Button } from '@mui/material';
 import TriviaQuestion from './TriviaQuestion.tsx';
 import Dictation from './Dictation.tsx';
 
-const QuestionDisplay: React.FC = () => {
+interface QuestionDisplayProps {
+  onStartGame: () => void;
+  onSwitchPlayers: () => void;
+}
+
+const QuestionDisplay = ({ onStartGame, onSwitchPlayers }: QuestionDisplayProps) => {
+  const handleStartGame = (): void => onStartGame();
+
+  const handleSwitchPlayer = (): void => onSwitchPlayers();
+
   return (
     <Box
       className="question-box"
@@ -18,6 +26,13 @@ const QuestionDisplay: React.FC = () => {
     >
       <TriviaQuestion />
       <Dictation />
+      {/* TODO TO BE REMOVED */}
+      <Button variant={'contained'} onClick={handleStartGame}>
+        Start!
+      </Button>
+      <Button variant={'contained'} onClick={handleSwitchPlayer}>
+        Switch Players!
+      </Button>
     </Box>
   );
 };

@@ -1,23 +1,37 @@
-import { Avatar, Box } from '@mui/material';
-import React from 'react';
+import { Avatar, Box, Typography } from '@mui/material';
+import React, { useCallback } from 'react';
 import Timer from './Timer.tsx';
 
 interface PlayerProps {
   playerName: string;
+  inGame: boolean;
+  onTimeOut: (playerName: string) => void;
+  isActive: boolean;
 }
 
-export const Player: React.FC<PlayerProps> = ({ playerName }: PlayerProps) => {
-  const fullName: string[] = playerName.split(' ');
-  const abbrev: string =
-    fullName[0].length > 3 ? fullName[0].substring(0, 3) : fullName[0];
+export const Player: React.FC<PlayerProps> = ({
+  playerName,
+  inGame,
+  onTimeOut,
+  isActive,
+}: PlayerProps) => {
+  const firstName: string = playerName.split(' ')[0];
+  const abbrev: string = firstName.length > 3 ? firstName.substring(0, 3) : firstName;
+
+  const handleTimeOut = useCallback(() => {
+    console.log(`${playerName} lost!`);
+    onTimeOut(playerName);
+  }, [onTimeOut, playerName]);
 
   return (
     <Box
       sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1 }}
     >
       <Avatar>{abbrev}</Avatar>
-      <Timer />
-      <h3>{fullName[0]}'s Turn</h3>
+      <Timer inGame={inGame} onTimeOut={handleTimeOut} isActive={isActive} />
+      <Typography variant="h6" color={isActive ? 'primary' : 'textDisabled'}>
+        {firstName}'s Turn
+      </Typography>
     </Box>
   );
 };
