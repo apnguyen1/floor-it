@@ -1,5 +1,6 @@
 from backend.src.models.category_data_dto import QuestionType
 from backend.src.scripts.lol_champions import Champions
+from backend.src.scripts.numbers import Numbers
 from backend.src.utils.definitions import PUBLIC_DIR
 import os
 import json
@@ -20,6 +21,7 @@ def create_category_data():
     turns them into JSONs in public/category_data
     """
     Champions(QuestionType.TEXT).to_file()
+    Numbers().to_file()
 
 
 def create_category_preview_list():

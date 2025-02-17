@@ -2,16 +2,7 @@ import { Box, Button } from '@mui/material';
 import TriviaQuestion from './TriviaQuestion.tsx';
 import Dictation from './Dictation.tsx';
 
-interface QuestionDisplayProps {
-  onStartGame: () => void;
-  onSwitchPlayers: () => void;
-}
-
-const QuestionDisplay = ({ onStartGame, onSwitchPlayers }: QuestionDisplayProps) => {
-  const handleStartGame = (): void => onStartGame();
-
-  const handleSwitchPlayer = (): void => onSwitchPlayers();
-
+const QuestionDisplay = () => {
   return (
     <Box
       className="question-box"
