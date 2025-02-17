@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Player } from '../../components/Player.tsx';
-import { Box } from '@mui/material';
+import { Player } from './Player.tsx';
+import { Box, Button } from '@mui/material';
 import { useApp } from '../../hooks/useApp.ts';
 import QuestionDisplay from '../../components/QuestionDisplay.tsx';
 
@@ -9,15 +9,13 @@ export const GameScreen: React.FC = () => {
   const [inGame, setInGame] = useState<boolean>(false);
   const [activePlayer, setActivePlayer] = useState(true);
 
-  const handleStartGame = () => setInGame((prev) => !prev);
+  const handleStartGame = () => setInGame(true);
 
   const handleTimeOut = (playerName: string) => {
     setInGame(false);
-    if (playerName === players.P1.name) {
-      alert(`${players.P2.name}, You've won!`);
-    } else {
-      alert(`${players.P1.name}, You've won!`);
-    }
+    alert(
+      `${playerName === players.P1.name ? players.P2.name : players.P1.name}, You've won!`,
+    );
   };
 
   const handleSwitchPlayers = () => setActivePlayer((prev) => !prev);
@@ -42,16 +40,19 @@ export const GameScreen: React.FC = () => {
         onTimeOut={handleTimeOut}
         isActive={activePlayer}
       />
-      <QuestionDisplay
-        onStartGame={handleStartGame}
-        onSwitchPlayers={handleSwitchPlayers}
-      />
+      <QuestionDisplay />
       <Player
         playerName={players.P2.name}
         inGame={inGame}
         onTimeOut={handleTimeOut}
         isActive={!activePlayer}
       />
+      <Button variant={'contained'} onClick={handleStartGame}>
+        Start Game
+      </Button>
+      <Button variant={'contained'} onClick={handleSwitchPlayers} disabled={!inGame}>
+        Switch Players
+      </Button>
     </Box>
   );
 };

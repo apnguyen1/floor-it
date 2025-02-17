@@ -1,4 +1,4 @@
-import { Box, Button } from '@mui/material';
+import { Box } from '@mui/material';
 import TriviaQuestion from './TriviaQuestion.tsx';
 import Dictation from './Dictation.tsx';
 
@@ -17,13 +17,6 @@ const QuestionDisplay = () => {
     >
       <TriviaQuestion />
       <Dictation />
-      {/* TODO TO BE REMOVED */}
-      <Button variant={'contained'} onClick={handleStartGame}>
-        Start!
-      </Button>
-      <Button variant={'contained'} onClick={handleSwitchPlayer}>
-        Switch Players!
-      </Button>
     </Box>
   );
 };

@@ -16,19 +16,18 @@ const Timer = ({ inGame, onTimeOut, isActive }: TimerProps) => {
       return;
     }
 
-    if (countdown <= 0) {
-      onTimeOut();
-      return;
-    }
-
     const interval = setInterval(() => {
       setCountDown((prev) => {
-        return Math.max(prev - 10, 0);
+        if (prev <= 10) {
+          onTimeOut();
+          return 0;
+        }
+        return prev - 10;
       });
     }, 10);
 
     return () => clearInterval(interval);
-  }, [countdown, inGame, isActive, onTimeOut]);
+  }, [inGame, isActive, onTimeOut]);
 
   const formatTime = (time: number) => {
     const seconds = Math.floor(time / 1000);
