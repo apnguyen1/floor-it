@@ -3,17 +3,9 @@ import './Home.css';
 import { ScreenType } from '../../constants/screens.ts';
 import { Box, Button, Typography } from '@mui/material';
 import InfoModal from '../../utils/InfoModal.tsx';
-import { fetchCategories } from '../../utils/fetch.ts';
 
 export const HomeScreen = () => {
   const { setScreen } = useApp();
-
-  const handleFetchData = () => {
-    const getData = async () => {
-      return await fetchCategories();
-    };
-    getData().then((data) => console.log(data));
-  };
 
   return (
     <Box
@@ -55,9 +47,6 @@ export const HomeScreen = () => {
         LET'S PLAY
       </Button>
       <InfoModal />
-      <Button variant="contained" color="secondary" onClick={handleFetchData}>
-        FETCh
-      </Button>
     </Box>
   );
 };
