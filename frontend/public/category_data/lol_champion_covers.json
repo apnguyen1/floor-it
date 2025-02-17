@@ -6,1192 +6,852 @@
   "questions": [
     {
       "question": "Aatrox.png",
-      "answers": [
-        "Aatrox"
-      ],
+      "answers": ["Aatrox"],
       "aliases": []
     },
     {
       "question": "Ahri.png",
-      "answers": [
-        "Ahri"
-      ],
+      "answers": ["Ahri"],
       "aliases": []
     },
     {
       "question": "Akali.png",
-      "answers": [
-        "Akali"
-      ],
+      "answers": ["Akali"],
       "aliases": []
     },
     {
       "question": "Akshan.png",
-      "answers": [
-        "Akshan"
-      ],
+      "answers": ["Akshan"],
       "aliases": []
     },
     {
       "question": "Alistar.png",
-      "answers": [
-        "Alistar"
-      ],
+      "answers": ["Alistar"],
       "aliases": []
     },
     {
       "question": "Ambessa.png",
-      "answers": [
-        "Ambessa"
-      ],
+      "answers": ["Ambessa"],
       "aliases": []
     },
     {
       "question": "Amumu.png",
-      "answers": [
-        "Amumu"
-      ],
+      "answers": ["Amumu"],
       "aliases": []
     },
     {
       "question": "Anivia.png",
-      "answers": [
-        "Anivia"
-      ],
+      "answers": ["Anivia"],
       "aliases": []
     },
     {
       "question": "Annie.png",
-      "answers": [
-        "Annie"
-      ],
+      "answers": ["Annie"],
       "aliases": []
     },
     {
       "question": "Aphelios.png",
-      "answers": [
-        "Aphelios"
-      ],
+      "answers": ["Aphelios"],
       "aliases": []
     },
     {
       "question": "Ashe.png",
-      "answers": [
-        "Ashe"
-      ],
+      "answers": ["Ashe"],
       "aliases": []
     },
     {
       "question": "AurelionSol.png",
-      "answers": [
-        "Aurelion Sol"
-      ],
+      "answers": ["Aurelion Sol"],
       "aliases": []
     },
     {
       "question": "Aurora.png",
-      "answers": [
-        "Aurora"
-      ],
+      "answers": ["Aurora"],
       "aliases": []
     },
     {
       "question": "Azir.png",
-      "answers": [
-        "Azir"
-      ],
+      "answers": ["Azir"],
       "aliases": []
     },
     {
       "question": "Bard.png",
-      "answers": [
-        "Bard"
-      ],
+      "answers": ["Bard"],
       "aliases": []
     },
     {
       "question": "Belveth.png",
-      "answers": [
-        "Bel Veth"
-      ],
+      "answers": ["Bel Veth"],
       "aliases": []
     },
     {
       "question": "Blitzcrank.png",
-      "answers": [
-        "Blitzcrank"
-      ],
+      "answers": ["Blitzcrank"],
       "aliases": []
     },
     {
       "question": "Brand.png",
-      "answers": [
-        "Brand"
-      ],
+      "answers": ["Brand"],
       "aliases": []
     },
     {
       "question": "Braum.png",
-      "answers": [
-        "Braum"
-      ],
+      "answers": ["Braum"],
       "aliases": []
     },
     {
       "question": "Briar.png",
-      "answers": [
-        "Briar"
-      ],
+      "answers": ["Briar"],
       "aliases": []
     },
     {
       "question": "Caitlyn.png",
-      "answers": [
-        "Caitlyn"
-      ],
+      "answers": ["Caitlyn"],
       "aliases": []
     },
     {
       "question": "Camille.png",
-      "answers": [
-        "Camille"
-      ],
+      "answers": ["Camille"],
       "aliases": []
     },
     {
       "question": "Cassiopeia.png",
-      "answers": [
-        "Cassiopeia"
-      ],
+      "answers": ["Cassiopeia"],
       "aliases": []
     },
     {
       "question": "Chogath.png",
-      "answers": [
-        "Cho Gath"
-      ],
+      "answers": ["Cho Gath"],
       "aliases": []
     },
     {
       "question": "Corki.png",
-      "answers": [
-        "Corki"
-      ],
+      "answers": ["Corki"],
       "aliases": []
     },
     {
       "question": "Darius.png",
-      "answers": [
-        "Darius"
-      ],
+      "answers": ["Darius"],
       "aliases": []
     },
     {
       "question": "Diana.png",
-      "answers": [
-        "Diana"
-      ],
+      "answers": ["Diana"],
       "aliases": []
     },
     {
       "question": "Draven.png",
-      "answers": [
-        "Draven"
-      ],
+      "answers": ["Draven"],
       "aliases": []
     },
     {
       "question": "DrMundo.png",
-      "answers": [
-        "Dr. Mundo"
-      ],
+      "answers": ["Dr. Mundo"],
       "aliases": []
     },
     {
       "question": "Ekko.png",
-      "answers": [
-        "Ekko"
-      ],
+      "answers": ["Ekko"],
       "aliases": []
     },
     {
       "question": "Elise.png",
-      "answers": [
-        "Elise"
-      ],
+      "answers": ["Elise"],
       "aliases": []
     },
     {
       "question": "Evelynn.png",
-      "answers": [
-        "Evelynn"
-      ],
+      "answers": ["Evelynn"],
       "aliases": []
     },
     {
       "question": "Ezreal.png",
-      "answers": [
-        "Ezreal"
-      ],
+      "answers": ["Ezreal"],
       "aliases": []
     },
     {
       "question": "Fiddlesticks.png",
-      "answers": [
-        "Fiddlesticks"
-      ],
+      "answers": ["Fiddlesticks"],
       "aliases": []
     },
     {
       "question": "Fiora.png",
-      "answers": [
-        "Fiora"
-      ],
+      "answers": ["Fiora"],
       "aliases": []
     },
     {
       "question": "Fizz.png",
-      "answers": [
-        "Fizz"
-      ],
+      "answers": ["Fizz"],
       "aliases": []
     },
     {
       "question": "Galio.png",
-      "answers": [
-        "Galio"
-      ],
+      "answers": ["Galio"],
       "aliases": []
     },
     {
       "question": "Gangplank.png",
-      "answers": [
-        "Gangplank"
-      ],
+      "answers": ["Gangplank"],
       "aliases": []
     },
     {
       "question": "Garen.png",
-      "answers": [
-        "Garen"
-      ],
+      "answers": ["Garen"],
       "aliases": []
     },
     {
       "question": "Gnar.png",
-      "answers": [
-        "Gnar"
-      ],
+      "answers": ["Gnar"],
       "aliases": []
     },
     {
       "question": "Gragas.png",
-      "answers": [
-        "Gragas"
-      ],
+      "answers": ["Gragas"],
       "aliases": []
     },
     {
       "question": "Graves.png",
-      "answers": [
-        "Graves"
-      ],
+      "answers": ["Graves"],
       "aliases": []
     },
     {
       "question": "Gwen.png",
-      "answers": [
-        "Gwen"
-      ],
+      "answers": ["Gwen"],
       "aliases": []
     },
     {
       "question": "Hecarim.png",
-      "answers": [
-        "Hecarim"
-      ],
+      "answers": ["Hecarim"],
       "aliases": []
     },
     {
       "question": "Heimerdinger.png",
-      "answers": [
-        "Heimerdinger"
-      ],
+      "answers": ["Heimerdinger"],
       "aliases": []
     },
     {
       "question": "Hwei.png",
-      "answers": [
-        "Hwei"
-      ],
+      "answers": ["Hwei"],
       "aliases": []
     },
     {
       "question": "Illaoi.png",
-      "answers": [
-        "Illaoi"
-      ],
+      "answers": ["Illaoi"],
       "aliases": []
     },
     {
       "question": "Irelia.png",
-      "answers": [
-        "Irelia"
-      ],
+      "answers": ["Irelia"],
       "aliases": []
     },
     {
       "question": "Ivern.png",
-      "answers": [
-        "Ivern"
-      ],
+      "answers": ["Ivern"],
       "aliases": []
     },
     {
       "question": "Janna.png",
-      "answers": [
-        "Janna"
-      ],
+      "answers": ["Janna"],
       "aliases": []
     },
     {
       "question": "JarvanIV.png",
-      "answers": [
-        "Jarvan IV"
-      ],
+      "answers": ["Jarvan IV"],
       "aliases": []
     },
     {
       "question": "Jax.png",
-      "answers": [
-        "Jax"
-      ],
+      "answers": ["Jax"],
       "aliases": []
     },
     {
       "question": "Jayce.png",
-      "answers": [
-        "Jayce"
-      ],
+      "answers": ["Jayce"],
       "aliases": []
     },
     {
       "question": "Jhin.png",
-      "answers": [
-        "Jhin"
-      ],
+      "answers": ["Jhin"],
       "aliases": []
     },
     {
       "question": "Jinx.png",
-      "answers": [
-        "Jinx"
-      ],
+      "answers": ["Jinx"],
       "aliases": []
     },
     {
       "question": "Kaisa.png",
-      "answers": [
-        "Kai Sa"
-      ],
+      "answers": ["Kai Sa"],
       "aliases": []
     },
     {
       "question": "Kalista.png",
-      "answers": [
-        "Kalista"
-      ],
+      "answers": ["Kalista"],
       "aliases": []
     },
     {
       "question": "Karma.png",
-      "answers": [
-        "Karma"
-      ],
+      "answers": ["Karma"],
       "aliases": []
     },
     {
       "question": "Karthus.png",
-      "answers": [
-        "Karthus"
-      ],
+      "answers": ["Karthus"],
       "aliases": []
     },
     {
       "question": "Kassadin.png",
-      "answers": [
-        "Kassadin"
-      ],
+      "answers": ["Kassadin"],
       "aliases": []
     },
     {
       "question": "Katarina.png",
-      "answers": [
-        "Katarina"
-      ],
+      "answers": ["Katarina"],
       "aliases": []
     },
     {
       "question": "Kayle.png",
-      "answers": [
-        "Kayle"
-      ],
+      "answers": ["Kayle"],
       "aliases": []
     },
     {
       "question": "Kayn.png",
-      "answers": [
-        "Kayn"
-      ],
+      "answers": ["Kayn"],
       "aliases": []
     },
     {
       "question": "Kennen.png",
-      "answers": [
-        "Kennen"
-      ],
+      "answers": ["Kennen"],
       "aliases": []
     },
     {
       "question": "Khazix.png",
-      "answers": [
-        "Kha Zix"
-      ],
+      "answers": ["Kha Zix"],
       "aliases": []
     },
     {
       "question": "Kindred.png",
-      "answers": [
-        "Kindred"
-      ],
+      "answers": ["Kindred"],
       "aliases": []
     },
     {
       "question": "Kled.png",
-      "answers": [
-        "Kled"
-      ],
+      "answers": ["Kled"],
       "aliases": []
     },
     {
       "question": "KogMaw.png",
-      "answers": [
-        "Kog Maw"
-      ],
+      "answers": ["Kog Maw"],
       "aliases": []
     },
     {
       "question": "KSante.png",
-      "answers": [
-        "K Sante"
-      ],
+      "answers": ["K Sante"],
       "aliases": []
     },
     {
       "question": "Leblanc.png",
-      "answers": [
-        "LeBlanc"
-      ],
+      "answers": ["LeBlanc"],
       "aliases": []
     },
     {
       "question": "LeeSin.png",
-      "answers": [
-        "Lee Sin"
-      ],
+      "answers": ["Lee Sin"],
       "aliases": []
     },
     {
       "question": "Leona.png",
-      "answers": [
-        "Leona"
-      ],
+      "answers": ["Leona"],
       "aliases": []
     },
     {
       "question": "Lillia.png",
-      "answers": [
-        "Lillia"
-      ],
+      "answers": ["Lillia"],
       "aliases": []
     },
     {
       "question": "Lissandra.png",
-      "answers": [
-        "Lissandra"
-      ],
+      "answers": ["Lissandra"],
       "aliases": []
     },
     {
       "question": "Lucian.png",
-      "answers": [
-        "Lucian"
-      ],
+      "answers": ["Lucian"],
       "aliases": []
     },
     {
       "question": "Lulu.png",
-      "answers": [
-        "Lulu"
-      ],
+      "answers": ["Lulu"],
       "aliases": []
     },
     {
       "question": "Lux.png",
-      "answers": [
-        "Lux"
-      ],
+      "answers": ["Lux"],
       "aliases": []
     },
     {
       "question": "Malphite.png",
-      "answers": [
-        "Malphite"
-      ],
+      "answers": ["Malphite"],
       "aliases": []
     },
     {
       "question": "Malzahar.png",
-      "answers": [
-        "Malzahar"
-      ],
+      "answers": ["Malzahar"],
       "aliases": []
     },
     {
       "question": "Maokai.png",
-      "answers": [
-        "Maokai"
-      ],
+      "answers": ["Maokai"],
       "aliases": []
     },
     {
       "question": "MasterYi.png",
-      "answers": [
-        "Master Yi"
-      ],
+      "answers": ["Master Yi"],
       "aliases": []
     },
     {
       "question": "Mel.png",
-      "answers": [
-        "Mel"
-      ],
+      "answers": ["Mel"],
       "aliases": []
     },
     {
       "question": "Milio.png",
-      "answers": [
-        "Milio"
-      ],
+      "answers": ["Milio"],
       "aliases": []
     },
     {
       "question": "MissFortune.png",
-      "answers": [
-        "Miss Fortune"
-      ],
+      "answers": ["Miss Fortune"],
       "aliases": []
     },
     {
       "question": "MonkeyKing.png",
-      "answers": [
-        "Wukong"
-      ],
+      "answers": ["Wukong"],
       "aliases": []
     },
     {
       "question": "Mordekaiser.png",
-      "answers": [
-        "Mordekaiser"
-      ],
+      "answers": ["Mordekaiser"],
       "aliases": []
     },
     {
       "question": "Morgana.png",
-      "answers": [
-        "Morgana"
-      ],
+      "answers": ["Morgana"],
       "aliases": []
     },
     {
       "question": "Naafiri.png",
-      "answers": [
-        "Naafiri"
-      ],
+      "answers": ["Naafiri"],
       "aliases": []
     },
     {
       "question": "Nami.png",
-      "answers": [
-        "Nami"
-      ],
+      "answers": ["Nami"],
       "aliases": []
     },
     {
       "question": "Nasus.png",
-      "answers": [
-        "Nasus"
-      ],
+      "answers": ["Nasus"],
       "aliases": []
     },
     {
       "question": "Nautilus.png",
-      "answers": [
-        "Nautilus"
-      ],
+      "answers": ["Nautilus"],
       "aliases": []
     },
     {
       "question": "Neeko.png",
-      "answers": [
-        "Neeko"
-      ],
+      "answers": ["Neeko"],
       "aliases": []
     },
     {
       "question": "Nidalee.png",
-      "answers": [
-        "Nidalee"
-      ],
+      "answers": ["Nidalee"],
       "aliases": []
     },
     {
       "question": "Nilah.png",
-      "answers": [
-        "Nilah"
-      ],
+      "answers": ["Nilah"],
       "aliases": []
     },
     {
       "question": "Nocturne.png",
-      "answers": [
-        "Nocturne"
-      ],
+      "answers": ["Nocturne"],
       "aliases": []
     },
     {
       "question": "Nunu.png",
-      "answers": [
-        "Nunu & Willump"
-      ],
+      "answers": ["Nunu & Willump"],
       "aliases": []
     },
     {
       "question": "Olaf.png",
-      "answers": [
-        "Olaf"
-      ],
+      "answers": ["Olaf"],
       "aliases": []
     },
     {
       "question": "Orianna.png",
-      "answers": [
-        "Orianna"
-      ],
+      "answers": ["Orianna"],
       "aliases": []
     },
     {
       "question": "Ornn.png",
-      "answers": [
-        "Ornn"
-      ],
+      "answers": ["Ornn"],
       "aliases": []
     },
     {
       "question": "Pantheon.png",
-      "answers": [
-        "Pantheon"
-      ],
+      "answers": ["Pantheon"],
       "aliases": []
     },
     {
       "question": "Poppy.png",
-      "answers": [
-        "Poppy"
-      ],
+      "answers": ["Poppy"],
       "aliases": []
     },
     {
       "question": "Pyke.png",
-      "answers": [
-        "Pyke"
-      ],
+      "answers": ["Pyke"],
       "aliases": []
     },
     {
       "question": "Qiyana.png",
-      "answers": [
-        "Qiyana"
-      ],
+      "answers": ["Qiyana"],
       "aliases": []
     },
     {
       "question": "Quinn.png",
-      "answers": [
-        "Quinn"
-      ],
+      "answers": ["Quinn"],
       "aliases": []
     },
     {
       "question": "Rakan.png",
-      "answers": [
-        "Rakan"
-      ],
+      "answers": ["Rakan"],
       "aliases": []
     },
     {
       "question": "Rammus.png",
-      "answers": [
-        "Rammus"
-      ],
+      "answers": ["Rammus"],
       "aliases": []
     },
     {
       "question": "RekSai.png",
-      "answers": [
-        "Rek Sai"
-      ],
+      "answers": ["Rek Sai"],
       "aliases": []
     },
     {
       "question": "Rell.png",
-      "answers": [
-        "Rell"
-      ],
+      "answers": ["Rell"],
       "aliases": []
     },
     {
       "question": "Renata.png",
-      "answers": [
-        "Renata Glasc"
-      ],
+      "answers": ["Renata Glasc"],
       "aliases": []
     },
     {
       "question": "Renekton.png",
-      "answers": [
-        "Renekton"
-      ],
+      "answers": ["Renekton"],
       "aliases": []
     },
     {
       "question": "Rengar.png",
-      "answers": [
-        "Rengar"
-      ],
+      "answers": ["Rengar"],
       "aliases": []
     },
     {
       "question": "Riven.png",
-      "answers": [
-        "Riven"
-      ],
+      "answers": ["Riven"],
       "aliases": []
     },
     {
       "question": "Rumble.png",
-      "answers": [
-        "Rumble"
-      ],
+      "answers": ["Rumble"],
       "aliases": []
     },
     {
       "question": "Ryze.png",
-      "answers": [
-        "Ryze"
-      ],
+      "answers": ["Ryze"],
       "aliases": []
     },
     {
       "question": "Samira.png",
-      "answers": [
-        "Samira"
-      ],
+      "answers": ["Samira"],
       "aliases": []
     },
     {
       "question": "Sejuani.png",
-      "answers": [
-        "Sejuani"
-      ],
+      "answers": ["Sejuani"],
       "aliases": []
     },
     {
       "question": "Senna.png",
-      "answers": [
-        "Senna"
-      ],
+      "answers": ["Senna"],
       "aliases": []
     },
     {
       "question": "Seraphine.png",
-      "answers": [
-        "Seraphine"
-      ],
+      "answers": ["Seraphine"],
       "aliases": []
     },
     {
       "question": "Sett.png",
-      "answers": [
-        "Sett"
-      ],
+      "answers": ["Sett"],
       "aliases": []
     },
     {
       "question": "Shaco.png",
-      "answers": [
-        "Shaco"
-      ],
+      "answers": ["Shaco"],
       "aliases": []
     },
     {
       "question": "Shen.png",
-      "answers": [
-        "Shen"
-      ],
+      "answers": ["Shen"],
       "aliases": []
     },
     {
       "question": "Shyvana.png",
-      "answers": [
-        "Shyvana"
-      ],
+      "answers": ["Shyvana"],
       "aliases": []
     },
     {
       "question": "Singed.png",
-      "answers": [
-        "Singed"
-      ],
+      "answers": ["Singed"],
       "aliases": []
     },
     {
       "question": "Sion.png",
-      "answers": [
-        "Sion"
-      ],
+      "answers": ["Sion"],
       "aliases": []
     },
     {
       "question": "Sivir.png",
-      "answers": [
-        "Sivir"
-      ],
+      "answers": ["Sivir"],
       "aliases": []
     },
     {
       "question": "Skarner.png",
-      "answers": [
-        "Skarner"
-      ],
+      "answers": ["Skarner"],
       "aliases": []
     },
     {
       "question": "Smolder.png",
-      "answers": [
-        "Smolder"
-      ],
+      "answers": ["Smolder"],
       "aliases": []
     },
     {
       "question": "Sona.png",
-      "answers": [
-        "Sona"
-      ],
+      "answers": ["Sona"],
       "aliases": []
     },
     {
       "question": "Soraka.png",
-      "answers": [
-        "Soraka"
-      ],
+      "answers": ["Soraka"],
       "aliases": []
     },
     {
       "question": "Swain.png",
-      "answers": [
-        "Swain"
-      ],
+      "answers": ["Swain"],
       "aliases": []
     },
     {
       "question": "Sylas.png",
-      "answers": [
-        "Sylas"
-      ],
+      "answers": ["Sylas"],
       "aliases": []
     },
     {
       "question": "Syndra.png",
-      "answers": [
-        "Syndra"
-      ],
+      "answers": ["Syndra"],
       "aliases": []
     },
     {
       "question": "TahmKench.png",
-      "answers": [
-        "Tahm Kench"
-      ],
+      "answers": ["Tahm Kench"],
       "aliases": []
     },
     {
       "question": "Taliyah.png",
-      "answers": [
-        "Taliyah"
-      ],
+      "answers": ["Taliyah"],
       "aliases": []
     },
     {
       "question": "Talon.png",
-      "answers": [
-        "Talon"
-      ],
+      "answers": ["Talon"],
       "aliases": []
     },
     {
       "question": "Taric.png",
-      "answers": [
-        "Taric"
-      ],
+      "answers": ["Taric"],
       "aliases": []
     },
     {
       "question": "Teemo.png",
-      "answers": [
-        "Teemo"
-      ],
+      "answers": ["Teemo"],
       "aliases": []
     },
     {
       "question": "Thresh.png",
-      "answers": [
-        "Thresh"
-      ],
+      "answers": ["Thresh"],
       "aliases": []
     },
     {
       "question": "Tristana.png",
-      "answers": [
-        "Tristana"
-      ],
+      "answers": ["Tristana"],
       "aliases": []
     },
     {
       "question": "Trundle.png",
-      "answers": [
-        "Trundle"
-      ],
+      "answers": ["Trundle"],
       "aliases": []
     },
     {
       "question": "Tryndamere.png",
-      "answers": [
-        "Tryndamere"
-      ],
+      "answers": ["Tryndamere"],
       "aliases": []
     },
     {
       "question": "TwistedFate.png",
-      "answers": [
-        "Twisted Fate"
-      ],
+      "answers": ["Twisted Fate"],
       "aliases": []
     },
     {
       "question": "Twitch.png",
-      "answers": [
-        "Twitch"
-      ],
+      "answers": ["Twitch"],
       "aliases": []
     },
     {
       "question": "Udyr.png",
-      "answers": [
-        "Udyr"
-      ],
+      "answers": ["Udyr"],
       "aliases": []
     },
     {
       "question": "Urgot.png",
-      "answers": [
-        "Urgot"
-      ],
+      "answers": ["Urgot"],
       "aliases": []
     },
     {
       "question": "Varus.png",
-      "answers": [
-        "Varus"
-      ],
+      "answers": ["Varus"],
       "aliases": []
     },
     {
       "question": "Vayne.png",
-      "answers": [
-        "Vayne"
-      ],
+      "answers": ["Vayne"],
       "aliases": []
     },
     {
       "question": "Veigar.png",
-      "answers": [
-        "Veigar"
-      ],
+      "answers": ["Veigar"],
       "aliases": []
     },
     {
       "question": "Velkoz.png",
-      "answers": [
-        "Vel Koz"
-      ],
+      "answers": ["Vel Koz"],
       "aliases": []
     },
     {
       "question": "Vex.png",
-      "answers": [
-        "Vex"
-      ],
+      "answers": ["Vex"],
       "aliases": []
     },
     {
       "question": "Vi.png",
-      "answers": [
-        "Vi"
-      ],
+      "answers": ["Vi"],
       "aliases": []
     },
     {
       "question": "Viego.png",
-      "answers": [
-        "Viego"
-      ],
+      "answers": ["Viego"],
       "aliases": []
     },
     {
       "question": "Viktor.png",
-      "answers": [
-        "Viktor"
-      ],
+      "answers": ["Viktor"],
       "aliases": []
     },
     {
       "question": "Vladimir.png",
-      "answers": [
-        "Vladimir"
-      ],
+      "answers": ["Vladimir"],
       "aliases": []
     },
     {
       "question": "Volibear.png",
-      "answers": [
-        "Volibear"
-      ],
+      "answers": ["Volibear"],
       "aliases": []
     },
     {
       "question": "Warwick.png",
-      "answers": [
-        "Warwick"
-      ],
+      "answers": ["Warwick"],
       "aliases": []
     },
     {
       "question": "Xayah.png",
-      "answers": [
-        "Xayah"
-      ],
+      "answers": ["Xayah"],
       "aliases": []
     },
     {
       "question": "Xerath.png",
-      "answers": [
-        "Xerath"
-      ],
+      "answers": ["Xerath"],
       "aliases": []
     },
     {
       "question": "XinZhao.png",
-      "answers": [
-        "Xin Zhao"
-      ],
+      "answers": ["Xin Zhao"],
       "aliases": []
     },
     {
       "question": "Yasuo.png",
-      "answers": [
-        "Yasuo"
-      ],
+      "answers": ["Yasuo"],
       "aliases": []
     },
     {
       "question": "Yone.png",
-      "answers": [
-        "Yone"
-      ],
+      "answers": ["Yone"],
       "aliases": []
     },
     {
       "question": "Yorick.png",
-      "answers": [
-        "Yorick"
-      ],
+      "answers": ["Yorick"],
       "aliases": []
     },
     {
       "question": "Yuumi.png",
-      "answers": [
-        "Yuumi"
-      ],
+      "answers": ["Yuumi"],
       "aliases": []
     },
     {
       "question": "Zac.png",
-      "answers": [
-        "Zac"
-      ],
+      "answers": ["Zac"],
       "aliases": []
     },
     {
       "question": "Zed.png",
-      "answers": [
-        "Zed"
-      ],
+      "answers": ["Zed"],
       "aliases": []
     },
     {
       "question": "Zeri.png",
-      "answers": [
-        "Zeri"
-      ],
+      "answers": ["Zeri"],
       "aliases": []
     },
     {
       "question": "Ziggs.png",
-      "answers": [
-        "Ziggs"
-      ],
+      "answers": ["Ziggs"],
       "aliases": []
     },
     {
       "question": "Zilean.png",
-      "answers": [
-        "Zilean"
-      ],
+      "answers": ["Zilean"],
       "aliases": []
     },
     {
       "question": "Zoe.png",
-      "answers": [
-        "Zoe"
-      ],
+      "answers": ["Zoe"],
       "aliases": []
     },
     {
       "question": "Zyra.png",
-      "answers": [
-        "Zyra"
-      ],
+      "answers": ["Zyra"],
       "aliases": []
     }
   ]

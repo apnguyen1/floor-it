@@ -6,12 +6,7 @@
   "questions": [
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Champion.png",
-      "answers": [
-        "Champion",
-        "Champyon",
-        "Champion Sport",
-        "Champion Clothing"
-      ],
+      "answers": ["Champion", "Champyon", "Champion Sport", "Champion Clothing"],
       "aliases": []
     },
     {
@@ -43,14 +38,7 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Asos.png",
-      "answers": [
-        "ASOS",
-        "Ay Sos",
-        "Asos dot Com",
-        "Ey Sos",
-        "Ay Es O ES",
-        "Aye Sos"
-      ],
+      "answers": ["ASOS", "Ay Sos", "Asos dot Com", "Ey Sos", "Ay Es O ES", "Aye Sos"],
       "aliases": []
     },
     {
@@ -67,23 +55,12 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Ebay.png",
-      "answers": [
-        "Ebay",
-        "E Bay",
-        "Ee Bay",
-        "Ey Bay",
-        "Ay Bay"
-      ],
+      "answers": ["Ebay", "E Bay", "Ee Bay", "Ey Bay", "Ay Bay"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Anker.png",
-      "answers": [
-        "Anker",
-        "Anchor",
-        "An Kar",
-        "An Kur"
-      ],
+      "answers": ["Anker", "Anchor", "An Kar", "An Kur"],
       "aliases": []
     },
     {
@@ -116,14 +93,7 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Kappa.png",
-      "answers": [
-        "Kappa",
-        "Kappa Clothing",
-        "Kappa Brand",
-        "Cap Pa",
-        "Kippa",
-        "Capar"
-      ],
+      "answers": ["Kappa", "Kappa Clothing", "Kappa Brand", "Cap Pa", "Kippa", "Capar"],
       "aliases": []
     },
     {
@@ -150,12 +120,7 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Ford.png",
-      "answers": [
-        "Ford",
-        "Ford Cars",
-        "Ford Auto",
-        "Ford Motors"
-      ],
+      "answers": ["Ford", "Ford Cars", "Ford Auto", "Ford Motors"],
       "aliases": []
     },
     {
@@ -171,29 +136,17 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Bing.png",
-      "answers": [
-        "Bing",
-        "Ping",
-        "Bing Search"
-      ],
+      "answers": ["Bing", "Ping", "Bing Search"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Twitch.png",
-      "answers": [
-        "Twitch",
-        "Twitch dot TV",
-        "Twitch dot Tee Vee"
-      ],
+      "answers": ["Twitch", "Twitch dot TV", "Twitch dot Tee Vee"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Capcom.png",
-      "answers": [
-        "Capcom",
-        "Cap Com",
-        "Capcom Games"
-      ],
+      "answers": ["Capcom", "Cap Com", "Capcom Games"],
       "aliases": []
     },
     {
@@ -210,31 +163,17 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Tesla.png",
-      "answers": [
-        "Tesla",
-        "Tesla Motors",
-        "Testla"
-      ],
+      "answers": ["Tesla", "Tesla Motors", "Testla"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Lexus.png",
-      "answers": [
-        "Lexus",
-        "Lexus Motors",
-        "Lecks Us",
-        "Leck Suse"
-      ],
+      "answers": ["Lexus", "Lexus Motors", "Lecks Us", "Leck Suse"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Toyota.png",
-      "answers": [
-        "Toyota",
-        "Toyota Motors",
-        "Toy Yoda",
-        "Toy Yoda Motors"
-      ],
+      "answers": ["Toyota", "Toyota Motors", "Toy Yoda", "Toy Yoda Motors"],
       "aliases": []
     },
     {
@@ -263,11 +202,7 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Coke.png",
-      "answers": [
-        "Coke",
-        "Coca Cola",
-        "Coke A Cola"
-      ],
+      "answers": ["Coke", "Coca Cola", "Coke A Cola"],
       "aliases": []
     },
     {
@@ -298,31 +233,17 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Lamborghini.png",
-      "answers": [
-        "Lamborghini",
-        "Lambo",
-        "Lamb Or Ghini",
-        "Lumborghini"
-      ],
+      "answers": ["Lamborghini", "Lambo", "Lamb Or Ghini", "Lumborghini"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Dominos.png",
-      "answers": [
-        "Dominos",
-        "Domino",
-        "Dominos Pizza",
-        "Domino Pizza"
-      ],
+      "answers": ["Dominos", "Domino", "Dominos Pizza", "Domino Pizza"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Monster.png",
-      "answers": [
-        "Monster",
-        "Monster Energy",
-        "Monster Energy Drink"
-      ],
+      "answers": ["Monster", "Monster Energy", "Monster Energy Drink"],
       "aliases": []
     },
     {
@@ -370,11 +291,7 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/PizzaHut.png",
-      "answers": [
-        "Pizza Hut",
-        "Pizza the Hut",
-        "Piece Of Hut"
-      ],
+      "answers": ["Pizza Hut", "Pizza the Hut", "Piece Of Hut"],
       "aliases": []
     },
     {
@@ -392,12 +309,7 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Subway.png",
-      "answers": [
-        "Subway",
-        "subway sandwiches",
-        "sub way",
-        "sub way sandwhiches"
-      ],
+      "answers": ["Subway", "subway sandwiches", "sub way", "sub way sandwhiches"],
       "aliases": []
     },
     {
@@ -414,28 +326,17 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Shell.png",
-      "answers": [
-        "Shell",
-        "Royal Dutch Shell"
-      ],
+      "answers": ["Shell", "Royal Dutch Shell"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Apple.png",
-      "answers": [
-        "Apple",
-        "Apple inc",
-        "Apple Computers"
-      ],
+      "answers": ["Apple", "Apple inc", "Apple Computers"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Honda.png",
-      "answers": [
-        "Honda",
-        "Hon Da",
-        "Hon Dar"
-      ],
+      "answers": ["Honda", "Hon Da", "Hon Dar"],
       "aliases": []
     },
     {
@@ -453,36 +354,17 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Samsung.png",
-      "answers": [
-        "Samsung",
-        "Samsang",
-        "Samsun",
-        "Samson"
-      ],
+      "answers": ["Samsung", "Samsang", "Samsun", "Samson"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Gucci.png",
-      "answers": [
-        "Gucci",
-        "Goochi",
-        "Gu Chi",
-        "Goo Chi",
-        "Goo Chey",
-        "Goochey"
-      ],
+      "answers": ["Gucci", "Goochi", "Gu Chi", "Goo Chi", "Goo Chey", "Goochey"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/IBM.png",
-      "answers": [
-        "IBM",
-        "Eye Bee Em",
-        "IBeeM",
-        "IBEm",
-        "I Bee Em",
-        "IBee Em"
-      ],
+      "answers": ["IBM", "Eye Bee Em", "IBeeM", "IBEm", "I Bee Em", "IBee Em"],
       "aliases": []
     },
     {
@@ -523,11 +405,7 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Snapchat.png",
-      "answers": [
-        "Snapchat",
-        "Snap Chat",
-        "Snapchat Dot Com"
-      ],
+      "answers": ["Snapchat", "Snap Chat", "Snapchat Dot Com"],
       "aliases": []
     },
     {
@@ -543,24 +421,12 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Playboy.png",
-      "answers": [
-        "Playboy",
-        "play boy",
-        "ploy boy",
-        "ploo boy",
-        "plooboy",
-        "ployboy"
-      ],
+      "answers": ["Playboy", "play boy", "ploy boy", "ploo boy", "plooboy", "ployboy"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Amazon.png",
-      "answers": [
-        "Amazon",
-        "Amazon Dot Com",
-        "Amazon Shopping",
-        "Amazon Online"
-      ],
+      "answers": ["Amazon", "Amazon Dot Com", "Amazon Shopping", "Amazon Online"],
       "aliases": []
     },
     {
@@ -577,25 +443,12 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Nvidia.png",
-      "answers": [
-        "Nvidia",
-        "Nvidia Gaming",
-        "Nvidia Graphics",
-        "NVideoya",
-        "NVidi Ya"
-      ],
+      "answers": ["Nvidia", "Nvidia Gaming", "Nvidia Graphics", "NVideoya", "NVidi Ya"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/AMD.png",
-      "answers": [
-        "AMD",
-        "Ay Em Dee",
-        "AMDee",
-        "AyM Dee",
-        "AEmDee",
-        "ay m Dee"
-      ],
+      "answers": ["AMD", "Ay Em Dee", "AMDee", "AyM Dee", "AEmDee", "ay m Dee"],
       "aliases": []
     },
     {
@@ -611,15 +464,7 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Visa.png",
-      "answers": [
-        "Visa",
-        "Vee Sa",
-        "Veesa",
-        "Viza",
-        "Vi Za",
-        "Visa Card",
-        "Viza Card"
-      ],
+      "answers": ["Visa", "Vee Sa", "Veesa", "Viza", "Vi Za", "Visa Card", "Viza Card"],
       "aliases": []
     },
     {
@@ -636,24 +481,12 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Porsche.png",
-      "answers": [
-        "Porsche",
-        "porsh",
-        "pourche",
-        "porscher",
-        "pour che"
-      ],
+      "answers": ["Porsche", "porsh", "pourche", "porscher", "pour che"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Jaguar.png",
-      "answers": [
-        "Jaguar",
-        "Jag guar",
-        "ja guar",
-        "jag gwar",
-        "ja gwar"
-      ],
+      "answers": ["Jaguar", "Jag guar", "ja guar", "jag gwar", "ja gwar"],
       "aliases": []
     },
     {
@@ -695,114 +528,57 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Netflix.png",
-      "answers": [
-        "Netflix",
-        "Net flix",
-        "net flicks",
-        "netflicks",
-        "net flick"
-      ],
+      "answers": ["Netflix", "Net flix", "net flicks", "netflicks", "net flick"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Spotify.png",
-      "answers": [
-        "Spotify",
-        "Spotify Dot Com",
-        "Spotify Music",
-        "Spot Ify",
-        "Spatafy"
-      ],
+      "answers": ["Spotify", "Spotify Dot Com", "Spotify Music", "Spot Ify", "Spatafy"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Balenciaga.png",
-      "answers": [
-        "Balenciaga",
-        "Balance Ciaga",
-        "Balen Ciaga"
-      ],
+      "answers": ["Balenciaga", "Balance Ciaga", "Balen Ciaga"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/ADT.png",
-      "answers": [
-        "ADT Security",
-        "Ay Dee Tee",
-        "ADee Tee",
-        "Ay Dee Tea"
-      ],
+      "answers": ["ADT Security", "Ay Dee Tee", "ADee Tee", "Ay Dee Tea"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Steam.png",
-      "answers": [
-        "Steam",
-        "Steem",
-        "Stem",
-        "Stee M"
-      ],
+      "answers": ["Steam", "Steem", "Stem", "Stee M"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Github.png",
-      "answers": [
-        "Github",
-        "Jithub",
-        "Get Hub",
-        "Gut Hub",
-        "Githab"
-      ],
+      "answers": ["Github", "Jithub", "Get Hub", "Gut Hub", "Githab"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Ubisoft.png",
-      "answers": [
-        "Ubisoft",
-        "U Bee Soft",
-        "You Be Soft",
-        "Yu Be Soft"
-      ],
+      "answers": ["Ubisoft", "U Bee Soft", "You Be Soft", "Yu Be Soft"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Google.png",
-      "answers": [
-        "Google",
-        "Goo Gol",
-        "Goo Gul",
-        "Goggle"
-      ],
+      "answers": ["Google", "Goo Gol", "Goo Gul", "Goggle"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Superdry.png",
-      "answers": [
-        "Superdry",
-        "Soup Her Dry",
-        "Super Dri"
-      ],
+      "answers": ["Superdry", "Soup Her Dry", "Super Dri"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Airbnb.png",
-      "answers": [
-        "Airbnb",
-        "Air B and B",
-        "Air B En B",
-        "Air B on B"
-      ],
+      "answers": ["Airbnb", "Air B and B", "Air B En B", "Air B on B"],
       "aliases": []
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Uber.png",
-      "answers": [
-        "Uber",
-        "Ou Ber",
-        "Ou Bear",
-        "U Ber",
-        "U Bear"
-      ],
+      "answers": ["Uber", "Ou Ber", "Ou Bear", "U Ber", "U Bear"],
       "aliases": []
     }
   ]
