@@ -1,20 +1,19 @@
 import { Box, Button, Typography } from '@mui/material';
-import { MAX_CATEGORIES, ScreenType } from '../../constants/screens.ts';
+import { MAX_CATEGORIES } from '../../constants/screens.ts';
 import { SelectedCategoryChip } from '../../components/SelectedCategoryChip.tsx';
 import { CategoryPreview } from '../../types/category.type.ts';
-import { useApp } from '../../hooks/useApp.ts';
 
 interface SelectionBarProps {
   selectedCategories: CategoryPreview[];
   onToggleCategories: (categories: CategoryPreview) => void;
+  onGameStart: () => void;
 }
 
 export const SelectionBar = ({
   selectedCategories,
   onToggleCategories,
+  onGameStart,
 }: SelectionBarProps) => {
-  const { setScreen } = useApp();
-
   return (
     selectedCategories.length > 0 && (
       <Box
@@ -62,7 +61,7 @@ export const SelectionBar = ({
         <Button
           variant="contained"
           color="primary"
-          onClick={() => setScreen(ScreenType.Game)}
+          onClick={onGameStart}
           sx={{ minWidth: 100 }}
         >
           Ready!

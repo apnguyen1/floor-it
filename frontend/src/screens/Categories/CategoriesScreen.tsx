@@ -10,18 +10,20 @@
 
 import { Box } from '@mui/material';
 import { CategoryPreview } from '../../types/category.type';
-import { MAX_CATEGORIES } from '../../constants/screens';
+import { MAX_CATEGORIES, ScreenType } from '../../constants/screens';
 import { useEffect, useState } from 'react';
 import { fetchCategories } from '../../utils/fetch.ts';
 import { SearchBar } from './SearchBar.tsx';
 import { CategoriesGrid } from './CategoriesGrid.tsx';
 import { SelectionBar } from './SelectionBar.tsx';
+import { useApp } from '../../hooks/useApp.ts';
 
 /**
  * Main Categories screen component
  * Allows users to browse, search, and select categories for the game
  */
 export const CategoriesScreen = () => {
+  const { setScreen, setSelectedCategory } = useApp();
   const [categories, setCategories] = useState<CategoryPreview[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<CategoryPreview[]>([]);
 
@@ -53,6 +55,11 @@ export const CategoriesScreen = () => {
     });
   };
 
+  const handleGameStart = () => {
+    setSelectedCategory(selectedCategories.map((c) => c.name));
+    setScreen(ScreenType.Game);
+  };
+
   return (
     <Box
       sx={{
@@ -72,6 +79,7 @@ export const CategoriesScreen = () => {
       <SelectionBar
         selectedCategories={selectedCategories}
         onToggleCategories={handleToggleCategories}
+        onGameStart={handleGameStart}
       />
     </Box>
   );
