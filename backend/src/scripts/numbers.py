@@ -1,7 +1,6 @@
 from typing import List
-from backend.src.models.numbers_dto import NumbersDTO
 from backend.src.utils.category import Category
-
+from backend.src.models.numbers_dto import NumbersDTO
 
 class Numbers(Category[NumbersDTO]):
     def __init__(self):
@@ -12,8 +11,5 @@ class Numbers(Category[NumbersDTO]):
             desc="Test your Number Skillz",
         )
 
-    def numbers_to_text(self) -> dict:
-        return self._raw_data.root  # Use .root for RootModel
-
     def _format_data(self) -> dict[str, List[str]]:
-        return self.numbers_to_text()
+        return self._raw_data.question
