@@ -1,12 +1,12 @@
 from typing import List
-from pydantic import Field
+from pydantic import RootModel
 from backend.src.models.model import Model
 
 
 class NumberDTO(Model):
-    question: str = Field(alias="Question")
-    answers: List[str] = Field(alias="Answers")
+    question: str
+    answers: List[str]
 
 
-class NumbersDTO(Model):
-    questions: List[NumberDTO] = Field(alias="Questions")
+class NumbersDTO(RootModel[dict[str, List[str]]]):
+    pass

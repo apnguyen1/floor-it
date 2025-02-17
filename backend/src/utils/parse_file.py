@@ -1,17 +1,11 @@
 import json
 from pathlib import Path
-
 from backend.src.utils.definitions import RESOURCE_DIR
 
 
 def parse_file(filename) -> dict:
-    """
-    Parse a file and return a dictionary of the parsed data.
+    data = {}
 
-    :param filename: The file to be parsed.
-    :return: # TODO
-    """
-    data = []  # Initialize data as an empty dictionary
     static_resources = RESOURCE_DIR / "static"
     file_path = Path(static_resources / filename)
 
@@ -30,7 +24,5 @@ def parse_file(filename) -> dict:
                     parts = line.strip().split("?")
                     if len(parts) == 2:
                         question, answer = parts
-                        data.append(
-                            {"question": question.strip(), "answers": [answer.strip()]}
-                        )
-    return {"questions": data}
+                        data[question.strip()] = [answer.strip()]
+    return data
