@@ -1,3 +1,4 @@
+from typing import List
 from backend.src.models.numbers_dto import NumbersDTO
 from backend.src.models.category_data_dto import QuestionType
 from backend.src.utils.category import Category
