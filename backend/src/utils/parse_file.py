@@ -8,7 +8,7 @@ def parse_file(filename) -> dict:
     """
     Parse a file and return a dictionary of the parsed data.
     :param filename: The file to be parsed.
-    :return: # TODO
+    :return: Raw data parsed from the file.
     """
     data = {}
     static_resources = RESOURCE_DIR / "static"
