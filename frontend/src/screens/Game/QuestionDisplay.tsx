@@ -2,17 +2,22 @@ import { Box } from '@mui/material';
 import TriviaQuestion from './TriviaQuestion.tsx';
 import Dictation from './Dictation.tsx';
 import { CategoryContent } from '../../types/category.type.ts';
+import { ReadyToPlay } from './ReadyToPlay.tsx';
 
 interface QuestionDisplay {
   category: CategoryContent | undefined;
+  inGame: boolean;
+  onStartGame: () => void;
 }
 
 /**
  * Displays the category question
  *
  * @param category the chosen category to play
+ * @param inGame determines whether the game has started
+ * @param onStartGame begins game
  */
-const QuestionDisplay = ({ category }: QuestionDisplay) => {
+export const QuestionDisplay = ({ category, inGame, onStartGame }: QuestionDisplay) => {
   return (
     <Box
       className="question-box"
@@ -25,10 +30,14 @@ const QuestionDisplay = ({ category }: QuestionDisplay) => {
         minHeight: '100px',
       }}
     >
-      <TriviaQuestion category={category} />
-      <Dictation />
+      {!inGame ? (
+        <ReadyToPlay category={category} onStartGame={onStartGame} />
+      ) : (
+        <>
+          <TriviaQuestion category={category} />
+          <Dictation />
+        </>
+      )}
     </Box>
   );
 };
-
-export default QuestionDisplay;

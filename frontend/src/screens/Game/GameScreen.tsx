@@ -2,18 +2,20 @@ import React, { useEffect, useState } from 'react';
 import { Player } from './Player.tsx';
 import { Box, Button } from '@mui/material';
 import { useApp } from '../../hooks/useApp.ts';
-import QuestionDisplay from './QuestionDisplay.tsx';
 import { CategoryContent } from '../../types/category.type.ts';
 import { shuffleArray } from '../../utils/shuffler.ts';
 import { fetchCategoryData } from '../../utils/fetch.ts';
+import { QuestionDisplay } from './QuestionDisplay.tsx';
 
 export const GameScreen: React.FC = () => {
   const { players, selectedCategory } = useApp();
-  const [category, setCategory] = useState<CategoryContent | undefined>(undefined);
   const [inGame, setInGame] = useState<boolean>(false);
   const [activePlayer, setActivePlayer] = useState(true);
+  const [category, setCategory] = useState<CategoryContent | undefined>(undefined);
 
-  // fetch category data
+  /**
+   * Fetch CategoryData
+   */
   useEffect(() => {
     if (!category) {
       const getData = async () => {
@@ -61,16 +63,17 @@ export const GameScreen: React.FC = () => {
         onTimeOut={handleTimeOut}
         isActive={activePlayer}
       />
-      <QuestionDisplay />
+      <QuestionDisplay
+        category={category}
+        inGame={inGame}
+        onStartGame={handleStartGame}
+      />
       <Player
         playerName={players.P2.name}
         inGame={inGame}
         onTimeOut={handleTimeOut}
         isActive={!activePlayer}
       />
-      <Button variant={'contained'} onClick={handleStartGame}>
-        Start Game
-      </Button>
       <Button variant={'contained'} onClick={handleSwitchPlayers} disabled={!inGame}>
         Switch Players
       </Button>

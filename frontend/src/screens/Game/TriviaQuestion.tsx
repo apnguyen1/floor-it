@@ -34,31 +34,33 @@ const TriviaQuestion = ({ category }: TriviaQuestionProps) => {
     questionIndex.current = (questionIndex.current + 1) % questions.length;
     setCurrentQuestion(questions[questionIndex.current]);
   };
+
+  if (!currentQuestion || !category)
+    return (
+      <Typography variant={'h3'} color={'info'}>
+        Loading...
+      </Typography>
+    );
+
   return (
     <Box>
-      {currentQuestion && category ? (
-        <>
-          {category.type === 'text' ? (
-            <>
-              <Typography variant={'h3'} color="primary">
-                {currentQuestion.question}
-              </Typography>
-            </>
-          ) : (
-            <>
-              <img src={currentQuestion.question} alt={'trivia image'} />
-            </>
-          )}
-          {/*TODO TO BE removed during integration*/}
-          <Button variant="contained" onClick={nextQuestion}>
-            Next Question
-          </Button>
-        </>
-      ) : (
-        <Typography variant={'h3'} color={'info'}>
-          Loading...
-        </Typography>
-      )}
+      <>
+        {category.type === 'text' ? (
+          <>
+            <Typography variant={'h3'} color="primary">
+              {currentQuestion.question}
+            </Typography>
+          </>
+        ) : (
+          <>
+            <img src={currentQuestion.question} alt={'trivia image'} />
+          </>
+        )}
+        {/*TODO TO BE removed during integration*/}
+        <Button variant="contained" onClick={nextQuestion}>
+          Next Question
+        </Button>
+      </>
     </Box>
   );
 };
