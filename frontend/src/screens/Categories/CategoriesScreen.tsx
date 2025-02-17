@@ -6,6 +6,7 @@
 // - Add a "clear all" button (?)
 // - Add a loading state (?)
 // - Fix UI (i.e. figure out double scrollbar situation)
+// - Add setState
 
 import {
   Box,
