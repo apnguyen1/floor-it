@@ -30,10 +30,18 @@ export const GameScreen: React.FC = () => {
 
       getData();
     }
-  }, []);
+  }, [category, selectedCategory]);
 
+  /**
+   * Starts game
+   */
   const handleStartGame = () => setInGame(true);
 
+  /**
+   * Determines the winner of the game
+   *
+   * @param playerName
+   */
   const handleTimeOut = (playerName: string) => {
     setInGame(false);
     alert(
@@ -41,6 +49,14 @@ export const GameScreen: React.FC = () => {
     );
   };
 
+  /**
+   * TODO: This needs to be created.
+   */
+  const handleResetGame = () => setInGame(false);
+
+  /**
+   * Switches the player's turn
+   */
   const handleSwitchPlayers = () => setActivePlayer((prev) => !prev);
 
   return (
@@ -76,6 +92,10 @@ export const GameScreen: React.FC = () => {
       />
       <Button variant={'contained'} onClick={handleSwitchPlayers} disabled={!inGame}>
         Switch Players
+      </Button>
+      {/*TODO needs to be implemented*/}
+      <Button variant={'contained'} onClick={handleResetGame} disabled={true}>
+        TODO
       </Button>
     </Box>
   );
