@@ -30,7 +30,7 @@ export const GameScreen: React.FC = () => {
 
       getData();
     }
-  }, [selectedCategory]);
+  }, []);
 
   const handleStartGame = () => setInGame(true);
 
