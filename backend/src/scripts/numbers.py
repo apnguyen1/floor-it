@@ -1,6 +1,8 @@
 from typing import List
-from backend.src.utils.category import Category
+
 from backend.src.models.numbers_dto import NumbersDTO
+from backend.src.utils.category import Category
+
 
 class Numbers(Category[NumbersDTO]):
     def __init__(self):
