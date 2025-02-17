@@ -49,6 +49,7 @@ const TriviaQuestion = ({ category }: TriviaQuestionProps) => {
               <img src={currentQuestion.question} alt={'trivia image'} />
             </>
           )}
+          {/*TODO TO BE removed during integration*/}
           <Button variant="contained" onClick={nextQuestion}>
             Next Question
           </Button>
