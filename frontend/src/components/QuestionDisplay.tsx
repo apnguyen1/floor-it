@@ -1,13 +1,9 @@
 import { Box } from '@mui/material';
+import React from 'react';
 import TriviaQuestion from './TriviaQuestion.tsx';
 import Dictation from './Dictation.tsx';
-import { Command } from '../types/command.interface.ts';
 
-interface QuestionDisplayProps {
-  commands: Command[];
-}
-
-const QuestionDisplay = ({ commands }: QuestionDisplayProps) => {
+const QuestionDisplay: React.FC = () => {
   return (
     <Box
       className="question-box"
@@ -21,7 +17,7 @@ const QuestionDisplay = ({ commands }: QuestionDisplayProps) => {
       }}
     >
       <TriviaQuestion />
-      <Dictation commands={commands} />
+      <Dictation />
     </Box>
   );
 };

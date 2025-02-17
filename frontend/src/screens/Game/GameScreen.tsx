@@ -1,35 +1,24 @@
-import { Box } from '@mui/material';
-import { Player } from '../../components/Player.tsx';
+import React, { useState } from 'react';
+import { Player } from './Player.tsx';
+import { Box, Button } from '@mui/material';
+import { useApp } from '../../hooks/useApp.ts';
 import QuestionDisplay from '../../components/QuestionDisplay.tsx';
-import React from 'react';
-import { Command } from '../../types/command.interface.ts';
 
 export const GameScreen: React.FC = () => {
-  // TODO TO BE IMPLEMENTED
-  const nextQuestion = (answer: string) => {
-    return answer;
+  const { players } = useApp();
+  const [inGame, setInGame] = useState<boolean>(false);
+  const [activePlayer, setActivePlayer] = useState(true);
+
+  const handleStartGame = () => setInGame(true);
+
+  const handleTimeOut = (playerName: string) => {
+    setInGame(false);
+    alert(
+      `${playerName === players.P1.name ? players.P2.name : players.P1.name}, You've won!`,
+    );
   };
 
-  const data = {
-    name: 'LoL Champion Titles',
-    preview_img: 'default-preview.png',
-    preview_desc: "Guess the LoL champion's name by their title!",
-    type: 'text',
-    questions: [
-      { question: 'the Darkin Blade', answers: ['Aatrox'], aliases: [] },
-      { question: 'the Nine-Tailed Fox', answers: ['Ahri'], aliases: [] },
-      { question: 'the Rogue Assassin', answers: ['Akali'], aliases: [] },
-    ],
-  };
-
-  const commands: Command[] = data.questions.map((question) => ({
-    command: [...question.answers, ...question.aliases],
-    callback: (answer: string) => nextQuestion(answer),
-    isFuzzyMatch: true,
-    matchInterim: true,
-    fuzzyMatchingThreshold: 0.6,
-    bestMatchOnly: true,
-  }));
+  const handleSwitchPlayers = () => setActivePlayer((prev) => !prev);
 
   return (
     <Box
@@ -41,11 +30,29 @@ export const GameScreen: React.FC = () => {
         width: '100%',
         height: '100vh',
         padding: 2,
+        borderRadius: 150,
+        backgroundColor: 'rgba(200,255,239,0.90)',
       }}
     >
-      <Player playerName={'P1'} />
-      <QuestionDisplay commands={commands} />
-      <Player playerName={'P2'} />
+      <Player
+        playerName={players.P1.name}
+        inGame={inGame}
+        onTimeOut={handleTimeOut}
+        isActive={activePlayer}
+      />
+      <QuestionDisplay />
+      <Player
+        playerName={players.P2.name}
+        inGame={inGame}
+        onTimeOut={handleTimeOut}
+        isActive={!activePlayer}
+      />
+      <Button variant={'contained'} onClick={handleStartGame}>
+        Start Game
+      </Button>
+      <Button variant={'contained'} onClick={handleSwitchPlayers} disabled={!inGame}>
+        Switch Players
+      </Button>
     </Box>
   );
 };
