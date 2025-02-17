@@ -1,8 +1,13 @@
 import { Box } from '@mui/material';
 import TriviaQuestion from './TriviaQuestion.tsx';
 import Dictation from './Dictation.tsx';
+import { CategoryContent } from '../../types/category.type.ts';
 
-const QuestionDisplay = () => {
+interface QuestionDisplay {
+  category: CategoryContent | undefined;
+}
+
+const QuestionDisplay = ({ category }: QuestionDisplay) => {
   return (
     <Box
       className="question-box"
@@ -15,7 +20,7 @@ const QuestionDisplay = () => {
         minHeight: '100px',
       }}
     >
-      <TriviaQuestion />
+      <TriviaQuestion category={category} />
       <Dictation />
     </Box>
   );
