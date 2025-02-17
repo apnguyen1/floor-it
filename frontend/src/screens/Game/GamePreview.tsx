@@ -6,16 +6,13 @@ interface GamePreviewProps {
 }
 
 export const GamePreview = ({ content }: GamePreviewProps) => {
+  const url = content && `previews/${content.preview_img}`;
+
   return (
     content && (
       <Card sx={{ maxWidth: 500, textAlign: 'center', padding: 2 }}>
         {content.preview_img && (
-          <CardMedia
-            component="img"
-            height="200"
-            image={content.preview_img}
-            alt={content.name}
-          />
+          <CardMedia component="img" height="200" image={url} alt={content.name} />
         )}
         <CardContent>
           <Typography variant="h5" gutterBottom>

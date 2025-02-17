@@ -1,7 +1,6 @@
-import { createContext, ReactNode, useEffect, useState } from 'react';
+import { createContext, ReactNode, useState } from 'react';
 import { AppContextType } from '../types/context.type.ts';
 import { CategoryContent } from '../types/category.type.ts';
-import { fetchCategoryData } from '../utils/fetch.ts';
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 
@@ -11,14 +10,6 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
   const [selectedCategory, setSelectedCategory] = useState<CategoryContent | undefined>(
     undefined,
   );
-
-  useEffect(() => {
-    const getData = async () => {
-      const data = fetchCategoryData('numbers.json');
-      data.then((data) => setSelectedCategory(data));
-    };
-    getData().then((d) => console.log(d));
-  }, [selectedCategory]);
 
   return (
     <AppContext.Provider
