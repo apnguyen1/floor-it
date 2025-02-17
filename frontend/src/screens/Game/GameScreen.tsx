@@ -5,7 +5,10 @@ import { Box } from '@mui/material';
 import { useApp } from '../../hooks/useApp.ts';
 
 export const GameScreen: React.FC = () => {
-  const { players } = useApp();
+  const { players, selectedCategory } = useApp();
+
+  if (!selectedCategory) {
+  }
 
   return (
     <Box
@@ -20,7 +23,7 @@ export const GameScreen: React.FC = () => {
       }}
     >
       <Player playerName={players.P1.name} />
-      <QuestionDisplay />
+      <QuestionDisplay questions={selectedCategory?.questions} />
       <Player playerName={'P2'} />
     </Box>
   );

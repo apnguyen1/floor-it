@@ -1,9 +1,20 @@
 import { useApp } from '../../hooks/useApp.ts';
 import { Button, Container, Typography } from '@mui/material';
 import { ScreenType } from '../../constants/screens.ts';
+import { fetchCategoryData } from '../../utils/fetch.ts';
 
 export const CategoriesScreen = () => {
-  const { setScreen } = useApp();
+  const { setScreen, setSelectedCategory } = useApp();
+
+  const handleCategorySelection = () => {
+    const getCategories = async () => {
+      await fetchCategoryData('lol_champion_titles.json').then((data) => {
+        setSelectedCategory(data);
+        setScreen(ScreenType.Game);
+      });
+    };
+    getCategories();
+  };
 
   return (
     <Container>
@@ -12,7 +23,7 @@ export const CategoriesScreen = () => {
         variant={'contained'}
         color="primary"
         size="large"
-        onClick={() => setScreen(ScreenType.Game)}
+        onClick={handleCategorySelection}
       >
         Play Game!
       </Button>

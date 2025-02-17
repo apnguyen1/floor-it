@@ -3,13 +3,18 @@ import { BASE_URL } from '../constants/config';
 
 // Internal helper function for fetching JSON data
 async function fetchJson<T>(endpoint: string): Promise<T> {
-  const response = await fetch(`${BASE_URL}${endpoint}`);
+  try {
+    const response = await fetch(`${BASE_URL}${endpoint}`);
+    return response.json();
+  } catch (error) {
+    console.log(`Probably a CORS error: ${error}`);
 
-  if (!response.ok) {
-    throw new Error(`HTTP error! Status: ${response.status}`);
+    if (process.env.NODE_ENV !== 'dev') {
+      const file = await fetch(endpoint);
+      return file.json();
+    }
+    throw error;
   }
-
-  return response.json();
 }
 
 // Exported functions for specific data fetching

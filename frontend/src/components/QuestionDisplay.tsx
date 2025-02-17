@@ -1,9 +1,13 @@
 import { Box } from '@mui/material';
-import React from 'react';
 import TriviaQuestion from './TriviaQuestion.tsx';
 import Dictation from './Dictation.tsx';
+import { Question } from '../types/category.type.ts';
 
-const QuestionDisplay: React.FC = () => {
+interface QuestionDisplayProps {
+  questions: Question[] | undefined;
+}
+
+const QuestionDisplay = ({ questions }: QuestionDisplayProps) => {
   return (
     <Box
       className="question-box"
@@ -16,7 +20,7 @@ const QuestionDisplay: React.FC = () => {
         minHeight: '100px',
       }}
     >
-      <TriviaQuestion />
+      <TriviaQuestion questions={questions} />
       <Dictation />
     </Box>
   );
