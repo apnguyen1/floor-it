@@ -30,5 +30,7 @@ def parse_file(filename) -> dict:
                     parts = line.strip().split("?")
                     if len(parts) == 2:
                         question, answer = parts
-                        data.append({"question": question.strip(), "answers": [answer.strip()]})
+                        data.append(
+                            {"question": question.strip(), "answers": [answer.strip()]}
+                        )
     return {"questions": data}
