@@ -10,4 +10,6 @@ export type AppContextType = {
     P2: PlayerState;
   };
   setPlayers: (players: { P1: PlayerState; P2: PlayerState }) => void;
+  selectedCategory: string[];
+  setSelectedCategory: (categoryName: string[]) => void;
 };

@@ -1,9 +1,8 @@
 import { Box } from '@mui/material';
-import React from 'react';
 import TriviaQuestion from './TriviaQuestion.tsx';
 import Dictation from './Dictation.tsx';
 
-const QuestionDisplay: React.FC = () => {
+const QuestionDisplay = () => {
   return (
     <Box
       className="question-box"

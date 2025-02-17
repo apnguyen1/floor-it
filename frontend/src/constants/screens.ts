@@ -8,6 +8,7 @@ export enum ScreenType {
 export const MAX_CATEGORIES = 10;
 
 // Mock data for testing - TODO: Replace with API call
+// sorry brian, already did - Andrew
 export const MOCK_CATEGORIES = [
   {
     name: 'LoL Champion Titles',
