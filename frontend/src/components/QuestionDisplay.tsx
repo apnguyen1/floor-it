@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import TriviaQuestion from './TriviaQuestion.tsx';
-import Dictation from '../../components/Dictation.tsx';
+import Dictation from './Dictation.tsx';
 
 const QuestionDisplay = () => {
   return (

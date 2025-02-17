@@ -2,7 +2,7 @@ import React from 'react';
 import { Player } from '../../components/Player.tsx';
 import { Box } from '@mui/material';
 import { useApp } from '../../hooks/useApp.ts';
-import QuestionDisplay from './QuestionDisplay.tsx';
+import QuestionDisplay from '../../components/QuestionDisplay.tsx';
 
 export const GameScreen: React.FC = () => {
   const { players } = useApp();
