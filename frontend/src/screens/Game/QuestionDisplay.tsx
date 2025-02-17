@@ -1,13 +1,8 @@
 import { Box } from '@mui/material';
 import TriviaQuestion from './TriviaQuestion.tsx';
 import Dictation from '../../components/Dictation.tsx';
-import { Question } from '../../types/category.type.ts';
 
-interface QuestionDisplayProps {
-  questions: Question[] | undefined;
-}
-
-const QuestionDisplay = ({ questions }: QuestionDisplayProps) => {
+const QuestionDisplay = () => {
   return (
     <Box
       className="question-box"
@@ -20,7 +15,7 @@ const QuestionDisplay = ({ questions }: QuestionDisplayProps) => {
         minHeight: '100px',
       }}
     >
-      <TriviaQuestion questions={questions} />
+      <TriviaQuestion />
       <Dictation />
     </Box>
   );
