@@ -1,9 +1,29 @@
 {
   "category_previews": [
     {
+      "name": "LoL Champion Covers",
+      "image": "default-preview.png",
+      "desc": "Guess the LoL champion's name by their image!"
+    },
+    {
+      "name": "Brand Icons",
+      "image": "default-preview.png",
+      "desc": "Guess the Brand Icons!"
+    },
+    {
+      "name": "Numbers",
+      "image": "default-preview.png",
+      "desc": "Test your Number Skillz"
+    },
+    {
       "name": "LoL Champion Titles",
       "image": "default-preview.png",
       "desc": "Guess the LoL champion's name by their title!"
+    },
+    {
+      "name": "Category",
+      "image": "default-preview.png",
+      "desc": "Test your Trivia!"
     }
   ]
 }
