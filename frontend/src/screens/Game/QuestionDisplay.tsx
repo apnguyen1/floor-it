@@ -1,7 +1,7 @@
 import { Box } from '@mui/material';
 import TriviaQuestion from './TriviaQuestion.tsx';
-import Dictation from './Dictation.tsx';
-import { Question } from '../types/category.type.ts';
+import Dictation from '../../components/Dictation.tsx';
+import { Question } from '../../types/category.type.ts';
 
 interface QuestionDisplayProps {
   questions: Question[] | undefined;

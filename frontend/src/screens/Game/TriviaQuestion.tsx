@@ -1,5 +1,5 @@
 // TODO: Ticket-84
-import { Question } from '../types/category.type.ts';
+import { Question } from '../../types/category.type.ts';
 import { useRef, useState } from 'react';
 import { Box, Button, Typography } from '@mui/material';
 
