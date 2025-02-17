@@ -7,6 +7,11 @@ interface QuestionDisplay {
   category: CategoryContent | undefined;
 }
 
+/**
+ * Displays the category question
+ *
+ * @param category the chosen category to play
+ */
 const QuestionDisplay = ({ category }: QuestionDisplay) => {
   return (
     <Box

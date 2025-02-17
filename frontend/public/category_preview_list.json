@@ -19,11 +19,6 @@
       "name": "LoL Champion Titles",
       "image": "default-preview.png",
       "desc": "Guess the LoL champion's name by their title!"
-    },
-    {
-      "name": "Category",
-      "image": "default-preview.png",
-      "desc": "Test your Trivia!"
     }
   ]
 }

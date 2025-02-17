@@ -7,6 +7,10 @@ interface TriviaQuestionProps {
   category: CategoryContent | undefined;
 }
 
+/**
+ * Component cycling through questions and displaying them
+ * @param category the chosen category
+ */
 const TriviaQuestion = ({ category }: TriviaQuestionProps) => {
   const [questions, setQuestions] = useState<Question[]>([]);
   const questionIndex = useRef(0);
@@ -32,11 +36,19 @@ const TriviaQuestion = ({ category }: TriviaQuestionProps) => {
   };
   return (
     <Box>
-      {currentQuestion ? (
+      {currentQuestion && category ? (
         <>
-          <Typography variant={'h3'} color="primary">
-            {currentQuestion.question}
-          </Typography>
+          {category.type === 'text' ? (
+            <>
+              <Typography variant={'h3'} color="primary">
+                {currentQuestion.question}
+              </Typography>
+            </>
+          ) : (
+            <>
+              <img src={currentQuestion.question} alt={'trivia image'} />
+            </>
+          )}
           <Button variant="contained" onClick={nextQuestion}>
             Next Question
           </Button>
