@@ -2,7 +2,7 @@ import { CategoryContent } from '../../types/category.type.ts';
 import { Button, Typography } from '@mui/material';
 
 interface ReadyToPlayProps {
-  category: CategoryContent | undefined;
+  category: CategoryContent;
   onStartGame: () => void;
 }
 
@@ -13,8 +13,6 @@ interface ReadyToPlayProps {
  * @param onStartGame to begin the game
  */
 export const ReadyToPlay = ({ category, onStartGame }: ReadyToPlayProps) => {
-  if (!category) return <Typography variant={'h3'}>Loading...</Typography>;
-
   const imgUrl = `previews/${category.preview_img}`;
 
   return (

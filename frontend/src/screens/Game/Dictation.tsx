@@ -1,6 +1,6 @@
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import { Alert, AlertTitle } from '@mui/material';
-import { Command } from '../types/command.ts';
+import { Command } from '../../types/command.ts';
 
 interface DictationProps {
   commands: Command[];

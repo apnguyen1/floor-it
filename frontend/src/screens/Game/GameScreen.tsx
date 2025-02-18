@@ -83,6 +83,7 @@ export const GameScreen: React.FC = () => {
         category={category}
         inGame={inGame}
         onStartGame={handleStartGame}
+        onSwitchPlayers={handleSwitchPlayers}
       />
       <Player
         playerName={players.P2.name}
@@ -90,9 +91,6 @@ export const GameScreen: React.FC = () => {
         onTimeOut={handleTimeOut}
         isActive={!activePlayer}
       />
-      <Button variant={'contained'} onClick={handleSwitchPlayers} disabled={!inGame}>
-        Switch Players
-      </Button>
       {/*TODO needs to be implemented*/}
       <Button variant={'contained'} onClick={handleResetGame} disabled={true}>
         TODO
