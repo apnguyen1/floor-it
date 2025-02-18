@@ -6,9 +6,9 @@ from backend.src.utils.category import Category
 
 
 class Champions(Category[ChampionDTO]):
-    def __init__(self, qt: QuestionType):
+    def __init__(self, question_type: QuestionType):
         url = "https://ddragon.leagueoflegends.com/cdn/15.2.1/data/en_US/champion.json"
-        super().__init__(source=url, model=ChampionDTO, question_type=qt)
+        super().__init__(source=url, model=ChampionDTO, question_type=question_type)
 
     def __title_to_name(self) -> Dict[str, List[str]]:
         """
@@ -31,10 +31,20 @@ class Champions(Category[ChampionDTO]):
         """
         self.name = "LoL Champion Covers"
         self.description = "Guess the LoL champion's name by their image!"
-        return {
-            champion.image.full: [champion.name.replace("'", " ")]
-            for champion in self._raw_data.data.values()
-        }
+
+        base_img_url = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/"
+        image_to_name = {}
+        for c in self._raw_data.data.values():
+            image_name = c.image.full[0:-4]
+
+            image_to_name[base_img_url + image_name + "_0.jpg"] = [
+                c.name.replace("'", " ")
+            ]
+            image_to_name[base_img_url + image_name + "_1.jpg"] = [
+                c.name.replace("'", " ")
+            ]
+
+        return image_to_name
 
     def _format_data(self) -> dict[str, List[str]]:
         return (

@@ -56,8 +56,14 @@ def test_champions_fetch(mock_fetch):
         (
             QuestionType.IMG,
             {
-                "aatrox.png": ["Aatrox"],
-                "kaisa.png": ["Kai Sa"],
+                "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/aatrox_0"
+                + ".jpg": ["Aatrox"],
+                "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/aatrox_1"
+                + ".jpg": ["Aatrox"],
+                "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/kaisa_0"
+                + ".jpg": ["Kai Sa"],
+                "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/kaisa_1"
+                + ".jpg": ["Kai Sa"],
             },
             "LoL Champion Covers",
             "Guess the LoL champion's name by their image!",
