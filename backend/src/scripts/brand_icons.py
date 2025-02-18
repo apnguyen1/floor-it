@@ -6,8 +6,14 @@ from backend.src.models.category_data_dto import QuestionType
 
 
 class BrandIcons(Category[BrandIconsDTO]):
-    def __init__(self, file: str):
-        super().__init__(file, BrandIconsDTO, QuestionType.IMG)
+    def __init__(self):
+        super().__init__(
+            source="brand-icons.json",
+            model=BrandIconsDTO,
+            question_type=QuestionType.IMG,
+            name="Brand Logos",
+            desc="Guess the brand by their logo!",
+        )
 
     def brand_logo_to_name(self) -> dict:
         return {q.partial: q.answers for q in self._raw_data.questions}
