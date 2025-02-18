@@ -1,16 +1,6 @@
 {
   "category_previews": [
     {
-      "name": "LoL Champion Covers",
-      "image": "default-preview.png",
-      "desc": "Guess the LoL champion's name by their image!"
-    },
-    {
-      "name": "Numbers",
-      "image": "default-preview.png",
-      "desc": "Test your Number Skillz"
-    },
-    {
       "name": "LoL Champion Titles",
       "image": "default-preview.png",
       "desc": "Guess the LoL champion's name by their title!"
