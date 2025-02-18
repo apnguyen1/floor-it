@@ -31,7 +31,9 @@ export const CategoriesScreen = () => {
    * Fetches all available categories.
    */
   useEffect(() => {
-    fetchCategories().catch((d) => setCategories(d));
+    fetchCategories()
+      .then(setCategories)
+      .catch((err) => console.error('failed to fetch Categories', err));
   }, []);
 
   /**

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Player } from './Player.tsx';
 import { Box, Button } from '@mui/material';
 import { useApp } from '../../hooks/useApp.ts';
@@ -47,7 +47,9 @@ export const GameScreen: React.FC = () => {
   /**
    * Switches the player's turn
    */
-  const handleSwitchPlayers = () => setActivePlayer((prev) => !prev);
+  const handleSwitchPlayers = useCallback(() => {
+    setActivePlayer((prev) => !prev);
+  }, []);
 
   return (
     <Box

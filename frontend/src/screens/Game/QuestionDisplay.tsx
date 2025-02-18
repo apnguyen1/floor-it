@@ -11,6 +11,7 @@ import { shuffleArray } from '../../utils/shuffler.ts';
 interface QuestionDisplay {
   category: CategoryContent | undefined;
   inGame: boolean;
+  isActive: boolean;
   onStartGame: () => void;
   onSwitchPlayers: () => void;
 }
@@ -56,8 +57,6 @@ export const QuestionDisplay = ({
    */
   useEffect(() => {
     const nextQuestion = () => {
-      if (questions.length === 0) return;
-
       questionIndex.current = (questionIndex.current + 1) % questions.length;
       setCurrentQuestion(questions[questionIndex.current]);
       onSwitchPlayers();
@@ -71,7 +70,7 @@ export const QuestionDisplay = ({
         }),
       ]);
     }
-  }, [currentQuestion]);
+  }, [currentQuestion, onSwitchPlayers, questions]);
 
   if (!category || !currentQuestion)
     return <Typography variant={'h3'}>Loading...</Typography>;
@@ -93,7 +92,7 @@ export const QuestionDisplay = ({
       ) : (
         <>
           <TriviaQuestion type={category.type} question={currentQuestion.question} />
-          <Dictation commands={commands} />
+          <Dictation commands={commands} question={currentQuestion} />
         </>
       )}
     </Box>

@@ -1,12 +1,15 @@
-import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+import { useSpeechRecognition } from 'react-speech-recognition';
 import { Alert, AlertTitle } from '@mui/material';
 import { Command } from '../../types/command.ts';
+import { useEffect } from 'react';
+import { Question } from '../../types/category.type.ts';
 
 interface DictationProps {
   commands: Command[];
+  question: Question;
 }
 
-const Dictation = ({ commands }: DictationProps) => {
+const Dictation = ({ commands, question }: DictationProps) => {
   const {
     transcript,
     browserSupportsSpeechRecognition,
@@ -14,6 +17,10 @@ const Dictation = ({ commands }: DictationProps) => {
     listening,
     resetTranscript,
   } = useSpeechRecognition({ commands });
+
+  useEffect(() => {
+    resetTranscript();
+  }, [question, resetTranscript]);
 
   if (!isMicrophoneAvailable) {
     return (
@@ -33,21 +40,9 @@ const Dictation = ({ commands }: DictationProps) => {
     );
   }
 
-  const handleStartSpeech = () =>
-    SpeechRecognition.startListening({
-      continuous: true,
-      interimResults: true,
-    });
-
-  const handleStopSpeech = () => {
-    SpeechRecognition.stopListening().then(() => resetTranscript());
-  };
-
   return (
     <div>
       <p>Microphone: {listening ? 'on' : 'off'}</p>
-      <button onClick={handleStartSpeech}>Start</button>
-      <button onClick={handleStopSpeech}>Stop</button>
       <p>{transcript}</p>
     </div>
   );
