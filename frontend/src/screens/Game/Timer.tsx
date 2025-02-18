@@ -8,7 +8,7 @@ interface TimerProps {
 }
 
 const Timer = ({ inGame, onTimeOut, isActive }: TimerProps) => {
-  const initialTime = 10 * 1000;
+  const initialTime = 30 * 1000;
   const [countdown, setCountDown] = useState(initialTime);
 
   useEffect(() => {
