@@ -1,8 +1,8 @@
-export interface Command {
+export type Command = {
   command: string | string[] | RegExp;
   callback: (...args: string[]) => void;
   isFuzzyMatch?: boolean | undefined;
   matchInterim?: boolean | undefined;
   fuzzyMatchingThreshold?: number | undefined;
   bestMatchOnly?: boolean | undefined;
-}
+};
