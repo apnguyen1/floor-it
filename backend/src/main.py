@@ -35,7 +35,7 @@ def create_category_data():
         # Get the constructor parameters for the subclass
         init_params = inspect.signature(subclass.__init__).parameters
         # Check if 'question_type' is in the constructor parameters (excluding 'self')
-        if 'question_type' in init_params:
+        if "question_type" in init_params:
             # If it has 'question_type' in constructor, instantiate with both types
             categories.append(subclass(question_type=QuestionType.TEXT))
             categories.append(subclass(question_type=QuestionType.IMG))
