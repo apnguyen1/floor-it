@@ -1,21 +1,12 @@
-from typing import Dict, List
+from typing import List
+from pydantic import Field
 
 from backend.src.models.model import Model
 
-class ChampionDTO(Model):
-    version: str
-    data: Dict[str, ChampionDataDTO]
-
-class CharacterDataDTO(BaseModel):
-    name: str
-    itemUsage: str
-    itemDesc: str
-
-class WrapperDTO(Model):
-    value: Dict[str, ]
-    
-class AK_OperatorDataDTO(Model):
-    data: Dict[str, str]
+class AK_OperatorDataDTO:
+    name: str = Field(alias="value.data.name")
+    item_usage: str = Field(alias="value.data.itemUsage")
+    item_description: str = Field(alias="value.data.itemDesc")
 
 class AK_OperatorDTO(Model):
-    __root__: List[WrapperDTO]
+    operators: List[AK_OperatorDataDTO]

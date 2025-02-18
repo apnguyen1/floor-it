@@ -11,12 +11,12 @@ class AK_Operators(Category[AK_OperatorDTO]):
         super().__init__(source=url, model=AK_OperatorDTO, question_type=question_type)
 
 
-    """     /**
+    """         /**
      * Fetches the list of Arknights operators from arknights API endpoint.
      *
      * @return a mapping of operator names to their data
-     */ """
-    fun getAKOperatorMappings(): Map<String, AKOperator> {
+     */ 
+    def getAKOperatorMappings(): Map<String, AKOperator> {
         val url =
           "https://www.arknightsapi.com/v1/operators"
         val response: String? =
@@ -51,15 +51,26 @@ class AK_Operators(Category[AK_OperatorDTO]):
                 throw AKOperatorDataException("Failed to fetch Arknights operator data from $url", e)
             }
         } ?: throw AKOperatorDataException("Arknights operator data is empty or null")
-    }
-    def __title_to_name(self) -> Dict[str, List[str]]:
+    } """
+
+    def __description_to_name(self) -> Dict[str, List[str]]:
         """
-        Returns a mapping of champion titles to their names.
+        Returns a mapping of operator descriptions to their names.
         Replaces any apostrophes (') in the name with spaces
         :return: a dict of their titles to their names
         """
-        self.name = "LoL Champion Titles"
-        self.description = "Guess the LoL champion's name by their title!"
+        self.name = "Arknights Operator Descriptions"
+        self.description = "Guess the Arknights Operators' name by their description!"
+        
+        # Create a dictionary of operators keyed by name
+        operators = {operator.name: op for operator in self._raw_data.operators.values()}
+        
+        # Censor operator names in profiles
+        for name, op in operators.items():
+            censored_profile = re.sub(f"(?i){re.escape(name)}", '*' * len(name), op.profile, flags=re.IGNORECASE)
+            operators[name] = op.copy(update={"profile": censored_profile})
+        
+        return operators
         return {
             champion.title: [champion.name.replace("'", " ")]
             for champion in self._raw_data.data.values()
@@ -67,7 +78,7 @@ class AK_Operators(Category[AK_OperatorDTO]):
 
     def __image_to_name(self) -> Dict[str, List[str]]:
         """
-        Returns a mapping of champion images to their names.
+        Returns a mapping of operator images to their names.
         Replaces any apostrophes (') in the name with spaces'
         :return: a dict of their images to their names
         """
@@ -75,6 +86,7 @@ class AK_Operators(Category[AK_OperatorDTO]):
         self.description = "Guess the LoL champion's name by their image!"
 
         base_img_url = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/"
+        
         image_to_name = {}
         for c in self._raw_data.data.values():
             image_name = c.image.full[0:-4]
@@ -90,7 +102,7 @@ class AK_Operators(Category[AK_OperatorDTO]):
 
     def _format_data(self) -> dict[str, List[str]]:
         return (
-            self.__title_to_name()
+            self.__description_to_name()
             if self.question_type == QuestionType.TEXT
             else (self.__image_to_name())
         )
