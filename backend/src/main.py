@@ -11,8 +11,6 @@ from backend.src.models.category_preview_dto import (
     CategoryPreviewDTO,
     CategoryPreviewListDTO,
 )
-from backend.src.scripts.lol_champions import Champions
-from backend.src.scripts.numbers import Numbers
 from backend.src.utils.definitions import PUBLIC_DIR, SCRIPTS_DIR
 
 
