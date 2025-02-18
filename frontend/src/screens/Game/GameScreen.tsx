@@ -6,9 +6,10 @@ import { CategoryContent } from '../../types/category.type.ts';
 import { shuffleArray } from '../../utils/shuffler.ts';
 import { fetchCategoryData } from '../../utils/fetch.ts';
 import { QuestionDisplay } from './QuestionDisplay.tsx';
+import { ScreenType } from '../../constants/screens.ts';
 
 export const GameScreen: React.FC = () => {
-  const { players, selectedCategory } = useApp();
+  const { players, selectedCategory, setScreen } = useApp();
   const [inGame, setInGame] = useState<boolean>(false);
   const [activePlayer, setActivePlayer] = useState(true);
   const [category, setCategory] = useState<CategoryContent | undefined>(undefined);
@@ -18,17 +19,11 @@ export const GameScreen: React.FC = () => {
    */
   useEffect(() => {
     if (!category) {
-      const getData = async () => {
-        const shuffledName = shuffleArray(selectedCategory)[0]
-          .toLowerCase()
-          .replace(/\s/g, '_')
-          .concat('.json');
-
-        const data = await fetchCategoryData(shuffledName);
-        setCategory(data);
-      };
-
-      getData();
+      const randomCategory = shuffleArray(selectedCategory)[0]
+        .toLowerCase()
+        .replace(/\s/g, '_')
+        .concat('.json');
+      fetchCategoryData(randomCategory).then((d) => setCategory(d));
     }
   }, [category, selectedCategory]);
 
@@ -50,11 +45,6 @@ export const GameScreen: React.FC = () => {
   };
 
   /**
-   * TODO: This needs to be created.
-   */
-  const handleResetGame = () => setInGame(false);
-
-  /**
    * Switches the player's turn
    */
   const handleSwitchPlayers = () => setActivePlayer((prev) => !prev);
@@ -73,6 +63,10 @@ export const GameScreen: React.FC = () => {
         backgroundColor: 'rgba(200,255,239,0.90)',
       }}
     >
+      {/*TODO */}
+      <Button variant={'text'} onClick={() => setScreen(ScreenType.Categories)}>
+        Back
+      </Button>
       <Player
         playerName={players.P1.name}
         inGame={inGame}
@@ -91,10 +85,6 @@ export const GameScreen: React.FC = () => {
         onTimeOut={handleTimeOut}
         isActive={!activePlayer}
       />
-      {/*TODO needs to be implemented*/}
-      <Button variant={'contained'} onClick={handleResetGame} disabled={true}>
-        TODO
-      </Button>
     </Box>
   );
 };

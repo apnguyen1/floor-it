@@ -35,6 +35,10 @@ export const QuestionDisplay = ({
   const [currentQuestion, setCurrentQuestion] = useState<Question | undefined>(
     undefined,
   );
+
+  /**
+   * Shuffles the category question and selects the first question
+   */
   useEffect(() => {
     if (category) {
       const shuffledQuestions = shuffleArray(category.questions);
@@ -46,7 +50,19 @@ export const QuestionDisplay = ({
     }
   }, [category]);
 
+  /**
+   * Creates the necessary command to pass to dictation such as the answer to match
+   * against and the action to take afterwards-- to go to the next question.
+   */
   useEffect(() => {
+    const nextQuestion = () => {
+      if (questions.length === 0) return;
+
+      questionIndex.current = (questionIndex.current + 1) % questions.length;
+      setCurrentQuestion(questions[questionIndex.current]);
+      onSwitchPlayers();
+    };
+
     if (currentQuestion) {
       setCommands([
         createCommand({
@@ -56,14 +72,6 @@ export const QuestionDisplay = ({
       ]);
     }
   }, [currentQuestion]);
-
-  const nextQuestion = () => {
-    if (questions.length === 0) return;
-
-    questionIndex.current = (questionIndex.current + 1) % questions.length;
-    setCurrentQuestion(questions[questionIndex.current]);
-    onSwitchPlayers();
-  };
 
   if (!category || !currentQuestion)
     return <Typography variant={'h3'}>Loading...</Typography>;
