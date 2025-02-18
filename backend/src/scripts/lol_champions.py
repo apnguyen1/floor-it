@@ -31,10 +31,20 @@ class Champions(Category[ChampionDTO]):
         """
         self.name = "LoL Champion Covers"
         self.description = "Guess the LoL champion's name by their image!"
-        return {
-            champion.image.full: [champion.name.replace("'", " ")]
-            for champion in self._raw_data.data.values()
-        }
+
+        base_img_url = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/"
+        image_to_name = {}
+        for c in self._raw_data.data.values():
+            image_name = c.image.full[0:-4]
+
+            image_to_name[base_img_url + image_name + "_0.jpg"] = [
+                c.name.replace("'", " ")
+            ]
+            image_to_name[base_img_url + image_name + "_1.jpg"] = [
+                c.name.replace("'", " ")
+            ]
+
+        return image_to_name
 
     def _format_data(self) -> dict[str, List[str]]:
         return (
