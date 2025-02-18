@@ -1,15 +1,16 @@
 import React from 'react';
 import './styles/App.css';
-import { useGame } from './hooks/useGame.ts';
+import { useApp } from './hooks/useApp.ts';
 import { ScreenType } from './constants/screens.ts';
 import { HomeScreen } from './screens/Home/HomeScreen.tsx';
 import { AvatarScreen } from './screens/Avatars/AvatarScreen.tsx';
 import { CategoriesScreen } from './screens/Categories/CategoriesScreen.tsx';
-import { GameSceen } from './screens/Game/GameSceen.tsx';
-import { GameProvider } from './context/GameContext.tsx';
+import { GameScreen } from './screens/Game/GameScreen.tsx';
+import { AppProvider } from './context/AppContext.tsx';
+import { Box, Container } from '@mui/material';
 
 const ScreenRender: React.FC = () => {
-  const { screen } = useGame();
+  const { screen } = useApp();
 
   switch (screen) {
     case ScreenType.Home:
@@ -19,21 +20,31 @@ const ScreenRender: React.FC = () => {
     case ScreenType.Categories:
       return <CategoriesScreen></CategoriesScreen>;
     case ScreenType.Game:
-      return <GameSceen></GameSceen>;
+      return <GameScreen></GameScreen>;
     default:
       return <HomeScreen></HomeScreen>;
   }
 };
 
 const App: React.FC = () => {
+  const url = '/img/app_background.png';
+
   return (
-    <GameProvider>
-      <div className={'app-container'}>
-        <div className={'content-container'}>
-          <ScreenRender></ScreenRender>
-        </div>
-      </div>
-    </GameProvider>
+    <AppProvider>
+      <Box
+        sx={{
+          backgroundImage: `url(${url})`,
+        }}
+      >
+        <Container
+          sx={{
+            height: '100vh',
+          }}
+        >
+          <ScreenRender />
+        </Container>
+      </Box>
+    </AppProvider>
   );
 };
 
