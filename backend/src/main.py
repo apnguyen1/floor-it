@@ -1,14 +1,17 @@
 import json
 import os
+import inspect
+import pkgutil
+import importlib
+from typing import List
 
+from backend.src.utils.category import Category
 from backend.src.models.category_data_dto import QuestionType
 from backend.src.models.category_preview_dto import (
     CategoryPreviewDTO,
     CategoryPreviewListDTO,
 )
-from backend.src.scripts.lol_champions import Champions
-from backend.src.scripts.numbers import Numbers
-from backend.src.utils.definitions import PUBLIC_DIR
+from backend.src.utils.definitions import PUBLIC_DIR, SCRIPTS_DIR
 
 
 def main():
@@ -21,8 +24,29 @@ def create_category_data():
     Takes all the subclasses of Category and
     turns them into JSONs in public/category_data
     """
-    Champions(QuestionType.TEXT).to_file()
-    Numbers().to_file()
+
+    # Import all the files under scripts,
+    # since we need those to be imported to be recognized as subclasses
+    for _, module_name, _ in pkgutil.iter_modules([SCRIPTS_DIR]):
+        importlib.import_module(f"backend.src.scripts.{module_name}")
+    # Dynamically instantiate subclasses
+    categories: List[Category] = []
+
+    for subclass in Category.__subclasses__():
+        # Get the constructor parameters for the subclass
+        init_params = inspect.signature(subclass.__init__).parameters
+        # Check if 'question_type' is in the constructor parameters (excluding 'self')
+        if "question_type" in init_params:
+            # If it has 'question_type' in constructor, instantiate with both types
+            categories.append(subclass(question_type=QuestionType.TEXT))
+            categories.append(subclass(question_type=QuestionType.IMG))
+        else:
+            # If not, just instantiate without parameters
+            categories.append(subclass())
+
+    # Call to_file() on all instances
+    for category in categories:
+        category.to_file()
 
 
 def create_category_preview_list():

@@ -6,9 +6,9 @@ from backend.src.utils.category import Category
 
 
 class Champions(Category[ChampionDTO]):
-    def __init__(self, qt: QuestionType):
+    def __init__(self, question_type: QuestionType):
         url = "https://ddragon.leagueoflegends.com/cdn/15.2.1/data/en_US/champion.json"
-        super().__init__(source=url, model=ChampionDTO, question_type=qt)
+        super().__init__(source=url, model=ChampionDTO, question_type=question_type)
 
     def __title_to_name(self) -> Dict[str, List[str]]:
         """
