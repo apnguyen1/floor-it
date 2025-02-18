@@ -32,11 +32,15 @@ class Champions(Category[ChampionDTO]):
         self.name = "LoL Champion Covers"
         self.description = "Guess the LoL champion's name by their image!"
 
-        base_img_url = "https://ddragon.leagueoflegends.com/cdn/15.3.1/img/champion/"
+        base_img_url = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/"
         image_to_name = {}
         for c in self._raw_data.data.values():
-            image_to_name[base_img_url + c.image.full] = [c.name.replace("'", " ")]
-            image_to_name[base_img_url + c.image.full[0:-4] + "_1.png"] = [
+            image_name = c.image.full[0:-4]
+
+            image_to_name[base_img_url + image_name + "_0.jpg"] = [
+                c.name.replace("'", " ")
+            ]
+            image_to_name[base_img_url + image_name + "_1.jpg"] = [
                 c.name.replace("'", " ")
             ]
 
