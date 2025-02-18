@@ -10,6 +10,8 @@ interface TriviaQuestionProps {
  * @param category the chosen category
  */
 const TriviaQuestion = ({ type, question }: TriviaQuestionProps) => {
+  console.log(question);
+
   return (
     <Box>
       <>
