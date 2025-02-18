@@ -1,0 +1,31 @@
+.avatar-screen {
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10; /* Ensure it stays above other content */
+}
+
+.player-box {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.player-box .MuiFormControl-root {
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
