@@ -32,15 +32,15 @@ def create_category_data():
     categories: List[Category] = []
 
     for subclass in Category.__subclasses__():
+        # Get the constructor parameters for the subclass
         init_params = inspect.signature(subclass.__init__).parameters
-        init_params = list(init_params.keys())[1:]  # Skip 'self'
-
-        if (
-            len(init_params) == 1
-        ):  # If it requires one argument, assume it's QuestionType
-            categories.append(subclass(QuestionType.TEXT))
-            categories.append(subclass(QuestionType.IMG))
+        # Check if 'question_type' is in the constructor parameters (excluding 'self')
+        if 'question_type' in init_params:
+            # If it has 'question_type' in constructor, instantiate with both types
+            categories.append(subclass(question_type=QuestionType.TEXT))
+            categories.append(subclass(question_type=QuestionType.IMG))
         else:
+            # If not, just instantiate without parameters
             categories.append(subclass())
 
     # Call to_file() on all instances

@@ -6,9 +6,9 @@ from backend.src.models.category_data_dto import QuestionType
 
 
 class BrandIcons(Category[BrandIconsDTO]):
-    def __init__(self):
+    def __init__(self, file: str = "brand-icons.json"):
         super().__init__(
-            source="brand-icons.json",
+            source=file,
             model=BrandIconsDTO,
             question_type=QuestionType.IMG,
             name="Brand Logos",
