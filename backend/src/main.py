@@ -1,13 +1,14 @@
-from backend.src.models.category_data_dto import QuestionType
-from backend.src.scripts.lol_champions import Champions
-from backend.src.scripts.numbers import Numbers
-from backend.src.utils.definitions import PUBLIC_DIR
-import os
 import json
+import os
+
+from backend.src.models.category_data_dto import QuestionType
 from backend.src.models.category_preview_dto import (
     CategoryPreviewDTO,
     CategoryPreviewListDTO,
 )
+from backend.src.scripts.lol_champions import Champions
+from backend.src.scripts.numbers import Numbers
+from backend.src.utils.definitions import PUBLIC_DIR
 
 
 def main():
