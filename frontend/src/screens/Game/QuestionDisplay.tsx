@@ -11,7 +11,6 @@ import { shuffleArray } from '../../utils/shuffler.ts';
 interface QuestionDisplay {
   category: CategoryContent | undefined;
   inGame: boolean;
-  isActive: boolean;
   onStartGame: () => void;
   onSwitchPlayers: () => void;
 }
