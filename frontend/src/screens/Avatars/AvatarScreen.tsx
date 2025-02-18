@@ -58,7 +58,7 @@ const ColorPicker = ({
   };
 
   return (
-    <div>
+    <Box>
       <Tooltip title="Select Color">
         <IconButton onClick={handleClick}>
           <Palette sx={{ color: 'white' }} />
@@ -93,7 +93,7 @@ const ColorPicker = ({
           })}
         </Box>
       </Menu>
-    </div>
+    </Box>
   );
 };
 
@@ -125,18 +125,15 @@ export const AvatarScreen = () => {
   };
 
   const handleReadyClick = () => {
-    // Set player names in context
+    // Set player names in context, using defaults if empty
     setPlayers({
-      P1: { name: player1Name.trim() },
-      P2: { name: player2Name.trim() },
+      P1: { name: player1Name.trim() || 'Player 1' },
+      P2: { name: player2Name.trim() || 'Player 2' },
     });
 
     // Navigate to categories screen
     setScreen(ScreenType.Categories);
   };
-
-  // Check if both players have entered names
-  const isReadyDisabled = !player1Name.trim() || !player2Name.trim();
 
   return (
     <Box
@@ -289,14 +286,9 @@ export const AvatarScreen = () => {
               color="primary"
               size="large"
               onClick={handleReadyClick}
-              disabled={isReadyDisabled}
               sx={{
                 minWidth: 200,
                 mt: 2,
-                '&.Mui-disabled': {
-                  backgroundColor: 'rgba(0, 0, 0, 0.12)',
-                  color: 'rgba(0, 0, 0, 0.26)',
-                },
               }}
             >
               Ready!
