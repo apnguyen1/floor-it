@@ -23,7 +23,6 @@ def create_category_data():
     """
     Champions(QuestionType.TEXT).to_file()
     Numbers().to_file()
-    Champions(QuestionType.IMG).to_file()
 
 
 def create_category_preview_list():
