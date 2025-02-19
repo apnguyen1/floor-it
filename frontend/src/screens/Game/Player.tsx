@@ -1,5 +1,6 @@
 import { Avatar, Box, Typography } from '@mui/material';
 import MicIcon from '@mui/icons-material/Mic';
+import MicOffIcon from '@mui/icons-material/MicOff';
 import Timer from './Timer.tsx';
 
 interface PlayerProps {
@@ -8,6 +9,7 @@ interface PlayerProps {
   onTimeOut: (playerName: string) => void;
   isActive: boolean;
   winner: string | undefined;
+  listening: boolean;
 }
 
 export const Player = ({
@@ -16,6 +18,7 @@ export const Player = ({
   onTimeOut,
   isActive,
   winner,
+  listening,
 }: PlayerProps) => {
   const firstName: string = playerName.split(' ')[0];
   const abbrev: string = firstName.length > 2 ? firstName.substring(0, 2) : firstName;
@@ -32,13 +35,19 @@ export const Player = ({
       );
     }
 
+    console.log(listening);
+
     if (isActive) {
       return (
         <>
           <Typography variant="h6" color={isActive ? 'primary' : 'textDisabled'}>
             {firstName}'s Turn
           </Typography>
-          <MicIcon color={'success'} fontSize={'large'} />
+          {listening ? (
+            <MicIcon color={'success'} fontSize={'large'} />
+          ) : (
+            <MicOffIcon color={'error'} fontSize={'large'} />
+          )}
         </>
       );
     }

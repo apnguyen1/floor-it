@@ -6,6 +6,7 @@ import { useApp } from '../../hooks/useApp.ts';
 import { ScreenType } from '../../constants/screens.ts';
 import { useCategoryQuestions } from '../../hooks/useCategoryQuestions.ts';
 import { useSpeechCommands } from '../../hooks/useSpeechCommands.ts';
+import SpeechRecognition from 'react-speech-recognition';
 
 export const GameScreen: React.FC = () => {
   const { players, selectedCategory, setScreen } = useApp();
@@ -56,6 +57,7 @@ export const GameScreen: React.FC = () => {
         inGame: false,
         winner: playerName === players.P1.name ? players.P2.name : players.P1.name,
       }));
+      SpeechRecognition.stopListening().catch((e) => console.error(e));
     },
     [players.P1.name, players.P2.name],
   );
@@ -66,6 +68,7 @@ export const GameScreen: React.FC = () => {
       inGame: false,
     }));
     setScreen(ScreenType.Categories);
+    SpeechRecognition.stopListening().catch((e) => console.error(e));
   }, [setScreen]);
 
   return (
@@ -91,6 +94,7 @@ export const GameScreen: React.FC = () => {
         onTimeOut={handleTimeOut}
         isActive={gameStatus.activePlayer}
         winner={gameStatus.winner}
+        listening={listening}
       />
       <QuestionDisplay
         category={category}
@@ -98,7 +102,6 @@ export const GameScreen: React.FC = () => {
         inGame={gameStatus.inGame}
         onStartGame={handleStartGame}
         transcript={transcript}
-        listening={listening}
         hasError={hasError}
         errorMessage={errorMessage}
       />
@@ -108,6 +111,7 @@ export const GameScreen: React.FC = () => {
         onTimeOut={handleTimeOut}
         isActive={!gameStatus.activePlayer}
         winner={gameStatus.winner}
+        listening={listening}
       />
     </Box>
   );

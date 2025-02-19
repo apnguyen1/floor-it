@@ -10,7 +10,6 @@ interface QuestionDisplayProps {
   inGame: boolean;
   onStartGame: () => void;
   transcript: string;
-  listening: boolean;
   hasError: boolean;
   errorMessage?: string;
 }

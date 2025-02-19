@@ -1,5 +1,5 @@
 import { useEffect, useMemo } from 'react';
-import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
+import { useSpeechRecognition } from 'react-speech-recognition';
 import { createCommand } from '../constants/config.ts';
 
 export const useSpeechCommands = (
@@ -29,17 +29,6 @@ export const useSpeechCommands = (
   useEffect(() => {
     resetTranscript();
   }, [correctAnswers, resetTranscript]);
-
-  // Start speech recognition
-  useEffect(() => {
-    SpeechRecognition.startListening({
-      continuous: true,
-    }).catch((e) => console.error('Speech Recognition failed: ', e));
-
-    return () => {
-      SpeechRecognition.stopListening().catch(console.error);
-    };
-  }, []);
 
   return {
     transcript,
