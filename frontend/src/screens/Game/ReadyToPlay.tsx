@@ -1,6 +1,5 @@
 import { CategoryContent } from '../../types/category.type.ts';
 import { Button, Typography } from '@mui/material';
-import { useCallback } from 'react';
 import SpeechRecognition from 'react-speech-recognition';
 
 interface ReadyToPlayProps {
@@ -17,12 +16,13 @@ interface ReadyToPlayProps {
 export const ReadyToPlay = ({ category, onStartGame }: ReadyToPlayProps) => {
   const imgUrl = `previews/${category.preview_img}`;
 
-  const handleStartGame = useCallback(() => {
+  const handleStartGame = (): void => {
     SpeechRecognition.startListening({
       continuous: true,
-      interimResults: true,
-    }).then(onStartGame);
-  }, [onStartGame]);
+    })
+      .then(onStartGame)
+      .catch((e) => console.error('Speech Recognition failed: ', e));
+  };
 
   return (
     <>

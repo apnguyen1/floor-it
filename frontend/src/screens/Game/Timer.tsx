@@ -3,13 +3,20 @@ import { Typography } from '@mui/material';
 
 interface TimerProps {
   inGame: boolean;
-  onTimeOut: () => void;
+  onTimeOut: (playerName: string) => void;
   isActive: boolean;
+  playerName: string;
 }
 
-const Timer = ({ inGame, onTimeOut, isActive }: TimerProps) => {
-  const initialTime = 30 * 1000;
+const Timer = ({ inGame, onTimeOut, isActive, playerName }: TimerProps) => {
+  const initialTime = 30 * 1000; // 30 seconds
   const [countdown, setCountDown] = useState(initialTime);
+
+  useEffect(() => {
+    if (inGame) {
+      setCountDown(initialTime);
+    }
+  }, [inGame, initialTime]);
 
   useEffect(() => {
     if (!inGame || !isActive) {
@@ -18,21 +25,21 @@ const Timer = ({ inGame, onTimeOut, isActive }: TimerProps) => {
 
     const interval = setInterval(() => {
       setCountDown((prev) => {
-        if (prev <= 10) {
-          onTimeOut();
+        if (prev <= 1000) {
+          clearInterval(interval);
+          onTimeOut(playerName);
           return 0;
         }
-        return prev - 10;
+        return prev - 1000;
       });
-    }, 10);
+    }, 1000);
 
     return () => clearInterval(interval);
-  }, [inGame, isActive, onTimeOut]);
+  }, [inGame, isActive, onTimeOut, playerName]);
 
   const formatTime = (time: number) => {
     const seconds = Math.floor(time / 1000);
-    const milliseconds = Math.floor((time % 1000) / 10);
-    return `${seconds}.${milliseconds.toString().padStart(2, '0')}`;
+    return `${seconds}s`;
   };
 
   return <Typography variant={'h2'}>{formatTime(countdown)}</Typography>;
