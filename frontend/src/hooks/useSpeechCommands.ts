@@ -12,6 +12,7 @@ export const useSpeechCommands = (
       createCommand({ command: correctAnswers, callback: onCorrectAnswer }),
       createCommand({
         command: ['Next', 'Pass'],
+        fuzzyMatchingThreshold: 0.9,
         callback: onSkip,
       }),
     ],

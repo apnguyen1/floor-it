@@ -35,8 +35,6 @@ export const Player = ({
       );
     }
 
-    console.log(listening);
-
     if (isActive) {
       return (
         <>

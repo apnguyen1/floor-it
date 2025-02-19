@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { Box, Button } from '@mui/material';
 import { Player } from './Player.tsx';
 import { QuestionDisplay } from './QuestionDisplay.tsx';
@@ -15,6 +15,7 @@ export const GameScreen: React.FC = () => {
     activePlayer: true,
     winner: undefined as string | undefined,
   });
+  const winRef = useRef<HTMLAudioElement>(new Audio('/sounds/win.mp3'));
   const { category, currentQuestion, skipQuestion, setNextQuestion } =
     useCategoryQuestions(selectedCategory);
   const { transcript, listening, hasError, errorMessage } = useSpeechCommands(
@@ -48,6 +49,9 @@ export const GameScreen: React.FC = () => {
       inGame: true,
       winner: undefined,
     }));
+    if (winRef.current) {
+      winRef.current.pause();
+    }
   }, []);
 
   const handleTimeOut = useCallback(
@@ -58,6 +62,10 @@ export const GameScreen: React.FC = () => {
         winner: playerName === players.P1.name ? players.P2.name : players.P1.name,
       }));
       SpeechRecognition.stopListening().catch((e) => console.error(e));
+      if (winRef.current) {
+        winRef.current.currentTime = 0;
+        winRef.current.play().catch((e) => console.error(e));
+      }
     },
     [players.P1.name, players.P2.name],
   );
@@ -69,6 +77,9 @@ export const GameScreen: React.FC = () => {
     }));
     setScreen(ScreenType.Categories);
     SpeechRecognition.stopListening().catch((e) => console.error(e));
+    if (winRef.current) {
+      winRef.current.pause();
+    }
   }, [setScreen]);
 
   return (

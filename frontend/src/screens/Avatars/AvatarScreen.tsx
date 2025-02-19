@@ -108,8 +108,8 @@ export const AvatarScreen = () => {
     players.P2.name === 'P2' ? '' : players.P2.name,
   );
 
-  const [player1Color, setPlayer1Color] = useState<string>('#D53E4F');
-  const [player2Color, setPlayer2Color] = useState<string>('#3288BD');
+  const [player1Color, setPlayer1Color] = useState(players.P1.color);
+  const [player2Color, setPlayer2Color] = useState(players.P2.color);
 
   // Get display letters for avatars
   const getAvatarLetter = (name: string, defaultValue: string) => {
