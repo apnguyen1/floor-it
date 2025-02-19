@@ -64,6 +64,7 @@ export const CategoriesScreen = () => {
         height: '100vh',
         display: 'flex',
         flexDirection: 'column',
+        backgroundColor: 'rgba(255, 255, 255, 0.75)',
       }}
     >
       {/*Search Bar */}

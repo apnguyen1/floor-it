@@ -21,9 +21,13 @@ const TriviaQuestion = memo(({ type, question }: TriviaQuestionProps) => {
             </Typography>
           </>
         ) : (
-          <>
-            <img src={question} alt={'trivia image'} />
-          </>
+          <Box width="100%" display="flex" justifyContent="center">
+            <img
+              src={question}
+              alt="trivia image"
+              style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
+            />
+          </Box>
         )}
       </>
     </Box>
