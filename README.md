@@ -34,3 +34,13 @@ We welcome contributions! Please follow these steps:
    ```
 
 7. Open a pull request and describe your changes
+
+## Beta Release
+
+### Building + Testing
+
+### Running
+
+### Operational Use Cases
+- Category selection (players are able to select from \[limited\] categories).
+- Players answering questions in their selected trivia category (interaction between player and system's timer and web speech API).
