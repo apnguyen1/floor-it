@@ -1,4 +1,5 @@
 import { Box, Typography } from '@mui/material';
+import { memo } from 'react';
 
 interface TriviaQuestionProps {
   type: string;
@@ -9,9 +10,7 @@ interface TriviaQuestionProps {
  * Component cycling through questions and displaying them
  * @param category the chosen category
  */
-const TriviaQuestion = ({ type, question }: TriviaQuestionProps) => {
-  console.log(question);
-
+const TriviaQuestion = memo(({ type, question }: TriviaQuestionProps) => {
   return (
     <Box>
       <>
@@ -29,6 +28,6 @@ const TriviaQuestion = ({ type, question }: TriviaQuestionProps) => {
       </>
     </Box>
   );
-};
+});
 
 export default TriviaQuestion;

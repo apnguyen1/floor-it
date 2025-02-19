@@ -19,9 +19,7 @@ We welcome contributions! Please follow these steps:
 
 3. Make your changes
 
-4. Use `make all` to adhere to the styling guidelines for this repo
-
-5. Commit your changes:
+4. Commit your changes:
 
    ```bash
    git commit -m "Add your commit message"
@@ -34,3 +32,34 @@ We welcome contributions! Please follow these steps:
    ```
 
 7. Open a pull request and describe your changes
+
+## Beta Release
+
+### Building + Testing
+
+#### Frontend
+
+1. Cd into the frontend directory `cd frontend`
+2. Install the project's dependencies `npm install`
+3. To test the application run `npm run test`
+
+#### Backend
+
+1. cd into the backend directory `cd backend`
+2. Install python 3.12 and poetry into your machine
+3. Install the project's dependencies with `poetry install`
+4. To test the application run `make test`
+
+### Running
+
+Our application runs on the frontend, to get started:
+
+1. Cd into the frontend directory `cd frontend`
+2. Install the project's dependencies `npm install`
+3. Run the command `npm run dev`
+
+### Operational Use Cases
+
+- Category selection (players are able to select from \[limited\] categories).
+- Players answering questions in their selected trivia category (interaction between
+  player and system's timer and web speech API).

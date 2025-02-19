@@ -1,78 +1,39 @@
-import { Box, Typography } from '@mui/material';
+// QuestionDisplay.tsx
+import { Alert, AlertTitle, Box, Typography } from '@mui/material';
 import TriviaQuestion from './TriviaQuestion.tsx';
-import Dictation from './Dictation.tsx';
 import { CategoryContent, Question } from '../../types/category.type.ts';
 import { ReadyToPlay } from './ReadyToPlay.tsx';
-import { createCommand } from '../../constants/config.ts';
-import { useEffect, useRef, useState } from 'react';
-import { Command } from '../../types/command.ts';
-import { shuffleArray } from '../../utils/shuffler.ts';
 
-interface QuestionDisplay {
+interface QuestionDisplayProps {
   category: CategoryContent | undefined;
+  currentQuestion: Question | undefined;
   inGame: boolean;
   onStartGame: () => void;
-  onSwitchPlayers: () => void;
+  transcript: string;
+  hasError: boolean;
+  errorMessage?: string;
 }
 
-/**
- * Displays the category question
- *
- * @param category the chosen category to play
- * @param inGame determines whether the game has started
- * @param onStartGame begins game
- * @param onSwitchPlayers switches the player on correct answer
- */
 export const QuestionDisplay = ({
   category,
+  currentQuestion,
   inGame,
   onStartGame,
-  onSwitchPlayers,
-}: QuestionDisplay) => {
-  const [commands, setCommands] = useState<Command[]>([]);
-  const [questions, setQuestions] = useState<Question[]>([]);
-  const questionIndex = useRef(0);
-  const [currentQuestion, setCurrentQuestion] = useState<Question | undefined>(
-    undefined,
-  );
-
-  /**
-   * Shuffles the category question and selects the first question
-   */
-  useEffect(() => {
-    if (category) {
-      const shuffledQuestions = shuffleArray(category.questions);
-      setQuestions(shuffledQuestions);
-      questionIndex.current = 0;
-      if (shuffledQuestions.length > 0) {
-        setCurrentQuestion(shuffledQuestions[0]);
-      }
-    }
-  }, [category]);
-
-  /**
-   * Creates the necessary command to pass to dictation such as the answer to match
-   * against and the action to take afterwards-- to go to the next question.
-   */
-  useEffect(() => {
-    const nextQuestion = () => {
-      questionIndex.current = (questionIndex.current + 1) % questions.length;
-      setCurrentQuestion(questions[questionIndex.current]);
-      onSwitchPlayers();
-    };
-
-    if (currentQuestion) {
-      setCommands([
-        createCommand({
-          command: currentQuestion.answers,
-          callback: nextQuestion,
-        }),
-      ]);
-    }
-  }, [currentQuestion, onSwitchPlayers, questions]);
-
+  transcript,
+  hasError,
+  errorMessage,
+}: QuestionDisplayProps) => {
   if (!category || !currentQuestion)
-    return <Typography variant={'h3'}>Loading...</Typography>;
+    return <Typography variant="h3">Loading...</Typography>;
+
+  if (hasError) {
+    return (
+      <Alert variant="filled" severity="error">
+        <AlertTitle>Error</AlertTitle>
+        {errorMessage}
+      </Alert>
+    );
+  }
 
   return (
     <Box
@@ -92,7 +53,14 @@ export const QuestionDisplay = ({
       ) : (
         <>
           <TriviaQuestion type={category.type} question={currentQuestion.question} />
-          <Dictation commands={commands} question={currentQuestion} />
+          <Box>
+            <Typography variant={'subtitle2'} color={'textSecondary'}>
+              transcript: {transcript}
+            </Typography>
+          </Box>
+          <Typography variant={'caption'}>
+            Press <b>Space</b> or say <b>Next</b> to skip question
+          </Typography>
         </>
       )}
     </Box>
