@@ -25,7 +25,17 @@ export const Player: React.FC<PlayerProps> = ({
 
   return (
     <Box
-      sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', flex: 1 }}
+      sx={{
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '20%',
+        minHeight: '495px',
+        padding: 0,
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
+        borderRadius: '10px',
+      }}
     >
       <Avatar>{abbrev}</Avatar>
       <Timer inGame={inGame} onTimeOut={handleTimeOut} isActive={isActive} />

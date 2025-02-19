@@ -61,8 +61,8 @@ export const GameScreen: React.FC = () => {
         width: '100%',
         height: '100vh',
         padding: 2,
-        borderRadius: 150,
-        backgroundColor: 'rgba(200,255,239,0.90)',
+        borderRadius: 25,
+        background: `linear-gradient(to right, ${players.P1.color} 50%, ${players.P2.color} 50%)`,
       }}
     >
       {/*TODO */}

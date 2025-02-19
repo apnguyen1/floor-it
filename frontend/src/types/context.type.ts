@@ -1,5 +1,6 @@
 export type PlayerState = {
   name: string;
+  color: string;
 };
 
 export type AppContextType = {

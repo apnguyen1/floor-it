@@ -1,18 +1,18 @@
 import { useState } from 'react';
 import { useApp } from '../../hooks/useApp.ts';
 import {
+  Avatar,
+  Box,
   Button,
   Container,
-  Avatar,
-  TextField,
   IconButton,
-  Box,
-  Typography,
-  Stack,
   Menu,
   MenuItem,
-  Tooltip,
   Paper,
+  Stack,
+  TextField,
+  Tooltip,
+  Typography,
 } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { ScreenType } from '../../constants/screens.ts';
@@ -127,8 +127,8 @@ export const AvatarScreen = () => {
   const handleReadyClick = () => {
     // Set player names in context, using defaults if empty
     setPlayers({
-      P1: { name: player1Name.trim() || 'Player 1' },
-      P2: { name: player2Name.trim() || 'Player 2' },
+      P1: { name: player1Name.trim() || 'Player 1', color: player1Color },
+      P2: { name: player2Name.trim() || 'Player 2', color: player2Color },
     });
 
     // Navigate to categories screen
