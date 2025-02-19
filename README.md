@@ -35,6 +35,8 @@ We welcome contributions! Please follow these steps:
 
 ## Beta Release
 
+v1.0
+
 ### Building + Testing
 
 #### Frontend
