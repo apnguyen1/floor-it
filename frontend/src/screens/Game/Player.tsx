@@ -35,8 +35,6 @@ export const Player = ({
       );
     }
 
-    console.log(listening);
-
     if (isActive) {
       return (
         <>
@@ -71,8 +69,12 @@ export const Player = ({
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        flex: 1,
-        gap: 2,
+        justifyContent: 'center',
+        width: '20%',
+        minHeight: '495px',
+        padding: 0,
+        backgroundColor: 'rgba(255, 255, 255, 0.5)',
+        borderRadius: '10px',
       }}
     >
       <Avatar

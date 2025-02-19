@@ -1,5 +1,4 @@
 import { Box, Paper, Typography } from '@mui/material';
-import QuizIcon from '@mui/icons-material/Quiz';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import { CategoryPreview } from '../types/category.type';
 
@@ -85,16 +84,7 @@ export const CategoryWidget = ({
             overflow: 'hidden',
           }}
         >
-          <QuizIcon
-            sx={{
-              fontSize: {
-                xs: '60px',
-                sm: '70px',
-                md: '80px',
-              },
-              color: 'primary.main',
-            }}
-          />
+          <img src={`previews/${category.image}`} alt={category.name} />
         </Box>
       </Box>
     </Paper>
