@@ -1,7 +1,5 @@
 import { CategoryContent } from '../../types/category.type.ts';
 import { Button, Typography } from '@mui/material';
-import { useCallback } from 'react';
-import SpeechRecognition from 'react-speech-recognition';
 
 interface ReadyToPlayProps {
   category: CategoryContent;
@@ -16,13 +14,6 @@ interface ReadyToPlayProps {
  */
 export const ReadyToPlay = ({ category, onStartGame }: ReadyToPlayProps) => {
   const imgUrl = `previews/${category.preview_img}`;
-
-  const handleStartGame = useCallback(() => {
-    SpeechRecognition.startListening({
-      continuous: true,
-      interimResults: true,
-    }).then(onStartGame);
-  }, [onStartGame]);
 
   return (
     <>
@@ -42,7 +33,7 @@ export const ReadyToPlay = ({ category, onStartGame }: ReadyToPlayProps) => {
       <Typography variant="h5" color="secondary">
         {category.preview_desc}
       </Typography>
-      <Button variant="contained" color="success" onClick={handleStartGame}>
+      <Button variant="contained" color="success" onClick={onStartGame}>
         Start Game
       </Button>
     </>

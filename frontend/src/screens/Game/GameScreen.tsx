@@ -1,55 +1,72 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { Player } from './Player.tsx';
 import { Box, Button } from '@mui/material';
-import { useApp } from '../../hooks/useApp.ts';
-import { CategoryContent } from '../../types/category.type.ts';
-import { shuffleArray } from '../../utils/shuffler.ts';
-import { fetchCategoryData } from '../../utils/fetch.ts';
+import { Player } from './Player.tsx';
 import { QuestionDisplay } from './QuestionDisplay.tsx';
+import { useApp } from '../../hooks/useApp.ts';
 import { ScreenType } from '../../constants/screens.ts';
+import { useCategoryQuestions } from '../../hooks/useCategoryQuestions.ts';
+import { useSpeechCommands } from '../../hooks/useSpeechCommands.ts';
 
 export const GameScreen: React.FC = () => {
   const { players, selectedCategory, setScreen } = useApp();
-  const [inGame, setInGame] = useState<boolean>(false);
-  const [activePlayer, setActivePlayer] = useState(true);
-  const [category, setCategory] = useState<CategoryContent | undefined>(undefined);
-
-  /**
-   * Fetch CategoryData
-   */
+  const [gameStatus, setGameStatus] = useState({
+    inGame: false,
+    activePlayer: true,
+    winner: undefined as string | undefined,
+  });
+  const { category, currentQuestion, skipQuestion, setNextQuestion } =
+    useCategoryQuestions(selectedCategory);
+  const { transcript, listening, hasError, errorMessage } = useSpeechCommands(
+    currentQuestion?.answers || [],
+    () => {
+      setNextQuestion();
+      setGameStatus((prev) => ({
+        ...prev,
+        activePlayer: !prev.activePlayer,
+      }));
+    },
+    () => {
+      skipQuestion();
+    },
+  );
   useEffect(() => {
-    if (!category) {
-      const randomCategory = shuffleArray(selectedCategory)[0]
-        .toLowerCase()
-        .replace(/\s/g, '_')
-        .concat('.json');
-      fetchCategoryData(randomCategory).then((d) => setCategory(d));
-    }
-  }, [category, selectedCategory]);
+    const handleKeyPress = (e: KeyboardEvent) => {
+      if (e.code === 'Space' && gameStatus.inGame && currentQuestion) {
+        e.preventDefault();
+        skipQuestion();
+      }
+    };
 
-  /**
-   * Starts game
-   */
-  const handleStartGame = () => setInGame(true);
+    window.addEventListener('keydown', handleKeyPress);
+    return () => window.removeEventListener('keydown', handleKeyPress);
+  }, [gameStatus.inGame, currentQuestion, skipQuestion]);
 
-  /**
-   * Determines the winner of the game
-   *
-   * @param playerName
-   */
-  const handleTimeOut = (playerName: string) => {
-    setInGame(false);
-    alert(
-      `${playerName === players.P1.name ? players.P2.name : players.P1.name}, You've won!`,
-    );
-  };
-
-  /**
-   * Switches the player's turn
-   */
-  const handleSwitchPlayers = useCallback(() => {
-    setActivePlayer((prev) => !prev);
+  const handleStartGame = useCallback(() => {
+    setGameStatus((prev) => ({
+      ...prev,
+      inGame: true,
+      winner: undefined,
+    }));
   }, []);
+
+  const handleTimeOut = useCallback(
+    (playerName: string) => {
+      setGameStatus((prev) => ({
+        ...prev,
+        inGame: false,
+        winner: playerName === players.P1.name ? players.P2.name : players.P1.name,
+      }));
+    },
+    [players.P1.name, players.P2.name],
+  );
+
+  const handleBackButton = useCallback(() => {
+    setGameStatus((prev) => ({
+      ...prev,
+      inGame: false,
+    }));
+    setScreen(ScreenType.Categories);
+  }, [setScreen]);
 
   return (
     <Box
@@ -65,27 +82,32 @@ export const GameScreen: React.FC = () => {
         backgroundColor: 'rgba(200,255,239,0.90)',
       }}
     >
-      {/*TODO */}
-      <Button variant={'text'} onClick={() => setScreen(ScreenType.Categories)}>
+      <Button variant="text" onClick={handleBackButton}>
         Back
       </Button>
       <Player
         playerName={players.P1.name}
-        inGame={inGame}
+        inGame={gameStatus.inGame}
         onTimeOut={handleTimeOut}
-        isActive={activePlayer}
+        isActive={gameStatus.activePlayer}
+        winner={gameStatus.winner}
       />
       <QuestionDisplay
         category={category}
-        inGame={inGame}
+        currentQuestion={currentQuestion}
+        inGame={gameStatus.inGame}
         onStartGame={handleStartGame}
-        onSwitchPlayers={handleSwitchPlayers}
+        transcript={transcript}
+        listening={listening}
+        hasError={hasError}
+        errorMessage={errorMessage}
       />
       <Player
         playerName={players.P2.name}
-        inGame={inGame}
+        inGame={gameStatus.inGame}
         onTimeOut={handleTimeOut}
-        isActive={!activePlayer}
+        isActive={!gameStatus.activePlayer}
+        winner={gameStatus.winner}
       />
     </Box>
   );
