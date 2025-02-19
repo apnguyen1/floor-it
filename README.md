@@ -57,6 +57,7 @@ Our application runs on the frontend, to get started:
 1. Cd into the frontend directory `cd frontend`
 2. Install the project's dependencies `npm install`
 3. Run the command `npm run dev`
+4. You should find the webpage running locally at [https://localhost:5173]
 
 ### Operational Use Cases
 
