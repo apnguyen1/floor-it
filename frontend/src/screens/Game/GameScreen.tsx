@@ -51,6 +51,13 @@ export const GameScreen: React.FC = () => {
     skipQuestion,
   );
 
+  /**
+   * Handles the start of a trivia game
+   *
+   *  - sets the game status of `inGame` to true
+   *  - begins transcription of the user's speech
+   *  - pauses any ongoing audio.
+   */
   const handleStartGame = useCallback(() => {
     setGameStatus((prev) => ({
       ...prev,
@@ -65,6 +72,13 @@ export const GameScreen: React.FC = () => {
     }
   }, []);
 
+  /**
+   * Handles the end of a trivia game
+   *
+   *  - sets the game status of `inGame` to false and determines the winner
+   *  - stops transcription of the user's speech
+   *  - plays the winning celebratory music.
+   */
   const handleTimeOut = useCallback(
     (playerName: string) => {
       setGameStatus((prev) => ({
@@ -72,7 +86,7 @@ export const GameScreen: React.FC = () => {
         inGame: false,
         winner: playerName === players.P1.name ? players.P2.name : players.P1.name,
       }));
-      SpeechRecognition.stopListening().catch((e) => console.error(e));
+      SpeechRecognition.abortListening().catch((e) => console.error(e));
       if (winRef.current) {
         winRef.current.currentTime = 0;
         winRef.current.play().catch((e) => console.error(e));
@@ -81,13 +95,19 @@ export const GameScreen: React.FC = () => {
     [players.P1.name, players.P2.name],
   );
 
+  /**
+   * Handles going back to the category screen
+   *  - sets the game status of `inGame` to false.
+   *  - stops transcription of the user's speech
+   *  - pauses any ongoing audio.
+   */
   const handleBackButton = useCallback(() => {
     setGameStatus((prev) => ({
       ...prev,
       inGame: false,
     }));
     setScreen(ScreenType.Categories);
-    SpeechRecognition.stopListening().catch((e) => console.error(e));
+    SpeechRecognition.abortListening().catch((e) => console.error(e));
     if (winRef.current) {
       winRef.current.pause();
     }
