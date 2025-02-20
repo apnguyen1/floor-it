@@ -6,7 +6,7 @@ import { HomeScreen } from './screens/Home/HomeScreen.tsx';
 import { AvatarScreen } from './screens/Avatars/AvatarScreen.tsx';
 import { CategoriesScreen } from './screens/Categories/CategoriesScreen.tsx';
 import { GameScreen } from './screens/Game/GameScreen.tsx';
-import { AppProvider } from './context/AppContext.tsx';
+import { AppProvider } from './contexts/AppContext.tsx';
 import { Box, Container } from '@mui/material';
 
 const ScreenRender: React.FC = () => {
