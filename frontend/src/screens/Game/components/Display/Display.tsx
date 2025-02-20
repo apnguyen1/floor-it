@@ -1,8 +1,8 @@
-// QuestionDisplay.tsx
 import { Alert, AlertTitle, Box, Typography } from '@mui/material';
 import TriviaQuestion from './GameDisplay/TriviaQuestion.tsx';
 import { ReadyToPlay } from './GamePreview/ReadyToPlay.tsx';
 import { CategoryContent, Question } from '../../GameScreen.type.ts';
+import { questionBox } from './DIsplay.style.ts';
 
 interface DisplayProps {
   category: CategoryContent | undefined;
@@ -36,18 +36,7 @@ export const Display = ({
   }
 
   return (
-    <Box
-      className="question-box"
-      sx={{
-        flex: 2,
-        textAlign: 'center',
-        padding: '16px',
-        backgroundColor: 'white',
-        borderRadius: '10px',
-        maxWidth: '100%',
-        minHeight: '100px',
-      }}
-    >
+    <Box className="question-box" sx={questionBox()}>
       {!inGame ? (
         <ReadyToPlay category={category} onStartGame={onStartGame} />
       ) : (
