@@ -1,5 +1,5 @@
-import { CategoryContent } from '../../../../types/category.type.ts';
 import { Button, Typography } from '@mui/material';
+import { CategoryContent } from '../../../GameScreen.type.ts';
 
 interface ReadyToPlayProps {
   category: CategoryContent;

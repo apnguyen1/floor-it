@@ -1,10 +1,10 @@
 // QuestionDisplay.tsx
 import { Alert, AlertTitle, Box, Typography } from '@mui/material';
-import TriviaQuestion from '../../TriviaQuestion.tsx';
-import { CategoryContent, Question } from '../../../../types/category.type.ts';
-import { ReadyToPlay } from '../Preview/ReadyToPlay.tsx';
+import TriviaQuestion from './GameDisplay/TriviaQuestion.tsx';
+import { ReadyToPlay } from './GamePreview/ReadyToPlay.tsx';
+import { CategoryContent, Question } from '../../GameScreen.type.ts';
 
-interface QuestionDisplayProps {
+interface DisplayProps {
   category: CategoryContent | undefined;
   currentQuestion: Question | undefined;
   inGame: boolean;
@@ -14,7 +14,7 @@ interface QuestionDisplayProps {
   errorMessage?: string;
 }
 
-export const QuestionDisplay = ({
+export const Display = ({
   category,
   currentQuestion,
   inGame,
@@ -22,7 +22,7 @@ export const QuestionDisplay = ({
   transcript,
   hasError,
   errorMessage,
-}: QuestionDisplayProps) => {
+}: DisplayProps) => {
   if (!category || !currentQuestion)
     return <Typography variant="h3">Loading...</Typography>;
 

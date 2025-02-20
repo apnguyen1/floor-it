@@ -1,7 +1,7 @@
 import React, { useCallback, useRef, useState } from 'react';
 import { Box, Button } from '@mui/material';
 import { Player } from './components/Player/Player.tsx';
-import { QuestionDisplay } from './components/Display/QuestionDisplay.tsx';
+import { Display } from './components/Display/Display.tsx';
 import { useApp } from '../../hooks/useApp.ts';
 import { ScreenType } from '../../constants/screens.ts';
 import { useCategoryQuestions } from '../../hooks/useCategoryQuestions.ts';
@@ -126,7 +126,7 @@ export const GameScreen: React.FC = () => {
         winner={gameStatus.winner}
         listening={listening}
       />
-      <QuestionDisplay
+      <Display
         category={category}
         currentQuestion={currentQuestion}
         inGame={gameStatus.inGame}

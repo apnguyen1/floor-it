@@ -1,5 +1,6 @@
-import { CategoryContent, CategoryList } from '../types/category.type.ts';
+import { CategoryList } from '../types/category.type.ts';
 import { BASE_URL } from '../constants/config';
+import { CategoryContent } from '../screens/Game/GameScreen.type.ts';
 
 // Internal helper function for fetching JSON data
 async function fetchJson<T>(endpoint: string): Promise<T> {

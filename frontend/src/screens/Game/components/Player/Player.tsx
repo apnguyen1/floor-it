@@ -1,7 +1,7 @@
 import { Avatar, Box, Typography } from '@mui/material';
 import MicIcon from '@mui/icons-material/Mic';
 import MicOffIcon from '@mui/icons-material/MicOff';
-import Timer from '../../Timer.tsx';
+import Timer from './Timer/Timer.tsx';
 
 interface PlayerProps {
   playerName: string;

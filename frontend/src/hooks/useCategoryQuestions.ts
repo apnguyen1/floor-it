@@ -1,7 +1,7 @@
 import { RefObject, useEffect, useRef, useState } from 'react';
-import { CategoryContent, Question } from '../types/category.type.ts';
 import { shuffleArray } from '../utils/shuffler.ts';
 import { fetchCategoryData } from '../utils/fetch.ts';
+import { CategoryContent, Question } from '../screens/Game/GameScreen.type.ts';
 
 /**
  *`useCategoryQuestions` manages the state and logic for fetching, shuffling, and
