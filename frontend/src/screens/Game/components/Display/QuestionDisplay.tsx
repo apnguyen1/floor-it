@@ -1,8 +1,8 @@
 // QuestionDisplay.tsx
 import { Alert, AlertTitle, Box, Typography } from '@mui/material';
-import TriviaQuestion from './TriviaQuestion.tsx';
-import { CategoryContent, Question } from '../../types/category.type.ts';
-import { ReadyToPlay } from './ReadyToPlay.tsx';
+import TriviaQuestion from '../../TriviaQuestion.tsx';
+import { CategoryContent, Question } from '../../../../types/category.type.ts';
+import { ReadyToPlay } from '../Preview/ReadyToPlay.tsx';
 
 interface QuestionDisplayProps {
   category: CategoryContent | undefined;
