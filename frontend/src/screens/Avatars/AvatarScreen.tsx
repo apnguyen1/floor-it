@@ -75,10 +75,7 @@ const ColorPicker = ({
             return (
               <MenuItem
                 key={color}
-                onClick={() => !isDisabled && handleColorSelect(color)} // Disable
-                // click if
-                // color is
-                // disabled
+                onClick={() => !isDisabled && handleColorSelect(color)}
                 style={{
                   backgroundColor: color,
                   width: '30px',
@@ -89,9 +86,7 @@ const ColorPicker = ({
                   cursor: isDisabled ? 'not-allowed' : 'pointer',
                   textAlign: 'center',
                   color: '#fff',
-                  textDecoration: isDisabled ? 'line-through' : 'none', // Apply
-                  // strikethrough
-                  // if disabled
+                  textDecoration: isDisabled ? 'line-through' : 'none',
                 }}
               >
                 {color === selectedColor && '✓'}
