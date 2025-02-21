@@ -1,4 +1,3 @@
-import json
 import os
 from abc import ABC, abstractmethod
 from typing import Generic, Type, TypeVar, List
@@ -203,5 +202,4 @@ class Category(ABC, Generic[T]):
 
         # Write to JSON file
         with open(path, "w", encoding="utf-8") as f:
-            raw_dump = data.model_dump_json()
-            f.write(json.dumps(raw_dump, indent=2, ensure_ascii=False, sort_keys=True))
+            f.write(data.model_dump_json(indent=2))
