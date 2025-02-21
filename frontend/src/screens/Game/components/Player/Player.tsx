@@ -1,36 +1,53 @@
 import { Avatar, Box, Typography } from '@mui/material';
 import MicIcon from '@mui/icons-material/Mic';
 import MicOffIcon from '@mui/icons-material/MicOff';
-import Timer from './Timer.tsx';
+import Timer from './Timer/Timer.tsx';
+import { playerAvatar, playerBox } from './Player.style.ts';
+import { GameStatus } from '../../GameScreen.type.ts';
 
+/**
+ * Props for the Player component.
+ */
 interface PlayerProps {
+  /** Name of the player */
   playerName: string;
-  inGame: boolean;
+  /** the game status */
+  gameStatus: GameStatus;
+  /** Callback function triggered when the player's timer runs out */
   onTimeOut: (playerName: string) => void;
+  /** Whether it's the player's turn */
   isActive: boolean;
-  winner: string | undefined;
+  /** Indicates if the player is currently speaking (mic on/off) */
   listening: boolean;
 }
 
+/**
+ * Player component displays a player's avatar, name, timer, and status during the game.
+ * It also shows the mic status and game-related messages.
+ *
+ * @param {PlayerProps} props - Component props
+ */
 export const Player = ({
   playerName,
-  inGame,
+  gameStatus,
   onTimeOut,
   isActive,
-  winner,
   listening,
 }: PlayerProps) => {
   const firstName: string = playerName.split(' ')[0];
   const abbrev: string = firstName.length > 2 ? firstName.substring(0, 2) : firstName;
 
+  /**
+   * Determines the player's current status to display (turn, winner, or waiting).
+   */
   const getPlayerStatus = () => {
-    if (winner) {
+    if (gameStatus.winner) {
       return (
         <Typography
           variant="h6"
-          color={winner === playerName ? 'success.main' : 'error.main'}
+          color={gameStatus.winner === playerName ? 'success.main' : 'error.main'}
         >
-          {winner === playerName ? 'Winner!' : "Time's up!"}
+          {gameStatus.winner === playerName ? 'Winner!' : "Time's up!"}
         </Typography>
       );
     }
@@ -50,7 +67,7 @@ export const Player = ({
       );
     }
 
-    if (!inGame && isActive) {
+    if (!gameStatus.inGame && isActive) {
       return (
         <Typography variant="h6" color="info">
           <strong>
@@ -64,29 +81,12 @@ export const Player = ({
   };
 
   return (
-    <Box
-      sx={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: '20%',
-        minHeight: '495px',
-        padding: 0,
-        backgroundColor: 'rgba(255, 255, 255, 0.5)',
-        borderRadius: '10px',
-      }}
-    >
-      <Avatar
-        sx={{
-          bgcolor: isActive ? 'primary.main' : 'grey.400',
-          transition: 'background-color 0.3s ease',
-        }}
-      >
+    <Box className={'player-box'} sx={playerBox()}>
+      <Avatar className={'player-avatar'} sx={playerAvatar(isActive)}>
         {abbrev}
       </Avatar>
       <Timer
-        inGame={inGame}
+        inGame={gameStatus.inGame}
         onTimeOut={onTimeOut}
         isActive={isActive}
         playerName={playerName}

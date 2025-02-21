@@ -1,24 +1,45 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { Box, Button } from '@mui/material';
-import { Player } from './Player.tsx';
-import { QuestionDisplay } from './QuestionDisplay.tsx';
+import { Player } from './components/Player/Player.tsx';
+import { Display } from './components/Display/Display.tsx';
 import { useApp } from '../../hooks/useApp.ts';
 import { ScreenType } from '../../constants/screens.ts';
 import { useCategoryQuestions } from '../../hooks/useCategoryQuestions.ts';
 import { useSpeechCommands } from '../../hooks/useSpeechCommands.ts';
 import SpeechRecognition from 'react-speech-recognition';
+import { GameStatus } from './GameScreen.type.ts';
+import { gameBox } from './GameScreen.style.ts';
 
-export const GameScreen: React.FC = () => {
-  const { players, selectedCategory, setScreen } = useApp();
-  const [gameStatus, setGameStatus] = useState({
+/**
+ * `GameScreen` manages the state and logic for the trivia game.
+ * It handles player turns, category-based questions, and voice command processing.
+ *
+ * Features:
+ *  - Manages in-game status, active player, and winner.
+ *  - Uses voice commands for answering or skipping questions.
+ *  - Plays a sound when a player wins.
+ *  - Switches questions when an answer is correct or skipped.
+ */
+export const GameScreen = () => {
+  // manages the game state
+  const [gameStatus, setGameStatus] = useState<GameStatus>({
     inGame: false,
     activePlayer: true,
-    winner: undefined as string | undefined,
+    winner: undefined,
   });
+  //  Reference to the audio element for the winning sound effect.
   const winRef = useRef<HTMLAudioElement>(new Audio('/sounds/win.mp3'));
+
+  // player's state, the selected categories, and function to switch screen
+  const { players, selectedCategory, setScreen } = useApp();
+
+  // handles selection of categories
   const { category, currentQuestion, skipQuestion, setNextQuestion } =
     useCategoryQuestions(selectedCategory);
+
+  // handles speech dictation and logic
   const { transcript, listening, hasError, errorMessage } = useSpeechCommands(
+    gameStatus,
     currentQuestion?.answers || [],
     () => {
       setNextQuestion();
@@ -27,33 +48,37 @@ export const GameScreen: React.FC = () => {
         activePlayer: !prev.activePlayer,
       }));
     },
-    () => {
-      skipQuestion();
-    },
+    skipQuestion,
   );
-  useEffect(() => {
-    const handleKeyPress = (e: KeyboardEvent) => {
-      if (e.code === 'Space' && gameStatus.inGame && currentQuestion) {
-        e.preventDefault();
-        skipQuestion();
-      }
-    };
 
-    window.addEventListener('keydown', handleKeyPress);
-    return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [gameStatus.inGame, currentQuestion, skipQuestion]);
-
+  /**
+   * Handles the start of a trivia game
+   *
+   *  - sets the game status of `inGame` to true
+   *  - begins transcription of the user's speech
+   *  - pauses any ongoing audio.
+   */
   const handleStartGame = useCallback(() => {
     setGameStatus((prev) => ({
       ...prev,
       inGame: true,
       winner: undefined,
     }));
+    SpeechRecognition.startListening({
+      continuous: true,
+    }).catch((e) => console.error('Speech Recognition failed: ', e));
     if (winRef.current) {
       winRef.current.pause();
     }
   }, []);
 
+  /**
+   * Handles the end of a trivia game
+   *
+   *  - sets the game status of `inGame` to false and determines the winner
+   *  - stops transcription of the user's speech
+   *  - plays the winning celebratory music.
+   */
   const handleTimeOut = useCallback(
     (playerName: string) => {
       setGameStatus((prev) => ({
@@ -61,7 +86,7 @@ export const GameScreen: React.FC = () => {
         inGame: false,
         winner: playerName === players.P1.name ? players.P2.name : players.P1.name,
       }));
-      SpeechRecognition.stopListening().catch((e) => console.error(e));
+      SpeechRecognition.abortListening().catch((e) => console.error(e));
       if (winRef.current) {
         winRef.current.currentTime = 0;
         winRef.current.play().catch((e) => console.error(e));
@@ -70,44 +95,37 @@ export const GameScreen: React.FC = () => {
     [players.P1.name, players.P2.name],
   );
 
+  /**
+   * Handles going back to the category screen
+   *  - sets the game status of `inGame` to false.
+   *  - stops transcription of the user's speech
+   *  - pauses any ongoing audio.
+   */
   const handleBackButton = useCallback(() => {
     setGameStatus((prev) => ({
       ...prev,
       inGame: false,
     }));
     setScreen(ScreenType.Categories);
-    SpeechRecognition.stopListening().catch((e) => console.error(e));
+    SpeechRecognition.abortListening().catch((e) => console.error(e));
     if (winRef.current) {
       winRef.current.pause();
     }
   }, [setScreen]);
 
   return (
-    <Box
-      className="game-box"
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '100%',
-        height: '100vh',
-        padding: 2,
-        borderRadius: 25,
-        background: `linear-gradient(to right, ${players.P1.color} 50%, ${players.P2.color} 50%)`,
-      }}
-    >
+    <Box className="game-box" sx={gameBox(players)}>
       <Button variant="text" onClick={handleBackButton}>
         Back
       </Button>
       <Player
         playerName={players.P1.name}
-        inGame={gameStatus.inGame}
+        gameStatus={gameStatus}
         onTimeOut={handleTimeOut}
         isActive={gameStatus.activePlayer}
-        winner={gameStatus.winner}
         listening={listening}
       />
-      <QuestionDisplay
+      <Display
         category={category}
         currentQuestion={currentQuestion}
         inGame={gameStatus.inGame}
@@ -118,10 +136,9 @@ export const GameScreen: React.FC = () => {
       />
       <Player
         playerName={players.P2.name}
-        inGame={gameStatus.inGame}
+        gameStatus={gameStatus}
         onTimeOut={handleTimeOut}
         isActive={!gameStatus.activePlayer}
-        winner={gameStatus.winner}
         listening={listening}
       />
     </Box>
