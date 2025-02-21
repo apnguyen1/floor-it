@@ -1,28 +1,23 @@
-import { CategoryContent } from '../../types/category.type.ts';
 import { Button, Typography } from '@mui/material';
-import SpeechRecognition from 'react-speech-recognition';
+import { CategoryContent } from '../../../GameScreen.type.ts';
 
-interface ReadyToPlayProps {
+/**
+ * Props for GamePreview components
+ */
+interface GamePreviewProps {
+  /** the selected category content, including type and metadata */
   category: CategoryContent;
+  /** function to trigger the start of the game */
   onStartGame: () => void;
 }
 
 /**
  * Screen to confirm category selection
  *
- * @param category the chosen category
- * @param onStartGame to begin the game
+ * @param {GamePreviewProps} props - Component props
  */
-export const ReadyToPlay = ({ category, onStartGame }: ReadyToPlayProps) => {
+export const GamePreview = ({ category, onStartGame }: GamePreviewProps) => {
   const imgUrl = `previews/${category.preview_img}`;
-
-  const handleStartGame = (): void => {
-    SpeechRecognition.startListening({
-      continuous: true,
-    })
-      .then(onStartGame)
-      .catch((e) => console.error('Speech Recognition failed: ', e));
-  };
 
   return (
     <>
@@ -42,7 +37,7 @@ export const ReadyToPlay = ({ category, onStartGame }: ReadyToPlayProps) => {
       <Typography variant="h5" color="secondary">
         {category.preview_desc}
       </Typography>
-      <Button variant="contained" color="success" onClick={handleStartGame}>
+      <Button variant="contained" color="success" onClick={onStartGame}>
         Start Game
       </Button>
     </>

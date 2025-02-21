@@ -1,11 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import {
-  CategoryContent,
-  CategoryList,
-  CategoryPreview,
-  Question,
-} from '../types/category.type.ts';
+import { CategoryList, CategoryPreview } from '../types/category.type.ts';
 import { fetchCategories, fetchCategoryData } from './fetch.ts';
+import { CategoryContent, Question } from '../screens/Game/GameScreen.type.ts';
 
 const mockCategoryList: CategoryList = {
   category_previews: [

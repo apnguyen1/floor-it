@@ -1,5 +1,17 @@
 import { createContext, ReactNode, useState } from 'react';
-import { AppContextType } from '../types/context.type.ts';
+import { PlayerState } from '../types/global.type.ts';
+
+type AppContextType = {
+  screen: string;
+  setScreen: (screen: string) => void;
+  players: {
+    P1: PlayerState;
+    P2: PlayerState;
+  };
+  setPlayers: (players: { P1: PlayerState; P2: PlayerState }) => void;
+  selectedCategory: string[];
+  setSelectedCategory: (categoryName: string[]) => void;
+};
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles/App.css';
+import './styles/global.style.css';
 import { useApp } from './hooks/useApp.ts';
 import { ScreenType } from './constants/screens.ts';
 import { HomeScreen } from './screens/Home/HomeScreen.tsx';
