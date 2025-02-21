@@ -1,7 +1,8 @@
 ## Overview
 
-This is the backend for Floor It! It is built with Python and will be used to primary
-process local file and occasional API JSON to create categories for our application!
+This is the backend for Floor It! It is responsible for automating and processing the
+creation of categories. These categories are then aggregated to generate a list that
+will be consumed by the frontend application.
 
 ## Table of Contents
 
@@ -17,8 +18,9 @@ process local file and occasional API JSON to create categories for our applicat
 
 Before you begin, ensure you have the following installed:
 
-- Python (v3.12 or higher)
-- Poetry
+- Python 3.12 or higher
+- Poetry (Dependency management tool)
+- Make (for macOS/Linux users) or an equivalent setup for Windows
 
 ## Setup
 
@@ -26,29 +28,29 @@ Before you begin, ensure you have the following installed:
 
    ```bash
    git clone https://github.com/apnguyen1/floor-it.git
-   cd floor-it
+   cd floor-it/backend
    ```
 
-2. Follow instructions to install Poetry on your OS. After verify your installation
-   by:
+2. Install Poetry Follow the official Poetry installation guide for your OS:
+   https://python-poetry.org/docs/#installation.
 
-```
-poetry --verison
-```
+   After installation, verify it by running: ```poetry --version```
 
-3. Create and activate virtual environment in poetry
+3. Set up a virtual environment and install dependencies
 
-```bash
-(mac)
-poetry env use python3
-eval $(poetry env activate)
-```
+   For macOS/Linux users:
 
-```powershell
-(windows)
-poetry env use python
-Invoke-Expression (poetry env activate)
-```
+   ```bash
+   poetry env use python3
+   eval $(poetry env activate)
+   ```
+
+   For Windows users (PowerShell):
+
+   ```powershell
+   poetry env use python
+   Invoke-Expression (poetry env activate)
+   ```
 
 4. installing dependencies:
 
@@ -58,10 +60,10 @@ Invoke-Expression (poetry env activate)
 
 5. Verify setup
 
-```
-poetry run python --version # should be 3.12
-poetry run python -m pytest
-```
+   ```
+   poetry run python --version # should be 3.12
+   make all
+   ```
 
 ## Development
 
@@ -69,11 +71,23 @@ poetry run python -m pytest
 
 ```
 src/
-├── models/         # DTOs
-├── resources/      # static and output files
-├── scripts/        # Processing of data
+├── models/         # Data models (DTOs)
+├── resources/      # Static and output files
+├── scripts/        # Data processing scripts
 ├── utils/          # Reusable utility functions
-└── main.py         # Entry point
+└── main.py         # Entry point of the application
+tests/              # Unit tests
+```
+
+#### Entry Point
+
+The backend application starts from src/main.py. This script is responsible for
+initializing the backend processes.
+
+To run the application locally:
+
+```
+make run
 ```
 
 ## Testing
@@ -104,4 +118,9 @@ This project uses pre-commit hooks.
 
 - Code is automatically linted using flake8
 - Code is automatically formatted using black
-- Tests are run to ensure no regressions are introduced
+
+To manually run pre-commit hooks:
+
+```
+poetry run pre-commit run --all-files
+```
