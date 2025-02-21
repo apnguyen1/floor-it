@@ -1,3 +1,5 @@
+import json
+import os
 from abc import ABC, abstractmethod
 from typing import Generic, Type, TypeVar, List
 
@@ -10,9 +12,8 @@ from backend.src.models.category_data_dto import (
 )
 from backend.src.utils.definitions import PUBLIC_DIR
 from backend.src.utils.fetch import fetch_url
-from backend.src.utils.parse_file import parse_file
 from backend.src.utils.generate_aliases import generate_aliases
-import os
+from backend.src.utils.parse_file import parse_file
 
 # ensures type T is derived from BaseModel
 T = TypeVar("T", bound=BaseModel)
@@ -202,4 +203,5 @@ class Category(ABC, Generic[T]):
 
         # Write to JSON file
         with open(path, "w", encoding="utf-8") as f:
-            f.write(data.model_dump_json(indent=2))
+            raw_dump = data.model_dump_json()
+            f.write(json.dumps(raw_dump, indent=2, ensure_ascii=False, sort_keys=True))

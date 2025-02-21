@@ -6,28 +6,25 @@ from backend.src.models.model import Model
 
 
 # Example:
-# {
-#     "Questions": [
-#         {
-#             "Name": "Champion",
-#             "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Champion.png",
-#             "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Champion.png",
-#             "Answers": ["Champion", "Champyon", "Champion Sport", "Champion Clothing"]
-#         },
-#         {
-#             "Name": "Sony",
-#             "logoSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Sony.png",
-#             "logoAnswerSrc": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Answers/Sony.png",
-#             "Answers": [
-#                 "Sony",
-#                 "Sony Entertainment",
-#                 "Sony Ericsson",
-#                 "Sow Knee",
-#                 "Sue Nee"
-#             ]
-#         }
-#     ]
-# }
+#
+# "Questions": [
+#     {
+#         "Name": "Champion",
+#         "logoSrc": "https://raw.githubusercontent.com/Champion.png",
+#         "Answers": ["Champion", "Champyon", "Champion Sport", "Champion Clothing"]
+#     },
+#     {
+#         "Name": "Sony",
+#         "logoSrc": "https://raw.githubusercontent.com/Sony.png",
+#         "Answers": [
+#             "Sony",
+#             "Sony Entertainment",
+#             "Sony Ericsson",
+#             "Sow Knee",
+#             "Sue Nee"
+#         ]
+#     }
+# ]
 
 
 class BrandDTO(Model):
@@ -37,9 +34,12 @@ class BrandDTO(Model):
 
     Attributes:
         name (str): The name of the brand. Extracted from the JSON key "Name".
-        partial (str): The URL of the brand's logo image. Extracted from the JSON key "logoSrc".
-        full (str): The URL of the answer image (brand logo with name). Extracted from the JSON key "logoAnswerSrc".
-        answers (List[str]): A list of possible answers for the brand. Extracted from the JSON key "Answers".
+        partial (str): The URL of the brand's logo image. Extracted from the JSON
+            key "logoSrc".
+        full (str): The URL of the answer image (brand logo with name). Extracted from
+            the JSON key "logoAnswerSrc".
+        answers (List[str]): A list of possible answers for the brand. Extracted from
+            the JSON key "Answers".
     """
 
     name: str = Field(alias="Name")
