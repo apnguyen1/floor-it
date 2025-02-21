@@ -93,7 +93,8 @@ class ChampionDTO(Model):
 
     Attributes:
         version (str): The version of the game data.
-        data (Dict[str, ChampionDataDTO]): A dictionary mapping champion IDs to their corresponding data.
+        data (Dict[str, ChampionDataDTO]): A dictionary mapping champion IDs to their
+        corresponding data.
     """
 
     version: str
