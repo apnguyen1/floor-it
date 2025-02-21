@@ -6,7 +6,7 @@
 export type GameStatus = {
   inGame: boolean;
   activePlayer: boolean;
-  winner: string | undefined;
+  winner?: string;
 };
 
 export type Question = {

@@ -12,7 +12,14 @@ interface TriviaQuestionProps {
  */
 const TriviaQuestion = memo(({ type, question }: TriviaQuestionProps) => {
   return (
-    <Box>
+    <Box
+      className={'question-box'}
+      sx={{
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+      }}
+    >
       <>
         {type === 'text' ? (
           <>
@@ -21,13 +28,11 @@ const TriviaQuestion = memo(({ type, question }: TriviaQuestionProps) => {
             </Typography>
           </>
         ) : (
-          <Box width="100%" display="flex" justifyContent="center">
-            <img
-              src={question}
-              alt="trivia image"
-              style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
-            />
-          </Box>
+          <img
+            src={question}
+            alt="trivia image"
+            style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
+          />
         )}
       </>
     </Box>

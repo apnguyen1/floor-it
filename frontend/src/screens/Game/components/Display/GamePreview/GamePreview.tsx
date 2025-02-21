@@ -1,8 +1,13 @@
 import { Button, Typography } from '@mui/material';
 import { CategoryContent } from '../../../GameScreen.type.ts';
 
-interface ReadyToPlayProps {
+/**
+ * Props for GamePreview components
+ */
+interface GamePreviewProps {
+  /** the selected category content, including type and metadata */
   category: CategoryContent;
+  /** function to trigger the start of the game */
   onStartGame: () => void;
 }
 
@@ -12,7 +17,7 @@ interface ReadyToPlayProps {
  * @param category the chosen category
  * @param onStartGame to begin the game
  */
-export const ReadyToPlay = ({ category, onStartGame }: ReadyToPlayProps) => {
+export const GamePreview = ({ category, onStartGame }: GamePreviewProps) => {
   const imgUrl = `previews/${category.preview_img}`;
 
   return (

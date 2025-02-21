@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { Box, Button } from '@mui/material';
 import { Player } from './components/Player/Player.tsx';
 import { Display } from './components/Display/Display.tsx';
@@ -20,7 +20,7 @@ import { gameBox } from './GameScreen.style.ts';
  *  - Plays a sound when a player wins.
  *  - Switches questions when an answer is correct or skipped.
  */
-export const GameScreen: React.FC = () => {
+export const GameScreen = () => {
   // manages the game state
   const [gameStatus, setGameStatus] = useState<GameStatus>({
     inGame: false,
