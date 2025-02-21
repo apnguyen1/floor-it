@@ -1,7 +1,31 @@
 import { useEffect, useMemo } from 'react';
 import { useSpeechRecognition } from 'react-speech-recognition';
-import { createCommand } from '../constants/config.ts';
 import { GameStatus } from '../screens/Game/GameScreen.type.ts';
+
+/** https://www.npmjs.com/package/react-speech-recognition#commands */
+export type Command = {
+  command: string | string[] | RegExp;
+  callback: (...args: string[]) => void;
+  isFuzzyMatch?: boolean;
+  matchInterim?: boolean;
+  fuzzyMatchingThreshold?: number;
+  bestMatchOnly?: boolean;
+};
+
+/**
+ * Creates commands for every new question.
+ *
+ * @param overrides overrides the default command types.
+ */
+export const createCommand = (overrides: Partial<Command> = {}): Command => ({
+  command: '',
+  callback: () => {},
+  isFuzzyMatch: true,
+  matchInterim: true,
+  fuzzyMatchingThreshold: 1,
+  bestMatchOnly: true,
+  ...overrides,
+});
 
 /**
  * Custom hook to manage speech recognition commands for the game.

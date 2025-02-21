@@ -120,10 +120,9 @@ export const GameScreen = () => {
       </Button>
       <Player
         playerName={players.P1.name}
-        inGame={gameStatus.inGame}
+        gameStatus={gameStatus}
         onTimeOut={handleTimeOut}
         isActive={gameStatus.activePlayer}
-        winner={gameStatus.winner}
         listening={listening}
       />
       <Display
@@ -137,10 +136,9 @@ export const GameScreen = () => {
       />
       <Player
         playerName={players.P2.name}
-        inGame={gameStatus.inGame}
+        gameStatus={gameStatus}
         onTimeOut={handleTimeOut}
         isActive={!gameStatus.activePlayer}
-        winner={gameStatus.winner}
         listening={listening}
       />
     </Box>

@@ -3,6 +3,7 @@ import MicIcon from '@mui/icons-material/Mic';
 import MicOffIcon from '@mui/icons-material/MicOff';
 import Timer from './Timer/Timer.tsx';
 import { playerAvatar, playerBox } from './Player.style.ts';
+import { GameStatus } from '../../GameScreen.type.ts';
 
 /**
  * Props for the Player component.
@@ -10,14 +11,12 @@ import { playerAvatar, playerBox } from './Player.style.ts';
 interface PlayerProps {
   /** Name of the player */
   playerName: string;
-  /** Whether the game is currently in progress */
-  inGame: boolean;
+  /** the game status */
+  gameStatus: GameStatus;
   /** Callback function triggered when the player's timer runs out */
   onTimeOut: (playerName: string) => void;
   /** Whether it's the player's turn */
   isActive: boolean;
-  /** The name of the winning player, if any */
-  winner: string | undefined;
   /** Indicates if the player is currently speaking (mic on/off) */
   listening: boolean;
 }
@@ -30,10 +29,9 @@ interface PlayerProps {
  */
 export const Player = ({
   playerName,
-  inGame,
+  gameStatus,
   onTimeOut,
   isActive,
-  winner,
   listening,
 }: PlayerProps) => {
   const firstName: string = playerName.split(' ')[0];
@@ -43,13 +41,13 @@ export const Player = ({
    * Determines the player's current status to display (turn, winner, or waiting).
    */
   const getPlayerStatus = () => {
-    if (winner) {
+    if (gameStatus.winner) {
       return (
         <Typography
           variant="h6"
-          color={winner === playerName ? 'success.main' : 'error.main'}
+          color={gameStatus.winner === playerName ? 'success.main' : 'error.main'}
         >
-          {winner === playerName ? 'Winner!' : "Time's up!"}
+          {gameStatus.winner === playerName ? 'Winner!' : "Time's up!"}
         </Typography>
       );
     }
@@ -69,7 +67,7 @@ export const Player = ({
       );
     }
 
-    if (!inGame && isActive) {
+    if (!gameStatus.inGame && isActive) {
       return (
         <Typography variant="h6" color="info">
           <strong>
@@ -88,7 +86,7 @@ export const Player = ({
         {abbrev}
       </Avatar>
       <Timer
-        inGame={inGame}
+        inGame={gameStatus.inGame}
         onTimeOut={onTimeOut}
         isActive={isActive}
         playerName={playerName}

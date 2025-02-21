@@ -14,8 +14,7 @@ interface GamePreviewProps {
 /**
  * Screen to confirm category selection
  *
- * @param category the chosen category
- * @param onStartGame to begin the game
+ * @param {GamePreviewProps} props - Component props
  */
 export const GamePreview = ({ category, onStartGame }: GamePreviewProps) => {
   const imgUrl = `previews/${category.preview_img}`;
