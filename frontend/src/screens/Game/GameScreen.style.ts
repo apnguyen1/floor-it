@@ -1,5 +1,5 @@
 import { SxProps, Theme } from '@mui/material';
-import { PlayerState } from '../../types/context.type.ts';
+import { PlayerState } from '../../types/global.type.ts';
 
 export const gameBox = (players: {
   P1: PlayerState;
