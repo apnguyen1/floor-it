@@ -1,3 +1,5 @@
+# Requires user is in the backend directory
+
 .PHONY: all
 
 all: test format lint clean
@@ -15,6 +17,9 @@ format:
 
 format-check:
 		black --check .
+
+run:
+		PYTHONPATH=.. python -m src.main
 
 clean:
 		rm -rf .pytest_cache

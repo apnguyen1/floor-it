@@ -69,11 +69,13 @@ const ColorPicker = ({
         {/* Box layout for Color Squares */}
         <Box display="grid" gridTemplateColumns="repeat(5, 1fr)" gap={1} padding={1}>
           {COLOR_OPTIONS.map((color) => {
-            const isDisabled = allSelectedColors.includes(color); // Check if the color is selected by another player
+            const isDisabled = allSelectedColors.includes(color); // Check if the color
+            // is selected by
+            // another player
             return (
               <MenuItem
                 key={color}
-                onClick={() => !isDisabled && handleColorSelect(color)} // Disable click if color is disabled
+                onClick={() => !isDisabled && handleColorSelect(color)}
                 style={{
                   backgroundColor: color,
                   width: '30px',
@@ -84,7 +86,7 @@ const ColorPicker = ({
                   cursor: isDisabled ? 'not-allowed' : 'pointer',
                   textAlign: 'center',
                   color: '#fff',
-                  textDecoration: isDisabled ? 'line-through' : 'none', // Apply strikethrough if disabled
+                  textDecoration: isDisabled ? 'line-through' : 'none',
                 }}
               >
                 {color === selectedColor && '✓'}
@@ -125,7 +127,7 @@ export const AvatarScreen = () => {
   };
 
   const handleReadyClick = () => {
-    // Set player names in context, using defaults if empty
+    // Set player names in contexts, using defaults if empty
     setPlayers({
       P1: { name: player1Name.trim() || 'Player 1', color: player1Color },
       P2: { name: player2Name.trim() || 'Player 2', color: player2Color },
