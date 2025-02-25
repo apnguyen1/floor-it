@@ -1,0 +1,274 @@
+{
+  "name": "Songs and Artists",
+  "preview_img": "default-preview.png",
+  "preview_desc": "Guess the song and their artist!",
+  "type": "text",
+  "questions": [
+    {
+      "question": "Single Ladies",
+      "answers": [
+        "Beyonce"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Despacito",
+      "answers": [
+        "Luis Fonsi and Daddy Yankee"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "24K magic",
+      "answers": [
+        "Bruno Mars"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Happy",
+      "answers": [
+        "Pharrell Williams"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Better Days",
+      "answers": [
+        "Lackey Inspired"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Gods Plan",
+      "answers": [
+        "Drake"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Baby",
+      "answers": [
+        "Justin Beiber"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Party in the USA",
+      "answers": [
+        "Miley Cyrus"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Girl on Fire",
+      "answers": [
+        "Alicia Keys"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Thank you, Next",
+      "answers": [
+        "Ariana Grande"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Cardigan",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Fly Me to the Moon",
+      "answers": [
+        "Frank Sinatra"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Drops of Jupiter",
+      "answers": [
+        "Train"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Sweet Caroline",
+      "answers": [
+        "Neil Diamond"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Take Me Home, Country Roads (West Virgina)",
+      "answers": [
+        "John Denver"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Butter",
+      "answers": [
+        "BTS"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What Makes You Beautiful",
+      "answers": [
+        "One Direction"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Anaconda",
+      "answers": [
+        "Nicki Minaj"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "White Iverson",
+      "answers": [
+        "Post Malone"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Efecto",
+      "answers": [
+        "Bad Bunny"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Pink Venom",
+      "answers": [
+        "BLACKPINK"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Oops I Did It Again",
+      "answers": [
+        "Brittney Spears"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "The Kind of Love We Make",
+      "answers": [
+        "Luke Combs"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Little White Church",
+      "answers": [
+        "Little Big Town"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "bones",
+      "answers": [
+        "Maren Morris"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "I Drive Your Truck",
+      "answers": [
+        "Lee Brice"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "little red wagon",
+      "answers": [
+        "Miranda Lambert"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Heat Waves",
+      "answers": [
+        "Glass Animals"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Senorita",
+      "answers": [
+        "Shawn Mendes"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "High Hopes",
+      "answers": [
+        "Panic! At the Disco"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Miami",
+      "answers": [
+        "Will Smith"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Back in Black",
+      "answers": [
+        "AC/DC"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie Girl",
+      "answers": [
+        "Aqua"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Gangsta's Paradise",
+      "answers": [
+        "Coolio, L.V."
+      ],
+      "aliases": []
+    },
+    {
+      "question": "No Scrubs",
+      "answers": [
+        "TLC"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "as it was",
+      "answers": [
+        "Harry Styles"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "driver's license",
+      "answers": [
+        "Olivia Rodrigo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "diamonds",
+      "answers": [
+        "Rihanna"
+      ],
+      "aliases": []
+    }
+  ]
+}

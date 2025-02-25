@@ -11,14 +11,54 @@
       "desc": "Guess the brand by their logo!"
     },
     {
+      "name": "Songs and Artists",
+      "image": "default-preview.png",
+      "desc": "Guess the song and their artist!"
+    },
+    {
+      "name": "Barbie",
+      "image": "default-preview.png",
+      "desc": "Test your Trivia!"
+    },
+    {
+      "name": "Antonyms",
+      "image": "default-preview.png",
+      "desc": "Two words that are opposite meanings"
+    },
+    {
       "name": "Numbers",
       "image": "default-preview.png",
       "desc": "Test your Number Skillz"
     },
     {
+      "name": "Disney",
+      "image": "default-preview.png",
+      "desc": "Test your Disney Trivia!"
+    },
+    {
       "name": "LoL Champion Titles",
       "image": "default-preview.png",
       "desc": "Guess the LoL champion's name by their title!"
+    },
+    {
+      "name": "My Little Pony",
+      "image": "default-preview.png",
+      "desc": "Mostly everything you need to know about the My Little Pony show and fandom"
+    },
+    {
+      "name": "You S1",
+      "image": "default-preview.png",
+      "desc": "Test your You Season 1 Knowledge!"
+    },
+    {
+      "name": "House of Dragons",
+      "image": "default-preview.png",
+      "desc": "Test your HOD Knowledge"
+    },
+    {
+      "name": "Synonyms",
+      "image": "default-preview.png",
+      "desc": "Two words that mean the same thing"
     }
   ]
 }

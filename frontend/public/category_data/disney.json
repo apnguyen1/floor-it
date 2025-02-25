@@ -1,0 +1,897 @@
+{
+  "name": "Disney",
+  "preview_img": "default-preview.png",
+  "preview_desc": "Test your Disney Trivia!",
+  "type": "text",
+  "questions": [
+    {
+      "question": "a true diamond in the rough",
+      "answers": [
+        "Aladdin"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "this character fell down a rabbit hole",
+      "answers": [
+        "Alice"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "the evil stepsisters of Cinderella",
+      "answers": [
+        "Anastasia and Drizella"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "the sister of an ice queen; lover of sandwiches",
+      "answers": [
+        "Anna"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "the little mermiad",
+      "answers": [
+        "Ariel"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "the sisters of the red-headed little mermaid",
+      "answers": [
+        "Attina, Alana, Adella, Aquata, Arista, and Adrina"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a sophisticated black panther",
+      "answers": [
+        "Bagheera"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "sings about the bear necessities",
+      "answers": [
+        "Baloo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a young deer who loses his mother",
+      "answers": [
+        "Bambi"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Baymax",
+      "answers": [
+        "Big hero 5"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "falls in love with the beauty",
+      "answers": [
+        "Beast"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a Disney princess and book lover",
+      "answers": [
+        "Belle"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "mouse rescuer in \"The Rescuers\"",
+      "answers": [
+        "Bernard"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "fancy mouse rescuer in \"The Rescuers\"",
+      "answers": [
+        "Bianca"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "turned Pinocchio into a real boy",
+      "answers": [
+        "Blue Fairy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"fish are friends not food\"",
+      "answers": [
+        "Bruce"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a flying space cadet",
+      "answers": [
+        "Buzz Lightyear"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "afraid of a crocodile; Peter Pan's nemesis",
+      "answers": [
+        "Captain Hook"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a man with a spirit for adventure",
+      "answers": [
+        "Carl Frederickson"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "asks Alice, \"whooo are youuu\"",
+      "answers": [
+        "The Caterpillar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "the princess of New Orleans",
+      "answers": [
+        "Charlotte La Bouff"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "this cat gives Alice and the Queen of Hearts a lot of trouble",
+      "answers": [
+        "Cheshire Cat"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Rescue Rangers",
+      "answers": [
+        "Chip and Dale"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a cute little teacup",
+      "answers": [
+        "Chip Potts"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Cinderella",
+      "answers": [
+        "Girl with glass slipper"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Pinocchio's fishy friend",
+      "answers": [
+        "Cleo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a fox who befriends a hunting dog",
+      "answers": [
+        "Copper"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Mulan's good luck charm",
+      "answers": [
+        "Cri-Kee"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a sea turtle who is 150 years old and still young",
+      "answers": [
+        "Crush"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Donald's girlfriend",
+      "answers": [
+        "Daisy Duck"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a super with superspeed",
+      "answers": [
+        "Dash"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a cool dog without worries from Oliver and Company",
+      "answers": [
+        "Dodger"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "the sweetest and slowest dwarf",
+      "answers": [
+        "Dopey"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a forgetful fishy",
+      "answers": [
+        "Dory"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a young ant princess",
+      "answers": [
+        "Dot"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a voodoo man from New Orleans",
+      "answers": [
+        "Dr. Facilier"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"I have just met you, and I love you.\"",
+      "answers": [
+        "Dug"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a big-eared elephant",
+      "answers": [
+        "Dumbo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Let it go!\"",
+      "answers": [
+        "Elsa"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a gyspy who befriended a hunchback",
+      "answers": [
+        "Esmeralda"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a star that a firefly fell in love with",
+      "answers": [
+        "Evangaline"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "she grants Cinderella's wishes",
+      "answers": [
+        "Fairy Godmother"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Pinocchio's cat",
+      "answers": [
+        "Figaro the Cat"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "carries a hammer",
+      "answers": [
+        "Fix-It Felix, Jr."
+      ],
+      "aliases": []
+    },
+    {
+      "question": "an ant and an inventor",
+      "answers": [
+        "Flik"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Pocahontas's hummingbird friend",
+      "answers": [
+        "Flit"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Ariel's best buddy",
+      "answers": [
+        "Flounder"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a bandit who steals a crown",
+      "answers": [
+        "Flynn Rider"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "wants to marry Belle but she refuses",
+      "answers": [
+        "Gaston"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "gives you three wishes",
+      "answers": [
+        "Genie"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Pinocchio's dad",
+      "answers": [
+        "Geppetto"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a silly buddy of Mickey",
+      "answers": [
+        "Goofy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a crabby dwarf",
+      "answers": [
+        "Grumpy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "the cheerful dwarf",
+      "answers": [
+        "Happy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "son of Zeus",
+      "answers": [
+        "Hercules"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Donald Duck's nephews",
+      "answers": [
+        "Huey, Dewey, and Louie"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "evil bird sidekick",
+      "answers": [
+        "Iago"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "villain from Aladdin",
+      "answers": [
+        "Jafar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a courageous cowgirl",
+      "answers": [
+        "Jesse"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "hypnotic snake from The Jungle Book",
+      "answers": [
+        "Kaa"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "kangaroo mother from Winnie the Pooh",
+      "answers": [
+        "Kanga"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "short little king married to the Queen of Hearts",
+      "answers": [
+        "The King of Hearts"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Anna's new-found friend",
+      "answers": [
+        "Kristoff"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "the emperor with a new groove",
+      "answers": [
+        "Kuzco"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a pampered puppy who meets a stray dog",
+      "answers": [
+        "Lady"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a little Hawaiian girl with a strange pet",
+      "answers": [
+        "Lilo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a man who was turned into a candelabra",
+      "answers": [
+        "Lumière"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "throws unbirthday parties; more than slightly cuckoo",
+      "answers": [
+        "Mad Hatter"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "takes Aladdin for a ride",
+      "answers": [
+        "Magic Carpet"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "is often asked \"who's the fairest\"",
+      "answers": [
+        "The Magic Mirror"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "an evil queen who puts someone in an eternal slumber",
+      "answers": [
+        "Maleficent"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a pretty white kitty; a very talented pianist",
+      "answers": [
+        "Marie"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a round and green monster with one eye",
+      "answers": [
+        "Mike"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "this guy started it all",
+      "answers": [
+        "Mickey Mouse"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a pretty mouse who often wears red and white polka-dots",
+      "answers": [
+        "Minnie Mouse"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Mother knows best.\"",
+      "answers": [
+        "Mother Gothel"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "the man cub",
+      "answers": [
+        "Mowgli"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "superhero with super strength",
+      "answers": [
+        "Mr. Incredible"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "formerly known as Elastigirl",
+      "answers": [
+        "Mrs. Incredible"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Captain Hook's right-hand man",
+      "answers": [
+        "Mr. Smee"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "the original king of the Pride Lands",
+      "answers": [
+        "Mufasa"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a woman who went into battle for her father",
+      "answers": [
+        "Mulan"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a petite dragon who spits fire",
+      "answers": [
+        "Mushu"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Simba's girlfriend",
+      "answers": [
+        "Nala"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "the Darling's nurse-dog",
+      "answers": [
+        "Nana"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a cute little clownfish with a little fin",
+      "answers": [
+        "Nemo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a little orange kitten",
+      "answers": [
+        "Oliver"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Miss Beavers's favorite Disney character; a cute little green chameleon",
+      "answers": [
+        "Pascal"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a dalmatian puppy",
+      "answers": [
+        "Patch"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Hercules's flying friend",
+      "answers": [
+        "Pegasus"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "the mother dalmatian",
+      "answers": [
+        "Perdita"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a flying boy who never grew up",
+      "answers": [
+        "Peter Pan"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Winnie the Pooh's best friend",
+      "answers": [
+        "Piglet"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "if he tells a lie, his nose will grow",
+      "answers": [
+        "Pinocchio"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Mickey's dog",
+      "answers": [
+        "Pluto"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "sings about the colors of the wind",
+      "answers": [
+        "Pocahontas"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "dad to 101 dalmatians",
+      "answers": [
+        "Pongo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Cinderella's prince",
+      "answers": [
+        "Prince Charming"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Ariel's prince",
+      "answers": [
+        "Prince Eric"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a prince who loves to mess around and have fun",
+      "answers": [
+        "Prince Naveen"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "defeats Maleficent",
+      "answers": [
+        "Prince Phillip"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "the princess of Agrabah",
+      "answers": [
+        "Princess Jasmine"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Off with their heads!\"",
+      "answers": [
+        "The Queen of Hearts"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a baboon that seems to be a bit looney",
+      "answers": [
+        "Rafiki"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "the sneaky and mean monster",
+      "answers": [
+        "Randal"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a princess with feet and feet of blonde hair",
+      "answers": [
+        "Rapunzel"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a little insect that falls in love with a bright star",
+      "answers": [
+        "Ray the Firefly"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a wilderness explorer",
+      "answers": [
+        "Russell"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "evil lion who kills his brother",
+      "answers": [
+        "Scar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a red crab who has to chase around after Ariel",
+      "answers": [
+        "Sebastian"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a lion who must face his true potential",
+      "answers": [
+        "Simba"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a little sea turtle with a lot of personality",
+      "answers": [
+        "Squirt"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "an alien who pretends to be a dog",
+      "answers": [
+        "Stitch"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "he holds the all-time scare record",
+      "answers": [
+        "Sulley"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "the reindeer friend of Kristoff",
+      "answers": [
+        "Sven"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a bunny who sometimes speaks before he thinks",
+      "answers": [
+        "Thumper"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a young woman with a goal to open a restaurant",
+      "answers": [
+        "Tiana"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a mirror cat with a motto",
+      "answers": [
+        "Timon"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a sassy pixie",
+      "answers": [
+        "Tinker Bell"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "a purple sea witch",
+      "answers": [
+        "Ursula"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "she is not just a glitch",
+      "answers": [
+        "Vanellope von Schweetz"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "he is always late",
+      "answers": [
+        "White Rabbit"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "willy nilly silly old bear",
+      "answers": [
+        "Winnie the Pooh"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "he is the sheriff in town",
+      "answers": [
+        "Woody"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "he is a bulldozer of sorts",
+      "answers": [
+        "Wreck-It Ralph"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "she is eventually turned into a kitten",
+      "answers": [
+        "Yzma"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Mufasa's assistant",
+      "answers": [
+        "Zazu"
+      ],
+      "aliases": []
+    }
+  ]
+}

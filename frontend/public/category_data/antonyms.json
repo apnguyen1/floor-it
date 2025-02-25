@@ -1,356 +1,342 @@
 {
-  "name": "Numbers",
+  "name": "Antonyms",
   "preview_img": "default-preview.png",
-  "preview_desc": "Test your Number Skillz",
+  "preview_desc": "Two words that are opposite meanings",
   "type": "text",
   "questions": [
     {
-      "question": "889",
+      "question": "attack",
       "answers": [
-        "889"
+        "defend"
       ],
       "aliases": []
     },
     {
-      "question": "603",
+      "question": "best",
       "answers": [
-        "603"
+        "worst"
       ],
       "aliases": []
     },
     {
-      "question": "713",
+      "question": "big",
       "answers": [
-        "713"
+        "little"
       ],
       "aliases": []
     },
     {
-      "question": "959",
+      "question": "bright",
       "answers": [
-        "959"
+        "dim"
       ],
       "aliases": []
     },
     {
-      "question": "151",
+      "question": "catch",
       "answers": [
-        "151"
+        "throw"
       ],
       "aliases": []
     },
     {
-      "question": "620",
+      "question": "cheap",
       "answers": [
-        "620"
+        "expensive"
       ],
       "aliases": []
     },
     {
-      "question": "156",
+      "question": "clean",
       "answers": [
-        "156"
+        "dirty"
       ],
       "aliases": []
     },
     {
-      "question": "206",
+      "question": "crooked",
       "answers": [
-        "206"
+        "straight"
       ],
       "aliases": []
     },
     {
-      "question": "424",
+      "question": "dangerous",
       "answers": [
-        "424"
+        "safe"
       ],
       "aliases": []
     },
     {
-      "question": "763",
+      "question": "dark",
       "answers": [
-        "763"
+        "light"
       ],
       "aliases": []
     },
     {
-      "question": "790",
+      "question": "deep",
       "answers": [
-        "790"
+        "shallow"
       ],
       "aliases": []
     },
     {
-      "question": "995",
+      "question": "easy",
       "answers": [
-        "995"
+        "difficult"
       ],
       "aliases": []
     },
     {
-      "question": "112",
+      "question": "fail",
       "answers": [
-        "112"
+        "pass"
       ],
       "aliases": []
     },
     {
-      "question": "913",
+      "question": "far",
       "answers": [
-        "913"
+        "near"
       ],
       "aliases": []
     },
     {
-      "question": "341",
+      "question": "first",
       "answers": [
-        "341"
+        "last"
       ],
       "aliases": []
     },
     {
-      "question": "665",
+      "question": "frown",
       "answers": [
-        "665"
+        "smile"
       ],
       "aliases": []
     },
     {
-      "question": "653",
+      "question": "full",
       "answers": [
-        "653"
+        "empty"
       ],
       "aliases": []
     },
     {
-      "question": "486",
+      "question": "good",
       "answers": [
-        "486"
+        "bad"
       ],
       "aliases": []
     },
     {
-      "question": "907",
+      "question": "greedy",
       "answers": [
-        "907"
+        "generous"
       ],
       "aliases": []
     },
     {
-      "question": "883",
+      "question": "happy",
       "answers": [
-        "883"
+        "sad"
       ],
       "aliases": []
     },
     {
-      "question": "672",
+      "question": "heavy",
       "answers": [
-        "672"
+        "light"
       ],
       "aliases": []
     },
     {
-      "question": "450",
+      "question": "high",
       "answers": [
-        "450"
+        "low"
       ],
       "aliases": []
     },
     {
-      "question": "249",
+      "question": "hot",
       "answers": [
-        "249"
+        "cold"
       ],
       "aliases": []
     },
     {
-      "question": "111",
+      "question": "hurt",
       "answers": [
-        "111"
+        "heal"
       ],
       "aliases": []
     },
     {
-      "question": "141",
+      "question": "kind",
       "answers": [
-        "141"
+        "mean"
       ],
       "aliases": []
     },
     {
-      "question": "809",
+      "question": "late",
       "answers": [
-        "809"
+        "early"
       ],
       "aliases": []
     },
     {
-      "question": "978",
+      "question": "lazy",
       "answers": [
-        "978"
+        "hardworking"
       ],
       "aliases": []
     },
     {
-      "question": "635",
+      "question": "many",
       "answers": [
-        "635"
+        "few"
       ],
       "aliases": []
     },
     {
-      "question": "136",
+      "question": "more",
       "answers": [
-        "136"
+        "less"
       ],
       "aliases": []
     },
     {
-      "question": "725",
+      "question": "noisy",
       "answers": [
-        "725"
+        "quiet"
       ],
       "aliases": []
     },
     {
-      "question": "597",
+      "question": "old",
       "answers": [
-        "597"
+        "young"
       ],
       "aliases": []
     },
     {
-      "question": "353",
+      "question": "raw",
       "answers": [
-        "353"
+        "cooked"
       ],
       "aliases": []
     },
     {
-      "question": "371",
+      "question": "rich",
       "answers": [
-        "371"
+        "poor"
       ],
       "aliases": []
     },
     {
-      "question": "284",
+      "question": "right",
       "answers": [
-        "284"
+        "left"
       ],
       "aliases": []
     },
     {
-      "question": "681",
+      "question": "rough",
       "answers": [
-        "681"
+        "smooth"
       ],
       "aliases": []
     },
     {
-      "question": "108",
+      "question": "rude",
       "answers": [
-        "108"
+        "polite"
       ],
       "aliases": []
     },
     {
-      "question": "188",
+      "question": "save",
       "answers": [
-        "188"
+        "spend"
       ],
       "aliases": []
     },
     {
-      "question": "204",
+      "question": "short",
       "answers": [
-        "204"
+        "long"
       ],
       "aliases": []
     },
     {
-      "question": "302",
+      "question": "slow",
       "answers": [
-        "302"
+        "fast"
       ],
       "aliases": []
     },
     {
-      "question": "191",
+      "question": "soft",
       "answers": [
-        "191"
+        "hard"
       ],
       "aliases": []
     },
     {
-      "question": "962",
+      "question": "strong",
       "answers": [
-        "962"
+        "weak"
       ],
       "aliases": []
     },
     {
-      "question": "683",
+      "question": "sweet",
       "answers": [
-        "683"
+        "sour"
       ],
       "aliases": []
     },
     {
-      "question": "426",
+      "question": "take off",
       "answers": [
-        "426"
+        "put on"
       ],
       "aliases": []
     },
     {
-      "question": "102",
+      "question": "thin",
       "answers": [
-        "102"
+        "thick"
       ],
       "aliases": []
     },
     {
-      "question": "506",
+      "question": "true",
       "answers": [
-        "506"
+        "false"
       ],
       "aliases": []
     },
     {
-      "question": "242",
+      "question": "turn on",
       "answers": [
-        "242"
+        "turn off"
       ],
       "aliases": []
     },
     {
-      "question": "286",
+      "question": "wet",
       "answers": [
-        "286"
+        "dry"
       ],
       "aliases": []
     },
     {
-      "question": "561",
+      "question": "white",
       "answers": [
-        "561"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "999",
-      "answers": [
-        "999"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "924",
-      "answers": [
-        "924"
+        "black"
       ],
       "aliases": []
     }

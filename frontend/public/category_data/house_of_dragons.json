@@ -1,0 +1,372 @@
+{
+  "name": "House of Dragons",
+  "preview_img": "default-preview.png",
+  "preview_desc": "Test your HOD Knowledge",
+  "type": "text",
+  "questions": [
+    {
+      "question": "How many years before the birth of Daenerys Targaryen is the show set",
+      "answers": [
+        "172"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which actor plays King Viserys",
+      "answers": [
+        "Paddy Considine"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What position does Otto Hightower hold on the Small Council",
+      "answers": [
+        "Hand of the King"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who beats Prince Daemon in The Heir's Tournament",
+      "answers": [
+        "Ser Criston Cole"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the villain from the free cities in the War for the Stepstones",
+      "answers": [
+        "The Crabfeeder"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the seat of House Valeryon called",
+      "answers": [
+        "High Tide"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which city does King Viserys build a sculpture of as a hobby",
+      "answers": [
+        "Valyria"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which 2 actresses play Princess Rhaenyra",
+      "answers": [
+        "Milly Alcock & Emma D'Arcy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What relation is Daemon to Rhaenarys",
+      "answers": [
+        "Unlce"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the pig given to Aemond as a joke by his brother and nephews",
+      "answers": [
+        "The Pink Dread"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which dragon does Aemond eventually claim as him own",
+      "answers": [
+        "Vhagar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is Larys Strong's nickname",
+      "answers": [
+        "Clubfoot"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "In which part of King's Landing are children made to fight against each other in an arena",
+      "answers": [
+        "Flea Bottom"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which dragon does Vhagar kill in the season finale",
+      "answers": [
+        "Arrax"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is made King after King Viserys' death",
+      "answers": [
+        "Aegon II Targaryen"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Mysaria, who leads a network of spies in King's Landing, also goes by what name",
+      "answers": [
+        "The White Worm"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which actor played the Maester of Dragonstone",
+      "answers": [
+        "Phil Daniels"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Ser Laenor Valeryon fakes his death and escapes Driftmark with which other knight",
+      "answers": [
+        "Ser Qarl Correy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the seat of House Baratheon called",
+      "answers": [
+        "Storm's End"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "How are King Viserys I and Princess Rhaenys Targaryen related",
+      "answers": [
+        "They are cousins"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is Prince Daemon's dragon called",
+      "answers": [
+        "Caraxes"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What drink is used to ease King Viserys' pain",
+      "answers": [
+        "Milk of the Poppy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who does Daemon decapitate in the throne room",
+      "answers": [
+        "Ser Vaemond Velaryon"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What animal do King Viserys and his men hunt for in the woods",
+      "answers": [
+        "A white stag"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Famously spoken by Daenerys Targaryen on the show \"Game of Thrones\", what command does Rhaenyra Targaryen give to her dragon to light the funeral pyres of her dead mother and brother",
+      "answers": [
+        "Dracarys"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What does the command Dracarys mean",
+      "answers": [
+        "is the nifty command the Targaryens use when they want their dragons to breathe fire"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What was the name of the Targaryen king who reigned for sixty years and brought together lords from lands throughout the realm to announce who would become his heir",
+      "answers": [
+        "Jaehaerys"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of Rhaenyra Targaryens Dragon",
+      "answers": [
+        "Syrax"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Princess Rhaenyra Targaryen tells her mother that she'd like to serve as a knight and ride to battle and glory. What does her mother tell her is their battlefield",
+      "answers": [
+        "The Childbed"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Rhaenyra's mother, Aemma, dies how",
+      "answers": [
+        "Childbirth with her second child"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What name is given to the alliance between the Free Cities of Lys, Myr and Tyros that have undertaken to occupy the Narrow Sea that separates the continents of Westeros and Essos",
+      "answers": [
+        "The Triarchy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Named after their attire, what name is given to the new City Watch of King's Landing that is led by the king's brother, Prince Daemon Targaryen",
+      "answers": [
+        "The Golden Cloaks"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "King Viserys Targaryen hosts an event known as the 'Heirs Tournament' in recognition of the upcoming birth of his second child. What is the primary activity of this tournament",
+      "answers": [
+        "Jousting"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Tragically, the king's wife, Aemma, dies during the birth of their second child who also dies shortly after. What term does Prince Daemon Targaryen use to describe his nephew that angers King Viserys",
+      "answers": [
+        "The heir for a day"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "ng Viserys Targaryen names his daughter, Princess Rhaenyra Targaryen his successor. In doing so, she also becomes the princess of which island whose castle is occupied by the heir to the Iron Throne",
+      "answers": [
+        "Dragonstone"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Daemon Targaryen attacks the army of Prince Drahar, 'The Crabfeeder', with his dragon Caraxes. Where does Drahar's army retreat to",
+      "answers": [
+        "Caves"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "For what event does King Viserys hold a grand celebration with visitors from many prominent families",
+      "answers": [
+        "The second Name day of his second child, his son Aegon"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "King Viserys's new Master of Ships, Tyland Lannister, implores the king to take what action that he had resisted doing for over three years",
+      "answers": [
+        "Send troops and ships to Bloodstone to aid Daemon and Corlys"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "King Viserys Targaryen tries to betroth his daughter Rhaenyra to Jason Lannister. What does Jason tell Rhaenyra he can build for her at his castle on Casterly Rock",
+      "answers": [
+        "a dragon pit"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "After Rhaenyra Targaryen rides away from the celebration arranged by her father, her and Ser Criston Cole end up getting ambushed. What type of animal that would later kill Robert Baratheon attacks Rhaenyra and Criston",
+      "answers": [
+        "Boar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What does Daemon Targaryen do that leads the Triarchy army of Prince Drahar out of their cover",
+      "answers": [
+        "He feigns surrendering."
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who helps save Daemon Targaryen by riding the dragon Seasmoke and taking out the archers of the Triarchy",
+      "answers": [
+        "Laenor Velaryon"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "The second episode of \"House of the Dragon\" begins with the iconic main title theme music first used in the show \"Game of Thrones\". What Iranian-German individual composed the main title theme music for \"House of the Dragon\"",
+      "answers": [
+        "Ramin Djawadi"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What nickname is given to the Prince-Admiral Craghas Drahar of the Triarchy due to the ruthless way he treats his enemies",
+      "answers": [
+        "Crabfeeder"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "King Viserys Targaryen tasks Princess Rhaenyra with selecting the next member of the Kingsguard. Why does she select Ser Criston Cole",
+      "answers": [
+        "hes the only one with combat experience"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "King Viserys is recommended to marry Lady Laena by multiple members of his council. Who is Lady Laena's father, an extremely wealthy man known as the 'Sea Snake'",
+      "answers": [
+        "Lord Corlys Velaryon"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "At various points it is explained that King Viserys Targaryen was the last rider of a dragon known as 'Black Dread'. Who was this dragon that was rode by Aegon the Conqueror during the War of Conquest",
+      "answers": [
+        "Balerion"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "In his spare time King Viserys creates a stone model of Old Valyria. After one of the dragons in his model breaks, who makes him a replacement",
+      "answers": [
+        "Alicent Hightower"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is stolen by Prince Daemon Targaryen and brought back to a castle that he is illegally occupying",
+      "answers": [
+        "A Dragon's egg"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "In addition to stealing something valuable from the king, Prince Daemon Targaryen also announces that he will marry Mysaria. Why is this action considered unacceptable",
+      "answers": [
+        "He's already married"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "As Daemon and Otto's soldiers are about to engage each other on a bridge, who rides in on a dragon, talks Daemon down and retrieves what was stolen",
+      "answers": [
+        "Rhaenyra Targaryen"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Upset over King Viserys's decisions, Lord Corlys Velaryon and Prince Daemon Targaryen discuss options. What common bond do Corlys and Daemon share that means their worth is not given and must be made",
+      "answers": [
+        "both are second born sons"
+      ],
+      "aliases": []
+    }
+  ]
+}

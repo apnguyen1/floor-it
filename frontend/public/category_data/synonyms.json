@@ -1,0 +1,568 @@
+{
+  "name": "Synonyms",
+  "preview_img": "default-preview.png",
+  "preview_desc": "Two words that mean the same thing",
+  "type": "text",
+  "questions": [
+    {
+      "question": "above",
+      "answers": [
+        "over"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "large",
+      "answers": [
+        "big"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "small",
+      "answers": [
+        "tiny"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "exit",
+      "answers": [
+        "leave"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "rest",
+      "answers": [
+        "relax"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "shout",
+      "answers": [
+        "yell"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "strange",
+      "answers": [
+        "odd"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "speak",
+      "answers": [
+        "talk"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "sack",
+      "answers": [
+        "bag"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "funny",
+      "answers": [
+        "silly"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "clever",
+      "answers": [
+        "smart"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "present",
+      "answers": [
+        "gift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "listen",
+      "answers": [
+        "hear"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "mother",
+      "answers": [
+        "mom"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "bunny",
+      "answers": [
+        "rabbit"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "house",
+      "answers": [
+        "home"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "garbage",
+      "answers": [
+        "trash"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "woman",
+      "answers": [
+        "lady"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "infant",
+      "answers": [
+        "baby"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "shut",
+      "answers": [
+        "close"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "ill",
+      "answers": [
+        "sick"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "rug",
+      "answers": [
+        "carpet"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "shop",
+      "answers": [
+        "store"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "see",
+      "answers": [
+        "look"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "alike",
+      "answers": [
+        "same"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "hat",
+      "answers": [
+        "cap"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "leap",
+      "answers": [
+        "jump"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "chef",
+      "answers": [
+        "cook"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "raise",
+      "answers": [
+        "lift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "stone",
+      "answers": [
+        "rock"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "street",
+      "answers": [
+        "road"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "near",
+      "answers": [
+        "close"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "reply",
+      "answers": [
+        "answer"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "happy",
+      "answers": [
+        "glad"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "under",
+      "answers": [
+        "below"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "fast",
+      "answers": [
+        "quick"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "evil",
+      "answers": [
+        "bad"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "sniff",
+      "answers": [
+        "smell"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "couch",
+      "answers": [
+        "sofa"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "pull",
+      "answers": [
+        "tug"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "angry",
+      "answers": [
+        "mad"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "jog",
+      "answers": [
+        "run"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "father",
+      "answers": [
+        "dad"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "tired",
+      "answers": [
+        "sleepy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "taxi",
+      "answers": [
+        "cab"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "awful",
+      "answers": [
+        "terrible"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "cost",
+      "answers": [
+        "price"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "simple",
+      "answers": [
+        "plain"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "eager",
+      "answers": [
+        "excited"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "softly",
+      "answers": [
+        "quietly"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "imagine",
+      "answers": [
+        "pretend"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "sure",
+      "answers": [
+        "certain"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "stuff",
+      "answers": [
+        "things"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "kid",
+      "answers": [
+        "child"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "flame",
+      "answers": [
+        "fire"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "hurry",
+      "answers": [
+        "rush"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "get",
+      "answers": [
+        "receive"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "fall",
+      "answers": [
+        "autumn"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "respectful",
+      "answers": [
+        "polite"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "boat",
+      "answers": [
+        "ship"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "thief",
+      "answers": [
+        "robber"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "throw",
+      "answers": [
+        "toss"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "divide",
+      "answers": [
+        "split"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "quickly",
+      "answers": [
+        "swiftly"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "repair",
+      "answers": [
+        "fix"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "tremble",
+      "answers": [
+        "Shake"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "things",
+      "answers": [
+        "stuff"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "rush",
+      "answers": [
+        "hurry"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "excited",
+      "answers": [
+        "eager"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "pleasant",
+      "answers": [
+        "enjoyable"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "terrible",
+      "answers": [
+        "awful"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "ruin",
+      "answers": [
+        "destroy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "tune",
+      "answers": [
+        "song"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "child",
+      "answers": [
+        "kid"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "letter",
+      "answers": [
+        "note"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "below",
+      "answers": [
+        "under"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "huge",
+      "answers": [
+        "big"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "fly",
+      "answers": [
+        "soar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "build",
+      "answers": [
+        "construct"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "windy",
+      "answers": [
+        "breezy"
+      ],
+      "aliases": []
+    }
+  ]
+}

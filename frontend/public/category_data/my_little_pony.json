@@ -1,0 +1,463 @@
+{
+  "name": "My Little Pony",
+  "preview_img": "default-preview.png",
+  "preview_desc": "Mostly everything you need to know about the My Little Pony show and fandom",
+  "type": "text",
+  "questions": [
+    {
+      "question": "A female Earth pony who works as a nurse at Ponyville Hospital. She has a white coat, pink mane and tail, blue eyes, and a cutie mark of a red medical cross with a pink heart in each corner. She wears a nurse's cap that bears an emblem with the same design as her cutie mark. She is unnamed in the show, but is named in merchandise. She is also my waifu :3.",
+      "answers": [
+        "Nurse Redheart"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Energetic and sociable, and she represents the element of laughter. She works at Sugarcube Corner and lives on the bakery's second floor with her pet alligator, Gummy. She writes and performs many songs, and is the source of many of the comical and cartoonish gags in the show. She regularly breaks the \"Fourth Wall.\"",
+      "answers": [
+        "Pinkie Pie"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Now an alicorn.",
+      "answers": [
+        "Twilight Sparkle"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female Pegasus pony and one of the main characters of My Little Pony Friendship is Magic. She lives in a small cottage near the Everfree Forest and is an animal caretaker, the most prominent of her charges being Angel the bunny. She represents the element of kindness.",
+      "answers": [
+        "Fluttershy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female Pegasus pony and one of the main characters in My Little Pony Friendship is Magic. She is responsible for maintaining the weather and clearing the skies in Ponyville. As a huge fan of The Wonderbolts, she dreams of one day joining their elite flying group. In Sonic Rainboom, Rarity and Princess Celestia both declare that she is the best flier in all of Equestria. She has a pet tortoise named Tank. She represents the element of loyalty.",
+      "answers": [
+        "Rainbow Dash"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female Earth pony and one of the main characters of My Little Pony Friendship is Magic. She lives and works at Sweet Apple Acres with her grandmother Granny Smith; her big brother Big Macintosh; her little sister Apple Bloom; and her dog Winona. She represents the element of honesty. She is dependable and loyal, always willing to help anybody in need. She is shown to be supportive and protective of Apple Bloom and her friends. She works at Sweet Apple Acres mainly as an apple bucker.",
+      "answers": [
+        "Applejack"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female unicorn pony and one of the main characters of My Little Pony Friendship is Magic. She is the older sister of Sweetie Belle and the love interest of Spike. Rarity works as both a fashion designer and as a seamstress at her own shop in Ponyville, the Carousel Boutique. She has a white Persian cat named Opalescence. She represents the element of generosity. Unlike Twilight Sparkle, her magic is used for activities related to her special talent and for basic tasks such as holding and carrying items or finding gems.",
+      "answers": [
+        "Rarity"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "An Alicorn pony and the co-ruler of Equestria alongside her younger sister. In addition to her responsibility of raising the sun, she has also been the mentor of Twilight Sparkle and Sunset Shimmer at different periods in time, often addressing Twilight as \"my faithful student\" while mentoring her.",
+      "answers": [
+        "Princess Celestia"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "An Alicorn pony, the younger sister of Princess Celestia, and the primary antagonist of the first two episodes of My Little Pony Friendship is Magic as Nightmare Moon. The Elements of Harmony restore Luna to her former self, and she returns to rule Equestria alongside her older sister.",
+      "answers": [
+        "Princess Luna"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "An Alicorn pony who is first featured in the season two finale alongside her husband (after the season two finale). Her debut episode gives her proper title as Princess Mi Amore Cadenza. She is Twilight Sparkle's former foal-sitter and sister-in-law (after marrying).",
+      "answers": [
+        "Princess Cadence"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A male unicorn pony and Twilight Sparkle's older brother. He is also the captain of the Canterlot Royal Guard, having served under Princess Celestia and Luna, and bears the title of Prince as a result of his marriage to Princess Cadence.",
+      "answers": [
+        "Shining Armor"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "An Alicorn pony, was Luna's evil form, but was purged by Twilight Sparkle and her friends by The Elements of Harmony",
+      "answers": [
+        "Nightmare Moon"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A recurring character and former antagonist introduced in the season two premiere. Princess Celestia explains that he is the spirit of chaos and disharmony who once ruled over Equestria in a state of unrest and unhappiness, until she and Princess Luna used the Elements of Harmony to imprison him in stone. After the sisters lost their connection to the Elements, the spell was broken and he broke free. Later in the series, Princess Celestia decides that he should be reformed so his magic can be used for good.",
+      "answers": [
+        "Discord"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female changeling and the main antagonist of the second season finale episodes. She is the queen of the changelings and a shapeshifter who appears in A Canterlot Wedding as Princess Cadance and takes her place in order to invade Canterlot by rendering her fiancé, Shining Armor, unable to perform his protection spell over the city by weakening him with her magic, so she and her subjects could take over Equestria.",
+      "answers": [
+        "Queen Chrysalis"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A male unicorn, the former tyrant ruler of the Crystal Empire, and the main antagonist in the season three premiere. Princess Celestia tells Twilight Sparkle that he took over the Crystal Empire a thousand years ago, but was banished into the frozen north. He put a curse on the Crystal Empire which made it vanish into thin air. When the Empire returns, so does him, who attempts to retake it. He is defeated by the Crystal Ponies' use of the Crystal Heart. His dialogue consists of growls, snarling, hissing, menacing laughter, and four lines.",
+      "answers": [
+        "King Sombra"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female unicorn pony who frequently appears as a background character and occasionally in more prominent roles. She has a magic mint coat, brilliant cyan mane and tail with a white streak, sunglow eyes, and a cutie mark of a lyre. Part of her name, Lyra, was given by fans before it was adopted officially by Hasbro.",
+      "answers": [
+        "Lyra Heartstrings"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female Pegasus pony who was given her name by the show's internet following due to her cross-eyed \"derpy\" expression in the first episode. The name has since been adopted by the crew and Hasbro.",
+      "answers": [
+        "Derpy Hooves"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female Pegasus pony and the captain of the aerial acrobatics group, the Wonderbolts. She makes her debut in Sonic Rainboom, and her name is first used in The Best Night Ever. She and Soarin are the first two members of The Wonderbolts to be named on the show.",
+      "answers": [
+        "Spitfire"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A male Pegasus pony and a member of the Wonderbolts. He appears in the earlier episodes of the series, making his debut in The Ticket Master, in Rainbow Dash's fantasy. Soarin makes his speaking debut in The Best Night Ever, which is also where his name is mentioned by Spitfire, the captain of The Wonderbolts. He also appears to have a huge love for apple pie, as seen in The Best Night Ever.",
+      "answers": [
+        "Soarin"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "An Earth pony with a beige coat, pigment blue mane with a rose pink streak, cerulean eyes, and a cutie mark of three objects which are identified by Little, Brown's Mini Pony Collector's Guide and Gameloft's mobile game respectively as three candies and as three bows. Usually seen with Lyra.",
+      "answers": [
+        "Sweetie Drops/Bon Bon"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female Earth pony with a web color plum coat, raspberry pink mane and tail, fandango eyes, and a cutie mark of a bunch of grapes and a strawberry. The character was given the name \"Pinot Noir\" by Lauren Faust. Perceived by fandom to be always drunk.",
+      "answers": [
+        "Berryshine/Berry Punch"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A background Earth pony with an hourglass cutie mark. The character was given his name by fans as a reference to the sci-fi drama Doctor Who, created by the BBC, which was adopted by the show's crew.",
+      "answers": [
+        "Time Turner/Doctor Whooves"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A purple and green baby dragon and one of the main characters of My Little Pony Friendship is Magic. He is Twilight Sparkle's best friend and number one assistant. He has the ability to magically deliver scrolls to and from Princess Celestia with his green fire-breath, which is featured in many episodes, as is his crush on Rarity.",
+      "answers": [
+        "Spike"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A small toothless green alligator who is kept as a pet by Pinkie Pie. He appears in twelve different episodes and often is depicted gumming Pinkie Pie.",
+      "answers": [
+        "Gummy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A white rabbit who is Fluttershy's pet. Angel is somewhat spoiled and bosses Fluttershy around on occasion; however, he does care about her, and is actually intent on helping her stand up for herself, making his name perfectly chosen.",
+      "answers": [
+        "Angel Bunny"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A tortoise who is first introduced in May the Best Pet Win!. By the end of the episode, he becomes Rainbow Dash's pet and the first pet to be introduced in the second season.",
+      "answers": [
+        "Tank"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Applejack's work dog, she is first seen in Applebuck Season, where she and Applejack round up a stampeding herd of cattle. She is a good herder and obeys all of Applejack's commands. Unlike the Diamond Dogs, she only barks and does not speak in any of her appearances. She has a red collar with a golden name tag.",
+      "answers": [
+        "Winona"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "An owl that is adopted by Twilight Sparkle. He initially raises Spike's suspicions, but eventually helps Twilight in rescuing Spike from another dragon.",
+      "answers": [
+        "Owlowiscious"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Rarity's cat. She is introduced in the episode Suited for Success.",
+      "answers": [
+        "Opalescence"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "An elderly Earth pony. She is Applejack, Apple Bloom, and Big McIntosh's grandmother, and a recurring character in the series. Like nearly all of the Apple family's cutie marks, hers is an apple based product, in this case a pie.",
+      "answers": [
+        "Granny Smith"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A male Earth pony, the older brother of Applejack and Apple Bloom, and part of the Apple family. He makes his debut in the first episode, during which he idly walks in Ponyville the moment Twilight Sparkle first arrives. Later, Applejack introduces him during the Apple family reunion, although he has no speaking roles until the fourth episode, Applebuck Season. He is soft-spoken and laconic, and often replies with a simple \"eeyup\" or \"nnope\".",
+      "answers": [
+        "Big Macintosh/Big Mac"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A school-age unicorn filly and Rarity's younger sister. She makes her first major appearance in the episode Call of the Cutie.",
+      "answers": [
+        "Sweetie Belle"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female school-age Pegasus pony. She first appears in Friendship is Magic, part 1, and is properly introduced in Call of the Cutie. Her friends form a club devoted to helping ponies earn their cutie marks. She is a talented scooter driver. She idolizes Rainbow Dash and develops a sisterly bond with her in Sleepless in Ponyville.",
+      "answers": [
+        "Scootaloo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A school-age Earth pony. A member of the Apple family, she is the younger sister of Applejack and Big Macintosh and the granddaughter of Granny Smith. She was the only named school-age pony until Boast Busters and the only filly with a speaking role until Call of the Cutie. Like the other three Cutie Mark Crusaders, she lacks her cutie mark.",
+      "answers": [
+        "Apple Bloom"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A school-age Earth pony. She is Apple Bloom's cousin from Manehattan, and speaks with a heavy Bronx accent. She is one of the many school-aged ponies without a cutie mark, and is an official member of the Cutie Mark Crusaders.",
+      "answers": [
+        "Babs Seed"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A club consisting of Apple Bloom, Scootaloo and Sweetie Belle formed in Call of the Cutie, with Babs Seed joining in One Bad Apple. Their unity is based on mostly being \"blank flanks\", ponies who have not yet gotten their cutie marks",
+      "answers": [
+        "The Cutie Mark Crusaders"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "My Little Pony movie, Twilight and Spike go into an anthrofied world in order to get her crown back.",
+      "answers": [
+        "Equestria Girls"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female unicorn pony, a former student of Princess Celestia, and the main antagonist of My Little Pony Equestria Girls. She stole Twilight's crown.",
+      "answers": [
+        "Sunset Shimmer"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A male character whose Pegasus pony and human counterparts appear in My Little Pony Equestria Girls. Known in the fandom to steal your waifu.",
+      "answers": [
+        "Flash Sentry"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A older male/female who watches My Little Pony.",
+      "answers": [
+        "Brony/Pegasister"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A person who faps to ponies. Yes. It had to be done.",
+      "answers": [
+        "Clopper"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Fan made variations of Princess Celestia.",
+      "answers": [
+        "Molestia/Trollestia"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A fan made character of My Little Pony",
+      "answers": [
+        "OC (Original Character)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Fan made art of My Little Pony",
+      "answers": [
+        "MLP Fanart"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Fan made stories of My Little Pony",
+      "answers": [
+        "MLP Fanfictions"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Pony Music Videos.",
+      "answers": [
+        "PMVs"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A very grimdark fan fiction in which Pinkie Pie slowly tortures and Murders Rainbow Dash. Again. It had to be done.",
+      "answers": [
+        "CUPCAKES"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female unicorn pony and traveling magician. She is featured as the main antagonist of Boast Busters, and Magic Duel. She is full of herself and thinks that she is the best unicorn in Equestria.",
+      "answers": [
+        "\"The Great and Powerful\" Trixie"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female Pegasus pony who appears in the episode Wonderbolts Academy. Her cutie mark consists of a lightning bolt and three stars. She is shown to leave a blue and yellow thunderbolt streak behind her when she flies, similar to Rainbow Dash's rainbow streak and The Wonderbolts' trail of lightning clouds.",
+      "answers": [
+        "Lightning Dust"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Two salespony unicorn brothers who are featured as antagonists in The Super Speedy Cider Squeezy 6000. They challenge the Apple family in a competition of who can make more cider.",
+      "answers": [
+        "Flim and Flam"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A former friend of Rainbow Dash. She is an antagonist in Griffon the Brush Off.",
+      "answers": [
+        "Gilda the Griffon"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "An Earth pony in Ponyville and a supporting character in the show. She teaches at the Ponyville Schoolhouse.",
+      "answers": [
+        "Cheerilee"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A snobby, conceited school-age Earth pony filly and a minor antagonist who first appears in Call of the Cutie. She and Silver Spoon are classmates of the Cutie Mark Crusaders.",
+      "answers": [
+        "Diamond Tiara"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A school-age Earth pony filly who first appears in Call of the Cutie and is a co-antagonist, alongside Diamond Tiara. She and Diamond Tiara are best friends and classmates of the Cutie Mark Crusaders.",
+      "answers": [
+        "Silver Spoon"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A male centaur, the brother of Scorpan, and the main antagonist of the season four finale. He is a villain who escapes from Tartarus and steals magic.",
+      "answers": [
+        "Lord Tirek"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female Earth pony and supporting character who appears in the season four episodes Rarity Takes Manehattan, Equestria Games, and Twilight's Kingdom - Part 2. She is a Bridleway dressmaker and Suri Polomare's former assistant.",
+      "answers": [
+        "Coco Pommel"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A male Earth pony and the self-titled \"super duper party pony\" who appears in the episodes Pinkie Pride, Equestria Games, and Twilight's Kingdom - Part 2 and in the IDW comics' Friends Forever Issue #9. Much of his personality and appearance is based on his American voice actor: comedian and musician 'Weird Al' Yankovic.",
+      "answers": [
+        "Cheese Sandwich"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female Pegasus pony, the titular character and the author of the Daring Do book series, based on her adventures. She is featured in five episodes, having major roles in Read It and Weep and Daring Don't, and makes small cameos in A Friend in Deed, Too Many Pinkie Pies, Trade Ya!, and My Little Pony Equestria Girls: Rainbow Rocks.",
+      "answers": [
+        "Daring Do"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A student band that appears in the film My Little Pony Equestria Girls: Rainbow Rocks and its animated shorts. It consists of Twilight Sparkle and her human friends from Canterlot High School.",
+      "answers": [
+        "The Rainbooms"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A musical group and the main antagonists of My Little Pony Equestria Girls: Rainbow Rocks. The group consists of lead singer Adagio Dazzle and her bandmates Aria Blaze and Sonata Dusk.",
+      "answers": [
+        "The Dazzlings"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female siren and the main antagonist of My Little Pony Equestria Girls: Rainbow Rocks. She is the lead singer of her band the Dazzlings, rivaling the Rainbooms.",
+      "answers": [
+        "Adagio Dazzle"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Where I got all this stuff.",
+      "answers": [
+        "My Little Pony: Friendship is Magic wiki"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female siren and one of the main antagonists in My Little Pony Equestria Girls: Rainbow Rocks. She is a backup singer in her band the Dazzlings, rivaling the Rainbooms. Loves Tacos.",
+      "answers": [
+        "Sonata Dusk"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Created this set, check him out on Fanfiction.net.",
+      "answers": [
+        "ssbbman888"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A female siren and one of the main antagonists in My Little Pony Equestria Girls: Rainbow Rocks. She is a backup singer in her band the Dazzlings, rivaling the Rainbooms. Not Sonata. (They're similar)",
+      "answers": [
+        "Aria Blaze"
+      ],
+      "aliases": []
+    }
+  ]
+}

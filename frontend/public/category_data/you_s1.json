@@ -1,0 +1,323 @@
+{
+  "name": "You S1",
+  "preview_img": "default-preview.png",
+  "preview_desc": "Test your You Season 1 Knowledge!",
+  "type": "text",
+  "questions": [
+    {
+      "question": "What channel was You originally aired on before netflix",
+      "answers": [
+        "Lifetime"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who wrote the books that You is based off of",
+      "answers": [
+        "Caroline Kepnes wrote \"You\" and \"Hidden Bodies\""
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is Beck's email address",
+      "answers": [
+        "(gives it to Joe in the cab after he saves her from the tracks)\tbeckinreallife@gmail.com"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Where is Beck from",
+      "answers": [
+        "Nantucket, MA"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is Beck's apartment address",
+      "answers": [
+        "171 Bank St"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the book that Beck buys he first time at the book store",
+      "answers": [
+        "Desperate Characters"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What school does Beck currently attend",
+      "answers": [
+        "Attends New York University after graduating from Brown"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the professor's name that Beck is the TA for",
+      "answers": [
+        "Paul Leahy (he teaches romantics class)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of Benji's soda brand",
+      "answers": [
+        "Home Soda"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is Benji's phone password",
+      "answers": [
+        "Leanna"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "After visiting her Dad what is the name of the poem that Beck writes",
+      "answers": [
+        "\"The Ladle\""
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What type of festival does Beck go to with her dad (\"the Captain\")",
+      "answers": [
+        "Charles Dickens Festivals"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the motel Beck stays at when meeting \"the Captain\"",
+      "answers": [
+        "Seaside Motel"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of Peach's dog",
+      "answers": [
+        "Dalloway"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is Peach's laptop password",
+      "answers": [
+        "Beckalicious"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the famous book agent who tries to seduce Beck in his limo",
+      "answers": [
+        "Roger Stevens"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Where does Peach want to fly to with Beck",
+      "answers": [
+        "(she bought them plane tickets already)\tParis, France"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the book that Joe steals from Peach's house",
+      "answers": [
+        "Ozma of Oz"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Where is the Salinger estate located",
+      "answers": [
+        "Greenwich, CT"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "When is Beck's birthday",
+      "answers": [
+        "December 3rd"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What kind of car does Joe drive",
+      "answers": [
+        "(belonged to Mr. Mooney)\tBuick Skylark"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What do Beck and Joe call their relationship",
+      "answers": [
+        "Everythingship"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "When Joe suspects Beck of cheating with her therapist, Dr. Nicky, he schedules appointments. What is the alias he uses, and what is the name of his \"boyfriend\"",
+      "answers": [
+        "Paul Brown, his boyfriend is Reynaldo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the guy that Candace cheats on Joe with",
+      "answers": [
+        "Elijah Thornton"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of Beck's book that is published after she is killed",
+      "answers": [
+        "The Dark Face of Love"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "How did Joe kill Beck",
+      "answers": [
+        "Stangled her"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "How many total people is Joe responsible for killing in both seasons",
+      "answers": [
+        "Seven"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the reasoning behind Forty and Love's names",
+      "answers": [
+        "Their dad loved tennis"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the storage place Joe keeps his box at",
+      "answers": [
+        "Lock of Fame Storage"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What type of juice does Forty tell Joe to get from Anavrin after taking LSD",
+      "answers": [
+        "Moon Juice"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "When Joe goes to Anavrin, high off LSD, what else is he looking for",
+      "answers": [
+        "(they don't carry it)\tHot cheetos"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Where does the real Will move to after Joe lets him go",
+      "answers": [
+        "Manila, Philippines"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "In Joe's interview at Anavrin, what is the book he pulls out that basically gets him the job",
+      "answers": [
+        "Crime and Punishment"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What finger of Joe's does Jasper Krenn cut off when he doesn't have the $50,000 he is owed",
+      "answers": [
+        "The tip of his pinky finger"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What are the names of Love's three best friends",
+      "answers": [
+        "Lucy, Sunshine, Gabe"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What are Love and Forty's parent's names",
+      "answers": [
+        "Dottie and Ray Quinn"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the Au pair that Love kills to \"protect\" Forty",
+      "answers": [
+        "Sofia"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is Candace's alias in Season 2",
+      "answers": [
+        "Amy Adams"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What was the name of the improv group Joe goes to see",
+      "answers": [
+        "Trigger Warning"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the weekend retreat that the Quinn family have",
+      "answers": [
+        "Wellkend"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the nickname that Forty calls Joe",
+      "answers": [
+        "Old Sport"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the gate code to get into Hendy's house party",
+      "answers": [
+        "Dicks"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "After breaking up with Joe, what is the name of the guy Love rebounds with",
+      "answers": [
+        "Milo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the police officer that shoots and kills Forty in the end",
+      "answers": [
+        "David Fincher"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "How long does Joe last in bed the first time having intercourse with Beck",
+      "answers": [
+        "8 seconds"
+      ],
+      "aliases": []
+    }
+  ]
+}

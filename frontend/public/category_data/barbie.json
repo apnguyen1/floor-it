@@ -1,0 +1,428 @@
+{
+  "name": "Barbie",
+  "preview_img": "default-preview.png",
+  "preview_desc": "Test your Trivia!",
+  "type": "text",
+  "questions": [
+    {
+      "question": "Barbie and the Diamond Castle Main Character",
+      "answers": [
+        "Liana"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Diamond Castle Side Characters",
+      "answers": [
+        "Alexa (bff), Melody, Ian, Jeremy, Lydia, Slyder, Troll"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Diamond Castle sidekick animals",
+      "answers": [
+        "Sparkles and Lily"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Diamond Castle Villan",
+      "answers": [
+        "Lydia and Slyder"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Diamond Castle Special Items",
+      "answers": [
+        "Magic mirror, heart stones, muses' instruments"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Diamond Castle Release Date",
+      "answers": [
+        "September 4, 2008"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Magic of Pegasus Main Character",
+      "answers": [
+        "Princess Annika"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Magic of Pegasus Side Character",
+      "answers": [
+        "Prince Aidan, Princess Brietta (horse), Queen Rayla, Ferris, rose, blush, lilac,"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Magic of Pegasus sidekick animals",
+      "answers": [
+        "shiver (bear),"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Magic of Pegasus villan",
+      "answers": [
+        "Wenlock, Ollie the Giant, Troll,"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Magic of Pegasus release date",
+      "answers": [
+        "September 18, 2005"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Magic of Pegasus important items",
+      "answers": [
+        "Cloud Kingdom, Wand of Light: (measure of courage, ring of love, gen of ice lit by hopes eternal flame)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Three Musketeers Main Character",
+      "answers": [
+        "Corinne"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Three Musketeers side character",
+      "answers": [
+        "Viveca, Aramina, Renee, Helene, Louis,"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Three Musketeers sidekick animals",
+      "answers": [
+        "Miette (cat), Alexander (horse)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Three Musketeers release date",
+      "answers": [
+        "September 15, 2009"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Three Musketeers important items",
+      "answers": [
+        "\"all for one, one for all\""
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie and the Three Musketeers villain",
+      "answers": [
+        "Philippe, Brutus (dog)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie as Rapunzel main character",
+      "answers": [
+        "Barbie(rapunzel)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie as Rapunzel side character",
+      "answers": [
+        "Kelly, Prince Stefan"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie as Rapunzel sidekick animal",
+      "answers": [
+        "Hobie, Penelope"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie as Rapunzel villan",
+      "answers": [
+        "Gothel, Hugo (dragon)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie as Rapunzel release date",
+      "answers": [
+        "October 1st, 2002"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie as Rapunzel important items",
+      "answers": [
+        "magic paintbrush"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie as the Island Princess Main Character",
+      "answers": [
+        "Rosella"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie as the Island Princess Side Character",
+      "answers": [
+        "Prince Antonio, Princess Luciana, Frazer, King Peter, Queen Danielle,"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie as the Island Princess Sidekick animal",
+      "answers": [
+        "Sagi, Azul, Tika, Tallulah"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie as the Island Princess villain",
+      "answers": [
+        "Queen Ariana, 3 rats"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie as the Island Princess important items",
+      "answers": [
+        "sunset herb (poison)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie as the Island Princess release date",
+      "answers": [
+        "September 28th, 2007"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Princess and the Pauper Main Character",
+      "answers": [
+        "Princess Anneliese and Queen Erika"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Princess and the Pauper Side Character",
+      "answers": [
+        "prince Julian, King Dominick, Queen Genevieve"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Princess and the Pauper Sidekick animal",
+      "answers": [
+        "Wolfie, Serafina, Herve"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Princess and the Pauper Villain",
+      "answers": [
+        "Preminger, Nick/Nack, Midas (dog), Madame Carp"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Princess and the Pauper important items",
+      "answers": [
+        "the hidden rocks"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Princess and the Pauper release date",
+      "answers": [
+        "September 28, 2004"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie Fairytopia: Magic of the Rainbow Main character",
+      "answers": [
+        "Elina"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie Fairytopia: Magic of the Rainbow Side character",
+      "answers": [
+        "Linden, Azura, Glee"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie Fairytopia: Magic of the Rainbow Villan",
+      "answers": [
+        "Laverna, Fungus Maximus,"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie Fairytopia: Magic of the Rainbow important items",
+      "answers": [
+        "This is 3rd movie in fairytopia series"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie Fairytopia: Magic of the Rainbow release date",
+      "answers": [
+        "March 11, 2007"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie Fairytopia: Magic of the Rainbow Sidekick animal",
+      "answers": [
+        "Bibble, Dizzle"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie Fairytopia: Mermaidia Main Character",
+      "answers": [
+        "Elina"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie Fairytopia: Mermaidia Side Character",
+      "answers": [
+        "Prince Nalu, Nori, Enchantress, Azura"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie Fairytopia: Mermaidia Villain",
+      "answers": [
+        "Laverna, Fungus Maximus"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie Fairytopia: Mermaidia Sidekick animal",
+      "answers": [
+        "Bibble, Delphine (snail), puffball, merfairies"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie Fairytopia: Mermaidia important info",
+      "answers": [
+        "immunity berry,"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie Fairytopia: Mermaidia release date",
+      "answers": [
+        "March 5, 2006"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12 Dancing Princesses main character",
+      "answers": [
+        "Genevienve"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12 Dancing Princesses side character",
+      "answers": [
+        "Derek, Ashlyn, Blair, Courtney, Delia, Edeline, Fallon, Hadley, Isla, Janessa, Kathleen, Lacey, King Randolph"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12 Dancing Princesses villain",
+      "answers": [
+        "Dutchess Rowena, Desmond, Brutus"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12 Dancing Princesses sidekick animal",
+      "answers": [
+        "twyla, felix"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12 Dancing Princesses important info",
+      "answers": [
+        "magic water, wishing flowers"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12 Dancing Princesses release date",
+      "answers": [
+        "September 10, 2006"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie of Swan Lake main character",
+      "answers": [
+        "Odette"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie of Swan Lake side character",
+      "answers": [
+        "Prince Daniel, Fairy Queen"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie of Swan Lake sidekick animal",
+      "answers": [
+        "Lila, Carlita, Ivan, Marisa, Liana, Kelly, Jenny"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie of Swan Lake villain",
+      "answers": [
+        "Rothbart, Odile"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie of Swan Lake important info",
+      "answers": [
+        "magic crystal, book of forest lore"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Barbie of Swan Lake release date",
+      "answers": [
+        "September 30, 2003"
+      ],
+      "aliases": []
+    }
+  ]
+}

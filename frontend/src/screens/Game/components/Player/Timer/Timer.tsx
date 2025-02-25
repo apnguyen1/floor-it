@@ -23,7 +23,7 @@ interface TimerProps {
  */
 
 const Timer = ({ inGame, onTimeOut, isActive, playerName }: TimerProps) => {
-  const initialTime = 30 * 1000; // 30 seconds
+  const initialTime = 60 * 1000; // 30 seconds
   const [countdown, setCountDown] = useState(initialTime);
 
   /**
