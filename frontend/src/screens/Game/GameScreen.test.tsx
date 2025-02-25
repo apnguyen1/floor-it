@@ -7,7 +7,6 @@ import { useApp } from '../../hooks/useApp';
 import SpeechRecognition from 'react-speech-recognition';
 import { ScreenType } from '../../constants/screens';
 import { CategoryContent, Question } from './GameScreen.type';
-import { Mock } from 'vitest';
 
 // Mock the custom hooks and external dependencies
 vi.mock('../../hooks/useApp', () => ({
@@ -103,7 +102,6 @@ describe('GameScreen', () => {
   beforeEach(() => {
     vi.clearAllMocks();
 
-    // Mock implementation of useApp with proper typing
     /* eslint-disable  @typescript-eslint/no-explicit-any */
     (useApp as any).mockReturnValue({
       players: mockPlayers,
@@ -111,7 +109,6 @@ describe('GameScreen', () => {
       setScreen: mockSetScreen,
     });
 
-    // Mock implementation of useCategoryQuestions with proper typing
     /* eslint-disable  @typescript-eslint/no-explicit-any */
     (useCategoryQuestions as any).mockReturnValue({
       category: mockCategory,
@@ -120,7 +117,6 @@ describe('GameScreen', () => {
       setNextQuestion: mockSetNextQuestion,
     });
 
-    // Mock implementation of useSpeechCommands with proper typing
     /* eslint-disable  @typescript-eslint/no-explicit-any */
     (useSpeechCommands as any).mockReturnValue({
       transcript: 'test transcript',
@@ -129,7 +125,6 @@ describe('GameScreen', () => {
       errorMessage: undefined,
     });
 
-    // Mock HTMLAudioElement
     window.HTMLMediaElement.prototype.play = vi.fn().mockResolvedValue(undefined);
     window.HTMLMediaElement.prototype.pause = vi.fn();
   });
@@ -137,15 +132,12 @@ describe('GameScreen', () => {
   it('should render the game screen with correct initial state', () => {
     render(<GameScreen />);
 
-    // Check for players
     expect(screen.getByTestId('player-Player1')).toBeInTheDocument();
     expect(screen.getByTestId('player-Player2')).toBeInTheDocument();
 
-    // Check display component
     expect(screen.getByTestId('display')).toBeInTheDocument();
     expect(screen.getByTestId('game-status')).toHaveTextContent('Not In Game');
 
-    // Check for back button
     expect(screen.getByText('Back')).toBeInTheDocument();
   });
 
@@ -153,10 +145,8 @@ describe('GameScreen', () => {
     const user = userEvent.setup();
     render(<GameScreen />);
 
-    // Start the game
     await user.click(screen.getByTestId('start-game'));
 
-    // Check if the game state has changed
     expect(screen.getByTestId('game-status')).toHaveTextContent('In Game');
     expect(SpeechRecognition.startListening).toHaveBeenCalledTimes(1);
   });
@@ -165,13 +155,10 @@ describe('GameScreen', () => {
     const user = userEvent.setup();
     render(<GameScreen />);
 
-    // Start the game first
     await user.click(screen.getByTestId('start-game'));
 
-    // Trigger timeout for Player1
     await user.click(screen.getByTestId('timeout-Player1'));
 
-    // Game should stop and Player2 should be declared the winner
     expect(screen.getByTestId('game-status')).toHaveTextContent('Not In Game');
     expect(SpeechRecognition.abortListening).toHaveBeenCalledTimes(1);
   });
@@ -180,10 +167,8 @@ describe('GameScreen', () => {
     const user = userEvent.setup();
     render(<GameScreen />);
 
-    // Click the back button
     await user.click(screen.getByText('Back'));
 
-    // Should navigate to category screen
     expect(mockSetScreen).toHaveBeenCalledWith(ScreenType.Categories);
     expect(SpeechRecognition.abortListening).toHaveBeenCalledTimes(1);
   });
@@ -191,8 +176,8 @@ describe('GameScreen', () => {
   it('should alternate active player when a correct answer is given', () => {
     render(<GameScreen />);
 
-    const correctAnswerCallback = (useSpeechCommands as unknown as Mock).mock
-      .calls[0][2];
+    /* eslint-disable  @typescript-eslint/no-explicit-any */
+    const correctAnswerCallback = (useSpeechCommands as any).mock.calls[0][2];
 
     correctAnswerCallback();
     expect(mockSetNextQuestion).toHaveBeenCalledTimes(1);
