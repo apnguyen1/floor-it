@@ -3,9 +3,15 @@ import { render, screen } from '@testing-library/react';
 import { GameStatus } from '../../GameScreen.type.ts';
 import { Player } from './Player.tsx';
 
+interface MockProps {
+  inGame: boolean;
+  isActive: boolean;
+  playerName: string;
+}
+
 // Mock the Timer component
 vi.mock('./Timer/Timer.tsx', () => ({
-  default: ({ inGame, isActive, playerName }) => (
+  default: ({ inGame, isActive, playerName }: MockProps) => (
     <div data-testid="timer-mock">
       Timer: inGame={String(inGame)}, isActive={String(isActive)}, playerName=
       {playerName}
@@ -21,7 +27,11 @@ describe('Player', () => {
   });
 
   it('should render player name and avatar', () => {
-    const gameStatus: GameStatus = { inGame: false, winner: null };
+    const gameStatus: GameStatus = {
+      inGame: false,
+      winner: undefined,
+      activePlayer: false,
+    };
 
     render(
       <Player
@@ -33,10 +43,8 @@ describe('Player', () => {
       />,
     );
 
-    // Check avatar abbreviation is rendered
     expect(screen.getByText('Jo')).toBeInTheDocument();
 
-    // Check timer component receives correct props
     const timerElement = screen.getByTestId('timer-mock');
     expect(timerElement).toHaveTextContent('inGame=false');
     expect(timerElement).toHaveTextContent('isActive=false');
@@ -44,7 +52,11 @@ describe('Player', () => {
   });
 
   it('should handle short names correctly', () => {
-    const gameStatus: GameStatus = { inGame: false, winner: null };
+    const gameStatus: GameStatus = {
+      inGame: false,
+      winner: undefined,
+      activePlayer: false,
+    };
 
     render(
       <Player
@@ -61,7 +73,11 @@ describe('Player', () => {
   });
 
   it('should show "You will start!" message when game not started and player is active', () => {
-    const gameStatus: GameStatus = { inGame: false, winner: null };
+    const gameStatus: GameStatus = {
+      inGame: false,
+      winner: undefined,
+      activePlayer: true,
+    };
 
     render(
       <Player
@@ -77,7 +93,11 @@ describe('Player', () => {
   });
 
   it('should show active player turn status with mic on', () => {
-    const gameStatus: GameStatus = { inGame: true, winner: null };
+    const gameStatus: GameStatus = {
+      inGame: true,
+      winner: undefined,
+      activePlayer: true,
+    };
 
     render(
       <Player
@@ -98,7 +118,11 @@ describe('Player', () => {
   });
 
   it('should show active player turn status with mic off', () => {
-    const gameStatus: GameStatus = { inGame: true, winner: null };
+    const gameStatus: GameStatus = {
+      inGame: true,
+      winner: undefined,
+      activePlayer: true,
+    };
 
     render(
       <Player
@@ -111,15 +135,16 @@ describe('Player', () => {
     );
 
     expect(screen.getByText("John's Turn")).toBeInTheDocument();
-
-    // Check that the MicOffIcon is rendered (we can't directly check for the icon
-    // component) but we can check for absence of the MicIcon's parent element
     const micElement = document.querySelector('[data-testid="MicIcon"]');
     expect(micElement).toBeNull();
   });
 
   it('should display winner status when player wins', () => {
-    const gameStatus: GameStatus = { inGame: true, winner: 'John Doe' };
+    const gameStatus: GameStatus = {
+      inGame: true,
+      winner: 'John Doe',
+      activePlayer: false,
+    };
 
     render(
       <Player
@@ -135,7 +160,11 @@ describe('Player', () => {
   });
 
   it('should display "Time\'s up!" when another player wins', () => {
-    const gameStatus: GameStatus = { inGame: true, winner: 'Jane Doe' };
+    const gameStatus: GameStatus = {
+      inGame: true,
+      winner: 'Jane Doe',
+      activePlayer: false,
+    };
 
     render(
       <Player
@@ -151,7 +180,11 @@ describe('Player', () => {
   });
 
   it('should display nothing for inactive players when game is in progress', () => {
-    const gameStatus: GameStatus = { inGame: true, winner: null };
+    const gameStatus: GameStatus = {
+      inGame: true,
+      winner: undefined,
+      activePlayer: false,
+    };
 
     render(
       <Player
@@ -163,7 +196,6 @@ describe('Player', () => {
       />,
     );
 
-    // There should be no turn message or winner message
     expect(screen.queryByText("John's Turn")).not.toBeInTheDocument();
     expect(screen.queryByText('Winner!')).not.toBeInTheDocument();
     expect(screen.queryByText("Time's up!")).not.toBeInTheDocument();
@@ -171,7 +203,11 @@ describe('Player', () => {
   });
 
   it('should pass the correct onTimeOut function to Timer', () => {
-    const gameStatus: GameStatus = { inGame: true, winner: null };
+    const gameStatus: GameStatus = {
+      inGame: true,
+      winner: undefined,
+      activePlayer: true,
+    };
 
     render(
       <Player
@@ -183,15 +219,16 @@ describe('Player', () => {
       />,
     );
 
-    // Check that Timer receives the onTimeOut prop
-    // (We can't directly test the function passing, but the mock confirms it's
-    // included)
     const timerElement = screen.getByTestId('timer-mock');
     expect(timerElement).toBeInTheDocument();
   });
 
   it('should handle spaces in player names correctly', () => {
-    const gameStatus: GameStatus = { inGame: true, winner: null };
+    const gameStatus: GameStatus = {
+      inGame: true,
+      winner: undefined,
+      activePlayer: true,
+    };
 
     render(
       <Player
@@ -203,10 +240,7 @@ describe('Player', () => {
       />,
     );
 
-    // First name should be extracted correctly
     expect(screen.getByText("John's Turn")).toBeInTheDocument();
-
-    // Avatar should use the first two letters of the first name
     expect(screen.getByText('Jo')).toBeInTheDocument();
   });
 });
