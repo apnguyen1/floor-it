@@ -52,6 +52,16 @@ export const Player = ({
       );
     }
 
+    if (!gameStatus.inGame && isActive) {
+      return (
+        <Typography variant="h6" color="info">
+          <strong>
+            <u>You will start!</u>
+          </strong>
+        </Typography>
+      );
+    }
+
     if (isActive) {
       return (
         <>
@@ -64,16 +74,6 @@ export const Player = ({
             <MicOffIcon color={'error'} fontSize={'large'} />
           )}
         </>
-      );
-    }
-
-    if (!gameStatus.inGame && isActive) {
-      return (
-        <Typography variant="h6" color="info">
-          <strong>
-            <u>You will start!</u>
-          </strong>
-        </Typography>
       );
     }
 
