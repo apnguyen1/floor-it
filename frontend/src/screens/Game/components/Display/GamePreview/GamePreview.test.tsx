@@ -5,7 +5,6 @@ import { GamePreview } from './GamePreview.tsx';
 
 describe('GamePreview', () => {
   const mockCategory: CategoryContent = {
-    id: 'geography',
     name: 'World Geography',
     preview_img: 'geography.jpg',
     preview_desc: 'Test your knowledge of countries and capitals!',
@@ -55,11 +54,10 @@ describe('GamePreview', () => {
 
   it('should handle different category data correctly', () => {
     const differentCategory: CategoryContent = {
-      id: 'movies',
       name: 'Famous Movies',
       preview_img: 'movies.jpg',
       preview_desc: 'Test your cinema knowledge!',
-      type: 'image',
+      type: 'img',
       questions: [],
     };
 
