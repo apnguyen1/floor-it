@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Typography } from '@mui/material';
+import { Box, CircularProgress, Typography } from '@mui/material';
+import { timerBox } from './Timer.style.tsx';
 
 /**
  * Props for the Timer component.
@@ -13,6 +14,7 @@ interface TimerProps {
   isActive: boolean;
   /** Name of the player associated with the timer */
   playerName: string;
+  playerColor: string;
 }
 
 /**
@@ -22,9 +24,17 @@ interface TimerProps {
  * @param {TimerProps} props - Component props
  */
 
-const Timer = ({ inGame, onTimeOut, isActive, playerName }: TimerProps) => {
-  const initialTime = 5 * 1000; // 30 seconds
+const Timer = ({
+  inGame,
+  onTimeOut,
+  isActive,
+  playerName,
+  playerColor,
+}: TimerProps) => {
+  const initialTime = 30 * 1000; // 30 seconds
   const [countdown, setCountDown] = useState(initialTime);
+  const remainingSeconds = Math.floor(countdown / 1000);
+  const percentRemaining = (countdown / initialTime) * 100;
 
   /**
    * Resets the countdown timer when the game starts.
@@ -63,12 +73,37 @@ const Timer = ({ inGame, onTimeOut, isActive, playerName }: TimerProps) => {
    *
    * @param {number} time - Time in milliseconds
    */
-  const formatTime = (time: number) => {
-    const seconds = Math.floor(time / 1000);
-    return `${seconds}s`;
-  };
 
-  return <Typography variant={'h2'}>{formatTime(countdown)}</Typography>;
+  return (
+    <Box
+      sx={{
+        position: 'relative',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        my: 2,
+      }}
+    >
+      <CircularProgress
+        variant="determinate"
+        value={percentRemaining}
+        size={100}
+        thickness={4}
+        sx={{
+          color: remainingSeconds < 10 ? 'error.main' : playerColor,
+          opacity: isActive ? 1 : 0.3,
+          transition: 'all 0.3s ease',
+        }}
+      />
+      <Typography
+        sx={timerBox(playerColor, remainingSeconds)}
+        variant="h2"
+        position="absolute"
+      >
+        {remainingSeconds}
+      </Typography>
+    </Box>
+  );
 };
 
 export default Timer;

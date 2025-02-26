@@ -7,7 +7,7 @@ export const questionBox = (): SxProps<Theme> => ({
   backgroundColor: 'white',
   borderRadius: '16px',
   maxWidth: '100%',
-  minHeight: '100px',
+  height: '600px',
   boxShadow: '0 10px 30px rgba(0, 0, 0, 0.1)',
   display: 'flex',
   flexDirection: 'column',

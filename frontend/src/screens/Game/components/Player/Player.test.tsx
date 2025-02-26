@@ -40,6 +40,7 @@ describe('Player', () => {
         onTimeOut={mockOnTimeOut}
         isActive={false}
         listening={false}
+        playerColor={'black'}
       />,
     );
 
@@ -65,6 +66,7 @@ describe('Player', () => {
         onTimeOut={mockOnTimeOut}
         isActive={false}
         listening={false}
+        playerColor={'black'}
       />,
     );
 
@@ -86,6 +88,7 @@ describe('Player', () => {
         onTimeOut={mockOnTimeOut}
         isActive={true}
         listening={false}
+        playerColor={'black'}
       />,
     );
 
@@ -106,6 +109,7 @@ describe('Player', () => {
         onTimeOut={mockOnTimeOut}
         isActive={true}
         listening={true}
+        playerColor={'black'}
       />,
     );
 
@@ -131,6 +135,7 @@ describe('Player', () => {
         onTimeOut={mockOnTimeOut}
         isActive={true}
         listening={false}
+        playerColor={'black'}
       />,
     );
 
@@ -153,6 +158,7 @@ describe('Player', () => {
         onTimeOut={mockOnTimeOut}
         isActive={false}
         listening={false}
+        playerColor={'black'}
       />,
     );
 
@@ -173,6 +179,7 @@ describe('Player', () => {
         onTimeOut={mockOnTimeOut}
         isActive={false}
         listening={false}
+        playerColor={'black'}
       />,
     );
 
@@ -193,6 +200,7 @@ describe('Player', () => {
         onTimeOut={mockOnTimeOut}
         isActive={false}
         listening={false}
+        playerColor={'black'}
       />,
     );
 
@@ -216,6 +224,7 @@ describe('Player', () => {
         onTimeOut={mockOnTimeOut}
         isActive={true}
         listening={false}
+        playerColor={'black'}
       />,
     );
 
@@ -237,6 +246,7 @@ describe('Player', () => {
         onTimeOut={mockOnTimeOut}
         isActive={true}
         listening={false}
+        playerColor={'black'}
       />,
     );
 

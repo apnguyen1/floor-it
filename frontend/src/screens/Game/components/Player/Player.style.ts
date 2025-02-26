@@ -6,7 +6,7 @@ export const playerBox = (color: string, isActive: boolean): SxProps<Theme> => (
   alignItems: 'center',
   justifyContent: 'center',
   width: '22%',
-  minHeight: '500px',
+  minHeight: '600px',
   padding: 3,
   backgroundColor: isActive ? 'rgba(255, 255, 255, 0.85)' : 'rgba(255, 255, 255, 0.6)',
   borderRadius: '16px',
@@ -30,8 +30,8 @@ export const playerBox = (color: string, isActive: boolean): SxProps<Theme> => (
   },
 });
 
-export const playerAvatar = (isActive: boolean): SxProps<Theme> => ({
-  bgcolor: isActive ? 'primary.main' : 'grey.400',
+export const playerAvatar = (playerColor: string): SxProps<Theme> => ({
+  bgcolor: playerColor,
   transition: 'background-color 0.3s ease',
 });
 

@@ -28,6 +28,7 @@ interface PlayerProps {
   isActive: boolean;
   /** Indicates if the player is currently speaking (mic on/off) */
   listening: boolean;
+  playerColor: string;
 }
 
 /**
@@ -42,10 +43,10 @@ export const Player = ({
   onTimeOut,
   isActive,
   listening,
+  playerColor,
 }: PlayerProps) => {
   const firstName: string = playerName.split(' ')[0];
   const abbrev: string = firstName.length > 2 ? firstName.substring(0, 2) : firstName;
-  const playerColor = isActive ? 'primary.main' : 'grey.500';
 
   /**
    * Determines the player's current status to display (turn, winner, or waiting).
@@ -87,7 +88,7 @@ export const Player = ({
     if (isActive) {
       return (
         <Box sx={activeTurn()}>
-          <Typography variant="h6" color={playerColor}>
+          <Typography variant="h6" color={isActive ? 'primary.main' : 'grey.500'}>
             {firstName}'s Turn
           </Typography>
           {listening ? (
@@ -104,7 +105,7 @@ export const Player = ({
 
   return (
     <Box className={'player-box'} sx={playerBox(playerColor, isActive)}>
-      <Avatar className={'player-avatar'} sx={playerAvatar(isActive)}>
+      <Avatar className={'player-avatar'} sx={playerAvatar(playerColor)}>
         {abbrev}
       </Avatar>
       <Timer
@@ -112,6 +113,7 @@ export const Player = ({
         onTimeOut={onTimeOut}
         isActive={isActive}
         playerName={playerName}
+        playerColor={playerColor}
       />
       {getPlayerStatus()}
     </Box>

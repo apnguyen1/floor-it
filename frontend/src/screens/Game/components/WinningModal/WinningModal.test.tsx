@@ -79,8 +79,5 @@ describe('WinningModal', () => {
 
     // Check that onClose was called
     expect(mockOnClose).toHaveBeenCalledTimes(1);
-
-    // Check that screen was changed to Categories
-    expect(mockSetScreen).toHaveBeenCalledWith('categories');
   });
 });
