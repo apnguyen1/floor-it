@@ -27,8 +27,10 @@
     "@mui/material": "^6.4.3",
     "react": "^19.0.0",
     "react-color": "^2.19.3",
+    "react-confetti": "^6.2.3",
     "react-dom": "^19.0.0",
     "react-speech-recognition": "^3.10.0",
+    "react-use": "^17.6.0",
     "regenerator-runtime": "^0.14.1"
   },
   "devDependencies": {
