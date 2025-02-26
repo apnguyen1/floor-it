@@ -29,6 +29,8 @@ export const questionContent = (): SxProps<Theme> => ({
   alignItems: 'center',
   justifyContent: 'center',
   gap: 2,
+  flex: 1,
+  minHeight: 0,
 });
 
 export const transcriptBox = (): SxProps<Theme> => ({

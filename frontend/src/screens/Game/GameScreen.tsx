@@ -144,7 +144,7 @@ export const GameScreen = () => {
       >
         Back
       </Button>
-      <Box sx={gameContent()}>
+      <Box className={'game-content'} sx={gameContent()}>
         <Player
           playerName={players.P1.name}
           gameStatus={gameStatus}

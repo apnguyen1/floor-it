@@ -1,5 +1,6 @@
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { memo } from 'react';
+import { imageQuestion, textQuestion } from './TriviaQuestion.style.tsx';
 
 /**
  * Props for the TriviaQuestion component
@@ -20,15 +21,17 @@ const TriviaQuestion = memo(({ type, question }: TriviaQuestionProps) => {
     <>
       {type === 'text' ? (
         <>
-          <Typography variant={'h3'} color="primary">
+          <Typography variant={'h3'} color="primary" sx={textQuestion()}>
             {question}
           </Typography>
         </>
       ) : (
-        <img
+        <Box
+          className={'image-question'}
+          component={'img'}
           src={question}
-          alt="trivia image"
-          style={{ maxWidth: '100%', height: 'auto', objectFit: 'contain' }}
+          alt={'trivia image'}
+          sx={imageQuestion()}
         />
       )}
     </>
