@@ -17,7 +17,7 @@ import {
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { ScreenType } from '../../constants/screens.ts';
 import { Palette } from '@mui/icons-material';
-import { getAvatarInitials } from '../../utils/avatarLetter.ts'; // Icon for Color
+import { getAvatarInitials } from '../../utils/avatarInitials.ts'; // Icon for Color
 // Picker
 
 // First, let's move the color options to be reusable

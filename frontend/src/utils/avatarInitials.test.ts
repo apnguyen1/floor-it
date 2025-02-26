@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { getAvatarInitials } from './avatarLetter.ts';
+import { getAvatarInitials } from './avatarInitials.ts';
 
 describe('getAvatarLetter', () => {
   it('should return initials for full names', () => {

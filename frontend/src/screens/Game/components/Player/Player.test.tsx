@@ -43,7 +43,7 @@ describe('Player', () => {
       />,
     );
 
-    expect(screen.getByText('Jo')).toBeInTheDocument();
+    expect(screen.getByText('JD')).toBeInTheDocument();
 
     const timerElement = screen.getByTestId('timer-mock');
     expect(timerElement).toHaveTextContent('inGame=false');
@@ -69,7 +69,7 @@ describe('Player', () => {
     );
 
     // Check avatar abbreviation is rendered correctly for short names
-    expect(screen.getByText('Jo')).toBeInTheDocument();
+    expect(screen.getByText('J')).toBeInTheDocument();
   });
 
   it('should show "You will start!" message when game not started and player is active', () => {
@@ -241,6 +241,6 @@ describe('Player', () => {
     );
 
     expect(screen.getByText("John's Turn")).toBeInTheDocument();
-    expect(screen.getByText('Jo')).toBeInTheDocument();
+    expect(screen.getByText('JJD')).toBeInTheDocument();
   });
 });
