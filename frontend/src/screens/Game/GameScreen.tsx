@@ -9,6 +9,7 @@ import { useSpeechCommands } from '../../hooks/useSpeechCommands.ts';
 import SpeechRecognition from 'react-speech-recognition';
 import { GameStatus } from './GameScreen.type.ts';
 import { gameBox } from './GameScreen.style.ts';
+import WinningModal from './components/WinningModal/WinningModal.tsx';
 
 /**
  * `GameScreen` manages the state and logic for the trivia game.
@@ -27,6 +28,7 @@ export const GameScreen = () => {
     activePlayer: true,
     winner: undefined,
   });
+  const [showWinningModal, setShowWinningModal] = useState(false);
   //  Reference to the audio element for the winning sound effect.
   const winRef = useRef<HTMLAudioElement>(new Audio('/sounds/win.mp3'));
 
@@ -55,6 +57,7 @@ export const GameScreen = () => {
    * Handles the start of a trivia game
    *
    *  - sets the game status of `inGame` to true
+   *  - hides the winning celebratory modal
    *  - begins transcription of the user's speech
    *  - pauses any ongoing audio.
    */
@@ -70,12 +73,14 @@ export const GameScreen = () => {
     if (winRef.current) {
       winRef.current.pause();
     }
+    setShowWinningModal(false);
   }, []);
 
   /**
    * Handles the end of a trivia game
    *
    *  - sets the game status of `inGame` to false and determines the winner
+   *  - shows the winning celebratory modal
    *  - stops transcription of the user's speech
    *  - plays the winning celebratory music.
    */
@@ -91,6 +96,7 @@ export const GameScreen = () => {
         winRef.current.currentTime = 0;
         winRef.current.play().catch((e) => console.error(e));
       }
+      setShowWinningModal(true);
     },
     [players.P1.name, players.P2.name],
   );
@@ -112,6 +118,20 @@ export const GameScreen = () => {
       winRef.current.pause();
     }
   }, [setScreen]);
+
+  /**
+   * Closes the winning modal without nagivating anywhere
+   */
+  const handleCloseWinningModal = useCallback(() => {
+    setShowWinningModal(false);
+  }, []);
+
+  const winnerPlayer =
+    gameStatus.winner === players.P1.name
+      ? players.P1
+      : gameStatus.winner === players.P2.name
+        ? players.P2
+        : undefined;
 
   return (
     <Box className="game-box" sx={gameBox(players)}>
@@ -140,6 +160,11 @@ export const GameScreen = () => {
         onTimeOut={handleTimeOut}
         isActive={!gameStatus.activePlayer}
         listening={listening}
+      />
+      <WinningModal
+        isOpen={showWinningModal}
+        onClose={handleCloseWinningModal}
+        winner={winnerPlayer}
       />
     </Box>
   );

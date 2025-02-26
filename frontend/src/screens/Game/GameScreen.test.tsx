@@ -28,6 +28,26 @@ vi.mock('react-speech-recognition', () => ({
   },
 }));
 
+vi.mock('react-confetti', () => ({
+  default: vi.fn(() => <div data-testid="mock-confetti" />),
+}));
+
+beforeAll(() => {
+  window.HTMLMediaElement.prototype.play = vi.fn(() => Promise.resolve());
+  window.HTMLMediaElement.prototype.pause = vi.fn();
+});
+
+vi.mock('./components/WinningModal//WinningModal', () => ({
+  default: vi.fn(({ isOpen, winner, onClose }) =>
+    isOpen ? (
+      <div data-testid="mock-winning-modal">
+        {winner?.name} wins
+        <button onClick={onClose}>Close</button>
+      </div>
+    ) : null,
+  ),
+}));
+
 interface PlayerPropsMock {
   playerName: string;
   isActive: boolean;
@@ -155,12 +175,17 @@ describe('GameScreen', () => {
     const user = userEvent.setup();
     render(<GameScreen />);
 
-    await user.click(screen.getByTestId('start-game'));
+    // Ensure your test has proper mocks for any SpeechRecognition functionality
+    vi.mocked(SpeechRecognition.abortListening).mockClear();
 
+    await user.click(screen.getByTestId('start-game'));
     await user.click(screen.getByTestId('timeout-Player1'));
 
     expect(screen.getByTestId('game-status')).toHaveTextContent('Not In Game');
     expect(SpeechRecognition.abortListening).toHaveBeenCalledTimes(1);
+
+    // Check that the winning modal appears
+    expect(screen.getByTestId('mock-winning-modal')).toBeInTheDocument();
   });
 
   it('should navigate back to category screen when back button is clicked', async () => {
