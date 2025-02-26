@@ -104,7 +104,7 @@ export const Player = ({
 
   return (
     <Box className={'player-box'} sx={playerBox(playerColor, isActive)}>
-      <Avatar className={'player-avatar'} sx={playerAvatar(isActive)}>
+      <Avatar className={'player-avatar'} sx={playerAvatar(playerColor)}>
         {getAvatarInitials(playerName, 'Player')}
       </Avatar>
       <Timer
