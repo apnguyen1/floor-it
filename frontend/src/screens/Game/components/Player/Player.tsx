@@ -4,6 +4,7 @@ import MicOffIcon from '@mui/icons-material/MicOff';
 import Timer from './Timer/Timer.tsx';
 import { playerAvatar, playerBox } from './Player.style.ts';
 import { GameStatus } from '../../GameScreen.type.ts';
+import { getAvatarInitials } from '../../../../utils/avatarInitials.ts';
 
 /**
  * Props for the Player component.
@@ -35,8 +36,6 @@ export const Player = ({
   listening,
 }: PlayerProps) => {
   const firstName: string = playerName.split(' ')[0];
-  const abbrev: string = firstName.length > 2 ? firstName.substring(0, 2) : firstName;
-
   /**
    * Determines the player's current status to display (turn, winner, or waiting).
    */
@@ -83,7 +82,7 @@ export const Player = ({
   return (
     <Box className={'player-box'} sx={playerBox()}>
       <Avatar className={'player-avatar'} sx={playerAvatar(isActive)}>
-        {abbrev}
+        {getAvatarInitials(playerName, 'Player')}
       </Avatar>
       <Timer
         inGame={gameStatus.inGame}
