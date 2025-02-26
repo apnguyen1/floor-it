@@ -98,6 +98,8 @@ const WinningModal = ({ isOpen, winner, onClose }: WinningModalProps) => {
             >
               Play Again
             </Button>
+            {/*  TODO: continue to next category and continue track of player points
+                  ticket-116 & #115*/}
           </Box>
         </Box>
       </>
