@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { Dispatch, MouseEvent, SetStateAction, useState } from 'react';
 import { useApp } from '../../hooks/useApp.ts';
 import {
   Avatar,
@@ -16,7 +16,9 @@ import {
 } from '@mui/material';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import { ScreenType } from '../../constants/screens.ts';
-import { Palette } from '@mui/icons-material'; // Icon for Color Picker
+import { Palette } from '@mui/icons-material';
+import { getAvatarInitials } from '../../utils/avatarInitials.ts'; // Icon for Color
+// Picker
 
 // First, let's move the color options to be reusable
 const COLOR_OPTIONS = [
@@ -39,12 +41,12 @@ const ColorPicker = ({
   allSelectedColors,
 }: {
   selectedColor: string;
-  setSelectedColor: React.Dispatch<React.SetStateAction<string>>;
+  setSelectedColor: Dispatch<SetStateAction<string>>;
   allSelectedColors: string[];
 }) => {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
 
-  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+  const handleClick = (event: MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -112,11 +114,6 @@ export const AvatarScreen = () => {
 
   const [player1Color, setPlayer1Color] = useState(players.P1.color);
   const [player2Color, setPlayer2Color] = useState(players.P2.color);
-
-  // Get display letters for avatars
-  const getAvatarLetter = (name: string, defaultValue: string) => {
-    return name.trim() ? name.trim()[0].toUpperCase() : defaultValue;
-  };
 
   const handlePlayer1NameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setPlayer1Name(event.target.value);
@@ -190,6 +187,7 @@ export const AvatarScreen = () => {
               alignItems="center"
             >
               {/* Player 1 */}
+              {/*TODO this needs to be abstracted into components*/}
               <Box
                 className="player-box"
                 sx={{
@@ -214,7 +212,7 @@ export const AvatarScreen = () => {
                     fontWeight: 'bold',
                   }}
                 >
-                  {getAvatarLetter(player1Name, 'P1')}
+                  {getAvatarInitials(player1Name, 'P1')}
                 </Avatar>
                 <TextField
                   placeholder="Player 1"
@@ -260,7 +258,7 @@ export const AvatarScreen = () => {
                     fontWeight: 'bold',
                   }}
                 >
-                  {getAvatarLetter(player2Name, 'P2')}
+                  {getAvatarInitials(player2Name, 'P2')}
                 </Avatar>
                 <TextField
                   placeholder="Player 2"
