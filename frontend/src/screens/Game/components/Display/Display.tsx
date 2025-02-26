@@ -86,11 +86,13 @@ export const Display = ({
               />
             )}
           </Box>
-          <Box className={'transcript-box'} sx={transcriptBox()}>
-            <Typography variant={'subtitle2'} color={'textSecondary'}>
-              <strong>You said:</strong> {transcript || 'Waiting for your answer...'}
-            </Typography>
-          </Box>
+          <Typography
+            variant={'subtitle2'}
+            color={'textSecondary'}
+            sx={transcriptBox()}
+          >
+            <strong>You said:</strong> {transcript || 'Waiting for your answer...'}
+          </Typography>
           <Box className={'help-text'} sx={helpText()}>
             <SpaceBarIcon fontSize="small" />
             <Typography>

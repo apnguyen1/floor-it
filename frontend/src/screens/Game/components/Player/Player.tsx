@@ -2,8 +2,17 @@ import { Avatar, Box, Typography } from '@mui/material';
 import MicIcon from '@mui/icons-material/Mic';
 import MicOffIcon from '@mui/icons-material/MicOff';
 import Timer from './Timer/Timer.tsx';
-import { playerAvatar, playerBox } from './Player.style.ts';
+import {
+  activeTurn,
+  micIcon,
+  playerAvatar,
+  playerBox,
+  playerStatus,
+} from './Player.style.ts';
 import { GameStatus } from '../../GameScreen.type.ts';
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import TimerOffIcon from '@mui/icons-material/TimerOff';
+import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 
 /**
  * Props for the Player component.
@@ -36,6 +45,7 @@ export const Player = ({
 }: PlayerProps) => {
   const firstName: string = playerName.split(' ')[0];
   const abbrev: string = firstName.length > 2 ? firstName.substring(0, 2) : firstName;
+  const playerColor = isActive ? 'primary.main' : 'grey.500';
 
   /**
    * Determines the player's current status to display (turn, winner, or waiting).
@@ -43,37 +53,49 @@ export const Player = ({
   const getPlayerStatus = () => {
     if (gameStatus.winner) {
       return (
-        <Typography
-          variant="h6"
-          color={gameStatus.winner === playerName ? 'success.main' : 'error.main'}
-        >
-          {gameStatus.winner === playerName ? 'Winner!' : "Time's up!"}
-        </Typography>
+        <Box sx={playerStatus(gameStatus.winner === playerName)}>
+          {gameStatus.winner === playerName ? (
+            <>
+              <EmojiEventsIcon color="success" />
+              <Typography variant="h6" color="success.main">
+                Winner!
+              </Typography>
+            </>
+          ) : (
+            <>
+              <TimerOffIcon color="error" />
+              <Typography variant="h6" color="error.main">
+                Time's up!
+              </Typography>
+            </>
+          )}
+        </Box>
       );
     }
 
     if (!gameStatus.inGame && isActive) {
       return (
-        <Typography variant="h6" color="info">
-          <strong>
-            <u>You will start!</u>
-          </strong>
-        </Typography>
+        <Box sx={playerStatus(true)}>
+          <HourglassTopIcon />
+          <Typography variant="h6" color="info.main">
+            You will start!
+          </Typography>
+        </Box>
       );
     }
 
     if (isActive) {
       return (
-        <>
-          <Typography variant="h6" color={isActive ? 'primary' : 'textDisabled'}>
+        <Box sx={activeTurn()}>
+          <Typography variant="h6" color={playerColor}>
             {firstName}'s Turn
           </Typography>
           {listening ? (
-            <MicIcon color={'success'} fontSize={'large'} />
+            <MicIcon sx={micIcon(listening)} />
           ) : (
-            <MicOffIcon color={'error'} fontSize={'large'} />
+            <MicOffIcon sx={micIcon(listening)} />
           )}
-        </>
+        </Box>
       );
     }
 
@@ -81,7 +103,7 @@ export const Player = ({
   };
 
   return (
-    <Box className={'player-box'} sx={playerBox()}>
+    <Box className={'player-box'} sx={playerBox(playerColor, isActive)}>
       <Avatar className={'player-avatar'} sx={playerAvatar(isActive)}>
         {abbrev}
       </Avatar>
