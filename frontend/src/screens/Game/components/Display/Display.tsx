@@ -1,8 +1,14 @@
-import { Alert, AlertTitle, Box, Typography } from '@mui/material';
+import { Alert, AlertTitle, Box, CircularProgress, Typography } from '@mui/material';
 import TriviaQuestion from './GameDisplay/TriviaQuestion.tsx';
 import { GamePreview } from './GamePreview/GamePreview.tsx';
 import { CategoryContent, Question } from '../../GameScreen.type.ts';
-import { questionBox } from './DIsplay.style.ts';
+import {
+  helpText,
+  questionBox,
+  questionContent,
+  transcriptBox,
+} from './Display.style.ts';
+import SpaceBarIcon from '@mui/icons-material/SpaceBar';
 
 /**
  * Props for the Display component.
@@ -41,32 +47,56 @@ export const Display = ({
   errorMessage,
 }: DisplayProps) => {
   // Show loading state when category or question data is unavailable
-  if (!category || !currentQuestion)
-    return <Typography variant="h3">Loading...</Typography>;
+  const isLoading = !category && !currentQuestion;
+
+  // Show loading state when category or question data is unavailable
+  if (isLoading) {
+    return (
+      <Box sx={questionBox()}>
+        <CircularProgress size={60} color="primary" />
+        <Typography variant="h5" color="primary.main" sx={{ mt: 2 }}>
+          Loading...
+        </Typography>
+      </Box>
+    );
+  }
 
   // Show an error alert if an error has occurred
   if (hasError) {
     return (
-      <Alert variant="filled" severity="error">
-        <AlertTitle>Error</AlertTitle>
-        {errorMessage}
-      </Alert>
+      <Box sx={questionBox()}>
+        <Alert variant="filled" severity="error">
+          <AlertTitle>Error</AlertTitle>
+          {errorMessage}
+        </Alert>
+      </Box>
     );
   }
-
   return (
     <Box className="question-box" sx={questionBox()}>
-      {!inGame ? (
+      {!inGame && category ? (
         <GamePreview category={category} onStartGame={onStartGame} />
       ) : (
         <>
-          <TriviaQuestion type={category.type} question={currentQuestion.question} />
-          <Typography variant={'subtitle2'} color={'textSecondary'}>
-            transcript: {transcript}
-          </Typography>
-          <Typography variant={'caption'}>
-            Press <b>Space</b> or say <b>Next</b> to skip question
-          </Typography>
+          <Box className={'question-content'} sx={questionContent()}>
+            {currentQuestion && category && (
+              <TriviaQuestion
+                type={category.type}
+                question={currentQuestion.question}
+              />
+            )}
+          </Box>
+          <Box className={'transcript-box'} sx={transcriptBox()}>
+            <Typography variant={'subtitle2'} color={'textSecondary'}>
+              <strong>You said:</strong> {transcript || 'Waiting for your answer...'}
+            </Typography>
+          </Box>
+          <Box className={'help-text'} sx={helpText()}>
+            <SpaceBarIcon fontSize="small" />
+            <Typography>
+              Press <strong>Space</strong> or say <strong>Next</strong> to skip question
+            </Typography>
+          </Box>
         </>
       )}
     </Box>
