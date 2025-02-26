@@ -32,7 +32,7 @@ and casual gamers alike.
    ```
 3. Install dependencies for the backend:
    ```bash
-   cd ../backend
+   cd backend
    poetry install
    ```
 
@@ -164,6 +164,6 @@ floor-it/
    git push origin v1.0
    ```
 
-### Beta Release
+### Beta++ Release
 
-**Version:** v1.0
+**Version:** v1.1.0
