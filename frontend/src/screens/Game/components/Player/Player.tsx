@@ -2,8 +2,17 @@ import { Avatar, Box, Typography } from '@mui/material';
 import MicIcon from '@mui/icons-material/Mic';
 import MicOffIcon from '@mui/icons-material/MicOff';
 import Timer from './Timer/Timer.tsx';
-import { playerAvatar, playerBox } from './Player.style.ts';
+import {
+  activeTurn,
+  micIcon,
+  playerAvatar,
+  playerBox,
+  playerStatus,
+} from './Player.style.ts';
 import { GameStatus } from '../../GameScreen.type.ts';
+import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import TimerOffIcon from '@mui/icons-material/TimerOff';
+import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 import { getAvatarInitials } from '../../../../utils/avatarInitials.ts';
 
 /**
@@ -20,6 +29,7 @@ interface PlayerProps {
   isActive: boolean;
   /** Indicates if the player is currently speaking (mic on/off) */
   listening: boolean;
+  playerColor: string;
 }
 
 /**
@@ -34,6 +44,7 @@ export const Player = ({
   onTimeOut,
   isActive,
   listening,
+  playerColor,
 }: PlayerProps) => {
   const firstName: string = playerName.split(' ')[0];
   /**
@@ -42,37 +53,49 @@ export const Player = ({
   const getPlayerStatus = () => {
     if (gameStatus.winner) {
       return (
-        <Typography
-          variant="h6"
-          color={gameStatus.winner === playerName ? 'success.main' : 'error.main'}
-        >
-          {gameStatus.winner === playerName ? 'Winner!' : "Time's up!"}
-        </Typography>
+        <Box sx={playerStatus(gameStatus.winner === playerName)}>
+          {gameStatus.winner === playerName ? (
+            <>
+              <EmojiEventsIcon color="success" />
+              <Typography variant="h6" color="success.main">
+                Winner!
+              </Typography>
+            </>
+          ) : (
+            <>
+              <TimerOffIcon color="error" />
+              <Typography variant="h6" color="error.main">
+                Time's up!
+              </Typography>
+            </>
+          )}
+        </Box>
       );
     }
 
     if (!gameStatus.inGame && isActive) {
       return (
-        <Typography variant="h6" color="info">
-          <strong>
-            <u>You will start!</u>
-          </strong>
-        </Typography>
+        <Box sx={playerStatus(true)}>
+          <HourglassTopIcon />
+          <Typography variant="h6" color="info.main">
+            You will start!
+          </Typography>
+        </Box>
       );
     }
 
     if (isActive) {
       return (
-        <>
-          <Typography variant="h6" color={isActive ? 'primary' : 'textDisabled'}>
+        <Box sx={activeTurn()}>
+          <Typography variant="h6" color={isActive ? 'primary.main' : 'grey.500'}>
             {firstName}'s Turn
           </Typography>
           {listening ? (
-            <MicIcon color={'success'} fontSize={'large'} />
+            <MicIcon sx={micIcon(listening)} />
           ) : (
-            <MicOffIcon color={'error'} fontSize={'large'} />
+            <MicOffIcon sx={micIcon(listening)} />
           )}
-        </>
+        </Box>
       );
     }
 
@@ -80,8 +103,8 @@ export const Player = ({
   };
 
   return (
-    <Box className={'player-box'} sx={playerBox()}>
-      <Avatar className={'player-avatar'} sx={playerAvatar(isActive)}>
+    <Box className={'player-box'} sx={playerBox(playerColor, isActive)}>
+      <Avatar className={'player-avatar'} sx={playerAvatar(playerColor)}>
         {getAvatarInitials(playerName, 'Player')}
       </Avatar>
       <Timer
@@ -89,6 +112,7 @@ export const Player = ({
         onTimeOut={onTimeOut}
         isActive={isActive}
         playerName={playerName}
+        playerColor={playerColor}
       />
       {getPlayerStatus()}
     </Box>

@@ -19,10 +19,11 @@ describe('Timer', () => {
         onTimeOut={() => {}}
         isActive={false}
         playerName="Player 1"
+        playerColor={'black'}
       />,
     );
 
-    expect(screen.getByText(INITIAL_TIME + 's')).toBeInTheDocument();
+    expect(screen.getByText(INITIAL_TIME)).toBeInTheDocument();
   });
 
   it('should not count down when game is not in progress', () => {
@@ -32,6 +33,7 @@ describe('Timer', () => {
         onTimeOut={() => {}}
         isActive={true}
         playerName="Player 1"
+        playerColor={'black'}
       />,
     );
 
@@ -40,7 +42,7 @@ describe('Timer', () => {
     });
 
     // Time should still be at initial value
-    expect(screen.getByText(INITIAL_TIME + 's')).toBeInTheDocument();
+    expect(screen.getByText(INITIAL_TIME)).toBeInTheDocument();
   });
 
   it('should not count down when timer is not active', () => {
@@ -50,6 +52,7 @@ describe('Timer', () => {
         onTimeOut={() => {}}
         isActive={false}
         playerName="Player 1"
+        playerColor={'black'}
       />,
     );
 
@@ -58,7 +61,7 @@ describe('Timer', () => {
     });
 
     // Time should still be at initial value
-    expect(screen.getByText(INITIAL_TIME + 's')).toBeInTheDocument();
+    expect(screen.getByText(INITIAL_TIME)).toBeInTheDocument();
   });
 
   it('should count down when game is in progress and timer is active', () => {
@@ -68,6 +71,7 @@ describe('Timer', () => {
         onTimeOut={() => {}}
         isActive={true}
         playerName="Player 1"
+        playerColor={'black'}
       />,
     );
 
@@ -76,7 +80,7 @@ describe('Timer', () => {
       vi.advanceTimersByTime(secondsAdvanced * 1000); // 5 seconds
     });
 
-    expect(screen.getByText(INITIAL_TIME - secondsAdvanced + 's')).toBeInTheDocument();
+    expect(screen.getByText(INITIAL_TIME - secondsAdvanced)).toBeInTheDocument();
   });
 
   it('should call onTimeOut when timer reaches zero', () => {
@@ -87,6 +91,7 @@ describe('Timer', () => {
         onTimeOut={onTimeOutMock}
         isActive={true}
         playerName="Player 1"
+        playerColor={'black'}
       />,
     );
 
@@ -96,7 +101,7 @@ describe('Timer', () => {
     });
 
     expect(onTimeOutMock).toHaveBeenCalledWith('Player 1');
-    expect(screen.getByText('0s')).toBeInTheDocument();
+    expect(screen.getByText('0')).toBeInTheDocument();
   });
 
   it('should reset timer when game state changes to active', () => {
@@ -106,6 +111,7 @@ describe('Timer', () => {
         onTimeOut={() => {}}
         isActive={false}
         playerName="Player 1"
+        playerColor={'black'}
       />,
     );
 
@@ -116,10 +122,11 @@ describe('Timer', () => {
         onTimeOut={() => {}}
         isActive={false}
         playerName="Player 1"
+        playerColor={'black'}
       />,
     );
 
     // Timer should be reset to initial value
-    expect(screen.getByText(INITIAL_TIME + 's')).toBeInTheDocument();
+    expect(screen.getByText(INITIAL_TIME)).toBeInTheDocument();
   });
 });
