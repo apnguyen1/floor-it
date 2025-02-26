@@ -1,7 +1,7 @@
 import { createContext, ReactNode, useState } from 'react';
 import { PlayerState } from '../types/global.type.ts';
 
-type AppContextType = {
+export type AppContextType = {
   screen: string;
   setScreen: (screen: string) => void;
   players: {
