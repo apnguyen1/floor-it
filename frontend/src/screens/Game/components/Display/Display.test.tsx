@@ -79,7 +79,7 @@ describe('Display', () => {
     render(<Display {...mockProps} inGame={true} transcript={transcript} />);
 
     expect(screen.getByTestId('trivia-question')).toBeInTheDocument();
-    expect(screen.getByText(`transcript: ${transcript}`)).toBeInTheDocument();
+    expect(screen.getByText(`You said:`)).toBeInTheDocument();
   });
 
   it('should call onStartGame when GamePreview is clicked', async () => {

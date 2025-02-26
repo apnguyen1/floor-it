@@ -1,5 +1,12 @@
-import { Button, Typography } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 import { CategoryContent } from '../../../GameScreen.type.ts';
+import {
+  categoryDescription,
+  categoryTitle,
+  gamePreview,
+  previewImage,
+  startButton,
+} from './GamePreview.style.ts';
 
 /**
  * Props for GamePreview components
@@ -20,26 +27,22 @@ export const GamePreview = ({ category, onStartGame }: GamePreviewProps) => {
   const imgUrl = `previews/${category.preview_img}`;
 
   return (
-    <>
-      <Typography variant="h2" color="primary">
+    <Box className="game-preview" sx={gamePreview()}>
+      <Typography variant="h2" sx={categoryTitle()}>
         {category.name}
       </Typography>
-      <img
-        src={imgUrl}
-        alt="Category Preview"
-        style={{
-          width: '80%',
-          maxHeight: '300px',
-          borderRadius: '8px',
-          margin: '10px 0',
-        }}
-      />
-      <Typography variant="h5" color="secondary">
+      <Box component="img" src={imgUrl} alt="Category Preview" sx={previewImage()} />
+      <Typography variant="h5" color="secondary" sx={categoryDescription()}>
         {category.preview_desc}
       </Typography>
-      <Button variant="contained" color="success" onClick={onStartGame}>
+      <Button
+        variant="contained"
+        color="success"
+        onClick={onStartGame}
+        sx={startButton()}
+      >
         Start Game
       </Button>
-    </>
+    </Box>
   );
 };

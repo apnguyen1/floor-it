@@ -48,7 +48,7 @@ const WinningModal = ({ isOpen, winner, onClose }: WinningModalProps) => {
 
   const handlePlayAgain = () => {
     onClose();
-    setScreen(ScreenType.Categories);
+    setScreen(ScreenType.Game);
   };
 
   if (!winner) return null;

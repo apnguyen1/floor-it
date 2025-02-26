@@ -8,8 +8,9 @@ import { useCategoryQuestions } from '../../hooks/useCategoryQuestions.ts';
 import { useSpeechCommands } from '../../hooks/useSpeechCommands.ts';
 import SpeechRecognition from 'react-speech-recognition';
 import { GameStatus } from './GameScreen.type.ts';
-import { gameBox } from './GameScreen.style.ts';
+import { backButton, gameBox, gameContent } from './GameScreen.style.ts';
 import WinningModal from './components/WinningModal/WinningModal.tsx';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 /**
  * `GameScreen` manages the state and logic for the trivia game.
@@ -135,37 +136,46 @@ export const GameScreen = () => {
 
   return (
     <Box className="game-box" sx={gameBox(players)}>
-      <Button variant="text" onClick={handleBackButton}>
+      <Button
+        variant="contained"
+        startIcon={<ArrowBackIcon />}
+        onClick={handleBackButton}
+        sx={backButton()}
+      >
         Back
       </Button>
-      <Player
-        playerName={players.P1.name}
-        gameStatus={gameStatus}
-        onTimeOut={handleTimeOut}
-        isActive={gameStatus.activePlayer}
-        listening={listening}
-      />
-      <Display
-        category={category}
-        currentQuestion={currentQuestion}
-        inGame={gameStatus.inGame}
-        onStartGame={handleStartGame}
-        transcript={transcript}
-        hasError={hasError}
-        errorMessage={errorMessage}
-      />
-      <Player
-        playerName={players.P2.name}
-        gameStatus={gameStatus}
-        onTimeOut={handleTimeOut}
-        isActive={!gameStatus.activePlayer}
-        listening={listening}
-      />
-      <WinningModal
-        isOpen={showWinningModal}
-        onClose={handleCloseWinningModal}
-        winner={winnerPlayer}
-      />
+      <Box className={'game-content'} sx={gameContent()}>
+        <Player
+          playerName={players.P1.name}
+          gameStatus={gameStatus}
+          onTimeOut={handleTimeOut}
+          isActive={gameStatus.activePlayer}
+          listening={listening}
+          playerColor={players.P1.color}
+        />
+        <Display
+          category={category}
+          currentQuestion={currentQuestion}
+          inGame={gameStatus.inGame}
+          onStartGame={handleStartGame}
+          transcript={transcript}
+          hasError={hasError}
+          errorMessage={errorMessage}
+        />
+        <Player
+          playerName={players.P2.name}
+          gameStatus={gameStatus}
+          onTimeOut={handleTimeOut}
+          isActive={!gameStatus.activePlayer}
+          listening={listening}
+          playerColor={players.P2.color}
+        />
+        <WinningModal
+          isOpen={showWinningModal}
+          onClose={handleCloseWinningModal}
+          winner={winnerPlayer}
+        />
+      </Box>
     </Box>
   );
 };

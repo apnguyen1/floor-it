@@ -22,7 +22,7 @@ export const createCommand = (overrides: Partial<Command> = {}): Command => ({
   callback: () => {},
   isFuzzyMatch: true,
   matchInterim: true,
-  fuzzyMatchingThreshold: 1,
+  fuzzyMatchingThreshold: 0.6,
   bestMatchOnly: true,
   ...overrides,
 });
