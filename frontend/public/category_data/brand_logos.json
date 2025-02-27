@@ -3,6 +3,7 @@
   "preview_img": "default-preview.png",
   "preview_desc": "Guess the brand by their logo!",
   "type": "img",
+  "fuzzy_matching_threshold": 0.4,
   "questions": [
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/Champion.png",
@@ -543,7 +544,7 @@
     },
     {
       "question": "https://raw.githubusercontent.com/fuzzysb/Logo-Quiz-Logos/master/Logos/ADT.png",
-      "answers": ["ADT Security", "Ay Dee Tee", "ADee Tee", "Ay Dee Tea"],
+      "answers": ["ADT", "ADT Security", "Ay Dee Tee", "ADee Tee", "Ay Dee Tea"],
       "aliases": []
     },
     {

@@ -61,6 +61,7 @@ class Category(ABC, Generic[T]):
         source: str,
         model: Type[T],
         question_type: QuestionType = QuestionType.TEXT,
+        fuzzy_matching_threshold: float = 0.6,
         name: str = "Category",
         img_name: str = "default-preview.png",
         desc: str = "Test your Trivia!",
@@ -74,6 +75,7 @@ class Category(ABC, Generic[T]):
         self.__preview_img: str = img_name
         self.__desc: str = desc
         self.__question_type: QuestionType = question_type
+        self.__fuzzy_matching_threshold: float = fuzzy_matching_threshold
 
         # Protected
         self._raw_data: T = self._load_data(model)
@@ -114,6 +116,14 @@ class Category(ABC, Generic[T]):
     @question_type.setter
     def question_type(self, question_type: QuestionType) -> None:
         self.__question_type = question_type
+
+    @property
+    def fuzzy_matching_threshold(self) -> float:
+        return self.__fuzzy_matching_threshold
+
+    @fuzzy_matching_threshold.setter
+    def fuzzy_matching_threshold(self, fuzzy_matching_threshold: float) -> None:
+        self.__fuzzy_matching_threshold = fuzzy_matching_threshold
 
     @property
     def formatted_data(self) -> dict[str, List[str]]:
@@ -169,6 +179,7 @@ class Category(ABC, Generic[T]):
             preview_img=self.__preview_img,
             preview_desc=self.__desc,
             type=self.question_type,
+            fuzzy_matching_threshold=self.__fuzzy_matching_threshold,
             questions=[
                 TriviaQuestionDTO(question=q, answers=a, aliases=generate_aliases(a))
                 for q, a in self._formatted_data.items()

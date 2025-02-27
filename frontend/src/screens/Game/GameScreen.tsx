@@ -48,8 +48,13 @@ export const GameScreen = () => {
   } = useApp();
 
   // handles selection of categories
-  const { category, currentQuestion, skipQuestion, setNextQuestion } =
-    useCategoryQuestions(selectedCategory);
+  const {
+    category,
+    currentQuestion,
+    skipQuestion,
+    setNextQuestion,
+    fuzzyMatchingThreshold,
+  } = useCategoryQuestions(selectedCategory);
 
   // handles speech dictation and logic
   const { transcript, listening, hasError, errorMessage } = useSpeechCommands(
@@ -63,6 +68,7 @@ export const GameScreen = () => {
       }));
     },
     skipQuestion,
+    fuzzyMatchingThreshold,
   );
 
   /**

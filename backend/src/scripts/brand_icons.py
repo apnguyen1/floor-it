@@ -13,6 +13,7 @@ class BrandIcons(Category[BrandIconsDTO]):
             question_type=QuestionType.IMG,
             name="Brand Logos",
             desc="Guess the brand by their logo!",
+            fuzzy_matching_threshold=0.4,
         )
 
     def brand_logo_to_name(self) -> dict:

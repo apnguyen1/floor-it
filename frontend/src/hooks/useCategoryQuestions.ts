@@ -17,6 +17,8 @@ export const useCategoryQuestions = (selectedCategory: string[]) => {
   const [currentQuestion, setCurrentQuestion] = useState<Question | undefined>(
     undefined,
   );
+  // fuzzy matching threshold, defaults to 0.6
+  const [fuzzyMatchingThreshold, setFuzzyMatchingThreshold] = useState<number>(0.6);
   // A reference to the list of questions
   const questions = useRef<Question[]>([]);
   // a reference to track the current index of question to display
@@ -43,6 +45,10 @@ export const useCategoryQuestions = (selectedCategory: string[]) => {
         setCategory(data);
         questions.current = shuffleArray(data.questions);
         setCurrentQuestion(questions.current[0]);
+        // set fuzzy matching threshold if specified in data
+        if (data.fuzzy_matching_threshold) {
+          setFuzzyMatchingThreshold(data.fuzzy_matching_threshold);
+        }
       })
       .catch((e) => console.error('Failed to fetch category:', e));
   }, [selectedCategory]);
@@ -83,5 +89,11 @@ export const useCategoryQuestions = (selectedCategory: string[]) => {
     setCurrentQuestion(questions.current[questionIndex.current]);
   };
 
-  return { category, currentQuestion, skipQuestion, setNextQuestion };
+  return {
+    category,
+    currentQuestion,
+    skipQuestion,
+    setNextQuestion,
+    fuzzyMatchingThreshold,
+  };
 };
