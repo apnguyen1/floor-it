@@ -33,7 +33,12 @@ def test_to_category_data_success():
     }
 
     model = to_category_data(
-        category_name, preview_img, preview_desc, question_type, json_data, fuzzy_matching_threshold
+        category_name,
+        preview_img,
+        preview_desc,
+        question_type,
+        json_data,
+        fuzzy_matching_threshold,
     )
     actual_json = model.model_dump()
 
