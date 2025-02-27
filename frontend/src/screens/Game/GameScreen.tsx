@@ -8,7 +8,7 @@ import { useCategoryQuestions } from '../../hooks/useCategoryQuestions.ts';
 import { useSpeechCommands } from '../../hooks/useSpeechCommands.ts';
 import SpeechRecognition from 'react-speech-recognition';
 import { GameStatus } from './GameScreen.type.ts';
-import { backButton, gameBox, gameContent } from './GameScreen.style.ts';
+import { backButton, gameBox, gameContent, settingButton } from './GameScreen.style.ts';
 import WinningModal from './components/WinningModal/WinningModal.tsx';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import SettingsIcon from '@mui/icons-material/Settings';
@@ -193,17 +193,7 @@ export const GameScreen = () => {
         variant="contained"
         startIcon={<SettingsIcon />}
         onClick={handleOpenSettings}
-        sx={{
-          position: 'absolute',
-          top: 20,
-          right: 20,
-          zIndex: 2,
-          backgroundColor: 'rgba(0, 0, 0, 0.2)',
-          '&:hover': {
-            backgroundColor: 'rgba(0, 0, 0, 0.4)',
-          },
-          boxShadow: 2,
-        }}
+        sx={settingButton()}
       >
         Settings
       </Button>
@@ -232,19 +222,19 @@ export const GameScreen = () => {
           isActive={!gameStatus.activePlayer}
           listening={listening}
         />
-        <WinningModal
-          isOpen={showWinningModal}
-          onClose={handleCloseWinningModal}
-          winner={winnerPlayer}
-        />
-        <SettingModal
-          isOpen={showSettingModal}
-          onClose={handleCloseSettingModal}
-          players={players}
-          useSharedTimer={useSharedTimer}
-          onSave={handleSaveSettings}
-        />
       </Box>
+      <WinningModal
+        isOpen={showWinningModal}
+        onClose={handleCloseWinningModal}
+        winner={winnerPlayer}
+      />
+      <SettingModal
+        isOpen={showSettingModal}
+        onClose={handleCloseSettingModal}
+        players={players}
+        useSharedTimer={useSharedTimer}
+        onSave={handleSaveSettings}
+      />
     </Box>
   );
 };

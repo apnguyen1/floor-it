@@ -51,3 +51,15 @@ export const backButton = (): SxProps<Theme> => ({
   boxShadow: 2,
   zIndex: 2,
 });
+
+export const settingButton = (): SxProps<Theme> => ({
+  position: 'absolute',
+  top: 20,
+  right: 20,
+  zIndex: 2,
+  backgroundColor: 'rgba(0, 0, 0, 0.2)',
+  '&:hover': {
+    backgroundColor: 'rgba(0, 0, 0, 0.4)',
+  },
+  boxShadow: 2,
+});

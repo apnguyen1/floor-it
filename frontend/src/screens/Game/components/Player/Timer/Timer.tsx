@@ -83,10 +83,7 @@ const Timer = ({ inGame, onTimeOut, isActive, playerState }: TimerProps) => {
       />
       <Typography
         key={`timer-${playerState.time}`}
-        sx={{
-          ...countdownBox(playerState.color, remainingSeconds),
-          animation: 'fadeInPulse 0.5s ease-out',
-        }}
+        sx={countdownBox(playerState.color, remainingSeconds)}
         variant="h2"
         position="absolute"
       >
