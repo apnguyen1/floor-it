@@ -30,6 +30,10 @@ const Timer = ({ inGame, onTimeOut, isActive, playerState }: TimerProps) => {
   const remainingSeconds = Math.floor(countdown / 1000);
   const percentRemaining = (countdown / initialTime) * 100;
 
+  useEffect(() => {
+    setCountDown(playerState.time * 1000);
+  }, [playerState.time]);
+
   /**
    * Resets the countdown timer when the game starts.
    */
@@ -78,7 +82,11 @@ const Timer = ({ inGame, onTimeOut, isActive, playerState }: TimerProps) => {
         sx={circularProgress(playerState.color, isActive, remainingSeconds)}
       />
       <Typography
-        sx={countdownBox(playerState.color, remainingSeconds)}
+        key={`timer-${playerState.time}`}
+        sx={{
+          ...countdownBox(playerState.color, remainingSeconds),
+          animation: 'fadeInPulse 0.5s ease-out',
+        }}
         variant="h2"
         position="absolute"
       >
