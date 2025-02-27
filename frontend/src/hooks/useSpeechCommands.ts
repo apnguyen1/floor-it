@@ -34,21 +34,28 @@ export const createCommand = (overrides: Partial<Command> = {}): Command => ({
  * - Detects spoken commands to answer or skip questions.
  * - Listens for keyboard shortcuts (Spacebar) to skip.
  * - Resets the transcript when correct answers change.
+ * - Applies fuzzy matching for speech recognition with a configurable threshold.
  *
  * @param {GameStatus} gameStatus - Current game status (inGame, activePlayer, winner).
  * @param {string[]} correctAnswers - List of correct answer phrases.
  * @param {() => void} onCorrectAnswer - Callback when a correct answer is spoken.
  * @param {() => void} onSkip - Callback when the user wants to skip.
+ * @param {number} [fuzzyMatchingThreshold=0.6] - Threshold for fuzzy matching (0 to 1). Default is 0.6 if not provided.
  */
 export const useSpeechCommands = (
   gameStatus: GameStatus,
   correctAnswers: string[],
   onCorrectAnswer: () => void,
   onSkip: () => void,
+  fuzzyMatchingThreshold: number = 0.6,
 ) => {
   const commands = useMemo(
     () => [
-      createCommand({ command: correctAnswers, callback: onCorrectAnswer }),
+      createCommand({
+        command: correctAnswers,
+        callback: onCorrectAnswer,
+        fuzzyMatchingThreshold: fuzzyMatchingThreshold,
+      }),
       createCommand({
         command: ['Next', 'Pass'], // handles skipping by voice command Next / Pass
         fuzzyMatchingThreshold: 0.9,

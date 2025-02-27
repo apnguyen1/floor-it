@@ -35,4 +35,5 @@ export type CategoryContent = {
   preview_desc: string;
   type: 'text' | 'img';
   questions: Question[];
+  fuzzy_matching_threshold?: number;
 };
