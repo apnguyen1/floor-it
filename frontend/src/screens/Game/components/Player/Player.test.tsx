@@ -1,7 +1,7 @@
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { GameStatus } from '../../GameScreen.type.ts';
-import { Player } from './Player.tsx';
+import { Player, PlayerProps } from './Player.tsx';
 
 interface MockProps {
   inGame: boolean;
@@ -26,24 +26,27 @@ describe('Player', () => {
     vi.clearAllMocks();
   });
 
-  it('should render player name and avatar', () => {
-    const gameStatus: GameStatus = {
+  const defaultProps: PlayerProps = {
+    playerName: 'John Doe',
+    gameStatus: {
       inGame: false,
       winner: undefined,
       activePlayer: false,
-    };
+    },
+    onTimeOut: mockOnTimeOut,
+    isActive: false,
+    listening: false,
+    playerColor: '',
+    playerTime: 30,
+  };
 
-    render(
-      <Player
-        playerName="John Doe"
-        gameStatus={gameStatus}
-        onTimeOut={mockOnTimeOut}
-        isActive={false}
-        listening={false}
-        playerColor={'black'}
-        playerTime={0}
-      />,
-    );
+  const renderPlayer = (overrides: Partial<PlayerProps>) => {
+    const props = { ...defaultProps, ...overrides };
+    return render(<Player {...props} />);
+  };
+
+  it('should render player name and avatar', () => {
+    renderPlayer({ playerName: 'John Doe' });
 
     expect(screen.getByText('JD')).toBeInTheDocument();
 
@@ -54,46 +57,17 @@ describe('Player', () => {
   });
 
   it('should handle short names correctly', () => {
-    const gameStatus: GameStatus = {
-      inGame: false,
-      winner: undefined,
-      activePlayer: false,
-    };
-
-    render(
-      <Player
-        playerName="Jo"
-        gameStatus={gameStatus}
-        onTimeOut={mockOnTimeOut}
-        isActive={false}
-        listening={false}
-        playerColor={'black'}
-        playerTime={0}
-      />,
-    );
+    renderPlayer({ playerName: 'Jo' });
 
     // Check avatar abbreviation is rendered correctly for short names
     expect(screen.getByText('J')).toBeInTheDocument();
   });
 
   it('should show "You will start!" message when game not started and player is active', () => {
-    const gameStatus: GameStatus = {
-      inGame: false,
-      winner: undefined,
-      activePlayer: true,
-    };
-
-    render(
-      <Player
-        playerName="John Doe"
-        gameStatus={gameStatus}
-        onTimeOut={mockOnTimeOut}
-        isActive={true}
-        listening={false}
-        playerColor={'black'}
-        playerTime={0}
-      />,
-    );
+    renderPlayer({
+      gameStatus: { ...defaultProps.gameStatus, activePlayer: true },
+      isActive: true,
+    });
 
     expect(screen.getByText('You will start!')).toBeInTheDocument();
   });
@@ -105,22 +79,10 @@ describe('Player', () => {
       activePlayer: true,
     };
 
-    render(
-      <Player
-        playerName="John Doe"
-        gameStatus={gameStatus}
-        onTimeOut={mockOnTimeOut}
-        isActive={true}
-        listening={true}
-        playerColor={'black'}
-        playerTime={0}
-      />,
-    );
+    renderPlayer({ gameStatus, isActive: true, listening: true });
 
     expect(screen.getByText("John's Turn")).toBeInTheDocument();
 
-    // Check that the MicIcon is rendered (we can't directly check for the icon
-    // component) but we can check for absence of the MicOffIcon's parent element
     const micOffElement = document.querySelector('[data-testid="MicOffIcon"]');
     expect(micOffElement).toBeNull();
   });
@@ -132,17 +94,7 @@ describe('Player', () => {
       activePlayer: true,
     };
 
-    render(
-      <Player
-        playerName="John Doe"
-        gameStatus={gameStatus}
-        onTimeOut={mockOnTimeOut}
-        isActive={true}
-        listening={false}
-        playerColor={'black'}
-        playerTime={0}
-      />,
-    );
+    renderPlayer({ gameStatus, isActive: true, listening: false });
 
     expect(screen.getByText("John's Turn")).toBeInTheDocument();
     const micElement = document.querySelector('[data-testid="MicIcon"]');
@@ -156,17 +108,7 @@ describe('Player', () => {
       activePlayer: false,
     };
 
-    render(
-      <Player
-        playerName="John Doe"
-        gameStatus={gameStatus}
-        onTimeOut={mockOnTimeOut}
-        isActive={false}
-        listening={false}
-        playerColor={'black'}
-        playerTime={0}
-      />,
-    );
+    renderPlayer({ gameStatus });
 
     expect(screen.getByText('Winner!')).toBeInTheDocument();
   });
@@ -178,17 +120,7 @@ describe('Player', () => {
       activePlayer: false,
     };
 
-    render(
-      <Player
-        playerName="John Doe"
-        gameStatus={gameStatus}
-        onTimeOut={mockOnTimeOut}
-        isActive={false}
-        listening={false}
-        playerColor={'black'}
-        playerTime={0}
-      />,
-    );
+    renderPlayer({ gameStatus });
 
     expect(screen.getByText("Time's up!")).toBeInTheDocument();
   });
@@ -200,17 +132,7 @@ describe('Player', () => {
       activePlayer: false,
     };
 
-    render(
-      <Player
-        playerName="John Doe"
-        gameStatus={gameStatus}
-        onTimeOut={mockOnTimeOut}
-        isActive={false}
-        listening={false}
-        playerColor={'black'}
-        playerTime={0}
-      />,
-    );
+    renderPlayer({ gameStatus: { ...gameStatus, inGame: true } });
 
     expect(screen.queryByText("John's Turn")).not.toBeInTheDocument();
     expect(screen.queryByText('Winner!')).not.toBeInTheDocument();
@@ -225,17 +147,7 @@ describe('Player', () => {
       activePlayer: true,
     };
 
-    render(
-      <Player
-        playerName="John Doe"
-        gameStatus={gameStatus}
-        onTimeOut={mockOnTimeOut}
-        isActive={true}
-        listening={false}
-        playerColor={'black'}
-        playerTime={0}
-      />,
-    );
+    renderPlayer({ gameStatus, isActive: true });
 
     const timerElement = screen.getByTestId('timer-mock');
     expect(timerElement).toBeInTheDocument();
@@ -248,17 +160,12 @@ describe('Player', () => {
       activePlayer: true,
     };
 
-    render(
-      <Player
-        playerName="John James Doe"
-        gameStatus={gameStatus}
-        onTimeOut={mockOnTimeOut}
-        isActive={true}
-        listening={false}
-        playerColor={'black'}
-        playerTime={0}
-      />,
-    );
+    renderPlayer({
+      gameStatus,
+      playerName: 'John James Doe',
+      isActive: true,
+      listening: false,
+    });
 
     expect(screen.getByText("John's Turn")).toBeInTheDocument();
     expect(screen.getByText('JJD')).toBeInTheDocument();

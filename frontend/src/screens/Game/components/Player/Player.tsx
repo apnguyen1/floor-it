@@ -18,7 +18,7 @@ import { getAvatarInitials } from '../../../../utils/avatarInitials.ts';
 /**
  * Props for the Player component.
  */
-interface PlayerProps {
+export interface PlayerProps {
   /** Name of the player */
   playerName: string;
   /** the game status */
