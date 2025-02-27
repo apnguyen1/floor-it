@@ -1,5 +1,5 @@
 import { useEffect, useMemo } from 'react';
-import { useSpeechRecognition } from 'react-speech-recognition';
+import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import { GameStatus } from '../screens/Game/GameScreen.type.ts';
 
 /** https://www.npmjs.com/package/react-speech-recognition#commands */
@@ -57,6 +57,12 @@ export const useSpeechCommands = (
     ],
     [correctAnswers, onCorrectAnswer, onSkip],
   );
+
+  useEffect(() => {
+    SpeechRecognition.startListening()
+      .then(SpeechRecognition.abortListening)
+      .catch((e) => console.log(`Couldn't get permission to mic: ${e}`));
+  }, []);
 
   // handles skipping by space
   useEffect(() => {
