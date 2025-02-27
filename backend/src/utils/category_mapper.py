@@ -15,6 +15,7 @@ def to_category_data(
     preview_desc: str,
     question_type: QuestionType,
     json_data: dict[str, List[str]],
+    fuzzy_matching_threshold: float = 0.6,
 ) -> CategoryDataDTO:
     """
     Maps JSON data formatted: {<question>: [<answer>], <question>: [<answer>]}
@@ -37,6 +38,7 @@ def to_category_data(
         preview_img=preview_img,
         preview_desc=preview_desc,
         type=question_type,
+        fuzzy_matching_threshold=fuzzy_matching_threshold,
         questions=[
             TriviaQuestionDTO(question=q, answers=a) for q, a in json_data.items()
         ],

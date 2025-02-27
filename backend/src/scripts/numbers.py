@@ -11,6 +11,7 @@ class Numbers(Category[NumbersDTO]):
             model=NumbersDTO,
             name="Numbers",
             desc="Test your Number Skillz",
+            fuzzy_matching_threshold=0.9
         )
 
     def _format_data(self) -> dict[str, List[str]]:

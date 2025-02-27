@@ -57,6 +57,7 @@ class CategoryDataDTO(Model):
     type (QuestionType): QuestionType.IMG (serializes to "img") if the questions are
     image urls,
         QuestionType.TEXT (serializes to "text") if the questions are straight text
+    fuzzy_matching_threshold (float): Fuzzy matching threshold to use, ranges from 0 (will match anything) to 1 (needs an exact match)
     questions (List[TriviaQuestion]): The list of trivia questions,
         all of which use either image urls or text, specified above
 
@@ -83,4 +84,5 @@ class CategoryDataDTO(Model):
     preview_img: str
     preview_desc: str
     type: QuestionType
+    fuzzy_matching_threshold: float
     questions: List[TriviaQuestionDTO] = []

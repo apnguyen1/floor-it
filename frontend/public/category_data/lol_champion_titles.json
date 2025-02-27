@@ -3,7 +3,7 @@
   "preview_img": "default-preview.png",
   "preview_desc": "Guess the LoL champion's name by their title!",
   "type": "text",
-  "fuzzy_matching_threshold": "0",
+  "fuzzy_matching_threshold": 0.4,
   "questions": [
     {
       "question": "the Darkin Blade",

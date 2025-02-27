@@ -14,6 +14,7 @@ def test_to_category_data_success():
     preview_img = "Science_preview.png"
     preview_desc = "Science preview description"
     question_type = QuestionType.TEXT
+    fuzzy_matching_threshold = 0.45
     json_data = {
         "q1": ["a1"],
         "q2": ["a2"],
@@ -24,6 +25,7 @@ def test_to_category_data_success():
         "preview_img": "Science_preview.png",
         "preview_desc": "Science preview description",
         "type": question_type,
+        "fuzzy_matching_threshold": 0.45,
         "questions": [
             {"question": "q1", "answers": ["a1"], "aliases": []},
             {"question": "q2", "answers": ["a2"], "aliases": []},
@@ -31,7 +33,7 @@ def test_to_category_data_success():
     }
 
     model = to_category_data(
-        category_name, preview_img, preview_desc, question_type, json_data
+        category_name, preview_img, preview_desc, question_type, json_data, fuzzy_matching_threshold
     )
     actual_json = model.model_dump()
 

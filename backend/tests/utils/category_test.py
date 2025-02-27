@@ -25,6 +25,7 @@ def basic_category():
             source="https://example.com",
             model=DummyDTO,
             question_type=QuestionType.TEXT,
+            fuzzy_matching_threshold=0.2,
             name="Test Category",
             img_name="test.png",
             desc="Test Description",
@@ -39,6 +40,7 @@ def test_category_initialization(basic_category):
     assert basic_category.preview_img == "test.png"
     assert basic_category._raw_data.value == "test"
     assert basic_category.question_type == QuestionType.TEXT
+    assert basic_category.fuzzy_matching_threshold == 0.2
 
 
 def test_category_property_setters(basic_category):
@@ -53,6 +55,9 @@ def test_category_property_setters(basic_category):
 
     basic_category.question_type = QuestionType.IMG
     assert basic_category.question_type == QuestionType.IMG
+
+    basic_category.fuzzy_matching_threshold = 0.4
+    assert basic_category.fuzzy_matching_threshold == 0.4
 
 
 def test_category_formatted_data(basic_category):
