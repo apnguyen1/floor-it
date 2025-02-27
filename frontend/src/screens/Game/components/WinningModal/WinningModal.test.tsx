@@ -29,16 +29,22 @@ describe('WinningModal', () => {
   const mockWinner: PlayerState = {
     name: 'Test Winner',
     color: '#3288BD',
+    playerTime: 30,
   };
 
   beforeEach(() => {
     vi.clearAllMocks();
     vi.mocked(useApp).mockReturnValue({
+      setUseSharedTimer: vi.fn(),
+      updateBothPlayers: vi.fn(),
+      updatePlayerOne: vi.fn(),
+      updatePlayerTwo: vi.fn(),
+      useSharedTimer: false,
       setScreen: mockSetScreen,
       screen: 'game',
       players: {
-        P1: { name: 'Player 1', color: '#D53E4F' },
-        P2: { name: 'Player 2', color: '#3288BD' },
+        P1: { name: 'Player 1', color: '#D53E4F', playerTime: 30 },
+        P2: { name: 'Player 2', color: '#3288BD', playerTime: 30 },
       },
       selectedCategory: [],
       setSelectedCategory: vi.fn(),

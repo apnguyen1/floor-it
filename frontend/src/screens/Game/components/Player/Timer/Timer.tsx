@@ -14,7 +14,10 @@ interface TimerProps {
   isActive: boolean;
   /** Name of the player associated with the timer */
   playerName: string;
+  // the players color
   playerColor: string;
+  // the players time
+  playerTime: number;
 }
 
 /**
@@ -30,8 +33,9 @@ const Timer = ({
   isActive,
   playerName,
   playerColor,
+  playerTime,
 }: TimerProps) => {
-  const initialTime = 30 * 1000; // 30 seconds
+  const initialTime = playerTime * 1000;
   const [countdown, setCountDown] = useState(initialTime);
   const remainingSeconds = Math.floor(countdown / 1000);
   const percentRemaining = (countdown / initialTime) * 100;

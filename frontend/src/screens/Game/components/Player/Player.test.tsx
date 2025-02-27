@@ -41,6 +41,7 @@ describe('Player', () => {
         isActive={false}
         listening={false}
         playerColor={'black'}
+        playerTime={0}
       />,
     );
 
@@ -67,6 +68,7 @@ describe('Player', () => {
         isActive={false}
         listening={false}
         playerColor={'black'}
+        playerTime={0}
       />,
     );
 
@@ -89,6 +91,7 @@ describe('Player', () => {
         isActive={true}
         listening={false}
         playerColor={'black'}
+        playerTime={0}
       />,
     );
 
@@ -110,6 +113,7 @@ describe('Player', () => {
         isActive={true}
         listening={true}
         playerColor={'black'}
+        playerTime={0}
       />,
     );
 
@@ -136,6 +140,7 @@ describe('Player', () => {
         isActive={true}
         listening={false}
         playerColor={'black'}
+        playerTime={0}
       />,
     );
 
@@ -159,6 +164,7 @@ describe('Player', () => {
         isActive={false}
         listening={false}
         playerColor={'black'}
+        playerTime={0}
       />,
     );
 
@@ -180,6 +186,7 @@ describe('Player', () => {
         isActive={false}
         listening={false}
         playerColor={'black'}
+        playerTime={0}
       />,
     );
 
@@ -201,6 +208,7 @@ describe('Player', () => {
         isActive={false}
         listening={false}
         playerColor={'black'}
+        playerTime={0}
       />,
     );
 
@@ -225,6 +233,7 @@ describe('Player', () => {
         isActive={true}
         listening={false}
         playerColor={'black'}
+        playerTime={0}
       />,
     );
 
@@ -247,6 +256,7 @@ describe('Player', () => {
         isActive={true}
         listening={false}
         playerColor={'black'}
+        playerTime={0}
       />,
     );
 

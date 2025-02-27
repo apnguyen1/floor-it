@@ -29,7 +29,10 @@ interface PlayerProps {
   isActive: boolean;
   /** Indicates if the player is currently speaking (mic on/off) */
   listening: boolean;
+  // the player's color
   playerColor: string;
+  // the player's time
+  playerTime: number;
 }
 
 /**
@@ -45,6 +48,7 @@ export const Player = ({
   isActive,
   listening,
   playerColor,
+  playerTime,
 }: PlayerProps) => {
   const firstName: string = playerName.split(' ')[0];
   /**
@@ -113,6 +117,7 @@ export const Player = ({
         isActive={isActive}
         playerName={playerName}
         playerColor={playerColor}
+        playerTime={playerTime}
       />
       {getPlayerStatus()}
     </Box>

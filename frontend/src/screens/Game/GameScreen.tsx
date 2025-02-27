@@ -152,6 +152,7 @@ export const GameScreen = () => {
           isActive={gameStatus.activePlayer}
           listening={listening}
           playerColor={players.P1.color}
+          playerTime={players.P1.playerTime}
         />
         <Display
           category={category}
@@ -169,6 +170,7 @@ export const GameScreen = () => {
           isActive={!gameStatus.activePlayer}
           listening={listening}
           playerColor={players.P2.color}
+          playerTime={players.P2.playerTime}
         />
         <WinningModal
           isOpen={showWinningModal}

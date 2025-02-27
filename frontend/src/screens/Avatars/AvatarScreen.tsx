@@ -102,15 +102,11 @@ const ColorPicker = ({
 };
 
 export const AvatarScreen = () => {
-  const { setScreen, setPlayers, players } = useApp();
+  const { setScreen, updatePlayerOne, updatePlayerTwo, players } = useApp();
 
   // Initializing player names and colours; assuming default values to be P1 and P2
-  const [player1Name, setPlayer1Name] = useState(
-    players.P1.name === 'P1' ? '' : players.P1.name,
-  );
-  const [player2Name, setPlayer2Name] = useState(
-    players.P2.name === 'P2' ? '' : players.P2.name,
-  );
+  const [player1Name, setPlayer1Name] = useState(players.P1.name);
+  const [player2Name, setPlayer2Name] = useState(players.P2.name);
 
   const [player1Color, setPlayer1Color] = useState(players.P1.color);
   const [player2Color, setPlayer2Color] = useState(players.P2.color);
@@ -125,10 +121,8 @@ export const AvatarScreen = () => {
 
   const handleReadyClick = () => {
     // Set player names in contexts, using defaults if empty
-    setPlayers({
-      P1: { name: player1Name.trim() || 'Player 1', color: player1Color },
-      P2: { name: player2Name.trim() || 'Player 2', color: player2Color },
-    });
+    updatePlayerOne({ name: player1Name, color: player1Color });
+    updatePlayerTwo({ name: player2Name, color: player2Color });
 
     // Navigate to categories screen
     setScreen(ScreenType.Categories);
