@@ -189,6 +189,7 @@ export const GameScreen = () => {
       </Button>
 
       <Button
+        disabled={gameStatus.inGame}
         variant="contained"
         startIcon={<SettingsIcon />}
         onClick={handleOpenSettings}
