@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Box, CircularProgress, Typography } from '@mui/material';
-import { timerBox } from './Timer.style.tsx';
+import { circularProgress, countdownBox, timerBox } from './Timer.style.tsx';
+import { PlayerState } from '../../../../../types/global.type.ts';
 
 /**
  * Props for the Timer component.
@@ -12,12 +13,8 @@ interface TimerProps {
   onTimeOut: (playerName: string) => void;
   /** Whether the timer is active (indicates the player's turn) */
   isActive: boolean;
-  /** Name of the player associated with the timer */
-  playerName: string;
-  // the players color
-  playerColor: string;
-  // the players time
-  playerTime: number;
+  /** The player's state */
+  playerState: PlayerState;
 }
 
 /**
@@ -27,15 +24,8 @@ interface TimerProps {
  * @param {TimerProps} props - Component props
  */
 
-const Timer = ({
-  inGame,
-  onTimeOut,
-  isActive,
-  playerName,
-  playerColor,
-  playerTime,
-}: TimerProps) => {
-  const initialTime = playerTime * 1000;
+const Timer = ({ inGame, onTimeOut, isActive, playerState }: TimerProps) => {
+  const initialTime = playerState.time * 1000;
   const [countdown, setCountDown] = useState(initialTime);
   const remainingSeconds = Math.floor(countdown / 1000);
   const percentRemaining = (countdown / initialTime) * 100;
@@ -62,7 +52,7 @@ const Timer = ({
       setCountDown((prev) => {
         if (prev <= 1000) {
           clearInterval(interval);
-          onTimeOut(playerName);
+          onTimeOut(playerState.name);
           return 0;
         }
         return prev - 1000;
@@ -70,7 +60,7 @@ const Timer = ({
     }, 1000);
 
     return () => clearInterval(interval);
-  }, [inGame, isActive, onTimeOut, playerName]);
+  }, [inGame, isActive, onTimeOut, playerState.name]);
 
   /**
    * Formats the countdown time into a displayable string.
@@ -79,28 +69,16 @@ const Timer = ({
    */
 
   return (
-    <Box
-      sx={{
-        position: 'relative',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        my: 2,
-      }}
-    >
+    <Box className={'timer-box'} sx={timerBox()}>
       <CircularProgress
         variant="determinate"
         value={percentRemaining}
         size={100}
         thickness={4}
-        sx={{
-          color: remainingSeconds < 10 ? 'error.main' : playerColor,
-          opacity: isActive ? 1 : 0.3,
-          transition: 'all 0.3s ease',
-        }}
+        sx={circularProgress(playerState.color, isActive, remainingSeconds)}
       />
       <Typography
-        sx={timerBox(playerColor, remainingSeconds)}
+        sx={countdownBox(playerState.color, remainingSeconds)}
         variant="h2"
         position="absolute"
       >

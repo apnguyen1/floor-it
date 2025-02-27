@@ -25,8 +25,8 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
   const [screen, setScreen] = useState('home');
   const [useSharedTimer, setUseSharedTimer] = useState(true);
   const [players, setPlayers] = useState({
-    P1: { name: 'P1', color: '#D53E4F', playerTime: DEFAULT_TIMER_SECONDS },
-    P2: { name: 'P2', color: '#3288BD', playerTime: DEFAULT_TIMER_SECONDS },
+    P1: { name: 'P1', color: '#D53E4F', time: DEFAULT_TIMER_SECONDS },
+    P2: { name: 'P2', color: '#3288BD', time: DEFAULT_TIMER_SECONDS },
   });
   const [selectedCategory, setSelectedCategory] = useState<string[]>([]);
 

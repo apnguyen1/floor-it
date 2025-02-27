@@ -16,9 +16,11 @@ describe('Timer', () => {
     inGame: true,
     onTimeOut: () => {},
     isActive: false,
-    playerName: 'Player 1',
-    playerColor: '',
-    playerTime: INITIAL_TIME,
+    playerState: {
+      name: 'Player 1',
+      color: 'blue',
+      time: INITIAL_TIME,
+    },
   };
 
   const renderTimer = (overrides = {}) => {

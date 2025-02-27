@@ -14,25 +14,22 @@ import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import TimerOffIcon from '@mui/icons-material/TimerOff';
 import HourglassTopIcon from '@mui/icons-material/HourglassTop';
 import { getAvatarInitials } from '../../../../utils/avatarInitials.ts';
+import { PlayerState } from '../../../../types/global.type.ts';
 
 /**
  * Props for the Player component.
  */
 export interface PlayerProps {
-  /** Name of the player */
-  playerName: string;
   /** the game status */
   gameStatus: GameStatus;
-  /** Callback function triggered when the player's timer runs out */
-  onTimeOut: (playerName: string) => void;
   /** Whether it's the player's turn */
   isActive: boolean;
   /** Indicates if the player is currently speaking (mic on/off) */
   listening: boolean;
-  // the player's color
-  playerColor: string;
-  // the player's time
-  playerTime: number;
+  /** Callback function triggered when the player's timer runs out */
+  onTimeOut: (playerName: string) => void;
+  /** Name of the player */
+  playerState: PlayerState;
 }
 
 /**
@@ -42,23 +39,21 @@ export interface PlayerProps {
  * @param {PlayerProps} props - Component props
  */
 export const Player = ({
-  playerName,
+  playerState,
   gameStatus,
   onTimeOut,
   isActive,
   listening,
-  playerColor,
-  playerTime,
 }: PlayerProps) => {
-  const firstName: string = playerName.split(' ')[0];
+  const firstName: string = playerState.name.split(' ')[0];
   /**
    * Determines the player's current status to display (turn, winner, or waiting).
    */
   const getPlayerStatus = () => {
     if (gameStatus.winner) {
       return (
-        <Box sx={playerStatus(gameStatus.winner === playerName)}>
-          {gameStatus.winner === playerName ? (
+        <Box sx={playerStatus(gameStatus.winner === playerState.name)}>
+          {gameStatus.winner === playerState.name ? (
             <>
               <EmojiEventsIcon color="success" />
               <Typography variant="h6" color="success.main">
@@ -107,17 +102,15 @@ export const Player = ({
   };
 
   return (
-    <Box className={'player-box'} sx={playerBox(playerColor, isActive)}>
-      <Avatar className={'player-avatar'} sx={playerAvatar(playerColor)}>
-        {getAvatarInitials(playerName, 'Player')}
+    <Box className={'player-box'} sx={playerBox(playerState.color, isActive)}>
+      <Avatar className={'player-avatar'} sx={playerAvatar(playerState.color)}>
+        {getAvatarInitials(playerState.name, 'Player')}
       </Avatar>
       <Timer
         inGame={gameStatus.inGame}
         onTimeOut={onTimeOut}
         isActive={isActive}
-        playerName={playerName}
-        playerColor={playerColor}
-        playerTime={playerTime}
+        playerState={playerState}
       />
       {getPlayerStatus()}
     </Box>

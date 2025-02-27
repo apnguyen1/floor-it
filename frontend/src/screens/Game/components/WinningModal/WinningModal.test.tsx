@@ -29,7 +29,7 @@ describe('WinningModal', () => {
   const mockWinner: PlayerState = {
     name: 'Test Winner',
     color: '#3288BD',
-    playerTime: 30,
+    time: 30,
   };
 
   beforeEach(() => {
@@ -43,8 +43,8 @@ describe('WinningModal', () => {
       setScreen: mockSetScreen,
       screen: 'game',
       players: {
-        P1: { name: 'Player 1', color: '#D53E4F', playerTime: 30 },
-        P2: { name: 'Player 2', color: '#3288BD', playerTime: 30 },
+        P1: { name: 'Player 1', color: '#D53E4F', time: 30 },
+        P2: { name: 'Player 2', color: '#3288BD', time: 30 },
       },
       selectedCategory: [],
       setSelectedCategory: vi.fn(),

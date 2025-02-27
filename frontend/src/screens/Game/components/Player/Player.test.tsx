@@ -27,7 +27,11 @@ describe('Player', () => {
   });
 
   const defaultProps: PlayerProps = {
-    playerName: 'John Doe',
+    playerState: {
+      name: 'John Doe',
+      color: 'blue',
+      time: 30,
+    },
     gameStatus: {
       inGame: false,
       winner: undefined,
@@ -36,8 +40,6 @@ describe('Player', () => {
     onTimeOut: mockOnTimeOut,
     isActive: false,
     listening: false,
-    playerColor: '',
-    playerTime: 30,
   };
 
   const renderPlayer = (overrides: Partial<PlayerProps>) => {
@@ -46,18 +48,17 @@ describe('Player', () => {
   };
 
   it('should render player name and avatar', () => {
-    renderPlayer({ playerName: 'John Doe' });
+    renderPlayer({ playerState: { ...defaultProps.playerState, name: 'John Doe' } });
 
     expect(screen.getByText('JD')).toBeInTheDocument();
 
     const timerElement = screen.getByTestId('timer-mock');
     expect(timerElement).toHaveTextContent('inGame=false');
     expect(timerElement).toHaveTextContent('isActive=false');
-    expect(timerElement).toHaveTextContent('playerName=John Doe');
   });
 
   it('should handle short names correctly', () => {
-    renderPlayer({ playerName: 'Jo' });
+    renderPlayer({ playerState: { ...defaultProps.playerState, name: 'Jo' } });
 
     // Check avatar abbreviation is rendered correctly for short names
     expect(screen.getByText('J')).toBeInTheDocument();
@@ -161,8 +162,11 @@ describe('Player', () => {
     };
 
     renderPlayer({
+      playerState: {
+        ...defaultProps.playerState,
+        name: 'John James Doe',
+      },
       gameStatus,
-      playerName: 'John James Doe',
       isActive: true,
       listening: false,
     });
