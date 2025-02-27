@@ -12,30 +12,30 @@ describe('Timer', () => {
     vi.restoreAllMocks();
   });
 
+  const TimerProps = {
+    inGame: true,
+    onTimeOut: () => {},
+    isActive: false,
+    playerState: {
+      name: 'Player 1',
+      color: 'blue',
+      time: INITIAL_TIME,
+    },
+  };
+
+  const renderTimer = (overrides = {}) => {
+    const props = { ...TimerProps, ...overrides };
+    return render(<Timer {...props} />);
+  };
+
   it('should render with initial time', () => {
-    render(
-      <Timer
-        inGame={true}
-        onTimeOut={() => {}}
-        isActive={false}
-        playerName="Player 1"
-        playerColor={'black'}
-      />,
-    );
+    renderTimer();
 
     expect(screen.getByText(INITIAL_TIME)).toBeInTheDocument();
   });
 
   it('should not count down when game is not in progress', () => {
-    render(
-      <Timer
-        inGame={false}
-        onTimeOut={() => {}}
-        isActive={true}
-        playerName="Player 1"
-        playerColor={'black'}
-      />,
-    );
+    renderTimer({ inGame: false, isActive: true });
 
     act(() => {
       vi.advanceTimersByTime(5000);
@@ -46,15 +46,7 @@ describe('Timer', () => {
   });
 
   it('should not count down when timer is not active', () => {
-    render(
-      <Timer
-        inGame={true}
-        onTimeOut={() => {}}
-        isActive={false}
-        playerName="Player 1"
-        playerColor={'black'}
-      />,
-    );
+    renderTimer({ inGame: true, isActive: false });
 
     act(() => {
       vi.advanceTimersByTime(5000);
@@ -65,15 +57,7 @@ describe('Timer', () => {
   });
 
   it('should count down when game is in progress and timer is active', () => {
-    render(
-      <Timer
-        inGame={true}
-        onTimeOut={() => {}}
-        isActive={true}
-        playerName="Player 1"
-        playerColor={'black'}
-      />,
-    );
+    renderTimer({ inGame: true, isActive: true });
 
     const secondsAdvanced = 5;
     act(() => {
@@ -85,17 +69,8 @@ describe('Timer', () => {
 
   it('should call onTimeOut when timer reaches zero', () => {
     const onTimeOutMock = vi.fn();
-    render(
-      <Timer
-        inGame={true}
-        onTimeOut={onTimeOutMock}
-        isActive={true}
-        playerName="Player 1"
-        playerColor={'black'}
-      />,
-    );
+    renderTimer({ onTimeOut: onTimeOutMock, isActive: true });
 
-    // complete timeout
     act(() => {
       vi.advanceTimersByTime(INITIAL_TIME * 1000);
     });
@@ -105,28 +80,11 @@ describe('Timer', () => {
   });
 
   it('should reset timer when game state changes to active', () => {
-    const { rerender } = render(
-      <Timer
-        inGame={false}
-        onTimeOut={() => {}}
-        isActive={false}
-        playerName="Player 1"
-        playerColor={'black'}
-      />,
-    );
+    const { rerender } = renderTimer({ inGame: false, isActive: false });
 
     // Now start the game
-    rerender(
-      <Timer
-        inGame={true}
-        onTimeOut={() => {}}
-        isActive={false}
-        playerName="Player 1"
-        playerColor={'black'}
-      />,
-    );
+    rerender(<Timer {...TimerProps} />);
 
-    // Timer should be reset to initial value
     expect(screen.getByText(INITIAL_TIME)).toBeInTheDocument();
   });
 });

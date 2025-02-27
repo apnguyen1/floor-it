@@ -1,6 +1,6 @@
 import { SxProps, Theme } from '@mui/material';
 
-export const timerBox = (color: string, timeRemaining: number): SxProps<Theme> => ({
+export const countdownBox = (color: string, timeRemaining: number): SxProps<Theme> => ({
   marginTop: 1,
   fontSize: timeRemaining < 10 ? '3.5rem' : '3rem',
   fontWeight: 'bold',
@@ -18,4 +18,22 @@ export const timerBox = (color: string, timeRemaining: number): SxProps<Theme> =
       transform: 'scale(1)',
     },
   },
+});
+
+export const circularProgress = (
+  playerColor: string,
+  isActive: boolean,
+  remaining: number,
+): SxProps<Theme> => ({
+  color: remaining < 10 ? 'error.main' : playerColor,
+  opacity: isActive ? 1 : 0.3,
+  transition: 'all 0.3s ease',
+});
+
+export const timerBox = (): SxProps<Theme> => ({
+  position: 'relative',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'center',
+  my: 2,
 });

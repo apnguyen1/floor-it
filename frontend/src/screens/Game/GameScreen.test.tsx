@@ -7,6 +7,7 @@ import { useApp } from '../../hooks/useApp';
 import SpeechRecognition from 'react-speech-recognition';
 import { ScreenType } from '../../constants/screens';
 import { CategoryContent, Question } from './GameScreen.type';
+import { PlayerState } from '../../types/global.type.ts';
 
 // Mock the custom hooks and external dependencies
 vi.mock('../../hooks/useApp', () => ({
@@ -49,20 +50,20 @@ vi.mock('./components/WinningModal//WinningModal', () => ({
 }));
 
 interface PlayerPropsMock {
-  playerName: string;
   isActive: boolean;
   onTimeOut: (playerName: string) => void;
+  playerState: PlayerState;
 }
 
 vi.mock('./components/Player/Player', () => ({
-  Player: ({ playerName, isActive, onTimeOut }: PlayerPropsMock) => (
+  Player: ({ playerState, isActive, onTimeOut }: PlayerPropsMock) => (
     <div
-      data-testid={`player-${playerName}`}
+      data-testid={`player-${playerState.name}`}
       className={isActive ? 'active' : 'inactive'}
     >
       <button
-        onClick={() => onTimeOut(playerName)}
-        data-testid={`timeout-${playerName}`}
+        onClick={() => onTimeOut(playerState.name)}
+        data-testid={`timeout-${playerState.name}`}
       >
         Timeout
       </button>

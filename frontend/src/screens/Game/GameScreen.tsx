@@ -8,9 +8,11 @@ import { useCategoryQuestions } from '../../hooks/useCategoryQuestions.ts';
 import { useSpeechCommands } from '../../hooks/useSpeechCommands.ts';
 import SpeechRecognition from 'react-speech-recognition';
 import { GameStatus } from './GameScreen.type.ts';
-import { backButton, gameBox, gameContent } from './GameScreen.style.ts';
+import { backButton, gameBox, gameContent, settingButton } from './GameScreen.style.ts';
 import WinningModal from './components/WinningModal/WinningModal.tsx';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import SettingsIcon from '@mui/icons-material/Settings';
+import { SettingModal } from '../../components/Settings/SettingModal.tsx';
 
 /**
  * `GameScreen` manages the state and logic for the trivia game.
@@ -30,11 +32,20 @@ export const GameScreen = () => {
     winner: undefined,
   });
   const [showWinningModal, setShowWinningModal] = useState(false);
+  const [showSettingModal, setShowSettingModal] = useState(false);
   //  Reference to the audio element for the winning sound effect.
   const winRef = useRef<HTMLAudioElement>(new Audio('/sounds/win.mp3'));
 
   // player's state, the selected categories, and function to switch screen
-  const { players, selectedCategory, setScreen } = useApp();
+  const {
+    players,
+    selectedCategory,
+    setScreen,
+    setUseSharedTimer,
+    updatePlayerOne,
+    updatePlayerTwo,
+    useSharedTimer,
+  } = useApp();
 
   // handles selection of categories
   const { category, currentQuestion, skipQuestion, setNextQuestion } =
@@ -121,7 +132,39 @@ export const GameScreen = () => {
   }, [setScreen]);
 
   /**
-   * Closes the winning modal without nagivating anywhere
+   * Opens the settings modal
+   */
+  const handleOpenSettings = useCallback(() => {
+    setShowSettingModal(true);
+  }, []);
+
+  /**
+   * Closes the settings modal
+   */
+  const handleCloseSettingModal = useCallback(() => {
+    setShowSettingModal(false);
+  }, []);
+
+  /**
+   * Saves the settings from the settings modal
+   */
+  const handleSaveSettings = useCallback(
+    (
+      updatedPlayers: {
+        P1: typeof players.P1;
+        P2: typeof players.P2;
+      },
+      updatedUseSharedTimer: boolean,
+    ) => {
+      updatePlayerOne({ time: updatedPlayers.P1.time });
+      updatePlayerTwo({ time: updatedPlayers.P2.time });
+      setUseSharedTimer(updatedUseSharedTimer);
+    },
+    [players, setUseSharedTimer, updatePlayerOne, updatePlayerTwo],
+  );
+
+  /**
+   * Closes the winning modal without navigating anywhere
    */
   const handleCloseWinningModal = useCallback(() => {
     setShowWinningModal(false);
@@ -144,14 +187,24 @@ export const GameScreen = () => {
       >
         Back
       </Button>
+
+      <Button
+        disabled={gameStatus.inGame}
+        variant="contained"
+        startIcon={<SettingsIcon />}
+        onClick={handleOpenSettings}
+        sx={settingButton()}
+      >
+        Settings
+      </Button>
+
       <Box className={'game-content'} sx={gameContent()}>
         <Player
-          playerName={players.P1.name}
+          playerState={players.P1}
           gameStatus={gameStatus}
           onTimeOut={handleTimeOut}
           isActive={gameStatus.activePlayer}
           listening={listening}
-          playerColor={players.P1.color}
         />
         <Display
           category={category}
@@ -163,19 +216,25 @@ export const GameScreen = () => {
           errorMessage={errorMessage}
         />
         <Player
-          playerName={players.P2.name}
+          playerState={players.P2}
           gameStatus={gameStatus}
           onTimeOut={handleTimeOut}
           isActive={!gameStatus.activePlayer}
           listening={listening}
-          playerColor={players.P2.color}
-        />
-        <WinningModal
-          isOpen={showWinningModal}
-          onClose={handleCloseWinningModal}
-          winner={winnerPlayer}
         />
       </Box>
+      <WinningModal
+        isOpen={showWinningModal}
+        onClose={handleCloseWinningModal}
+        winner={winnerPlayer}
+      />
+      <SettingModal
+        isOpen={showSettingModal}
+        onClose={handleCloseSettingModal}
+        players={players}
+        useSharedTimer={useSharedTimer}
+        onSave={handleSaveSettings}
+      />
     </Box>
   );
 };
