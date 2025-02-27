@@ -46,7 +46,7 @@ export const useCategoryQuestions = (selectedCategory: string[]) => {
         questions.current = shuffleArray(data.questions);
         setCurrentQuestion(questions.current[0]);
         // set fuzzy matching threshold if specified in data
-        if (data.fuzzy_matching_threshold !== undefined) {
+        if (data.fuzzy_matching_threshold) {
           setFuzzyMatchingThreshold(data.fuzzy_matching_threshold);
         }
       })
