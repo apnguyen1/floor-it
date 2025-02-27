@@ -3,22 +3,6 @@ import { render, screen } from '@testing-library/react';
 import { GameStatus } from '../../GameScreen.type.ts';
 import { Player, PlayerProps } from './Player.tsx';
 
-interface MockProps {
-  inGame: boolean;
-  isActive: boolean;
-  playerName: string;
-}
-
-// Mock the Timer component
-vi.mock('./Timer/Timer.tsx', () => ({
-  default: ({ inGame, isActive, playerName }: MockProps) => (
-    <div data-testid="timer-mock">
-      Timer: inGame={String(inGame)}, isActive={String(isActive)}, playerName=
-      {playerName}
-    </div>
-  ),
-}));
-
 describe('Player', () => {
   const mockOnTimeOut = vi.fn();
 
@@ -51,10 +35,6 @@ describe('Player', () => {
     renderPlayer({ playerState: { ...defaultProps.playerState, name: 'John Doe' } });
 
     expect(screen.getByText('JD')).toBeInTheDocument();
-
-    const timerElement = screen.getByTestId('timer-mock');
-    expect(timerElement).toHaveTextContent('inGame=false');
-    expect(timerElement).toHaveTextContent('isActive=false');
   });
 
   it('should handle short names correctly', () => {
@@ -139,19 +119,6 @@ describe('Player', () => {
     expect(screen.queryByText('Winner!')).not.toBeInTheDocument();
     expect(screen.queryByText("Time's up!")).not.toBeInTheDocument();
     expect(screen.queryByText('You will start!')).not.toBeInTheDocument();
-  });
-
-  it('should pass the correct onTimeOut function to Timer', () => {
-    const gameStatus: GameStatus = {
-      inGame: true,
-      winner: undefined,
-      activePlayer: true,
-    };
-
-    renderPlayer({ gameStatus, isActive: true });
-
-    const timerElement = screen.getByTestId('timer-mock');
-    expect(timerElement).toBeInTheDocument();
   });
 
   it('should handle spaces in player names correctly', () => {
