@@ -1,6 +1,6 @@
 {
   "name": "Brand Logos",
-  "preview_img": "default-preview.png",
+  "preview_img": "shopping_bag.png",
   "preview_desc": "Guess the brand by their logo!",
   "type": "img",
   "fuzzy_matching_threshold": 0.4,

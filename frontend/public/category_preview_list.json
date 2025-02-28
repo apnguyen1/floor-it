@@ -2,22 +2,22 @@
   "category_previews": [
     {
       "name": "Brand Logos",
-      "image": "default-preview.png",
+      "image": "shopping_bag.png",
       "desc": "Guess the brand by their logo!"
     },
     {
       "name": "LoL Champion Covers",
-      "image": "default-preview.png",
+      "image": "game_icon.png",
       "desc": "Guess the LoL champion's name by their image!"
     },
     {
       "name": "LoL Champion Titles",
-      "image": "default-preview.png",
+      "image": "game_icon.png",
       "desc": "Guess the LoL champion's name by their title!"
     },
     {
       "name": "Numbers",
-      "image": "default-preview.png",
+      "image": "numbers.png",
       "desc": "Test your Number Skillz"
     }
   ]

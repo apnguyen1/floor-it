@@ -1,858 +1,1198 @@
 {
   "name": "LoL Champion Titles",
-  "preview_img": "default-preview.png",
+  "preview_img": "game_icon.png",
   "preview_desc": "Guess the LoL champion's name by their title!",
   "type": "text",
   "fuzzy_matching_threshold": 0.4,
   "questions": [
     {
       "question": "the Darkin Blade",
-      "answers": ["Aatrox"],
+      "answers": [
+        "Aatrox"
+      ],
       "aliases": []
     },
     {
       "question": "the Nine-Tailed Fox",
-      "answers": ["Ahri"],
+      "answers": [
+        "Ahri"
+      ],
       "aliases": []
     },
     {
       "question": "the Rogue Assassin",
-      "answers": ["Akali"],
+      "answers": [
+        "Akali"
+      ],
       "aliases": []
     },
     {
       "question": "the Rogue Sentinel",
-      "answers": ["Akshan"],
+      "answers": [
+        "Akshan"
+      ],
       "aliases": []
     },
     {
       "question": "the Minotaur",
-      "answers": ["Alistar"],
+      "answers": [
+        "Alistar"
+      ],
       "aliases": []
     },
     {
       "question": "Matriarch of War",
-      "answers": ["Ambessa"],
+      "answers": [
+        "Ambessa"
+      ],
       "aliases": []
     },
     {
       "question": "the Sad Mummy",
-      "answers": ["Amumu"],
+      "answers": [
+        "Amumu"
+      ],
       "aliases": []
     },
     {
       "question": "the Cryophoenix",
-      "answers": ["Anivia"],
+      "answers": [
+        "Anivia"
+      ],
       "aliases": []
     },
     {
       "question": "the Dark Child",
-      "answers": ["Annie"],
+      "answers": [
+        "Annie"
+      ],
       "aliases": []
     },
     {
       "question": "the Weapon of the Faithful",
-      "answers": ["Aphelios"],
+      "answers": [
+        "Aphelios"
+      ],
       "aliases": []
     },
     {
       "question": "the Frost Archer",
-      "answers": ["Ashe"],
+      "answers": [
+        "Ashe"
+      ],
       "aliases": []
     },
     {
       "question": "The Star Forger",
-      "answers": ["Aurelion Sol"],
+      "answers": [
+        "Aurelion Sol"
+      ],
       "aliases": []
     },
     {
       "question": "the Witch Between Worlds",
-      "answers": ["Aurora"],
+      "answers": [
+        "Aurora"
+      ],
       "aliases": []
     },
     {
       "question": "the Emperor of the Sands",
-      "answers": ["Azir"],
+      "answers": [
+        "Azir"
+      ],
       "aliases": []
     },
     {
       "question": "the Wandering Caretaker",
-      "answers": ["Bard"],
+      "answers": [
+        "Bard"
+      ],
       "aliases": []
     },
     {
       "question": "the Empress of the Void",
-      "answers": ["Bel Veth"],
+      "answers": [
+        "Bel Veth"
+      ],
       "aliases": []
     },
     {
       "question": "the Great Steam Golem",
-      "answers": ["Blitzcrank"],
+      "answers": [
+        "Blitzcrank"
+      ],
       "aliases": []
     },
     {
       "question": "the Burning Vengeance",
-      "answers": ["Brand"],
+      "answers": [
+        "Brand"
+      ],
       "aliases": []
     },
     {
       "question": "the Heart of the Freljord",
-      "answers": ["Braum"],
+      "answers": [
+        "Braum"
+      ],
       "aliases": []
     },
     {
       "question": "the Restrained Hunger",
-      "answers": ["Briar"],
+      "answers": [
+        "Briar"
+      ],
       "aliases": []
     },
     {
       "question": "the Sheriff of Piltover",
-      "answers": ["Caitlyn"],
+      "answers": [
+        "Caitlyn"
+      ],
       "aliases": []
     },
     {
       "question": "the Steel Shadow",
-      "answers": ["Camille"],
+      "answers": [
+        "Camille"
+      ],
       "aliases": []
     },
     {
       "question": "the Serpent's Embrace",
-      "answers": ["Cassiopeia"],
+      "answers": [
+        "Cassiopeia"
+      ],
       "aliases": []
     },
     {
       "question": "the Terror of the Void",
-      "answers": ["Cho Gath"],
+      "answers": [
+        "Cho Gath"
+      ],
       "aliases": []
     },
     {
       "question": "the Daring Bombardier",
-      "answers": ["Corki"],
+      "answers": [
+        "Corki"
+      ],
       "aliases": []
     },
     {
       "question": "the Hand of Noxus",
-      "answers": ["Darius"],
+      "answers": [
+        "Darius"
+      ],
       "aliases": []
     },
     {
       "question": "Scorn of the Moon",
-      "answers": ["Diana"],
+      "answers": [
+        "Diana"
+      ],
       "aliases": []
     },
     {
       "question": "the Glorious Executioner",
-      "answers": ["Draven"],
+      "answers": [
+        "Draven"
+      ],
       "aliases": []
     },
     {
       "question": "the Madman of Zaun",
-      "answers": ["Dr. Mundo"],
+      "answers": [
+        "Dr. Mundo"
+      ],
       "aliases": []
     },
     {
       "question": "the Boy Who Shattered Time",
-      "answers": ["Ekko"],
+      "answers": [
+        "Ekko"
+      ],
       "aliases": []
     },
     {
       "question": "the Spider Queen",
-      "answers": ["Elise"],
+      "answers": [
+        "Elise"
+      ],
       "aliases": []
     },
     {
       "question": "Agony's Embrace",
-      "answers": ["Evelynn"],
+      "answers": [
+        "Evelynn"
+      ],
       "aliases": []
     },
     {
       "question": "the Prodigal Explorer",
-      "answers": ["Ezreal"],
+      "answers": [
+        "Ezreal"
+      ],
       "aliases": []
     },
     {
       "question": "the Ancient Fear",
-      "answers": ["Fiddlesticks"],
+      "answers": [
+        "Fiddlesticks"
+      ],
       "aliases": []
     },
     {
       "question": "the Grand Duelist",
-      "answers": ["Fiora"],
+      "answers": [
+        "Fiora"
+      ],
       "aliases": []
     },
     {
       "question": "the Tidal Trickster",
-      "answers": ["Fizz"],
+      "answers": [
+        "Fizz"
+      ],
       "aliases": []
     },
     {
       "question": "the Colossus",
-      "answers": ["Galio"],
+      "answers": [
+        "Galio"
+      ],
       "aliases": []
     },
     {
       "question": "the Saltwater Scourge",
-      "answers": ["Gangplank"],
+      "answers": [
+        "Gangplank"
+      ],
       "aliases": []
     },
     {
       "question": "The Might of Demacia",
-      "answers": ["Garen"],
+      "answers": [
+        "Garen"
+      ],
       "aliases": []
     },
     {
       "question": "the Missing Link",
-      "answers": ["Gnar"],
+      "answers": [
+        "Gnar"
+      ],
       "aliases": []
     },
     {
       "question": "the Rabble Rouser",
-      "answers": ["Gragas"],
+      "answers": [
+        "Gragas"
+      ],
       "aliases": []
     },
     {
       "question": "the Outlaw",
-      "answers": ["Graves"],
+      "answers": [
+        "Graves"
+      ],
       "aliases": []
     },
     {
       "question": "The Hallowed Seamstress",
-      "answers": ["Gwen"],
+      "answers": [
+        "Gwen"
+      ],
       "aliases": []
     },
     {
       "question": "the Shadow of War",
-      "answers": ["Hecarim"],
+      "answers": [
+        "Hecarim"
+      ],
       "aliases": []
     },
     {
       "question": "the Revered Inventor",
-      "answers": ["Heimerdinger"],
+      "answers": [
+        "Heimerdinger"
+      ],
       "aliases": []
     },
     {
       "question": "the Visionary",
-      "answers": ["Hwei"],
+      "answers": [
+        "Hwei"
+      ],
       "aliases": []
     },
     {
       "question": "the Kraken Priestess",
-      "answers": ["Illaoi"],
+      "answers": [
+        "Illaoi"
+      ],
       "aliases": []
     },
     {
       "question": "the Blade Dancer",
-      "answers": ["Irelia"],
+      "answers": [
+        "Irelia"
+      ],
       "aliases": []
     },
     {
       "question": "the Green Father",
-      "answers": ["Ivern"],
+      "answers": [
+        "Ivern"
+      ],
       "aliases": []
     },
     {
       "question": "the Storm's Fury",
-      "answers": ["Janna"],
+      "answers": [
+        "Janna"
+      ],
       "aliases": []
     },
     {
       "question": "the Exemplar of Demacia",
-      "answers": ["Jarvan IV"],
+      "answers": [
+        "Jarvan IV"
+      ],
       "aliases": []
     },
     {
       "question": "Grandmaster at Arms",
-      "answers": ["Jax"],
+      "answers": [
+        "Jax"
+      ],
       "aliases": []
     },
     {
       "question": "the Defender of Tomorrow",
-      "answers": ["Jayce"],
+      "answers": [
+        "Jayce"
+      ],
       "aliases": []
     },
     {
       "question": "the Virtuoso",
-      "answers": ["Jhin"],
+      "answers": [
+        "Jhin"
+      ],
       "aliases": []
     },
     {
       "question": "the Loose Cannon",
-      "answers": ["Jinx"],
+      "answers": [
+        "Jinx"
+      ],
       "aliases": []
     },
     {
       "question": "Daughter of the Void",
-      "answers": ["Kai Sa"],
+      "answers": [
+        "Kai Sa"
+      ],
       "aliases": []
     },
     {
       "question": "the Spear of Vengeance",
-      "answers": ["Kalista"],
+      "answers": [
+        "Kalista"
+      ],
       "aliases": []
     },
     {
       "question": "the Enlightened One",
-      "answers": ["Karma"],
+      "answers": [
+        "Karma"
+      ],
       "aliases": []
     },
     {
       "question": "the Deathsinger",
-      "answers": ["Karthus"],
+      "answers": [
+        "Karthus"
+      ],
       "aliases": []
     },
     {
       "question": "the Void Walker",
-      "answers": ["Kassadin"],
+      "answers": [
+        "Kassadin"
+      ],
       "aliases": []
     },
     {
       "question": "the Sinister Blade",
-      "answers": ["Katarina"],
+      "answers": [
+        "Katarina"
+      ],
       "aliases": []
     },
     {
       "question": "the Righteous",
-      "answers": ["Kayle"],
+      "answers": [
+        "Kayle"
+      ],
       "aliases": []
     },
     {
       "question": "the Shadow Reaper",
-      "answers": ["Kayn"],
+      "answers": [
+        "Kayn"
+      ],
       "aliases": []
     },
     {
       "question": "the Heart of the Tempest",
-      "answers": ["Kennen"],
+      "answers": [
+        "Kennen"
+      ],
       "aliases": []
     },
     {
       "question": "the Voidreaver",
-      "answers": ["Kha Zix"],
+      "answers": [
+        "Kha Zix"
+      ],
       "aliases": []
     },
     {
       "question": "The Eternal Hunters",
-      "answers": ["Kindred"],
+      "answers": [
+        "Kindred"
+      ],
       "aliases": []
     },
     {
       "question": "the Cantankerous Cavalier",
-      "answers": ["Kled"],
+      "answers": [
+        "Kled"
+      ],
       "aliases": []
     },
     {
       "question": "the Mouth of the Abyss",
-      "answers": ["Kog Maw"],
+      "answers": [
+        "Kog Maw"
+      ],
       "aliases": []
     },
     {
       "question": "the Pride of Nazumah",
-      "answers": ["K Sante"],
+      "answers": [
+        "K Sante"
+      ],
       "aliases": []
     },
     {
       "question": "the Deceiver",
-      "answers": ["LeBlanc"],
+      "answers": [
+        "LeBlanc"
+      ],
       "aliases": []
     },
     {
       "question": "the Blind Monk",
-      "answers": ["Lee Sin"],
+      "answers": [
+        "Lee Sin"
+      ],
       "aliases": []
     },
     {
       "question": "the Radiant Dawn",
-      "answers": ["Leona"],
+      "answers": [
+        "Leona"
+      ],
       "aliases": []
     },
     {
       "question": "the Bashful Bloom",
-      "answers": ["Lillia"],
+      "answers": [
+        "Lillia"
+      ],
       "aliases": []
     },
     {
       "question": "the Ice Witch",
-      "answers": ["Lissandra"],
+      "answers": [
+        "Lissandra"
+      ],
       "aliases": []
     },
     {
       "question": "the Purifier",
-      "answers": ["Lucian"],
+      "answers": [
+        "Lucian"
+      ],
       "aliases": []
     },
     {
       "question": "the Fae Sorceress",
-      "answers": ["Lulu"],
+      "answers": [
+        "Lulu"
+      ],
       "aliases": []
     },
     {
       "question": "the Lady of Luminosity",
-      "answers": ["Lux"],
+      "answers": [
+        "Lux"
+      ],
       "aliases": []
     },
     {
       "question": "Shard of the Monolith",
-      "answers": ["Malphite"],
+      "answers": [
+        "Malphite"
+      ],
       "aliases": []
     },
     {
       "question": "the Prophet of the Void",
-      "answers": ["Malzahar"],
+      "answers": [
+        "Malzahar"
+      ],
       "aliases": []
     },
     {
       "question": "the Twisted Treant",
-      "answers": ["Maokai"],
+      "answers": [
+        "Maokai"
+      ],
       "aliases": []
     },
     {
       "question": "the Wuju Bladesman",
-      "answers": ["Master Yi"],
+      "answers": [
+        "Master Yi"
+      ],
       "aliases": []
     },
     {
       "question": "the Soul's Reflection",
-      "answers": ["Mel"],
+      "answers": [
+        "Mel"
+      ],
       "aliases": []
     },
     {
       "question": "The Gentle Flame",
-      "answers": ["Milio"],
+      "answers": [
+        "Milio"
+      ],
       "aliases": []
     },
     {
       "question": "the Bounty Hunter",
-      "answers": ["Miss Fortune"],
+      "answers": [
+        "Miss Fortune"
+      ],
       "aliases": []
     },
     {
       "question": "the Monkey King",
-      "answers": ["Wukong"],
+      "answers": [
+        "Wukong"
+      ],
       "aliases": []
     },
     {
       "question": "the Iron Revenant",
-      "answers": ["Mordekaiser"],
+      "answers": [
+        "Mordekaiser"
+      ],
       "aliases": []
     },
     {
       "question": "the Fallen",
-      "answers": ["Morgana"],
+      "answers": [
+        "Morgana"
+      ],
       "aliases": []
     },
     {
       "question": "the Hound of a Hundred Bites",
-      "answers": ["Naafiri"],
+      "answers": [
+        "Naafiri"
+      ],
       "aliases": []
     },
     {
       "question": "the Tidecaller",
-      "answers": ["Nami"],
+      "answers": [
+        "Nami"
+      ],
       "aliases": []
     },
     {
       "question": "the Curator of the Sands",
-      "answers": ["Nasus"],
+      "answers": [
+        "Nasus"
+      ],
       "aliases": []
     },
     {
       "question": "the Titan of the Depths",
-      "answers": ["Nautilus"],
+      "answers": [
+        "Nautilus"
+      ],
       "aliases": []
     },
     {
       "question": "the Curious Chameleon",
-      "answers": ["Neeko"],
+      "answers": [
+        "Neeko"
+      ],
       "aliases": []
     },
     {
       "question": "the Bestial Huntress",
-      "answers": ["Nidalee"],
+      "answers": [
+        "Nidalee"
+      ],
       "aliases": []
     },
     {
       "question": "the Joy Unbound",
-      "answers": ["Nilah"],
+      "answers": [
+        "Nilah"
+      ],
       "aliases": []
     },
     {
       "question": "the Eternal Nightmare",
-      "answers": ["Nocturne"],
+      "answers": [
+        "Nocturne"
+      ],
       "aliases": []
     },
     {
       "question": "the Boy and His Yeti",
-      "answers": ["Nunu & Willump"],
+      "answers": [
+        "Nunu & Willump"
+      ],
       "aliases": []
     },
     {
       "question": "the Berserker",
-      "answers": ["Olaf"],
+      "answers": [
+        "Olaf"
+      ],
       "aliases": []
     },
     {
       "question": "the Lady of Clockwork",
-      "answers": ["Orianna"],
+      "answers": [
+        "Orianna"
+      ],
       "aliases": []
     },
     {
       "question": "The Fire below the Mountain",
-      "answers": ["Ornn"],
+      "answers": [
+        "Ornn"
+      ],
       "aliases": []
     },
     {
       "question": "the Unbreakable Spear",
-      "answers": ["Pantheon"],
+      "answers": [
+        "Pantheon"
+      ],
       "aliases": []
     },
     {
       "question": "Keeper of the Hammer",
-      "answers": ["Poppy"],
+      "answers": [
+        "Poppy"
+      ],
       "aliases": []
     },
     {
       "question": "the Bloodharbor Ripper",
-      "answers": ["Pyke"],
+      "answers": [
+        "Pyke"
+      ],
       "aliases": []
     },
     {
       "question": "Empress of the Elements",
-      "answers": ["Qiyana"],
+      "answers": [
+        "Qiyana"
+      ],
       "aliases": []
     },
     {
       "question": "Demacia's Wings",
-      "answers": ["Quinn"],
+      "answers": [
+        "Quinn"
+      ],
       "aliases": []
     },
     {
       "question": "The Charmer",
-      "answers": ["Rakan"],
+      "answers": [
+        "Rakan"
+      ],
       "aliases": []
     },
     {
       "question": "the Armordillo",
-      "answers": ["Rammus"],
+      "answers": [
+        "Rammus"
+      ],
       "aliases": []
     },
     {
       "question": "the Void Burrower",
-      "answers": ["Rek Sai"],
+      "answers": [
+        "Rek Sai"
+      ],
       "aliases": []
     },
     {
       "question": "the Iron Maiden",
-      "answers": ["Rell"],
+      "answers": [
+        "Rell"
+      ],
       "aliases": []
     },
     {
       "question": "the Chem-Baroness",
-      "answers": ["Renata Glasc"],
+      "answers": [
+        "Renata Glasc"
+      ],
       "aliases": []
     },
     {
       "question": "the Butcher of the Sands",
-      "answers": ["Renekton"],
+      "answers": [
+        "Renekton"
+      ],
       "aliases": []
     },
     {
       "question": "the Pridestalker",
-      "answers": ["Rengar"],
+      "answers": [
+        "Rengar"
+      ],
       "aliases": []
     },
     {
       "question": "the Exile",
-      "answers": ["Riven"],
+      "answers": [
+        "Riven"
+      ],
       "aliases": []
     },
     {
       "question": "the Mechanized Menace",
-      "answers": ["Rumble"],
+      "answers": [
+        "Rumble"
+      ],
       "aliases": []
     },
     {
       "question": "the Rune Mage",
-      "answers": ["Ryze"],
+      "answers": [
+        "Ryze"
+      ],
       "aliases": []
     },
     {
       "question": "the Desert Rose",
-      "answers": ["Samira"],
+      "answers": [
+        "Samira"
+      ],
       "aliases": []
     },
     {
       "question": "Fury of the North",
-      "answers": ["Sejuani"],
+      "answers": [
+        "Sejuani"
+      ],
       "aliases": []
     },
     {
       "question": "the Redeemer",
-      "answers": ["Senna"],
+      "answers": [
+        "Senna"
+      ],
       "aliases": []
     },
     {
       "question": "the Starry-Eyed Songstress",
-      "answers": ["Seraphine"],
+      "answers": [
+        "Seraphine"
+      ],
       "aliases": []
     },
     {
       "question": "the Boss",
-      "answers": ["Sett"],
+      "answers": [
+        "Sett"
+      ],
       "aliases": []
     },
     {
       "question": "the Demon Jester",
-      "answers": ["Shaco"],
+      "answers": [
+        "Shaco"
+      ],
       "aliases": []
     },
     {
       "question": "the Eye of Twilight",
-      "answers": ["Shen"],
+      "answers": [
+        "Shen"
+      ],
       "aliases": []
     },
     {
       "question": "the Half-Dragon",
-      "answers": ["Shyvana"],
+      "answers": [
+        "Shyvana"
+      ],
       "aliases": []
     },
     {
       "question": "the Mad Chemist",
-      "answers": ["Singed"],
+      "answers": [
+        "Singed"
+      ],
       "aliases": []
     },
     {
       "question": "The Undead Juggernaut",
-      "answers": ["Sion"],
+      "answers": [
+        "Sion"
+      ],
       "aliases": []
     },
     {
       "question": "the Battle Mistress",
-      "answers": ["Sivir"],
+      "answers": [
+        "Sivir"
+      ],
       "aliases": []
     },
     {
       "question": "the Primordial Sovereign",
-      "answers": ["Skarner"],
+      "answers": [
+        "Skarner"
+      ],
       "aliases": []
     },
     {
       "question": "the Fiery Fledgling",
-      "answers": ["Smolder"],
+      "answers": [
+        "Smolder"
+      ],
       "aliases": []
     },
     {
       "question": "Maven of the Strings",
-      "answers": ["Sona"],
+      "answers": [
+        "Sona"
+      ],
       "aliases": []
     },
     {
       "question": "the Starchild",
-      "answers": ["Soraka"],
+      "answers": [
+        "Soraka"
+      ],
       "aliases": []
     },
     {
       "question": "the Noxian Grand General",
-      "answers": ["Swain"],
+      "answers": [
+        "Swain"
+      ],
       "aliases": []
     },
     {
       "question": "the Unshackled",
-      "answers": ["Sylas"],
+      "answers": [
+        "Sylas"
+      ],
       "aliases": []
     },
     {
       "question": "the Dark Sovereign",
-      "answers": ["Syndra"],
+      "answers": [
+        "Syndra"
+      ],
       "aliases": []
     },
     {
       "question": "The River King",
-      "answers": ["Tahm Kench"],
+      "answers": [
+        "Tahm Kench"
+      ],
       "aliases": []
     },
     {
       "question": "the Stoneweaver",
-      "answers": ["Taliyah"],
+      "answers": [
+        "Taliyah"
+      ],
       "aliases": []
     },
     {
       "question": "the Blade's Shadow",
-      "answers": ["Talon"],
+      "answers": [
+        "Talon"
+      ],
       "aliases": []
     },
     {
       "question": "the Shield of Valoran",
-      "answers": ["Taric"],
+      "answers": [
+        "Taric"
+      ],
       "aliases": []
     },
     {
       "question": "the Swift Scout",
-      "answers": ["Teemo"],
+      "answers": [
+        "Teemo"
+      ],
       "aliases": []
     },
     {
       "question": "the Chain Warden",
-      "answers": ["Thresh"],
+      "answers": [
+        "Thresh"
+      ],
       "aliases": []
     },
     {
       "question": "the Yordle Gunner",
-      "answers": ["Tristana"],
+      "answers": [
+        "Tristana"
+      ],
       "aliases": []
     },
     {
       "question": "the Troll King",
-      "answers": ["Trundle"],
+      "answers": [
+        "Trundle"
+      ],
       "aliases": []
     },
     {
       "question": "the Barbarian King",
-      "answers": ["Tryndamere"],
+      "answers": [
+        "Tryndamere"
+      ],
       "aliases": []
     },
     {
       "question": "the Card Master",
-      "answers": ["Twisted Fate"],
+      "answers": [
+        "Twisted Fate"
+      ],
       "aliases": []
     },
     {
       "question": "the Plague Rat",
-      "answers": ["Twitch"],
+      "answers": [
+        "Twitch"
+      ],
       "aliases": []
     },
     {
       "question": "the Spirit Walker",
-      "answers": ["Udyr"],
+      "answers": [
+        "Udyr"
+      ],
       "aliases": []
     },
     {
       "question": "the Dreadnought",
-      "answers": ["Urgot"],
+      "answers": [
+        "Urgot"
+      ],
       "aliases": []
     },
     {
       "question": "the Arrow of Retribution",
-      "answers": ["Varus"],
+      "answers": [
+        "Varus"
+      ],
       "aliases": []
     },
     {
       "question": "the Night Hunter",
-      "answers": ["Vayne"],
+      "answers": [
+        "Vayne"
+      ],
       "aliases": []
     },
     {
       "question": "the Tiny Master of Evil",
-      "answers": ["Veigar"],
+      "answers": [
+        "Veigar"
+      ],
       "aliases": []
     },
     {
       "question": "the Eye of the Void",
-      "answers": ["Vel Koz"],
+      "answers": [
+        "Vel Koz"
+      ],
       "aliases": []
     },
     {
       "question": "the Gloomist",
-      "answers": ["Vex"],
+      "answers": [
+        "Vex"
+      ],
       "aliases": []
     },
     {
       "question": "the Piltover Enforcer",
-      "answers": ["Vi"],
+      "answers": [
+        "Vi"
+      ],
       "aliases": []
     },
     {
       "question": "The Ruined King",
-      "answers": ["Viego"],
+      "answers": [
+        "Viego"
+      ],
       "aliases": []
     },
     {
       "question": "the Herald of the Arcane",
-      "answers": ["Viktor"],
+      "answers": [
+        "Viktor"
+      ],
       "aliases": []
     },
     {
       "question": "the Crimson Reaper",
-      "answers": ["Vladimir"],
+      "answers": [
+        "Vladimir"
+      ],
       "aliases": []
     },
     {
       "question": "the Relentless Storm",
-      "answers": ["Volibear"],
+      "answers": [
+        "Volibear"
+      ],
       "aliases": []
     },
     {
       "question": "the Uncaged Wrath of Zaun",
-      "answers": ["Warwick"],
+      "answers": [
+        "Warwick"
+      ],
       "aliases": []
     },
     {
       "question": "the Rebel",
-      "answers": ["Xayah"],
+      "answers": [
+        "Xayah"
+      ],
       "aliases": []
     },
     {
       "question": "the Magus Ascendant",
-      "answers": ["Xerath"],
+      "answers": [
+        "Xerath"
+      ],
       "aliases": []
     },
     {
       "question": "the Seneschal of Demacia",
-      "answers": ["Xin Zhao"],
+      "answers": [
+        "Xin Zhao"
+      ],
       "aliases": []
     },
     {
       "question": "the Unforgiven",
-      "answers": ["Yasuo"],
+      "answers": [
+        "Yasuo"
+      ],
       "aliases": []
     },
     {
       "question": "the Unforgotten",
-      "answers": ["Yone"],
+      "answers": [
+        "Yone"
+      ],
       "aliases": []
     },
     {
       "question": "Shepherd of Souls",
-      "answers": ["Yorick"],
+      "answers": [
+        "Yorick"
+      ],
       "aliases": []
     },
     {
       "question": "the Magical Cat",
-      "answers": ["Yuumi"],
+      "answers": [
+        "Yuumi"
+      ],
       "aliases": []
     },
     {
       "question": "the Secret Weapon",
-      "answers": ["Zac"],
+      "answers": [
+        "Zac"
+      ],
       "aliases": []
     },
     {
       "question": "the Master of Shadows",
-      "answers": ["Zed"],
+      "answers": [
+        "Zed"
+      ],
       "aliases": []
     },
     {
       "question": "The Spark of Zaun",
-      "answers": ["Zeri"],
+      "answers": [
+        "Zeri"
+      ],
       "aliases": []
     },
     {
       "question": "the Hexplosives Expert",
-      "answers": ["Ziggs"],
+      "answers": [
+        "Ziggs"
+      ],
       "aliases": []
     },
     {
       "question": "the Chronokeeper",
-      "answers": ["Zilean"],
+      "answers": [
+        "Zilean"
+      ],
       "aliases": []
     },
     {
       "question": "the Aspect of Twilight",
-      "answers": ["Zoe"],
+      "answers": [
+        "Zoe"
+      ],
       "aliases": []
     },
     {
       "question": "Rise of the Thorns",
-      "answers": ["Zyra"],
+      "answers": [
+        "Zyra"
+      ],
       "aliases": []
     }
   ]

@@ -1,6 +1,6 @@
 {
   "name": "Numbers",
-  "preview_img": "default-preview.png",
+  "preview_img": "numbers.png",
   "preview_desc": "Test your Number Skillz",
   "type": "text",
   "fuzzy_matching_threshold": 0.9,
