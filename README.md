@@ -8,67 +8,46 @@ players can challenge their friends in head-to-head trivia battles. Floor It! is
 designed to be accessible, fun, and socially engaging, catering to trivia enthusiasts
 and casual gamers alike.
 
-## User Manual
+## How to Play
 
-### Installation
+### Getting Started
 
-#### Prerequisites
+1. Visit [Floor It!](https://uw-floor-it.web.app/) in your web browser
+2. Click "LET'S PLAY" on the home screen to begin
+3. Set up player information for both players:
+    - Enter names for each player
+    - Choose colors by clicking the palette icon
+    - Click "Ready!" when both players are set up
 
-- Node.js (version 18 or later)
-- Python 3.12
-- Poetry (for managing Python dependencies)
+### Selecting Categories
 
-#### Setup Instructions
+1. Browse through the available trivia categories
+2. Select up to 10 categories that interest you
+3. Click "Ready!" at the bottom of the screen when you're done selecting
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/apnguyen1/floor-it.git
-   cd Floor-it
-   ```
-2. Install dependencies for the frontend:
-   ```bash
-   cd frontend
-   npm install
-   ```
-3. Install dependencies for the backend:
-   ```bash
-   cd backend
-   poetry install
-   ```
+### Gameplay
 
-### Running the Application
+1. Review the selected category and click "Start Game" when ready
+2. Take turns answering questions:
+    - The active player must answer the current question before their timer runs out
+    - Answer by speaking into your microphone
+    - Press the spacebar or say "Next" to skip a question
+    - The player with remaining time when the opponent's timer runs out wins the round
 
-#### Frontend
+### Game Controls
 
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-2. Start the frontend server:
-   ```bash
-   npm run dev
-   ```
-3. The application should be available locally
-   at [http://localhost:5173](http://localhost:5173)
+- **Voice Commands**: Answer questions by speaking clearly into your microphone
+- **Keyboard Shortcuts**: Press the Spacebar to skip questions
+- **Game Settings**: Adjust timer duration and other settings using the gear icon
 
-#### Backend
+## Tips for Success
 
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
-2. Run the processing script:
-   ```bash
-    PYTHONPATH=.. poetry run python -m src.main
-   ```
+- Speak clearly when answering questions
+- If the game doesn't recognize your answer, try rephrasing or skip to the next question
+- You can customize timer settings to make the game more or less challenging
 
-### Usage Guide
-
-- **Category Selection**: Players can select from a list of trivia categories.
-- **Answering Questions**: Players answer questions in their selected category,
-  interacting with the system’s timer and Web Speech API.
-- **Scoring System**: Players accumulate points based on correct answers and speed.
-- **Competitive Mode**: Players can challenge friends in 1v1 trivia battles.
+Enjoy playing Floor It! Challenge your friends and put your trivia knowledge to the
+test!
 
 ### Reporting Bugs
 
@@ -87,82 +66,6 @@ To report a bug:
 
 Any known issues or limitations are tracked in
 the [Issue Tracker](https://github.com/apnguyen1/floor-it/issues).
-
-## Developer Guide
-
-### Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/apnguyen1/floor-it.git
-   ```
-2. Create a new branch for your feature or bugfix:
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-3. Make your changes
-4. Commit your changes:
-   ```bash
-   git commit -m "Add your commit message"
-   ```
-5. Push your branch:
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-6. Open a pull request and describe your changes
-
-### Repository Structure
-
-```
-floor-it/
-│-- frontend/      # Frontend source code
-│-- backend/       # Backend source code
-```
-
-### Building + Testing
-
-#### Frontend
-
-1. Navigate to the frontend directory:
-   ```bash
-   cd frontend
-   ```
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Run tests:
-   ```bash
-   npm run test
-   ```
-
-#### Backend
-
-1. Navigate to the backend directory:
-   ```bash
-   cd backend
-   ```
-2. Run tests:
-   ```bash
-   make test
-   ```
-
-### Building a Release
-
-1. Ensure all tests pass before proceeding:
-   ```bash
-   npm run test
-   make test
-   ```
-2. Update the version number in the `package.json` (frontend) and `pyproject.toml` (
-   backend) files.
-3. Create a Git tag for the release:
-   ```bash
-   git tag -a v1.0 -m "Release v1.0"
-   git push origin v1.0
-   ```
 
 ### Beta++ Release
 

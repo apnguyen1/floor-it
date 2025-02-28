@@ -5,16 +5,6 @@
 This is the frontend for Floor It! It is built using React and utilizes the Web Speech
 Recognition API for speech-to-text functionality.
 
-## Table of Contents
-
-1. [Prerequisites](#prerequisites)
-2. [Setup](#setup)
-3. [Development](#development)
-4. [Testing](#testing)
-5. [Code Formatting](#code-formatting)
-6. [Pre-commit Hooks](#pre-commit-hooks)
-7. [Contributing](#contributing)
-
 ## Prerequisites
 
 Before you begin, ensure you have the following installed:
@@ -165,3 +155,18 @@ This project uses Husky to enforce pre-commit hooks.
 
 - Code is automatically formatted using Prettier
 - Tests are run to ensure no regressions are introduced
+
+### Building a Release
+
+1. Ensure all tests pass before building:
+   ```bash
+   npm run test
+   npm run build
+   ```
+2. Update the version number in the `package.json` (frontend) and `pyproject.toml` (
+   backend) files.
+3. Create a Git tag for the release:
+   ```bash
+   git tag -a v1.0 -m "Release v1.0"
+   git push origin v1.0
+   ```
