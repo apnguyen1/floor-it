@@ -40,7 +40,10 @@ export const createCommand = (overrides: Partial<Command> = {}): Command => ({
  * @param {string[]} correctAnswers - List of correct answer phrases.
  * @param {() => void} onCorrectAnswer - Callback when a correct answer is spoken.
  * @param {() => void} onSkip - Callback when the user wants to skip.
- * @param {number} [fuzzyMatchingThreshold=0.6] - Threshold for fuzzy matching (0 to 1). Default is 0.6 if not provided.
+ * @param {number} [fuzzyMatchingThreshold=0.6] - Threshold for fuzzy matching (0 to
+ *   1). Default is 0.6 if not provided.
+ * @param {boolean} isSkipped - halts any further processing temporarily if user
+ *   skipped word
  */
 export const useSpeechCommands = (
   gameStatus: GameStatus,
@@ -48,18 +51,19 @@ export const useSpeechCommands = (
   onCorrectAnswer: () => void,
   onSkip: () => void,
   fuzzyMatchingThreshold: number = 0.6,
+  isSkipped: boolean = false,
 ) => {
   const commands = useMemo(
     () => [
       createCommand({
         command: correctAnswers,
-        callback: onCorrectAnswer,
+        callback: isSkipped ? () => {} : onCorrectAnswer,
         fuzzyMatchingThreshold: fuzzyMatchingThreshold,
       }),
       createCommand({
         command: ['Next', 'Pass'], // handles skipping by voice command Next / Pass
         fuzzyMatchingThreshold: 0.9,
-        callback: onSkip,
+        callback: isSkipped ? () => {} : onSkip,
       }),
     ],
     [correctAnswers, onCorrectAnswer, onSkip],

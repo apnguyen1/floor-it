@@ -19,11 +19,12 @@ export const useCategoryQuestions = (selectedCategory: string[]) => {
   );
   // fuzzy matching threshold, defaults to 0.6
   const [fuzzyMatchingThreshold, setFuzzyMatchingThreshold] = useState<number>(0.6);
+  // checks whether the current question was skipped
+  const [isSkipped, setIsSkipped] = useState(false);
   // A reference to the list of questions
   const questions = useRef<Question[]>([]);
   // a reference to track the current index of question to display
   const questionIndex = useRef(0);
-
   // a reference to the skip audio
   const skipAudio = useRef(new Audio('/sounds/skip.mp3'));
   // a reference to the correct guess audio
@@ -73,9 +74,16 @@ export const useCategoryQuestions = (selectedCategory: string[]) => {
    * - Advances the index in a circular manner.
    */
   const skipQuestion = () => {
+    if (isSkipped) {
+      return;
+    }
     playAudio(skipAudio);
-    questionIndex.current = (questionIndex.current + 1) % questions.current.length;
-    setCurrentQuestion(questions.current[questionIndex.current]);
+    setIsSkipped(true);
+    setTimeout(() => {
+      questionIndex.current = (questionIndex.current + 1) % questions.current.length;
+      setCurrentQuestion(questions.current[questionIndex.current]);
+      setIsSkipped(false);
+    }, 3000);
   };
 
   /**
@@ -84,6 +92,7 @@ export const useCategoryQuestions = (selectedCategory: string[]) => {
    * - Moves to the next question in a circular manner.
    */
   const setNextQuestion = () => {
+    if (isSkipped) return;
     playAudio(correctAudio);
     questionIndex.current = (questionIndex.current + 1) % questions.current.length;
     setCurrentQuestion(questions.current[questionIndex.current]);
@@ -95,5 +104,6 @@ export const useCategoryQuestions = (selectedCategory: string[]) => {
     skipQuestion,
     setNextQuestion,
     fuzzyMatchingThreshold,
+    isSkipped,
   };
 };

@@ -54,3 +54,11 @@ export const helpText = (): SxProps<Theme> => ({
   justifyContent: 'center',
   gap: 1,
 });
+
+export const skipPenalty = (): SxProps<Theme> => ({
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  gap: 2,
+});
