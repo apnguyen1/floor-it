@@ -21,7 +21,7 @@ export const CategoryWidget = ({
     <Paper
       sx={{
         width: '100%',
-        aspectRatio: '3/2',
+        aspectRatio: '1/1',
         cursor: 'pointer',
         transition: 'all 0.2s',
         '&:hover': {
@@ -84,7 +84,17 @@ export const CategoryWidget = ({
             overflow: 'hidden',
           }}
         >
-          <img src={`previews/${category.image}`} alt={category.name} />
+          <img
+            src={`previews/${category.image}`}
+            alt={category.name}
+            style={{
+              maxWidth: '100%',
+              maxHeight: '100%',
+              objectFit: 'contain',
+              width: 'auto',
+              height: 'auto',
+            }}
+          />
         </Box>
       </Box>
     </Paper>

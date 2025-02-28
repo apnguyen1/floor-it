@@ -12,6 +12,7 @@ class Numbers(Category[NumbersDTO]):
             name="Numbers",
             desc="Test your Number Skillz",
             fuzzy_matching_threshold=0.9,
+            img_name="game_icon.png"
         )
 
     def _format_data(self) -> dict[str, List[str]]:

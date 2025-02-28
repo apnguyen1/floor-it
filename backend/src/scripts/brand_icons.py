@@ -1,8 +1,8 @@
 from typing import List
 
 from backend.src.models.brand_icon_dto import BrandIconsDTO
-from backend.src.utils.category import Category
 from backend.src.models.category_data_dto import QuestionType
+from backend.src.utils.category import Category
 
 
 class BrandIcons(Category[BrandIconsDTO]):
@@ -12,6 +12,7 @@ class BrandIcons(Category[BrandIconsDTO]):
             model=BrandIconsDTO,
             question_type=QuestionType.IMG,
             name="Brand Logos",
+            img_name="shopping_bag.png",
             desc="Guess the brand by their logo!",
             fuzzy_matching_threshold=0.4,
         )

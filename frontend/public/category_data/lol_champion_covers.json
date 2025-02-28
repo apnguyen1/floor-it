@@ -1,1708 +1,2388 @@
 {
   "name": "LoL Champion Covers",
-  "preview_img": "default-preview.png",
+  "preview_img": "game_icon.png",
   "preview_desc": "Guess the LoL champion's name by their image!",
   "type": "img",
   "fuzzy_matching_threshold": 0.4,
   "questions": [
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
-      "answers": ["Aatrox"],
+      "answers": [
+        "Aatrox"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_1.jpg",
-      "answers": ["Aatrox"],
+      "answers": [
+        "Aatrox"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg",
-      "answers": ["Ahri"],
+      "answers": [
+        "Ahri"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_1.jpg",
-      "answers": ["Ahri"],
+      "answers": [
+        "Ahri"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_0.jpg",
-      "answers": ["Akali"],
+      "answers": [
+        "Akali"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akali_1.jpg",
-      "answers": ["Akali"],
+      "answers": [
+        "Akali"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akshan_0.jpg",
-      "answers": ["Akshan"],
+      "answers": [
+        "Akshan"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Akshan_1.jpg",
-      "answers": ["Akshan"],
+      "answers": [
+        "Akshan"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_0.jpg",
-      "answers": ["Alistar"],
+      "answers": [
+        "Alistar"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Alistar_1.jpg",
-      "answers": ["Alistar"],
+      "answers": [
+        "Alistar"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ambessa_0.jpg",
-      "answers": ["Ambessa"],
+      "answers": [
+        "Ambessa"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ambessa_1.jpg",
-      "answers": ["Ambessa"],
+      "answers": [
+        "Ambessa"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_0.jpg",
-      "answers": ["Amumu"],
+      "answers": [
+        "Amumu"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Amumu_1.jpg",
-      "answers": ["Amumu"],
+      "answers": [
+        "Amumu"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_0.jpg",
-      "answers": ["Anivia"],
+      "answers": [
+        "Anivia"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Anivia_1.jpg",
-      "answers": ["Anivia"],
+      "answers": [
+        "Anivia"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_0.jpg",
-      "answers": ["Annie"],
+      "answers": [
+        "Annie"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_1.jpg",
-      "answers": ["Annie"],
+      "answers": [
+        "Annie"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_0.jpg",
-      "answers": ["Aphelios"],
+      "answers": [
+        "Aphelios"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aphelios_1.jpg",
-      "answers": ["Aphelios"],
+      "answers": [
+        "Aphelios"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg",
-      "answers": ["Ashe"],
+      "answers": [
+        "Ashe"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_1.jpg",
-      "answers": ["Ashe"],
+      "answers": [
+        "Ashe"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/AurelionSol_0.jpg",
-      "answers": ["Aurelion Sol"],
+      "answers": [
+        "Aurelion Sol"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/AurelionSol_1.jpg",
-      "answers": ["Aurelion Sol"],
+      "answers": [
+        "Aurelion Sol"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aurora_0.jpg",
-      "answers": ["Aurora"],
+      "answers": [
+        "Aurora"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aurora_1.jpg",
-      "answers": ["Aurora"],
+      "answers": [
+        "Aurora"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_0.jpg",
-      "answers": ["Azir"],
+      "answers": [
+        "Azir"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Azir_1.jpg",
-      "answers": ["Azir"],
+      "answers": [
+        "Azir"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Bard_0.jpg",
-      "answers": ["Bard"],
+      "answers": [
+        "Bard"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Bard_1.jpg",
-      "answers": ["Bard"],
+      "answers": [
+        "Bard"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Belveth_0.jpg",
-      "answers": ["Bel Veth"],
+      "answers": [
+        "Bel Veth"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Belveth_1.jpg",
-      "answers": ["Bel Veth"],
+      "answers": [
+        "Bel Veth"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_0.jpg",
-      "answers": ["Blitzcrank"],
+      "answers": [
+        "Blitzcrank"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Blitzcrank_1.jpg",
-      "answers": ["Blitzcrank"],
+      "answers": [
+        "Blitzcrank"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Brand_0.jpg",
-      "answers": ["Brand"],
+      "answers": [
+        "Brand"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Brand_1.jpg",
-      "answers": ["Brand"],
+      "answers": [
+        "Brand"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Braum_0.jpg",
-      "answers": ["Braum"],
+      "answers": [
+        "Braum"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Braum_1.jpg",
-      "answers": ["Braum"],
+      "answers": [
+        "Braum"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Briar_0.jpg",
-      "answers": ["Briar"],
+      "answers": [
+        "Briar"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Briar_1.jpg",
-      "answers": ["Briar"],
+      "answers": [
+        "Briar"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_0.jpg",
-      "answers": ["Caitlyn"],
+      "answers": [
+        "Caitlyn"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Caitlyn_1.jpg",
-      "answers": ["Caitlyn"],
+      "answers": [
+        "Caitlyn"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Camille_0.jpg",
-      "answers": ["Camille"],
+      "answers": [
+        "Camille"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Camille_1.jpg",
-      "answers": ["Camille"],
+      "answers": [
+        "Camille"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_0.jpg",
-      "answers": ["Cassiopeia"],
+      "answers": [
+        "Cassiopeia"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_1.jpg",
-      "answers": ["Cassiopeia"],
+      "answers": [
+        "Cassiopeia"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_0.jpg",
-      "answers": ["Cho Gath"],
+      "answers": [
+        "Cho Gath"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Chogath_1.jpg",
-      "answers": ["Cho Gath"],
+      "answers": [
+        "Cho Gath"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Corki_0.jpg",
-      "answers": ["Corki"],
+      "answers": [
+        "Corki"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Corki_1.jpg",
-      "answers": ["Corki"],
+      "answers": [
+        "Corki"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_0.jpg",
-      "answers": ["Darius"],
+      "answers": [
+        "Darius"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Darius_1.jpg",
-      "answers": ["Darius"],
+      "answers": [
+        "Darius"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Diana_0.jpg",
-      "answers": ["Diana"],
+      "answers": [
+        "Diana"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Diana_1.jpg",
-      "answers": ["Diana"],
+      "answers": [
+        "Diana"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_0.jpg",
-      "answers": ["Draven"],
+      "answers": [
+        "Draven"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Draven_1.jpg",
-      "answers": ["Draven"],
+      "answers": [
+        "Draven"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/DrMundo_0.jpg",
-      "answers": ["Dr. Mundo"],
+      "answers": [
+        "Dr. Mundo"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/DrMundo_1.jpg",
-      "answers": ["Dr. Mundo"],
+      "answers": [
+        "Dr. Mundo"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_0.jpg",
-      "answers": ["Ekko"],
+      "answers": [
+        "Ekko"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ekko_1.jpg",
-      "answers": ["Ekko"],
+      "answers": [
+        "Ekko"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Elise_0.jpg",
-      "answers": ["Elise"],
+      "answers": [
+        "Elise"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Elise_1.jpg",
-      "answers": ["Elise"],
+      "answers": [
+        "Elise"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_0.jpg",
-      "answers": ["Evelynn"],
+      "answers": [
+        "Evelynn"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Evelynn_1.jpg",
-      "answers": ["Evelynn"],
+      "answers": [
+        "Evelynn"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_0.jpg",
-      "answers": ["Ezreal"],
+      "answers": [
+        "Ezreal"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ezreal_1.jpg",
-      "answers": ["Ezreal"],
+      "answers": [
+        "Ezreal"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiddlesticks_0.jpg",
-      "answers": ["Fiddlesticks"],
+      "answers": [
+        "Fiddlesticks"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiddlesticks_1.jpg",
-      "answers": ["Fiddlesticks"],
+      "answers": [
+        "Fiddlesticks"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiora_0.jpg",
-      "answers": ["Fiora"],
+      "answers": [
+        "Fiora"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fiora_1.jpg",
-      "answers": ["Fiora"],
+      "answers": [
+        "Fiora"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_0.jpg",
-      "answers": ["Fizz"],
+      "answers": [
+        "Fizz"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Fizz_1.jpg",
-      "answers": ["Fizz"],
+      "answers": [
+        "Fizz"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Galio_0.jpg",
-      "answers": ["Galio"],
+      "answers": [
+        "Galio"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Galio_1.jpg",
-      "answers": ["Galio"],
+      "answers": [
+        "Galio"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gangplank_0.jpg",
-      "answers": ["Gangplank"],
+      "answers": [
+        "Gangplank"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gangplank_1.jpg",
-      "answers": ["Gangplank"],
+      "answers": [
+        "Gangplank"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg",
-      "answers": ["Garen"],
+      "answers": [
+        "Garen"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_1.jpg",
-      "answers": ["Garen"],
+      "answers": [
+        "Garen"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_0.jpg",
-      "answers": ["Gnar"],
+      "answers": [
+        "Gnar"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gnar_1.jpg",
-      "answers": ["Gnar"],
+      "answers": [
+        "Gnar"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_0.jpg",
-      "answers": ["Gragas"],
+      "answers": [
+        "Gragas"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_1.jpg",
-      "answers": ["Gragas"],
+      "answers": [
+        "Gragas"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Graves_0.jpg",
-      "answers": ["Graves"],
+      "answers": [
+        "Graves"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Graves_1.jpg",
-      "answers": ["Graves"],
+      "answers": [
+        "Graves"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gwen_0.jpg",
-      "answers": ["Gwen"],
+      "answers": [
+        "Gwen"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gwen_1.jpg",
-      "answers": ["Gwen"],
+      "answers": [
+        "Gwen"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hecarim_0.jpg",
-      "answers": ["Hecarim"],
+      "answers": [
+        "Hecarim"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hecarim_1.jpg",
-      "answers": ["Hecarim"],
+      "answers": [
+        "Hecarim"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_0.jpg",
-      "answers": ["Heimerdinger"],
+      "answers": [
+        "Heimerdinger"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Heimerdinger_1.jpg",
-      "answers": ["Heimerdinger"],
+      "answers": [
+        "Heimerdinger"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hwei_0.jpg",
-      "answers": ["Hwei"],
+      "answers": [
+        "Hwei"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Hwei_1.jpg",
-      "answers": ["Hwei"],
+      "answers": [
+        "Hwei"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Illaoi_0.jpg",
-      "answers": ["Illaoi"],
+      "answers": [
+        "Illaoi"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Illaoi_1.jpg",
-      "answers": ["Illaoi"],
+      "answers": [
+        "Illaoi"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_0.jpg",
-      "answers": ["Irelia"],
+      "answers": [
+        "Irelia"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Irelia_1.jpg",
-      "answers": ["Irelia"],
+      "answers": [
+        "Irelia"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_0.jpg",
-      "answers": ["Ivern"],
+      "answers": [
+        "Ivern"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ivern_1.jpg",
-      "answers": ["Ivern"],
+      "answers": [
+        "Ivern"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Janna_0.jpg",
-      "answers": ["Janna"],
+      "answers": [
+        "Janna"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Janna_1.jpg",
-      "answers": ["Janna"],
+      "answers": [
+        "Janna"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/JarvanIV_0.jpg",
-      "answers": ["Jarvan IV"],
+      "answers": [
+        "Jarvan IV"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/JarvanIV_1.jpg",
-      "answers": ["Jarvan IV"],
+      "answers": [
+        "Jarvan IV"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_0.jpg",
-      "answers": ["Jax"],
+      "answers": [
+        "Jax"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jax_1.jpg",
-      "answers": ["Jax"],
+      "answers": [
+        "Jax"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jayce_0.jpg",
-      "answers": ["Jayce"],
+      "answers": [
+        "Jayce"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jayce_1.jpg",
-      "answers": ["Jayce"],
+      "answers": [
+        "Jayce"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_0.jpg",
-      "answers": ["Jhin"],
+      "answers": [
+        "Jhin"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_1.jpg",
-      "answers": ["Jhin"],
+      "answers": [
+        "Jhin"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg",
-      "answers": ["Jinx"],
+      "answers": [
+        "Jinx"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_1.jpg",
-      "answers": ["Jinx"],
+      "answers": [
+        "Jinx"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_0.jpg",
-      "answers": ["Kai Sa"],
+      "answers": [
+        "Kai Sa"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kaisa_1.jpg",
-      "answers": ["Kai Sa"],
+      "answers": [
+        "Kai Sa"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kalista_0.jpg",
-      "answers": ["Kalista"],
+      "answers": [
+        "Kalista"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kalista_1.jpg",
-      "answers": ["Kalista"],
+      "answers": [
+        "Kalista"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karma_0.jpg",
-      "answers": ["Karma"],
+      "answers": [
+        "Karma"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karma_1.jpg",
-      "answers": ["Karma"],
+      "answers": [
+        "Karma"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karthus_0.jpg",
-      "answers": ["Karthus"],
+      "answers": [
+        "Karthus"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karthus_1.jpg",
-      "answers": ["Karthus"],
+      "answers": [
+        "Karthus"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kassadin_0.jpg",
-      "answers": ["Kassadin"],
+      "answers": [
+        "Kassadin"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kassadin_1.jpg",
-      "answers": ["Kassadin"],
+      "answers": [
+        "Kassadin"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_0.jpg",
-      "answers": ["Katarina"],
+      "answers": [
+        "Katarina"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Katarina_1.jpg",
-      "answers": ["Katarina"],
+      "answers": [
+        "Katarina"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayle_0.jpg",
-      "answers": ["Kayle"],
+      "answers": [
+        "Kayle"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayle_1.jpg",
-      "answers": ["Kayle"],
+      "answers": [
+        "Kayle"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayn_0.jpg",
-      "answers": ["Kayn"],
+      "answers": [
+        "Kayn"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kayn_1.jpg",
-      "answers": ["Kayn"],
+      "answers": [
+        "Kayn"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_0.jpg",
-      "answers": ["Kennen"],
+      "answers": [
+        "Kennen"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kennen_1.jpg",
-      "answers": ["Kennen"],
+      "answers": [
+        "Kennen"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Khazix_0.jpg",
-      "answers": ["Kha Zix"],
+      "answers": [
+        "Kha Zix"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Khazix_1.jpg",
-      "answers": ["Kha Zix"],
+      "answers": [
+        "Kha Zix"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_0.jpg",
-      "answers": ["Kindred"],
+      "answers": [
+        "Kindred"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kindred_1.jpg",
-      "answers": ["Kindred"],
+      "answers": [
+        "Kindred"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kled_0.jpg",
-      "answers": ["Kled"],
+      "answers": [
+        "Kled"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Kled_1.jpg",
-      "answers": ["Kled"],
+      "answers": [
+        "Kled"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_0.jpg",
-      "answers": ["Kog Maw"],
+      "answers": [
+        "Kog Maw"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KogMaw_1.jpg",
-      "answers": ["Kog Maw"],
+      "answers": [
+        "Kog Maw"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KSante_0.jpg",
-      "answers": ["K Sante"],
+      "answers": [
+        "K Sante"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/KSante_1.jpg",
-      "answers": ["K Sante"],
+      "answers": [
+        "K Sante"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_0.jpg",
-      "answers": ["LeBlanc"],
+      "answers": [
+        "LeBlanc"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leblanc_1.jpg",
-      "answers": ["LeBlanc"],
+      "answers": [
+        "LeBlanc"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_0.jpg",
-      "answers": ["Lee Sin"],
+      "answers": [
+        "Lee Sin"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_1.jpg",
-      "answers": ["Lee Sin"],
+      "answers": [
+        "Lee Sin"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_0.jpg",
-      "answers": ["Leona"],
+      "answers": [
+        "Leona"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Leona_1.jpg",
-      "answers": ["Leona"],
+      "answers": [
+        "Leona"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lillia_0.jpg",
-      "answers": ["Lillia"],
+      "answers": [
+        "Lillia"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lillia_1.jpg",
-      "answers": ["Lillia"],
+      "answers": [
+        "Lillia"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lissandra_0.jpg",
-      "answers": ["Lissandra"],
+      "answers": [
+        "Lissandra"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lissandra_1.jpg",
-      "answers": ["Lissandra"],
+      "answers": [
+        "Lissandra"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_0.jpg",
-      "answers": ["Lucian"],
+      "answers": [
+        "Lucian"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lucian_1.jpg",
-      "answers": ["Lucian"],
+      "answers": [
+        "Lucian"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lulu_0.jpg",
-      "answers": ["Lulu"],
+      "answers": [
+        "Lulu"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lulu_1.jpg",
-      "answers": ["Lulu"],
+      "answers": [
+        "Lulu"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_0.jpg",
-      "answers": ["Lux"],
+      "answers": [
+        "Lux"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lux_1.jpg",
-      "answers": ["Lux"],
+      "answers": [
+        "Lux"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malphite_0.jpg",
-      "answers": ["Malphite"],
+      "answers": [
+        "Malphite"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malphite_1.jpg",
-      "answers": ["Malphite"],
+      "answers": [
+        "Malphite"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malzahar_0.jpg",
-      "answers": ["Malzahar"],
+      "answers": [
+        "Malzahar"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Malzahar_1.jpg",
-      "answers": ["Malzahar"],
+      "answers": [
+        "Malzahar"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_0.jpg",
-      "answers": ["Maokai"],
+      "answers": [
+        "Maokai"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Maokai_1.jpg",
-      "answers": ["Maokai"],
+      "answers": [
+        "Maokai"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_0.jpg",
-      "answers": ["Master Yi"],
+      "answers": [
+        "Master Yi"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MasterYi_1.jpg",
-      "answers": ["Master Yi"],
+      "answers": [
+        "Master Yi"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mel_0.jpg",
-      "answers": ["Mel"],
+      "answers": [
+        "Mel"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mel_1.jpg",
-      "answers": ["Mel"],
+      "answers": [
+        "Mel"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Milio_0.jpg",
-      "answers": ["Milio"],
+      "answers": [
+        "Milio"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Milio_1.jpg",
-      "answers": ["Milio"],
+      "answers": [
+        "Milio"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_0.jpg",
-      "answers": ["Miss Fortune"],
+      "answers": [
+        "Miss Fortune"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MissFortune_1.jpg",
-      "answers": ["Miss Fortune"],
+      "answers": [
+        "Miss Fortune"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_0.jpg",
-      "answers": ["Wukong"],
+      "answers": [
+        "Wukong"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/MonkeyKing_1.jpg",
-      "answers": ["Wukong"],
+      "answers": [
+        "Wukong"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_0.jpg",
-      "answers": ["Mordekaiser"],
+      "answers": [
+        "Mordekaiser"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Mordekaiser_1.jpg",
-      "answers": ["Mordekaiser"],
+      "answers": [
+        "Mordekaiser"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Morgana_0.jpg",
-      "answers": ["Morgana"],
+      "answers": [
+        "Morgana"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Morgana_1.jpg",
-      "answers": ["Morgana"],
+      "answers": [
+        "Morgana"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Naafiri_0.jpg",
-      "answers": ["Naafiri"],
+      "answers": [
+        "Naafiri"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Naafiri_1.jpg",
-      "answers": ["Naafiri"],
+      "answers": [
+        "Naafiri"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nami_0.jpg",
-      "answers": ["Nami"],
+      "answers": [
+        "Nami"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nami_1.jpg",
-      "answers": ["Nami"],
+      "answers": [
+        "Nami"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_0.jpg",
-      "answers": ["Nasus"],
+      "answers": [
+        "Nasus"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nasus_1.jpg",
-      "answers": ["Nasus"],
+      "answers": [
+        "Nasus"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_0.jpg",
-      "answers": ["Nautilus"],
+      "answers": [
+        "Nautilus"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_1.jpg",
-      "answers": ["Nautilus"],
+      "answers": [
+        "Nautilus"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_0.jpg",
-      "answers": ["Neeko"],
+      "answers": [
+        "Neeko"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Neeko_1.jpg",
-      "answers": ["Neeko"],
+      "answers": [
+        "Neeko"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_0.jpg",
-      "answers": ["Nidalee"],
+      "answers": [
+        "Nidalee"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nidalee_1.jpg",
-      "answers": ["Nidalee"],
+      "answers": [
+        "Nidalee"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nilah_0.jpg",
-      "answers": ["Nilah"],
+      "answers": [
+        "Nilah"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nilah_1.jpg",
-      "answers": ["Nilah"],
+      "answers": [
+        "Nilah"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nocturne_0.jpg",
-      "answers": ["Nocturne"],
+      "answers": [
+        "Nocturne"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nocturne_1.jpg",
-      "answers": ["Nocturne"],
+      "answers": [
+        "Nocturne"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_0.jpg",
-      "answers": ["Nunu & Willump"],
+      "answers": [
+        "Nunu & Willump"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nunu_1.jpg",
-      "answers": ["Nunu & Willump"],
+      "answers": [
+        "Nunu & Willump"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Olaf_0.jpg",
-      "answers": ["Olaf"],
+      "answers": [
+        "Olaf"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Olaf_1.jpg",
-      "answers": ["Olaf"],
+      "answers": [
+        "Olaf"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_0.jpg",
-      "answers": ["Orianna"],
+      "answers": [
+        "Orianna"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Orianna_1.jpg",
-      "answers": ["Orianna"],
+      "answers": [
+        "Orianna"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ornn_0.jpg",
-      "answers": ["Ornn"],
+      "answers": [
+        "Ornn"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ornn_1.jpg",
-      "answers": ["Ornn"],
+      "answers": [
+        "Ornn"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_0.jpg",
-      "answers": ["Pantheon"],
+      "answers": [
+        "Pantheon"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pantheon_1.jpg",
-      "answers": ["Pantheon"],
+      "answers": [
+        "Pantheon"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_0.jpg",
-      "answers": ["Poppy"],
+      "answers": [
+        "Poppy"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_1.jpg",
-      "answers": ["Poppy"],
+      "answers": [
+        "Poppy"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_0.jpg",
-      "answers": ["Pyke"],
+      "answers": [
+        "Pyke"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Pyke_1.jpg",
-      "answers": ["Pyke"],
+      "answers": [
+        "Pyke"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_0.jpg",
-      "answers": ["Qiyana"],
+      "answers": [
+        "Qiyana"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Qiyana_1.jpg",
-      "answers": ["Qiyana"],
+      "answers": [
+        "Qiyana"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Quinn_0.jpg",
-      "answers": ["Quinn"],
+      "answers": [
+        "Quinn"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Quinn_1.jpg",
-      "answers": ["Quinn"],
+      "answers": [
+        "Quinn"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rakan_0.jpg",
-      "answers": ["Rakan"],
+      "answers": [
+        "Rakan"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rakan_1.jpg",
-      "answers": ["Rakan"],
+      "answers": [
+        "Rakan"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rammus_0.jpg",
-      "answers": ["Rammus"],
+      "answers": [
+        "Rammus"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rammus_1.jpg",
-      "answers": ["Rammus"],
+      "answers": [
+        "Rammus"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/RekSai_0.jpg",
-      "answers": ["Rek Sai"],
+      "answers": [
+        "Rek Sai"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/RekSai_1.jpg",
-      "answers": ["Rek Sai"],
+      "answers": [
+        "Rek Sai"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rell_0.jpg",
-      "answers": ["Rell"],
+      "answers": [
+        "Rell"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rell_1.jpg",
-      "answers": ["Rell"],
+      "answers": [
+        "Rell"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_0.jpg",
-      "answers": ["Renata Glasc"],
+      "answers": [
+        "Renata Glasc"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renata_1.jpg",
-      "answers": ["Renata Glasc"],
+      "answers": [
+        "Renata Glasc"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renekton_0.jpg",
-      "answers": ["Renekton"],
+      "answers": [
+        "Renekton"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Renekton_1.jpg",
-      "answers": ["Renekton"],
+      "answers": [
+        "Renekton"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rengar_0.jpg",
-      "answers": ["Rengar"],
+      "answers": [
+        "Rengar"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rengar_1.jpg",
-      "answers": ["Rengar"],
+      "answers": [
+        "Rengar"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_0.jpg",
-      "answers": ["Riven"],
+      "answers": [
+        "Riven"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Riven_1.jpg",
-      "answers": ["Riven"],
+      "answers": [
+        "Riven"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rumble_0.jpg",
-      "answers": ["Rumble"],
+      "answers": [
+        "Rumble"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Rumble_1.jpg",
-      "answers": ["Rumble"],
+      "answers": [
+        "Rumble"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_0.jpg",
-      "answers": ["Ryze"],
+      "answers": [
+        "Ryze"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_1.jpg",
-      "answers": ["Ryze"],
+      "answers": [
+        "Ryze"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Samira_0.jpg",
-      "answers": ["Samira"],
+      "answers": [
+        "Samira"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Samira_1.jpg",
-      "answers": ["Samira"],
+      "answers": [
+        "Samira"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_0.jpg",
-      "answers": ["Sejuani"],
+      "answers": [
+        "Sejuani"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sejuani_1.jpg",
-      "answers": ["Sejuani"],
+      "answers": [
+        "Sejuani"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_0.jpg",
-      "answers": ["Senna"],
+      "answers": [
+        "Senna"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Senna_1.jpg",
-      "answers": ["Senna"],
+      "answers": [
+        "Senna"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Seraphine_0.jpg",
-      "answers": ["Seraphine"],
+      "answers": [
+        "Seraphine"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Seraphine_1.jpg",
-      "answers": ["Seraphine"],
+      "answers": [
+        "Seraphine"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_0.jpg",
-      "answers": ["Sett"],
+      "answers": [
+        "Sett"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sett_1.jpg",
-      "answers": ["Sett"],
+      "answers": [
+        "Sett"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_0.jpg",
-      "answers": ["Shaco"],
+      "answers": [
+        "Shaco"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_1.jpg",
-      "answers": ["Shaco"],
+      "answers": [
+        "Shaco"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shen_0.jpg",
-      "answers": ["Shen"],
+      "answers": [
+        "Shen"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shen_1.jpg",
-      "answers": ["Shen"],
+      "answers": [
+        "Shen"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shyvana_0.jpg",
-      "answers": ["Shyvana"],
+      "answers": [
+        "Shyvana"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shyvana_1.jpg",
-      "answers": ["Shyvana"],
+      "answers": [
+        "Shyvana"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_0.jpg",
-      "answers": ["Singed"],
+      "answers": [
+        "Singed"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Singed_1.jpg",
-      "answers": ["Singed"],
+      "answers": [
+        "Singed"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sion_0.jpg",
-      "answers": ["Sion"],
+      "answers": [
+        "Sion"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sion_1.jpg",
-      "answers": ["Sion"],
+      "answers": [
+        "Sion"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_0.jpg",
-      "answers": ["Sivir"],
+      "answers": [
+        "Sivir"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sivir_1.jpg",
-      "answers": ["Sivir"],
+      "answers": [
+        "Sivir"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Skarner_0.jpg",
-      "answers": ["Skarner"],
+      "answers": [
+        "Skarner"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Skarner_1.jpg",
-      "answers": ["Skarner"],
+      "answers": [
+        "Skarner"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Smolder_0.jpg",
-      "answers": ["Smolder"],
+      "answers": [
+        "Smolder"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Smolder_1.jpg",
-      "answers": ["Smolder"],
+      "answers": [
+        "Smolder"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_0.jpg",
-      "answers": ["Sona"],
+      "answers": [
+        "Sona"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sona_1.jpg",
-      "answers": ["Sona"],
+      "answers": [
+        "Sona"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Soraka_0.jpg",
-      "answers": ["Soraka"],
+      "answers": [
+        "Soraka"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Soraka_1.jpg",
-      "answers": ["Soraka"],
+      "answers": [
+        "Soraka"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Swain_0.jpg",
-      "answers": ["Swain"],
+      "answers": [
+        "Swain"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Swain_1.jpg",
-      "answers": ["Swain"],
+      "answers": [
+        "Swain"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_0.jpg",
-      "answers": ["Sylas"],
+      "answers": [
+        "Sylas"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sylas_1.jpg",
-      "answers": ["Sylas"],
+      "answers": [
+        "Sylas"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Syndra_0.jpg",
-      "answers": ["Syndra"],
+      "answers": [
+        "Syndra"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Syndra_1.jpg",
-      "answers": ["Syndra"],
+      "answers": [
+        "Syndra"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_0.jpg",
-      "answers": ["Tahm Kench"],
+      "answers": [
+        "Tahm Kench"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TahmKench_1.jpg",
-      "answers": ["Tahm Kench"],
+      "answers": [
+        "Tahm Kench"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taliyah_0.jpg",
-      "answers": ["Taliyah"],
+      "answers": [
+        "Taliyah"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taliyah_1.jpg",
-      "answers": ["Taliyah"],
+      "answers": [
+        "Taliyah"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Talon_0.jpg",
-      "answers": ["Talon"],
+      "answers": [
+        "Talon"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Talon_1.jpg",
-      "answers": ["Talon"],
+      "answers": [
+        "Talon"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_0.jpg",
-      "answers": ["Taric"],
+      "answers": [
+        "Taric"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_1.jpg",
-      "answers": ["Taric"],
+      "answers": [
+        "Taric"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_0.jpg",
-      "answers": ["Teemo"],
+      "answers": [
+        "Teemo"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Teemo_1.jpg",
-      "answers": ["Teemo"],
+      "answers": [
+        "Teemo"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg",
-      "answers": ["Thresh"],
+      "answers": [
+        "Thresh"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_1.jpg",
-      "answers": ["Thresh"],
+      "answers": [
+        "Thresh"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tristana_0.jpg",
-      "answers": ["Tristana"],
+      "answers": [
+        "Tristana"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tristana_1.jpg",
-      "answers": ["Tristana"],
+      "answers": [
+        "Tristana"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Trundle_0.jpg",
-      "answers": ["Trundle"],
+      "answers": [
+        "Trundle"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Trundle_1.jpg",
-      "answers": ["Trundle"],
+      "answers": [
+        "Trundle"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tryndamere_0.jpg",
-      "answers": ["Tryndamere"],
+      "answers": [
+        "Tryndamere"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tryndamere_1.jpg",
-      "answers": ["Tryndamere"],
+      "answers": [
+        "Tryndamere"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TwistedFate_0.jpg",
-      "answers": ["Twisted Fate"],
+      "answers": [
+        "Twisted Fate"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/TwistedFate_1.jpg",
-      "answers": ["Twisted Fate"],
+      "answers": [
+        "Twisted Fate"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Twitch_0.jpg",
-      "answers": ["Twitch"],
+      "answers": [
+        "Twitch"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Twitch_1.jpg",
-      "answers": ["Twitch"],
+      "answers": [
+        "Twitch"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Udyr_0.jpg",
-      "answers": ["Udyr"],
+      "answers": [
+        "Udyr"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Udyr_1.jpg",
-      "answers": ["Udyr"],
+      "answers": [
+        "Udyr"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Urgot_0.jpg",
-      "answers": ["Urgot"],
+      "answers": [
+        "Urgot"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Urgot_1.jpg",
-      "answers": ["Urgot"],
+      "answers": [
+        "Urgot"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Varus_0.jpg",
-      "answers": ["Varus"],
+      "answers": [
+        "Varus"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Varus_1.jpg",
-      "answers": ["Varus"],
+      "answers": [
+        "Varus"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vayne_0.jpg",
-      "answers": ["Vayne"],
+      "answers": [
+        "Vayne"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vayne_1.jpg",
-      "answers": ["Vayne"],
+      "answers": [
+        "Vayne"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Veigar_0.jpg",
-      "answers": ["Veigar"],
+      "answers": [
+        "Veigar"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Veigar_1.jpg",
-      "answers": ["Veigar"],
+      "answers": [
+        "Veigar"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Velkoz_0.jpg",
-      "answers": ["Vel Koz"],
+      "answers": [
+        "Vel Koz"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Velkoz_1.jpg",
-      "answers": ["Vel Koz"],
+      "answers": [
+        "Vel Koz"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vex_0.jpg",
-      "answers": ["Vex"],
+      "answers": [
+        "Vex"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vex_1.jpg",
-      "answers": ["Vex"],
+      "answers": [
+        "Vex"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vi_0.jpg",
-      "answers": ["Vi"],
+      "answers": [
+        "Vi"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vi_1.jpg",
-      "answers": ["Vi"],
+      "answers": [
+        "Vi"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viego_0.jpg",
-      "answers": ["Viego"],
+      "answers": [
+        "Viego"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viego_1.jpg",
-      "answers": ["Viego"],
+      "answers": [
+        "Viego"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viktor_0.jpg",
-      "answers": ["Viktor"],
+      "answers": [
+        "Viktor"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Viktor_1.jpg",
-      "answers": ["Viktor"],
+      "answers": [
+        "Viktor"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vladimir_0.jpg",
-      "answers": ["Vladimir"],
+      "answers": [
+        "Vladimir"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vladimir_1.jpg",
-      "answers": ["Vladimir"],
+      "answers": [
+        "Vladimir"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_0.jpg",
-      "answers": ["Volibear"],
+      "answers": [
+        "Volibear"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Volibear_1.jpg",
-      "answers": ["Volibear"],
+      "answers": [
+        "Volibear"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_0.jpg",
-      "answers": ["Warwick"],
+      "answers": [
+        "Warwick"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Warwick_1.jpg",
-      "answers": ["Warwick"],
+      "answers": [
+        "Warwick"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_0.jpg",
-      "answers": ["Xayah"],
+      "answers": [
+        "Xayah"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xayah_1.jpg",
-      "answers": ["Xayah"],
+      "answers": [
+        "Xayah"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xerath_0.jpg",
-      "answers": ["Xerath"],
+      "answers": [
+        "Xerath"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Xerath_1.jpg",
-      "answers": ["Xerath"],
+      "answers": [
+        "Xerath"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/XinZhao_0.jpg",
-      "answers": ["Xin Zhao"],
+      "answers": [
+        "Xin Zhao"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/XinZhao_1.jpg",
-      "answers": ["Xin Zhao"],
+      "answers": [
+        "Xin Zhao"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg",
-      "answers": ["Yasuo"],
+      "answers": [
+        "Yasuo"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_1.jpg",
-      "answers": ["Yasuo"],
+      "answers": [
+        "Yasuo"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yone_0.jpg",
-      "answers": ["Yone"],
+      "answers": [
+        "Yone"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yone_1.jpg",
-      "answers": ["Yone"],
+      "answers": [
+        "Yone"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yorick_0.jpg",
-      "answers": ["Yorick"],
+      "answers": [
+        "Yorick"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yorick_1.jpg",
-      "answers": ["Yorick"],
+      "answers": [
+        "Yorick"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yuumi_0.jpg",
-      "answers": ["Yuumi"],
+      "answers": [
+        "Yuumi"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yuumi_1.jpg",
-      "answers": ["Yuumi"],
+      "answers": [
+        "Yuumi"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zac_0.jpg",
-      "answers": ["Zac"],
+      "answers": [
+        "Zac"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zac_1.jpg",
-      "answers": ["Zac"],
+      "answers": [
+        "Zac"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_0.jpg",
-      "answers": ["Zed"],
+      "answers": [
+        "Zed"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_1.jpg",
-      "answers": ["Zed"],
+      "answers": [
+        "Zed"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zeri_0.jpg",
-      "answers": ["Zeri"],
+      "answers": [
+        "Zeri"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zeri_1.jpg",
-      "answers": ["Zeri"],
+      "answers": [
+        "Zeri"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_0.jpg",
-      "answers": ["Ziggs"],
+      "answers": [
+        "Ziggs"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ziggs_1.jpg",
-      "answers": ["Ziggs"],
+      "answers": [
+        "Ziggs"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zilean_0.jpg",
-      "answers": ["Zilean"],
+      "answers": [
+        "Zilean"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zilean_1.jpg",
-      "answers": ["Zilean"],
+      "answers": [
+        "Zilean"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_0.jpg",
-      "answers": ["Zoe"],
+      "answers": [
+        "Zoe"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zoe_1.jpg",
-      "answers": ["Zoe"],
+      "answers": [
+        "Zoe"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_0.jpg",
-      "answers": ["Zyra"],
+      "answers": [
+        "Zyra"
+      ],
       "aliases": []
     },
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zyra_1.jpg",
-      "answers": ["Zyra"],
+      "answers": [
+        "Zyra"
+      ],
       "aliases": []
     }
   ]
