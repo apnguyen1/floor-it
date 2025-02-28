@@ -12,6 +12,7 @@ import {
 import { PlayerState } from '../../../../types/global.type.ts';
 import { useApp } from '../../../../hooks/useApp.ts';
 import { ScreenType } from '../../../../constants/screens.ts';
+import ReplayIcon from '@mui/icons-material/Replay';
 
 /**
  * Props for the Winning Modal component.
@@ -94,6 +95,7 @@ const WinningModal = ({ isOpen, winner, onClose }: WinningModalProps) => {
               color="primary"
               size="large"
               onClick={handlePlayAgain}
+              startIcon={<ReplayIcon />}
               sx={actionButton()}
             >
               Play Again
