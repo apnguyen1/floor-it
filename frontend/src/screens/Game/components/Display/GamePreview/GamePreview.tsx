@@ -7,6 +7,7 @@ import {
   previewImage,
   startButton,
 } from './GamePreview.style.ts';
+import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 
 /**
  * Props for GamePreview components
@@ -39,6 +40,7 @@ export const GamePreview = ({ category, onStartGame }: GamePreviewProps) => {
         variant="contained"
         color="success"
         onClick={onStartGame}
+        startIcon={<PlayCircleIcon />}
         sx={startButton()}
       >
         Start Game

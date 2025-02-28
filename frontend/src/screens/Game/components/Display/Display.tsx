@@ -6,9 +6,11 @@ import {
   helpText,
   questionBox,
   questionContent,
+  skipPenalty,
   transcriptBox,
 } from './Display.style.ts';
 import SpaceBarIcon from '@mui/icons-material/SpaceBar';
+import TimerOffIcon from '@mui/icons-material/TimerOff';
 
 /**
  * Props for the Display component.
@@ -28,6 +30,8 @@ interface DisplayProps {
   hasError: boolean;
   /** Optional error message to display when `hasError` is true. */
   errorMessage?: string;
+  /** Handles user penalty if skipped */
+  isSkipped: boolean;
 }
 
 /**
@@ -45,6 +49,7 @@ export const Display = ({
   transcript,
   hasError,
   errorMessage,
+  isSkipped,
 }: DisplayProps) => {
   // Show loading state when category or question data is unavailable
   const isLoading = !category && !currentQuestion;
@@ -79,11 +84,25 @@ export const Display = ({
       ) : (
         <>
           <Box className={'question-content'} sx={questionContent()}>
-            {currentQuestion && category && (
-              <TriviaQuestion
-                type={category.type}
-                question={currentQuestion.question}
-              />
+            {isSkipped && currentQuestion ? (
+              <Box className={'skip-penalty'} sx={skipPenalty()}>
+                <TimerOffIcon sx={{ fontSize: 50, color: '#f44336' }} />
+                <Typography variant="h4" color="error" fontWeight="bold">
+                  Skip Penalty!
+                </Typography>
+                <Typography variant="subtitle1">The correct answer is:</Typography>
+                <Typography variant="h3" color="primary.main" fontWeight="bold">
+                  {currentQuestion.answers[0]}
+                </Typography>
+              </Box>
+            ) : (
+              currentQuestion &&
+              category && (
+                <TriviaQuestion
+                  type={category.type}
+                  question={currentQuestion.question}
+                />
+              )
             )}
           </Box>
           <Typography

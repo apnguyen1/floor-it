@@ -11,7 +11,6 @@ export type AppContextType = {
   setPlayers: (players: { P1: PlayerState; P2: PlayerState }) => void;
   updatePlayerOne: (update: Partial<PlayerState>) => void;
   updatePlayerTwo: (update: Partial<PlayerState>) => void;
-  updateBothPlayers: (updates: Partial<PlayerState>) => void;
   useSharedTimer: boolean;
   setUseSharedTimer: (useShared: boolean) => void;
   selectedCategory: string[];
@@ -44,13 +43,6 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
     }));
   }, []);
 
-  const updateBothPlayers = useCallback((updates: Partial<PlayerState>) => {
-    setPlayers((prev) => ({
-      P1: { ...prev.P1, ...updates },
-      P2: { ...prev.P2, ...updates },
-    }));
-  }, []);
-
   return (
     <AppContext.Provider
       value={{
@@ -60,7 +52,6 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
         setPlayers,
         updatePlayerOne,
         updatePlayerTwo,
-        updateBothPlayers,
         useSharedTimer,
         setUseSharedTimer,
         selectedCategory,

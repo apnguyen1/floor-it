@@ -54,6 +54,7 @@ export const GameScreen = () => {
     skipQuestion,
     setNextQuestion,
     fuzzyMatchingThreshold,
+    isSkipped,
   } = useCategoryQuestions(selectedCategory);
 
   // handles speech dictation and logic
@@ -69,6 +70,7 @@ export const GameScreen = () => {
     },
     skipQuestion,
     fuzzyMatchingThreshold,
+    isSkipped,
   );
 
   /**
@@ -220,6 +222,7 @@ export const GameScreen = () => {
           transcript={transcript}
           hasError={hasError}
           errorMessage={errorMessage}
+          isSkipped={isSkipped}
         />
         <Player
           playerState={players.P2}

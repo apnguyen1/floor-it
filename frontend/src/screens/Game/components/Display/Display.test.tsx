@@ -47,6 +47,7 @@ describe('Display', () => {
     transcript: '',
     hasError: false,
     errorMessage: '',
+    isSkipped: false,
   };
 
   beforeEach(() => {
