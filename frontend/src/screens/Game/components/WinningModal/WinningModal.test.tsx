@@ -36,7 +36,6 @@ describe('WinningModal', () => {
     vi.clearAllMocks();
     vi.mocked(useApp).mockReturnValue({
       setUseSharedTimer: vi.fn(),
-      updateBothPlayers: vi.fn(),
       updatePlayerOne: vi.fn(),
       updatePlayerTwo: vi.fn(),
       useSharedTimer: false,
