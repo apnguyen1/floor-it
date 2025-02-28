@@ -27,7 +27,7 @@ const ScreenRender: React.FC = () => {
 };
 
 const App: React.FC = () => {
-  const url = '/img/app_background.png';
+  const url = '/img/app_background2.png';
 
   return (
     <AppProvider>
