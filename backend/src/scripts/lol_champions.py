@@ -13,7 +13,7 @@ class Champions(Category[ChampionDTO]):
             model=ChampionDTO,
             question_type=question_type,
             fuzzy_matching_threshold=0.4,
-            img_name="game_icon.png"
+            img_name="game_icon.png",
         )
 
     def __title_to_name(self) -> Dict[str, List[str]]:
