@@ -12,11 +12,12 @@ import { Box } from '@mui/material';
 import { CategoryPreview } from '../../types/category.type';
 import { MAX_CATEGORIES, ScreenType } from '../../constants/screens';
 import { useEffect, useState } from 'react';
-import { fetchCategories } from '../../utils/fetch.ts';
-import { SearchBar } from './SearchBar.tsx';
-import { CategoriesGrid } from './CategoriesGrid.tsx';
-import { SelectionBar } from './SelectionBar.tsx';
-import { useApp } from '../../hooks/useApp.ts';
+import { fetchCategories } from '../../utils/fetch';
+import { SearchBar } from './components/SearchBar/SearchBar';
+import { CategoriesGrid } from './components/CategoriesGrid/CategoriesGrid';
+import { SelectionBar } from './components/SelectionBar/SelectionBar';
+import { useApp } from '../../hooks/useApp';
+import { categoriesBox, categoriesContent } from './CategoriesScreen.style';
 
 /**
  * Main Categories screen component
@@ -25,6 +26,7 @@ import { useApp } from '../../hooks/useApp.ts';
 export const CategoriesScreen = () => {
   const { setScreen, setSelectedCategory } = useApp();
   const [categories, setCategories] = useState<CategoryPreview[]>([]);
+  const [filteredCategories, setFilteredCategories] = useState<CategoryPreview[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<CategoryPreview[]>([]);
 
   /**
@@ -32,7 +34,10 @@ export const CategoriesScreen = () => {
    */
   useEffect(() => {
     fetchCategories()
-      .then(setCategories)
+      .then((cats) => {
+        setCategories(cats);
+        setFilteredCategories(cats);
+      })
       .catch((err) => console.error('failed to fetch Categories', err));
   }, []);
 
@@ -53,33 +58,41 @@ export const CategoriesScreen = () => {
     });
   };
 
+  /**
+   * Handles search functionality
+   */
+  const handleSearch = (query: string) => {
+    const filtered = categories.filter((category) =>
+      category.name.toLowerCase().includes(query.toLowerCase()),
+    );
+    setFilteredCategories(filtered);
+  };
+
+  /**
+   * Handles game start
+   */
   const handleGameStart = () => {
     setSelectedCategory(selectedCategories.map((c) => c.name));
     setScreen(ScreenType.Game);
   };
 
   return (
-    <Box
-      sx={{
-        height: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        backgroundColor: 'rgba(255, 255, 255, 0.75)',
-      }}
-    >
-      {/*Search Bar */}
-      <SearchBar />
-      {/*Grid of Categories*/}
-      <CategoriesGrid
-        selectedCategories={categories}
-        onToggleCategories={handleToggleCategories}
-      />
-      {/* Selection bar */}
-      <SelectionBar
-        selectedCategories={selectedCategories}
-        onToggleCategories={handleToggleCategories}
-        onGameStart={handleGameStart}
-      />
+    <Box sx={categoriesBox()}>
+      <Box sx={categoriesContent()}>
+        <SearchBar onSearch={handleSearch} />
+        <CategoriesGrid
+          categories={filteredCategories}
+          selectedCategories={selectedCategories}
+          onToggleCategories={handleToggleCategories}
+        />
+        {selectedCategories.length > 0 && (
+          <SelectionBar
+            selectedCategories={selectedCategories}
+            onToggleCategories={handleToggleCategories}
+            onGameStart={handleGameStart}
+          />
+        )}
+      </Box>
     </Box>
   );
 };
