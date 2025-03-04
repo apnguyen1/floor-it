@@ -70,3 +70,7 @@ the [Issue Tracker](https://github.com/apnguyen1/floor-it/issues).
 ### Beta++ Release
 
 **Version:** v1.1.0
+
+### Further Readings
+- [Frontend README](https://github.com/apnguyen1/floor-it/blob/main/frontend/README.md): Developer guidelines can be found here.
+- [Backend README](https://github.com/apnguyen1/floor-it/blob/main/backend/README.md): Backend testing guidelines and structure can be found here.
