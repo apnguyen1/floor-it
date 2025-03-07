@@ -1,11 +1,11 @@
 import { Box, Button, Typography } from '@mui/material';
 import { MAX_CATEGORIES } from '../../../../constants/screens';
-import { SelectedCategoryChip } from '../../../../components/SelectedCategoryChip';
+import { SelectedCategoryChip } from './SelectedChip/SelectedCategoryChip.tsx';
 import { CategoryPreview } from '../../../../types/category.type';
 import {
-  selectionBarContainer,
-  selectedCategoriesContainer,
   categoryCounter,
+  selectedCategoriesContainer,
+  selectionBarContainer,
 } from './SelectionBar.style';
 
 interface SelectionBarProps {

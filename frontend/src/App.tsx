@@ -34,6 +34,10 @@ const App: React.FC = () => {
       <Box
         sx={{
           backgroundImage: `url(${url})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          backgroundAttachment: 'fixed',
         }}
       >
         <Container
