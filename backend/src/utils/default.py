@@ -1,4 +1,3 @@
-from abc import ABC
 from typing import List
 
 from backend.src.models.default_dto import DefaultDTO
@@ -6,7 +5,7 @@ from backend.src.utils.category import Category
 from backend.src.utils.definitions import PreviewImageType
 
 
-class Default(ABC, Category[DefaultDTO]):
+class Default(Category[DefaultDTO]):
     def __init__(
         self,
         source,

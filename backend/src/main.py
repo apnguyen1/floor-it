@@ -1,16 +1,16 @@
+import importlib
+import inspect
 import json
 import os
-import inspect
 import pkgutil
-import importlib
 from typing import List
 
-from backend.src.utils.category import Category
 from backend.src.models.category_data_dto import QuestionType
 from backend.src.models.category_preview_dto import (
     CategoryPreviewDTO,
     CategoryPreviewListDTO,
 )
+from backend.src.utils.category import Category
 from backend.src.utils.definitions import PUBLIC_DIR, SCRIPTS_DIR
 
 
