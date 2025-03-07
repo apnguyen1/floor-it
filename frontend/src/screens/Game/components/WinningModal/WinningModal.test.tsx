@@ -48,6 +48,8 @@ describe('WinningModal', () => {
       selectedCategory: [],
       setSelectedCategory: vi.fn(),
       setPlayers: vi.fn(),
+      useTextInput: false,
+      setUseTextInput: vi.fn(),
     });
   });
 
