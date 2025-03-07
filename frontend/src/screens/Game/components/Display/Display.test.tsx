@@ -48,6 +48,8 @@ describe('Display', () => {
     hasError: false,
     errorMessage: '',
     isSkipped: false,
+    useTextInput: false,
+    onTextSubmit: vi.fn(),
   };
 
   beforeEach(() => {
