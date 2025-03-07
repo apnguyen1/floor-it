@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState, useEffect } from 'react';
+import { useCallback, useRef, useState } from 'react';
 import { Box, Button } from '@mui/material';
 import { Player } from './components/Player/Player.tsx';
 import { Display } from './components/Display/Display.tsx';
@@ -74,14 +74,6 @@ export const GameScreen = () => {
     fuzzyMatchingThreshold,
     isSkipped,
   );
-
-  useEffect(() => {
-    if (gameStatus.inGame && !useTextInput) {
-      SpeechRecognition.startListening({
-        continuous: true,
-      }).catch((e) => console.error('Speech Recognition failed: ', e));
-    }
-  }, [gameStatus.inGame, useTextInput]);
 
   /**
    * Handles the start of a trivia game
