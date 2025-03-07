@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="30" fill="#383FC2" />
+  
+  <!-- Inner blue gradient -->
+  <circle cx="32" cy="32" r="25" fill="#4349D1" />
+  
+  <!-- Speech bubble shape -->
+  <path d="M17 22C17 19.7909 18.7909 18 21 18H43C45.2091 18 47 19.7909 47 22V36C47 38.2091 45.2091 40 43 40H35L32 46L29 40H21C18.7909 40 17 38.2091 17 36V22Z" fill="#59FFE9" />
+  
+  <!-- "F!" text -->
+  <text x="29" y="34" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#383FC2">F!</text>
+  
+  <!-- Speedlines -->
+  <path d="M10 32H5" stroke="#59FFE9" stroke-width="3" stroke-linecap="round" />
+  <path d="M12 24H4" stroke="#59FFE9" stroke-width="2" stroke-linecap="round" />
+  <path d="M12 40H6" stroke="#59FFE9" stroke-width="2" stroke-linecap="round" />
+  
+  <!-- Accent circle -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#59FFE9" stroke-width="2" stroke-dasharray="5,3" />
+</svg>
