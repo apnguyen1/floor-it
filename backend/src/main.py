@@ -23,23 +23,12 @@ def create_category_data():
     """
     Takes all the subclasses of Category and
     turns them into JSONs in public/category_data
-
-    Also creates categories using the CategoryCreator
     """
-    # First, use the original method to process Category subclasses
-    process_category_subclasses()
 
-    # Then, create categories using CategoryCreator
-    # create_categories_with_creator()
-
-
-def process_category_subclasses():
-    """Process all subclasses of Category and turn them into JSONs"""
     # Import all the files under scripts,
     # since we need those to be imported to be recognized as subclasses
     for _, module_name, _ in pkgutil.iter_modules([SCRIPTS_DIR]):
         importlib.import_module(f"backend.src.scripts.{module_name}")
-
     # Dynamically instantiate subclasses
     categories: List[Category] = []
 
@@ -58,40 +47,6 @@ def process_category_subclasses():
     # Call to_file() on all instances
     for category in categories:
         category.to_file()
-
-
-# def create_categories_with_creator():
-#     """Create categories using the CategoryCreator"""
-#     # Create Numbers category
-#     CategoryCreator.create_from_text_file(
-#         source_file="numbers.txt",
-#         name="Numbers",
-#         description="Test your number recognition skills!",
-#         img_name="game_icon.png",
-#         fuzzy_matching_threshold=0.9,
-#     )
-#
-#     # Create BJJ category
-#     CategoryCreator.create_from_text_file(
-#         source_file="bjj.txt",
-#         name="Brazilian Jiu-Jitsu",
-#         description="Test your knowledge of Brazilian Jiu-Jitsu!",
-#         img_name="martial_arts.png",
-#         fuzzy_matching_threshold=0.7,
-#     )
-#
-#     # Create Brand Icons category
-#     CategoryCreator.create_from_json_file(
-#         source_file="brand-icons.json",
-#         name="Brand Logos",
-#         description="Guess the brand by their logo!",
-#         data_path="Questions",
-#         question_field="logoSrc",
-#         answer_field="Answers",
-#         question_type=QuestionType.IMG,
-#         fuzzy_matching_threshold=0.4,
-#         img_name="shopping_bag.png",
-#     )
 
 
 def create_category_preview_list():

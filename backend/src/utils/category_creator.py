@@ -66,5 +66,3 @@ class CategoryCreator:
 
         with open(output_path, "w", encoding="utf-8") as f:
             f.write(category.model_dump_json(indent=2))
-
-        print(f"Category '{name}' created and saved to {output_path}")
