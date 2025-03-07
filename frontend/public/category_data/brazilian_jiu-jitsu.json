@@ -1,0 +1,8 @@
+{
+  "name": "Brazilian Jiu-Jitsu",
+  "preview_img": "martial_arts.png",
+  "preview_desc": "Test your knowledge of Brazilian Jiu-Jitsu!",
+  "type": "text",
+  "fuzzy_matching_threshold": 0.7,
+  "questions": []
+}
