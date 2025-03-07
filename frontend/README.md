@@ -170,3 +170,17 @@ This project uses Husky to enforce pre-commit hooks.
    git tag -a v1.0 -m "Release v1.0"
    git push origin v1.0
    ```
+
+## Supported browsers
+
+Without a polyfill, the Web Speech API is largely only supported by Google browsers. As
+of May 2021, the following browsers support the Web Speech API:
+
+- Chrome (desktop): this is by far the smoothest experience
+- Safari 14.1
+- Microsoft Edge
+- Chrome (Android): a word of warning about this platform, which is that there can be an
+  annoying beeping sound when turning the microphone on. This is part of the Android OS
+  and cannot be controlled from the browser
+- Android webview
+- Samsung Internet
