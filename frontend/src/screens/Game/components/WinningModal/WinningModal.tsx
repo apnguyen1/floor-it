@@ -12,7 +12,7 @@ import {
 import { PlayerState } from '../../../../types/global.type.ts';
 import { useApp } from '../../../../hooks/useApp.ts';
 import { ScreenType } from '../../../../constants/screens.ts';
-import ReplayIcon from '@mui/icons-material/Replay';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 /**
  * Props for the Winning Modal component.
@@ -47,9 +47,15 @@ const WinningModal = ({ isOpen, winner, onClose }: WinningModalProps) => {
     }
   }, [isOpen]);
 
-  const handlePlayAgain = () => {
+  /*  TODO: continue to next category and continue track of player points
+                ticket-116 & #115*/
+  // const handlePlayAgain = () => {
+  //   onClose();
+  // };
+
+  const handleNewGame = () => {
     onClose();
-    setScreen(ScreenType.Game);
+    setScreen(ScreenType.Categories);
   };
 
   if (!winner) return null;
@@ -88,20 +94,29 @@ const WinningModal = ({ isOpen, winner, onClose }: WinningModalProps) => {
               Great job answering those trivia questions!
             </Typography>
           </Paper>
-
           <Box sx={buttonContainer()}>
             <Button
               variant="contained"
               color="primary"
               size="large"
-              onClick={handlePlayAgain}
-              startIcon={<ReplayIcon />}
+              onClick={handleNewGame}
+              startIcon={<ArrowBackIcon />}
               sx={actionButton()}
             >
-              Play Again
+              New Game?
             </Button>
             {/*  TODO: continue to next category and continue track of player points
                   ticket-116 & #115*/}
+            {/*<Button*/}
+            {/*  variant="contained"*/}
+            {/*  color="primary"*/}
+            {/*  size="large"*/}
+            {/*  onClick={handlePlayAgain}*/}
+            {/*  startIcon={<ReplayIcon />}*/}
+            {/*  sx={actionButton()}*/}
+            {/*>*/}
+            {/*  Play Again?*/}
+            {/*</Button>*/}
           </Box>
         </Box>
       </>
