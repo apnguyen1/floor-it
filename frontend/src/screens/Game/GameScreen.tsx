@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useRef, useState, useEffect } from 'react';
 import { Box, Button } from '@mui/material';
 import { Player } from './components/Player/Player.tsx';
 import { Display } from './components/Display/Display.tsx';
@@ -45,6 +45,8 @@ export const GameScreen = () => {
     updatePlayerOne,
     updatePlayerTwo,
     useSharedTimer,
+    setUseTextInput,
+    useTextInput,
   } = useApp();
 
   // handles selection of categories
@@ -72,6 +74,14 @@ export const GameScreen = () => {
     fuzzyMatchingThreshold,
     isSkipped,
   );
+
+  useEffect(() => {
+    if (gameStatus.inGame && !useTextInput) {
+      SpeechRecognition.startListening({
+        continuous: true,
+      }).catch((e) => console.error('Speech Recognition failed: ', e));
+    }
+  }, [gameStatus.inGame, useTextInput]);
 
   /**
    * Handles the start of a trivia game
@@ -163,12 +173,14 @@ export const GameScreen = () => {
         P2: typeof players.P2;
       },
       updatedUseSharedTimer: boolean,
+      updatedUseTextInput: boolean,
     ) => {
       updatePlayerOne({ time: updatedPlayers.P1.time });
       updatePlayerTwo({ time: updatedPlayers.P2.time });
       setUseSharedTimer(updatedUseSharedTimer);
+      setUseTextInput(updatedUseTextInput);
     },
-    [players, setUseSharedTimer, updatePlayerOne, updatePlayerTwo],
+    [players, setUseSharedTimer, updatePlayerOne, updatePlayerTwo, setUseTextInput],
   );
 
   /**
@@ -177,6 +189,14 @@ export const GameScreen = () => {
   const handleCloseWinningModal = useCallback(() => {
     setShowWinningModal(false);
   }, []);
+
+  const handleTextSubmit = () => {
+    setNextQuestion();
+    setGameStatus((prev) => ({
+      ...prev,
+      activePlayer: !prev.activePlayer,
+    }));
+  };
 
   const winnerPlayer =
     gameStatus.winner === players.P1.name
@@ -223,6 +243,8 @@ export const GameScreen = () => {
           hasError={hasError}
           errorMessage={errorMessage}
           isSkipped={isSkipped}
+          useTextInput={useTextInput}
+          onTextSubmit={handleTextSubmit}
         />
         <Player
           playerState={players.P2}
@@ -242,6 +264,7 @@ export const GameScreen = () => {
         onClose={handleCloseSettingModal}
         players={players}
         useSharedTimer={useSharedTimer}
+        useTextInput={useTextInput}
         onSave={handleSaveSettings}
       />
     </Box>
