@@ -34,11 +34,11 @@ export const categoryTitle = (): SxProps<Theme> => ({
     content: '""',
     position: 'absolute',
     bottom: -5,
-    left: 0,
+    left: 2,
     width: '40px',
     height: '3px',
-    backgroundColor: '#59ffe9',
-    borderRadius: '2px',
+    backgroundColor: '#000000',
+    borderRadius: '5px',
   },
 });
 
