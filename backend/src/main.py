@@ -11,7 +11,6 @@ from backend.src.models.category_preview_dto import (
     CategoryPreviewListDTO,
 )
 from backend.src.utils.category import Category
-from backend.src.utils.category_creator import CategoryCreator
 from backend.src.utils.definitions import PUBLIC_DIR, SCRIPTS_DIR
 
 
@@ -31,7 +30,7 @@ def create_category_data():
     process_category_subclasses()
 
     # Then, create categories using CategoryCreator
-    create_categories_with_creator()
+    # create_categories_with_creator()
 
 
 def process_category_subclasses():
@@ -61,38 +60,38 @@ def process_category_subclasses():
         category.to_file()
 
 
-def create_categories_with_creator():
-    """Create categories using the CategoryCreator"""
-    # Create Numbers category
-    CategoryCreator.create_from_text_file(
-        source_file="numbers.txt",
-        name="Numbers",
-        description="Test your number recognition skills!",
-        img_name="game_icon.png",
-        fuzzy_matching_threshold=0.9,
-    )
-
-    # Create BJJ category
-    CategoryCreator.create_from_text_file(
-        source_file="bjj.txt",
-        name="Brazilian Jiu-Jitsu",
-        description="Test your knowledge of Brazilian Jiu-Jitsu!",
-        img_name="martial_arts.png",
-        fuzzy_matching_threshold=0.7,
-    )
-
-    # Create Brand Icons category
-    CategoryCreator.create_from_json_file(
-        source_file="brand-icons.json",
-        name="Brand Logos",
-        description="Guess the brand by their logo!",
-        data_path="Questions",
-        question_field="logoSrc",
-        answer_field="Answers",
-        question_type=QuestionType.IMG,
-        fuzzy_matching_threshold=0.4,
-        img_name="shopping_bag.png",
-    )
+# def create_categories_with_creator():
+#     """Create categories using the CategoryCreator"""
+#     # Create Numbers category
+#     CategoryCreator.create_from_text_file(
+#         source_file="numbers.txt",
+#         name="Numbers",
+#         description="Test your number recognition skills!",
+#         img_name="game_icon.png",
+#         fuzzy_matching_threshold=0.9,
+#     )
+#
+#     # Create BJJ category
+#     CategoryCreator.create_from_text_file(
+#         source_file="bjj.txt",
+#         name="Brazilian Jiu-Jitsu",
+#         description="Test your knowledge of Brazilian Jiu-Jitsu!",
+#         img_name="martial_arts.png",
+#         fuzzy_matching_threshold=0.7,
+#     )
+#
+#     # Create Brand Icons category
+#     CategoryCreator.create_from_json_file(
+#         source_file="brand-icons.json",
+#         name="Brand Logos",
+#         description="Guess the brand by their logo!",
+#         data_path="Questions",
+#         question_field="logoSrc",
+#         answer_field="Answers",
+#         question_type=QuestionType.IMG,
+#         fuzzy_matching_threshold=0.4,
+#         img_name="shopping_bag.png",
+#     )
 
 
 def create_category_preview_list():
