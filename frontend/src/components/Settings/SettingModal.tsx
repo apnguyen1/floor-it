@@ -43,7 +43,10 @@ interface SettingModalProps {
   onSave: (
     players: { P1: PlayerState; P2: PlayerState },
     useSharedTimer: boolean,
+    useTextInput: boolean,
   ) => void;
+  /** Current use text input state */
+  useTextInput: boolean;
 }
 
 export const SettingModal = ({
@@ -51,11 +54,13 @@ export const SettingModal = ({
   onClose,
   players,
   useSharedTimer: initialUseSharedTimer,
+  useTextInput,
   onSave,
 }: SettingModalProps) => {
   const [playerSettings, setPlayerSettings] = useState({ ...players });
   const [sharedTimer, setSharedTimer] = useState(initialUseSharedTimer);
   const [sharedTimerValue, setSharedTimerValue] = useState(playerSettings.P1.time);
+  const [localUseTextInput, setLocalUseTextInput] = useState(useTextInput);
 
   /**
    * Handle timer change for an individual player
@@ -94,7 +99,7 @@ export const SettingModal = ({
         }
       : playerSettings;
 
-    onSave(updatedPlayers, sharedTimer);
+    onSave(updatedPlayers, sharedTimer, localUseTextInput);
     onClose();
   };
 
@@ -221,6 +226,16 @@ export const SettingModal = ({
               </Box>
             </>
           )}
+
+          <FormControlLabel
+            control={
+              <Switch
+                checked={localUseTextInput}
+                onChange={(e) => setLocalUseTextInput(e.target.checked)}
+              />
+            }
+            label="Use Text Input Instead of Voice"
+          />
         </Box>
 
         <Box sx={actionButtonContainer()}>

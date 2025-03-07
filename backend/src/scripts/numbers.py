@@ -2,6 +2,7 @@ from typing import List
 
 from backend.src.models.numbers_dto import NumbersDTO
 from backend.src.utils.category import Category
+from backend.src.utils.definitions import PreviewImageType
 
 
 class Numbers(Category[NumbersDTO]):
@@ -12,7 +13,7 @@ class Numbers(Category[NumbersDTO]):
             name="Numbers",
             desc="Test your Number Skillz",
             fuzzy_matching_threshold=0.9,
-            img_name="game_icon.png",
+            img_name=PreviewImageType.NUMBERS,
         )
 
     def _format_data(self) -> dict[str, List[str]]:
