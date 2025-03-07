@@ -67,10 +67,27 @@ To report a bug:
 Any known issues or limitations are tracked in
 the [Issue Tracker](https://github.com/apnguyen1/floor-it/issues).
 
+### Supported browsers
+
+The Web Speech API is largely only supported by Google browsers. As
+of May 2021, the following browsers support the Web Speech API:
+
+- Chrome (desktop): this is by far the smoothest experience
+- Safari 14.1
+- Microsoft Edge
+- Chrome (Android): a word of warning about this platform, which is that there can be an
+  annoying beeping sound when turning the microphone on. This is part of the Android OS
+  and cannot be controlled from the browser
+- Android webview
+- Samsung Internet
+
 ### Beta++ Release
 
 **Version:** v1.1.0
 
 ### Further Readings
-- [Frontend README](https://github.com/apnguyen1/floor-it/blob/main/frontend/README.md): Developer guidelines can be found here.
-- [Backend README](https://github.com/apnguyen1/floor-it/blob/main/backend/README.md): Backend testing guidelines and structure can be found here.
+
+- [Frontend README](https://github.com/apnguyen1/floor-it/blob/main/frontend/README.md):
+  Developer guidelines can be found here.
+- [Backend README](https://github.com/apnguyen1/floor-it/blob/main/backend/README.md):
+  Backend testing guidelines and structure can be found here.
