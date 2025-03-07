@@ -3,6 +3,7 @@ from typing import Dict, List
 from backend.src.models.category_data_dto import QuestionType
 from backend.src.models.champion_dto import ChampionDTO
 from backend.src.utils.category import Category
+from backend.src.utils.definitions import PreviewImageType
 
 
 class Champions(Category[ChampionDTO]):
@@ -13,7 +14,7 @@ class Champions(Category[ChampionDTO]):
             model=ChampionDTO,
             question_type=question_type,
             fuzzy_matching_threshold=0.4,
-            img_name="game_icon.png",
+            img_name=PreviewImageType.GAMES,
         )
 
     def __title_to_name(self) -> Dict[str, List[str]]:
