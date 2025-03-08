@@ -130,24 +130,24 @@ export const GameScreen = () => {
   const handlePlayNextCategory = useCallback(() => {
     if (goToNextCategory()) {
       setGameStatus({
+        ...gameStatus,
         inGame: false,
-        activePlayer: true,
         winner: undefined,
       });
     }
-  }, [goToNextCategory]);
+  }, [gameStatus, goToNextCategory]);
 
   /**
    * Handles replaying the current category
    */
   const handleReplayCategory = useCallback(() => {
     setGameStatus({
+      ...gameStatus,
       inGame: false,
-      activePlayer: true,
       winner: undefined,
     });
     setShowWinningModal(false);
-  }, []);
+  }, [gameStatus]);
 
   /**
    * Handles skipping the next category and going directly to the one after

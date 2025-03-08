@@ -114,13 +114,13 @@ const WinningModal = ({
             {isLastCategory ? (
               <>
                 <Typography variant="subtitle1" sx={{ mt: 2 }}>
-                  You've completed all categories!
+                  You've completed your selected categories!
                 </Typography>
               </>
             ) : (
               <>
                 <Box sx={{ mt: 2, mb: 1 }}>
-                  <Typography variant="h4" sx={displayNextCategoryName()}>
+                  <Typography variant="subtitle1" sx={displayNextCategoryName()}>
                     Play Next Category?
                   </Typography>
                 </Box>

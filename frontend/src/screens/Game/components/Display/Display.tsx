@@ -129,6 +129,7 @@ export const Display = ({
       {!inGame && category ? (
         <GamePreview
           category={category}
+          categoryProgress={categoryProgress}
           onStartGame={onStartGame}
           onSkipCategory={onSkipCategory}
         />

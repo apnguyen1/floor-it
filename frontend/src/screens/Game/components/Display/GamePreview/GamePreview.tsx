@@ -17,6 +17,8 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 interface GamePreviewProps {
   /** the selected category content, including type and metadata */
   category: CategoryContent;
+  /** Category progress information */
+  categoryProgress?: { current: number; total: number };
   /** function to trigger the start of the game */
   onStartGame: () => void;
   /** function to skip to the next category */
@@ -30,10 +32,14 @@ interface GamePreviewProps {
  */
 export const GamePreview = ({
   category,
+  categoryProgress,
   onStartGame,
   onSkipCategory,
 }: GamePreviewProps) => {
   const imgUrl = `previews/${category.preview_img}`;
+
+  const isLastCategory =
+    categoryProgress && categoryProgress.current === categoryProgress.total;
 
   return (
     <Box className="game-preview" sx={gamePreview()}>
@@ -46,7 +52,7 @@ export const GamePreview = ({
       </Typography>
 
       <Box sx={buttonContainer()}>
-        {onSkipCategory && (
+        {!isLastCategory && onSkipCategory && (
           <Tooltip title={'Skip to Next Category'} arrow>
             <IconButton
               color="secondary"
