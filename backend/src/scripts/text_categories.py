@@ -42,5 +42,5 @@ class Antonyms(TextCategory):
         super().__init__(
             source="antonyms.txt",
             name="Antonyms",
-            desc="Find the antonym of the words",
+            desc="Guess the antonyms of the word!",
         )
