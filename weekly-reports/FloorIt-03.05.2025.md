@@ -12,30 +12,33 @@ Progress made on backend updates, frontend UI consistency, and gameplay features
 Some technical challenges with DTOs and script modifications.
 
 Goals for next week:
+
 - Add more categories to backend and preparing the finishing touches for our final release.
-Meeting Agenda:
+  Meeting Agenda:
 
 Talk about how we want to structure out final presentation and release.
 
 Project Status (Aidan):
 
 Goals for the week:
+
 - Finish ticket to add confidence level to backend DTO and change frontend to use it
 - Complete ticket to not update existing category JSONs when running the script to add new JSONs
 
 Progress and issues:
+
 - Added confidence level to backend DTO, changed category class to use confidence level and serialize it into JSON
 - Modified frontend to use confidence level from JSON instead of default value of 0.6
 - Busy with other classes/clubs so have not had that much time to work this week
 - Took longer than expected to get familiarized with frontend to use the confidence level
-Goals for next week:
+  Goals for next week:
 - Change script to leave already existing category JSONs untouched
 - Add additional categories
 
 Project Status (Andrew):
 Goals for the week:
 
-To have a fleshed out and uniformed design across all front end ui. 
+To have a fleshed out and uniformed design across all front end ui.
 Progress and issues:
 Standardized UI components for a more cohesive look.
 Adjusted styling for consistency across different pages.
@@ -58,10 +61,12 @@ Goals for the week:
 - Complete peer review assignment.
 
 Progress and issues:
+
 - Cleaned up frontend repository for modularity.
 - Completed peer review for Foodography AI.
 
 Goals for next week:
+
 - Add new categories for gameplay.
 - Look into mobile compatibility (if time allows).
 

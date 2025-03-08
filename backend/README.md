@@ -34,7 +34,7 @@ Before you begin, ensure you have the following installed:
 2. Install Poetry Follow the official Poetry installation guide for your OS:
    https://python-poetry.org/docs/#installation.
 
-   After installation, verify it by running: ```poetry --version```
+   After installation, verify it by running: `poetry --version`
 
 3. Set up a virtual environment and install dependencies
 
@@ -132,24 +132,24 @@ def setup_fixture():
 def test_specific_function(setup_fixture):
     # Arrange
     instance = TargetClass()
-    
+
     # Act
     result = instance.method_under_test()
-    
+
     # Assert
     assert result == expected_value
-    
+
 @patch('backend.src.module_path.external_dependency')
 def test_with_mocking(mock_dependency, setup_fixture):
     # Configure the mock
     mock_dependency.return_value = mocked_result
-    
+
     # Arrange
     instance = TargetClass()
-    
+
     # Act
     result = instance.method_using_dependency()
-    
+
     # Assert
     assert result == expected_value
     mock_dependency.assert_called_once_with(expected_args)
@@ -163,11 +163,11 @@ When testing DTO models, focus on serialization/deserialization and validation:
 def test_dto_serialization():
     # Create a DTO instance
     dto = ExampleDTO(field1="value1", field2=123)
-    
+
     # Test serialization
     serialized = dto.model_dump()
     assert serialized == {"field1": "value1", "field2": 123}
-    
+
     # Test deserialization
     deserialized = ExampleDTO.model_validate(serialized)
     assert deserialized == dto
@@ -240,11 +240,13 @@ poetry run pre-commit install
 To prepare the backend for production deployment:
 
 1. Ensure all tests pass
+
    ```bash
    make test
    ```
 
 2. Generate categories and output files
+
    ```bash
    make run
    ```
