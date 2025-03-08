@@ -11,6 +11,11 @@
       "desc": "Guess the brand by their logo!"
     },
     {
+      "name": "Antonyms",
+      "image": "default-preview.png",
+      "desc": "Find the antonym of the words"
+    },
+    {
       "name": "Numbers",
       "image": "game_icon.png",
       "desc": "Test your number skills!"

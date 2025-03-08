@@ -1,0 +1,345 @@
+{
+  "name": "Antonyms",
+  "preview_img": "default-preview.png",
+  "preview_desc": "Find the antonym of the words",
+  "type": "text",
+  "fuzzy_matching_threshold": 0.6,
+  "questions": [
+    {
+      "question": "attack",
+      "answers": [
+        "defend"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "best",
+      "answers": [
+        "worst"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "big",
+      "answers": [
+        "little"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "bright",
+      "answers": [
+        "dim"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "catch",
+      "answers": [
+        "throw"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "cheap",
+      "answers": [
+        "expensive"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "clean",
+      "answers": [
+        "dirty"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "crooked",
+      "answers": [
+        "straight"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "dangerous",
+      "answers": [
+        "safe"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "dark",
+      "answers": [
+        "light"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "deep",
+      "answers": [
+        "shallow"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "easy",
+      "answers": [
+        "difficult"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "fail",
+      "answers": [
+        "pass"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "far",
+      "answers": [
+        "near"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "first",
+      "answers": [
+        "last"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "frown",
+      "answers": [
+        "smile"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "full",
+      "answers": [
+        "empty"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "good",
+      "answers": [
+        "bad"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "greedy",
+      "answers": [
+        "generous"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "happy",
+      "answers": [
+        "sad"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "heavy",
+      "answers": [
+        "light"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "high",
+      "answers": [
+        "low"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "hot",
+      "answers": [
+        "cold"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "hurt",
+      "answers": [
+        "heal"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "kind",
+      "answers": [
+        "mean"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "late",
+      "answers": [
+        "early"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "lazy",
+      "answers": [
+        "hardworking"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "many",
+      "answers": [
+        "few"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "more",
+      "answers": [
+        "less"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "noisy",
+      "answers": [
+        "quiet"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "old",
+      "answers": [
+        "young"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "raw",
+      "answers": [
+        "cooked"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "rich",
+      "answers": [
+        "poor"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "right",
+      "answers": [
+        "left"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "rough",
+      "answers": [
+        "smooth"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "rude",
+      "answers": [
+        "polite"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "save",
+      "answers": [
+        "spend"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "short",
+      "answers": [
+        "long"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "slow",
+      "answers": [
+        "fast"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "soft",
+      "answers": [
+        "hard"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "strong",
+      "answers": [
+        "weak"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "sweet",
+      "answers": [
+        "sour"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "take off",
+      "answers": [
+        "put on"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "thin",
+      "answers": [
+        "thick"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "true",
+      "answers": [
+        "false"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "turn on",
+      "answers": [
+        "turn off"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "wet",
+      "answers": [
+        "dry"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "white",
+      "answers": [
+        "black"
+      ],
+      "aliases": []
+    }
+  ]
+}
