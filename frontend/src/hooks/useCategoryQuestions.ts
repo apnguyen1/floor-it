@@ -48,11 +48,11 @@ export const useCategoryQuestions = (selectedCategories: string[]) => {
 
   /**
    * Advances to the next category in the sequence.
-   * @param skip Optional number of categories to skip (default: 0)
+   * @param skip Optional number of categories to skip (default: 1)
    * @returns {boolean} True if there's a next category, false if we've completed all
    *   categories
    */
-  const goToNextCategory = (skip: number = 0): boolean => {
+  const goToNextCategory = (skip: number = 1): boolean => {
     // Check if we have more categories to play
     const targetIndex = currentCategoryIndex + skip;
     if (targetIndex < allCategories.length) {
@@ -95,7 +95,6 @@ export const useCategoryQuestions = (selectedCategories: string[]) => {
     const categoryFile =
       allCategories[currentCategoryIndex].toLowerCase().replace(/\s/g, '_') + '.json';
 
-    // Reset state for the new category
     questions.current = [];
     questionIndex.current = 0;
     setCurrentQuestion(undefined);
@@ -106,7 +105,6 @@ export const useCategoryQuestions = (selectedCategories: string[]) => {
         setCategory(data);
         questions.current = shuffleArray(data.questions);
         setCurrentQuestion(questions.current[0]);
-        // set fuzzy matching threshold if specified in data
         if (data.fuzzy_matching_threshold) {
           setFuzzyMatchingThreshold(data.fuzzy_matching_threshold);
         }
@@ -158,7 +156,6 @@ export const useCategoryQuestions = (selectedCategories: string[]) => {
     setCurrentQuestion(questions.current[questionIndex.current]);
   };
 
-  // Return both existing functionality and the new tournament mode features
   return {
     category,
     currentQuestion,
@@ -166,7 +163,6 @@ export const useCategoryQuestions = (selectedCategories: string[]) => {
     setNextQuestion,
     fuzzyMatchingThreshold,
     isSkipped,
-    // New tournament mode functions
     goToNextCategory,
     getNextCategoryName,
     getCategoryProgress,

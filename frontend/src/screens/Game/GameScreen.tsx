@@ -34,10 +34,8 @@ export const GameScreen = () => {
   });
   const [showWinningModal, setShowWinningModal] = useState(false);
   const [showSettingModal, setShowSettingModal] = useState(false);
-  //  Reference to the audio element for the winning sound effect.
   const winRef = useRef<HTMLAudioElement>(new Audio('/sounds/win.mp3'));
 
-  // player's state, the selected categories, and function to switch screen
   const {
     players,
     selectedCategory,
@@ -128,7 +126,7 @@ export const GameScreen = () => {
   );
 
   /**
-   * Handles proceeding to the next category in tournament mode
+   * Handles proceeding to the next category
    */
   const handlePlayNextCategory = useCallback(() => {
     if (goToNextCategory()) {
@@ -156,8 +154,7 @@ export const GameScreen = () => {
    * Handles skipping the next category and going directly to the one after
    */
   const handleSkipCategory = useCallback(() => {
-    if (goToNextCategory(1)) {
-      // Reset game state for the new category
+    if (goToNextCategory()) {
       setGameStatus({
         inGame: false,
         activePlayer: true,
@@ -165,7 +162,6 @@ export const GameScreen = () => {
       });
       setShowWinningModal(false);
     } else {
-      // If there are no more categories after skipping, go back to category selection
       setScreen(ScreenType.Categories);
       setShowWinningModal(false);
     }
@@ -245,7 +241,6 @@ export const GameScreen = () => {
         ? players.P2
         : undefined;
 
-  // Get the tournament mode progress information
   const categoryProgress = getCategoryProgress();
   const nextCategoryName = getNextCategoryName();
 

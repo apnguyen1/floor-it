@@ -5,6 +5,7 @@ import useWindowSize from 'react-use/lib/useWindowSize';
 import {
   actionButtons,
   confettiContainer,
+  displayNextCategoryName,
   iconButton,
   winnerPaper,
   winningModalBox,
@@ -118,17 +119,7 @@ const WinningModal = ({
             {hasNextCategory ? (
               <Box sx={{ mt: 2, mb: 1 }}>
                 <Typography variant="body1">Up next:</Typography>
-                <Typography
-                  variant="h6"
-                  sx={{
-                    fontWeight: 'bold',
-                    color: 'primary.main',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    gap: 1,
-                  }}
-                >
+                <Typography variant="h6" sx={displayNextCategoryName()}>
                   <EmojiEventsIcon />
                   {nextCategoryName}
                 </Typography>

@@ -8,8 +8,8 @@ import {
   previewButton,
   previewImage,
 } from './GamePreview.style.ts';
-import PlayCircleIcon from '@mui/icons-material/PlayCircle';
 import SkipNextIcon from '@mui/icons-material/SkipNext';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 /**
  * Props for GamePreview components
@@ -52,17 +52,6 @@ export const GamePreview = ({
       </Typography>
 
       <Box sx={buttonContainer()}>
-        <Tooltip title={'Start Game!'}>
-          <IconButton
-            color="primary"
-            onClick={onStartGame}
-            sx={previewButton()}
-            aria-label="Play Game!"
-          >
-            <PlayCircleIcon />
-          </IconButton>
-        </Tooltip>
-
         {hasNextCategory && onSkipCategory && (
           <Tooltip
             title={
@@ -76,10 +65,20 @@ export const GamePreview = ({
               sx={previewButton()}
               aria-label="Skip to next category"
             >
-              <SkipNextIcon />
+              <SkipNextIcon fontSize="large" />
             </IconButton>
           </Tooltip>
         )}
+        <Tooltip title={'Start Game!'} arrow>
+          <IconButton
+            color="success"
+            onClick={onStartGame}
+            sx={previewButton()}
+            aria-label="Play Game!"
+          >
+            <PlayArrowIcon fontSize="large" />
+          </IconButton>
+        </Tooltip>
       </Box>
     </Box>
   );

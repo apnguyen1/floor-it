@@ -22,7 +22,7 @@ import {
 import SpaceBarIcon from '@mui/icons-material/SpaceBar';
 import TimerOffIcon from '@mui/icons-material/TimerOff';
 import CategoryIcon from '@mui/icons-material/Category';
-import { useState } from 'react';
+import { ChangeEvent, useState } from 'react';
 
 /**
  * Props for the Display component.
@@ -83,7 +83,7 @@ export const Display = ({
 }: DisplayProps) => {
   const [textAnswer, setTextAnswer] = useState('');
 
-  const handleTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleTextChange = (e: ChangeEvent<HTMLInputElement>) => {
     const answer = e.target.value;
     setTextAnswer(answer);
 
@@ -96,7 +96,6 @@ export const Display = ({
     }
   };
 
-  // Show loading state when category or question data is unavailable
   const isLoading = !category && !currentQuestion;
 
   // Show loading state when category or question data is unavailable
@@ -125,6 +124,13 @@ export const Display = ({
 
   return (
     <Box className="question-box" sx={questionBox()}>
+      {categoryProgress && category && (
+        <Chip
+          icon={<CategoryIcon />}
+          label={`(${categoryProgress.current}/${categoryProgress.total})`}
+          sx={categoryChip()}
+        />
+      )}
       {!inGame && category ? (
         <GamePreview
           category={category}
@@ -135,14 +141,6 @@ export const Display = ({
         />
       ) : (
         <>
-          {categoryProgress && category && (
-            <Chip
-              icon={<CategoryIcon />}
-              label={`${category.name} (${categoryProgress.current}/${categoryProgress.total})`}
-              sx={categoryChip()}
-            />
-          )}
-
           <Box className={'question-content'} sx={questionContent()}>
             {isSkipped && currentQuestion ? (
               <Box className={'skip-penalty'} sx={skipPenalty()}>

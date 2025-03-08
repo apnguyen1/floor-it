@@ -74,8 +74,8 @@ export const textInput = (): SxProps<Theme> => ({
 
 export const categoryChip = (): SxProps<Theme> => ({
   position: 'absolute',
-  top: 16,
-  left: 16,
+  top: 5,
+  left: 5,
   backgroundColor: 'primary.main',
   color: 'white',
   fontWeight: 'bold',
