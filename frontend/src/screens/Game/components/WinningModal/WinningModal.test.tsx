@@ -48,6 +48,8 @@ describe('WinningModal', () => {
       selectedCategory: [],
       setSelectedCategory: vi.fn(),
       setPlayers: vi.fn(),
+      useTextInput: false,
+      setUseTextInput: vi.fn(),
     });
   });
 
@@ -80,7 +82,7 @@ describe('WinningModal', () => {
     render(<WinningModal isOpen={true} winner={mockWinner} onClose={mockOnClose} />);
 
     // Click the Play Again button
-    fireEvent.click(screen.getByText('Play Again'));
+    fireEvent.click(screen.getByText('New Game?'));
 
     // Check that onClose was called
     expect(mockOnClose).toHaveBeenCalledTimes(1);

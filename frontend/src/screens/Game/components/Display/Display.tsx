@@ -1,4 +1,11 @@
-import { Alert, AlertTitle, Box, CircularProgress, Typography } from '@mui/material';
+import {
+  Alert,
+  AlertTitle,
+  Box,
+  CircularProgress,
+  Typography,
+  TextField,
+} from '@mui/material';
 import TriviaQuestion from './GameDisplay/TriviaQuestion.tsx';
 import { GamePreview } from './GamePreview/GamePreview.tsx';
 import { CategoryContent, Question } from '../../GameScreen.type.ts';
@@ -8,9 +15,11 @@ import {
   questionContent,
   skipPenalty,
   transcriptBox,
+  textInput,
 } from './Display.style.ts';
 import SpaceBarIcon from '@mui/icons-material/SpaceBar';
 import TimerOffIcon from '@mui/icons-material/TimerOff';
+import { useState } from 'react';
 
 /**
  * Props for the Display component.
@@ -32,6 +41,8 @@ interface DisplayProps {
   errorMessage?: string;
   /** Handles user penalty if skipped */
   isSkipped: boolean;
+  useTextInput: boolean;
+  onTextSubmit: (answer: string) => void;
 }
 
 /**
@@ -50,7 +61,24 @@ export const Display = ({
   hasError,
   errorMessage,
   isSkipped,
+  useTextInput,
+  onTextSubmit,
 }: DisplayProps) => {
+  const [textAnswer, setTextAnswer] = useState('');
+
+  const handleTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const answer = e.target.value;
+    setTextAnswer(answer);
+
+    // Check for exact match (case insensitive)
+    if (
+      currentQuestion?.answers.some((a) => a.toLowerCase() === answer.toLowerCase())
+    ) {
+      onTextSubmit(answer);
+      setTextAnswer('');
+    }
+  };
+
   // Show loading state when category or question data is unavailable
   const isLoading = !category && !currentQuestion;
 
@@ -105,13 +133,24 @@ export const Display = ({
               )
             )}
           </Box>
-          <Typography
-            variant={'subtitle2'}
-            color={'textSecondary'}
-            sx={transcriptBox()}
-          >
-            <strong>You said:</strong> {transcript || 'Waiting for your answer...'}
-          </Typography>
+          {useTextInput ? (
+            <TextField
+              value={textAnswer}
+              onChange={handleTextChange}
+              placeholder="Type your answer..."
+              autoFocus
+              fullWidth
+              sx={textInput()}
+            />
+          ) : (
+            <Typography
+              variant={'subtitle2'}
+              color={'textSecondary'}
+              sx={transcriptBox()}
+            >
+              <strong>You said:</strong> {transcript || 'Waiting for your answer...'}
+            </Typography>
+          )}
           <Box className={'help-text'} sx={helpText()}>
             <SpaceBarIcon fontSize="small" />
             <Typography>

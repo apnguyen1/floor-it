@@ -15,6 +15,8 @@ export type AppContextType = {
   setUseSharedTimer: (useShared: boolean) => void;
   selectedCategory: string[];
   setSelectedCategory: (categoryName: string[]) => void;
+  useTextInput: boolean;
+  setUseTextInput: (value: boolean) => void;
 };
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -28,6 +30,7 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
     P2: { name: 'P2', color: '#3288BD', time: DEFAULT_TIMER_SECONDS },
   });
   const [selectedCategory, setSelectedCategory] = useState<string[]>([]);
+  const [useTextInput, setUseTextInput] = useState(false);
 
   const updatePlayerOne = useCallback((updates: Partial<PlayerState>) => {
     setPlayers((prev) => ({
@@ -56,6 +59,8 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
         setUseSharedTimer,
         selectedCategory,
         setSelectedCategory,
+        useTextInput,
+        setUseTextInput,
       }}
     >
       {children}

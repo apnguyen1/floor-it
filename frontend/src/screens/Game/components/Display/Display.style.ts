@@ -62,3 +62,12 @@ export const skipPenalty = (): SxProps<Theme> => ({
   justifyContent: 'center',
   gap: 2,
 });
+
+export const textInput = (): SxProps<Theme> => ({
+  backgroundColor: 'white',
+  borderRadius: '8px',
+  marginTop: 'auto',
+  '& .MuiOutlinedInput-root': {
+    backgroundColor: 'white',
+  },
+});
