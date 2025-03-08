@@ -13,7 +13,7 @@ class BJJ(TextCategory):
             source="bjj.txt",
             name="Brazilian Jiu-Jitsu",
             desc="Test your knowledge of Brazilian Jiu-Jitsu!",
-            img_name="martial_arts.png",
+            img_name=PreviewImageType.SPORTS,
             fuzzy_matching_threshold=0.7,
         )
 
