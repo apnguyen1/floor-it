@@ -65,7 +65,7 @@ class MoviesAndTvShows(TextCategory):
     """
     Movies and tv shows category with popular movies and tv shows questions.
     """
-    
+
     def __init__(self):
         super().__init__(
             source="moviesTVshows.txt",
