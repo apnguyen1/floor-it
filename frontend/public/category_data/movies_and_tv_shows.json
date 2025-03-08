@@ -1,0 +1,352 @@
+{
+  "name": "Movies and TV Shows",
+  "preview_img": "entertainment.png",
+  "preview_desc": "Are you a Movies and/or TV show expert?",
+  "type": "text",
+  "fuzzy_matching_threshold": 0.7,
+  "questions": [
+    {
+      "question": "What is the name of the wizard school in Harry Potter",
+      "answers": [
+        "Hogwarts"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the main character in Breaking Bad",
+      "answers": [
+        "Walter White"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the highest-grossing movie of all time",
+      "answers": [
+        "Avatar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who played Jack in Titanic",
+      "answers": [
+        "Leonardo DiCaprio"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of Batman’s secret identity",
+      "answers": [
+        "Bruce Wayne"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What color lightsaber do Sith Lords typically use",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the coffee shop in Friends",
+      "answers": [
+        "Central Perk"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the villain in The Lion King",
+      "answers": [
+        "Scar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the lead character in The Mandalorian",
+      "answers": [
+        "Din Djarin"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the talking snowman in Frozen",
+      "answers": [
+        "Olaf"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the first rule of Fight Club",
+      "answers": [
+        "You do not talk about Fight Club"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which TV show features the character Sheldon Cooper",
+      "answers": [
+        "The Big Bang Theory"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the kingdom in Game of Thrones where the Iron Throne is located",
+      "answers": [
+        "King’s Landing"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "In Stranger Things, what is the name of the parallel dimension",
+      "answers": [
+        "The Upside Down"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the fictional African country in Black Panther",
+      "answers": [
+        "Wakanda"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which TV series is about a chemistry teacher who turns into a drug kingpin",
+      "answers": [
+        "Breaking Bad"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the house in Encanto",
+      "answers": [
+        "Casita"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What famous duo pilots the Millennium Falcon in Star Wars",
+      "answers": [
+        "Han Solo & Chewbacca"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who plays Iron Man in the Marvel Cinematic Universe",
+      "answers": [
+        "Robert Downey Jr."
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What kind of creature is Yoda",
+      "answers": [
+        "Jedi Master (or \"Yoda's species,\" officially unnamed)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What Netflix show features a deadly game with red light and green light",
+      "answers": [
+        "Squid Game"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "In The Simpsons, what is the name of the town they live in",
+      "answers": [
+        "Springfield"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the high school in Grease",
+      "answers": [
+        "Rydell High"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What movie features the quote, “I see dead people”",
+      "answers": [
+        "The Sixth Sense"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the cursed videotape in The Ring",
+      "answers": [
+        "Samara’s Tape"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who voices Buzz Lightyear in the original Toy Story movies",
+      "answers": [
+        "Tim Allen"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the hobbit played by Elijah Wood in The Lord of the Rings",
+      "answers": [
+        "Frodo Baggins"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which movie features a killer in a ghost mask",
+      "answers": [
+        "Scream"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the hotel in The Shining",
+      "answers": [
+        "The Overlook Hotel"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the pirate played by Johnny Depp in Pirates of the Caribbean",
+      "answers": [
+        "Jack Sparrow"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who played the Joker in The Dark Knight",
+      "answers": [
+        "Heath Ledger"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the princess in Shrek",
+      "answers": [
+        "Princess Fiona"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "In The Office, what is the name of the paper company they work for",
+      "answers": [
+        "Dunder Mifflin"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the real name of Baby Yoda in The Mandalorian",
+      "answers": [
+        "Grogu"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the main robot in Wall-E",
+      "answers": [
+        "Wall E"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What number is on Lightning McQueen in Cars",
+      "answers": [
+        "95"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the villain in Aladdin",
+      "answers": [
+        "Jafar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What color is Cinderella’s dress at the ball",
+      "answers": [
+        "Blue"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What 90s TV show starred Will Smith as a fictionalized version of himself",
+      "answers": [
+        "The Fresh Prince of Bel-Air"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What does the “S” on Superman’s chest stand for",
+      "answers": [
+        "Hope"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the evil doll in The Conjuring universe",
+      "answers": [
+        "Annabelle"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What movie features a theme park with cloned dinosaurs",
+      "answers": [
+        "Jurassic Park"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who plays Wolverine in the X-Men movies",
+      "answers": [
+        "Hugh Jackman"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the main female character in The Little Mermaid",
+      "answers": [
+        "Ariel"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the main villain in Avengers: Infinity War",
+      "answers": [
+        "Thanos"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the fictional TV show in WandaVision",
+      "answers": [
+        "WandaVision"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What song plays during the opening credits of The Lion King",
+      "answers": [
+        "Circle of Life"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the captain of the USS Enterprise in Star Trek (original series)",
+      "answers": [
+        "Captain Kirk"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the clown in It",
+      "answers": [
+        "Pennywise"
+      ],
+      "aliases": []
+    }
+  ]
+}
