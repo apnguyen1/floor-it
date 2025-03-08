@@ -57,7 +57,6 @@ export const GameScreen = () => {
     fuzzyMatchingThreshold,
     isSkipped,
     goToNextCategory,
-    getNextCategoryName,
     getCategoryProgress,
   } = useCategoryQuestions(selectedCategory);
 
@@ -242,7 +241,6 @@ export const GameScreen = () => {
         : undefined;
 
   const categoryProgress = getCategoryProgress();
-  const nextCategoryName = getNextCategoryName();
 
   return (
     <Box className="game-box" sx={gameBox(players)}>
@@ -286,8 +284,6 @@ export const GameScreen = () => {
           onTextSubmit={handleTextSubmit}
           categoryProgress={categoryProgress}
           onSkipCategory={handleSkipCategory}
-          hasNextCategory={!!nextCategoryName}
-          nextCategoryName={nextCategoryName}
         />
         <Player
           playerState={players.P2}
@@ -301,7 +297,6 @@ export const GameScreen = () => {
         isOpen={showWinningModal}
         onClose={handleCloseWinningModal}
         winner={winnerPlayer}
-        nextCategoryName={nextCategoryName}
         categoryProgress={categoryProgress}
         onPlayNextCategory={handlePlayNextCategory}
         onReplayCategory={handleReplayCategory}

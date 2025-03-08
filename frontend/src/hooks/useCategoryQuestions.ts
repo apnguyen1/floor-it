@@ -63,19 +63,6 @@ export const useCategoryQuestions = (selectedCategories: string[]) => {
   };
 
   /**
-   * Gets the name of the next category if available
-   * @param offset Optional offset from the next category (default: 0)
-   * @returns The category name at next+offset position or undefined if out of bounds
-   */
-  const getNextCategoryName = (offset: number = 0): string | undefined => {
-    const targetIndex = currentCategoryIndex + 1 + offset;
-    if (targetIndex < allCategories.length) {
-      return allCategories[targetIndex];
-    }
-    return undefined;
-  };
-
-  /**
    * Gets the total number of categories and current category position
    * @returns An object with total categories and current position
    */
@@ -164,7 +151,6 @@ export const useCategoryQuestions = (selectedCategories: string[]) => {
     fuzzyMatchingThreshold,
     isSkipped,
     goToNextCategory,
-    getNextCategoryName,
     getCategoryProgress,
   };
 };

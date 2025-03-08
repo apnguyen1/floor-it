@@ -21,10 +21,6 @@ interface GamePreviewProps {
   onStartGame: () => void;
   /** function to skip to the next category */
   onSkipCategory?: () => void;
-  /** whether there's a next category available to skip to */
-  hasNextCategory?: boolean;
-  /** the name of the next category (for tooltip) */
-  nextCategoryName?: string;
 }
 
 /**
@@ -36,8 +32,6 @@ export const GamePreview = ({
   category,
   onStartGame,
   onSkipCategory,
-  hasNextCategory,
-  nextCategoryName,
 }: GamePreviewProps) => {
   const imgUrl = `previews/${category.preview_img}`;
 
@@ -52,13 +46,8 @@ export const GamePreview = ({
       </Typography>
 
       <Box sx={buttonContainer()}>
-        {hasNextCategory && onSkipCategory && (
-          <Tooltip
-            title={
-              nextCategoryName ? `Skip to ${nextCategoryName}` : 'Skip to Next Category'
-            }
-            arrow
-          >
+        {onSkipCategory && (
+          <Tooltip title={'Skip to Next Category'} arrow>
             <IconButton
               color="secondary"
               onClick={onSkipCategory}

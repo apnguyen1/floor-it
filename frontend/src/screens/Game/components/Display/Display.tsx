@@ -53,9 +53,6 @@ interface DisplayProps {
   /** Function to skip to the next category */
   onSkipCategory?: () => void;
   /** Whether there's a next category available */
-  hasNextCategory?: boolean;
-  /** Name of the next category */
-  nextCategoryName?: string;
 }
 
 /**
@@ -78,8 +75,6 @@ export const Display = ({
   onTextSubmit,
   categoryProgress,
   onSkipCategory,
-  hasNextCategory,
-  nextCategoryName,
 }: DisplayProps) => {
   const [textAnswer, setTextAnswer] = useState('');
 
@@ -136,8 +131,6 @@ export const Display = ({
           category={category}
           onStartGame={onStartGame}
           onSkipCategory={onSkipCategory}
-          hasNextCategory={hasNextCategory}
-          nextCategoryName={nextCategoryName}
         />
       ) : (
         <>

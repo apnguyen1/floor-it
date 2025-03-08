@@ -15,7 +15,6 @@ import { useApp } from '../../../../hooks/useApp.ts';
 import { ScreenType } from '../../../../constants/screens.ts';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import ReplayIcon from '@mui/icons-material/Replay';
-import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import CategoryIcon from '@mui/icons-material/Category';
 
 /**
@@ -28,8 +27,6 @@ interface WinningModalProps {
   winner?: PlayerState;
   // Callback function to close the modal
   onClose: () => void;
-  // The next category name to play (if available)
-  nextCategoryName?: string;
   // Category progress (current/total)
   categoryProgress?: { current: number; total: number };
   // Handler for proceeding to the next category
@@ -47,7 +44,6 @@ const WinningModal = ({
   isOpen,
   winner,
   onClose,
-  nextCategoryName,
   categoryProgress,
   onPlayNextCategory,
   onReplayCategory,
@@ -56,7 +52,6 @@ const WinningModal = ({
   const { setScreen } = useApp();
   const [showConfetti, setShowConfetti] = useState(true);
 
-  const hasNextCategory = !!nextCategoryName;
   const isLastCategory =
     categoryProgress && categoryProgress.current === categoryProgress.total;
 
@@ -116,19 +111,21 @@ const WinningModal = ({
               </Typography>
             )}
 
-            {hasNextCategory ? (
-              <Box sx={{ mt: 2, mb: 1 }}>
-                <Typography variant="body1">Up next:</Typography>
-                <Typography variant="h6" sx={displayNextCategoryName()}>
-                  <EmojiEventsIcon />
-                  {nextCategoryName}
+            {isLastCategory ? (
+              <>
+                <Typography variant="subtitle1" sx={{ mt: 2 }}>
+                  You've completed all categories!
                 </Typography>
-              </Box>
-            ) : isLastCategory ? (
-              <Typography variant="subtitle1" sx={{ mt: 2 }}>
-                You've completed all categories!
-              </Typography>
-            ) : null}
+              </>
+            ) : (
+              <>
+                <Box sx={{ mt: 2, mb: 1 }}>
+                  <Typography variant="h4" sx={displayNextCategoryName()}>
+                    Play Next Category?
+                  </Typography>
+                </Box>
+              </>
+            )}
           </Paper>
 
           <Box sx={actionButtons()}>
@@ -159,7 +156,7 @@ const WinningModal = ({
             )}
 
             {/* Play Next Category */}
-            {hasNextCategory && onPlayNextCategory && (
+            {!isLastCategory && onPlayNextCategory && (
               <Tooltip title="Play Next Category" arrow placement="top">
                 <IconButton
                   onClick={onPlayNextCategory}
