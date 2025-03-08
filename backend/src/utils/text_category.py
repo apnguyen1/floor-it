@@ -3,6 +3,7 @@ from typing import Dict, List
 from backend.src.models.category_data_dto import QuestionType
 from backend.src.models.text_dto import TextDTO
 from backend.src.utils.category import Category
+from backend.src.utils.definitions import PreviewImageType
 
 
 class TextCategory(Category[TextDTO]):
@@ -26,7 +27,7 @@ class TextCategory(Category[TextDTO]):
         source: str,
         name: str,
         desc: str,
-        img_name: str,
+        img_name: str = PreviewImageType.DEFAULT,
         question_type: QuestionType = QuestionType.TEXT,
         fuzzy_matching_threshold: float = 0.6,
     ):

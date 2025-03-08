@@ -31,3 +31,16 @@ class Numbers(TextCategory):
             img_name=PreviewImageType.GAMES,
             fuzzy_matching_threshold=0.9,
         )
+
+
+class Antonyms(TextCategory):
+    """
+    Antonyms category with simple antonyms questions.
+    """
+
+    def __init__(self):
+        super().__init__(
+            source="antonyms.txt",
+            name="Antonyms",
+            desc="Find the antonym of the words",
+        )
