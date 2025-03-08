@@ -11,9 +11,14 @@
       "desc": "Guess the brand by their logo!"
     },
     {
+      "name": "Movies and TV Shows",
+      "image": "entertainment.png",
+      "desc": "Are you a Movies and/or TV show expert?"
+    },
+    {
       "name": "Antonyms",
       "image": "default-preview.png",
-      "desc": "Find the antonym of the words"
+      "desc": "Guess the antonyms of the word!"
     },
     {
       "name": "Numbers",
