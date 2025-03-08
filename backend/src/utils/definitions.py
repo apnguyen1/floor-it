@@ -24,4 +24,5 @@ class PreviewImageType(str, Enum):
     NUMBERS = "numbers.png"
     SHOPPING = "shopping_bag.png"
     SPORTS = "sports.png"
+    FOOD = "food_drink.png"
     ENTERTAINMENT = "entertainment.png"

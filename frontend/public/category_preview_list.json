@@ -1,6 +1,11 @@
 {
   "category_previews": [
     {
+      "name": "Food and Drinks",
+      "image": "food_drink.png",
+      "desc": "Calling all Foodies!"
+    },
+    {
       "name": "LoL Champion Covers",
       "image": "game_icon.png",
       "desc": "Guess the LoL champion's name by their image!"

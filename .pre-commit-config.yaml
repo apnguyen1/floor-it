@@ -44,10 +44,10 @@ repos:
 
   - repo: local
     hooks:
-        - id: update-categories
-          name: Update category data
-          entry: bash -c 'cd backend && make run'
-          language: system
-          pass_filenames: false
-          always_run: true
-          files: ^backend/
+      - id: update-categories
+        name: Update category data
+        entry: bash -c 'cd backend && make run'
+        language: system
+        pass_filenames: false
+        always_run: true
+        files: ^backend/
