@@ -1,15 +1,23 @@
-import { Box, Container, IconButton, TextField, Typography } from '@mui/material';
+import {
+  Box,
+  Container,
+  IconButton,
+  InputAdornment,
+  OutlinedInput,
+  Typography,
+} from '@mui/material';
 import { ScreenType } from '../../../../constants/screens';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import SearchIcon from '@mui/icons-material/Search';
 import { useApp } from '../../../../hooks/useApp';
 import {
+  backButton,
+  categoryTitle,
   searchBarContainer,
   searchBarContent,
   searchField,
   titleContainer,
 } from './SearchBar.style';
-import { InputAdornment } from '@mui/material';
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
@@ -22,30 +30,24 @@ export const SearchBar = ({ onSearch }: SearchBarProps) => {
     <Container maxWidth="xl" sx={searchBarContainer()}>
       <Box sx={searchBarContent()}>
         <Box sx={titleContainer()}>
-          <IconButton
-            onClick={() => setScreen(ScreenType.Avatar)}
-            sx={{ color: 'primary.main' }}
-          >
+          <IconButton onClick={() => setScreen(ScreenType.Avatar)} sx={backButton()}>
             <ArrowBackIcon />
           </IconButton>
-          <Typography variant="h4" component="h1">
+          <Typography variant="h4" component="h1" sx={categoryTitle()}>
             Categories
           </Typography>
         </Box>
 
-        <TextField
+        <OutlinedInput
           placeholder="Search categories..."
-          variant="outlined"
           size="small"
           onChange={(e) => onSearch(e.target.value)}
           sx={searchField()}
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <SearchIcon />
-              </InputAdornment>
-            ),
-          }}
+          startAdornment={
+            <InputAdornment position="start">
+              <SearchIcon color="primary" />
+            </InputAdornment>
+          }
         />
       </Box>
     </Container>

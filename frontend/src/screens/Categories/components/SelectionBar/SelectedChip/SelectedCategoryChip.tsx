@@ -1,6 +1,12 @@
 import { IconButton, Paper, Typography } from '@mui/material';
 import CloseIcon from '@mui/icons-material/Close';
-import { CategoryPreview } from '../types/category.type';
+import {
+  chipContainer,
+  chipText,
+  closeIcon,
+  removeButton,
+} from './SelectedCategoryChip.style';
+import { CategoryPreview } from '../../../../../types/category.type.ts';
 
 interface SelectedCategoryChipProps {
   category: CategoryPreview;
@@ -15,21 +21,17 @@ export const SelectedCategoryChip = ({
   category,
   onRemove,
 }: SelectedCategoryChipProps) => (
-  <Paper
-    sx={{
-      display: 'flex',
-      alignItems: 'center',
-      gap: 1,
-      px: 2,
-      py: 1,
-      backgroundColor: 'primary.light',
-    }}
-  >
-    <Typography variant="body2" sx={{ color: 'white' }}>
+  <Paper sx={chipContainer()} elevation={0}>
+    <Typography variant="body2" sx={chipText()}>
       {category.name}
     </Typography>
-    <IconButton size="small" onClick={onRemove} sx={{ color: 'white' }}>
-      <CloseIcon fontSize="small" />
+    <IconButton
+      size="small"
+      onClick={onRemove}
+      sx={removeButton()}
+      aria-label={`Remove ${category.name}`}
+    >
+      <CloseIcon fontSize="small" sx={closeIcon()} />
     </IconButton>
   </Paper>
 );

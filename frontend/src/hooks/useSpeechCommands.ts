@@ -66,7 +66,7 @@ export const useSpeechCommands = (
         callback: isSkipped ? () => {} : onSkip,
       }),
     ],
-    [correctAnswers, onCorrectAnswer, onSkip],
+    [correctAnswers, fuzzyMatchingThreshold, isSkipped, onCorrectAnswer, onSkip],
   );
 
   useEffect(() => {

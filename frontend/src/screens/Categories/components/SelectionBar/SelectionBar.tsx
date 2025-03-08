@@ -1,12 +1,14 @@
-import { Box, Button, Typography } from '@mui/material';
+import { Box, Button, Chip } from '@mui/material';
 import { MAX_CATEGORIES } from '../../../../constants/screens';
-import { SelectedCategoryChip } from '../../../../components/SelectedCategoryChip';
 import { CategoryPreview } from '../../../../types/category.type';
 import {
-  selectionBarContainer,
-  selectedCategoriesContainer,
   categoryCounter,
+  readyButton,
+  selectedCategoriesContainer,
+  selectionBarContainer,
 } from './SelectionBar.style';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import { SelectedCategoryChip } from './SelectedChip/SelectedCategoryChip.tsx';
 
 interface SelectionBarProps {
   selectedCategories: CategoryPreview[];
@@ -23,9 +25,11 @@ export const SelectionBar = ({
 
   return (
     <Box sx={selectionBarContainer()}>
-      <Typography variant="subtitle2" sx={categoryCounter(isMaxSelected)}>
-        {selectedCategories.length}/{MAX_CATEGORIES} Categories
-      </Typography>
+      <Chip
+        label={`${selectedCategories.length}/${MAX_CATEGORIES} Categories`}
+        sx={categoryCounter(isMaxSelected)}
+        variant="filled"
+      />
 
       <Box sx={selectedCategoriesContainer()}>
         {selectedCategories.map((category) => (
@@ -39,11 +43,11 @@ export const SelectionBar = ({
 
       <Button
         variant="contained"
-        color="primary"
         onClick={onGameStart}
-        sx={{ minWidth: 100 }}
+        sx={readyButton()}
+        startIcon={<PlayArrowIcon />}
       >
-        Ready!
+        Let's Play!
       </Button>
     </Box>
   );
