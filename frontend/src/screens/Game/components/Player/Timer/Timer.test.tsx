@@ -3,6 +3,11 @@ import Timer from './Timer.tsx';
 
 const INITIAL_TIME = 30;
 
+beforeAll(() => {
+  window.HTMLMediaElement.prototype.play = vi.fn(() => Promise.resolve());
+  window.HTMLMediaElement.prototype.pause = vi.fn();
+});
+
 describe('Timer', () => {
   beforeEach(() => {
     vi.useFakeTimers();
