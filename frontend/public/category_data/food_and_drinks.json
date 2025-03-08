@@ -1,0 +1,359 @@
+{
+  "name": "Food and Drinks",
+  "preview_img": "food_drink.png",
+  "preview_desc": "Calling all Foodies!",
+  "type": "text",
+  "fuzzy_matching_threshold": 0.9,
+  "questions": [
+    {
+      "question": "What is the main ingredient in guacamole",
+      "answers": [
+        "Avocado"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What type of pasta is shaped like little rice grains",
+      "answers": [
+        "Orzo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the most popular pizza topping in the U.S.",
+      "answers": [
+        "Pepperoni"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What type of fruit is dried to make raisins",
+      "answers": [
+        "Grapes"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What dairy product is used to make butter",
+      "answers": [
+        "Cream"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What kind of beans are used to make hummus",
+      "answers": [
+        "Chickpeas"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the main ingredient in a traditional omelet",
+      "answers": [
+        "Eggs"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which country is famous for croissants",
+      "answers": [
+        "France"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the primary ingredient in sushi",
+      "answers": [
+        "Rice"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the most popular soft drink in the world",
+      "answers": [
+        "Coca-Cola"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What type of nut is used to make peanut butter",
+      "answers": [
+        "Peanuts"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the main ingredient in miso soup",
+      "answers": [
+        "Miso paste"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which fruit is known for having its seeds on the outside",
+      "answers": [
+        "Strawberry"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What type of bread is commonly used for a Reuben sandwich",
+      "answers": [
+        "Rye"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the main ingredient in ketchup",
+      "answers": [
+        "Tomatoes"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the Italian dish made of layered pasta, meat, and cheese",
+      "answers": [
+        "Lasagna"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What breakfast dish is made by soaking bread in eggs and milk before frying",
+      "answers": [
+        "French toast"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which fast-food chain is known for the Big Mac",
+      "answers": [
+        "McDonald’s"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the most expensive spice in the world",
+      "answers": [
+        "Saffron"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What type of alcohol is traditionally used in a margarita",
+      "answers": [
+        "Tequila"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the ice cream with three flavors in one container",
+      "answers": [
+        "Neapolitan"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the main ingredient in tofu",
+      "answers": [
+        "Soybeans"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What popular Mexican dish is made with a folded or rolled tortilla",
+      "answers": [
+        "Taco"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What type of chocolate contains no milk",
+      "answers": [
+        "Dark chocolate"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the thin, French-style pancakes",
+      "answers": [
+        "Crepes"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which fruit is known as the “king of fruits” due to its strong smell",
+      "answers": [
+        "Durian"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the term for raw fish sliced and served without rice",
+      "answers": [
+        "Sashimi"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the main ingredient in traditional pesto sauce",
+      "answers": [
+        "Basil"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What type of cheese is known for having holes",
+      "answers": [
+        "Swiss cheese"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which type of pasta is shaped like small tubes",
+      "answers": [
+        "Penne"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What kind of rice is commonly used in risotto",
+      "answers": [
+        "Arborio"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What popular soft drink was originally called \"Brad’s Drink\"",
+      "answers": [
+        "Pepsi"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What fruit is known for being the main ingredient in apple cider",
+      "answers": [
+        "Apples"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which country is famous for sushi",
+      "answers": [
+        "Japan"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the most common meat used in a traditional Philly cheesesteak",
+      "answers": [
+        "Beef"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the most commonly used cooking oil in Asian cuisine",
+      "answers": [
+        "Sesame oil"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the coffee drink made with espresso and steamed milk",
+      "answers": [
+        "Latte"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the main ingredient in a Caesar salad dressing",
+      "answers": [
+        "Anchovies"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the primary vegetable used in coleslaw",
+      "answers": [
+        "Cabbage"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the most popular flavor of ice cream",
+      "answers": [
+        "Vanilla"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which type of alcohol is used in a traditional mojito",
+      "answers": [
+        "Rum"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the sauce typically served with sushi",
+      "answers": [
+        "Soy sauce"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the crispy seaweed snack popular in Asian cuisine",
+      "answers": [
+        "Nori"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which fruit is commonly used to make wine",
+      "answers": [
+        "Grapes"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What type of beans are used to make chocolate",
+      "answers": [
+        "Cacao beans"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the most common ingredient used to make pickles",
+      "answers": [
+        "Cucumbers"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the Italian dessert made with coffee-soaked ladyfingers",
+      "answers": [
+        "Tiramisu"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which fruit is the main ingredient in guava juice",
+      "answers": [
+        "Guava"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the melted cheese dish popular in Switzerland",
+      "answers": [
+        "Fondue"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the main ingredient in scrambled eggs",
+      "answers": [
+        "Eggs"
+      ],
+      "aliases": []
+    }
+  ]
+}
