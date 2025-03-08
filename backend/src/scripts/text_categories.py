@@ -26,6 +26,7 @@ class Numbers(TextCategory):
         super().__init__(
             source="numbers.txt",
             name="Numbers",
-            desc="Test your number recognition skills!",
+            desc="Test your number skills!",
             img_name=PreviewImageType.GAMES,
+            fuzzy_matching_threshold=0.9,
         )
