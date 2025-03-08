@@ -4,7 +4,8 @@ from backend.src.utils.text_category import TextCategory
 
 class BJJ(TextCategory):
     """
-    Brazilian Jiu-Jitsu category with questions about techniques, terminology, and history.
+    Brazilian Jiu-Jitsu category with questions about techniques,
+                                                    terminology, and history.
     """
 
     def __init__(self):
