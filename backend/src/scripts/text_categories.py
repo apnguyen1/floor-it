@@ -46,6 +46,21 @@ class Antonyms(TextCategory):
         )
 
 
+class FoodDrink(TextCategory):
+    """
+    Food and Drink category with questions about food and drinks.
+    """
+
+    def __init__(self):
+        super().__init__(
+            source="food_drink.txt",
+            name="Food and Drinks",
+            desc="Calling all Foodies!",
+            img_name=PreviewImageType.FOOD,
+            fuzzy_matching_threshold=0.9,
+        )
+
+
 class MoviesAndTvShows(TextCategory):
     """
     Movies and tv shows category with popular movies and tv shows questions.

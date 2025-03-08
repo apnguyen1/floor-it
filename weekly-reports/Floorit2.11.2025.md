@@ -80,7 +80,7 @@ Working with Aiden and Andrew to make sure that the numbers category functions p
 
 \# Project Status (Brian):
 
-- Began work on UI implementation for player screen.  
+- Began work on UI implementation for player screen.
 - Discussed UI details with Phuong.
 
 \#\# Goals for the week:
@@ -117,4 +117,3 @@ Working with Aiden and Andrew to make sure that the numbers category functions p
 
 \- Complete implementing timer feature  
 \- Successfully have a working game for DEMO day
-

@@ -110,4 +110,3 @@ Goals for next week:
 
 Implement end game win screen
 Fix bug with player avatar color (color resets when clicking back to home screen)
-

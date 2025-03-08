@@ -15,9 +15,9 @@ and casual gamers alike.
 1. Visit [Floor It!](https://uw-floor-it.web.app/) in your web browser
 2. Click "LET'S PLAY" on the home screen to begin
 3. Set up player information for both players:
-    - Enter names for each player
-    - Choose colors by clicking the palette icon
-    - Click "Ready!" when both players are set up
+   - Enter names for each player
+   - Choose colors by clicking the palette icon
+   - Click "Ready!" when both players are set up
 
 ### Selecting Categories
 
@@ -29,10 +29,10 @@ and casual gamers alike.
 
 1. Review the selected category and click "Start Game" when ready
 2. Take turns answering questions:
-    - The active player must answer the current question before their timer runs out
-    - Answer by speaking into your microphone
-    - Press the spacebar or say "Next" to skip a question
-    - The player with remaining time when the opponent's timer runs out wins the round
+   - The active player must answer the current question before their timer runs out
+   - Answer by speaking into your microphone
+   - Press the spacebar or say "Next" to skip a question
+   - The player with remaining time when the opponent's timer runs out wins the round
 
 ### Game Controls
 
@@ -56,11 +56,11 @@ To report a bug:
 1. Navigate to the GitHub Issues
    page: [here](https://github.com/apnguyen1/floor-it/issues)
 2. Create a new issue and include:
-    - A description of the bug
-    - Steps to reproduce the issue
-    - Expected vs actual behavior
-    - Screenshots (if applicable)
-    - System environment details (browser, OS, etc.)
+   - A description of the bug
+   - Steps to reproduce the issue
+   - Expected vs actual behavior
+   - Screenshots (if applicable)
+   - System environment details (browser, OS, etc.)
 
 ### Known Bugs
 
