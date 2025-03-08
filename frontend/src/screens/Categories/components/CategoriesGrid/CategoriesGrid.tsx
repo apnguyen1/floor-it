@@ -1,12 +1,12 @@
 import { Box, Container } from '@mui/material';
-import { CategoryWidget } from '../../../../components/CategoryWidget';
-import { CategoryPreview } from '../../../../types/category.type';
+import { CategoryWidget } from './CategoryWidget/CategoryWidget.tsx';
+import { CategoryPreview } from '../../../../types/category.type.ts';
 import {
   gridContainer,
   gridContent,
-  gridLayout,
   gridItem,
-} from './CategoriesGrid.style';
+  gridLayout,
+} from './CategoriesGrid.style.ts';
 
 interface CategoriesGridProps {
   categories: CategoryPreview[];

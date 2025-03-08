@@ -1,14 +1,4 @@
-// TODOs:
-// - Add a search bar to filter categories
-// - Add a filter to show only categories that have images/text
-// - Replace mock data with API call
-// - Add a loading state (?)
-// - Add a "clear all" button (?)
-// - Add a loading state (?)
-// - Fix UI (i.e. figure out double scrollbar situation)
-// - Add setState
-
-import { Box } from '@mui/material';
+import { Box, CircularProgress, Typography } from '@mui/material';
 import { CategoryPreview } from '../../types/category.type';
 import { MAX_CATEGORIES, ScreenType } from '../../constants/screens';
 import { useEffect, useState } from 'react';
@@ -28,17 +18,23 @@ export const CategoriesScreen = () => {
   const [categories, setCategories] = useState<CategoryPreview[]>([]);
   const [filteredCategories, setFilteredCategories] = useState<CategoryPreview[]>([]);
   const [selectedCategories, setSelectedCategories] = useState<CategoryPreview[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   /**
    * Fetches all available categories.
    */
   useEffect(() => {
+    setIsLoading(true);
     fetchCategories()
       .then((cats) => {
         setCategories(cats);
         setFilteredCategories(cats);
+        setIsLoading(false);
       })
-      .catch((err) => console.error('failed to fetch Categories', err));
+      .catch((err) => {
+        console.error('failed to fetch Categories', err);
+        setIsLoading(false);
+      });
   }, []);
 
   /**
@@ -80,11 +76,45 @@ export const CategoriesScreen = () => {
     <Box sx={categoriesBox()}>
       <Box sx={categoriesContent()}>
         <SearchBar onSearch={handleSearch} />
-        <CategoriesGrid
-          categories={filteredCategories}
-          selectedCategories={selectedCategories}
-          onToggleCategories={handleToggleCategories}
-        />
+
+        {isLoading ? (
+          <Box
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flex: 1,
+              p: 4,
+            }}
+          >
+            <CircularProgress size={60} sx={{ color: '#383FC2', mb: 2 }} />
+            <Typography variant="h6" color="primary.main">
+              Loading Categories...
+            </Typography>
+          </Box>
+        ) : filteredCategories.length === 0 ? (
+          <Box
+            sx={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flex: 1,
+              p: 4,
+            }}
+          >
+            <Typography variant="h6" color="text.secondary">
+              No categories found matching your search
+            </Typography>
+          </Box>
+        ) : (
+          <CategoriesGrid
+            categories={filteredCategories}
+            selectedCategories={selectedCategories}
+            onToggleCategories={handleToggleCategories}
+          />
+        )}
+
         {selectedCategories.length > 0 && (
           <SelectionBar
             selectedCategories={selectedCategories}
