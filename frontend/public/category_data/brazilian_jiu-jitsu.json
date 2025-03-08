@@ -4,5 +4,211 @@
   "preview_desc": "Test your knowledge of Brazilian Jiu-Jitsu!",
   "type": "text",
   "fuzzy_matching_threshold": 0.7,
-  "questions": []
+  "questions": [
+    {
+      "question": "What does \"Jiu-Jitsu\" mean in Japanese",
+      "answers": ["Gentle"],
+      "aliases": []
+    },
+    {
+      "question": "Which country developed Brazilian Jiu-Jitsu",
+      "answers": ["Brazil"],
+      "aliases": []
+    },
+    {
+      "question": "What famous martial arts family is credited with developing BJJ",
+      "answers": ["Gracie"],
+      "aliases": []
+    },
+    {
+      "question": "What is the highest belt rank in Brazilian Jiu-Jitsu",
+      "answers": ["Red"],
+      "aliases": []
+    },
+    {
+      "question": "What color belt comes right before black in BJJ",
+      "answers": ["Brown"],
+      "aliases": []
+    },
+    {
+      "question": "What does \"OSS\" mean in BJJ culture",
+      "answers": ["Respect"],
+      "aliases": []
+    },
+    {
+      "question": "What type of clothing is typically worn in traditional BJJ training",
+      "answers": ["Gi"],
+      "aliases": []
+    },
+    {
+      "question": "What is the non-gi version of BJJ commonly called",
+      "answers": ["No-Gi"],
+      "aliases": []
+    },
+    {
+      "question": "How many points do you get for passing an opponent’s guard in competition",
+      "answers": ["Three"],
+      "aliases": []
+    },
+    {
+      "question": "What belt rank is typically awarded first in BJJ",
+      "answers": ["White"],
+      "aliases": []
+    },
+    {
+      "question": "What is the most common submission in BJJ",
+      "answers": ["Armbar"],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the position where you are on your back with your legs wrapped around your opponent",
+      "answers": ["Guard"],
+      "aliases": []
+    },
+    {
+      "question": "What is the term for escaping from underneath your opponent",
+      "answers": ["Shrimp"],
+      "aliases": []
+    },
+    {
+      "question": "What submission involves wrapping your legs around the opponent's head and arm",
+      "answers": ["Triangle"],
+      "aliases": []
+    },
+    {
+      "question": "What is the term for flipping your opponent onto their back",
+      "answers": ["Sweep"],
+      "aliases": []
+    },
+    {
+      "question": "Which common choke uses the collar of the gi to strangle the opponent",
+      "answers": ["Cross"],
+      "aliases": []
+    },
+    {
+      "question": "What is the common name for a triangle choke applied with the legs",
+      "answers": ["Triangle"],
+      "aliases": []
+    },
+    {
+      "question": "What submission involves attacking the opponent’s arm with a hyperextension",
+      "answers": ["Armbar"],
+      "aliases": []
+    },
+    {
+      "question": "What is the term for controlling an opponent from the top with your knees on the ground",
+      "answers": ["Mount"],
+      "aliases": []
+    },
+    {
+      "question": "Which position involves trapping one of your opponent’s arms with your legs while lying on your back",
+      "answers": ["Omoplata"],
+      "aliases": []
+    },
+    {
+      "question": "What organization runs the biggest BJJ world championship tournament",
+      "answers": ["IBJJF"],
+      "aliases": []
+    },
+    {
+      "question": "Who is considered one of the most influential BJJ practitioners of all time",
+      "answers": ["Helio"],
+      "aliases": []
+    },
+    {
+      "question": "What is the biggest advantage of BJJ in a real fight",
+      "answers": ["Control"],
+      "aliases": []
+    },
+    {
+      "question": "What MMA organization helped popularize BJJ in the 1990s",
+      "answers": ["UFC"],
+      "aliases": []
+    },
+    {
+      "question": "What famous BJJ practitioner won UFC 1",
+      "answers": ["Royce"],
+      "aliases": []
+    },
+    {
+      "question": "What Brazilian city is considered the birthplace of BJJ",
+      "answers": ["Rio"],
+      "aliases": []
+    },
+    {
+      "question": "What is the term for a BJJ student’s uniform",
+      "answers": ["Gi"],
+      "aliases": []
+    },
+    {
+      "question": "What do people wear (as a shirt) for No Gi",
+      "answers": ["Rash-Guard"],
+      "aliases": []
+    },
+    {
+      "question": "Which submission is illegal for white belts in most BJJ competitions",
+      "answers": ["Heelhook"],
+      "aliases": []
+    },
+    {
+      "question": "What is the term for sparring in BJJ",
+      "answers": ["Rolling"],
+      "aliases": []
+    },
+    {
+      "question": "How many stripes can a practitioner earn on each belt before promotion",
+      "answers": ["Four"],
+      "aliases": []
+    },
+    {
+      "question": "What is the term for grabbing your opponent’s gi pants to control them",
+      "answers": ["Grip"],
+      "aliases": []
+    },
+    {
+      "question": "What body part does a kimura submission target",
+      "answers": ["Shoulder"],
+      "aliases": []
+    },
+    {
+      "question": "What is the lowest belt in BJJ",
+      "answers": ["White"],
+      "aliases": []
+    },
+    {
+      "question": "What is a \"sweep\" in BJJ",
+      "answers": ["Reversal"],
+      "aliases": []
+    },
+    {
+      "question": "What belt is usually required to open a BJJ academy",
+      "answers": ["Black"],
+      "aliases": []
+    },
+    {
+      "question": "What is the name of the submission where you twist the opponent’s foot sideways",
+      "answers": ["Toe-hold"],
+      "aliases": []
+    },
+    {
+      "question": "What is the typical time limit for a BJJ match in most competitions",
+      "answers": ["Five"],
+      "aliases": []
+    },
+    {
+      "question": "What part of the body does a guillotine choke target",
+      "answers": ["Neck"],
+      "aliases": []
+    },
+    {
+      "question": "What is the term for giving up in a match by tapping",
+      "answers": ["Submission"],
+      "aliases": []
+    },
+    {
+      "question": "Which choke is named after another sport",
+      "answers": ["Baseball"],
+      "aliases": []
+    }
+  ]
 }
