@@ -44,8 +44,8 @@ class Antonyms(TextCategory):
             name="Antonyms",
             desc="Guess the antonyms of the word!",
         )
-
-
+        
+        
 class FoodDrink(TextCategory):
     """
     Food and Drink category with questions about food and drinks.
@@ -58,4 +58,19 @@ class FoodDrink(TextCategory):
             desc="Calling all Foodies!",
             img_name=PreviewImageType.FOOD,
             fuzzy_matching_threshold=0.9,
+        )
+        
+        
+class MoviesAndTvShows(TextCategory):
+    """
+    Movies and tv shows category with popular movies and tv shows questions.
+    """
+    
+    def __init__(self):
+        super().__init__(
+            source="moviesTVshows.txt",
+            name="Movies and TV Shows",
+            desc="Are you a Movies and/or TV show expert?",
+            img_name=PreviewImageType.ENTERTAINMENT,
+            fuzzy_matching_threshold=0.7,
         )
