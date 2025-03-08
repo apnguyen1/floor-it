@@ -71,3 +71,21 @@ export const textInput = (): SxProps<Theme> => ({
     backgroundColor: 'white',
   },
 });
+
+export const categoryChip = (): SxProps<Theme> => ({
+  position: 'absolute',
+  top: 16,
+  left: 16,
+  backgroundColor: 'primary.main',
+  color: 'white',
+  fontWeight: 'bold',
+  boxShadow: '0 2px 10px rgba(0, 0, 0, 0.1)',
+  '& .MuiChip-icon': {
+    color: 'white',
+  },
+  animation: 'fadeIn 0.5s ease-in',
+  '@keyframes fadeIn': {
+    from: { opacity: 0, transform: 'translateY(-10px)' },
+    to: { opacity: 1, transform: 'translateY(0)' },
+  },
+});

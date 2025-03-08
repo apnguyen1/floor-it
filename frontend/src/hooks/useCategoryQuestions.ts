@@ -5,12 +5,16 @@ import { CategoryContent, Question } from '../screens/Game/GameScreen.type.ts';
 
 /**
  *`useCategoryQuestions` manages the state and logic for fetching, shuffling, and
- * navigating through a set of trivia questions based on the selected category.
+ * navigating through a set of trivia questions based on the selected categories.
  *
- * @param {string[]} selectedCategory - The list of selected categories from which a
- *   random category is chosen.
+ * @param {string[]} selectedCategories - The list of selected categories to play
+ *   through in sequence.
  */
-export const useCategoryQuestions = (selectedCategory: string[]) => {
+export const useCategoryQuestions = (selectedCategories: string[]) => {
+  // All selected categories to play through
+  const [allCategories, setAllCategories] = useState<string[]>([]);
+  // Current category index in the sequence
+  const [currentCategoryIndex, setCurrentCategoryIndex] = useState<number>(0);
   // the selected category to fetch
   const [category, setCategory] = useState<CategoryContent | undefined>(undefined);
   // the question to display
@@ -31,15 +35,71 @@ export const useCategoryQuestions = (selectedCategory: string[]) => {
   const correctAudio = useRef(new Audio('/sounds/correct.mp3'));
 
   /**
-   * Fetches and loads the category questions when the selected category changes.
-   * - Selects a random category from the given list.
-   * - Fetches the corresponding JSON file containing questions.
-   * - Shuffles and sets the question list.
+   * Initialize the allCategories state when selectedCategories changes
    */
   useEffect(() => {
-    if (!selectedCategory.length) return;
+    if (selectedCategories.length) {
+      // Shuffle the selected categories to randomize the play order
+      const shuffledCategories = shuffleArray([...selectedCategories]);
+      setAllCategories(shuffledCategories);
+      setCurrentCategoryIndex(0);
+    }
+  }, [selectedCategories]);
+
+  /**
+   * Advances to the next category in the sequence.
+   * @param skip Optional number of categories to skip (default: 0)
+   * @returns {boolean} True if there's a next category, false if we've completed all
+   *   categories
+   */
+  const goToNextCategory = (skip: number = 0): boolean => {
+    // Check if we have more categories to play
+    const targetIndex = currentCategoryIndex + skip;
+    if (targetIndex < allCategories.length) {
+      setCurrentCategoryIndex(targetIndex);
+      return true;
+    }
+    return false;
+  };
+
+  /**
+   * Gets the name of the next category if available
+   * @param offset Optional offset from the next category (default: 0)
+   * @returns The category name at next+offset position or undefined if out of bounds
+   */
+  const getNextCategoryName = (offset: number = 0): string | undefined => {
+    const targetIndex = currentCategoryIndex + 1 + offset;
+    if (targetIndex < allCategories.length) {
+      return allCategories[targetIndex];
+    }
+    return undefined;
+  };
+
+  /**
+   * Gets the total number of categories and current category position
+   * @returns An object with total categories and current position
+   */
+  const getCategoryProgress = () => {
+    return {
+      current: currentCategoryIndex + 1,
+      total: allCategories.length,
+    };
+  };
+
+  /**
+   * Fetches and loads the current category questions.
+   */
+  useEffect(() => {
+    if (!allCategories.length) return;
+
     const categoryFile =
-      shuffleArray(selectedCategory)[0].toLowerCase().replace(/\s/g, '_') + '.json';
+      allCategories[currentCategoryIndex].toLowerCase().replace(/\s/g, '_') + '.json';
+
+    // Reset state for the new category
+    questions.current = [];
+    questionIndex.current = 0;
+    setCurrentQuestion(undefined);
+    setIsSkipped(false);
 
     fetchCategoryData(categoryFile)
       .then((data) => {
@@ -52,7 +112,7 @@ export const useCategoryQuestions = (selectedCategory: string[]) => {
         }
       })
       .catch((e) => console.error('Failed to fetch category:', e));
-  }, [selectedCategory]);
+  }, [allCategories, currentCategoryIndex]);
 
   /**
    * Plays audio to the given audio reference.
@@ -98,6 +158,7 @@ export const useCategoryQuestions = (selectedCategory: string[]) => {
     setCurrentQuestion(questions.current[questionIndex.current]);
   };
 
+  // Return both existing functionality and the new tournament mode features
   return {
     category,
     currentQuestion,
@@ -105,5 +166,9 @@ export const useCategoryQuestions = (selectedCategory: string[]) => {
     setNextQuestion,
     fuzzyMatchingThreshold,
     isSkipped,
+    // New tournament mode functions
+    goToNextCategory,
+    getNextCategoryName,
+    getCategoryProgress,
   };
 };

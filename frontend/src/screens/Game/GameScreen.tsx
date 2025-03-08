@@ -23,6 +23,7 @@ import { SettingModal } from '../../components/Settings/SettingModal.tsx';
  *  - Uses voice commands for answering or skipping questions.
  *  - Plays a sound when a player wins.
  *  - Switches questions when an answer is correct or skipped.
+ *  - Supports tournament mode to play through multiple categories.
  */
 export const GameScreen = () => {
   // manages the game state
@@ -57,6 +58,9 @@ export const GameScreen = () => {
     setNextQuestion,
     fuzzyMatchingThreshold,
     isSkipped,
+    goToNextCategory,
+    getNextCategoryName,
+    getCategoryProgress,
   } = useCategoryQuestions(selectedCategory);
 
   // handles speech dictation and logic
@@ -122,6 +126,50 @@ export const GameScreen = () => {
     },
     [players.P1.name, players.P2.name],
   );
+
+  /**
+   * Handles proceeding to the next category in tournament mode
+   */
+  const handlePlayNextCategory = useCallback(() => {
+    if (goToNextCategory()) {
+      setGameStatus({
+        inGame: false,
+        activePlayer: true,
+        winner: undefined,
+      });
+    }
+  }, [goToNextCategory]);
+
+  /**
+   * Handles replaying the current category
+   */
+  const handleReplayCategory = useCallback(() => {
+    setGameStatus({
+      inGame: false,
+      activePlayer: true,
+      winner: undefined,
+    });
+    setShowWinningModal(false);
+  }, []);
+
+  /**
+   * Handles skipping the next category and going directly to the one after
+   */
+  const handleSkipCategory = useCallback(() => {
+    if (goToNextCategory(1)) {
+      // Reset game state for the new category
+      setGameStatus({
+        inGame: false,
+        activePlayer: true,
+        winner: undefined,
+      });
+      setShowWinningModal(false);
+    } else {
+      // If there are no more categories after skipping, go back to category selection
+      setScreen(ScreenType.Categories);
+      setShowWinningModal(false);
+    }
+  }, [goToNextCategory, setScreen]);
 
   /**
    * Handles going back to the category screen
@@ -197,6 +245,10 @@ export const GameScreen = () => {
         ? players.P2
         : undefined;
 
+  // Get the tournament mode progress information
+  const categoryProgress = getCategoryProgress();
+  const nextCategoryName = getNextCategoryName();
+
   return (
     <Box className="game-box" sx={gameBox(players)}>
       <Button
@@ -237,6 +289,10 @@ export const GameScreen = () => {
           isSkipped={isSkipped}
           useTextInput={useTextInput}
           onTextSubmit={handleTextSubmit}
+          categoryProgress={categoryProgress}
+          onSkipCategory={handleSkipCategory}
+          hasNextCategory={!!nextCategoryName}
+          nextCategoryName={nextCategoryName}
         />
         <Player
           playerState={players.P2}
@@ -250,6 +306,10 @@ export const GameScreen = () => {
         isOpen={showWinningModal}
         onClose={handleCloseWinningModal}
         winner={winnerPlayer}
+        nextCategoryName={nextCategoryName}
+        categoryProgress={categoryProgress}
+        onPlayNextCategory={handlePlayNextCategory}
+        onReplayCategory={handleReplayCategory}
       />
       <SettingModal
         isOpen={showSettingModal}

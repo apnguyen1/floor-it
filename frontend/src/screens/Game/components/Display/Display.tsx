@@ -2,23 +2,26 @@ import {
   Alert,
   AlertTitle,
   Box,
+  Chip,
   CircularProgress,
-  Typography,
   TextField,
+  Typography,
 } from '@mui/material';
 import TriviaQuestion from './GameDisplay/TriviaQuestion.tsx';
 import { GamePreview } from './GamePreview/GamePreview.tsx';
 import { CategoryContent, Question } from '../../GameScreen.type.ts';
 import {
+  categoryChip,
   helpText,
   questionBox,
   questionContent,
   skipPenalty,
-  transcriptBox,
   textInput,
+  transcriptBox,
 } from './Display.style.ts';
 import SpaceBarIcon from '@mui/icons-material/SpaceBar';
 import TimerOffIcon from '@mui/icons-material/TimerOff';
+import CategoryIcon from '@mui/icons-material/Category';
 import { useState } from 'react';
 
 /**
@@ -41,8 +44,18 @@ interface DisplayProps {
   errorMessage?: string;
   /** Handles user penalty if skipped */
   isSkipped: boolean;
+  /** Whether to use text input instead of voice */
   useTextInput: boolean;
+  /** Callback when text answer is submitted */
   onTextSubmit: (answer: string) => void;
+  /** Category progress information */
+  categoryProgress?: { current: number; total: number };
+  /** Function to skip to the next category */
+  onSkipCategory?: () => void;
+  /** Whether there's a next category available */
+  hasNextCategory?: boolean;
+  /** Name of the next category */
+  nextCategoryName?: string;
 }
 
 /**
@@ -63,6 +76,10 @@ export const Display = ({
   isSkipped,
   useTextInput,
   onTextSubmit,
+  categoryProgress,
+  onSkipCategory,
+  hasNextCategory,
+  nextCategoryName,
 }: DisplayProps) => {
   const [textAnswer, setTextAnswer] = useState('');
 
@@ -105,12 +122,27 @@ export const Display = ({
       </Box>
     );
   }
+
   return (
     <Box className="question-box" sx={questionBox()}>
       {!inGame && category ? (
-        <GamePreview category={category} onStartGame={onStartGame} />
+        <GamePreview
+          category={category}
+          onStartGame={onStartGame}
+          onSkipCategory={onSkipCategory}
+          hasNextCategory={hasNextCategory}
+          nextCategoryName={nextCategoryName}
+        />
       ) : (
         <>
+          {categoryProgress && category && (
+            <Chip
+              icon={<CategoryIcon />}
+              label={`${category.name} (${categoryProgress.current}/${categoryProgress.total})`}
+              sx={categoryChip()}
+            />
+          )}
+
           <Box className={'question-content'} sx={questionContent()}>
             {isSkipped && currentQuestion ? (
               <Box className={'skip-penalty'} sx={skipPenalty()}>
