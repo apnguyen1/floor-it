@@ -1,0 +1,7 @@
+public/category_data/
+public/category_preview_list.json
+
+node_modules
+build
+dist
+coverage

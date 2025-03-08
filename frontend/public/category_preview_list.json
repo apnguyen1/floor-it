@@ -1,14 +1,19 @@
 {
   "category_previews": [
     {
+      "name": "LoL Champion Covers",
+      "image": "game_icon.png",
+      "desc": "Guess the LoL champion's name by their image!"
+    },
+    {
       "name": "Brand Logos",
       "image": "shopping_bag.png",
       "desc": "Guess the brand by their logo!"
     },
     {
-      "name": "LoL Champion Covers",
+      "name": "Numbers",
       "image": "game_icon.png",
-      "desc": "Guess the LoL champion's name by their image!"
+      "desc": "Test your number skills!"
     },
     {
       "name": "LoL Champion Titles",
@@ -16,9 +21,9 @@
       "desc": "Guess the LoL champion's name by their title!"
     },
     {
-      "name": "Numbers",
-      "image": "numbers.png",
-      "desc": "Test your Number Skillz"
+      "name": "Brazilian Jiu-Jitsu",
+      "image": "sports.png",
+      "desc": "Test your knowledge of Brazilian Jiu-Jitsu!"
     }
   ]
 }
