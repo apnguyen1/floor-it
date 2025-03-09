@@ -160,7 +160,8 @@ export const Display = ({
           <Box className={'help-text'} sx={helpText()}>
             <SpaceBarIcon fontSize="small" />
             <Typography>
-              Press <strong>Space</strong> or say <strong>Next</strong> to skip question
+              Press <strong>Space/Esc</strong> or say <strong>Next</strong> to skip
+              question
             </Typography>
           </Box>
         </>
