@@ -19,7 +19,7 @@ import {
 } from './Display.style.ts';
 import SpaceBarIcon from '@mui/icons-material/SpaceBar';
 import TimerOffIcon from '@mui/icons-material/TimerOff';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 /**
  * Props for the Display component.
@@ -69,6 +69,11 @@ export const Display = ({
 }: DisplayProps) => {
   const [textAnswer, setTextAnswer] = useState('');
 
+  // Clear the text input when the current question changes, either from text or voice
+  useEffect(() => {
+    setTextAnswer('');
+  }, [currentQuestion]);
+
   const handleTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const answer = e.target.value;
     setTextAnswer(answer);
@@ -78,7 +83,6 @@ export const Display = ({
       currentQuestion?.answers.some((a) => a.toLowerCase() === answer.toLowerCase())
     ) {
       onTextSubmit(answer);
-      setTextAnswer('');
     }
   };
 
