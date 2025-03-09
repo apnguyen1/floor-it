@@ -13,7 +13,7 @@ class Champions(Category[ChampionDTO]):
             source=url,
             model=ChampionDTO,
             question_type=question_type,
-            fuzzy_matching_threshold=0.4,
+            fuzzy_matching_threshold=0.3,
             img_name=PreviewImageType.GAMES,
         )
 
