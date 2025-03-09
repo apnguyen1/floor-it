@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import SpeechRecognition, { useSpeechRecognition } from 'react-speech-recognition';
 import { GameStatus } from '../screens/Game/GameScreen.type.ts';
 
@@ -52,7 +52,10 @@ export const useSpeechCommands = (
   onSkip: () => void,
   fuzzyMatchingThreshold: number = 0.6,
   isSkipped: boolean = false,
+  textInputRef: React.RefObject<HTMLInputElement | null>,
 ) => {
+  const [isTyping, setIsTyping] = useState(false); // Tracks if the user is on the typing box
+
   const commands = useMemo(
     () => [
       createCommand({
@@ -75,10 +78,32 @@ export const useSpeechCommands = (
       .catch((e) => console.log(`Couldn't get permission to mic: ${e}`));
   }, []);
 
+  // Tracks if the user is currently focused on the text input box
+  useEffect(() => {
+    const input = textInputRef.current; // Get the text input reference
+    // If the input is not available, return early
+    if (!input) return;
+
+    const handleFocus = () => setIsTyping(true);
+    const handleBlur = () => setIsTyping(false);
+
+    input.addEventListener('focus', handleFocus);
+    input.addEventListener('blur', handleBlur);
+
+    return () => {
+      input.removeEventListener('focus', handleFocus);
+      input.removeEventListener('blur', handleBlur);
+    };
+  }, [textInputRef.current]);
+
   // handles skipping by space
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
-      if (e.code === 'Space' && gameStatus.inGame) {
+      // If spacebar is pressed while not typing or escape key is pressed, skip
+      if (
+        ((e.code === 'Space' && !isTyping) || e.code === 'Escape') &&
+        gameStatus.inGame
+      ) {
         e.preventDefault();
         onSkip();
       }

@@ -33,6 +33,8 @@ export const GameScreen = () => {
   });
   const [showWinningModal, setShowWinningModal] = useState(false);
   const [showSettingModal, setShowSettingModal] = useState(false);
+  // Reference to the text input for the answer
+  const textInputRef = useRef<HTMLInputElement | null>(null);
   //  Reference to the audio element for the winning sound effect.
   const winRef = useRef<HTMLAudioElement>(new Audio('/sounds/win.mp3'));
 
@@ -73,6 +75,7 @@ export const GameScreen = () => {
     skipQuestion,
     fuzzyMatchingThreshold,
     isSkipped,
+    textInputRef,
   );
 
   /**
@@ -237,6 +240,7 @@ export const GameScreen = () => {
           isSkipped={isSkipped}
           useTextInput={useTextInput}
           onTextSubmit={handleTextSubmit}
+          textInputRef={textInputRef}
         />
         <Player
           playerState={players.P2}
