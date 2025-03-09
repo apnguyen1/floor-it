@@ -32,8 +32,10 @@ import {
   modalTitle,
   sectionTitle,
 } from './InfoModal.style';
+import { useRenderTracker } from '../../../utils/renderTracker.tsx';
 
 export const InfoModal = () => {
+  useRenderTracker('InfoModal');
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);

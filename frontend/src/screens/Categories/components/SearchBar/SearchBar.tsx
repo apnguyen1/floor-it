@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Box,
   Container,
@@ -6,10 +7,11 @@ import {
   OutlinedInput,
   Typography,
 } from '@mui/material';
-import { ScreenType } from '../../../../constants/screens';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import SearchIcon from '@mui/icons-material/Search';
-import { useApp } from '../../../../hooks/useApp';
+import { useRenderTracker } from '../../../../utils/renderTracker.tsx';
+import { useApp } from '../../../../hooks/useApp.ts';
+import { ScreenType } from '../../../../constants/screens.ts';
 import {
   backButton,
   categoryTitle,
@@ -17,20 +19,34 @@ import {
   searchBarContent,
   searchField,
   titleContainer,
-} from './SearchBar.style';
+} from './SearchBar.style.ts';
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
 }
 
-export const SearchBar = ({ onSearch }: SearchBarProps) => {
+export const SearchBar = React.memo(({ onSearch }: SearchBarProps) => {
+  useRenderTracker('SearchBar');
   const { setScreen } = useApp();
+
+  // Memoize the event handler
+  const handleSearchChange = React.useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      onSearch(e.target.value);
+    },
+    [onSearch],
+  );
+
+  // Memoize the back button click handler
+  const handleBackClick = React.useCallback(() => {
+    setScreen(ScreenType.Avatar);
+  }, [setScreen]);
 
   return (
     <Container maxWidth="xl" sx={searchBarContainer()}>
       <Box sx={searchBarContent()}>
         <Box sx={titleContainer()}>
-          <IconButton onClick={() => setScreen(ScreenType.Avatar)} sx={backButton()}>
+          <IconButton onClick={handleBackClick} sx={backButton()}>
             <ArrowBackIcon />
           </IconButton>
           <Typography variant="h4" component="h1" sx={categoryTitle()}>
@@ -41,7 +57,7 @@ export const SearchBar = ({ onSearch }: SearchBarProps) => {
         <OutlinedInput
           placeholder="Search categories..."
           size="small"
-          onChange={(e) => onSearch(e.target.value)}
+          onChange={handleSearchChange}
           sx={searchField()}
           startAdornment={
             <InputAdornment position="start">
@@ -52,4 +68,4 @@ export const SearchBar = ({ onSearch }: SearchBarProps) => {
       </Box>
     </Container>
   );
-};
+});

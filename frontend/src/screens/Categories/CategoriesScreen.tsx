@@ -1,7 +1,7 @@
 import { Box, CircularProgress, Typography } from '@mui/material';
 import { CategoryPreview } from '../../types/category.type';
 import { MAX_CATEGORIES, ScreenType } from '../../constants/screens';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { fetchCategories } from '../../utils/fetch';
 import { SearchBar } from './components/SearchBar/SearchBar';
 import { CategoriesGrid } from './components/CategoriesGrid/CategoriesGrid';
@@ -57,12 +57,15 @@ export const CategoriesScreen = () => {
   /**
    * Handles search functionality
    */
-  const handleSearch = (query: string) => {
-    const filtered = categories.filter((category) =>
-      category.name.toLowerCase().includes(query.toLowerCase()),
-    );
-    setFilteredCategories(filtered);
-  };
+  const handleSearch = useCallback(
+    (query: string) => {
+      const filtered = categories.filter((category) =>
+        category.name.toLowerCase().includes(query.toLowerCase()),
+      );
+      setFilteredCategories(filtered);
+    },
+    [categories],
+  );
 
   /**
    * Handles game start
