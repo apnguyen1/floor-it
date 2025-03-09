@@ -3,7 +3,7 @@
   "preview_img": "game_icon.png",
   "preview_desc": "Guess the LoL champion's name by their image!",
   "type": "img",
-  "fuzzy_matching_threshold": 0.4,
+  "fuzzy_matching_threshold": 0.3,
   "questions": [
     {
       "question": "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg",
