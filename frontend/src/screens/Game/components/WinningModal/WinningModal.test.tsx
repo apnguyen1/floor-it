@@ -3,6 +3,7 @@ import { fireEvent, render, screen } from '@testing-library/react';
 import WinningModal from './WinningModal';
 import { PlayerState } from '../../../../types/global.type.ts';
 import { useApp } from '../../../../hooks/useApp.ts';
+import { ScreenType } from '../../../../constants/screens.ts';
 
 vi.mock('../../../../hooks/useApp.ts', async () => {
   const actual = await vi.importActual('../../../../hooks/useApp');
@@ -78,13 +79,13 @@ describe('WinningModal', () => {
     expect(screen.queryByText('Congratulations!')).not.toBeInTheDocument();
   });
 
-  it('should navigate to Categories screen when Play Again is clicked', () => {
+  it('should navigate to Categories screen when  is clicked', () => {
     render(<WinningModal isOpen={true} winner={mockWinner} onClose={mockOnClose} />);
 
-    // Click the Play Again button
-    fireEvent.click(screen.getByText('New Game?'));
+    const backButton = screen.getByRole('button', { name: /back to categories/i });
+    fireEvent.click(backButton);
 
-    // Check that onClose was called
     expect(mockOnClose).toHaveBeenCalledTimes(1);
+    expect(mockSetScreen).toHaveBeenCalledWith(ScreenType.Categories);
   });
 });

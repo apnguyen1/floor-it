@@ -240,8 +240,6 @@ export const GameScreen = () => {
         ? players.P2
         : undefined;
 
-  const categoryProgress = getCategoryProgress();
-
   return (
     <Box className="game-box" sx={gameBox(players)}>
       <Button
@@ -282,7 +280,7 @@ export const GameScreen = () => {
           isSkipped={isSkipped}
           useTextInput={useTextInput}
           onTextSubmit={handleTextSubmit}
-          categoryProgress={categoryProgress}
+          categoryProgress={getCategoryProgress()}
           onSkipCategory={handleSkipCategory}
         />
         <Player
@@ -297,7 +295,7 @@ export const GameScreen = () => {
         isOpen={showWinningModal}
         onClose={handleCloseWinningModal}
         winner={winnerPlayer}
-        categoryProgress={categoryProgress}
+        categoryProgress={getCategoryProgress()}
         onPlayNextCategory={handlePlayNextCategory}
         onReplayCategory={handleReplayCategory}
       />
