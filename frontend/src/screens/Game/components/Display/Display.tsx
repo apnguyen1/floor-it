@@ -133,7 +133,7 @@ export const Display = ({
               )
             )}
           </Box>
-          {useTextInput ? (
+          {useTextInput && (
             <TextField
               value={textAnswer}
               onChange={handleTextChange}
@@ -142,15 +142,14 @@ export const Display = ({
               fullWidth
               sx={textInput()}
             />
-          ) : (
-            <Typography
-              variant={'subtitle2'}
-              color={'textSecondary'}
-              sx={transcriptBox()}
-            >
-              <strong>You said:</strong> {transcript || 'Waiting for your answer...'}
-            </Typography>
           )}
+          <Typography
+            variant={'subtitle2'}
+            color={'textSecondary'}
+            sx={transcriptBox()}
+          >
+            <strong>You said:</strong> {transcript || 'Waiting for your answer...'}
+          </Typography>
           <Box className={'help-text'} sx={helpText()}>
             <SpaceBarIcon fontSize="small" />
             <Typography>

@@ -30,7 +30,7 @@ const AppProvider = ({ children }: { children: ReactNode }) => {
     P2: { name: 'P2', color: '#3288BD', time: DEFAULT_TIMER_SECONDS },
   });
   const [selectedCategory, setSelectedCategory] = useState<string[]>([]);
-  const [useTextInput, setUseTextInput] = useState(false);
+  const [useTextInput, setUseTextInput] = useState(true);
 
   const updatePlayerOne = useCallback((updates: Partial<PlayerState>) => {
     setPlayers((prev) => ({
