@@ -43,7 +43,8 @@ interface DisplayProps {
   isSkipped: boolean;
   useTextInput: boolean;
   onTextSubmit: (answer: string) => void;
-  textInputRef?: React.RefObject<HTMLInputElement | null>;
+  handleTextInputFocus: () => void /** Handles focus on the text input */;
+  handleTextInputBlur: () => void /** Handles blur on the text input */;
   /** Reference to the text input box */
 }
 
@@ -65,7 +66,8 @@ export const Display = ({
   isSkipped,
   useTextInput,
   onTextSubmit,
-  textInputRef,
+  handleTextInputFocus,
+  handleTextInputBlur,
 }: DisplayProps) => {
   const [textAnswer, setTextAnswer] = useState('');
 
@@ -142,7 +144,8 @@ export const Display = ({
           </Box>
           {useTextInput && ( // TODO: set autoFocus when voice recognition is not supported
             <TextField
-              inputRef={textInputRef}
+              onFocus={handleTextInputFocus}
+              onBlur={handleTextInputBlur}
               value={textAnswer}
               onChange={handleTextChange}
               placeholder="Type your answer..."
