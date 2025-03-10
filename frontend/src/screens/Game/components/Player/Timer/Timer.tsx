@@ -97,11 +97,6 @@ const Timer = ({ inGame, onTimeOut, isActive, playerState }: TimerProps) => {
           clearInterval(interval);
           onTimeOut(playerState.name);
 
-          if (heartbeatRef.current) {
-            heartbeatRef.current.pause();
-            heartbeatRef.current.currentTime = 0;
-          }
-
           return 0;
         }
         return prev - 1000;

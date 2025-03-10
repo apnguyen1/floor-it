@@ -119,6 +119,7 @@ describe('GameScreen', () => {
   const mockSetScreen = vi.fn();
   const mockSkipQuestion = vi.fn();
   const mockSetNextQuestion = vi.fn();
+  const mockGetCategoryProgress = vi.fn().mockReturnValue({ current: 1, total: 3 });
 
   beforeEach(() => {
     vi.clearAllMocks();
@@ -136,6 +137,7 @@ describe('GameScreen', () => {
       currentQuestion: mockQuestion,
       skipQuestion: mockSkipQuestion,
       setNextQuestion: mockSetNextQuestion,
+      getCategoryProgress: mockGetCategoryProgress,
     });
 
     /* eslint-disable  @typescript-eslint/no-explicit-any */

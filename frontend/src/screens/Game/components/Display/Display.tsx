@@ -2,24 +2,27 @@ import {
   Alert,
   AlertTitle,
   Box,
+  Chip,
   CircularProgress,
-  Typography,
   TextField,
+  Typography,
 } from '@mui/material';
 import TriviaQuestion from './GameDisplay/TriviaQuestion.tsx';
 import { GamePreview } from './GamePreview/GamePreview.tsx';
 import { CategoryContent, Question } from '../../GameScreen.type.ts';
 import {
+  categoryChip,
   helpText,
   questionBox,
   questionContent,
   skipPenalty,
-  transcriptBox,
   textInput,
+  transcriptBox,
 } from './Display.style.ts';
 import SpaceBarIcon from '@mui/icons-material/SpaceBar';
 import TimerOffIcon from '@mui/icons-material/TimerOff';
-import { useState } from 'react';
+import CategoryIcon from '@mui/icons-material/Category';
+import { ChangeEvent, useState } from 'react';
 
 /**
  * Props for the Display component.
@@ -41,8 +44,15 @@ interface DisplayProps {
   errorMessage?: string;
   /** Handles user penalty if skipped */
   isSkipped: boolean;
+  /** Whether to use text input instead of voice */
   useTextInput: boolean;
+  /** Callback when text answer is submitted */
   onTextSubmit: (answer: string) => void;
+  /** Category progress information */
+  categoryProgress?: { current: number; total: number };
+  /** Function to skip to the next category */
+  onSkipCategory?: () => void;
+  /** Whether there's a next category available */
 }
 
 /**
@@ -63,10 +73,12 @@ export const Display = ({
   isSkipped,
   useTextInput,
   onTextSubmit,
+  categoryProgress,
+  onSkipCategory,
 }: DisplayProps) => {
   const [textAnswer, setTextAnswer] = useState('');
 
-  const handleTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleTextChange = (e: ChangeEvent<HTMLInputElement>) => {
     const answer = e.target.value;
     setTextAnswer(answer);
 
@@ -79,7 +91,6 @@ export const Display = ({
     }
   };
 
-  // Show loading state when category or question data is unavailable
   const isLoading = !category && !currentQuestion;
 
   // Show loading state when category or question data is unavailable
@@ -105,10 +116,23 @@ export const Display = ({
       </Box>
     );
   }
+
   return (
     <Box className="question-box" sx={questionBox()}>
+      {categoryProgress && category && (
+        <Chip
+          icon={<CategoryIcon />}
+          label={`(${categoryProgress.current}/${categoryProgress.total})`}
+          sx={categoryChip()}
+        />
+      )}
       {!inGame && category ? (
-        <GamePreview category={category} onStartGame={onStartGame} />
+        <GamePreview
+          category={category}
+          categoryProgress={categoryProgress}
+          onStartGame={onStartGame}
+          onSkipCategory={onSkipCategory}
+        />
       ) : (
         <>
           <Box className={'question-content'} sx={questionContent()}>

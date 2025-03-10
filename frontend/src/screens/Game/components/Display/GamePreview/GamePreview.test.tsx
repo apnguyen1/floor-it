@@ -13,6 +13,8 @@ describe('GamePreview', () => {
   };
 
   const mockStartGame = vi.fn();
+  const mockSkipCategory = vi.fn();
+  const mockCategoryProgress = { current: 1, total: 3 };
 
   it('should render category name correctly', () => {
     render(<GamePreview category={mockCategory} onStartGame={mockStartGame} />);
@@ -39,17 +41,63 @@ describe('GamePreview', () => {
   it('should render Start Game button', () => {
     render(<GamePreview category={mockCategory} onStartGame={mockStartGame} />);
 
-    const button = screen.getByRole('button', { name: /start game/i });
+    const button = screen.getByRole('button', { name: /play game!/i });
     expect(button).toBeInTheDocument();
   });
 
   it('should call onStartGame when button is clicked', () => {
     render(<GamePreview category={mockCategory} onStartGame={mockStartGame} />);
 
-    const button = screen.getByRole('button', { name: /start game/i });
+    const button = screen.getByRole('button', { name: /play game!/i });
     fireEvent.click(button);
 
     expect(mockStartGame).toHaveBeenCalledTimes(1);
+  });
+
+  it('should render Skip Category button when not on last category', () => {
+    render(
+      <GamePreview
+        category={mockCategory}
+        onStartGame={mockStartGame}
+        onSkipCategory={mockSkipCategory}
+        categoryProgress={mockCategoryProgress}
+      />,
+    );
+
+    const skipButton = screen.getByRole('button', { name: /skip to next category/i });
+    expect(skipButton).toBeInTheDocument();
+  });
+
+  it('should not render Skip Category button on last category', () => {
+    render(
+      <GamePreview
+        category={mockCategory}
+        onStartGame={mockStartGame}
+        onSkipCategory={mockSkipCategory}
+        categoryProgress={{ current: 3, total: 3 }}
+      />,
+    );
+
+    const skipButtons = screen.queryAllByRole('button', {
+      name: /skip to next category/i,
+    });
+    expect(skipButtons.length).toBe(0);
+  });
+
+  it('should call onSkipCategory when skip button is clicked', () => {
+    render(
+      <GamePreview
+        category={mockCategory}
+        onStartGame={mockStartGame}
+        onSkipCategory={mockSkipCategory}
+        categoryProgress={mockCategoryProgress}
+      />,
+    );
+
+    const skipButton = screen.getByRole('button', { name: /skip to next category/i });
+    fireEvent.click(skipButton);
+
+    expect(mockSkipCategory).toHaveBeenCalledTimes(1);
   });
 
   it('should handle different category data correctly', () => {
