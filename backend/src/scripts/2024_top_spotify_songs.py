@@ -44,7 +44,7 @@ class SpotifyHits(Category[SpotifyDTO]):
             name="Top Spotify Hits",
             img_name=PreviewImageType.ENTERTAINMENT,
             desc="Test your knowledge of the most streamed songs on Spotify!",
-            fuzzy_matching_threshold=0.7,
+            fuzzy_matching_threshold=0.4,
         )
 
     def _load_data(self, model):
@@ -95,6 +95,9 @@ class SpotifyHits(Category[SpotifyDTO]):
         category_data = {}
 
         for track in self._raw_data.tracks:
+            if _exclude_songs(track):
+                continue
+
             question = f'Who is the artist of the song "{track.track_name}"?'
             category_data[question] = [track.artist_name]
 
@@ -143,3 +146,29 @@ def _remove_features(track_name):
     result = result.strip()
 
     return result
+
+
+def _exclude_songs(track: SpotifyTrackDTO) -> bool:
+    """
+    Checks if the track should be excluded based on blacklisted terms.
+    Returns True if the track should be skipped.
+    """
+    skip_terms = ["cupid", "carnival"]
+
+    track_name_lower = track.track_name.lower() if track.track_name else ""
+    artist_name_lower = track.artist_name.lower() if track.artist_name else ""
+    album_name_lower = track.album_name.lower() if track.album_name else ""
+
+    for term in skip_terms:
+        if (
+            term in track_name_lower
+            or term in artist_name_lower
+            or (track.album_name and term in album_name_lower)
+        ):
+            return True
+
+    for field in [track.track_name, track.artist_name, track.album_name]:
+        if field and any(ord(c) > 127 for c in field):
+            return True
+
+    return False

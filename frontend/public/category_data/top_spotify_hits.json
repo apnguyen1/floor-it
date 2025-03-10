@@ -3,7 +3,7 @@
   "preview_img": "entertainment.png",
   "preview_desc": "Test your knowledge of the most streamed songs on Spotify!",
   "type": "text",
-  "fuzzy_matching_threshold": 0.7,
+  "fuzzy_matching_threshold": 0.4,
   "questions": [
     {
       "question": "Who is the artist of the song \"MILLION DOLLAR BABY\"?",
@@ -657,20 +657,6 @@
       "aliases": []
     },
     {
-      "question": "Who is the artist of the song \"Cupid ��� Twin Ver. (FIFTY FIFTY) ��� Spe\"?",
-      "answers": [
-        "sped up 8282"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Which famous hit is performed by sped up 8282 - Cupid ___?",
-      "answers": [
-        "Cupid ��� Twin Ver. (FIFTY FIFTY) ��� Spe"
-      ],
-      "aliases": []
-    },
-    {
       "question": "Who is the artist of the song \"I'm Good (Blue)\"?",
       "answers": [
         "David Guetta"
@@ -1021,27 +1007,6 @@
       "aliases": []
     },
     {
-      "question": "Who is the artist of the song \"CARNIVAL\"?",
-      "answers": [
-        "$"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Which famous hit is performed by $?",
-      "answers": [
-        "CARNIVAL"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Which album contains the song \"CARNIVAL\" by $?",
-      "answers": [
-        "CARNIVAL"
-      ],
-      "aliases": []
-    },
-    {
       "question": "Who is the artist of the song \"Kill Bill\"?",
       "answers": [
         "SZA"
@@ -1171,20 +1136,6 @@
       "question": "Which famous hit is performed by Grupo Frontera - un ___?",
       "answers": [
         "un x100to"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Who is the artist of the song \"Laxed ��� Sire\"?",
-      "answers": [
-        "Jawsh 685"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Which famous hit is performed by Jawsh 685 - Laxed ___?",
-      "answers": [
-        "Laxed ��� Sire"
       ],
       "aliases": []
     },
@@ -1381,20 +1332,6 @@
       "question": "Which famous hit is performed by Adele - Easy ___?",
       "answers": [
         "Easy On Me"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Who is the artist of the song \"Tit�� Me Pregu\"?",
-      "answers": [
-        "Bad Bunny"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Which famous hit is performed by Bad Bunny - Tit�� ___?",
-      "answers": [
-        "Tit�� Me Pregu"
       ],
       "aliases": []
     },
