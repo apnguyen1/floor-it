@@ -6,6 +6,11 @@
       "desc": "Calling all Foodies!"
     },
     {
+      "name": "Top Spotify Hits",
+      "image": "entertainment.png",
+      "desc": "Test your knowledge of the most streamed songs on Spotify!"
+    },
+    {
       "name": "LoL Champion Covers",
       "image": "game_icon.png",
       "desc": "Guess the LoL champion's name by their image!"
