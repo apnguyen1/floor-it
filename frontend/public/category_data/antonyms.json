@@ -1,6 +1,6 @@
 {
   "name": "Antonyms",
-  "preview_img": "default-preview.png",
+  "preview_img": "abc.png",
   "preview_desc": "Guess the antonyms of the word!",
   "type": "text",
   "fuzzy_matching_threshold": 0.6,
