@@ -64,6 +64,22 @@ export const Points = ({
         } else {
           tooltipText = 'Category not completed';
         }
+        const player1Won = categoryWins[index] === 1;
+        const player2Won = categoryWins[index] === 2;
+
+        const circleColor = player1Won
+          ? player1Color
+          : player2Won
+            ? player2Color
+            : '#999';
+
+        const tooltipText = player1Won
+          ? 'Player 1 won'
+          : player2Won
+            ? 'Player 2 won'
+            : isCurrent
+              ? 'Current category'
+              : 'Upcoming category';
 
         return (
           <Tooltip key={index} title={tooltipText} arrow>
@@ -75,6 +91,7 @@ export const Points = ({
                 isCompleted,
                 player1Won || player2Won,
               )}
+              sx={categoryCircle(circleColor, isCurrent, player1Won || player2Won)}
             />
           </Tooltip>
         );

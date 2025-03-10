@@ -16,6 +16,7 @@ export const indicatorContainer = (): SxProps<Theme> => ({
 export const categoryCircle = (
   color: string,
   isCurrent: boolean,
+
   isUpcoming: boolean,
   isCompleted: boolean,
   isWon: boolean,
@@ -30,6 +31,7 @@ export const categoryCircle = (
     : isCurrent
       ? 'rgba(255, 255, 255, 0.8)'
       : 'transparent',
+
   opacity: isCurrent ? 1 : isUpcoming ? 0.5 : isCompleted ? 0.7 : 0.7,
   boxShadow: isCurrent
     ? '0 0 10px rgba(255, 255, 255, 0.5)'
