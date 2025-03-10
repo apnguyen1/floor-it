@@ -28,7 +28,7 @@ class Numbers(TextCategory):
             source="numbers.txt",
             name="Numbers",
             desc="Test your number skills!",
-            img_name=PreviewImageType.GAMES,
+            img_name=PreviewImageType.NUMBERS,
             fuzzy_matching_threshold=0.9,
         )
 
