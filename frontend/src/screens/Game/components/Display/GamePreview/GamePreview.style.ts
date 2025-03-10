@@ -53,16 +53,22 @@ export const categoryDescription = (): SxProps<Theme> => ({
   maxWidth: '80%',
 });
 
-export const startButton = (): SxProps<Theme> => ({
-  fontSize: '1.1rem',
-  padding: '12px 36px',
-  borderRadius: '28px',
-  boxShadow: '0 4px 12px rgba(76, 175, 80, 0.3)',
-  transition: 'all 0.3s ease',
+export const buttonContainer = (): SxProps<Theme> => ({
+  display: 'flex',
+  alignItems: 'center',
+  gap: 2,
   marginTop: 2,
+});
+
+export const previewButton = (): SxProps<Theme> => ({
+  padding: '12px',
+  borderRadius: '50%',
+  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
+  transition: 'all 0.3s ease',
+  bgcolor: 'background.paper',
   '&:hover': {
     transform: 'translateY(-3px)',
-    boxShadow: '0 6px 16px rgba(76, 175, 80, 0.4)',
+    boxShadow: '0 6px 16px rgba(0, 0, 0, 0.15)',
   },
   '&:active': {
     transform: 'translateY(0)',

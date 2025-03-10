@@ -1,18 +1,21 @@
 import { useEffect, useState } from 'react';
-import { Box, Button, Modal, Paper, Typography } from '@mui/material';
+import { Box, IconButton, Modal, Paper, Tooltip, Typography } from '@mui/material';
 import Confetti from 'react-confetti';
 import useWindowSize from 'react-use/lib/useWindowSize';
 import {
-  actionButton,
-  buttonContainer,
+  actionButtons,
   confettiContainer,
+  displayNextCategoryName,
+  iconButton,
   winnerPaper,
   winningModalBox,
 } from './WinningModal.style';
 import { PlayerState } from '../../../../types/global.type.ts';
 import { useApp } from '../../../../hooks/useApp.ts';
 import { ScreenType } from '../../../../constants/screens.ts';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import ReplayIcon from '@mui/icons-material/Replay';
+import CategoryIcon from '@mui/icons-material/Category';
 
 /**
  * Props for the Winning Modal component.
@@ -24,6 +27,12 @@ interface WinningModalProps {
   winner?: PlayerState;
   // Callback function to close the modal
   onClose: () => void;
+  // Category progress (current/total)
+  categoryProgress?: { current: number; total: number };
+  // Handler for proceeding to the next category
+  onPlayNextCategory?: () => void;
+  // Handler for replaying the current category
+  onReplayCategory?: () => void;
 }
 
 /**
@@ -31,10 +40,20 @@ interface WinningModalProps {
  *
  * @param {WinningModalProps}: props - Component props
  */
-const WinningModal = ({ isOpen, winner, onClose }: WinningModalProps) => {
+const WinningModal = ({
+  isOpen,
+  winner,
+  onClose,
+  categoryProgress,
+  onPlayNextCategory,
+  onReplayCategory,
+}: WinningModalProps) => {
   const { width, height } = useWindowSize();
   const { setScreen } = useApp();
   const [showConfetti, setShowConfetti] = useState(true);
+
+  const isLastCategory =
+    categoryProgress && categoryProgress.current === categoryProgress.total;
 
   useEffect(() => {
     if (isOpen) {
@@ -47,13 +66,7 @@ const WinningModal = ({ isOpen, winner, onClose }: WinningModalProps) => {
     }
   }, [isOpen]);
 
-  /*  TODO: continue to next category and continue track of player points
-                ticket-116 & #115*/
-  // const handlePlayAgain = () => {
-  //   onClose();
-  // };
-
-  const handleNewGame = () => {
+  const handleBackToCategories = () => {
     onClose();
     setScreen(ScreenType.Categories);
   };
@@ -90,33 +103,71 @@ const WinningModal = ({ isOpen, winner, onClose }: WinningModalProps) => {
             <Typography variant="h4" gutterBottom>
               {winner.name} Wins!
             </Typography>
-            <Typography variant="subtitle1">
-              Great job answering those trivia questions!
-            </Typography>
+
+            {categoryProgress && (
+              <Typography variant="subtitle1" sx={{ mb: 1 }}>
+                Category {categoryProgress.current} of {categoryProgress.total}{' '}
+                completed
+              </Typography>
+            )}
+
+            {isLastCategory ? (
+              <>
+                <Typography variant="subtitle1" sx={{ mt: 2 }}>
+                  You've completed your selected categories!
+                </Typography>
+              </>
+            ) : (
+              <>
+                <Box sx={{ mt: 2, mb: 1 }}>
+                  <Typography variant="subtitle1" sx={displayNextCategoryName()}>
+                    Play Next Category?
+                  </Typography>
+                </Box>
+              </>
+            )}
           </Paper>
-          <Box sx={buttonContainer()}>
-            <Button
-              variant="contained"
-              color="primary"
-              size="large"
-              onClick={handleNewGame}
-              startIcon={<ArrowBackIcon />}
-              sx={actionButton()}
-            >
-              New Game?
-            </Button>
-            {/*  TODO: continue to next category and continue track of player points
-                  ticket-116 & #115*/}
-            {/*<Button*/}
-            {/*  variant="contained"*/}
-            {/*  color="primary"*/}
-            {/*  size="large"*/}
-            {/*  onClick={handlePlayAgain}*/}
-            {/*  startIcon={<ReplayIcon />}*/}
-            {/*  sx={actionButton()}*/}
-            {/*>*/}
-            {/*  Play Again?*/}
-            {/*</Button>*/}
+
+          <Box sx={actionButtons()}>
+            {/* Back to Categories */}
+            <Tooltip title="Back to Categories" arrow placement="top">
+              <IconButton
+                onClick={handleBackToCategories}
+                color="primary"
+                sx={iconButton()}
+                aria-label="Back to Categories"
+              >
+                <CategoryIcon fontSize="large" />
+              </IconButton>
+            </Tooltip>
+
+            {/* Replay Current Category */}
+            {onReplayCategory && (
+              <Tooltip title="Play This Category Again" arrow placement="top">
+                <IconButton
+                  onClick={onReplayCategory}
+                  color="primary"
+                  sx={iconButton()}
+                  aria-label="Play this category again"
+                >
+                  <ReplayIcon fontSize="large" />
+                </IconButton>
+              </Tooltip>
+            )}
+
+            {/* Play Next Category */}
+            {!isLastCategory && onPlayNextCategory && (
+              <Tooltip title="Play Next Category" arrow placement="top">
+                <IconButton
+                  onClick={onPlayNextCategory}
+                  color="success"
+                  sx={iconButton()}
+                  aria-label="Play next category"
+                >
+                  <PlayArrowIcon fontSize="large" />
+                </IconButton>
+              </Tooltip>
+            )}
           </Box>
         </Box>
       </>

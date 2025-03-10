@@ -23,6 +23,7 @@ import { SettingModal } from '../../components/Settings/SettingModal.tsx';
  *  - Uses voice commands for answering or skipping questions.
  *  - Plays a sound when a player wins.
  *  - Switches questions when an answer is correct or skipped.
+ *  - Supports tournament mode to play through multiple categories.
  */
 export const GameScreen = () => {
   // manages the game state
@@ -37,7 +38,6 @@ export const GameScreen = () => {
   //  Reference to the audio element for the winning sound effect.
   const winRef = useRef<HTMLAudioElement>(new Audio('/sounds/win.mp3'));
 
-  // player's state, the selected categories, and function to switch screen
   const {
     players,
     selectedCategory,
@@ -58,6 +58,8 @@ export const GameScreen = () => {
     setNextQuestion,
     fuzzyMatchingThreshold,
     isSkipped,
+    goToNextCategory,
+    getCategoryProgress,
   } = useCategoryQuestions(selectedCategory);
 
   // handles speech dictation and logic
@@ -124,6 +126,48 @@ export const GameScreen = () => {
     },
     [players.P1.name, players.P2.name],
   );
+
+  /**
+   * Handles proceeding to the next category
+   */
+  const handlePlayNextCategory = useCallback(() => {
+    if (goToNextCategory()) {
+      setGameStatus({
+        ...gameStatus,
+        inGame: false,
+        winner: undefined,
+      });
+    }
+  }, [gameStatus, goToNextCategory]);
+
+  /**
+   * Handles replaying the current category
+   */
+  const handleReplayCategory = useCallback(() => {
+    setGameStatus({
+      ...gameStatus,
+      inGame: false,
+      winner: undefined,
+    });
+    setShowWinningModal(false);
+  }, [gameStatus]);
+
+  /**
+   * Handles skipping the next category and going directly to the one after
+   */
+  const handleSkipCategory = useCallback(() => {
+    if (goToNextCategory()) {
+      setGameStatus({
+        inGame: false,
+        activePlayer: true,
+        winner: undefined,
+      });
+      setShowWinningModal(false);
+    } else {
+      setScreen(ScreenType.Categories);
+      setShowWinningModal(false);
+    }
+  }, [goToNextCategory, setScreen]);
 
   /**
    * Handles going back to the category screen
@@ -244,6 +288,8 @@ export const GameScreen = () => {
           onTextSubmit={handleTextSubmit}
           handleTextInputFocus={handleTextInputFocus}
           handleTextInputBlur={handleTextInputBlur}
+          categoryProgress={getCategoryProgress()}
+          onSkipCategory={handleSkipCategory}
         />
         <Player
           playerState={players.P2}
@@ -257,6 +303,9 @@ export const GameScreen = () => {
         isOpen={showWinningModal}
         onClose={handleCloseWinningModal}
         winner={winnerPlayer}
+        categoryProgress={getCategoryProgress()}
+        onPlayNextCategory={handlePlayNextCategory}
+        onReplayCategory={handleReplayCategory}
       />
       <SettingModal
         isOpen={showSettingModal}
