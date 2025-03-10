@@ -1,0 +1,177 @@
+{
+  "name": "CSE 403 2025 finals",
+  "preview_img": "default-preview.png",
+  "preview_desc": "Practice for the CSE 403 finals",
+  "type": "text",
+  "fuzzy_matching_threshold": 0.5,
+  "questions": [
+    {
+      "question": "The Joel Test is a checklist for the quality of software product.",
+      "answers": [
+        "False"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "If code merges without a merge conflict, the merge does not introduce any new defects (bugs).",
+      "answers": [
+        "False"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Each commit to your version control system should pass tests.",
+      "answers": [
+        "True for main branch"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "In requirements, an actor is a person who interacts with the system under development.",
+      "answers": [
+        "False"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "In requirements, every stakeholder is also an actor.",
+      "answers": [
+        "False"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "In requirements, every actor is also a stakeholder.",
+      "answers": [
+        "False"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "A mutation is a small modification to program source that introduces a defect (a bug).",
+      "answers": [
+        "False"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Given test suite T1 with 50% code coverage and test suite T2 with 60% code coverage, T2 detects at least as many failures (bugs) as T1 does.",
+      "answers": [
+        "False"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Name the first step in the software development lifecycle.",
+      "answers": [
+        "Requirements"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Name the second step in the software development lifecycle.",
+      "answers": [
+        "Architecture"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Name the third step in the software development lifecycle.",
+      "answers": [
+        "Design"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Name the fourth step in the software development lifecycle.",
+      "answers": [
+        "Implementation"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Name the fifth step in the software development lifecycle.",
+      "answers": [
+        "Verification"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Name the sixth step in the software development lifecycle.",
+      "answers": [
+        "Delivery"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Name the seventh step in the software development lifecycle.",
+      "answers": [
+        "Maintenance"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Give an example of a functional requirement.",
+      "answers": [
+        "The user can search all databases or a subset"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Give an example of a non-functional requirement.",
+      "answers": [
+        "The system shall not disclose personal user information"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Give an example of a requirement that is neither functional nor non-functional.",
+      "answers": [
+        "The project must use Python for backend development"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Give an example of a file that should not be committed to version control.",
+      "answers": [
+        "Executable files"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Give a general approach to obtain information from customers when gathering requirements.",
+      "answers": [
+        "Interviews and surveys"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Give another approach to obtain information from customers when gathering requirements.",
+      "answers": [
+        "Observations and shadowing"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Give a third approach to obtain information from customers when gathering requirements.",
+      "answers": [
+        "Show prototypes and get feedback"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Define \"technical debt\".",
+      "answers": [
+        "Poor development practices that will cost more to fix in the future"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "What is the I in SOLID principles",
+      "answers": [
+        "Interface segregation principle"
+      ],
+      "aliases": []
+    }
+  ]
+}

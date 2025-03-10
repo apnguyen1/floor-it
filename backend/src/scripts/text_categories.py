@@ -74,3 +74,18 @@ class MoviesAndTvShows(TextCategory):
             img_name=PreviewImageType.ENTERTAINMENT,
             fuzzy_matching_threshold=0.7,
         )
+
+
+class CSE403Midterm(TextCategory):
+    """
+    Practice Exam for CSE 403 finals questions.
+    """
+
+    def __init__(self):
+        super().__init__(
+            source="cse403_finals.txt",
+            name="CSE 403 2025 finals",
+            desc="Practice for the CSE 403 finals",
+            img_name=PreviewImageType.DEFAULT,
+            fuzzy_matching_threshold=0.5,
+        )
