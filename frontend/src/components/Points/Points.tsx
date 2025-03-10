@@ -1,5 +1,6 @@
 import { Box, Tooltip } from '@mui/material';
 import { categoryCircle, indicatorContainer } from './Points.style.ts';
+import { PlayerState } from '../../types/global.type.ts';
 
 interface PointsProps {
   /**
@@ -13,14 +14,9 @@ interface PointsProps {
   currentCategoryIndex: number;
 
   /**
-   * Player 1's color
+   * The Players
    */
-  player1Color: string;
-
-  /**
-   * Player 2's color
-   */
-  player2Color: string;
+  players: { P1: PlayerState; P2: PlayerState };
 
   /**
    * Array tracking which player won each category
@@ -36,37 +32,42 @@ interface PointsProps {
 export const Points = ({
   totalCategories,
   currentCategoryIndex,
-  player1Color,
-  player2Color,
+  players,
   categoryWins,
 }: PointsProps) => {
   if (totalCategories <= 1) return null;
   return (
     <Box sx={indicatorContainer()}>
       {Array.from({ length: totalCategories }).map((_, index) => {
-        // Determine the state of this category
         const isCurrent = index === currentCategoryIndex;
+        const isUpcoming = index > currentCategoryIndex;
+        const isCompleted = index < currentCategoryIndex;
         const player1Won = categoryWins[index] === 1;
         const player2Won = categoryWins[index] === 2;
 
-        const circleColor = player1Won
-          ? player1Color
-          : player2Won
-            ? player2Color
-            : '#999';
-
-        const tooltipText = player1Won
-          ? 'Player 1 won'
-          : player2Won
-            ? 'Player 2 won'
-            : isCurrent
-              ? 'Current category'
-              : 'Upcoming category';
+        let tooltipText = '';
+        if (player1Won) {
+          tooltipText = `${players.P1.name} won!`;
+        } else if (player2Won) {
+          tooltipText = `${players.P2.name} won!`;
+        } else if (isCurrent) {
+          tooltipText = 'Current category';
+        } else if (isUpcoming) {
+          tooltipText = 'Upcoming category';
+        } else {
+          tooltipText = 'Category not completed';
+        }
 
         return (
           <Tooltip key={index} title={tooltipText} arrow>
             <Box
-              sx={categoryCircle(circleColor, isCurrent, player1Won || player2Won)}
+              sx={categoryCircle(
+                player1Won ? players.P1.color : player2Won ? players.P2.color : '#999',
+                isCurrent,
+                isUpcoming,
+                isCompleted,
+                player1Won || player2Won,
+              )}
             />
           </Tooltip>
         );
