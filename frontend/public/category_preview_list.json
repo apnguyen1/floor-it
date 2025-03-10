@@ -36,6 +36,11 @@
       "desc": "Guess the LoL champion's name by their title!"
     },
     {
+      "name": "Multiplication",
+      "image": "number.png",
+      "desc": "Test your multiplication skills!"
+    },
+    {
       "name": "Brazilian Jiu-Jitsu",
       "image": "sports.png",
       "desc": "Test your knowledge of Brazilian Jiu-Jitsu!"

@@ -1,0 +1,8 @@
+{
+  "name": "Multiplication",
+  "preview_img": "number.png",
+  "preview_desc": "Test your multiplication skills!",
+  "type": "text",
+  "fuzzy_matching_threshold": 0.9,
+  "questions": []
+}
