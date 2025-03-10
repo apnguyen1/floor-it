@@ -616,7 +616,8 @@
             "Answers": [
                 "Rapidash",
                 "Rap id ash",
-                "Rap a dash"
+                "Rap a dash",
+                "Rapid dash"
             ]
         },
         {
@@ -636,7 +637,8 @@
             "Answers": [
                 "Slowbro",
                 "Slow bro",
-                "Slow bra"
+                "Slow bra",
+                "Slow pro"
             ]
         },
         {
@@ -646,7 +648,8 @@
             "Answers": [
                 "Magnemite",
                 "Mag ne mite",
-                "Mag ne might"
+                "Mag ne might",
+                "Magnet might"
             ]
         },
         {
@@ -656,7 +659,8 @@
             "Answers": [
                 "Magneton",
                 "Mag ne ton",
-                "Mag ne tan"
+                "Mag ne tan",
+                "Magnet dawn"
             ]
         },
         {
@@ -666,7 +670,9 @@
             "Answers": [
                 "Farfetch'd",
                 "Far fetch",
-                "Far fetch'd"
+                "Far fetch'd",
+                "Farfetch",
+                "Far fetch"
             ]
         },
         {
@@ -676,7 +682,8 @@
             "Answers": [
                 "Doduo",
                 "Do duo",
-                "Do doo"
+                "Do doo",
+                "Doe duo"
             ]
         },
         {
@@ -696,7 +703,7 @@
             "Answers": [
                 "Seel",
                 "Seal",
-                "Seel"
+                "See"
             ]
         },
         {
@@ -706,7 +713,9 @@
             "Answers": [
                 "Dewgong",
                 "Dew gong",
-                "Dew gone"
+                "Dew gone",
+                "Do gong",
+                "Due gong"
             ]
         },
         {
@@ -715,7 +724,7 @@
             "logoAnswerSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
             "Answers": [
                 "Grimer",
-                "Grim er",
+                "Grime er",
                 "Grim mer"
             ]
         },
@@ -725,6 +734,7 @@
             "logoAnswerSrc": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
             "Answers": [
                 "Muk",
+                "Mac",
                 "Muck",
                 "Mook"
             ]
