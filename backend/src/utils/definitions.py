@@ -21,8 +21,9 @@ class PreviewImageType(str, Enum):
 
     DEFAULT = "default-preview.png"
     GAMES = "game_icon.png"
-    NUMBERS = "numbers.png"
+    NUMBERS = "number.png"
     SHOPPING = "shopping_bag.png"
     SPORTS = "sports.png"
     FOOD = "food_drink.png"
     ENTERTAINMENT = "entertainment.png"
+    WORDS = "abc.png"

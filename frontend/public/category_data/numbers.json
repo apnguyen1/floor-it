@@ -1,6 +1,6 @@
 {
   "name": "Numbers",
-  "preview_img": "game_icon.png",
+  "preview_img": "number.png",
   "preview_desc": "Test your number skills!",
   "type": "text",
   "fuzzy_matching_threshold": 0.9,
