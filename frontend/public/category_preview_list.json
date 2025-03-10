@@ -21,6 +21,11 @@
       "desc": "Guess the brand by their logo!"
     },
     {
+      "name": "Original 151 Pokémon",
+      "image": "game_icon.png",
+      "desc": "Who's that Pokémon!?"
+    },
+    {
       "name": "Movies and TV Shows",
       "image": "entertainment.png",
       "desc": "Are you a Movies and/or TV show expert?"
