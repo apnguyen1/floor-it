@@ -50,6 +50,8 @@ describe('Display', () => {
     isSkipped: false,
     useTextInput: false,
     onTextSubmit: vi.fn(),
+    handleTextInputFocus: vi.fn(),
+    handleTextInputBlur: vi.fn(),
   };
 
   beforeEach(() => {

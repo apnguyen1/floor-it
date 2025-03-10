@@ -234,7 +234,7 @@ export const SettingModal = ({
                 onChange={(e) => setLocalUseTextInput(e.target.checked)}
               />
             }
-            label="Use Text Input Instead of Voice"
+            label="Enable Text Input (in addition to voice)"
           />
         </Box>
 

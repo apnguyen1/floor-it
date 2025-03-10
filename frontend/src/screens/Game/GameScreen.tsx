@@ -34,6 +34,8 @@ export const GameScreen = () => {
   });
   const [showWinningModal, setShowWinningModal] = useState(false);
   const [showSettingModal, setShowSettingModal] = useState(false);
+  const [isTyping, setIsTyping] = useState(false);
+  //  Reference to the audio element for the winning sound effect.
   const winRef = useRef<HTMLAudioElement>(new Audio('/sounds/win.mp3'));
 
   const {
@@ -74,6 +76,7 @@ export const GameScreen = () => {
     skipQuestion,
     fuzzyMatchingThreshold,
     isSkipped,
+    isTyping,
   );
 
   /**
@@ -233,6 +236,9 @@ export const GameScreen = () => {
     }));
   };
 
+  const handleTextInputFocus = () => setIsTyping(true);
+  const handleTextInputBlur = () => setIsTyping(false);
+
   const winnerPlayer =
     gameStatus.winner === players.P1.name
       ? players.P1
@@ -280,6 +286,8 @@ export const GameScreen = () => {
           isSkipped={isSkipped}
           useTextInput={useTextInput}
           onTextSubmit={handleTextSubmit}
+          handleTextInputFocus={handleTextInputFocus}
+          handleTextInputBlur={handleTextInputBlur}
           categoryProgress={getCategoryProgress()}
           onSkipCategory={handleSkipCategory}
         />

@@ -52,6 +52,7 @@ export const useSpeechCommands = (
   onSkip: () => void,
   fuzzyMatchingThreshold: number = 0.6,
   isSkipped: boolean = false,
+  isTyping: boolean = false,
 ) => {
   const commands = useMemo(
     () => [
@@ -78,7 +79,11 @@ export const useSpeechCommands = (
   // handles skipping by space
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
-      if (e.code === 'Space' && gameStatus.inGame) {
+      // If spacebar is pressed while not typing or escape key is pressed, skip
+      if (
+        ((e.code === 'Space' && !isTyping) || e.code === 'Escape') &&
+        gameStatus.inGame
+      ) {
         e.preventDefault();
         onSkip();
       }
@@ -86,7 +91,7 @@ export const useSpeechCommands = (
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [gameStatus.inGame, onSkip]);
+  }, [gameStatus.inGame, onSkip, isTyping]);
 
   // Initializes speech recognition
   const {

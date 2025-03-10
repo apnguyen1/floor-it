@@ -22,7 +22,7 @@ import {
 import SpaceBarIcon from '@mui/icons-material/SpaceBar';
 import TimerOffIcon from '@mui/icons-material/TimerOff';
 import CategoryIcon from '@mui/icons-material/Category';
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, useState, useEffect } from 'react';
 
 /**
  * Props for the Display component.
@@ -48,6 +48,9 @@ interface DisplayProps {
   useTextInput: boolean;
   /** Callback when text answer is submitted */
   onTextSubmit: (answer: string) => void;
+  handleTextInputFocus: () => void /** Handles focus on the text input */;
+  handleTextInputBlur: () => void /** Handles blur on the text input */;
+  /** Reference to the text input box */
   /** Category progress information */
   categoryProgress?: { current: number; total: number };
   /** Function to skip to the next category */
@@ -73,10 +76,17 @@ export const Display = ({
   isSkipped,
   useTextInput,
   onTextSubmit,
+  handleTextInputFocus,
+  handleTextInputBlur,
   categoryProgress,
   onSkipCategory,
 }: DisplayProps) => {
   const [textAnswer, setTextAnswer] = useState('');
+
+  // Clear the text input when the current question changes, either from text or voice
+  useEffect(() => {
+    setTextAnswer('');
+  }, [currentQuestion]);
 
   const handleTextChange = (e: ChangeEvent<HTMLInputElement>) => {
     const answer = e.target.value;
@@ -87,7 +97,6 @@ export const Display = ({
       currentQuestion?.answers.some((a) => a.toLowerCase() === answer.toLowerCase())
     ) {
       onTextSubmit(answer);
-      setTextAnswer('');
     }
   };
 
@@ -157,28 +166,29 @@ export const Display = ({
               )
             )}
           </Box>
-          {useTextInput ? (
+          {useTextInput && ( // TODO: set autoFocus when voice recognition is not supported
             <TextField
+              onFocus={handleTextInputFocus}
+              onBlur={handleTextInputBlur}
               value={textAnswer}
               onChange={handleTextChange}
               placeholder="Type your answer..."
-              autoFocus
               fullWidth
               sx={textInput()}
             />
-          ) : (
-            <Typography
-              variant={'subtitle2'}
-              color={'textSecondary'}
-              sx={transcriptBox()}
-            >
-              <strong>You said:</strong> {transcript || 'Waiting for your answer...'}
-            </Typography>
           )}
+          <Typography
+            variant={'subtitle2'}
+            color={'textSecondary'}
+            sx={transcriptBox()}
+          >
+            <strong>You said:</strong> {transcript || 'Waiting for your answer...'}
+          </Typography>
           <Box className={'help-text'} sx={helpText()}>
             <SpaceBarIcon fontSize="small" />
             <Typography>
-              Press <strong>Space</strong> or say <strong>Next</strong> to skip question
+              Press <strong>Space/Esc</strong> or say <strong>Next</strong> to skip
+              question
             </Typography>
           </Box>
         </>
