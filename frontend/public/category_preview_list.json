@@ -36,6 +36,11 @@
       "desc": "Test your number skills!"
     },
     {
+      "name": "CSE 403 2025 finals",
+      "image": "default-preview.png",
+      "desc": "Practice for the CSE 403 finals"
+    },
+    {
       "name": "LoL Champion Titles",
       "image": "game_icon.png",
       "desc": "Guess the LoL champion's name by their title!"
