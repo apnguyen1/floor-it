@@ -7,7 +7,7 @@ export const indicatorContainer = (): SxProps<Theme> => ({
   justifyContent: 'center',
   mb: 3,
   position: 'absolute',
-  top: 60,
+  top: 100,
   left: 0,
   right: 0,
   zIndex: 10,
@@ -16,13 +16,12 @@ export const indicatorContainer = (): SxProps<Theme> => ({
 export const categoryCircle = (
   color: string,
   isCurrent: boolean,
-
   isUpcoming: boolean,
   isCompleted: boolean,
   isWon: boolean,
 ): SxProps<Theme> => ({
-  width: 20,
-  height: 20,
+  width: 25,
+  height: 25,
   borderRadius: '50%',
   transition: 'all 0.3s ease',
   border: `2px solid ${color}`,
@@ -43,7 +42,6 @@ export const categoryCircle = (
   '&:hover': {
     transform: 'scale(1.1)',
   },
-  // Special styling for current category
   ...(isCurrent && {
     '&::after': {
       content: '""',

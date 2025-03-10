@@ -297,8 +297,7 @@ export const GameScreen = () => {
         <Points
           totalCategories={getCategoryProgress().total}
           currentCategoryIndex={getCategoryProgress().current - 1}
-          player1Color={players.P1.color}
-          player2Color={players.P2.color}
+          players={players}
           categoryWins={categoryWins}
         />
       )}
