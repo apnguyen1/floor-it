@@ -3,7 +3,7 @@
   "preview_img": "entertainment.png",
   "preview_desc": "Test your knowledge of the most streamed songs on Spotify!",
   "type": "text",
-  "fuzzy_matching_threshold": 0.4,
+  "fuzzy_matching_threshold": 0.6,
   "questions": [
     {
       "question": "Who is the artist of the song \"MILLION DOLLAR BABY\"?",
