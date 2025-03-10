@@ -1,0 +1,1591 @@
+{
+  "name": "Top Spotify Hits",
+  "preview_img": "entertainment.png",
+  "preview_desc": "Test your knowledge of the most streamed songs on Spotify!",
+  "type": "text",
+  "fuzzy_matching_threshold": 0.7,
+  "questions": [
+    {
+      "question": "Who is the artist of the song \"MILLION DOLLAR BABY\"?",
+      "answers": [
+        "Tommy Richman"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Tommy Richman - MILLION ___?",
+      "answers": [
+        "MILLION DOLLAR BABY"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Not Like Us\"?",
+      "answers": [
+        "Kendrick Lamar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Kendrick Lamar - Not ___?",
+      "answers": [
+        "Not Like Us"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"i like the way you kiss me\"?",
+      "answers": [
+        "Artemas"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Artemas - i ___?",
+      "answers": [
+        "i like the way you kiss me"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Flowers\"?",
+      "answers": [
+        "Miley Cyrus"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Miley Cyrus?",
+      "answers": [
+        "Flowers"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Flowers\" by Miley Cyrus?",
+      "answers": [
+        "Flowers"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Houdini\"?",
+      "answers": [
+        "Dua Lipa"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Eminem?",
+      "answers": [
+        "Houdini"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Houdini\" by Eminem?",
+      "answers": [
+        "Houdini"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Lovin On Me\"?",
+      "answers": [
+        "Jack Harlow"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Jack Harlow - Lovin ___?",
+      "answers": [
+        "Lovin On Me"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Beautiful Things\"?",
+      "answers": [
+        "Benson Boone"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Benson Boone - Beautiful ___?",
+      "answers": [
+        "Beautiful Things"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Gata Only\"?",
+      "answers": [
+        "FloyyMenor"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by FloyyMenor - Gata ___?",
+      "answers": [
+        "Gata Only"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Danza Kuduro - Cover\"?",
+      "answers": [
+        "MUSIC LAB JPN"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by MUSIC LAB JPN - Danza ___?",
+      "answers": [
+        "Danza Kuduro"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"BAND4BAND (feat. Lil Baby)\"?",
+      "answers": [
+        "Central Cee"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Central Cee?",
+      "answers": [
+        "BAND4BAND"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"BAND4BAND\" by Central Cee?",
+      "answers": [
+        "BAND4BAND"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"I Had Some Help (feat. Morgan Wallen)\"?",
+      "answers": [
+        "Post Malone"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Post Malone - I ___?",
+      "answers": [
+        "I Had Some Help"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"The Door\"?",
+      "answers": [
+        "Teddy Swims"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Teddy Swims - The ___?",
+      "answers": [
+        "The Door"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"LUNCH\"?",
+      "answers": [
+        "Billie Eilish"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Billie Eilish?",
+      "answers": [
+        "CHIHIRO"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"LUNCH\" by Billie Eilish?",
+      "answers": [
+        "HIT ME HARD AND SOFT"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Like That\"?",
+      "answers": [
+        "Future"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Future - Like ___?",
+      "answers": [
+        "Like That"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"bathroom floor\"?",
+      "answers": [
+        "Kids With Buns"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Kids With Buns - bathroom ___?",
+      "answers": [
+        "bathroom floor"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"LALA\"?",
+      "answers": [
+        "Myke Towers"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Myke Towers?",
+      "answers": [
+        "LALA"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"LALA\" by Myke Towers?",
+      "answers": [
+        "LALA"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Fortnight (feat. Post Malone)\"?",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Taylor Swift?",
+      "answers": [
+        "Anti-Hero"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Fortnight\" by Taylor Swift?",
+      "answers": [
+        "THE TORTURED POETS DEPARTMENT"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"greedy\"?",
+      "answers": [
+        "Tate McRae"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Tate McRae?",
+      "answers": [
+        "greedy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"greedy\" by Tate McRae?",
+      "answers": [
+        "greedy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"BLUE\"?",
+      "answers": [
+        "Billie Eilish"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"BLUE\" by Billie Eilish?",
+      "answers": [
+        "HIT ME HARD AND SOFT"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"As It Was\"?",
+      "answers": [
+        "Harry Styles"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Harry Styles - As ___?",
+      "answers": [
+        "As It Was"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Paint The Town Red\"?",
+      "answers": [
+        "Doja Cat"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Doja Cat - Paint ___?",
+      "answers": [
+        "Paint The Town Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Espresso\"?",
+      "answers": [
+        "Sabrina Carpenter"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Sabrina Carpenter?",
+      "answers": [
+        "Espresso"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Espresso\" by Sabrina Carpenter?",
+      "answers": [
+        "Espresso"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"TEXAS HOLD 'EM\"?",
+      "answers": [
+        "Beyonc"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Beyonc - TEXAS ___?",
+      "answers": [
+        "TEXAS HOLD 'EM"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Future\"?",
+      "answers": [
+        "official sound studio"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by official sound studio?",
+      "answers": [
+        "Future"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Future\" by official sound studio?",
+      "answers": [
+        "Future"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Beat Automotivo Tan Tan Tan Viral\"?",
+      "answers": [
+        "WZ Beat"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by WZ Beat - Beat ___?",
+      "answers": [
+        "Beat Automotivo Tan Tan Tan Viral"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"STAY (with Justin Bieber)\"?",
+      "answers": [
+        "The Kid LAROI"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by The Kid LAROI?",
+      "answers": [
+        "STAY"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"STAY\" by The Kid LAROI?",
+      "answers": [
+        "STAY"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Baby Shark\"?",
+      "answers": [
+        "Pinkfong"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Pinkfong - Baby ___?",
+      "answers": [
+        "Baby Shark"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"we can't be friends (wait for your love)\"?",
+      "answers": [
+        "Ariana Grande"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Ariana Grande - we ___?",
+      "answers": [
+        "we can't be friends (wait for your love)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Numb / Encore\"?",
+      "answers": [
+        "JAY-Z"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by JAY-Z - Numb ___?",
+      "answers": [
+        "Numb / Encore"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by LOVE BGM JPN - Danza ___?",
+      "answers": [
+        "Danza Kuduro"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"SHEESH\"?",
+      "answers": [
+        "BABYMONSTER"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by BABYMONSTER?",
+      "answers": [
+        "SHEESH"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"SHEESH\" by BABYMONSTER?",
+      "answers": [
+        "BABYMONS7ER"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Water\"?",
+      "answers": [
+        "Tyla"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Tyla?",
+      "answers": [
+        "Water"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Water\" by Tyla?",
+      "answers": [
+        "Water"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Strangers\"?",
+      "answers": [
+        "Kenya Grace"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Kenya Grace?",
+      "answers": [
+        "Strangers"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Strangers\" by Kenya Grace?",
+      "answers": [
+        "Strangers"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Too Sweet\"?",
+      "answers": [
+        "Hozier"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Hozier - Too ___?",
+      "answers": [
+        "Too Sweet"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"What's Love Got to Do with It - 2023 Remaster\"?",
+      "answers": [
+        "Tina Turner"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Tina Turner - What's ___?",
+      "answers": [
+        "What's Love Got to Do with It"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"A Bar Song (Tipsy)\"?",
+      "answers": [
+        "Shaboozey"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Shaboozey - A ___?",
+      "answers": [
+        "A Bar Song (Tipsy)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Lose Control\"?",
+      "answers": [
+        "Teddy Swims"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Teddy Swims - Lose ___?",
+      "answers": [
+        "Lose Control"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"fukumean\"?",
+      "answers": [
+        "Gunna"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Gunna?",
+      "answers": [
+        "fukumean"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"fukumean\" by Gunna?",
+      "answers": [
+        "fukumean"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Dance Monkey\"?",
+      "answers": [
+        "Tones And I"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Tones And I - Dance ___?",
+      "answers": [
+        "Dance Monkey"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"BIRDS OF A FEATHER\"?",
+      "answers": [
+        "Billie Eilish"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Billie Eilish - BIRDS ___?",
+      "answers": [
+        "BIRDS OF A FEATHER"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Cupid ��� Twin Ver. (FIFTY FIFTY) ��� Spe\"?",
+      "answers": [
+        "sped up 8282"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by sped up 8282 - Cupid ___?",
+      "answers": [
+        "Cupid ��� Twin Ver. (FIFTY FIFTY) ��� Spe"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"I'm Good (Blue)\"?",
+      "answers": [
+        "David Guetta"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by David Guetta - I'm ___?",
+      "answers": [
+        "I'm Good (Blue)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Daylight\"?",
+      "answers": [
+        "David Kushner"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by David Kushner?",
+      "answers": [
+        "Daylight"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Daylight\" by David Kushner?",
+      "answers": [
+        "Daylight"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"My Love Mine All Mine\"?",
+      "answers": [
+        "Mitski"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Mitski - My ___?",
+      "answers": [
+        "My Love Mine All Mine"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Please Please Please\"?",
+      "answers": [
+        "Sabrina Carpenter"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Sabrina Carpenter - Please ___?",
+      "answers": [
+        "Please Please Please"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Dua Lipa?",
+      "answers": [
+        "Houdini"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Houdini\" by Dua Lipa?",
+      "answers": [
+        "Houdini"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"If We Ever Broke Up\"?",
+      "answers": [
+        "Mae Stephens"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Mae Stephens - If ___?",
+      "answers": [
+        "If We Ever Broke Up"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Despacito\"?",
+      "answers": [
+        "Luis Fonsi"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Luis Fonsi?",
+      "answers": [
+        "Despacito"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Despacito\" by Luis Fonsi?",
+      "answers": [
+        "Despacito (Featuring Daddy Yankee)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"euphoria\"?",
+      "answers": [
+        "Kendrick Lamar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Kendrick Lamar?",
+      "answers": [
+        "euphoria"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"euphoria\" by Kendrick Lamar?",
+      "answers": [
+        "euphoria"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Panda Basi\"?",
+      "answers": [
+        "Mvua"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Mvua - Panda ___?",
+      "answers": [
+        "Panda Basi"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Calm Down (with Selena Gomez)\"?",
+      "answers": [
+        "Rema"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Rema - Calm ___?",
+      "answers": [
+        "Calm Down"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Shape of You\"?",
+      "answers": [
+        "Ed Sheeran"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Ed Sheeran - Shape ___?",
+      "answers": [
+        "Shape of You"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Mitu\"?",
+      "answers": [
+        "Maian"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Maian?",
+      "answers": [
+        "Mitu"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Mitu\" by Maian?",
+      "answers": [
+        "Mitu"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Blinding Lights\"?",
+      "answers": [
+        "The Weeknd"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by The Weeknd - Blinding ___?",
+      "answers": [
+        "Blinding Lights"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Creepin' (with The Weeknd & 21 Savage)\"?",
+      "answers": [
+        "Metro Boomin"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Metro Boomin?",
+      "answers": [
+        "Creepin'"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Creepin'\" by Metro Boomin?",
+      "answers": [
+        "HEROES & VILLAINS"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Dona Felicidade\"?",
+      "answers": [
+        "Patati Patat"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Patati Patat - Dona ___?",
+      "answers": [
+        "Dona Felicidade"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Unholy (feat. Kim Petras)\"?",
+      "answers": [
+        "Sam Smith"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Sam Smith?",
+      "answers": [
+        "Unholy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Unholy\" by Sam Smith?",
+      "answers": [
+        "Unholy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Stereo Love - Melodic\"?",
+      "answers": [
+        "Edward Maya"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Edward Maya - Stereo ___?",
+      "answers": [
+        "Stereo Love"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Very Cute Melody by Marimba Tone (39813)\"?",
+      "answers": [
+        "mitsu sound"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by mitsu sound - Very ___?",
+      "answers": [
+        "Very Cute Melody by Marimba Tone (39813)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Supernova\"?",
+      "answers": [
+        "aespa"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by aespa?",
+      "answers": [
+        "Supernova"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Supernova\" by aespa?",
+      "answers": [
+        "Supernova"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Me Porto Bonito\"?",
+      "answers": [
+        "Bad Bunny"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Bad Bunny - Me ___?",
+      "answers": [
+        "Me Porto Bonito"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Back That Azz Up (feat. Lil Wayne & Mannie Fresh)\"?",
+      "answers": [
+        "JUVENILE"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by JUVENILE - Back ___?",
+      "answers": [
+        "Back That Azz Up"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Calm Down\"?",
+      "answers": [
+        "Rema"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"CARNIVAL\"?",
+      "answers": [
+        "$"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by $?",
+      "answers": [
+        "CARNIVAL"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"CARNIVAL\" by $?",
+      "answers": [
+        "CARNIVAL"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Kill Bill\"?",
+      "answers": [
+        "SZA"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by SZA - Kill ___?",
+      "answers": [
+        "Kill Bill"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"What Was I Made For? [From The Motion Picture \"Barbie\"]\"?",
+      "answers": [
+        "Billie Eilish"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Billie Eilish - What ___?",
+      "answers": [
+        "What Was I Made For? [From The Motion Picture \"Barbie\"]"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Babba\"?",
+      "answers": [
+        "Guy Mac"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Guy Mac?",
+      "answers": [
+        "Babba"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Babba\" by Guy Mac?",
+      "answers": [
+        "Black Book ID's: Chapter 5"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Heat Waves\"?",
+      "answers": [
+        "Glass Animals"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Glass Animals - Heat ___?",
+      "answers": [
+        "Heat Waves"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"In the End\"?",
+      "answers": [
+        "Linkin Park"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Linkin Park - In ___?",
+      "answers": [
+        "In the End"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Shakira: Bzrp Music Sessions, Vol. 53\"?",
+      "answers": [
+        "Bizarrap"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Bizarrap - Shakira: ___?",
+      "answers": [
+        "Shakira: Bzrp Music Sessions, Vol. 53"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"The Way We Move - Extended Mix\"?",
+      "answers": [
+        "PowerDress"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by PowerDress - The ___?",
+      "answers": [
+        "The Way We Move"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Old Town Road\"?",
+      "answers": [
+        "Lil Nas X"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Lil Nas X - Old ___?",
+      "answers": [
+        "Old Town Road"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"un x100to\"?",
+      "answers": [
+        "Grupo Frontera"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Grupo Frontera - un ___?",
+      "answers": [
+        "un x100to"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Laxed ��� Sire\"?",
+      "answers": [
+        "Jawsh 685"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Jawsh 685 - Laxed ___?",
+      "answers": [
+        "Laxed ��� Sire"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Sprinter\"?",
+      "answers": [
+        "Dave"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Dave?",
+      "answers": [
+        "Sprinter"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Sprinter\" by Dave?",
+      "answers": [
+        "Sprinter"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"CHIHIRO\"?",
+      "answers": [
+        "Billie Eilish"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"CHIHIRO\" by Billie Eilish?",
+      "answers": [
+        "HIT ME HARD AND SOFT"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"TQG\"?",
+      "answers": [
+        "KAROL G"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by KAROL G?",
+      "answers": [
+        "TQG"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"TQG\" by KAROL G?",
+      "answers": [
+        "TQG"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Perfect\"?",
+      "answers": [
+        "Ed Sheeran"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Ed Sheeran?",
+      "answers": [
+        "Perfect"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Perfect\" by Ed Sheeran?",
+      "answers": [
+        "(Deluxe)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Pepas\"?",
+      "answers": [
+        "Farruko"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Farruko?",
+      "answers": [
+        "Pepas"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Pepas\" by Farruko?",
+      "answers": [
+        "Pepas"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Peekaboo\"?",
+      "answers": [
+        "Dave Angel"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Dave Angel?",
+      "answers": [
+        "Peekaboo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Peekaboo\" by Dave Angel?",
+      "answers": [
+        "Glide"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Ella Baila Sola\"?",
+      "answers": [
+        "Eslabon Armado"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Eslabon Armado - Ella ___?",
+      "answers": [
+        "Ella Baila Sola"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Dance The Night - From Barbie The Album\"?",
+      "answers": [
+        "Dua Lipa"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Dua Lipa - Dance ___?",
+      "answers": [
+        "Dance The Night"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"La Bebe - Remix\"?",
+      "answers": [
+        "Yng Lvcas"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Yng Lvcas - La ___?",
+      "answers": [
+        "La Bebe"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"redrum\"?",
+      "answers": [
+        "21 Savage"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by 21 Savage?",
+      "answers": [
+        "redrum"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"redrum\" by 21 Savage?",
+      "answers": [
+        "american dream"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Easy On Me\"?",
+      "answers": [
+        "Adele"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Adele - Easy ___?",
+      "answers": [
+        "Easy On Me"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Tit�� Me Pregu\"?",
+      "answers": [
+        "Bad Bunny"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Bad Bunny - Tit�� ___?",
+      "answers": [
+        "Tit�� Me Pregu"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"All My Life (feat. J. Cole)\"?",
+      "answers": [
+        "Lil Durk"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Lil Durk - All ___?",
+      "answers": [
+        "All My Life"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Anti-Hero\"?",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Anti-Hero\" by Taylor Swift?",
+      "answers": [
+        "Midnights"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Quevedo: Bzrp Music Sessions, Vol. 52\"?",
+      "answers": [
+        "Bizarrap"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Bizarrap - Quevedo: ___?",
+      "answers": [
+        "Quevedo: Bzrp Music Sessions, Vol. 52"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Magnetic\"?",
+      "answers": [
+        "ILLIT"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by ILLIT?",
+      "answers": [
+        "Magnetic"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Magnetic\" by ILLIT?",
+      "answers": [
+        "SUPER REAL ME"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Lollipop\"?",
+      "answers": [
+        "Darell"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Darell?",
+      "answers": [
+        "Lollipop"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Lollipop\" by Darell?",
+      "answers": [
+        "EVERYBODY GO TO THE DISCOTEK"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"La Diabla\"?",
+      "answers": [
+        "Xavi"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Xavi - La ___?",
+      "answers": [
+        "La Diabla"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Boy's a Liar Pt. 2\"?",
+      "answers": [
+        "PinkPantheress"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by PinkPantheress - Boy's ___?",
+      "answers": [
+        "Boy's a Liar Pt. 2"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Snooze\"?",
+      "answers": [
+        "SZA"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by SZA?",
+      "answers": [
+        "Snooze"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Snooze\" by SZA?",
+      "answers": [
+        "SOS"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"BELLAKEO\"?",
+      "answers": [
+        "Peso Pluma"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Peso Pluma?",
+      "answers": [
+        "BELLAKEO"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"BELLAKEO\" by Peso Pluma?",
+      "answers": [
+        "BELLAKEO"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Agora Hills\"?",
+      "answers": [
+        "Doja Cat"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by Doja Cat - Agora ___?",
+      "answers": [
+        "Agora Hills"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Who is the artist of the song \"Prada\"?",
+      "answers": [
+        "cass"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which famous hit is performed by cass?",
+      "answers": [
+        "Prada"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which album contains the song \"Prada\" by cass?",
+      "answers": [
+        "Prada"
+      ],
+      "aliases": []
+    }
+  ]
+}

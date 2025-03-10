@@ -110,7 +110,7 @@ class Category(ABC, Generic[T]):
         self.__preview_img = img_name
 
     @property
-    def question_type(self) -> str:
+    def question_type(self) -> QuestionType:
         return self.__question_type
 
     @question_type.setter
