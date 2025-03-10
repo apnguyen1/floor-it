@@ -44,7 +44,7 @@ class Antonyms(TextCategory):
             name="Antonyms",
             desc="Guess the antonyms of the word!",
             img_name=PreviewImageType.WORDS,
-            fuzzy_matching_threshold=0.9
+            fuzzy_matching_threshold=0.9,
         )
 
 
