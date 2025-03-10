@@ -78,6 +78,8 @@ export const Display = ({
   onTextSubmit,
   handleTextInputFocus,
   handleTextInputBlur,
+  categoryProgress,
+  onSkipCategory,
 }: DisplayProps) => {
   const [textAnswer, setTextAnswer] = useState('');
 
@@ -85,12 +87,6 @@ export const Display = ({
   useEffect(() => {
     setTextAnswer('');
   }, [currentQuestion]);
-
-  const handleTextChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-  categoryProgress,
-  onSkipCategory,
-}: DisplayProps) => {
-  const [textAnswer, setTextAnswer] = useState('');
 
   const handleTextChange = (e: ChangeEvent<HTMLInputElement>) => {
     const answer = e.target.value;
