@@ -44,7 +44,7 @@ class SpotifyHits(Category[SpotifyDTO]):
             name="Top Spotify Hits",
             img_name=PreviewImageType.ENTERTAINMENT,
             desc="Test your knowledge of the most streamed songs on Spotify!",
-            fuzzy_matching_threshold=0.4,
+            fuzzy_matching_threshold=0.6,
         )
 
     def _load_data(self, model):
