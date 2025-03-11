@@ -97,9 +97,11 @@ export const GameScreen = () => {
       inGame: true,
       winner: undefined,
     }));
-    SpeechRecognition.startListening({
-      continuous: true,
-    }).catch((e) => console.error('Speech Recognition failed: ', e));
+    if (!hasError) {
+      SpeechRecognition.startListening({
+        continuous: true,
+      }).catch((e) => console.error('Speech Recognition failed: ', e));
+    }
     if (winRef.current) {
       winRef.current.pause();
     }
@@ -121,7 +123,9 @@ export const GameScreen = () => {
         inGame: false,
         winner: playerName === players.P1.name ? players.P2.name : players.P1.name,
       }));
-      SpeechRecognition.abortListening().catch((e) => console.error(e));
+      if (!hasError) {
+        SpeechRecognition.abortListening().catch((e) => console.error(e));
+      }
       if (winRef.current) {
         winRef.current.currentTime = 0;
         winRef.current.play().catch((e) => console.error(e));
@@ -185,7 +189,9 @@ export const GameScreen = () => {
       inGame: false,
     }));
     setScreen(ScreenType.Categories);
-    SpeechRecognition.abortListening().catch((e) => console.error(e));
+    if (!hasError) {
+      SpeechRecognition.abortListening().catch((e) => console.error(e));
+    }
     if (winRef.current) {
       winRef.current.pause();
     }
