@@ -154,8 +154,9 @@ export const Display = ({
               )
             )}
           </Box>
-          {useTextInput && ( // TODO: set autoFocus when voice recognition is not supported
+          {useTextInput && (
             <TextField
+              autoFocus={hasError}
               onFocus={handleTextInputFocus}
               onBlur={handleTextInputBlur}
               value={textAnswer}
@@ -168,7 +169,10 @@ export const Display = ({
           {
             // Render an error box instead of the transcript if speech recognition cannot be used
             hasError ? (
-              <Box sx={{ ...transcriptBox(), overflow: 'hidden' }}>
+              <Box
+                data-testid="error-box"
+                sx={{ ...transcriptBox(), overflow: 'hidden' }}
+              >
                 <Alert variant="filled" severity="error">
                   <AlertTitle>Error</AlertTitle>
                   {errorMessage + ' Defaulting to text input.'}
