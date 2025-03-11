@@ -169,10 +169,7 @@ export const Display = ({
           {
             // Render an error box instead of the transcript if speech recognition cannot be used
             hasError ? (
-              <Box
-                data-testid="error-box"
-                sx={{ ...transcriptBox(), overflow: 'hidden' }}
-              >
+              <Box sx={{ ...transcriptBox(), overflow: 'hidden' }}>
                 <Alert variant="filled" severity="error">
                   <AlertTitle>Error</AlertTitle>
                   {errorMessage + ' Defaulting to text input.'}
