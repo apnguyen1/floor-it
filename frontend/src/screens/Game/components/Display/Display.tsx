@@ -6,6 +6,7 @@ import {
   CircularProgress,
   TextField,
   Typography,
+  Snackbar,
 } from '@mui/material';
 import TriviaQuestion from './GameDisplay/TriviaQuestion.tsx';
 import { GamePreview } from './GamePreview/GamePreview.tsx';
@@ -82,6 +83,18 @@ export const Display = ({
   onSkipCategory,
 }: DisplayProps) => {
   const [textAnswer, setTextAnswer] = useState('');
+  const [openSnackbar, setOpenSnackbar] = useState(false);
+
+  // Show snackbar when there's an error
+  useEffect(() => {
+    if (hasError) {
+      setOpenSnackbar(true);
+    }
+  }, [hasError]);
+
+  const handleCloseSnackbar = () => {
+    setOpenSnackbar(false);
+  };
 
   // Clear the text input when the current question changes, either from text or voice
   useEffect(() => {
@@ -114,85 +127,103 @@ export const Display = ({
     );
   }
 
-  // Show an error alert if an error has occurred
-  if (hasError) {
-    return (
-      <Box sx={questionBox()}>
-        <Alert variant="filled" severity="error">
-          <AlertTitle>Error</AlertTitle>
-          {errorMessage}
-        </Alert>
-      </Box>
-    );
-  }
-
   return (
-    <Box className="question-box" sx={questionBox()}>
-      {categoryProgress && category && (
-        <Chip
-          icon={<CategoryIcon />}
-          label={`(${categoryProgress.current}/${categoryProgress.total})`}
-          sx={categoryChip()}
-        />
+    <>
+      {/* Render Snackbar for error message */}
+      {hasError && (
+        <Snackbar
+          open={openSnackbar}
+          autoHideDuration={4000} // Auto hide after 4 seconds
+          onClose={handleCloseSnackbar}
+        >
+          <Alert onClose={handleCloseSnackbar} variant="filled" severity="error">
+            <AlertTitle>Error</AlertTitle>
+            {errorMessage + ' Defaulting to text input.'}
+          </Alert>
+        </Snackbar>
       )}
-      {!inGame && category ? (
-        <GamePreview
-          category={category}
-          categoryProgress={categoryProgress}
-          onStartGame={onStartGame}
-          onSkipCategory={onSkipCategory}
-        />
-      ) : (
-        <>
-          <Box className={'question-content'} sx={questionContent()}>
-            {isSkipped && currentQuestion ? (
-              <Box className={'skip-penalty'} sx={skipPenalty()}>
-                <TimerOffIcon sx={{ fontSize: 50, color: '#f44336' }} />
-                <Typography variant="h4" color="error" fontWeight="bold">
-                  Skip Penalty!
-                </Typography>
-                <Typography variant="subtitle1">The correct answer is:</Typography>
-                <Typography variant="h3" color="primary.main" fontWeight="bold">
-                  {currentQuestion.answers[0]}
-                </Typography>
-              </Box>
-            ) : (
-              currentQuestion &&
-              category && (
-                <TriviaQuestion
-                  type={category.type}
-                  question={currentQuestion.question}
-                />
-              )
+      <Box className="question-box" sx={questionBox()}>
+        {categoryProgress && category && (
+          <Chip
+            icon={<CategoryIcon />}
+            label={`(${categoryProgress.current}/${categoryProgress.total})`}
+            sx={categoryChip()}
+          />
+        )}
+        {!inGame && category ? (
+          <GamePreview
+            category={category}
+            categoryProgress={categoryProgress}
+            onStartGame={onStartGame}
+            onSkipCategory={onSkipCategory}
+          />
+        ) : (
+          <>
+            <Box className={'question-content'} sx={questionContent()}>
+              {isSkipped && currentQuestion ? (
+                <Box className={'skip-penalty'} sx={skipPenalty()}>
+                  <TimerOffIcon sx={{ fontSize: 50, color: '#f44336' }} />
+                  <Typography variant="h4" color="error" fontWeight="bold">
+                    Skip Penalty!
+                  </Typography>
+                  <Typography variant="subtitle1">The correct answer is:</Typography>
+                  <Typography variant="h3" color="primary.main" fontWeight="bold">
+                    {currentQuestion.answers[0]}
+                  </Typography>
+                </Box>
+              ) : (
+                currentQuestion &&
+                category && (
+                  <TriviaQuestion
+                    type={category.type}
+                    question={currentQuestion.question}
+                  />
+                )
+              )}
+            </Box>
+            {useTextInput && (
+              <TextField
+                autoFocus={hasError}
+                onFocus={handleTextInputFocus}
+                onBlur={handleTextInputBlur}
+                value={textAnswer}
+                onChange={handleTextChange}
+                placeholder="Type your answer..."
+                fullWidth
+                sx={textInput()}
+              />
             )}
-          </Box>
-          {useTextInput && ( // TODO: set autoFocus when voice recognition is not supported
-            <TextField
-              onFocus={handleTextInputFocus}
-              onBlur={handleTextInputBlur}
-              value={textAnswer}
-              onChange={handleTextChange}
-              placeholder="Type your answer..."
-              fullWidth
-              sx={textInput()}
-            />
-          )}
-          <Typography
-            variant={'subtitle2'}
-            color={'textSecondary'}
-            sx={transcriptBox()}
-          >
-            <strong>You said:</strong> {transcript || 'Waiting for your answer...'}
-          </Typography>
-          <Box className={'help-text'} sx={helpText()}>
-            <SpaceBarIcon fontSize="small" />
-            <Typography>
-              Press <strong>Space/Esc</strong> or say <strong>Next</strong> to skip
-              question
-            </Typography>
-          </Box>
-        </>
-      )}
-    </Box>
+            {
+              // Render an error box instead of the transcript if speech recognition cannot be used
+              !hasError && (
+                <Typography
+                  variant="subtitle2"
+                  color="textSecondary"
+                  sx={transcriptBox()}
+                >
+                  <strong>You said:</strong>{' '}
+                  {transcript || 'Waiting for your answer...'}
+                </Typography>
+              )
+            }
+            <Box className={'help-text'} sx={helpText()}>
+              <SpaceBarIcon fontSize="small" />
+              <Typography>
+                {!hasError ? (
+                  <>
+                    Press <strong>Space/Esc</strong> or say <strong>Next</strong> to
+                    skip question
+                  </>
+                ) : (
+                  <>
+                    Press <strong>Esc</strong> to skip question
+                  </>
+                )}
+              </Typography>
+            </Box>
+          </>
+        )}
+      </Box>
+    </>
   );
 };
