@@ -168,7 +168,7 @@ export const Display = ({
           {
             // Render an error box instead of the transcript if speech recognition cannot be used
             hasError ? (
-              <Box sx={transcriptBox()}>
+              <Box sx={{ ...transcriptBox(), overflow: 'hidden' }}>
                 <Alert variant="filled" severity="error">
                   <AlertTitle>Error</AlertTitle>
                   {errorMessage + ' Defaulting to fallback text input.'}
