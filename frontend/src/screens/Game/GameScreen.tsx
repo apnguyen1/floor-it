@@ -1,4 +1,4 @@
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Box, Button } from '@mui/material';
 import { Player } from './components/Player/Player.tsx';
 import { Display } from './components/Display/Display.tsx';
@@ -13,6 +13,7 @@ import WinningModal from './components/WinningModal/WinningModal.tsx';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import SettingsIcon from '@mui/icons-material/Settings';
 import { SettingModal } from '../../components/Settings/SettingModal.tsx';
+import { Points } from '../../components/Points/Points.tsx';
 
 /**
  * `GameScreen` manages the state and logic for the trivia game.
@@ -35,6 +36,7 @@ export const GameScreen = () => {
   const [showWinningModal, setShowWinningModal] = useState(false);
   const [showSettingModal, setShowSettingModal] = useState(false);
   const [isTyping, setIsTyping] = useState(false);
+  const [categoryWins, setCategoryWins] = useState<number[]>([]);
   //  Reference to the audio element for the winning sound effect.
   const winRef = useRef<HTMLAudioElement>(new Audio('/sounds/win.mp3'));
 
@@ -79,6 +81,16 @@ export const GameScreen = () => {
     isTyping,
   );
 
+  // Initialize category wins array when selected categories change
+  useEffect(() => {
+    if (selectedCategory.length > 0) {
+      // Create an array filled with zeros (not played) for each category
+      setCategoryWins(new Array(selectedCategory.length).fill(0));
+    } else {
+      setCategoryWins([]);
+    }
+  }, [selectedCategory]);
+
   if (hasError) {
     setUseTextInput(true);
   }
@@ -118,21 +130,36 @@ export const GameScreen = () => {
    */
   const handleTimeOut = useCallback(
     (playerName: string) => {
+      const winner = playerName === players.P1.name ? players.P2.name : players.P1.name;
+      const isPlayerOneWinner = winner === players.P1.name;
+
       setGameStatus((prev) => ({
         ...prev,
         inGame: false,
-        winner: playerName === players.P1.name ? players.P2.name : players.P1.name,
+        winner: winner,
       }));
+
+      const progress = getCategoryProgress();
+      if (progress && progress.total > 1) {
+        const currentCategoryIndex = progress.current - 1;
+        setCategoryWins((prevWins) => {
+          const newWins = [...prevWins];
+          newWins[currentCategoryIndex] = isPlayerOneWinner ? 1 : 2;
+          return newWins;
+        });
+      }
+
       if (!hasError) {
         SpeechRecognition.abortListening().catch((e) => console.error(e));
       }
+
       if (winRef.current) {
         winRef.current.currentTime = 0;
         winRef.current.play().catch((e) => console.error(e));
       }
       setShowWinningModal(true);
     },
-    [players.P1.name, players.P2.name, hasError],
+    [getCategoryProgress, players.P1.name, players.P2.name, hasError],
   );
 
   /**
@@ -277,6 +304,14 @@ export const GameScreen = () => {
         Settings
       </Button>
 
+      {getCategoryProgress() && (
+        <Points
+          totalCategories={getCategoryProgress().total}
+          currentCategoryIndex={getCategoryProgress().current - 1}
+          players={players}
+          categoryWins={categoryWins}
+        />
+      )}
       <Box className={'game-content'} sx={gameContent()}>
         <Player
           playerState={players.P1}
