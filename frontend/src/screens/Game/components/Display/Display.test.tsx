@@ -66,10 +66,19 @@ describe('Display', () => {
 
   it('should render error message when hasError is true', () => {
     const errorMessage = 'Something went wrong!';
-    render(<Display {...mockProps} hasError={true} errorMessage={errorMessage} />);
-
+    render(
+      <Display
+        {...mockProps}
+        inGame={true}
+        hasError={true}
+        errorMessage={errorMessage}
+      />,
+    );
+    screen.debug();
     expect(screen.getByText('Error')).toBeInTheDocument();
-    expect(screen.getByText(errorMessage)).toBeInTheDocument();
+    expect(
+      screen.getByText(errorMessage + ' Defaulting to text input.'),
+    ).toBeInTheDocument();
   });
 
   it('should render GamePreview when not in game', () => {

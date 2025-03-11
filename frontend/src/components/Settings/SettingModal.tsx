@@ -47,6 +47,8 @@ interface SettingModalProps {
   ) => void;
   /** Current use text input state */
   useTextInput: boolean;
+  /** Whether there is an error trying to use speech recognition or not */
+  isSpeechError: boolean;
 }
 
 export const SettingModal = ({
@@ -56,6 +58,7 @@ export const SettingModal = ({
   useSharedTimer: initialUseSharedTimer,
   useTextInput,
   onSave,
+  isSpeechError,
 }: SettingModalProps) => {
   const [playerSettings, setPlayerSettings] = useState({ ...players });
   const [sharedTimer, setSharedTimer] = useState(initialUseSharedTimer);
@@ -227,15 +230,17 @@ export const SettingModal = ({
             </>
           )}
 
-          <FormControlLabel
-            control={
-              <Switch
-                checked={localUseTextInput}
-                onChange={(e) => setLocalUseTextInput(e.target.checked)}
-              />
-            }
-            label="Enable Text Input (in addition to voice)"
-          />
+          {!isSpeechError && (
+            <FormControlLabel
+              control={
+                <Switch
+                  checked={localUseTextInput}
+                  onChange={(e) => setLocalUseTextInput(e.target.checked)}
+                />
+              }
+              label="Enable Text Input (in addition to voice)"
+            />
+          )}
         </Box>
 
         <Box sx={actionButtonContainer()}>
