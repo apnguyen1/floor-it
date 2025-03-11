@@ -90,7 +90,7 @@ export const GameScreen = () => {
       setCategoryWins([]);
     }
   }, [selectedCategory]);
-  
+
   if (hasError) {
     setUseTextInput(true);
   }
@@ -139,7 +139,6 @@ export const GameScreen = () => {
         winner: winner,
       }));
 
-
       const progress = getCategoryProgress();
       if (progress && progress.total > 1) {
         const currentCategoryIndex = progress.current - 1;
@@ -153,7 +152,7 @@ export const GameScreen = () => {
       if (!hasError) {
         SpeechRecognition.abortListening().catch((e) => console.error(e));
       }
-      
+
       if (winRef.current) {
         winRef.current.currentTime = 0;
         winRef.current.play().catch((e) => console.error(e));
