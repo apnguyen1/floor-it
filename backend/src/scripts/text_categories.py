@@ -82,10 +82,9 @@ class Multiplication(TextCategory):
     """
     Test your multiplication skills.
     """
-    
+
     def __init__(self):
         super().__init__(
-
             source="multiplication.txt",
             name="Multiplication",
             desc="Test your multiplication skills!",
@@ -107,4 +106,3 @@ class CSE403Midterm(TextCategory):
             img_name=PreviewImageType.DEFAULT,
             fuzzy_matching_threshold=0.5,
         )
-
