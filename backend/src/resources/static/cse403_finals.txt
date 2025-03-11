@@ -1,0 +1,92 @@
+The Joel Test is a checklist for the quality of software product.? False
+If code merges without a merge conflict, the merge does not introduce any new defects (bugs).? False
+Each commit to your version control system should pass tests.? True for main branch
+In requirements, an actor is a person who interacts with the system under development.? False
+In requirements, every stakeholder is also an actor.? False
+In requirements, every actor is also a stakeholder.? False
+A mutation is a small modification to program source that introduces a defect (a bug).? False
+Given test suite T1 with 50% code coverage and test suite T2 with 60% code coverage, T2 detects at least as many failures (bugs) as T1 does.? False
+Which git commands can be run without network access?? bisect commit merge
+Which of the following are true of a merge from the main branch into a feature branch?? It should be done prior to a merge of the feature branch into main
+Which of the following are best practices for avoiding merge conflicts?? Pull often Create branch for each task Design software modularly
+What architectural style is most appropriate for implementing a compiler?? Pipe and filter
+Name the first step in the software development lifecycle.? Requirements
+Name the second step in the software development lifecycle.? Architecture
+Name the third step in the software development lifecycle.? Design
+Name the fourth step in the software development lifecycle.? Implementation
+Name the fifth step in the software development lifecycle.? Verification
+Name the sixth step in the software development lifecycle.? Delivery
+Name the seventh step in the software development lifecycle.? Maintenance
+What is the purpose of mutation testing?? To evaluate and improve a test suite
+What is one way a build system can speed up a build?? Incrementalize
+What is another way a build system can speed up a build?? Parallelize
+What is a third way a build system can speed up a build?? Reuse cached results
+Give an example of a functional requirement.? The user can search all databases or a subset
+Give an example of a non-functional requirement.? The system shall not disclose personal user information
+Give an example of a requirement that is neither functional nor non-functional.? The project must use Python for backend development
+What are the two major concepts that an architecture defines?? Components and connectors
+Give an example of a file that should not be committed to version control.? Executable files
+What is the smallest number of git commands to share Alice's changes with Bob?? 4
+What is the difference between verification and validation?? Validation ensures you build the right thing; verification ensures you build the thing right
+What is the difference between git and GitHub?? Git is a program that implements version control; GitHub is a hosting service
+What is a software design pattern?? A well-known solution to a common problem in software design
+A team of 5 programmers is working on a project using git and GitHub. How many repositories exist at minimum?? 6
+Give a general approach to obtain information from customers when gathering requirements.? Interviews and surveys
+Give another approach to obtain information from customers when gathering requirements.? Observations and shadowing
+Give a third approach to obtain information from customers when gathering requirements.? Show prototypes and get feedback
+Define "technical debt".? Poor development practices that will cost more to fix in the future
+What is the best-case complexity of git bisect?? O(log n)
+What is a modification to git bisect that improves best-case complexity?? Test the previous commit before proceeding with bisection
+What would be the new best-case complexity of the modified git bisect?? O(1)
+Why haven't git maintainers implemented the git bisect improvement?? It doubles the constant factor in average and worst cases
+Does statement coverage subsume decision coverage?? No
+Does decision coverage subsume statement coverage?? Yes
+Does decision coverage subsume condition coverage?? No
+Does condition coverage subsume decision coverage?? No
+What is the difference between continuous integration and continuous deployment?? CI tests code; CD also deploys it
+What is the S in SOLID principles?? Single responsibility principle
+What is the O in SOLID principles?? Open-closed principle
+What is the L in SOLID principles?? Liskov substitution principle
+What is the I in SOLID principles? Interface segregation principle
+What is the D in SOLID principles?? Dependency inversion principle
+What does KISS stand for in software design?? Keep It Simple, Stupid
+What does YAGNI stand for in software design?? You Ain't Gonna Need It
+What does DRY stand for in software design?? Don't Repeat Yourself
+What is the Factory pattern used for?? To hide instantiation logic from clients
+What is the Facade pattern used for?? To provide a simplified interface to a complex subsystem
+What is the Mediator pattern used for?? To reduce direct connections between objects
+What is integration testing?? Testing combinations of units working together
+In TDD, when do you write tests?? Before writing the code
+What is the main goal of continuous integration?? Find bugs quickly and improve quality
+What are the three main roles of a build system?? Define tasks, define dependencies, execute tasks
+What is high cohesion in software design?? Strong relationships within a module
+What is loose coupling in software design?? Minimal dependencies between modules
+What is the difference between a stub and a mock in testing?? A stub provides canned answers; a mock verifies expected calls
+What is boundary case testing?? Testing edge conditions like smallest/largest values
+What are the three main types of design patterns?? Creational, Structural, Behavioral
+What is the purpose of the MVC architecture pattern?? Separation of concerns in user interfaces
+Why is the pipe and filter architecture good for compilers?? It handles sequential data transformations
+How can you detect architectural violations in your code?? Static analysis tools
+What is the main benefit of microservices architecture?? Independent deployment and scaling of services
+What does statement coverage measure?? Percentage of code statements executed by tests
+What does a git repository store?? The entire history of project versions
+How do you create a new branch in git?? git branch branch-name
+How do you switch to a different branch in git?? git checkout branch-name
+What happens when you execute "git pull"?? It fetches and merges changes from remote
+What causes merge conflicts in git?? Two users changing the same line of code
+How do you see the commit history in git?? git log
+What is the typical workflow for contributing to a project using GitHub?? Fork, Clone, Branch, Change, Commit, Push, Pull Request
+What does it mean to "break the build"?? Pushing code that fails the build process
+What is a regression test?? A test that verifies a previously fixed bug doesn't return
+What's the difference between black box and white box testing?? White box testing requires knowledge of code internals
+What is the primary purpose of a build system?? Automate compilation and related tasks
+What is the best way to handle dependencies between build tasks?? Define a directed acyclic graph
+What is the purpose of the Open-closed principle?? Software entities should be open for extension but closed for modification
+How can you achieve Continuous Deployment?? Automatically deploy passing builds to production
+How does fuzzy matching work in speech recognition?? It allows approximate matches based on a threshold
+What is a code smell?? A characteristic that might indicate a deeper problem
+Who created Git?? Linus Torvalds
+What is the "diamond of death" problem?? Multiple inheritance ambiguity
+Which design principle helps avoid the "rectangle-square" problem?? Liskov Substitution Principle
+What is a Sprint in Agile?? A fixed time period for completing work
+What is a User Story?? A description of a feature from an end-user perspective
