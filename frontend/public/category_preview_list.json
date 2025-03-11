@@ -1,34 +1,14 @@
 {
   "category_previews": [
     {
-      "name": "Antonyms",
-      "image": "abc.png",
-      "desc": "Guess the antonyms of the word!"
-    },
-    {
-      "name": "Brand Logos",
-      "image": "shopping_bag.png",
-      "desc": "Guess the brand by their logo!"
-    },
-    {
-      "name": "Brazilian Jiu-Jitsu",
-      "image": "sports.png",
-      "desc": "Test your knowledge of Brazilian Jiu-Jitsu!"
-    },
-    {
-      "name": "Car Models",
-      "image": "car.png",
-      "desc": "Match the car models to their make!"
-    },
-    {
-      "name": "CSE 403 2025 finals",
-      "image": "default-preview.png",
-      "desc": "Practice for the CSE 403 finals"
-    },
-    {
       "name": "Food and Drinks",
       "image": "food_drink.png",
       "desc": "Calling all Foodies!"
+    },
+    {
+      "name": "Top Spotify Hits",
+      "image": "entertainment.png",
+      "desc": "Test your knowledge of the most streamed songs on Spotify!"
     },
     {
       "name": "LoL Champion Covers",
@@ -36,24 +16,9 @@
       "desc": "Guess the LoL champion's name by their image!"
     },
     {
-      "name": "LoL Champion Titles",
-      "image": "game_icon.png",
-      "desc": "Guess the LoL champion's name by their title!"
-    },
-    {
-      "name": "Movies and TV Shows",
-      "image": "entertainment.png",
-      "desc": "Are you a Movies and/or TV show expert?"
-    },
-    {
-      "name": "Multiplication",
-      "image": "number.png",
-      "desc": "Test your multiplication skills!"
-    },
-    {
-      "name": "Numbers",
-      "image": "number.png",
-      "desc": "Test your number skills!"
+      "name": "Brand Logos",
+      "image": "shopping_bag.png",
+      "desc": "Guess the brand by their logo!"
     },
     {
       "name": "Original 151 Pokémon",
@@ -61,9 +26,44 @@
       "desc": "Who's that Pokémon!?"
     },
     {
-      "name": "Top Spotify Hits",
+      "name": "Car Models",
+      "image": "car.png",
+      "desc": "Match the car models to their make!"
+    },
+    {
+      "name": "Movies and TV Shows",
       "image": "entertainment.png",
-      "desc": "Test your knowledge of the most streamed songs on Spotify!"
+      "desc": "Are you a Movies and/or TV show expert?"
+    },
+    {
+      "name": "Antonyms",
+      "image": "abc.png",
+      "desc": "Guess the antonyms of the word!"
+    },
+    {
+      "name": "Numbers",
+      "image": "number.png",
+      "desc": "Test your number skills!"
+    },
+    {
+      "name": "CSE 403 2025 finals",
+      "image": "default-preview.png",
+      "desc": "Practice for the CSE 403 finals"
+    },
+    {
+      "name": "LoL Champion Titles",
+      "image": "game_icon.png",
+      "desc": "Guess the LoL champion's name by their title!"
+    },
+    {
+      "name": "Multiplication",
+      "image": "number.png",
+      "desc": "Test your multiplication skills!"
+    },
+    {
+      "name": "Brazilian Jiu-Jitsu",
+      "image": "sports.png",
+      "desc": "Test your knowledge of Brazilian Jiu-Jitsu!"
     }
   ]
 }

@@ -3,7 +3,7 @@
   "preview_img": "food_drink.png",
   "preview_desc": "Calling all Foodies!",
   "type": "text",
-  "fuzzy_matching_threshold": 0.9,
+  "fuzzy_matching_threshold": 0.6,
   "questions": [
     {
       "question": "What is the main ingredient in guacamole",

@@ -59,7 +59,6 @@ class FoodDrink(TextCategory):
             name="Food and Drinks",
             desc="Calling all Foodies!",
             img_name=PreviewImageType.FOOD,
-            fuzzy_matching_threshold=0.9,
         )
 
 
