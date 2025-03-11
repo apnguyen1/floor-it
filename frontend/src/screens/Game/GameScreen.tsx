@@ -106,7 +106,7 @@ export const GameScreen = () => {
       winRef.current.pause();
     }
     setShowWinningModal(false);
-  }, []);
+  }, [hasError]);
 
   /**
    * Handles the end of a trivia game
@@ -132,7 +132,7 @@ export const GameScreen = () => {
       }
       setShowWinningModal(true);
     },
-    [players.P1.name, players.P2.name],
+    [players.P1.name, players.P2.name, hasError],
   );
 
   /**
@@ -195,7 +195,7 @@ export const GameScreen = () => {
     if (winRef.current) {
       winRef.current.pause();
     }
-  }, [setScreen]);
+  }, [setScreen, hasError]);
 
   /**
    * Opens the settings modal
