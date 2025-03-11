@@ -324,6 +324,7 @@ export const GameScreen = () => {
         useSharedTimer={useSharedTimer}
         useTextInput={useTextInput}
         onSave={handleSaveSettings}
+        isSpeechError={hasError}
       />
     </Box>
   );
