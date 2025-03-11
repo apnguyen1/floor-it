@@ -33,17 +33,20 @@ and casual gamers alike.
    - Answer by speaking into your microphone
    - Press the spacebar or say "Next" to skip a question
    - The player with remaining time when the opponent's timer runs out wins the round
+   - If the user does not have a microphone or their browser is not supported by the Web Speech API (such as firefox) it will use text input instead
 
 ### Game Controls
 
 - **Voice Commands**: Answer questions by speaking clearly into your microphone
-- **Keyboard Shortcuts**: Press the Spacebar to skip questions
+- **Keyboard input**: Alternatively, enable text input in settings to type in answers instead
+- **Keyboard Shortcuts**: Press the Spacebar to skip questions, or Esc when using text input
 - **Game Settings**: Adjust timer duration and other settings using the gear icon
 
 ## Tips for Success
 
 - Speak clearly when answering questions
 - If the game doesn't recognize your answer, try rephrasing or skip to the next question
+- Alternatively, enable text input so you can manually type in the answer
 - You can customize timer settings to make the game more or less challenging
 
 Enjoy playing Floor It! Challenge your friends and put your trivia knowledge to the
