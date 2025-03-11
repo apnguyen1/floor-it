@@ -171,7 +171,7 @@ export const Display = ({
               <Box sx={{ ...transcriptBox(), overflow: 'hidden' }}>
                 <Alert variant="filled" severity="error">
                   <AlertTitle>Error</AlertTitle>
-                  {errorMessage + ' Defaulting to fallback text input.'}
+                  {errorMessage + ' Defaulting to text input.'}
                 </Alert>
               </Box>
             ) : (
