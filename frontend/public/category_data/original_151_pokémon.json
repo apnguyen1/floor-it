@@ -561,7 +561,8 @@
       "answers": [
         "Rapidash",
         "Rap id ash",
-        "Rap a dash"
+        "Rap a dash",
+        "Rapid dash"
       ],
       "aliases": []
     },
@@ -579,7 +580,8 @@
       "answers": [
         "Slowbro",
         "Slow bro",
-        "Slow bra"
+        "Slow bra",
+        "Slow pro"
       ],
       "aliases": []
     },
@@ -588,7 +590,8 @@
       "answers": [
         "Magnemite",
         "Mag ne mite",
-        "Mag ne might"
+        "Mag ne might",
+        "Magnet might"
       ],
       "aliases": []
     },
@@ -597,7 +600,8 @@
       "answers": [
         "Magneton",
         "Mag ne ton",
-        "Mag ne tan"
+        "Mag ne tan",
+        "Magnet dawn"
       ],
       "aliases": []
     },
@@ -606,7 +610,9 @@
       "answers": [
         "Farfetch'd",
         "Far fetch",
-        "Far fetch'd"
+        "Far fetch'd",
+        "Farfetch",
+        "Far fetch"
       ],
       "aliases": []
     },
@@ -615,7 +621,8 @@
       "answers": [
         "Doduo",
         "Do duo",
-        "Do doo"
+        "Do doo",
+        "Doe duo"
       ],
       "aliases": []
     },
@@ -633,7 +640,7 @@
       "answers": [
         "Seel",
         "Seal",
-        "Seel"
+        "See"
       ],
       "aliases": []
     },
@@ -642,7 +649,9 @@
       "answers": [
         "Dewgong",
         "Dew gong",
-        "Dew gone"
+        "Dew gone",
+        "Do gong",
+        "Due gong"
       ],
       "aliases": []
     },
@@ -650,7 +659,7 @@
       "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
       "answers": [
         "Grimer",
-        "Grim er",
+        "Grime er",
         "Grim mer"
       ],
       "aliases": []
@@ -659,6 +668,7 @@
       "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
       "answers": [
         "Muk",
+        "Mac",
         "Muck",
         "Mook"
       ],

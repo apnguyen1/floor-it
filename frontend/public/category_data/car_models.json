@@ -1,0 +1,709 @@
+{
+  "name": "Car Models",
+  "preview_img": "car.png",
+  "preview_desc": "Match the car models to their make!",
+  "type": "text",
+  "fuzzy_matching_threshold": 0.5,
+  "questions": [
+    {
+      "question": "Which car brand manufactures a car model with this name: Fusion",
+      "answers": [
+        "Ford"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Escalade",
+      "answers": [
+        "Cadillac"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Gallardo",
+      "answers": [
+        "Lamborghini"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Enzo",
+      "answers": [
+        "Ferrari"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Crown Victoria",
+      "answers": [
+        "Ford"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: MX-5 Miata",
+      "answers": [
+        "Mazda"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Supra",
+      "answers": [
+        "Toyota"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: 2000GT",
+      "answers": [
+        "Toyota"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: CR-V",
+      "answers": [
+        "Honda"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: S2000",
+      "answers": [
+        "Honda"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Civic",
+      "answers": [
+        "Honda"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Accord",
+      "answers": [
+        "Honda"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Focus",
+      "answers": [
+        "Ford"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Mustang",
+      "answers": [
+        "Ford"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Corvette",
+      "answers": [
+        "Chevrolet"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Forester",
+      "answers": [
+        "Subaru"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: RX",
+      "answers": [
+        "Lexus"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: F-150",
+      "answers": [
+        "Ford"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: LFA",
+      "answers": [
+        "Lexus"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: MC12",
+      "answers": [
+        "Maserati"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Ghibli",
+      "answers": [
+        "Maserati"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: M1",
+      "answers": [
+        "BMW"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Veloster",
+      "answers": [
+        "Hyundai"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Grand Cherokee",
+      "answers": [
+        "Jeep"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Cayenne",
+      "answers": [
+        "Porsche"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Q5",
+      "answers": [
+        "Audi"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Telluride",
+      "answers": [
+        "Kia"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: BRZ",
+      "answers": [
+        "Subaru"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: E-Type",
+      "answers": [
+        "Jaguar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Continental",
+      "answers": [
+        "Bentley"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Veyron",
+      "answers": [
+        "Bugatti"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: 8C",
+      "answers": [
+        "Alpha Romeo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Rogue",
+      "answers": [
+        "Nissan"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Ghost",
+      "answers": [
+        "Rolls-Royce"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Phantom",
+      "answers": [
+        "Rolls-Royce"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: DB5",
+      "answers": [
+        "Aston Martin"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: S-Class",
+      "answers": [
+        "Mercedes-Benz"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Tiguan",
+      "answers": [
+        "Volkswagen"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Beetle",
+      "answers": [
+        "Volkswagen"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: XC40",
+      "answers": [
+        "Volvo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: MP4-12C",
+      "answers": [
+        "McLaren"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Senna",
+      "answers": [
+        "McLaren"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Outlander",
+      "answers": [
+        "Mitsubishi"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Yukon",
+      "answers": [
+        "GMC"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: CX-5",
+      "answers": [
+        "Mazda"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Navigator",
+      "answers": [
+        "Lincoln"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: RCZ",
+      "answers": [
+        "Peugeot"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Swift",
+      "answers": [
+        "Suzuki"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: 2CV",
+      "answers": [
+        "Citroen"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Elise",
+      "answers": [
+        "Lotus"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: 500",
+      "answers": [
+        "Fiat"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Cooper",
+      "answers": [
+        "Mini"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Range Rover",
+      "answers": [
+        "Land Rover"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Clio",
+      "answers": [
+        "Renault"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Agera",
+      "answers": [
+        "Koenigsegg"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Jesko",
+      "answers": [
+        "Koenigsegg"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Viper",
+      "answers": [
+        "Dodge"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: xB",
+      "answers": [
+        "Scion"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Huayra",
+      "answers": [
+        "Pagani"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Venom",
+      "answers": [
+        "Hennessey"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Copen",
+      "answers": [
+        "Daihatsu"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Ocean",
+      "answers": [
+        "Fisker"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Emgrand",
+      "answers": [
+        "Geely"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Century",
+      "answers": [
+        "Toyota"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Cyberster",
+      "answers": [
+        "MG"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Tang",
+      "answers": [
+        "BYD"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Sagaris",
+      "answers": [
+        "TVR"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Multipla",
+      "answers": [
+        "Fiat"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Aztec",
+      "answers": [
+        "Pontiac"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: F40",
+      "answers": [
+        "Ferrari"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: DMC",
+      "answers": [
+        "DeLorean"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Defender",
+      "answers": [
+        "Land Rover"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Prius",
+      "answers": [
+        "Toyota"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Quattro",
+      "answers": [
+        "Audi"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Hilux",
+      "answers": [
+        "Toyota"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: GT40",
+      "answers": [
+        "Ford"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Golf",
+      "answers": [
+        "Volkswagen"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: 911 GT3",
+      "answers": [
+        "Porsche"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Tribute",
+      "answers": [
+        "Mazda"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: 959",
+      "answers": [
+        "Porsche"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: LS 400",
+      "answers": [
+        "Lexus"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: NSX",
+      "answers": [
+        "Honda"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: RAV4",
+      "answers": [
+        "Toyota"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Outback",
+      "answers": [
+        "Subaru"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: WRX",
+      "answers": [
+        "Subaru"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Giulia",
+      "answers": [
+        "Alfa Romeo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Ioniq 5",
+      "answers": [
+        "Hyundai"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: 4Runner",
+      "answers": [
+        "Toyota"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Miura",
+      "answers": [
+        "Lamborghini"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: 300 SL",
+      "answers": [
+        "Mercedes-Benz"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Cobra",
+      "answers": [
+        "Shelby"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: 3.0 CSL",
+      "answers": [
+        "BMW"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Model T",
+      "answers": [
+        "Ford"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: P1800",
+      "answers": [
+        "Volvo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Pantera",
+      "answers": [
+        "DeTomaso"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: 240Z",
+      "answers": [
+        "Datsun"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: 308 GTS",
+      "answers": [
+        "Ferrari"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: Camaro",
+      "answers": [
+        "Chevrolet"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: 124 Spider",
+      "answers": [
+        "Fiat"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which car brand manufactures a car model with this name: L5",
+      "answers": [
+        "Hongqi"
+      ],
+      "aliases": []
+    }
+  ]
+}

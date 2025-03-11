@@ -1,0 +1,100 @@
+Which car brand manufactures a car model with this name: Fusion? Ford
+Which car brand manufactures a car model with this name: Escalade? Cadillac
+Which car brand manufactures a car model with this name: Gallardo? Lamborghini
+Which car brand manufactures a car model with this name: Enzo? Ferrari
+Which car brand manufactures a car model with this name: Crown Victoria? Ford
+Which car brand manufactures a car model with this name: MX-5 Miata? Mazda
+Which car brand manufactures a car model with this name: Supra? Toyota
+Which car brand manufactures a car model with this name: 2000GT? Toyota
+Which car brand manufactures a car model with this name: CR-V? Honda
+Which car brand manufactures a car model with this name: S2000? Honda
+Which car brand manufactures a car model with this name: Civic? Honda
+Which car brand manufactures a car model with this name: Accord? Honda
+Which car brand manufactures a car model with this name: Focus? Ford
+Which car brand manufactures a car model with this name: Mustang? Ford
+Which car brand manufactures a car model with this name: Corvette? Chevrolet
+Which car brand manufactures a car model with this name: Forester? Subaru
+Which car brand manufactures a car model with this name: RX? Lexus
+Which car brand manufactures a car model with this name: F-150? Ford
+Which car brand manufactures a car model with this name: LFA? Lexus
+Which car brand manufactures a car model with this name: MC12? Maserati
+Which car brand manufactures a car model with this name: Ghibli? Maserati
+Which car brand manufactures a car model with this name: M1? BMW
+Which car brand manufactures a car model with this name: Veloster? Hyundai
+Which car brand manufactures a car model with this name: Grand Cherokee? Jeep
+Which car brand manufactures a car model with this name: Cayenne? Porsche
+Which car brand manufactures a car model with this name: Q5? Audi
+Which car brand manufactures a car model with this name: Telluride? Kia
+Which car brand manufactures a car model with this name: BRZ? Subaru
+Which car brand manufactures a car model with this name: E-Type? Jaguar
+Which car brand manufactures a car model with this name: Continental? Bentley
+Which car brand manufactures a car model with this name: Veyron? Bugatti
+Which car brand manufactures a car model with this name: 8C? Alpha Romeo
+Which car brand manufactures a car model with this name: Rogue? Nissan
+Which car brand manufactures a car model with this name: Ghost? Rolls-Royce
+Which car brand manufactures a car model with this name: Phantom? Rolls-Royce
+Which car brand manufactures a car model with this name: DB5? Aston Martin
+Which car brand manufactures a car model with this name: S-Class? Mercedes-Benz
+Which car brand manufactures a car model with this name: Tiguan? Volkswagen
+Which car brand manufactures a car model with this name: Beetle? Volkswagen
+Which car brand manufactures a car model with this name: XC40? Volvo
+Which car brand manufactures a car model with this name: MP4-12C? McLaren
+Which car brand manufactures a car model with this name: Senna? McLaren
+Which car brand manufactures a car model with this name: Outlander? Mitsubishi
+Which car brand manufactures a car model with this name: Yukon? GMC
+Which car brand manufactures a car model with this name: CX-5? Mazda
+Which car brand manufactures a car model with this name: Navigator? Lincoln
+Which car brand manufactures a car model with this name: RCZ? Peugeot
+Which car brand manufactures a car model with this name: Swift? Suzuki
+Which car brand manufactures a car model with this name: 2CV? Citroen
+Which car brand manufactures a car model with this name: Elise? Lotus
+Which car brand manufactures a car model with this name: 500? Fiat
+Which car brand manufactures a car model with this name: Cooper? Mini
+Which car brand manufactures a car model with this name: Range Rover? Land Rover
+Which car brand manufactures a car model with this name: Clio? Renault
+Which car brand manufactures a car model with this name: Agera? Koenigsegg
+Which car brand manufactures a car model with this name: Jesko? Koenigsegg
+Which car brand manufactures a car model with this name: Viper? Dodge
+Which car brand manufactures a car model with this name: xB? Scion
+Which car brand manufactures a car model with this name: Huayra? Pagani
+Which car brand manufactures a car model with this name: Venom? Hennessey
+Which car brand manufactures a car model with this name: Copen? Daihatsu
+Which car brand manufactures a car model with this name: Ocean? Fisker
+Which car brand manufactures a car model with this name: Emgrand? Geely
+Which car brand manufactures a car model with this name: Century? Toyota
+Which car brand manufactures a car model with this name: Cyberster? MG
+Which car brand manufactures a car model with this name: Tang? BYD
+Which car brand manufactures a car model with this name: Sagaris? TVR
+Which car brand manufactures a car model with this name: Multipla? Fiat
+Which car brand manufactures a car model with this name: Aztec? Pontiac
+Which car brand manufactures a car model with this name: F40? Ferrari
+Which car brand manufactures a car model with this name: DMC? DeLorean
+Which car brand manufactures a car model with this name: Defender? Land Rover
+Which car brand manufactures a car model with this name: Prius? Toyota
+Which car brand manufactures a car model with this name: Quattro? Audi
+Which car brand manufactures a car model with this name: Hilux? Toyota
+Which car brand manufactures a car model with this name: GT40? Ford
+Which car brand manufactures a car model with this name: Golf? Volkswagen
+Which car brand manufactures a car model with this name: 911 GT3? Porsche
+Which car brand manufactures a car model with this name: Tribute? Mazda
+Which car brand manufactures a car model with this name: 959? Porsche
+Which car brand manufactures a car model with this name: LS 400? Lexus
+Which car brand manufactures a car model with this name: NSX? Honda
+Which car brand manufactures a car model with this name: RAV4? Toyota
+Which car brand manufactures a car model with this name: Outback? Subaru
+Which car brand manufactures a car model with this name: WRX? Subaru
+Which car brand manufactures a car model with this name: Giulia? Alfa Romeo
+Which car brand manufactures a car model with this name: Ioniq 5? Hyundai
+Which car brand manufactures a car model with this name: 4Runner? Toyota
+Which car brand manufactures a car model with this name: Miura? Lamborghini
+Which car brand manufactures a car model with this name: 300 SL? Mercedes-Benz
+Which car brand manufactures a car model with this name: Cobra? Shelby
+Which car brand manufactures a car model with this name: 3.0 CSL? BMW
+Which car brand manufactures a car model with this name: Model T? Ford
+Which car brand manufactures a car model with this name: P1800? Volvo
+Which car brand manufactures a car model with this name: Pantera? DeTomaso
+Which car brand manufactures a car model with this name: 240Z? Datsun
+Which car brand manufactures a car model with this name: 308 GTS? Ferrari
+Which car brand manufactures a car model with this name: Camaro? Chevrolet
+Which car brand manufactures a car model with this name: 124 Spider? Fiat
+Which car brand manufactures a car model with this name: L5? Hongqi
