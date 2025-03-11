@@ -1,0 +1,1230 @@
+{
+  "name": "Original 151 Pokémon",
+  "preview_img": "game_icon.png",
+  "preview_desc": "Who's that Pokémon!?",
+  "type": "img",
+  "fuzzy_matching_threshold": 0.4,
+  "questions": [
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+      "answers": [
+        "Bulbasaur",
+        "Bull bass sir",
+        "Bubbles are",
+        "Bulb as sir"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+      "answers": [
+        "Ivysaur",
+        "Ivy sore",
+        "Ivy's are",
+        "Ivy's aur"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+      "answers": [
+        "Venusaur",
+        "Venus are",
+        "Venus soar",
+        "Venus sore"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+      "answers": [
+        "Charmander",
+        "Char man der",
+        "Charm and er",
+        "Char mind er"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+      "answers": [
+        "Charmeleon",
+        "Char me lion",
+        "Charmel eon",
+        "Char meal ion"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+      "answers": [
+        "Charizard",
+        "Char is hard",
+        "Char a zard",
+        "Charizard"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+      "answers": [
+        "Squirtle",
+        "Squirtle",
+        "Squirt all",
+        "Squirt el"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+      "answers": [
+        "Wartortle",
+        "War turtle",
+        "War tor tul",
+        "Water toll"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+      "answers": [
+        "Blastoise",
+        "Blast oys",
+        "Blas toys",
+        "Blasto ice"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+      "answers": [
+        "Caterpie",
+        "Cater pea",
+        "Cater bee",
+        "Cater P"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+      "answers": [
+        "Metapod",
+        "Meta pod",
+        "Met a pod",
+        "Meta God"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+      "answers": [
+        "Butterfree",
+        "Butter flea",
+        "Butter tree",
+        "But a free"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+      "answers": [
+        "Weedle",
+        "Weed all",
+        "We'd all",
+        "Whe'd all"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
+      "answers": [
+        "Kakuna",
+        "Cocoon a",
+        "Cocoon uh",
+        "Cacoona"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+      "answers": [
+        "Beedrill",
+        "Bee drill",
+        "Be drill",
+        "Beed real"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
+      "answers": [
+        "Pidgey",
+        "Pidge",
+        "Pidgey the bird",
+        "Pidge e"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
+      "answers": [
+        "Pidgeotto",
+        "Pidge owe toe",
+        "Pidge o toe",
+        "Pidge e auto"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+      "answers": [
+        "Pidgeot",
+        "Pidge oat",
+        "Pidge ot",
+        "Pidge out"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+      "answers": [
+        "Rattata",
+        "Rat at a",
+        "Ratt a ta",
+        "Rat a tat"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+      "answers": [
+        "Raticate",
+        "Rat a kate",
+        "Rat a cat",
+        "Ratt a cat"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
+      "answers": [
+        "Jigglypuff",
+        "Jiggly puff",
+        "Jiggle puffs",
+        "Jiggly puffed"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
+      "answers": [
+        "Wigglytuff",
+        "Wiggle tough",
+        "Wiggly stuff",
+        "Wiggly puff"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
+      "answers": [
+        "Zubat",
+        "Zoo bat",
+        "Zoo bad",
+        "Zub at"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
+      "answers": [
+        "Oddish",
+        "Odd dish",
+        "Odd ish",
+        "Odd is"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png",
+      "answers": [
+        "Gloom",
+        "Gloomy",
+        "Glam",
+        "Glo om"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
+      "answers": [
+        "Vileplume",
+        "Vile plume",
+        "Vile plumb",
+        "Vile bloom"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png",
+      "answers": [
+        "Paras",
+        "Parrot",
+        "Pair us",
+        "Pears"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png",
+      "answers": [
+        "Parasect",
+        "Pair a sect",
+        "Pair is act",
+        "Para sect"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
+      "answers": [
+        "Venonat",
+        "Ven o nat",
+        "Vino nat",
+        "Ven a nat"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
+      "answers": [
+        "Venomoth",
+        "Venom moth",
+        "Venom moath"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
+      "answers": [
+        "Diglett",
+        "Dig let",
+        "Dig lit"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
+      "answers": [
+        "Dugtrio",
+        "Dug trio",
+        "Dug tree oh"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
+      "answers": [
+        "Meowth",
+        "Meow th",
+        "Meow the"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
+      "answers": [
+        "Persian",
+        "Per shan",
+        "Per sean"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
+      "answers": [
+        "Psyduck",
+        "Psy duck",
+        "Psy duc"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png",
+      "answers": [
+        "Golduck",
+        "Gold duck",
+        "Gold duc"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
+      "answers": [
+        "Mankey",
+        "Man key",
+        "Man kee"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
+      "answers": [
+        "Primeape",
+        "Prime ape",
+        "Prime a pe"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
+      "answers": [
+        "Growlithe",
+        "Grow lithe",
+        "Grow lee thee"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+      "answers": [
+        "Arcanine",
+        "Arca nine",
+        "Arka nine"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+      "answers": [
+        "Poliwag",
+        "Polly wag",
+        "Polly wag"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png",
+      "answers": [
+        "Poliwhirl",
+        "Polly whirl",
+        "Polly whir"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
+      "answers": [
+        "Poliwrath",
+        "Polly wrath",
+        "Polly rath"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png",
+      "answers": [
+        "Abra",
+        "Ab ra",
+        "Ab bra"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png",
+      "answers": [
+        "Kadabra",
+        "Ka dabra",
+        "Ka bra"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
+      "answers": [
+        "Alakazam",
+        "Al a kazam",
+        "Al a bra zam"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
+      "answers": [
+        "Machop",
+        "Mach op",
+        "Mach hop"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png",
+      "answers": [
+        "Machoke",
+        "Mach oke",
+        "Mach oh ke"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
+      "answers": [
+        "Machamp",
+        "Mach amp",
+        "Mach am"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
+      "answers": [
+        "Bellsprout",
+        "Bell sprout",
+        "Bell spout"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
+      "answers": [
+        "Weepinbell",
+        "Weep in bell",
+        "Weep in bel"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
+      "answers": [
+        "Victreebel",
+        "Vic tree bel",
+        "Vic tree bell"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
+      "answers": [
+        "Tentacool",
+        "Ten ta cool",
+        "Ten ta kool"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
+      "answers": [
+        "Tentacruel",
+        "Ten ta cruel",
+        "Ten ta kruel"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
+      "answers": [
+        "Geodude",
+        "Geo dude",
+        "Geo doo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
+      "answers": [
+        "Graveler",
+        "Grav eler",
+        "Grav el"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
+      "answers": [
+        "Golem",
+        "Go lem",
+        "Go lem"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
+      "answers": [
+        "Ponyta",
+        "Pony ta",
+        "Pony tah"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
+      "answers": [
+        "Rapidash",
+        "Rap id ash",
+        "Rap a dash"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
+      "answers": [
+        "Slowpoke",
+        "Slow poke",
+        "Slow poak"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
+      "answers": [
+        "Slowbro",
+        "Slow bro",
+        "Slow bra"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
+      "answers": [
+        "Magnemite",
+        "Mag ne mite",
+        "Mag ne might"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
+      "answers": [
+        "Magneton",
+        "Mag ne ton",
+        "Mag ne tan"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
+      "answers": [
+        "Farfetch'd",
+        "Far fetch",
+        "Far fetch'd"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
+      "answers": [
+        "Doduo",
+        "Do duo",
+        "Do doo"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
+      "answers": [
+        "Dodrio",
+        "Do trio",
+        "Do tree oh"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
+      "answers": [
+        "Seel",
+        "Seal",
+        "Seel"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+      "answers": [
+        "Dewgong",
+        "Dew gong",
+        "Dew gone"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
+      "answers": [
+        "Grimer",
+        "Grim er",
+        "Grim mer"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
+      "answers": [
+        "Muk",
+        "Muck",
+        "Mook"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
+      "answers": [
+        "Shellder",
+        "Shell der",
+        "Shell dur"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+      "answers": [
+        "Cloyster",
+        "Cloys ter",
+        "Cloyster"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png",
+      "answers": [
+        "Gastly",
+        "Gas tly",
+        "Gast lee"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+      "answers": [
+        "Haunter",
+        "Hant er",
+        "Hant ur"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
+      "answers": [
+        "Gengar",
+        "Gen gar",
+        "Gen gar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
+      "answers": [
+        "Onix",
+        "Oh nix",
+        "On ix"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
+      "answers": [
+        "Drowzee",
+        "Droo zee",
+        "Droo see"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png",
+      "answers": [
+        "Hypno",
+        "Hip no",
+        "Hip know"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
+      "answers": [
+        "Krabby",
+        "Crabby",
+        "Crab bee"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
+      "answers": [
+        "Kingler",
+        "King ler",
+        "King lair"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
+      "answers": [
+        "Voltorb",
+        "Volt orb",
+        "Volt or"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
+      "answers": [
+        "Electrode",
+        "Electro de",
+        "Electro d"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
+      "answers": [
+        "Exeggcute",
+        "Ex egg cute",
+        "Ex egg cut"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
+      "answers": [
+        "Exeggutor",
+        "Ex egg ut or",
+        "Ex egg uter"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
+      "answers": [
+        "Cubone",
+        "Cube bone",
+        "Cub bone"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
+      "answers": [
+        "Marowak",
+        "Maro wak",
+        "Maro walk"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
+      "answers": [
+        "Hitmonlee",
+        "Hit mon lee",
+        "Hit man lee"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
+      "answers": [
+        "Hitmonchan",
+        "Hit mon chan",
+        "Hit man chan"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
+      "answers": [
+        "Lickitung",
+        "Lick it ung",
+        "Lick tung"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
+      "answers": [
+        "Koffing",
+        "Coffing",
+        "Kof ing"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
+      "answers": [
+        "Weezing",
+        "Wee zing",
+        "Wee sing"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
+      "answers": [
+        "Rhyhorn",
+        "Rhy horn",
+        "Rhino horn"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
+      "answers": [
+        "Rhydon",
+        "Rhy don",
+        "Rhino don"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
+      "answers": [
+        "Chansey",
+        "Chancey",
+        "Chansy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
+      "answers": [
+        "Tangela",
+        "Tangle a",
+        "Tangle la"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
+      "answers": [
+        "Kangaskhan",
+        "Kanga skhan",
+        "Kang a skhan"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
+      "answers": [
+        "Horsea",
+        "Horse a",
+        "Horse ah"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
+      "answers": [
+        "Seadra",
+        "Sea dra",
+        "Sea dray"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
+      "answers": [
+        "Goldeen",
+        "Gold een",
+        "Gold in"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
+      "answers": [
+        "Seaking",
+        "Sea king",
+        "Sea king"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
+      "answers": [
+        "Staryu",
+        "Star yu",
+        "Star you"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png",
+      "answers": [
+        "Starmie",
+        "Star me",
+        "Star my"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
+      "answers": [
+        "Mr. Mime",
+        "Mister mime",
+        "Mr mime"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
+      "answers": [
+        "Scyther",
+        "Scythe er",
+        "Scyther"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+      "answers": [
+        "Jynx",
+        "Jinks",
+        "Jynks"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png",
+      "answers": [
+        "Electabuzz",
+        "Electa buzz",
+        "Elect a buzz"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
+      "answers": [
+        "Magmar",
+        "Mag mar",
+        "Mag mer"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
+      "answers": [
+        "Pinsir",
+        "Pin sir",
+        "Pin sir"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
+      "answers": [
+        "Tauros",
+        "Taurus",
+        "Toros"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
+      "answers": [
+        "Magikarp",
+        "Magic carp",
+        "Magi carp"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
+      "answers": [
+        "Gyarados",
+        "Gyar a dos",
+        "Gyara dos"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+      "answers": [
+        "Lapras",
+        "Lap ras",
+        "Lap rahs"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+      "answers": [
+        "Ditto",
+        "Dee to",
+        "Dee too"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
+      "answers": [
+        "Eevee",
+        "Ee vee",
+        "Ee vee"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
+      "answers": [
+        "Vaporeon",
+        "Vapor eon",
+        "Vapor ion"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
+      "answers": [
+        "Jolteon",
+        "Jolt eon",
+        "Jolt ion"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
+      "answers": [
+        "Flareon",
+        "Flare eon",
+        "Flare ion"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
+      "answers": [
+        "Porygon",
+        "Pory gon",
+        "Pore y gon"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
+      "answers": [
+        "Omanyte",
+        "Oh man yte",
+        "Oh many te"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
+      "answers": [
+        "Omastar",
+        "Oh mas tar",
+        "Oh mastar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png",
+      "answers": [
+        "Kabuto",
+        "Kabu to",
+        "Kabu toe",
+        "Cab tow"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
+      "answers": [
+        "Kabutops",
+        "Kabu tops",
+        "Kabu tops",
+        "Cab tops"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png",
+      "answers": [
+        "Aerodactyl",
+        "Aero dactyl",
+        "Air o dactyl"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
+      "answers": [
+        "Snorlax",
+        "Snore lax",
+        "Snore lax"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+      "answers": [
+        "Articuno",
+        "Artic uno",
+        "Artic you no"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+      "answers": [
+        "Zapdos",
+        "Zap dos",
+        "Zap doze"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
+      "answers": [
+        "Moltres",
+        "Mol tres",
+        "Mol trees"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png",
+      "answers": [
+        "Dratini",
+        "Dra ti ni",
+        "Dra teeny"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
+      "answers": [
+        "Dragonair",
+        "Dragon air",
+        "Dragon heir"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
+      "answers": [
+        "Dragonite",
+        "Dragon ite",
+        "Dragon night"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+      "answers": [
+        "Mewtwo",
+        "Mew too",
+        "Mew two",
+        "Moo two"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+      "answers": [
+        "Mew",
+        "Mu",
+        "Moo",
+        "New"
+      ],
+      "aliases": []
+    }
+  ]
+}

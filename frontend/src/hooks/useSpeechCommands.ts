@@ -116,7 +116,7 @@ export const useSpeechCommands = (
 
   return {
     transcript,
-    listening,
+    listening: listening && !errorMessage,
     hasError: !!errorMessage,
     errorMessage,
   };

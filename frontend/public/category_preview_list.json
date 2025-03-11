@@ -6,6 +6,11 @@
       "desc": "Calling all Foodies!"
     },
     {
+      "name": "Top Spotify Hits",
+      "image": "entertainment.png",
+      "desc": "Test your knowledge of the most streamed songs on Spotify!"
+    },
+    {
       "name": "LoL Champion Covers",
       "image": "game_icon.png",
       "desc": "Guess the LoL champion's name by their image!"
@@ -14,6 +19,11 @@
       "name": "Brand Logos",
       "image": "shopping_bag.png",
       "desc": "Guess the brand by their logo!"
+    },
+    {
+      "name": "Original 151 Pokémon",
+      "image": "game_icon.png",
+      "desc": "Who's that Pokémon!?"
     },
     {
       "name": "Movies and TV Shows",
@@ -29,6 +39,11 @@
       "name": "Numbers",
       "image": "number.png",
       "desc": "Test your number skills!"
+    },
+    {
+      "name": "CSE 403 2025 finals",
+      "image": "default-preview.png",
+      "desc": "Practice for the CSE 403 finals"
     },
     {
       "name": "LoL Champion Titles",
