@@ -21,6 +21,11 @@
       "desc": "Guess the brand by their logo!"
     },
     {
+      "name": "Original 151 Pokémon",
+      "image": "game_icon.png",
+      "desc": "Who's that Pokémon!?"
+    },
+    {
       "name": "Movies and TV Shows",
       "image": "entertainment.png",
       "desc": "Are you a Movies and/or TV show expert?"
@@ -34,6 +39,11 @@
       "name": "Numbers",
       "image": "game_icon.png",
       "desc": "Test your number skills!"
+    },
+    {
+      "name": "CSE 403 2025 finals",
+      "image": "default-preview.png",
+      "desc": "Practice for the CSE 403 finals"
     },
     {
       "name": "LoL Champion Titles",
