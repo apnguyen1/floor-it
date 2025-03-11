@@ -107,6 +107,7 @@ class CSE403Midterm(TextCategory):
             fuzzy_matching_threshold=0.5,
         )
 
+
 class CarBrands(TextCategory):
     """
     Match the car model to make.
