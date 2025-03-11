@@ -32,12 +32,12 @@
     },
     {
       "name": "Antonyms",
-      "image": "default-preview.png",
+      "image": "abc.png",
       "desc": "Guess the antonyms of the word!"
     },
     {
       "name": "Numbers",
-      "image": "game_icon.png",
+      "image": "number.png",
       "desc": "Test your number skills!"
     },
     {
@@ -49,6 +49,11 @@
       "name": "LoL Champion Titles",
       "image": "game_icon.png",
       "desc": "Guess the LoL champion's name by their title!"
+    },
+    {
+      "name": "Multiplication",
+      "image": "number.png",
+      "desc": "Test your multiplication skills!"
     },
     {
       "name": "Brazilian Jiu-Jitsu",

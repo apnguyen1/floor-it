@@ -1,0 +1,877 @@
+{
+  "name": "Multiplication",
+  "preview_img": "number.png",
+  "preview_desc": "Test your multiplication skills!",
+  "type": "text",
+  "fuzzy_matching_threshold": 0.9,
+  "questions": [
+    {
+      "question": "1x2",
+      "answers": [
+        "2"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "2x2",
+      "answers": [
+        "4"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "3x2",
+      "answers": [
+        "6"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "4x2",
+      "answers": [
+        "8"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "5x2",
+      "answers": [
+        "10"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "6x2",
+      "answers": [
+        "12"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "7x2",
+      "answers": [
+        "14"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "8x2",
+      "answers": [
+        "16"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "9x2",
+      "answers": [
+        "18"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "10x2",
+      "answers": [
+        "20"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "11x2",
+      "answers": [
+        "22"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12x2",
+      "answers": [
+        "24"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "2x3",
+      "answers": [
+        "6"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "3x3",
+      "answers": [
+        "9"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "3x4",
+      "answers": [
+        "12"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "3x5",
+      "answers": [
+        "15"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "3x6",
+      "answers": [
+        "18"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "3x7",
+      "answers": [
+        "21"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "3x8",
+      "answers": [
+        "24"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "3x9",
+      "answers": [
+        "27"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "3x10",
+      "answers": [
+        "30"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "3x11",
+      "answers": [
+        "33"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "3x12",
+      "answers": [
+        "36"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "4x1",
+      "answers": [
+        "4"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "4x3",
+      "answers": [
+        "12"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "4x4",
+      "answers": [
+        "16"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "4x5",
+      "answers": [
+        "20"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "4x6",
+      "answers": [
+        "24"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "4x7",
+      "answers": [
+        "28"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "4x8",
+      "answers": [
+        "32"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "4x9",
+      "answers": [
+        "36"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "4x10",
+      "answers": [
+        "40"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "4x11",
+      "answers": [
+        "44"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "4x12",
+      "answers": [
+        "48"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "5x1",
+      "answers": [
+        "5"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "5x3",
+      "answers": [
+        "15"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "5x4",
+      "answers": [
+        "20"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "5x5",
+      "answers": [
+        "25"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "5x6",
+      "answers": [
+        "30"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "5x7",
+      "answers": [
+        "35"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "5x8",
+      "answers": [
+        "40"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "5x9",
+      "answers": [
+        "45"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "5x10",
+      "answers": [
+        "50"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "5x11",
+      "answers": [
+        "55"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "5x12",
+      "answers": [
+        "60"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "6x1",
+      "answers": [
+        "6"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "6x3",
+      "answers": [
+        "18"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "6x4",
+      "answers": [
+        "24"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "6x5",
+      "answers": [
+        "30"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "6x6",
+      "answers": [
+        "36"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "6x7",
+      "answers": [
+        "42"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "6x8",
+      "answers": [
+        "48"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "6x9",
+      "answers": [
+        "54"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "6x10",
+      "answers": [
+        "60"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "6x11",
+      "answers": [
+        "66"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "6x12",
+      "answers": [
+        "72"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "7x1",
+      "answers": [
+        "7"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "7x3",
+      "answers": [
+        "21"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "7x4",
+      "answers": [
+        "28"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "7x5",
+      "answers": [
+        "35"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "7x6",
+      "answers": [
+        "42"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "7x7",
+      "answers": [
+        "49"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "7x8",
+      "answers": [
+        "56"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "7x9",
+      "answers": [
+        "63"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "7x10",
+      "answers": [
+        "70"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "7x11",
+      "answers": [
+        "77"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "7x12",
+      "answers": [
+        "84"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "8x1",
+      "answers": [
+        "8"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "8x3",
+      "answers": [
+        "24"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "8x4",
+      "answers": [
+        "32"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "8x5",
+      "answers": [
+        "40"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "8x6",
+      "answers": [
+        "48"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "8x7",
+      "answers": [
+        "56"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "8x8",
+      "answers": [
+        "64"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "8x9",
+      "answers": [
+        "72"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "8x10",
+      "answers": [
+        "80"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "8x11",
+      "answers": [
+        "88"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "8x12",
+      "answers": [
+        "96"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "9x1",
+      "answers": [
+        "9"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "9x3",
+      "answers": [
+        "27"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "9x4",
+      "answers": [
+        "36"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "9x5",
+      "answers": [
+        "45"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "9x6",
+      "answers": [
+        "54"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "9x7",
+      "answers": [
+        "63"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "9x8",
+      "answers": [
+        "72"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "9x9",
+      "answers": [
+        "81"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "9x10",
+      "answers": [
+        "90"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "9x11",
+      "answers": [
+        "99"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "9x12",
+      "answers": [
+        "108"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "10x1",
+      "answers": [
+        "10"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "10x3",
+      "answers": [
+        "30"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "10x4",
+      "answers": [
+        "40"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "10x5",
+      "answers": [
+        "50"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "10x6",
+      "answers": [
+        "60"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "10x7",
+      "answers": [
+        "70"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "10x8",
+      "answers": [
+        "80"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "10x9",
+      "answers": [
+        "90"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "10x10",
+      "answers": [
+        "100"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "10x11",
+      "answers": [
+        "110"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "10x12",
+      "answers": [
+        "120"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "11x1",
+      "answers": [
+        "11"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "11x3",
+      "answers": [
+        "33"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "11x4",
+      "answers": [
+        "44"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "11x5",
+      "answers": [
+        "55"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "11x6",
+      "answers": [
+        "66"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "11x7",
+      "answers": [
+        "77"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "11x8",
+      "answers": [
+        "88"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "11x9",
+      "answers": [
+        "99"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "11x10",
+      "answers": [
+        "110"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "11x11",
+      "answers": [
+        "121"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "11x12",
+      "answers": [
+        "132"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12x1",
+      "answers": [
+        "12"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12x3",
+      "answers": [
+        "36"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12x4",
+      "answers": [
+        "48"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12x5",
+      "answers": [
+        "60"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12x6",
+      "answers": [
+        "72"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12x7",
+      "answers": [
+        "84"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12x8",
+      "answers": [
+        "96"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12x9",
+      "answers": [
+        "108"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12x10",
+      "answers": [
+        "120"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12x11",
+      "answers": [
+        "132"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "12x12",
+      "answers": [
+        "144"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "2x5",
+      "answers": [
+        "10"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "2x6",
+      "answers": [
+        "12"
+      ],
+      "aliases": []
+    }
+  ]
+}

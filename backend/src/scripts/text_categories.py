@@ -28,7 +28,7 @@ class Numbers(TextCategory):
             source="numbers.txt",
             name="Numbers",
             desc="Test your number skills!",
-            img_name=PreviewImageType.GAMES,
+            img_name=PreviewImageType.NUMBERS,
             fuzzy_matching_threshold=0.9,
         )
 
@@ -43,6 +43,8 @@ class Antonyms(TextCategory):
             source="antonyms.txt",
             name="Antonyms",
             desc="Guess the antonyms of the word!",
+            img_name=PreviewImageType.WORDS,
+            fuzzy_matching_threshold=0.9,
         )
 
 
@@ -73,6 +75,21 @@ class MoviesAndTvShows(TextCategory):
             desc="Are you a Movies and/or TV show expert?",
             img_name=PreviewImageType.ENTERTAINMENT,
             fuzzy_matching_threshold=0.7,
+        )
+
+
+class Multiplication(TextCategory):
+    """
+    Test your multiplication skills.
+    """
+
+    def __init__(self):
+        super().__init__(
+            source="multiplication.txt",
+            name="Multiplication",
+            desc="Test your multiplication skills!",
+            img_name=PreviewImageType.NUMBERS,
+            fuzzy_matching_threshold=0.9,
         )
 
 
