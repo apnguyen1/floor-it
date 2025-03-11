@@ -79,6 +79,10 @@ export const GameScreen = () => {
     isTyping,
   );
 
+  if (hasError) {
+    setUseTextInput(true);
+  }
+
   /**
    * Handles the start of a trivia game
    *

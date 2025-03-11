@@ -114,18 +114,6 @@ export const Display = ({
     );
   }
 
-  // Show an error alert if an error has occurred
-  if (hasError) {
-    return (
-      <Box sx={questionBox()}>
-        <Alert variant="filled" severity="error">
-          <AlertTitle>Error</AlertTitle>
-          {errorMessage}
-        </Alert>
-      </Box>
-    );
-  }
-
   return (
     <Box className="question-box" sx={questionBox()}>
       {categoryProgress && category && (
@@ -177,13 +165,25 @@ export const Display = ({
               sx={textInput()}
             />
           )}
-          <Typography
-            variant={'subtitle2'}
-            color={'textSecondary'}
-            sx={transcriptBox()}
-          >
-            <strong>You said:</strong> {transcript || 'Waiting for your answer...'}
-          </Typography>
+          {
+            // Render an error box instead of the transcript if speech recognition cannot be used
+            hasError ? (
+              <Box sx={transcriptBox()}>
+                <Alert variant="filled" severity="error">
+                  <AlertTitle>Error</AlertTitle>
+                  {errorMessage + ' Defaulting to fallback text input.'}
+                </Alert>
+              </Box>
+            ) : (
+              <Typography
+                variant="subtitle2"
+                color="textSecondary"
+                sx={transcriptBox()}
+              >
+                <strong>You said:</strong> {transcript || 'Waiting for your answer...'}
+              </Typography>
+            )
+          }
           <Box className={'help-text'} sx={helpText()}>
             <SpaceBarIcon fontSize="small" />
             <Typography>
