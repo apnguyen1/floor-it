@@ -20,7 +20,7 @@ class PreviewImageType(str, Enum):
     """
 
     DEFAULT = "default-preview.png"
-    GAMES = "game_icon.png"
+    GAMES = "game.png"
     NUMBERS = "number.png"
     SHOPPING = "shopping.png"
     SPORTS = "sports.png"

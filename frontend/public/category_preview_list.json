@@ -12,7 +12,7 @@
     },
     {
       "name": "LoL Champion Covers",
-      "image": "game_icon.png",
+      "image": "game.png",
       "desc": "Guess the LoL champion's name by their image!"
     },
     {
@@ -22,7 +22,7 @@
     },
     {
       "name": "Original 151 Pokémon",
-      "image": "game_icon.png",
+      "image": "game.png",
       "desc": "Who's that Pokémon!?"
     },
     {
@@ -52,7 +52,7 @@
     },
     {
       "name": "LoL Champion Titles",
-      "image": "game_icon.png",
+      "image": "game.png",
       "desc": "Guess the LoL champion's name by their title!"
     },
     {

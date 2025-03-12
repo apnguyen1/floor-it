@@ -1,6 +1,6 @@
 {
   "name": "Original 151 Pokémon",
-  "preview_img": "game_icon.png",
+  "preview_img": "game.png",
   "preview_desc": "Who's that Pokémon!?",
   "type": "img",
   "fuzzy_matching_threshold": 0.4,
