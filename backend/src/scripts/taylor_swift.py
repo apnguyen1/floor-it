@@ -112,7 +112,8 @@ class TaylorSongs(Category[TaylorSongsDTO]):
 
             # If we have multiple words, try to create a fill-in-the-blank question
             if len(words) > 2:
-                # Create a question with a randomly blanked out word (if word length > 2)
+                # Create a question with a randomly blanked out word (if word length >
+                # 2)
                 blanked_title, blanked_word = create_blanked_title(words)
 
                 if blanked_title and blanked_word:
