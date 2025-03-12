@@ -102,7 +102,7 @@ class CSE403Midterm(TextCategory):
             source="cse403_finals.txt",
             name="CSE 403 2025 finals",
             desc="Practice for the CSE 403 finals",
-            img_name=PreviewImageType.DEFAULT,
+            img_name=PreviewImageType.EDUCATION,
             fuzzy_matching_threshold=0.5,
         )
 

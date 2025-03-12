@@ -9,7 +9,7 @@ export const gameBox = (players: {
   alignItems: 'center',
   width: '100%',
   height: '100vh',
-  padding: 2,
+  padding: '0 1rem',
   borderRadius: 0,
   position: 'relative',
   background: `linear-gradient(110deg, ${players.P1.color} 0%, ${players.P1.color} 48%, #ffffff 48%, #ffffff 52%, ${players.P2.color} 52%, ${players.P2.color} 100%)`,
