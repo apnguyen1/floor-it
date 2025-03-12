@@ -6,8 +6,7 @@ import pandas as pd
 
 
 def fetch_kaggle_dataset(
-    source: str,
-    limit: int = 100,
+    source: str, limit: int = 100, dataset: int = 0
 ) -> Union[pd.DataFrame, None]:
     """
     Downloads a dataset from Kaggle and filters for UTF-8 compatible rows.
@@ -16,6 +15,7 @@ def fetch_kaggle_dataset(
         source: The Kaggle dataset identifier
             (e.g., "nelgiriyewithana/most-streamed-spotify-songs-2024")
         limit: Maximum number of rows to return (default: 100)
+        dataset: the dataset index to retrieve (default: 0)
 
     Returns:
         A pandas DataFrame containing only UTF-8 compatible rows (or None if failed)
@@ -28,7 +28,7 @@ def fetch_kaggle_dataset(
             print(f"No CSV files found in dataset '{source}'")
             return None
 
-        csv_path = os.path.join(dataset_path, csv_files[0])
+        csv_path = os.path.join(dataset_path, csv_files[dataset])
 
         df = pd.read_csv(csv_path, encoding="utf-8", encoding_errors="ignore")
 
