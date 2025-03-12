@@ -1,0 +1,409 @@
+{
+  "name": "Taylor Swift Songs",
+  "preview_img": "entertainment.png",
+  "preview_desc": "Are you a Swiftie? Complete these Taylor Swift song titles!",
+  "type": "text",
+  "fuzzy_matching_threshold": 0.8,
+  "questions": [
+    {
+      "question": "\"Picture To ________\"",
+      "answers": [
+        "Burn",
+        "Picture To Burn"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Teardrops On My ________\"",
+      "answers": [
+        "Guitar",
+        "Teardrops On My Guitar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"A Place In ________ World\"",
+      "answers": [
+        "This",
+        "A Place In This World"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ As You\"",
+      "answers": [
+        "Cold",
+        "Cold As You"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Tied ________ With A Smile\"",
+      "answers": [
+        "Together",
+        "Tied Together With A Smile"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Said No\"",
+      "answers": [
+        "Should've",
+        "Should've Said No"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"I'm Only Me When I'm ________ You\"",
+      "answers": [
+        "With",
+        "I'm Only Me When I'm With You"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"A ________ Good Heart\"",
+      "answers": [
+        "Perfectly",
+        "A Perfectly Good Heart"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ On My Guitar\"",
+      "answers": [
+        "Teardrops",
+        "Teardrops On My Guitar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Belong With Me\"",
+      "answers": [
+        "You",
+        "You Belong With Me"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Me Why\"",
+      "answers": [
+        "Tell",
+        "Tell Me Why"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Not Sorry\"",
+      "answers": [
+        "You're",
+        "You're Not Sorry"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"The ________ I Loved You\"",
+      "answers": [
+        "Way",
+        "The Way I Loved You"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ & Always\"",
+      "answers": [
+        "Forever",
+        "Forever & Always"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Best Day\"",
+      "answers": [
+        "The",
+        "The Best Day"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Jump Then ________\"",
+      "answers": [
+        "Fall",
+        "Jump Then Fall"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Forever & ________\"",
+      "answers": [
+        "Always",
+        "Forever & Always"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Come In With ________ Rain\"",
+      "answers": [
+        "The",
+        "Come In With The Rain"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"The Other Side Of The ________\"",
+      "answers": [
+        "Door",
+        "The Other Side Of The Door"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"You ________ With Me\"",
+      "answers": [
+        "Belong",
+        "You Belong With Me"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Tell Me ________\"",
+      "answers": [
+        "Why",
+        "Tell Me Why"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"You're ________ Sorry\"",
+      "answers": [
+        "Not",
+        "You're Not Sorry"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"The Best ________\"",
+      "answers": [
+        "Day",
+        "The Best Day"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Then Fall\"",
+      "answers": [
+        "Jump",
+        "Jump Then Fall"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Come In With The ________\"",
+      "answers": [
+        "Rain",
+        "Come In With The Rain"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"The ________ Side Of The Door\"",
+      "answers": [
+        "Other",
+        "The Other Side Of The Door"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Today Was A ________\"",
+      "answers": [
+        "Fairytale",
+        "Today Was A Fairytale"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"You ________ Over Me\"",
+      "answers": [
+        "All",
+        "You All Over Me"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Perfectly Fine\"",
+      "answers": [
+        "Mr.",
+        "Mr. Perfectly Fine"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"We ________ Happy\"",
+      "answers": [
+        "Were",
+        "We Were Happy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Bye Bye ________\"",
+      "answers": [
+        "Baby",
+        "Bye Bye Baby"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ To December\"",
+      "answers": [
+        "Back",
+        "Back To December"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"The ________ Of Us\"",
+      "answers": [
+        "Story",
+        "The Story Of Us"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Never ________ Up\"",
+      "answers": [
+        "Grow",
+        "Never Grow Up"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Than Revenge\"",
+      "answers": [
+        "Better",
+        "Better Than Revenge"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"If This Was A ________\"",
+      "answers": [
+        "Movie",
+        "If This Was A Movie"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"State Of ________\"",
+      "answers": [
+        "Grace",
+        "State Of Grace"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"I Knew ________ Were Trouble\"",
+      "answers": [
+        "You",
+        "I Knew You Were Trouble"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"All ________ Well\"",
+      "answers": [
+        "Too",
+        "All Too Well"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"I ________ Do\"",
+      "answers": [
+        "Almost",
+        "I Almost Do"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"We Are Never Ever ________ Back Together\"",
+      "answers": [
+        "Getting",
+        "We Are Never Ever Getting Back Together"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Stay Stay\"",
+      "answers": [
+        "Stay",
+        "Stay Stay Stay"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Last Time\"",
+      "answers": [
+        "The",
+        "The Last Time"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Beautiful Tragic\"",
+      "answers": [
+        "Sad",
+        "Sad Beautiful Tragic"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Lucky One\"",
+      "answers": [
+        "The",
+        "The Lucky One"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Everything ________ Changed\"",
+      "answers": [
+        "Has",
+        "Everything Has Changed"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"The ________ I Knew\"",
+      "answers": [
+        "Moment",
+        "The Moment I Knew"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Come ________ Here\"",
+      "answers": [
+        "Back...Be",
+        "Come Back...Be Here"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Girl At ________\"",
+      "answers": [
+        "Home",
+        "Girl At Home"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Of Grace\"",
+      "answers": [
+        "State",
+        "State Of Grace"
+      ],
+      "aliases": []
+    }
+  ]
+}

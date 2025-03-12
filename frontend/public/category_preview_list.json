@@ -6,6 +6,11 @@
       "desc": "Calling all Foodies!"
     },
     {
+      "name": "Taylor Swift Songs",
+      "image": "entertainment.png",
+      "desc": "Are you a Swiftie? Complete these Taylor Swift song titles!"
+    },
+    {
       "name": "Top Spotify Hits",
       "image": "entertainment.png",
       "desc": "Test your knowledge of the most streamed songs on Spotify!"
