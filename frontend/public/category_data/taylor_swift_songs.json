@@ -3,10 +3,10 @@
   "preview_img": "entertainment.png",
   "preview_desc": "Are you a Swiftie? Complete these Taylor Swift song titles!",
   "type": "text",
-  "fuzzy_matching_threshold": 0.5,
+  "fuzzy_matching_threshold": 0.6,
   "questions": [
     {
-      "question": "Complete this Taylor Swift song title: \"Picture To ________\"",
+      "question": "\"Picture To ________\"",
       "answers": [
         "Burn",
         "Picture To Burn"
@@ -14,29 +14,15 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"Picture To...\"?",
+      "question": "\"________ On My Guitar\"",
       "answers": [
-        "Picture To Burn"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"Teardrops On My ________\"",
-      "answers": [
-        "Guitar",
+        "Teardrops",
         "Teardrops On My Guitar"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"Teardrops On...\"?",
-      "answers": [
-        "Teardrops On My Guitar"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"A Place In This ________\"",
+      "question": "\"A Place In This ________\"",
       "answers": [
         "World",
         "A Place In This World"
@@ -44,14 +30,7 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"A Place...\"?",
-      "answers": [
-        "A Place In This World"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"________ As You\"",
+      "question": "\"________ As You\"",
       "answers": [
         "Cold",
         "Cold As You"
@@ -59,29 +38,15 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"Cold As...\"?",
+      "question": "\"________ Together With A Smile\"",
       "answers": [
-        "Cold As You"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"Tied ________ With A Smile\"",
-      "answers": [
-        "Together",
+        "Tied",
         "Tied Together With A Smile"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"Tied Together...\"?",
-      "answers": [
-        "Tied Together With A Smile"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"________ Said No\"",
+      "question": "\"________ Said No\"",
       "answers": [
         "Should've",
         "Should've Said No"
@@ -89,59 +54,39 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"Should've Said...\"?",
+      "question": "\"I'm ________ Me When I'm With You\"",
       "answers": [
-        "Should've Said No"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"I'm Only Me When ________ With You\"",
-      "answers": [
-        "I'm",
+        "Only",
         "I'm Only Me When I'm With You"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"I'm Only...\"?",
+      "question": "\"A Perfectly ________ Heart\"",
       "answers": [
-        "I'm Only Me When I'm With You"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"A ________ Good Heart\"",
-      "answers": [
-        "Perfectly",
+        "Good",
         "A Perfectly Good Heart"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"A Perfectly...\"?",
+      "question": "\"Teardrops On My ________\"",
       "answers": [
-        "A Perfectly Good Heart"
+        "Guitar",
+        "Teardrops On My Guitar"
       ],
       "aliases": []
     },
     {
-      "question": "Complete this Taylor Swift song title: \"You Belong ________ Me\"",
+      "question": "\"________ Belong With Me\"",
       "answers": [
-        "With",
+        "You",
         "You Belong With Me"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"You Belong...\"?",
-      "answers": [
-        "You Belong With Me"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"Tell Me ________\"",
+      "question": "\"Tell Me ________\"",
       "answers": [
         "Why",
         "Tell Me Why"
@@ -149,14 +94,7 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"Tell Me...\"?",
-      "answers": [
-        "Tell Me Why"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"You're Not ________\"",
+      "question": "\"You're Not ________\"",
       "answers": [
         "Sorry",
         "You're Not Sorry"
@@ -164,14 +102,7 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"You're Not...\"?",
-      "answers": [
-        "You're Not Sorry"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"The ________ I Loved You\"",
+      "question": "\"The ________ I Loved You\"",
       "answers": [
         "Way",
         "The Way I Loved You"
@@ -179,121 +110,7 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"The Way...\"?",
-      "answers": [
-        "The Way I Loved You"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"Forever & ________\"",
-      "answers": [
-        "Always",
-        "Forever & Always"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Which Taylor Swift song begins with: \"Forever &...\"?",
-      "answers": [
-        "Forever & Always"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"The Best ________\"",
-      "answers": [
-        "Day",
-        "The Best Day"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Which Taylor Swift song begins with: \"The Best...\"?",
-      "answers": [
-        "The Best Day"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"Jump Then ________\"",
-      "answers": [
-        "Fall",
-        "Jump Then Fall"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Which Taylor Swift song begins with: \"Jump Then...\"?",
-      "answers": [
-        "Jump Then Fall"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"Come In ________ The Rain\"",
-      "answers": [
-        "With",
-        "Come In With The Rain"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Which Taylor Swift song begins with: \"Come In...\"?",
-      "answers": [
-        "Come In With The Rain"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"The Other Side Of ________ Door\"",
-      "answers": [
-        "The",
-        "The Other Side Of The Door"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Which Taylor Swift song begins with: \"The Other...\"?",
-      "answers": [
-        "The Other Side Of The Door"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"________ Belong With Me\"",
-      "answers": [
-        "You",
-        "You Belong With Me"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"________ Me Why\"",
-      "answers": [
-        "Tell",
-        "Tell Me Why"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"You're ________ Sorry\"",
-      "answers": [
-        "Not",
-        "You're Not Sorry"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"________ Way I Loved You\"",
-      "answers": [
-        "The",
-        "The Way I Loved You"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"________ & Always\"",
+      "question": "\"________ & Always\"",
       "answers": [
         "Forever",
         "Forever & Always"
@@ -301,7 +118,7 @@
       "aliases": []
     },
     {
-      "question": "Complete this Taylor Swift song title: \"________ Best Day\"",
+      "question": "\"________ Best Day\"",
       "answers": [
         "The",
         "The Best Day"
@@ -309,7 +126,7 @@
       "aliases": []
     },
     {
-      "question": "Complete this Taylor Swift song title: \"Jump ________ Fall\"",
+      "question": "\"Jump ________ Fall\"",
       "answers": [
         "Then",
         "Jump Then Fall"
@@ -317,15 +134,23 @@
       "aliases": []
     },
     {
-      "question": "Complete this Taylor Swift song title: \"________ In With The Rain\"",
+      "question": "\"Forever & ________\"",
       "answers": [
-        "Come",
+        "Always",
+        "Forever & Always"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"Come In With ________ Rain\"",
+      "answers": [
+        "The",
         "Come In With The Rain"
       ],
       "aliases": []
     },
     {
-      "question": "Complete this Taylor Swift song title: \"________ Other Side Of The Door\"",
+      "question": "\"________ Other Side Of The Door\"",
       "answers": [
         "The",
         "The Other Side Of The Door"
@@ -333,22 +158,71 @@
       "aliases": []
     },
     {
-      "question": "Complete this Taylor Swift song title: \"Today ________ A Fairytale\"",
+      "question": "\"You ________ With Me\"",
       "answers": [
-        "Was",
+        "Belong",
+        "You Belong With Me"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Me Why\"",
+      "answers": [
+        "Tell",
+        "Tell Me Why"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Not Sorry\"",
+      "answers": [
+        "You're",
+        "You're Not Sorry"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"The Best ________\"",
+      "answers": [
+        "Day",
+        "The Best Day"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Then Fall\"",
+      "answers": [
+        "Jump",
+        "Jump Then Fall"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ In With The Rain\"",
+      "answers": [
+        "Come",
+        "Come In With The Rain"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"The ________ Side Of The Door\"",
+      "answers": [
+        "Other",
+        "The Other Side Of The Door"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Was A Fairytale\"",
+      "answers": [
+        "Today",
         "Today Was A Fairytale"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"Today Was...\"?",
-      "answers": [
-        "Today Was A Fairytale"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"You ________ Over Me\"",
+      "question": "\"You ________ Over Me\"",
       "answers": [
         "All",
         "You All Over Me"
@@ -356,14 +230,7 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"You All...\"?",
-      "answers": [
-        "You All Over Me"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"________ Perfectly Fine\"",
+      "question": "\"________ Perfectly Fine\"",
       "answers": [
         "Mr.",
         "Mr. Perfectly Fine"
@@ -371,14 +238,7 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"Mr. Perfectly...\"?",
-      "answers": [
-        "Mr. Perfectly Fine"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"We ________ Happy\"",
+      "question": "\"We ________ Happy\"",
       "answers": [
         "Were",
         "We Were Happy"
@@ -386,44 +246,23 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"We Were...\"?",
+      "question": "\"Bye ________ Baby\"",
       "answers": [
-        "We Were Happy"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"Bye Bye ________\"",
-      "answers": [
-        "Baby",
+        "Bye",
         "Bye Bye Baby"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"Bye Bye...\"?",
+      "question": "\"Back To ________\"",
       "answers": [
-        "Bye Bye Baby"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"________ To December\"",
-      "answers": [
-        "Back",
+        "December",
         "Back To December"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"Back To...\"?",
-      "answers": [
-        "Back To December"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"The ________ Of Us\"",
+      "question": "\"The ________ Of Us\"",
       "answers": [
         "Story",
         "The Story Of Us"
@@ -431,44 +270,23 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"The Story...\"?",
+      "question": "\"________ Grow Up\"",
       "answers": [
-        "The Story Of Us"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"Never ________ Up\"",
-      "answers": [
-        "Grow",
+        "Never",
         "Never Grow Up"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"Never Grow...\"?",
+      "question": "\"Better Than ________\"",
       "answers": [
-        "Never Grow Up"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"Better ________ Revenge\"",
-      "answers": [
-        "Than",
+        "Revenge",
         "Better Than Revenge"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"Better Than...\"?",
-      "answers": [
-        "Better Than Revenge"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"If ________ Was A Movie\"",
+      "question": "\"If ________ Was A Movie\"",
       "answers": [
         "This",
         "If This Was A Movie"
@@ -476,44 +294,23 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"If This...\"?",
+      "question": "\"State Of ________\"",
       "answers": [
-        "If This Was A Movie"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"________ Of Grace\"",
-      "answers": [
-        "State",
+        "Grace",
         "State Of Grace"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"State Of...\"?",
+      "question": "\"I ________ You Were Trouble\"",
       "answers": [
-        "State Of Grace"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"I Knew ________ Were Trouble\"",
-      "answers": [
-        "You",
+        "Knew",
         "I Knew You Were Trouble"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"I Knew...\"?",
-      "answers": [
-        "I Knew You Were Trouble"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"________ Too Well\"",
+      "question": "\"________ Too Well\"",
       "answers": [
         "All",
         "All Too Well"
@@ -521,14 +318,7 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"All Too...\"?",
-      "answers": [
-        "All Too Well"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"I ________ Do\"",
+      "question": "\"I ________ Do\"",
       "answers": [
         "Almost",
         "I Almost Do"
@@ -536,29 +326,15 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"I Almost...\"?",
+      "question": "\"We Are ________ Ever Getting Back Together\"",
       "answers": [
-        "I Almost Do"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"We Are Never Ever Getting Back ________\"",
-      "answers": [
-        "Together",
+        "Never",
         "We Are Never Ever Getting Back Together"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"We Are...\"?",
-      "answers": [
-        "We Are Never Ever Getting Back Together"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"________ Stay Stay\"",
+      "question": "\"Stay Stay ________\"",
       "answers": [
         "Stay",
         "Stay Stay Stay"
@@ -566,29 +342,15 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"Stay Stay...\"?",
+      "question": "\"The Last ________\"",
       "answers": [
-        "Stay Stay Stay"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"The ________ Time\"",
-      "answers": [
-        "Last",
+        "Time",
         "The Last Time"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"The Last...\"?",
-      "answers": [
-        "The Last Time"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"Sad Beautiful ________\"",
+      "question": "\"Sad Beautiful ________\"",
       "answers": [
         "Tragic",
         "Sad Beautiful Tragic"
@@ -596,14 +358,7 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"Sad Beautiful...\"?",
-      "answers": [
-        "Sad Beautiful Tragic"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"The Lucky ________\"",
+      "question": "\"The Lucky ________\"",
       "answers": [
         "One",
         "The Lucky One"
@@ -611,77 +366,34 @@
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"The Lucky...\"?",
+      "question": "\"Everything ________ Changed\"",
       "answers": [
-        "The Lucky One"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"________ Has Changed\"",
-      "answers": [
-        "Everything",
+        "Has",
         "Everything Has Changed"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"Everything Has...\"?",
+      "question": "\"The ________ I Knew\"",
       "answers": [
-        "Everything Has Changed"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"The Moment I ________\"",
-      "answers": [
-        "Knew",
+        "Moment",
         "The Moment I Knew"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"The Moment...\"?",
+      "question": "\"Come Back...Be ________\"",
       "answers": [
-        "The Moment I Knew"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"Come ________ Here\"",
-      "answers": [
-        "Back...Be",
+        "Here",
         "Come Back...Be Here"
       ],
       "aliases": []
     },
     {
-      "question": "Which Taylor Swift song begins with: \"Come Back...Be...\"?",
+      "question": "\"Girl At ________\"",
       "answers": [
-        "Come Back...Be Here"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"________ At Home\"",
-      "answers": [
-        "Girl",
+        "Home",
         "Girl At Home"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Which Taylor Swift song begins with: \"Girl At...\"?",
-      "answers": [
-        "Girl At Home"
-      ],
-      "aliases": []
-    },
-    {
-      "question": "Complete this Taylor Swift song title: \"State Of ________\"",
-      "answers": [
-        "Grace",
-        "State Of Grace"
       ],
       "aliases": []
     }

@@ -44,7 +44,6 @@ class TaylorSongs(Category[TaylorSongsDTO]):
             name="Taylor Swift Songs",
             img_name=PreviewImageType.ENTERTAINMENT,
             desc="Are you a Swiftie? Complete these Taylor Swift song titles!",
-            fuzzy_matching_threshold=0.5,
         )
 
     def _load_data(self, model):
@@ -116,17 +115,8 @@ class TaylorSongs(Category[TaylorSongsDTO]):
                 blanked_title, blanked_word = create_blanked_title(words)
 
                 if blanked_title and blanked_word:
-                    question = (
-                        f'Complete this Taylor Swift song title: "{blanked_title}"'
-                    )
+                    question = f'"{blanked_title}"'
                     category_data[question] = [blanked_word, clean_track_name]
-
-            # Also add a question asking for the full title based on the first few words
-            if len(words) > 2:
-                # Use the first 2 words as a hint
-                hint = " ".join(words[:2])
-                hint_question = f'Which Taylor Swift song begins with: "{hint}..."?'
-                category_data[hint_question] = [clean_track_name]
 
         return category_data
 
