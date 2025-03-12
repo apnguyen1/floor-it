@@ -44,6 +44,7 @@ class TaylorSongs(Category[TaylorSongsDTO]):
             name="Taylor Swift Songs",
             img_name=PreviewImageType.ENTERTAINMENT,
             desc="Are you a Swiftie? Complete these Taylor Swift song titles!",
+            fuzzy_matching_threshold=0.8,
         )
 
     def _load_data(self, model):

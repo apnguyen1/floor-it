@@ -3,7 +3,7 @@
   "preview_img": "entertainment.png",
   "preview_desc": "Are you a Swiftie? Complete these Taylor Swift song titles!",
   "type": "text",
-  "fuzzy_matching_threshold": 0.6,
+  "fuzzy_matching_threshold": 0.8,
   "questions": [
     {
       "question": "\"Picture To ________\"",
@@ -14,17 +14,17 @@
       "aliases": []
     },
     {
-      "question": "\"________ On My Guitar\"",
+      "question": "\"Teardrops On My ________\"",
       "answers": [
-        "Teardrops",
+        "Guitar",
         "Teardrops On My Guitar"
       ],
       "aliases": []
     },
     {
-      "question": "\"A Place In This ________\"",
+      "question": "\"A Place In ________ World\"",
       "answers": [
-        "World",
+        "This",
         "A Place In This World"
       ],
       "aliases": []
@@ -38,9 +38,9 @@
       "aliases": []
     },
     {
-      "question": "\"________ Together With A Smile\"",
+      "question": "\"Tied ________ With A Smile\"",
       "answers": [
-        "Tied",
+        "Together",
         "Tied Together With A Smile"
       ],
       "aliases": []
@@ -54,25 +54,25 @@
       "aliases": []
     },
     {
-      "question": "\"I'm ________ Me When I'm With You\"",
+      "question": "\"I'm Only Me When I'm ________ You\"",
       "answers": [
-        "Only",
+        "With",
         "I'm Only Me When I'm With You"
       ],
       "aliases": []
     },
     {
-      "question": "\"A Perfectly ________ Heart\"",
+      "question": "\"A ________ Good Heart\"",
       "answers": [
-        "Good",
+        "Perfectly",
         "A Perfectly Good Heart"
       ],
       "aliases": []
     },
     {
-      "question": "\"Teardrops On My ________\"",
+      "question": "\"________ On My Guitar\"",
       "answers": [
-        "Guitar",
+        "Teardrops",
         "Teardrops On My Guitar"
       ],
       "aliases": []
@@ -86,17 +86,17 @@
       "aliases": []
     },
     {
-      "question": "\"Tell Me ________\"",
+      "question": "\"________ Me Why\"",
       "answers": [
-        "Why",
+        "Tell",
         "Tell Me Why"
       ],
       "aliases": []
     },
     {
-      "question": "\"You're Not ________\"",
+      "question": "\"________ Not Sorry\"",
       "answers": [
-        "Sorry",
+        "You're",
         "You're Not Sorry"
       ],
       "aliases": []
@@ -126,9 +126,9 @@
       "aliases": []
     },
     {
-      "question": "\"Jump ________ Fall\"",
+      "question": "\"Jump Then ________\"",
       "answers": [
-        "Then",
+        "Fall",
         "Jump Then Fall"
       ],
       "aliases": []
@@ -150,9 +150,9 @@
       "aliases": []
     },
     {
-      "question": "\"________ Other Side Of The Door\"",
+      "question": "\"The Other Side Of The ________\"",
       "answers": [
-        "The",
+        "Door",
         "The Other Side Of The Door"
       ],
       "aliases": []
@@ -166,17 +166,17 @@
       "aliases": []
     },
     {
-      "question": "\"________ Me Why\"",
+      "question": "\"Tell Me ________\"",
       "answers": [
-        "Tell",
+        "Why",
         "Tell Me Why"
       ],
       "aliases": []
     },
     {
-      "question": "\"________ Not Sorry\"",
+      "question": "\"You're ________ Sorry\"",
       "answers": [
-        "You're",
+        "Not",
         "You're Not Sorry"
       ],
       "aliases": []
@@ -198,9 +198,9 @@
       "aliases": []
     },
     {
-      "question": "\"________ In With The Rain\"",
+      "question": "\"Come In With The ________\"",
       "answers": [
-        "Come",
+        "Rain",
         "Come In With The Rain"
       ],
       "aliases": []
@@ -214,9 +214,9 @@
       "aliases": []
     },
     {
-      "question": "\"________ Was A Fairytale\"",
+      "question": "\"Today Was A ________\"",
       "answers": [
-        "Today",
+        "Fairytale",
         "Today Was A Fairytale"
       ],
       "aliases": []
@@ -246,17 +246,17 @@
       "aliases": []
     },
     {
-      "question": "\"Bye ________ Baby\"",
+      "question": "\"Bye Bye ________\"",
       "answers": [
-        "Bye",
+        "Baby",
         "Bye Bye Baby"
       ],
       "aliases": []
     },
     {
-      "question": "\"Back To ________\"",
+      "question": "\"________ To December\"",
       "answers": [
-        "December",
+        "Back",
         "Back To December"
       ],
       "aliases": []
@@ -270,25 +270,25 @@
       "aliases": []
     },
     {
-      "question": "\"________ Grow Up\"",
+      "question": "\"Never ________ Up\"",
       "answers": [
-        "Never",
+        "Grow",
         "Never Grow Up"
       ],
       "aliases": []
     },
     {
-      "question": "\"Better Than ________\"",
+      "question": "\"________ Than Revenge\"",
       "answers": [
-        "Revenge",
+        "Better",
         "Better Than Revenge"
       ],
       "aliases": []
     },
     {
-      "question": "\"If ________ Was A Movie\"",
+      "question": "\"If This Was A ________\"",
       "answers": [
-        "This",
+        "Movie",
         "If This Was A Movie"
       ],
       "aliases": []
@@ -302,17 +302,17 @@
       "aliases": []
     },
     {
-      "question": "\"I ________ You Were Trouble\"",
+      "question": "\"I Knew ________ Were Trouble\"",
       "answers": [
-        "Knew",
+        "You",
         "I Knew You Were Trouble"
       ],
       "aliases": []
     },
     {
-      "question": "\"________ Too Well\"",
+      "question": "\"All ________ Well\"",
       "answers": [
-        "All",
+        "Too",
         "All Too Well"
       ],
       "aliases": []
@@ -326,15 +326,15 @@
       "aliases": []
     },
     {
-      "question": "\"We Are ________ Ever Getting Back Together\"",
+      "question": "\"We Are Never Ever ________ Back Together\"",
       "answers": [
-        "Never",
+        "Getting",
         "We Are Never Ever Getting Back Together"
       ],
       "aliases": []
     },
     {
-      "question": "\"Stay Stay ________\"",
+      "question": "\"________ Stay Stay\"",
       "answers": [
         "Stay",
         "Stay Stay Stay"
@@ -342,25 +342,25 @@
       "aliases": []
     },
     {
-      "question": "\"The Last ________\"",
+      "question": "\"________ Last Time\"",
       "answers": [
-        "Time",
+        "The",
         "The Last Time"
       ],
       "aliases": []
     },
     {
-      "question": "\"Sad Beautiful ________\"",
+      "question": "\"________ Beautiful Tragic\"",
       "answers": [
-        "Tragic",
+        "Sad",
         "Sad Beautiful Tragic"
       ],
       "aliases": []
     },
     {
-      "question": "\"The Lucky ________\"",
+      "question": "\"________ Lucky One\"",
       "answers": [
-        "One",
+        "The",
         "The Lucky One"
       ],
       "aliases": []
@@ -382,9 +382,9 @@
       "aliases": []
     },
     {
-      "question": "\"Come Back...Be ________\"",
+      "question": "\"Come ________ Here\"",
       "answers": [
-        "Here",
+        "Back...Be",
         "Come Back...Be Here"
       ],
       "aliases": []
@@ -394,6 +394,14 @@
       "answers": [
         "Home",
         "Girl At Home"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "\"________ Of Grace\"",
+      "answers": [
+        "State",
+        "State Of Grace"
       ],
       "aliases": []
     }
