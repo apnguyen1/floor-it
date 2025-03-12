@@ -1,0 +1,1175 @@
+{
+  "name": "Taylor Swift Songs",
+  "preview_img": "entertainment.png",
+  "preview_desc": "Are you a Swiftie? Complete these Taylor Swift song titles!",
+  "type": "text",
+  "fuzzy_matching_threshold": 0.5,
+  "questions": [
+    {
+      "question": "Which Taylor Swift album contains the song \"Tim McGraw\"?",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"________ To Burn\"",
+      "answers": [
+        "Picture",
+        "Picture To Burn"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Picture To...\"?",
+      "answers": [
+        "Picture To Burn"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Picture To Burn\"?",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"Teardrops On My ________\"",
+      "answers": [
+        "Guitar",
+        "Teardrops On My Guitar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Teardrops On...\"?",
+      "answers": [
+        "Teardrops On My Guitar"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Teardrops On My Guitar\"?",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"A ________ In This World\"",
+      "answers": [
+        "Place",
+        "A Place In This World"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"A Place...\"?",
+      "answers": [
+        "A Place In This World"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"A Place In This World\"?",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"________ As You\"",
+      "answers": [
+        "Cold",
+        "Cold As You"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Cold As...\"?",
+      "answers": [
+        "Cold As You"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Cold As You\"?",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"The Outside\"?",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"Tied Together ________ A Smile\"",
+      "answers": [
+        "With",
+        "Tied Together With A Smile"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Tied Together...\"?",
+      "answers": [
+        "Tied Together With A Smile"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Tied Together With A Smile\"?",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Stay Beautiful\"?",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"Should've ________ No\"",
+      "answers": [
+        "Said",
+        "Should've Said No"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Should've Said...\"?",
+      "answers": [
+        "Should've Said No"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Should've Said No\"?",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Mary's Song\"?",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Our Song\"?",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"I'm ________ Me When I'm With You\"",
+      "answers": [
+        "Only",
+        "I'm Only Me When I'm With You"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"I'm Only...\"?",
+      "answers": [
+        "I'm Only Me When I'm With You"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"I'm Only Me When I'm With You\"?",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Invisible\"?",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"A ________ Good Heart\"",
+      "answers": [
+        "Perfectly",
+        "A Perfectly Good Heart"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"A Perfectly...\"?",
+      "answers": [
+        "A Perfectly Good Heart"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"A Perfectly Good Heart\"?",
+      "answers": [
+        "Taylor Swift"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Fearless\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Fifteen\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Love Story\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Hey Stephen\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"White Horse\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"You Belong ________ Me\"",
+      "answers": [
+        "With",
+        "You Belong With Me"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"You Belong...\"?",
+      "answers": [
+        "You Belong With Me"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"You Belong With Me\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Breathe\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"Tell Me ________\"",
+      "answers": [
+        "Why",
+        "Tell Me Why"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Tell Me...\"?",
+      "answers": [
+        "Tell Me Why"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Tell Me Why\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"You're Not ________\"",
+      "answers": [
+        "Sorry",
+        "You're Not Sorry"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"You're Not...\"?",
+      "answers": [
+        "You're Not Sorry"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"You're Not Sorry\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"The ________ I Loved You\"",
+      "answers": [
+        "Way",
+        "The Way I Loved You"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"The Way...\"?",
+      "answers": [
+        "The Way I Loved You"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"The Way I Loved You\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"Forever & ________\"",
+      "answers": [
+        "Always",
+        "Forever & Always"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Forever &...\"?",
+      "answers": [
+        "Forever & Always"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Forever & Always\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"The ________ Day\"",
+      "answers": [
+        "Best",
+        "The Best Day"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"The Best...\"?",
+      "answers": [
+        "The Best Day"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"The Best Day\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Change\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"________ Then Fall\"",
+      "answers": [
+        "Jump",
+        "Jump Then Fall"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Jump Then...\"?",
+      "answers": [
+        "Jump Then Fall"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Jump Then Fall\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Untouchable\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"Come In ________ The Rain\"",
+      "answers": [
+        "With",
+        "Come In With The Rain"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Come In...\"?",
+      "answers": [
+        "Come In With The Rain"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Come In With The Rain\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"SuperStar\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"The ________ Side Of The Door\"",
+      "answers": [
+        "Other",
+        "The Other Side Of The Door"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"The Other...\"?",
+      "answers": [
+        "The Other Side Of The Door"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"The Other Side Of The Door\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"________ Me Why\"",
+      "answers": [
+        "Tell",
+        "Tell Me Why"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"________ & Always\"",
+      "answers": [
+        "Forever",
+        "Forever & Always"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"Jump Then ________\"",
+      "answers": [
+        "Fall",
+        "Jump Then Fall"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"Come In With ________ Rain\"",
+      "answers": [
+        "The",
+        "Come In With The Rain"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"The Other Side Of ________ Door\"",
+      "answers": [
+        "The",
+        "The Other Side Of The Door"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"Today ________ A Fairytale\"",
+      "answers": [
+        "Was",
+        "Today Was A Fairytale"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Today Was...\"?",
+      "answers": [
+        "Today Was A Fairytale"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Today Was A Fairytale\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"________ All Over Me\"",
+      "answers": [
+        "You",
+        "You All Over Me"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"You All...\"?",
+      "answers": [
+        "You All Over Me"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"You All Over Me\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"Mr. ________ Fine\"",
+      "answers": [
+        "Perfectly",
+        "Mr. Perfectly Fine"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Mr. Perfectly...\"?",
+      "answers": [
+        "Mr. Perfectly Fine"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Mr. Perfectly Fine\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"We ________ Happy\"",
+      "answers": [
+        "Were",
+        "We Were Happy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"We Were...\"?",
+      "answers": [
+        "We Were Happy"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"We Were Happy\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"That's When\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Don't You\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"Bye Bye ________\"",
+      "answers": [
+        "Baby",
+        "Bye Bye Baby"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Bye Bye...\"?",
+      "answers": [
+        "Bye Bye Baby"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Bye Bye Baby\"?",
+      "answers": [
+        "Fearless (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Mine\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Sparks Fly\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"________ To December\"",
+      "answers": [
+        "Back",
+        "Back To December"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Back To...\"?",
+      "answers": [
+        "Back To December"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Back To December\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Speak Now\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Dear John\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Mean\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"The ________ Of Us\"",
+      "answers": [
+        "Story",
+        "The Story Of Us"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"The Story...\"?",
+      "answers": [
+        "The Story Of Us"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"The Story Of Us\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"Never ________ Up\"",
+      "answers": [
+        "Grow",
+        "Never Grow Up"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Never Grow...\"?",
+      "answers": [
+        "Never Grow Up"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Never Grow Up\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Enchanted\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"Better Than ________\"",
+      "answers": [
+        "Revenge",
+        "Better Than Revenge"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Better Than...\"?",
+      "answers": [
+        "Better Than Revenge"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Better Than Revenge\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Innocent\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Haunted\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Last Kiss\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Long Live\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Ours\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"If ________ Was A Movie\"",
+      "answers": [
+        "This",
+        "If This Was A Movie"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"If This...\"?",
+      "answers": [
+        "If This Was A Movie"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"If This Was A Movie\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Superman\"?",
+      "answers": [
+        "Speak Now"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"________ Of Grace\"",
+      "answers": [
+        "State",
+        "State Of Grace"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"State Of...\"?",
+      "answers": [
+        "State Of Grace"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"State Of Grace\"?",
+      "answers": [
+        "Red (Taylor's Version)"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Red\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Treacherous\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"I Knew You Were ________\"",
+      "answers": [
+        "Trouble",
+        "I Knew You Were Trouble"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"I Knew...\"?",
+      "answers": [
+        "I Knew You Were Trouble"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"I Knew You Were Trouble\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"All Too ________\"",
+      "answers": [
+        "Well",
+        "All Too Well"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"All Too...\"?",
+      "answers": [
+        "All Too Well"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"All Too Well\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"I ________ Do\"",
+      "answers": [
+        "Almost",
+        "I Almost Do"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"I Almost...\"?",
+      "answers": [
+        "I Almost Do"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"I Almost Do\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"We Are Never Ever Getting ________ Together\"",
+      "answers": [
+        "Back",
+        "We Are Never Ever Getting Back Together"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"We Are...\"?",
+      "answers": [
+        "We Are Never Ever Getting Back Together"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"We Are Never Ever Getting Back Together\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"Stay ________ Stay\"",
+      "answers": [
+        "Stay",
+        "Stay Stay Stay"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Stay Stay...\"?",
+      "answers": [
+        "Stay Stay Stay"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Stay Stay Stay\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"The Last ________\"",
+      "answers": [
+        "Time",
+        "The Last Time"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"The Last...\"?",
+      "answers": [
+        "The Last Time"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"The Last Time\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Holy Ground\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"________ Beautiful Tragic\"",
+      "answers": [
+        "Sad",
+        "Sad Beautiful Tragic"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Sad Beautiful...\"?",
+      "answers": [
+        "Sad Beautiful Tragic"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Sad Beautiful Tragic\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"________ Lucky One\"",
+      "answers": [
+        "The",
+        "The Lucky One"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"The Lucky...\"?",
+      "answers": [
+        "The Lucky One"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"The Lucky One\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"Everything ________ Changed\"",
+      "answers": [
+        "Has",
+        "Everything Has Changed"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Everything Has...\"?",
+      "answers": [
+        "Everything Has Changed"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Everything Has Changed\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Starlight\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Begin Again\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"The Moment I ________\"",
+      "answers": [
+        "Knew",
+        "The Moment I Knew"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"The Moment...\"?",
+      "answers": [
+        "The Moment I Knew"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"The Moment I Knew\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"Come Back...Be ________\"",
+      "answers": [
+        "Here",
+        "Come Back...Be Here"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Come Back...Be...\"?",
+      "answers": [
+        "Come Back...Be Here"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Come Back...Be Here\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"________ At Home\"",
+      "answers": [
+        "Girl",
+        "Girl At Home"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift song begins with: \"Girl At...\"?",
+      "answers": [
+        "Girl At Home"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Which Taylor Swift album contains the song \"Girl At Home\"?",
+      "answers": [
+        "Red"
+      ],
+      "aliases": []
+    },
+    {
+      "question": "Complete this Taylor Swift song title: \"State Of ________\"",
+      "answers": [
+        "Grace",
+        "State Of Grace"
+      ],
+      "aliases": []
+    }
+  ]
+}
