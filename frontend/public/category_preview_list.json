@@ -6,6 +6,11 @@
       "desc": "Calling all Foodies!"
     },
     {
+      "name": "Taylor Swift Songs",
+      "image": "entertainment.png",
+      "desc": "Are you a Swiftie? Complete these Taylor Swift song titles!"
+    },
+    {
       "name": "Top Spotify Hits",
       "image": "entertainment.png",
       "desc": "Test your knowledge of the most streamed songs on Spotify!"
@@ -24,6 +29,11 @@
       "name": "Original 151 Pokémon",
       "image": "game_icon.png",
       "desc": "Who's that Pokémon!?"
+    },
+    {
+      "name": "Car Models",
+      "image": "car.png",
+      "desc": "Match the car models to their make!"
     },
     {
       "name": "Movies and TV Shows",

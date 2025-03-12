@@ -59,7 +59,6 @@ class FoodDrink(TextCategory):
             name="Food and Drinks",
             desc="Calling all Foodies!",
             img_name=PreviewImageType.FOOD,
-            fuzzy_matching_threshold=0.9,
         )
 
 
@@ -104,5 +103,20 @@ class CSE403Midterm(TextCategory):
             name="CSE 403 2025 finals",
             desc="Practice for the CSE 403 finals",
             img_name=PreviewImageType.DEFAULT,
+            fuzzy_matching_threshold=0.5,
+        )
+
+
+class CarBrands(TextCategory):
+    """
+    Match the car model to make.
+    """
+
+    def __init__(self):
+        super().__init__(
+            source="car_model_to_brand.txt",
+            name="Car Models",
+            desc="Match the car models to their make!",
+            img_name=PreviewImageType.CAR,
             fuzzy_matching_threshold=0.5,
         )
