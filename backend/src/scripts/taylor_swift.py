@@ -128,13 +128,6 @@ class TaylorSongs(Category[TaylorSongsDTO]):
                 hint_question = f'Which Taylor Swift song begins with: "{hint}..."?'
                 category_data[hint_question] = [clean_track_name]
 
-            # Add album question if available
-            if track.album_name:
-                album_question = (
-                    f'Which Taylor Swift album contains the song "{clean_track_name}"?'
-                )
-                category_data[album_question] = [track.album_name]
-
         return category_data
 
 
